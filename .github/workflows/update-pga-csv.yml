@@ -1,0 +1,47 @@
+name: Update PGA Slates CSV from Google Sheet
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'          # Every 15 minutes (GitHub best-effort)
+  workflow_dispatch:                # Allows manual run from Actions tab
+
+permissions:
+  contents: write                     # Required to commit/push
+
+jobs:
+  update-csv:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download latest CSV from Google Sheet
+        run: |
+          echo "Downloading Fantasy Points sheet as CSV..."
+          curl -L -o pga-slates-data.csv \
+            "https://docs.google.com/spreadsheets/d/e/2PACX-1vTYFnwmt5yHygXP28HHRrg47ARQgV0IKm3wnaxoIz8MnGJH_mcIj6HUY96tbl1j7vD2r8JRDgR1wVxD/pub?gid=654148847&single=true&output=csv" \
+            || echo "Download failed (curl exit code $?)"
+
+          echo "Downloaded file size:"
+          ls -lh pga-slates-data.csv || echo "File not created"
+
+          echo "First few lines of the CSV:"
+          head -n 5 pga-slates-data.csv || echo "File appears empty"
+
+      - name: Commit and push if file changed
+        run: |
+          git config --global user.name "GitHub Action Bot"
+          git config --global user.email "actions@github.com"
+
+          # Use GITHUB_TOKEN for auth (automatically available)
+          git remote set-url origin https://x:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+
+          git add pga-slates-data.csv
+
+          # Commit only if there are changes
+          git diff --quiet --exit-code pga-slates-data.csv || \
+            git commit -m "Auto-update pga-slates-data.csv from Google Sheet (Fantasy Points tab)" || \
+            echo "No changes to commit"
+
+          # Push (only if commit happened)
+          git push origin HEAD:${{ github.ref_name }} || echo "Push skipped or failed"
