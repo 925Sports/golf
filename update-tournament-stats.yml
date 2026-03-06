@@ -1,0 +1,36 @@
+name: Update Tournament Stats CSV
+on:
+  schedule:
+    - cron: '*/15 * * * *'  # Every 15 minutes, like your existing one
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  update-csv:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Download latest CSV from Google Sheet
+        run: |
+          echo "Downloading Tournament Stats sheet as CSV..."
+          curl -L -o tournament-stats.csv \
+            "https://docs.google.com/spreadsheets/d/e/2PACX-1vRaE2ATXG7IcOEtFQN0oSydGAe2okpyuZ6dTfV_vfbolt2V7CSZzX4FDFnSemJhxcceG8idxPz8v2y5/pub?gid=2145849292&single=true&output=csv" \
+            -H "Cache-Control: no-cache, no-store, must-revalidate" \
+            -H "Pragma: no-cache" \
+            || echo "Download failed (curl exit code $?)"
+          echo "Downloaded file size:"
+          ls -lh tournament-stats.csv || echo "File not created"
+          echo "First 5 lines:"
+          head -n 5 tournament-stats.csv || echo "File appears empty"
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name "GitHub Action Bot"
+          git config --global user.email "actions@github.com"
+          git add tournament-stats.csv
+          if git commit -m "Auto-update tournament-stats.csv from Google Sheet"; then
+            echo "✅ Changes committed, pushing..."
+            git push
+          else
+            echo "ℹ️ No changes to commit (CSV is identical to the version in the repo)"
+          fi
