@@ -3,34 +3,2330 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sports Betting Data</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Golf Leaderboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+    <style>
+        :root {
+            --transition: all 0.2s ease;
+            --low-rank-light: #d1fae5;
+            --mid-rank-light: #fef3c7;
+            --high-rank-light: #fee2e2;
+            --low-rank-dark: #064e3b;
+            --mid-rank-dark: #713f12;
+            --high-rank-dark: #7f1d1d;
+            --loading-bg: rgba(255,255,255,0.8);
+            --sg-green-1-light: #e6ffe6;
+            --sg-green-2-light: #ccffcc;
+            --sg-green-3-light: #99ff99;
+            --sg-green-4-light: #66ff66;
+            --sg-green-5-light: #33ff33;
+            --sg-yellow-1-light: #ffffe6;
+            --sg-yellow-2-light: #ffffcc;
+            --sg-yellow-3-light: #ffff99;
+            --sg-red-1-light: #ffe6e6;
+            --sg-red-2-light: #ffcccc;
+            --sg-red-3-light: #ff9999;
+            --sg-red-4-light: #ff6666;
+            --sg-red-5-light: #ff3333;
+            --sg-green-1-dark: #004d00;
+            --sg-green-2-dark: #006600;
+            --sg-green-3-dark: #008000;
+            --sg-green-4-dark: #009900;
+            --sg-green-5-dark: #00b300;
+            --sg-yellow-1-dark: #4d4d00;
+            --sg-yellow-2-dark: #666600;
+            --sg-yellow-3-dark: #808000;
+            --sg-red-1-dark: #4d0000;
+            --sg-red-2-dark: #660000;
+            --sg-red-3-dark: #800000;
+            --sg-red-4-dark: #990000;
+            --sg-red-5-dark: #b30000;
+        }
+        body[data-theme="light"] {
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --button-bg: #334155;
+            --button-text: #ffffff;
+            --button-hover: #1e293b;
+            --input-bg: #f1f5f9;
+            --table-head-bg: #f1f5f9;
+            --table-even-bg: #f8fafc;
+            --shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            --low-rank: var(--low-rank-light);
+            --mid-rank: var(--mid-rank-light);
+            --high-rank: var(--high-rank-light);
+            --sg-positive: #d1fae5;
+            --sg-neutral: #fef3c7;
+            --sg-negative: #fee2e2;
+            --loading-bg: rgba(255,255,255,0.8);
+            --sg-green-1: var(--sg-green-1-light);
+            --sg-green-2: var(--sg-green-2-light);
+            --sg-green-3: var(--sg-green-3-light);
+            --sg-green-4: var(--sg-green-4-light);
+            --sg-green-5: var(--sg-green-5-light);
+            --sg-yellow-1: var(--sg-yellow-1-light);
+            --sg-yellow-2: var(--sg-yellow-2-light);
+            --sg-yellow-3: var(--sg-yellow-3-light);
+            --sg-red-1: var(--sg-red-1-light);
+            --sg-red-2: var(--sg-red-2-light);
+            --sg-red-3: var(--sg-red-3-light);
+            --sg-red-4: var(--sg-red-4-light);
+            --sg-red-5: var(--sg-red-5-light);
+        }
+        body[data-theme="dark"] {
+            --bg-color: #0f172a;
+            --text-color: #e2e8f0;
+            --card-bg: #1e293b;
+            --border-color: #334155;
+            --button-bg: #475569;
+            --button-text: #e2e8f0;
+            --button-hover: #64748b;
+            --input-bg: #1e293b;
+            --table-head-bg: #1e293b;
+            --table-even-bg: #0f172a;
+            --shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            --low-rank: var(--low-rank-dark);
+            --mid-rank: var(--mid-rank-dark);
+            --high-rank: var(--high-rank-dark);
+            --sg-positive: #064e3b;
+            --sg-neutral: #713f12;
+            --sg-negative: #7f1d1d;
+            --loading-bg: rgba(0,0,0,0.8);
+            --sg-green-1: var(--sg-green-1-dark);
+            --sg-green-2: var(--sg-green-2-dark);
+            --sg-green-3: var(--sg-green-3-dark);
+            --sg-green-4: var(--sg-green-4-dark);
+            --sg-green-5: var(--sg-green-5-dark);
+            --sg-yellow-1: var(--sg-yellow-1-dark);
+            --sg-yellow-2: var(--sg-yellow-2-dark);
+            --sg-yellow-3: var(--sg-yellow-3-dark);
+            --sg-red-1: var(--sg-red-1-dark);
+            --sg-red-2: var(--sg-red-2-dark);
+            --sg-red-3: var(--sg-red-3-dark);
+            --sg-red-4: var(--sg-red-4-dark);
+            --sg-red-5: var(--sg-red-5-dark);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            transition: var(--transition);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 1rem 0;
+        }
+        .description {
+            width: 90%;
+            max-width: 1000px;
+            background: var(--card-bg);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        .course-info {
+            width: 90%;
+            max-width: 1000px;
+            background: var(--card-bg);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 0.5rem 0;
+            font-size: 0.85rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .course-info h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 0 1rem 0 0;
+        }
+        .course-info .info-item {
+            margin: 0 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .course-info .info-item strong {
+            font-weight: 500;
+        }
+        .course-info .info-item span {
+            font-weight: 400;
+        }
+        .view-menu {
+            width: 90%;
+            max-width: 1000px;
+            background: var(--card-bg);
+            padding: 0.5rem;
+            border-radius: 8px;
+            margin: 0.5rem 0;
+            box-shadow: var(--shadow);
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        .view-button {
+            padding: 0.5rem 1rem;
+            font-size: 0.85rem;
+            background: var(--input-bg);
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .view-button.active {
+            background: var(--button-bg);
+            color: var(--button-text);
+            border-color: var(--button-bg);
+        }
+        .view-button:hover {
+            background: var(--button-hover);
+            color: var(--button-text);
+        }
+        .filter-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            width: 90%;
+            max-width: 1000px;
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow);
+        }
+        .filter-container > div {
+            display: flex;
+            flex-direction: column;
+        }
+        .filter-container label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        .dropdown-container {
+            position: relative;
+            width: 100%;
+        }
+        .dropdown-button {
+            padding: 0.5rem;
+            font-size: 0.85rem;
+            background: var(--input-bg);
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            cursor: pointer;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .dropdown-button::after {
+            content: '▼';
+            font-size: 0.7rem;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            max-height: 300px;
+            overflow-y: auto;
+            z-index: 10;
+            padding: 0.5rem;
+            box-shadow: var(--shadow);
+        }
+        .dropdown-menu.show {
+            display: block;
+        }
+        .dropdown-menu input[type="text"] {
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 0.85rem;
+            background: var(--input-bg);
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            margin-bottom: 0.5rem;
+        }
+        .dropdown-menu label {
+            display: flex;
+            align-items: center;
+            font-size: 0.85rem;
+            margin: 0.25rem 0;
+        }
+        .dropdown-menu input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+        .table-container {
+            width: 90%;
+            max-width: 1000px;
+            background: var(--card-bg);
+            border-radius: 8px;
+            margin: 1rem auto;
+            box-shadow: var(--shadow);
+            overflow-x: auto;
+            padding: 1rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+        }
+        th, td {
+            padding: 0.5rem;
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+        th {
+            background: var(--table-head-bg);
+            font-weight: 500;
+            cursor: pointer;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+        tr:nth-child(even) {
+            background: var(--table-even-bg);
+        }
+        th.asc::after {
+            content: ' ↑';
+        }
+        th.desc::after {
+            content: ' ↓';
+        }
+        th.sticky, td.sticky {
+            position: sticky;
+            background: var(--card-bg);
+            z-index: 1;
+        }
+        th.sticky.favorite, td.sticky.favorite {
+            left: 0;
+            min-width: 50px;
+        }
+        th.sticky.player, td.sticky.player {
+            left: 50px;
+            min-width: 200px;
+        }
+        th.salary, td.salary {
+            min-width: 80px;
+        }
+        .favorite-star {
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .favorite-star.favorited {
+            color: #ffd700;
+        }
+        .sg-positive {
+            background-color: var(--sg-positive);
+        }
+        .sg-neutral {
+            background-color: var(--sg-neutral);
+        }
+        .sg-negative {
+            background-color: var(--sg-negative);
+        }
+        .player-image {
+            width: 30px;
+            height: 30px;
+            margin-right: 5px;
+            vertical-align: middle;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .player-name {
+            font-weight: 600;
+        }
+        td.sticky.player {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem;
+        }
+        .live-stat {
+            font-weight: bold;
+            padding: 0.2rem;
+            white-space: nowrap;
+            display: inline-block;
+        }
+        .sg-column {
+            min-width: 100px;
+        }
+        .expanded-row td {
+            background-color: var(--table-even-bg);
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .popup-content {
+            background-color: var(--card-bg);
+            margin: 10% auto;
+            padding: 30px;
+            border: 1px solid var(--border-color);
+            width: 90%;
+            max-width: 900px;
+            border-radius: 12px;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .close-popup {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            font-size: 28px;
+            cursor: pointer;
+            color: var(--text-color);
+            transition: color 0.2s ease;
+        }
+        .close-popup:hover {
+            color: var(--button-hover);
+        }
+        .popup-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .player-info {
+            display: flex;
+            align-items: center;
+        }
+        .popup-player-name {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        .popup-timestamp {
+            font-size: 0.85rem;
+            color: #888;
+        }
+        .popup-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .popup-stat-item {
+            text-align: center;
+        }
+        .popup-stat-label {
+            font-size: 0.75rem;
+            color: #666;
+        }
+        .popup-stat-value {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .popup-tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .popup-tab {
+            padding: 10px 20px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            border-radius: 6px;
+            background-color: var(--input-bg);
+            color: var(--text-color);
+            transition: background-color 0.2s ease;
+        }
+        .popup-tab:hover {
+            background-color: var(--button-hover);
+        }
+        .popup-tab.active {
+            background-color: var(--button-bg);
+            color: var(--button-text);
+        }
+        .popup-chart-container {
+            position: relative;
+            height: 300px;
+        }
+        .popup-navigation {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            color: var(--button-bg);
+            cursor: pointer;
+        }
+        .popup-navigation.left {
+            left: 10px;
+        }
+        .popup-navigation.right {
+            right: 10px;
+        }
+        .popup.show .popup-content {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .player-info-icon {
+            cursor: pointer;
+            margin-left: 5px;
+            font-size: 1rem;
+        }
+        .player-image-popup {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+            display: none;
+        }
+        #loading {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--loading-bg);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #loading > div {
+            text-align: center;
+        }
+        .switch-container {
+            position: fixed;
+            top: 0.5rem;
+            right: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+        .sun-icon, .moon-icon {
+            font-size: 1rem;
+            margin-right: 0.3rem;
+        }
+        body[data-theme="light"] .moon-icon {
+            display: none;
+        }
+        body[data-theme="dark"] .sun-icon {
+            display: none;
+        }
+        .switch {
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+            position: relative;
+        }
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 10px;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+        input:checked + .slider:before {
+            transform: translateX(20px);
+        }
+        .small-header {
+            font-size: 0.75rem;
+        }
+        .edge-cell {
+            padding: 0.5rem;
+        }
+        .edge-value {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            color: var(--text-color);
+        }
+        .sg-green-1 { background-color: var(--sg-green-1); }
+        .sg-green-2 { background-color: var(--sg-green-2); }
+        .sg-green-3 { background-color: var(--sg-green-3); }
+        .sg-green-4 { background-color: var(--sg-green-4); }
+        .sg-green-5 { background-color: var(--sg-green-5); }
+        .sg-yellow-1 { background-color: var(--sg-yellow-1); }
+        .sg-yellow-2 { background-color: var(--sg-yellow-2); }
+        .sg-yellow-3 { background-color: var(--sg-yellow-3); }
+        .sg-red-1 { background-color: var(--sg-red-1); }
+        .sg-red-2 { background-color: var(--sg-red-2); }
+        .sg-red-3 { background-color: var(--sg-red-3); }
+        .sg-red-4 { background-color: var(--sg-red-4); }
+        .sg-red-5 { background-color: var(--sg-red-5); }
+        .matchup-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .player1-info, .player2-info, .matchup-info {
+            text-align: center;
+            flex: 1;
+        }
+        @media (max-width: 600px) {
+            .filter-container {
+                grid-template-columns: 1fr;
+            }
+            .course-info {
+                flex-direction: column;
+                text-align: center;
+            }
+            .course-info .info-item {
+                margin: 0.5rem 0;
+            }
+            th.sticky.favorite, td.sticky.favorite {
+                min-width: 40px;
+            }
+            th.sticky.player, td.sticky.player {
+                left: 40px;
+                min-width: 150px;
+            }
+            th.salary, td.salary {
+                min-width: 60px;
+            }
+            .view-menu {
+                flex-direction: column;
+                gap: 0.25rem;
+            }
+            .view-button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
-<body>
-    <div class="container">
-        <table id="bettingTable">
+<body data-theme="light">
+    <h2 id="leaderboardHeader">Golf Leaderboard</h2>
+    <div class="description">
+        View golf leaderboard data, including player scores, places, and strokes gained stats. Use the filter to select players, mark favorites with stars, and toggle dark mode for a personalized viewing experience.
+    </div>
+    <div class="course-info">
+        <h3>Course Information</h3>
+        <div class="info-item"><strong>Designer</strong><span id="designer">-</span></div>
+        <div class="info-item"><strong>Style</strong><span id="style">-</span></div>
+        <div class="info-item"><strong>Greens</strong><span id="greens">-</span></div>
+        <div class="info-item"><strong>Location</strong><span id="location">-</span></div>
+        <div class="info-item"><strong>Scoring</strong><span id="scoring">-</span></div>
+        <div class="info-item"><strong>Weather</strong><span id="weather">-</span></div>
+        <div class="info-item"><strong>Round</strong><span id="round">-</span></div>
+        <div class="info-item"><strong>Tournament</strong><span id="tournament">-</span></div>
+        <div class="info-item"><strong>Course</strong><span id="course">-</span></div>
+    </div>
+    <div class="switch-container">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+        <label class="switch">
+            <input type="checkbox" id="darkModeSwitch" onchange="toggleDarkMode()">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <div class="view-menu">
+        <button class="view-button active" onclick="switchView('tournament')">Tournament Stats</button>
+        <button class="view-button" onclick="switchView('showdown')">Showdown</button>
+        <button class="view-button" onclick="switchView('3ball')">3-Ball Bets</button>
+        <button class="view-button" onclick="switchView('matchup')">Matchup Bets</button>
+    </div>
+    <div class="filter-container">
+        <div>
+            <label for="playerDropdown">Select Players:</label>
+            <div class="dropdown-container">
+                <button class="dropdown-button" id="playerDropdown" onclick="toggleDropdown('playerMenu')">Select Players</button>
+                <div id="playerMenu" class="dropdown-menu">
+                    <input type="text" id="playerSearch" placeholder="Search players..." oninput="filterPlayers()">
+                    <label><input type="checkbox" id="selectAllPlayers" onchange="toggleSelectAll()"> Select All</label>
+                </div>
+            </div>
+        </div>
+        <div id="roundFilter" style="display: none;">
+            <label for="roundDropdown">Select Round:</label>
+            <select id="roundDropdown" onchange="updateTable()">
+                <option value="1">Round 1</option>
+                <option value="2">Round 2</option>
+                <option value="3">Round 3</option>
+                <option value="4">Round 4</option>
+            </select>
+        </div>
+        <div id="missedCutFilter">
+            <label><input type="checkbox" id="excludeMissedCut" onchange="updateTable()"> Exclude Missed Cut</label>
+        </div>
+        <div id="columnFilter" style="display: none;">
+            <label for="columnDropdown">Select Columns:</label>
+            <div class="dropdown-container">
+                <button class="dropdown-button" id="columnDropdown" onclick="toggleDropdown('columnMenu')">Select Columns</button>
+                <div id="columnMenu" class="dropdown-menu"></div>
+            </div>
+        </div>
+        <div id="extraColumnFilter" style="display: none;">
+            <label for="extraColumnDropdown">Select Additional Columns:</label>
+            <div class="dropdown-container">
+                <button class="dropdown-button" id="extraColumnDropdown" onclick="toggleDropdown('extraColumnMenu')">Select Additional Columns</button>
+                <div id="extraColumnMenu" class="dropdown-menu"></div>
+            </div>
+        </div>
+        <div id="betTypeFilter" style="display: none;">
+            <label for="betTypeDropdown">Select Bet Type:</label>
+            <div class="dropdown-container">
+                <button class="dropdown-button" id="betTypeDropdown" onclick="toggleDropdown('betTypeMenu')">Select Bet Type</button>
+                <div id="betTypeMenu" class="dropdown-menu">
+                    <input type="text" id="betTypeSearch" placeholder="Search bet types..." oninput="filterBetTypes()">
+                    <label><input type="checkbox" id="selectAllBetTypes" onchange="toggleSelectAllBetTypes()"> Select All</label>
+                </div>
+            </div>
+        </div>
+        <div id="sportsbookFilter" style="display: none;">
+            <label for="sportsbookDropdown">Select Sportsbook:</label>
+            <div class="dropdown-container">
+                <button class="dropdown-button" id="sportsbookDropdown" onclick="toggleDropdown('sportsbookMenu')">Select Sportsbook</button>
+                <div id="sportsbookMenu" class="dropdown-menu">
+                    <input type="text" id="sportsbookSearch" placeholder="Search sportsbooks..." oninput="filterSportsbooks()">
+                    <label><input type="checkbox" id="selectAllSportsbooks" onchange="toggleSelectAllSportsbooks()"> Select All</label>
+                </div>
+            </div>
+        </div>
+        <div id="player1Filter" style="display: none;">
+            <label for="player1Dropdown">Select Player 1:</label>
+            <div class="dropdown-container">
+                <button class="dropdown-button" id="player1Dropdown" onclick="toggleDropdown('player1Menu')">Select Player 1</button>
+                <div id="player1Menu" class="dropdown-menu">
+                    <input type="text" id="player1Search" placeholder="Search player 1..." oninput="filterPlayer1()">
+                    <label><input type="checkbox" id="selectAllPlayer1" onchange="toggleSelectAllPlayer1()"> Select All</label>
+                </div>
+            </div>
+        </div>
+        <div id="player2Filter" style="display: none;">
+            <label for="player2Dropdown">Select Player 2:</label>
+            <div class="dropdown-container">
+                <button class="dropdown-button" id="player2Dropdown" onclick="toggleDropdown('player2Menu')">Select Player 2</button>
+                <div id="player2Menu" class="dropdown-menu">
+                    <input type="text" id="player2Search" placeholder="Search player 2..." oninput="filterPlayer2()">
+                    <label><input type="checkbox" id="selectAllPlayer2" onchange="toggleSelectAllPlayer2()"> Select All</label>
+                </div>
+            </div>
+        </div>
+        <div id="correlatedBetsFilter" style="display: none;">
+            <label><input type="checkbox" id="showCorrelatedBets" onchange="updateTable()"> Show only Correlated Bets</label>
+        </div>
+    </div>
+    <div id="loading">
+        <div>
+            <h3>Loading data...</h3>
+            <p>Please wait, this may take up to 10 seconds.</p>
+        </div>
+    </div>
+    <div class="table-container">
+        <table id="leaderboard" role="table">
             <thead>
-                <tr>
-                    <th></th>
-                    <th>PLAYER NAME</th>
-                    <th>O/U</th>
-                    <th>STAT</th>
-                    <th>LINE</th>
-                    <th>% TO HIT</th>
-                    <th>$100</th>
-                    <th>$150</th>
-                    <th>$200</th>
-                    <th>$250</th>
-                    <th>$300</th>
-                    <th>$350</th>
-                    <th>$400</th>
-                    <th>$450</th>
-                    <th>$500</th>
-                </tr>
+                <tr id="tableHeader" role="row"></tr>
             </thead>
             <tbody id="tableBody"></tbody>
         </table>
     </div>
-    <script src="script.js"></script>
+    <div id="playerPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup" onclick="closePlayerPopup()">×</span>
+            <div class="popup-header">
+                <div class="player-info">
+                    <img id="popupPlayerImage" class="player-image-popup" src="" alt="Player Headshot">
+                    <div>
+                        <h3 class="popup-player-name" id="popupPlayerName"></h3>
+                        <span class="popup-timestamp" id="popupTimestamp">LATE | 2:30:00 PM</span>
+                    </div>
+                </div>
+                <span class="favorite-star" id="popupFavoriteStar" onclick="toggleFavoriteFromPopup()">☆</span>
+            </div>
+            <div class="popup-stats" id="popupStats"></div>
+            <div class="popup-tabs" id="popupTabs">
+                <div class="popup-tab active" data-tab="Total">Total</div>
+                <div class="popup-tab" data-tab="OT">OT</div>
+                <div class="popup-tab" data-tab="T2G">T2G</div>
+                <div class="popup-tab" data-tab="AP">AP</div>
+                <div class="popup-tab" data-tab="ARG">ARG</div>
+                <div class="popup-tab" data-tab="Putt">Putt</div>
+            </div>
+            <div class="popup-chart-container">
+                <canvas id="popupChart"></canvas>
+            </div>
+            <div class="popup-navigation left" onclick="navigatePlayer('prev')"><</div>
+            <div class="popup-navigation right" onclick="navigatePlayer('next')">></div>
+        </div>
+    </div>
+    <div id="matchupPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup" onclick="closeMatchupPopup()">×</span>
+            <div class="matchup-header">
+                <div class="player1-info">
+                    <h3 id="popupPlayer1Name"></h3>
+                    <p id="popupPlayer1Odds"></p>
+                </div>
+                <div class="matchup-info">
+                    <p id="popupSportsbook"></p>
+                    <p id="popupProjectedEdge"></p>
+                    <p id="popupSportsbookEdge"></p>
+                    <p id="popupBetType"></p>
+                </div>
+                <div class="player2-info">
+                    <h3 id="popupPlayer2Name"></h3>
+                    <p id="popupPlayer2Odds"></p>
+                </div>
+            </div>
+            <div class="popup-chart-container">
+                <canvas id="matchupChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script>
+        let rawData = [];
+        let pivotedData = [];
+        let sortColumn = null;
+        let sortDirection = 'asc';
+        let selectedPlayers = [];
+        let favoritePlayers = [];
+        let isLocalStorageAvailable = true;
+        try {
+            localStorage.setItem('test', 'test');
+            localStorage.removeItem('test');
+            favoritePlayers = JSON.parse(localStorage.getItem('favoritePlayers')) || [];
+        } catch (e) {
+            console.warn('localStorage is not available:', e);
+            isLocalStorageAvailable = false;
+            favoritePlayers = [];
+        }
+        let playerChart = null;
+        let currentPlayerIndex = 0;
+        let currentTab = 'Total';
+        let currentView = 'tournament';
+        let selectedRound = '1';
+        let matchupData = [];
+        let selectedBetTypes = [];
+        let selectedSportsbooks = [];
+        let selectedPlayer1s = [];
+        let selectedPlayer2s = [];
+        let matchupChart = null;
+        const categories = ['Total', 'OT', 'T2G', 'AP', 'ARG', 'Putt'];
+        const seasonColumns = [
+            'Strokes Gained Total #',
+            'Strokes Gained Off the Tee #',
+            'Strokes Gained Tee to Green #',
+            'Strokes Gained Approach #',
+            'Strokes Gained Around the Green #',
+            'Strokes Gained Putting #',
+            'Greens in Regulation',
+            'Fairway Hit %'
+        ];
+        const predefinedColumns = ['SALARY', 'Place', 'Score', 'Holes', '% Owned', 'VEGAS WIN %', 'ODDS', 'TEE TIME (LOCAL)', 'LIVE SG TOTAL', 'LIVE SG OT', 'LIVE SGT2G', 'LIVE SG AP', 'LIVE SG ARG', 'LIVE SG PUTT', 'LIVE GIRS HIT', 'Live GIR', 'LIVE FAIRWAYS HIT'];
+        const showdownColumns = ['RD1Rank', 'RD 2 Ranking', 'RD 3 Ranking', 'RD 4 Ranking', 'RD2 Regression', 'RD3 Regression', 'RD4 Regression', 'Win RK Going into RD2', 'Win RK Going into RD3', 'Win RK Going into RD4', 'RD1 PTS', 'RD2 PTS', 'RD3 PTS', 'RD 4 PTS'];
+        const showdownColumnsByRound = {
+            '1': ['RD1Rank', 'RD1 PTS'],
+            '2': ['RD 2 Ranking', 'RD2 Regression', 'Win RK Going into RD2', 'RD2 PTS'],
+            '3': ['RD 3 Ranking', 'RD3 Regression', 'Win RK Going into RD3', 'RD3 PTS'],
+            '4': ['RD 4 Ranking', 'RD4 Regression', 'Win RK Going into RD4', 'RD 4 PTS']
+        };
+        const threeBallColumns = ['Group', 'Matchup Odds'];
+        const matchupColumns = [
+            'SPORTSBOOK',
+            'PLAYER 1',
+            'PLAYER 1 ODDS',
+            'PLAYER 1 VEGAS ODDS',
+            'PLAYER 1 AVERAGE ODDS',
+            'PLAYER 1 POINTS TO WIN (925)',
+            'PLAYER 1 WIN %',
+            'PROJECTED EDGE',
+            'SPORTSBOOK EDGE',
+            'PLAYER 2',
+            'PLAYER 2 ODDS',
+            'PLAYER 2 VEGAS ODDS',
+            'PLAYER 2 AVERAGE ODDS',
+            'PLAYER 2 POINTS TO WIN (925)',
+            'PLAYER 2 WIN %',
+            'BET TYPE',
+            'NINETOFIVE BET TAG',
+            'NINETOFIVE BET'
+        ];
+        const columns = ['Favorite', 'PLAYER', ...predefinedColumns, ...showdownColumns, ...threeBallColumns, ...matchupColumns];
+        const fixedColumns = ['Favorite', 'PLAYER'];
+        let allColumns = [];
+        let extraColumns = [];
+        let selectedColumns = predefinedColumns;
+        let selectedExtraColumns = [];
+        const sgColumns = ['LIVE SG TOTAL', 'LIVE SG OT', 'LIVE SGT2G', 'LIVE SG AP', 'LIVE SG ARG', 'LIVE SG PUTT'];
+        const expandedColumns = sgColumns.concat(['LIVE GIRS HIT', 'LIVE FAIRWAYS HIT']);
+        const rankedLiveColumns = sgColumns.concat(['LIVE GIRS HIT', 'LIVE FAIRWAYS HIT']);
+        const rankedSeasonStats = seasonColumns;
+        let seasonRanks = {};
+        const statConfig = {};
+        sgColumns.forEach((liveCol, index) => {
+            const seasonStat = seasonColumns[index];
+            statConfig[liveCol] = {
+                parseLiveValue: (value) => parseFloat(value),
+                getSeasonValue: (seasonData) => seasonData[seasonStat],
+                formatValue: (value) => value.toFixed(2),
+                calculateDifference: (liveNum, seasonNum) => (seasonNum - liveNum).toFixed(2)
+            };
+        });
+        statConfig['LIVE GIRS HIT'] = {
+            parseLiveValue: (value) => parseFloat(value),
+            getSeasonValue: (seasonData) => seasonData['Greens in Regulation'] * 18,
+            formatValue: (value) => value.toFixed(1),
+            calculateDifference: (liveNum, seasonNum) => (seasonNum - liveNum).toFixed(1)
+        };
+        statConfig['Live GIR'] = {
+            parseLiveValue: (value) => parseFloat(value.replace('%', '')),
+            getSeasonValue: (seasonData) => seasonData['Greens in Regulation'] * 100,
+            formatValue: (value) => value.toFixed(1) + '%',
+            calculateDifference: (liveNum, seasonNum) => (seasonNum - liveNum).toFixed(1)
+        };
+        const diffColumns = sgColumns.concat(['LIVE GIRS HIT', 'LIVE FAIRWAYS HIT']);
+        const calculatedColumns = diffColumns.map(liveStat => `Difference ${liveStat.replace('LIVE ', '')}`);
+        let allExtraColumns = [];
+        let allowedExtraColumns = [];
+        const specificAllowedExtraColumns = [
+            'RD2 Regression',
+            'RD3 Regression',
+            'RD4 Regression',
+            'Win RK Going into RD2',
+            'Win RK Going into RD3',
+            'Win RK Going into RD4',
+            'STAT RANK',
+            'MODEL RANK',
+            'R1 RANK',
+            'VEGAS WIN %',
+            '925 WIN %',
+            'WIN DIFFERENCE',
+            'SALARY RANK',
+            'OWNERSHIP RANK',
+            'LEVERANK RANK'
+        ];
+        function getEdgeClass(value) {
+            if (value > 0.01) {
+                if (value > 0.05) return 'sg-green-5';
+                else if (value > 0.04) return 'sg-green-4';
+                else if (value > 0.03) return 'sg-green-3';
+                else if (value > 0.02) return 'sg-green-2';
+                else return 'sg-green-1';
+            } else if (value < -0.009) {
+                if (value < -0.05) return 'sg-red-5';
+                else if (value < -0.04) return 'sg-red-4';
+                else if (value < -0.03) return 'sg-red-3';
+                else if (value < -0.02) return 'sg-red-2';
+                else return 'sg-red-1';
+            } else {
+                const absValue = Math.abs(value);
+                if (absValue <= 0.003) return 'sg-yellow-1';
+                else if (absValue <= 0.006) return 'sg-yellow-2';
+                else return 'sg-yellow-3';
+            }
+        }
+        function formatPercent(value, isEdge = false) {
+            const num = parseFloat(value);
+            if (isNaN(num)) return '-';
+            return isEdge ? num.toFixed(2) + ' %' : (num * 100).toFixed(2) + '%';
+        }
+        function getNumericValue(column, value) {
+            if (value === '-' || value === '') return NaN;
+            if (column === 'Score') {
+                return scoreToNumber(value);
+            } else if (column === 'Live GIR' || column.endsWith('WIN %') || column.endsWith('EDGE') || column.endsWith('VEGAS ODDS') || column.endsWith('AVERAGE ODDS')) {
+                return parseFloat(value.replace('%', ''));
+            } else if (column === 'ODDS') {
+                const parts = value.split('/');
+                return parts.length > 0 ? parseFloat(parts[0]) : NaN;
+            } else {
+                return parseFloat(value);
+            }
+        }
+        function toggleDarkMode() {
+            const body = document.body;
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            body.setAttribute('data-theme', newTheme);
+            if (isLocalStorageAvailable) {
+                localStorage.setItem('theme', newTheme);
+            }
+        }
+        function toggleDropdown(menuId) {
+            const dropdownMenu = document.getElementById(menuId);
+            document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                if (menu.id !== menuId) menu.classList.remove('show');
+            });
+            dropdownMenu.classList.toggle('show');
+            if (dropdownMenu.classList.contains('show') && menuId === 'playerMenu') {
+                document.getElementById('playerSearch').focus();
+            }
+        }
+        document.addEventListener('click', (event) => {
+            if (!event.target.closest('.dropdown-container') && !event.target.matches('.dropdown-button')) {
+                document.querySelectorAll('.dropdown-menu').forEach(menu => menu.classList.remove('show'));
+            }
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            let savedTheme = 'light';
+            if (isLocalStorageAvailable) {
+                savedTheme = localStorage.getItem('theme') || 'light';
+            }
+            document.body.setAttribute('data-theme', savedTheme);
+            document.getElementById('darkModeSwitch').checked = savedTheme === 'dark';
+            fetchData();
+            document.getElementById('tableBody').addEventListener('click', (event) => {
+                const tr = event.target.closest('tr');
+                if (tr && tr.parentElement.id === 'tableBody') {
+                    if (currentView === 'tournament' && tr.dataset.player) {
+                        toggleRowExpansion(tr);
+                    } else if (currentView === 'matchup') {
+                        const originalIndex = tr.dataset.originalIndex;
+                        const row = pivotedData[originalIndex];
+                        showMatchupPopup(row);
+                    }
+                }
+            });
+            document.getElementById('playerPopup').addEventListener('click', (event) => {
+                if (event.target === document.getElementById('playerPopup')) {
+                    closePlayerPopup();
+                }
+            });
+            document.getElementById('matchupPopup').addEventListener('click', (event) => {
+                if (event.target === document.getElementById('matchupPopup')) {
+                    closeMatchupPopup();
+                }
+            });
+        });
+        function switchView(view) {
+            currentView = view;
+            const buttons = document.querySelectorAll('.view-button');
+            buttons.forEach(button => button.classList.remove('active'));
+            document.querySelector(`.view-button[onclick="switchView('${view}')"]`).classList.add('active');
+            document.getElementById('columnFilter').style.display = (view === 'tournament' || view === 'showdown') ? 'block' : 'none';
+            document.getElementById('extraColumnFilter').style.display = (view === 'tournament' || view === 'showdown') ? 'block' : 'none';
+            document.getElementById('roundFilter').style.display = view === 'showdown' ? 'block' : 'none';
+            document.getElementById('missedCutFilter').style.display = (view === 'tournament' || view === 'showdown') ? 'block' : 'none';
+            document.getElementById('betTypeFilter').style.display = view === 'matchup' ? 'block' : 'none';
+            document.getElementById('sportsbookFilter').style.display = view === 'matchup' ? 'block' : 'none';
+            document.getElementById('player1Filter').style.display = view === 'matchup' ? 'block' : 'none';
+            document.getElementById('player2Filter').style.display = view === 'matchup' ? 'block' : 'none';
+            document.getElementById('correlatedBetsFilter').style.display = view === 'matchup' ? 'block' : 'none';
+            if (view === 'showdown') {
+                document.getElementById('roundDropdown').value = selectedRound;
+            }
+            updateTable();
+        }
+        function scoreToNumber(score) {
+            if (score === 'E') return 0;
+            if (score.startsWith('+')) return parseInt(score.slice(1));
+            if (score.startsWith('-')) return parseInt(score);
+            return parseInt(score) || 0;
+        }
+        function numberToScore(num) {
+            if (num === 0) return 'E';
+            return num > 0 ? `+${num}` : num.toString();
+        }
+        function roundToTwoDecimals(value) {
+            const num = parseFloat(value);
+            return isNaN(num) ? value : num.toFixed(2);
+        }
+        function roundToOneDecimal(value) {
+            const num = parseFloat(value);
+            return isNaN(num) ? value : num.toFixed(1);
+        }
+        function formatTime(timeStr) {
+            if (!timeStr || timeStr.trim() === '-') return '-';
+            const [hours, minutes] = timeStr.split(':').map(Number);
+            if (isNaN(hours) || isNaN(minutes)) return timeStr;
+            const period = hours >= 12 ? 'PM' : 'AM';
+            const hour12 = hours % 12 || 12;
+            return `${hour12}:${minutes.toString().padStart(2, '0')} ${period}`;
+        }
+        function fetchData() {
+            document.getElementById('loading').style.display = 'flex';
+            const timestamp = new Date().getTime();
+            const csvUrl = `https://raw.githubusercontent.com/925Sports/golf/main/tournament-stats.csv?${timestamp}`;
+            fetch(csvUrl, {
+                method: 'GET',
+                cache: 'no-cache',
+                headers: {
+                    'Pragma': 'no-cache',
+                    'Expires': '0'
+                }
+            })
+            .then(response => {
+                if (!response.ok) throw new Error('Network response was not ok');
+                return response.text();
+            })
+            .then(csvText => {
+                Papa.parse(csvText, {
+                    header: true,
+                    complete: function(results) {
+                        rawData = results.data.filter(row =>
+                            row.PLAYER &&
+                            !row.PLAYER.toLowerCase().includes('test') &&
+                            !row.PLAYER.includes('#REF!') &&
+                            row.SALARY &&
+                            parseFloat(row.SALARY.replace(/[\$,]/g, '')) > 0
+                        );
+                        if (rawData.length > 0) {
+                            allColumns = results.meta.fields;
+                            extraColumns = allColumns.filter(col =>
+                                !predefinedColumns.includes(col) &&
+                                !showdownColumns.includes(col) &&
+                                !threeBallColumns.includes(col) &&
+                                col !== 'PLAYER'
+                            );
+                            allExtraColumns = [...extraColumns, ...calculatedColumns];
+                            allowedExtraColumns = allExtraColumns.filter(col =>
+                                specificAllowedExtraColumns.includes(col) || calculatedColumns.includes(col)
+                            );
+                            document.getElementById('designer').textContent = rawData[0]['DESIGNER'] || '-';
+                            document.getElementById('style').textContent = rawData[0]['STYLE'] || '-';
+                            document.getElementById('greens').textContent = rawData[0]['GREENS'] || '-';
+                            document.getElementById('location').textContent = rawData[0]['LOCATION'] || '-';
+                            document.getElementById('scoring').textContent = rawData[0]['SCORING'] || '-';
+                            document.getElementById('weather').textContent = rawData[0]['WEATHER'] || '-';
+                            document.getElementById('round').textContent = rawData[0]['ROUND'] || '-';
+                            document.getElementById('tournament').textContent = rawData[0]['TOURNAMENT'] || '-';
+                            document.getElementById('course').textContent = rawData[0]['COURSE'] || '-';
+                            const currentRound = rawData[0]['ROUND'] || '1';
+                            selectedRound = currentRound;
+                            document.getElementById('roundDropdown').value = selectedRound;
+                            const tournamentName = rawData[0]['TOURNAMENT'] || 'Unknown Tournament';
+                            document.getElementById('leaderboardHeader').textContent = `Golf Leaderboard - ${tournamentName}`;
+                        }
+                        calculateSeasonRanks();
+                        populatePlayerMenu();
+                        populateColumnMenu();
+                        populateExtraColumnMenu();
+                        updateTable();
+                        fetchMatchupData();
+                        document.getElementById('loading').style.display = 'none';
+                    }
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching CSV:', error);
+                document.getElementById('loading').style.display = 'none';
+                document.body.innerHTML += '<p style="text-align:center;color:red;">Failed to load leaderboard data. Please try refreshing the page.</p>';
+            });
+        }
+        function fetchMatchupData() {
+            const timestamp = new Date().getTime();
+            const csvUrl = `https://raw.githubusercontent.com/925Sports/golf/main/matchup-bets.csv?${timestamp}`;
+            fetch(csvUrl, {
+                method: 'GET',
+                cache: 'no-cache',
+                headers: {
+                    'Pragma': 'no-cache',
+                    'Expires': '0'
+                }
+            })
+            .then(response => {
+                if (!response.ok) throw new Error('Network response was not ok');
+                return response.text();
+            })
+            .then(csvText => {
+                Papa.parse(csvText, {
+                    header: true,
+                    complete: function(results) {
+                        matchupData = results.data.map(row => {
+                            if (row['PLAYER 2 PINTS TO WIN (925)'] !== undefined) {
+                                row['PLAYER 2 POINTS TO WIN (925)'] = row['PLAYER 2 PINTS TO WIN (925)'];
+                            }
+                            if (row['PLAYER 2 AVERAGE'] !== undefined) {
+                                row['PLAYER 2 AVERAGE ODDS'] = row['PLAYER 2 AVERAGE'];
+                            }
+                            return row;
+                        });
+                        populateBetTypeMenu();
+                        populateSportsbookMenu();
+                        populatePlayer1Menu();
+                        populatePlayer2Menu();
+                    }
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching matchup CSV:', error);
+            });
+        }
+        function calculateSeasonRanks() {
+            seasonRanks = {};
+            rankedSeasonStats.forEach(stat => {
+                const values = rawData
+                    .filter(row => row[stat] !== undefined && row[stat] !== '' && !isNaN(parseFloat(row[stat])))
+                    .map(row => ({ player: row.PLAYER, value: parseFloat(row[stat]) }));
+                values.sort((a, b) => b.value - a.value);
+                let rank = 1;
+                values.forEach((item, i) => {
+                    if (i > 0 && item.value < values[i - 1].value) {
+                        rank = i + 1;
+                    }
+                    if (!seasonRanks[item.player]) seasonRanks[item.player] = {};
+                    seasonRanks[item.player][stat] = rank;
+                });
+            });
+        }
+        function filterPlayers() {
+            const searchTerm = document.getElementById('playerSearch').value.toLowerCase();
+            const playerMenu = document.getElementById('playerMenu');
+            const labels = playerMenu.querySelectorAll('label:not(:first-child)');
+            labels.forEach(label => {
+                const playerName = label.textContent.toLowerCase();
+                label.style.display = playerName.includes(searchTerm) ? 'flex' : 'none';
+            });
+        }
+        function toggleSelectAll() {
+            const selectAllCheckbox = document.getElementById('selectAllPlayers');
+            const playerCheckboxes = document.getElementById('playerMenu').querySelectorAll('input[type="checkbox"]:not(#selectAllPlayers)');
+            const visibleCheckboxes = Array.from(playerCheckboxes).filter(cb => cb.parentElement.style.display !== 'none');
+            selectedPlayers = selectAllCheckbox.checked ?
+                visibleCheckboxes.map(cb => cb.value) :
+                [];
+            visibleCheckboxes.forEach(cb => cb.checked = selectAllCheckbox.checked);
+            updatePlayerButton();
+            updateTable();
+        }
+        function populatePlayerMenu() {
+            const playerMenu = document.getElementById('playerMenu');
+            playerMenu.innerHTML = `
+                <input type="text" id="playerSearch" placeholder="Search players..." oninput="filterPlayers()">
+                <label><input type="checkbox" id="selectAllPlayers" onchange="toggleSelectAll()"> Select All</label>
+            `;
+            const players = [...new Set(rawData.map(row => row.PLAYER))].sort();
+            players.forEach(player => {
+                const label = document.createElement('label');
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.value = player;
+                checkbox.checked = selectedPlayers.includes(player);
+                checkbox.onchange = () => {
+                    updatePlayerSelection(player, checkbox.checked);
+                    updateSelectAllState();
+                    updateTable();
+                };
+                label.appendChild(checkbox);
+                label.appendChild(document.createTextNode(` ${player}`));
+                playerMenu.appendChild(label);
+            });
+            updatePlayerButton();
+            updateSelectAllState();
+        }
+        function updateSelectAllState() {
+            const selectAllCheckbox = document.getElementById('selectAllPlayers');
+            const playerCheckboxes = document.getElementById('playerMenu').querySelectorAll('input[type="checkbox"]:not(#selectAllPlayers)');
+            const visibleCheckboxes = Array.from(playerCheckboxes).filter(cb => cb.parentElement.style.display !== 'none');
+            const allChecked = visibleCheckboxes.length > 0 && visibleCheckboxes.every(cb => cb.checked);
+            selectAllCheckbox.checked = allChecked;
+        }
+        function updatePlayerSelection(player, isChecked) {
+            if (isChecked) {
+                if (!selectedPlayers.includes(player)) selectedPlayers.push(player);
+            } else {
+                selectedPlayers = selectedPlayers.filter(p => p !== player);
+            }
+            updatePlayerButton();
+        }
+        function updatePlayerButton() {
+            const button = document.getElementById('playerDropdown');
+            button.textContent = selectedPlayers.length ? selectedPlayers.join(', ') : 'Select Players';
+        }
+        function toggleFavorite(player) {
+            if (favoritePlayers.includes(player)) {
+                favoritePlayers = favoritePlayers.filter(p => p !== player);
+            } else {
+                favoritePlayers.push(player);
+            }
+            if (isLocalStorageAvailable) {
+                localStorage.setItem('favoritePlayers', JSON.stringify(favoritePlayers));
+            }
+            updateTable();
+        }
+        function applyFilters() {
+            if (currentView === 'matchup') {
+                let filtered = matchupData;
+                if (selectedBetTypes.length) {
+                    filtered = filtered.filter(row => selectedBetTypes.includes(row['BET TYPE']));
+                }
+                if (selectedSportsbooks.length) {
+                    filtered = filtered.filter(row => selectedSportsbooks.includes(row['SPORTSBOOK']));
+                }
+                if (selectedPlayer1s.length) {
+                    filtered = filtered.filter(row => selectedPlayer1s.includes(row['PLAYER 1']));
+                }
+                if (selectedPlayer2s.length) {
+                    filtered = filtered.filter(row => selectedPlayer2s.includes(row['PLAYER 2']));
+                }
+                if (document.getElementById('showCorrelatedBets').checked) {
+                    filtered = filtered.filter(row => row['CORRELATED BETS'] === '1');
+                }
+                filtered = filtered.filter(row => {
+                    const edge = parseFloat(row['PROJECTED EDGE']);
+                    return !isNaN(edge) && edge > 0;
+                });
+                filtered = filtered.filter(row => {
+                    const p1Win = parseFloat(row['PLAYER 1 WIN %']);
+                    const p2Win = parseFloat(row['PLAYER 2 WIN %']);
+                    return !(p1Win === 0 || p1Win === 1 || p2Win === 0 || p2Win === 1);
+                });
+                pivotedData = filtered;
+            } else {
+                let excludeMissedCut = document.getElementById('excludeMissedCut').checked;
+                let filteredData = rawData.filter(row => {
+                    const csvScore = row['Score'] && row['Score'].trim() !== '' && !row['Score'].includes('#REF!') ? scoreToNumber(row['Score']) : null;
+                    const hasValidScore = csvScore !== null && Number.isInteger(csvScore);
+                    const matchesPlayer = !selectedPlayers.length || selectedPlayers.includes(row.PLAYER);
+                    const isNotMissedCut = !excludeMissedCut || row['THRU'] !== 'CU';
+                    return hasValidScore && matchesPlayer && isNotMissedCut;
+                });
+                if (currentView === '3ball') {
+                    filteredData = filteredData.filter(row => row['Group'] && row['Tee Time'] && row['Matchup Odds']);
+                }
+                pivotedData = filteredData.map(row => {
+                    const playerData = {
+                        PLAYER: row.PLAYER,
+                        SALARY: row.SALARY,
+                        Favorite: favoritePlayers.includes(row.PLAYER),
+                        HEADSHOT: row['HEADSHOT'] || ''
+                    };
+                    Object.keys(row).forEach(key => {
+                        if (key !== 'PLAYER' && key !== 'SALARY' && key !== 'HEADSHOT') {
+                            playerData[key] = row[key] || '-';
+                        }
+                    });
+                    const score = scoreToNumber(row['Score']);
+                    playerData['Score'] = numberToScore(Math.round(score));
+                    playerData['Holes'] = row['Holes'] || '-';
+                    playerData['% Owned'] = roundToOneDecimal(row['% Owned']) || '-';
+                    playerData['VEGAS WIN %'] = roundToOneDecimal(row['VEGAS WIN %']) || '-';
+                    playerData['ODDS'] = roundToOneDecimal(row['ODDS']) ? `${roundToOneDecimal(row['ODDS'])}/1` : '-';
+                    playerData['TEE TIME (LOCAL)'] = formatTime(row['TEE TIME (LOCAL)']) || '-';
+                    playerData['LIVE SG TOTAL'] = roundToTwoDecimals(row['LIVE SG TOTAL'] || '-');
+                    playerData['LIVE SG OT'] = roundToTwoDecimals(row['LIVE SG OT'] || '-');
+                    playerData['LIVE SGT2G'] = roundToTwoDecimals(row['LIVE SGT2G'] || '-');
+                    playerData['LIVE SG AP'] = roundToTwoDecimals(row['LIVE SG AP'] || '-');
+                    playerData['LIVE SG ARG'] = roundToTwoDecimals(row['LIVE SG ARG'] || '-');
+                    playerData['LIVE SG PUTT'] = roundToTwoDecimals(row['LIVE SG PUTT'] || '-');
+                    playerData['LIVE GIRS HIT'] = roundToTwoDecimals(row['LIVE GIRS HIT'] || '-');
+                    playerData['LIVE FAIRWAYS HIT'] = roundToTwoDecimals(row['LIVE FAIRWAYS HIT'] || '-');
+                    playerData['Tee Time'] = formatTime(row['Tee Time']) || '-';
+                    if (playerData['LIVE GIRS HIT'] !== '-' && !isNaN(parseFloat(playerData['LIVE GIRS HIT']))) {
+                        const girCount = parseFloat(playerData['LIVE GIRS HIT']);
+                        playerData['Live GIR'] = ((girCount / 18) * 100).toFixed(1) + '%';
+                        playerData['GIR Percentage'] = (girCount / 18) * 100;
+                    } else {
+                        playerData['Live GIR'] = '-';
+                        playerData['GIR Percentage'] = null;
+                    }
+                    seasonColumns.forEach(stat => {
+                        playerData[stat] = row[stat] ? parseFloat(row[stat]) : null;
+                    });
+                    diffColumns.forEach(liveStat => {
+                        const diffKey = `Difference ${liveStat.replace('LIVE ', '')}`;
+                        let difference;
+                        if (liveStat === 'LIVE GIRS HIT') {
+                            const liveValue = playerData['LIVE GIRS HIT'];
+                            const seasonGir = playerData['Greens in Regulation'];
+                            if (liveValue !== '-' && seasonGir !== null) {
+                                const liveNum = parseFloat(liveValue);
+                                const seasonNum = seasonGir * 18;
+                                difference = (seasonNum - liveNum).toFixed(1);
+                            } else {
+                                difference = '-';
+                            }
+                        } else if (liveStat === 'LIVE FAIRWAYS HIT') {
+                            const liveValue = playerData['LIVE FAIRWAYS HIT'];
+                            const seasonFairway = playerData['Fairway Hit %'];
+                            if (liveValue !== '-' && seasonFairway !== null) {
+                                const liveNum = parseFloat(liveValue);
+                                const seasonNum = seasonFairway * 14;
+                                difference = (seasonNum - liveNum).toFixed(2);
+                            } else {
+                                difference = '-';
+                            }
+                        } else {
+                            const seasonStat = seasonColumns[sgColumns.indexOf(liveStat)];
+                            const liveValue = playerData[liveStat];
+                            const seasonValue = playerData[seasonStat];
+                            if (liveValue !== '-' && seasonValue !== null) {
+                                const liveNum = parseFloat(liveValue);
+                                const seasonNum = seasonValue;
+                                difference = (seasonNum - liveNum).toFixed(2);
+                            } else {
+                                difference = '-';
+                            }
+                        }
+                        playerData[diffKey] = difference;
+                    });
+                    return playerData;
+                });
+                pivotedData.sort((a, b) => {
+                    const aScore = scoreToNumber(a['Score']);
+                    const bScore = scoreToNumber(b['Score']);
+                    if (isNaN(aScore)) return 1;
+                    if (isNaN(bScore)) return -1;
+                    return aScore - bScore;
+                });
+                let currentPlace = 1;
+                let playersAtPlace = 1;
+                pivotedData.forEach((row, index) => {
+                    const currentScore = scoreToNumber(row['Score']);
+                    if (index > 0) {
+                        const prevScore = scoreToNumber(pivotedData[index - 1]['Score']);
+                        if (currentScore > prevScore) {
+                            currentPlace += playersAtPlace;
+                            playersAtPlace = 1;
+                        } else if (currentScore === prevScore) {
+                            playersAtPlace++;
+                        } else {
+                            playersAtPlace = 1;
+                        }
+                    } else {
+                        playersAtPlace = 1;
+                    }
+                    row['Place'] = currentPlace;
+                });
+            }
+        }
+        function renderTable() {
+            const tableHeader = document.getElementById('tableHeader');
+            const tableBody = document.getElementById('tableBody');
+            tableHeader.innerHTML = '';
+            tableBody.innerHTML = '';
+            if (!pivotedData.length) {
+                let colCount = 0;
+                if (currentView === 'tournament' || currentView === 'showdown') {
+                    colCount = fixedColumns.length + (currentView === 'tournament' ? selectedColumns.length + selectedExtraColumns.length : 1 + showdownColumnsByRound[selectedRound].length + selectedExtraColumns.length);
+                } else if (currentView === '3ball') {
+                    colCount = fixedColumns.length + threeBallColumns.length;
+                } else if (currentView === 'matchup') {
+                    colCount = matchupColumns.length;
+                }
+                tableBody.innerHTML = `<tr><td colspan="${colCount}">No data available.</td></tr>`;
+                return;
+            }
+            let displayColumns = [];
+            if (currentView === 'tournament') {
+                displayColumns = [...fixedColumns, ...selectedColumns, ...selectedExtraColumns];
+            } else if (currentView === 'showdown') {
+                selectedRound = document.getElementById('roundDropdown').value;
+                displayColumns = [...fixedColumns, 'ODDS', ...showdownColumnsByRound[selectedRound], ...selectedExtraColumns];
+            } else if (currentView === '3ball') {
+                displayColumns = [...fixedColumns, ...threeBallColumns];
+            } else if (currentView === 'matchup') {
+                displayColumns = matchupColumns;
+            }
+            const liveRanks = {};
+            if (currentView !== 'matchup') {
+                rankedLiveColumns.forEach(col => {
+                    const values = pivotedData
+                        .map(player => ({ player: player.PLAYER, value: parseFloat(player[col]) }))
+                        .filter(item => !isNaN(item.value));
+                    values.sort((a, b) => b.value - a.value);
+                    let rank = 1;
+                    values.forEach((item, i) => {
+                        if (i > 0 && item.value < values[i - 1].value) {
+                            rank = i + 1;
+                        }
+                        liveRanks[item.player] = liveRanks[item.player] || {};
+                        liveRanks[item.player][col] = rank;
+                    });
+                });
+            }
+            const oddsColumns = ['PLAYER 1 ODDS', 'PLAYER 2 ODDS'];
+            const percentColumns = ['PLAYER 1 WIN %', 'PLAYER 2 WIN %', 'PLAYER 1 VEGAS ODDS', 'PLAYER 2 VEGAS ODDS', 'PLAYER 1 AVERAGE ODDS', 'PLAYER 2 AVERAGE ODDS'];
+            const edgeColumns = ['PROJECTED EDGE', 'SPORTSBOOK EDGE'];
+            displayColumns.forEach(col => {
+                const th = document.createElement('th');
+                th.textContent = col;
+                if (col === sortColumn) th.classList.add(sortDirection);
+                if (currentView === 'matchup') {
+                    th.classList.add('small-header');
+                }
+                if (currentView !== 'matchup' && col === 'Favorite') th.classList.add('sticky', 'favorite');
+                if (currentView !== 'matchup' && col === 'PLAYER') th.classList.add('sticky', 'player');
+                if (col === 'SALARY') th.classList.add('salary');
+                if (rankedLiveColumns.includes(col) || col === 'Live GIR' || col.startsWith('Difference ')) th.classList.add('sg-column');
+                th.onclick = () => sortTable(col);
+                tableHeader.appendChild(th);
+            });
+            const sortedData = [...pivotedData].sort((a, b) => {
+                if (!sortColumn) return 0;
+                const aValue = a[sortColumn] || '';
+                const bValue = b[sortColumn] || '';
+                const isNumeric = ['SALARY', 'Place', 'Score', 'LIVE SG TOTAL', 'LIVE SG OT', 'LIVE SGT2G', 'LIVE SG AP', 'LIVE SG ARG', 'LIVE SG PUTT', 'LIVE GIRS HIT', 'Live GIR', '% Owned', 'VEGAS WIN %', 'RD1Rank', 'RD 2 Ranking', 'RD 3 Ranking', 'RD 4 Ranking', 'RD2 Regression', 'RD3 Regression', 'RD4 Regression', 'Win RK Going into RD2', 'Win RK Going into RD3', 'Win RK Going into RD4', 'RD1 PTS', 'RD2 PTS', 'RD3 PTS', 'RD 4 PTS', 'Matchup Odds', ...calculatedColumns, 'PLAYER 1 ODDS', 'PLAYER 2 ODDS', 'PLAYER 1 VEGAS ODDS', 'PLAYER 2 VEGAS ODDS', 'PLAYER 1 AVERAGE ODDS', 'PLAYER 2 AVERAGE ODDS', 'PLAYER 1 POINTS TO WIN (925)', 'PLAYER 2 POINTS TO WIN (925)', 'PLAYER 1 WIN %', 'PLAYER 2 WIN %', 'PROJECTED EDGE', 'SPORTSBOOK EDGE'].includes(sortColumn);
+                if (isNumeric) {
+                    const aNum = getNumericValue(sortColumn, aValue);
+                    const bNum = getNumericValue(sortColumn, bValue);
+                    const aIsNum = !isNaN(aNum);
+                    const bIsNum = !isNaN(bNum);
+                    if (aIsNum && bIsNum) {
+                        return sortDirection === 'asc' ? aNum - bNum : bNum - aNum;
+                    } else if (aIsNum) {
+                        return -1;
+                    } else if (bIsNum) {
+                        return 1;
+                    } else {
+                        return sortDirection === 'asc' ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue);
+                    }
+                } else {
+                    return sortDirection === 'asc' ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue);
+                }
+            });
+            sortedData.forEach((row, index) => {
+                const tr = document.createElement('tr');
+                if (currentView === 'matchup') {
+                    tr.dataset.originalIndex = pivotedData.indexOf(row);
+                } else {
+                    tr.dataset.index = index;
+                    tr.dataset.player = row.PLAYER;
+                }
+                displayColumns.forEach(col => {
+                    const td = document.createElement('td');
+                    if (currentView === 'matchup') {
+                        if (col === 'PLAYER 1 POINTS TO WIN (925)' || col === 'PLAYER 2 POINTS TO WIN (925)') {
+                            const value = parseFloat(row[col]);
+                            td.textContent = isNaN(value) ? '-' : value.toFixed(2);
+                        } else if (oddsColumns.includes(col)) {
+                            td.textContent = row[col];
+                        } else if (percentColumns.includes(col)) {
+                            td.textContent = formatPercent(row[col]);
+                        } else if (edgeColumns.includes(col)) {
+                            const value = parseFloat(row[col]);
+                            const text = isNaN(value) ? '-' : value.toFixed(2) + ' %';
+                            const span = document.createElement('span');
+                            span.textContent = text;
+                            span.classList.add('edge-value');
+                            if (!isNaN(value)) {
+                                const edgeClass = getEdgeClass(value);
+                                span.classList.add(edgeClass);
+                            }
+                            td.appendChild(span);
+                            td.classList.add('edge-cell');
+                        } else {
+                            td.textContent = row[col] || '-';
+                        }
+                    } else if (col === 'Favorite') {
+                        const star = document.createElement('span');
+                        star.className = `favorite-star ${row['Favorite'] ? 'favorited' : ''}`;
+                        star.textContent = row['Favorite'] ? '⭐' : '☆';
+                        star.onclick = (event) => {
+                            event.stopPropagation();
+                            toggleFavorite(row.PLAYER);
+                            star.textContent = favoritePlayers.includes(row.PLAYER) ? '⭐' : '☆';
+                            star.className = `favorite-star ${favoritePlayers.includes(row.PLAYER) ? 'favorited' : ''}`;
+                        };
+                        td.appendChild(star);
+                        td.classList.add('sticky', 'favorite');
+                    } else if (col === 'PLAYER') {
+                        td.classList.add('sticky', 'player');
+                        if (row['HEADSHOT']) {
+                            const img = document.createElement('img');
+                            img.src = row['HEADSHOT'];
+                            img.alt = row['PLAYER'];
+                            img.className = 'player-image';
+                            td.appendChild(img);
+                        }
+                        const nameSpan = document.createElement('span');
+                        nameSpan.className = 'player-name';
+                        nameSpan.textContent = row['PLAYER'] || '-';
+                        td.appendChild(nameSpan);
+                        const infoIcon = document.createElement('span');
+                        infoIcon.className = 'player-info-icon';
+                        infoIcon.textContent = 'ℹ️';
+                        infoIcon.onclick = (event) => {
+                            event.stopPropagation();
+                            currentPlayerIndex = index;
+                            showPlayerPopup(row.PLAYER);
+                        };
+                        td.appendChild(infoIcon);
+                    } else if (rankedLiveColumns.includes(col) || col === 'Live GIR' || col.startsWith('Difference ')) {
+                        const liveValue = row[col] || '-';
+                        const rank = liveRanks[row.PLAYER] ? liveRanks[row.PLAYER][col] : '-';
+                        const liveDiv = document.createElement('div');
+                        liveDiv.className = 'live-stat';
+                        liveDiv.textContent = liveValue !== '-' ? `${liveValue} (${rank})` : '-';
+                        if (col === 'Live GIR' && row['GIR Percentage'] !== null) {
+                            const girPercent = row['GIR Percentage'];
+                            if (girPercent > 70) liveDiv.classList.add('sg-positive');
+                            else if (girPercent >= 60) liveDiv.classList.add('sg-neutral');
+                            else liveDiv.classList.add('sg-negative');
+                        } else if (sgColumns.includes(col) && liveValue !== '-') {
+                            const liveNum = parseFloat(liveValue);
+                            if (liveNum > 0.5) liveDiv.classList.add('sg-positive');
+                            else if (liveNum >= -0.5 && liveNum <= 0.5) liveDiv.classList.add('sg-neutral');
+                            else if (liveNum < -0.5) liveDiv.classList.add('sg-negative');
+                        } else if (col.startsWith('Difference ') && liveValue !== '-') {
+                            const diffNum = parseFloat(liveValue);
+                            if (diffNum < -0.5) liveDiv.classList.add('sg-positive');
+                            else if (diffNum > 0.5) liveDiv.classList.add('sg-negative');
+                            else liveDiv.classList.add('sg-neutral');
+                        }
+                        td.appendChild(liveDiv);
+                        td.classList.add('sg-column');
+                    } else {
+                        td.textContent = row[col] || '-';
+                        if (col === 'SALARY') td.classList.add('salary');
+                        if (col === 'Tee Time') td.textContent = formatTime(row[col]) || '-';
+                    }
+                    tr.appendChild(td);
+                });
+                tableBody.appendChild(tr);
+            });
+        }
+        function showMatchupPopup(row) {
+            document.getElementById('popupPlayer1Name').textContent = row['PLAYER 1'];
+            document.getElementById('popupPlayer1Odds').textContent = `Odds: ${row['PLAYER 1 ODDS']}`;
+            document.getElementById('popupSportsbook').textContent = `Sportsbook: ${row['SPORTSBOOK']}`;
+            document.getElementById('popupProjectedEdge').textContent = `Projected Edge: ${formatPercent(row['PROJECTED EDGE'], true)}`;
+            document.getElementById('popupSportsbookEdge').textContent = `Sportsbook Edge: ${formatPercent(row['SPORTSBOOK EDGE'], true)}`;
+            document.getElementById('popupBetType').textContent = `Bet Type: ${row['BET TYPE']}`;
+            document.getElementById('popupPlayer2Name').textContent = row['PLAYER 2'];
+            document.getElementById('popupPlayer2Odds').textContent = `Odds: ${row['PLAYER 2 ODDS']}`;
+            const ctx = document.getElementById('matchupChart').getContext('2d');
+            if (matchupChart) {
+                matchupChart.destroy();
+            }
+            const player1Vegas = parseFloat(row['PLAYER 1 VEGAS ODDS']) * 100 || 0;
+            const player2Vegas = parseFloat(row['PLAYER 2 VEGAS ODDS']) * 100 || 0;
+            const player1Average = parseFloat(row['PLAYER 1 AVERAGE ODDS']) * 100 || 0;
+            const player2Average = parseFloat(row['PLAYER 2 AVERAGE ODDS']) * 100 || 0;
+            const player1Win = parseFloat(row['PLAYER 1 WIN %']) * 100 || 0;
+            const player2Win = parseFloat(row['PLAYER 2 WIN %']) * 100 || 0;
+            matchupChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['VEGAS ODDS', 'AVERAGE ODDS', 'WIN %'],
+                    datasets: [
+                        {
+                            label: row['PLAYER 1'],
+                            data: [player1Vegas, player1Average, player1Win],
+                            backgroundColor: 'rgba(75, 192, 192, 0.6)',
+                        },
+                        {
+                            label: row['PLAYER 2'],
+                            data: [player2Vegas, player2Average, player2Win],
+                            backgroundColor: 'rgba(255, 99, 132, 0.6)',
+                        }
+                    ]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: function(value) {
+                                    return value + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+            document.getElementById('matchupPopup').style.display = 'block';
+        }
+        function closeMatchupPopup() {
+            document.getElementById('matchupPopup').style.display = 'none';
+            if (matchupChart) {
+                matchupChart.destroy();
+                matchupChart = null;
+            }
+        }
+        function toggleRowExpansion(tr) {
+            if (currentView !== 'tournament') return;
+            const player = tr.dataset.player;
+            const playerData = pivotedData.find(p => p.PLAYER === player);
+            if (tr.nextElementSibling && tr.nextElementSibling.classList.contains('expanded-row')) {
+                while (tr.nextElementSibling && tr.nextElementSibling.classList.contains('expanded-row')) {
+                    tr.nextElementSibling.remove();
+                }
+            } else {
+                const seasonRow = document.createElement('tr');
+                seasonRow.classList.add('expanded-row');
+                columns.forEach(col => {
+                    const td = document.createElement('td');
+                    if (col === 'Favorite') {
+                        td.classList.add('sticky', 'favorite');
+                    } else if (col === 'PLAYER') {
+                        td.classList.add('sticky', 'player');
+                        td.textContent = 'Season Long Stats';
+                    } else if (col === 'SALARY') {
+                        td.classList.add('salary');
+                    } else if (expandedColumns.includes(col)) {
+                        td.classList.add('sg-column');
+                        if (col === 'LIVE GIRS HIT') {
+                            const girPercent = playerData['Greens in Regulation'];
+                            const value = girPercent !== null ? (girPercent * 18).toFixed(1) : '-';
+                            const rank = seasonRanks[player] && seasonRanks[player]['Greens in Regulation'] !== undefined ? seasonRanks[player]['Greens in Regulation'] : '-';
+                            const seasonDiv = document.createElement('div');
+                            seasonDiv.className = 'live-stat';
+                            seasonDiv.textContent = value !== '-' ? `${value} (${rank})` : '-';
+                            td.appendChild(seasonDiv);
+                        } else if (col === 'LIVE FAIRWAYS HIT') {
+                            const fairwayHitPercent = playerData['Fairway Hit %'];
+                            const value = fairwayHitPercent !== null ? (fairwayHitPercent * 14).toFixed(2) : '-';
+                            const rank = seasonRanks[player] && seasonRanks[player]['Fairway Hit %'] !== undefined ? seasonRanks[player]['Fairway Hit %'] : '-';
+                            const seasonDiv = document.createElement('div');
+                            seasonDiv.className = 'live-stat';
+                            seasonDiv.textContent = value !== '-' ? `${value} (${rank})` : '-';
+                            td.appendChild(seasonDiv);
+                        } else {
+                            const seasonStat = seasonColumns[sgColumns.indexOf(col)];
+                            const value = playerData[seasonStat] !== null ? playerData[seasonStat].toFixed(2) : '-';
+                            const seasonDiv = document.createElement('div');
+                            seasonDiv.className = 'live-stat';
+                            if (value !== '-') {
+                                const rank = seasonRanks[player] && seasonRanks[player][seasonStat] !== undefined ? seasonRanks[player][seasonStat] : '-';
+                                seasonDiv.textContent = `${value} (${rank})`;
+                                const seasonNum = parseFloat(value);
+                                if (seasonNum > 0.5) seasonDiv.classList.add('sg-positive');
+                                else if (seasonNum >= -0.5 && seasonNum <= 0.5) seasonDiv.classList.add('sg-neutral');
+                                else if (seasonNum < -0.5) seasonDiv.classList.add('sg-negative');
+                            } else {
+                                seasonDiv.textContent = '-';
+                            }
+                            td.appendChild(seasonDiv);
+                        }
+                    } else {
+                        td.textContent = '';
+                    }
+                    seasonRow.appendChild(td);
+                });
+                const diffRow = document.createElement('tr');
+                diffRow.classList.add('expanded-row');
+                columns.forEach(col => {
+                    const td = document.createElement('td');
+                    if (col === 'Favorite') {
+                        td.classList.add('sticky', 'favorite');
+                    } else if (col === 'PLAYER') {
+                        td.classList.add('sticky', 'player');
+                        td.textContent = 'Difference';
+                    } else if (col === 'SALARY') {
+                        td.classList.add('salary');
+                    } else if (expandedColumns.includes(col)) {
+                        td.classList.add('sg-column');
+                        if (col === 'LIVE GIRS HIT') {
+                            const liveValue = playerData['LIVE GIRS HIT'];
+                            const girPercent = playerData['Greens in Regulation'];
+                            let difference;
+                            if (liveValue === '-' || girPercent === null) {
+                                difference = '-';
+                            } else {
+                                const liveNum = parseFloat(liveValue);
+                                const seasonNum = girPercent * 18;
+                                difference = (seasonNum - liveNum).toFixed(1);
+                            }
+                            const diffDiv = document.createElement('div');
+                            diffDiv.className = 'live-stat';
+                            diffDiv.textContent = difference;
+                            td.appendChild(diffDiv);
+                        } else if (col === 'LIVE FAIRWAYS HIT') {
+                            const liveValue = playerData['LIVE FAIRWAYS HIT'];
+                            const fairwayHitPercent = playerData['Fairway Hit %'];
+                            let difference;
+                            if (liveValue === '-' || fairwayHitPercent === null) {
+                                difference = '-';
+                            } else {
+                                const liveNum = parseFloat(liveValue);
+                                const seasonNum = fairwayHitPercent * 14;
+                                difference = (seasonNum - liveNum).toFixed(2);
+                            }
+                            const diffDiv = document.createElement('div');
+                            diffDiv.className = 'live-stat';
+                            diffDiv.textContent = difference;
+                            if (difference !== '-') {
+                                const diffNum = parseFloat(difference);
+                                if (diffNum > 0.5) diffDiv.classList.add('sg-positive');
+                                else if (diffNum >= -0.5 && diffNum <= 0.5) diffDiv.classList.add('sg-neutral');
+                                else if (diffNum < -0.5) diffDiv.classList.add('sg-negative');
+                            }
+                            td.appendChild(diffDiv);
+                        } else {
+                            const liveValue = playerData[col];
+                            const seasonStat = seasonColumns[sgColumns.indexOf(col)];
+                            const seasonValue = playerData[seasonStat];
+                            let difference;
+                            if (liveValue === '-' || seasonValue === null) {
+                                difference = '-';
+                            } else {
+                                const liveNum = parseFloat(liveValue);
+                                const seasonNum = seasonValue;
+                                difference = (seasonNum - liveNum).toFixed(2);
+                            }
+                            const diffDiv = document.createElement('div');
+                            diffDiv.className = 'live-stat';
+                            diffDiv.textContent = difference;
+                            if (difference !== '-') {
+                                const diffNum = parseFloat(difference);
+                                if (diffNum > 0.5) diffDiv.classList.add('sg-positive');
+                                else if (diffNum >= -0.5 && diffNum <= 0.5) diffDiv.classList.add('sg-neutral');
+                                else if (diffNum < -0.5) diffDiv.classList.add('sg-negative');
+                            }
+                            td.appendChild(diffDiv);
+                        }
+                    } else {
+                        td.textContent = '';
+                    }
+                    diffRow.appendChild(td);
+                });
+                tr.insertAdjacentElement('afterend', seasonRow);
+                seasonRow.insertAdjacentElement('afterend', diffRow);
+            }
+        }
+        function sortTable(column) {
+            if (sortColumn === column) {
+                sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+            } else {
+                sortColumn = column;
+                sortDirection = 'asc';
+            }
+            renderTable();
+        }
+        function updateTable() {
+            applyFilters();
+            renderTable();
+        }
+        function populateColumnMenu() {
+            const columnMenu = document.getElementById('columnMenu');
+            columnMenu.innerHTML = '';
+            const selectAllLabel = document.createElement('label');
+            const selectAllCheckbox = document.createElement('input');
+            selectAllCheckbox.type = 'checkbox';
+            selectAllCheckbox.id = 'selectAllColumns';
+            selectAllCheckbox.onchange = toggleSelectAllColumns;
+            selectAllLabel.appendChild(selectAllCheckbox);
+            selectAllLabel.appendChild(document.createTextNode(' Select All'));
+            columnMenu.appendChild(selectAllLabel);
+            const checkedColumns = predefinedColumns.filter(col => selectedColumns.includes(col));
+            const uncheckedColumns = predefinedColumns.filter(col => !selectedColumns.includes(col));
+            checkedColumns.forEach(col => {
+                const label = createColumnLabel(col, 'standard');
+                columnMenu.appendChild(label);
+            });
+            uncheckedColumns.forEach(col => {
+                const label = createColumnLabel(col, 'standard');
+                columnMenu.appendChild(label);
+            });
+            updateSelectAllColumnsState();
+        }
+        function populateExtraColumnMenu() {
+            const extraColumnMenu = document.getElementById('extraColumnMenu');
+            extraColumnMenu.innerHTML = '';
+            const selectAllLabel = document.createElement('label');
+            const selectAllCheckbox = document.createElement('input');
+            selectAllCheckbox.type = 'checkbox';
+            selectAllCheckbox.id = 'selectAllExtraColumns';
+            selectAllCheckbox.onchange = toggleSelectAllExtraColumns;
+            selectAllLabel.appendChild(selectAllCheckbox);
+            selectAllLabel.appendChild(document.createTextNode(' Select All'));
+            extraColumnMenu.appendChild(selectAllLabel);
+            const checkedExtraColumns = allowedExtraColumns.filter(col => selectedExtraColumns.includes(col));
+            const uncheckedExtraColumns = allowedExtraColumns.filter(col => !selectedExtraColumns.includes(col));
+            checkedExtraColumns.forEach(col => {
+                const label = createColumnLabel(col, 'extra');
+                extraColumnMenu.appendChild(label);
+            });
+            uncheckedExtraColumns.forEach(col => {
+                const label = createColumnLabel(col, 'extra');
+                extraColumnMenu.appendChild(label);
+            });
+            updateSelectAllExtraColumnsState();
+        }
+        function createColumnLabel(col, type) {
+            const label = document.createElement('label');
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.value = col;
+            checkbox.checked = type === 'standard' ? selectedColumns.includes(col) : selectedExtraColumns.includes(col);
+            checkbox.onchange = () => {
+                if (type === 'standard') {
+                    if (checkbox.checked) {
+                        if (!selectedColumns.includes(col)) selectedColumns.push(col);
+                    } else {
+                        selectedColumns = selectedColumns.filter(c => c !== col);
+                    }
+                } else if (type === 'extra') {
+                    if (checkbox.checked) {
+                        if (!selectedExtraColumns.includes(col)) selectedExtraColumns.push(col);
+                    } else {
+                        selectedExtraColumns = selectedExtraColumns.filter(c => c !== col);
+                    }
+                }
+                updateTable();
+                if (type === 'standard') populateColumnMenu();
+                else populateExtraColumnMenu();
+            };
+            label.appendChild(checkbox);
+            label.appendChild(document.createTextNode(` ${col}`));
+            return label;
+        }
+        function toggleSelectAllColumns() {
+            const selectAllCheckbox = document.getElementById('selectAllColumns');
+            const columnCheckboxes = document.getElementById('columnMenu').querySelectorAll('input[type="checkbox"]:not(#selectAllColumns)');
+            selectedColumns = selectAllCheckbox.checked ? predefinedColumns : [];
+            columnCheckboxes.forEach(cb => cb.checked = selectAllCheckbox.checked);
+            updateTable();
+            populateColumnMenu();
+        }
+        function toggleSelectAllExtraColumns() {
+            const selectAllCheckbox = document.getElementById('selectAllExtraColumns');
+            const extraColumnCheckboxes = document.getElementById('extraColumnMenu').querySelectorAll('input[type="checkbox"]:not(#selectAllExtraColumns)');
+            selectedExtraColumns = selectAllCheckbox.checked ? allowedExtraColumns : [];
+            extraColumnCheckboxes.forEach(cb => cb.checked = selectAllCheckbox.checked);
+            updateTable();
+            populateExtraColumnMenu();
+        }
+        function updateSelectAllColumnsState() {
+            const selectAllCheckbox = document.getElementById('selectAllColumns');
+            const columnCheckboxes = document.getElementById('columnMenu').querySelectorAll('input[type="checkbox"]:not(#selectAllColumns)');
+            const allChecked = Array.from(columnCheckboxes).every(cb => cb.checked);
+            selectAllCheckbox.checked = allChecked;
+        }
+        function updateSelectAllExtraColumnsState() {
+            const selectAllCheckbox = document.getElementById('selectAllExtraColumns');
+            const extraColumnCheckboxes = document.getElementById('extraColumnMenu').querySelectorAll('input[type="checkbox"]:not(#selectAllExtraColumns)');
+            const allChecked = Array.from(extraColumnCheckboxes).every(cb => cb.checked);
+            selectAllCheckbox.checked = allChecked;
+        }
+        function showPlayerPopup(playerName) {
+            if (currentView === 'matchup') return;
+            const playerData = pivotedData.find(p => p.PLAYER === playerName);
+            document.getElementById('popupPlayerName').textContent = playerName;
+            const playerImage = document.getElementById('popupPlayerImage');
+            if (playerData['HEADSHOT']) {
+                playerImage.src = playerData['HEADSHOT'];
+                playerImage.style.display = 'block';
+            } else {
+                playerImage.style.display = 'none';
+            }
+            const favoriteStar = document.getElementById('popupFavoriteStar');
+            favoriteStar.textContent = playerData['Favorite'] ? '⭐' : '☆';
+            favoriteStar.className = `favorite-star ${playerData['Favorite'] ? 'favorited' : ''}`;
+            const statsContainer = document.getElementById('popupStats');
+            statsContainer.innerHTML = '';
+            let stats = ['Score', 'Place', 'Holes', '% Owned'];
+            stats.forEach(stat => {
+                const statItem = document.createElement('div');
+                statItem.className = 'popup-stat-item';
+                let value = playerData[stat] || '-';
+                statItem.innerHTML = `<div class="popup-stat-label">${stat}</div><div class="popup-stat-value">${value}</div>`;
+                statsContainer.appendChild(statItem);
+            });
+            const tabsContainer = document.getElementById('popupTabs');
+            const chartContainer = document.getElementById('popupChart').parentElement;
+            tabsContainer.style.display = 'flex';
+            chartContainer.style.display = 'block';
+            const tabs = document.querySelectorAll('.popup-tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+                if (tab.dataset.tab === currentTab) {
+                    tab.classList.add('active');
+                }
+                tab.onclick = () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    currentTab = tab.dataset.tab;
+                    updateChart(playerName);
+                };
+            });
+            updateChart(playerName);
+            document.getElementById('playerPopup').classList.add('show');
+            document.getElementById('playerPopup').style.display = 'block';
+        }
+        function updateChart(playerName) {
+            const playerData = pivotedData.find(p => p.PLAYER === playerName);
+            if (playerChart) {
+                playerChart.destroy();
+            }
+            const ctx = document.getElementById('popupChart').getContext('2d');
+            const index = categories.indexOf(currentTab);
+            if (index === -1) {
+                console.error('Invalid category:', currentTab);
+                return;
+            }
+            const liveStat = sgColumns[index];
+            const seasonStat = seasonColumns[index];
+            const liveValue = playerData[liveStat] && playerData[liveStat] !== '-' ? parseFloat(playerData[liveStat]) : null;
+            const seasonValue = playerData[seasonStat] !== null ? playerData[seasonStat] : null;
+            const difference = (liveValue !== null && seasonValue !== null) ? (seasonValue - liveValue) : null;
+            const rootStyles = getComputedStyle(document.body);
+            const sgPositive = rootStyles.getPropertyValue('--sg-positive').trim();
+            const sgNeutral = rootStyles.getPropertyValue('--sg-neutral').trim();
+            const sgNegative = rootStyles.getPropertyValue('--sg-negative').trim();
+            const nullColor = '#9E9E9E';
+            function getColor(val) {
+                if (val === null) return nullColor;
+                if (val >= 1) return sgPositive;
+                if (val >= -0.9 && val <= 0.9) return sgNeutral;
+                if (val <= -1) return sgNegative;
+                return sgNeutral;
+            }
+            const data = [liveValue, seasonValue, difference];
+            const backgroundColors = data.map(val => getColor(val));
+            const textColor = document.body.getAttribute('data-theme') === 'light' ? '#1e293b' : '#e2e8f0';
+            playerChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Live', 'Season', 'Difference'],
+                    datasets: [{
+                        label: `${currentTab} Strokes Gained`,
+                        data: data,
+                        backgroundColor: backgroundColors
+                    }]
+                },
+                options: {
+                    layout: {
+                        padding: {
+                            top: 20,
+                            bottom: 20
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            title: {
+                                display: true,
+                                text: 'Strokes Gained'
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Type'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        title: {
+                            display: true,
+                            text: `${currentTab} Strokes Gained`
+                        },
+                        datalabels: {
+                            color: textColor,
+                            anchor: 'end',
+                            align: function(context) {
+                                return context.dataset.data[context.dataIndex] >= 0 ? 'top' : 'bottom';
+                            },
+                            offset: 4,
+                            font: {
+                                size: 12,
+                                weight: 'bold'
+                            },
+                            formatter: function(value, context) {
+                                return value !== null ? value.toFixed(2) : '-';
+                            }
+                        }
+                    },
+                },
+                plugins: [ChartDataLabels]
+            });
+        }
+        function toggleFavoriteFromPopup() {
+            const playerName = document.getElementById('popupPlayerName').textContent;
+            toggleFavorite(playerName);
+            const favoriteStar = document.getElementById('popupFavoriteStar');
+            favoriteStar.textContent = favoritePlayers.includes(playerName) ? '⭐' : '☆';
+            favoriteStar.className = `favorite-star ${favoritePlayers.includes(playerName) ? 'favorited' : ''}`;
+        }
+        function navigatePlayer(direction) {
+            if (currentView === 'matchup') return;
+            const totalPlayers = pivotedData.length;
+            if (direction === 'next') {
+                currentPlayerIndex = (currentPlayerIndex + 1) % totalPlayers;
+            } else if (direction === 'prev') {
+                currentPlayerIndex = (currentPlayerIndex - 1 + totalPlayers) % totalPlayers;
+            }
+            const playerName = pivotedData[currentPlayerIndex].PLAYER;
+            showPlayerPopup(playerName);
+        }
+        function closePlayerPopup() {
+            document.getElementById('playerPopup').classList.remove('show');
+            document.getElementById('playerPopup').style.display = 'none';
+            if (playerChart) {
+                playerChart.destroy();
+                playerChart = null;
+            }
+        }
+        function populateBetTypeMenu() {
+            const betTypes = [...new Set(matchupData.map(row => row['BET TYPE']))].sort();
+            const betTypeMenu = document.getElementById('betTypeMenu');
+            betTypeMenu.innerHTML = `
+                <input type="text" id="betTypeSearch" placeholder="Search bet types..." oninput="filterBetTypes()">
+                <label><input type="checkbox" id="selectAllBetTypes" onchange="toggleSelectAllBetTypes()"> Select All</label>
+            `;
+            betTypes.forEach(betType => {
+                const label = document.createElement('label');
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.value = betType;
+                checkbox.checked = selectedBetTypes.includes(betType);
+                checkbox.onchange = () => {
+                    updateBetTypeSelection(betType, checkbox.checked);
+                    updateSelectAllBetTypesState();
+                    updateTable();
+                };
+                label.appendChild(checkbox);
+                label.appendChild(document.createTextNode(` ${betType}`));
+                betTypeMenu.appendChild(label);
+            });
+            updateSelectAllBetTypesState();
+        }
+        function filterBetTypes() {
+            const searchTerm = document.getElementById('betTypeSearch').value.toLowerCase();
+            const betTypeMenu = document.getElementById('betTypeMenu');
+            const labels = betTypeMenu.querySelectorAll('label:not(:first-child)');
+            labels.forEach(label => {
+                const betType = label.textContent.toLowerCase();
+                label.style.display = betType.includes(searchTerm) ? 'flex' : 'none';
+            });
+        }
+        function toggleSelectAllBetTypes() {
+            const selectAllCheckbox = document.getElementById('selectAllBetTypes');
+            const betTypeCheckboxes = document.getElementById('betTypeMenu').querySelectorAll('input[type="checkbox"]:not(#selectAllBetTypes)');
+            const visibleCheckboxes = Array.from(betTypeCheckboxes).filter(cb => cb.parentElement.style.display !== 'none');
+            selectedBetTypes = selectAllCheckbox.checked ?
+                visibleCheckboxes.map(cb => cb.value) :
+                [];
+            visibleCheckboxes.forEach(cb => cb.checked = selectAllCheckbox.checked);
+            updateTable();
+        }
+        function updateBetTypeSelection(betType, isChecked) {
+            if (isChecked) {
+                if (!selectedBetTypes.includes(betType)) selectedBetTypes.push(betType);
+            } else {
+                selectedBetTypes = selectedBetTypes.filter(b => b !== betType);
+            }
+        }
+        function updateSelectAllBetTypesState() {
+            const selectAllCheckbox = document.getElementById('selectAllBetTypes');
+            const betTypeCheckboxes = document.getElementById('betTypeMenu').querySelectorAll('input[type="checkbox"]:not(#selectAllBetTypes)');
+            const visibleCheckboxes = Array.from(betTypeCheckboxes).filter(cb => cb.parentElement.style.display !== 'none');
+            const allChecked = visibleCheckboxes.length > 0 && visibleCheckboxes.every(cb => cb.checked);
+            selectAllCheckbox.checked = allChecked;
+        }
+        function populateSportsbookMenu() {
+            const sportsbooks = [...new Set(matchupData.map(row => row['SPORTSBOOK']))].sort();
+            const sportsbookMenu = document.getElementById('sportsbookMenu');
+            sportsbookMenu.innerHTML = `
+                <input type="text" id="sportsbookSearch" placeholder="Search sportsbooks..." oninput="filterSportsbooks()">
+                <label><input type="checkbox" id="selectAllSportsbooks" onchange="toggleSelectAllSportsbooks()"> Select All</label>
+            `;
+            sportsbooks.forEach(sportsbook => {
+                const label = document.createElement('label');
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.value = sportsbook;
+                checkbox.checked = selectedSportsbooks.includes(sportsbook);
+                checkbox.onchange = () => {
+                    updateSportsbookSelection(sportsbook, checkbox.checked);
+                    updateSelectAllSportsbooksState();
+                    updateTable();
+                };
+                label.appendChild(checkbox);
+                label.appendChild(document.createTextNode(` ${sportsbook}`));
+                sportsbookMenu.appendChild(label);
+            });
+            updateSelectAllSportsbooksState();
+        }
+        function filterSportsbooks() {
+            const searchTerm = document.getElementById('sportsbookSearch').value.toLowerCase();
+            const sportsbookMenu = document.getElementById('sportsbookMenu');
+            const labels = sportsbookMenu.querySelectorAll('label:not(:first-child)');
+            labels.forEach(label => {
+                const sportsbook = label.textContent.toLowerCase();
+                label.style.display = sportsbook.includes(searchTerm) ? 'flex' : 'none';
+            });
+        }
+        function toggleSelectAllSportsbooks() {
+            const selectAllCheckbox = document.getElementById('selectAllSportsbooks');
+            const sportsbookCheckboxes = document.getElementById('sportsbookMenu').querySelectorAll('input[type="checkbox"]:not(#selectAllSportsbooks)');
+            const visibleCheckboxes = Array.from(sportsbookCheckboxes).filter(cb => cb.parentElement.style.display !== 'none');
+            selectedSportsbooks = selectAllCheckbox.checked ?
+                visibleCheckboxes.map(cb => cb.value) :
+                [];
+            visibleCheckboxes.forEach(cb => cb.checked = selectAllCheckbox.checked);
+            updateTable();
+        }
+        function updateSportsbookSelection(sportsbook, isChecked) {
+            if (isChecked) {
+                if (!selectedSportsbooks.includes(sportsbook)) selectedSportsbooks.push(sportsbook);
+            } else {
+                selectedSportsbooks = selectedSportsbooks.filter(s => s !== sportsbook);
+            }
+        }
+        function updateSelectAllSportsbooksState() {
+            const selectAllCheckbox = document.getElementById('selectAllSportsbooks');
+            const sportsbookCheckboxes = document.getElementById('sportsbookMenu').querySelectorAll('input[type="checkbox"]:not(#selectAllSportsbooks)');
+            const visibleCheckboxes = Array.from(sportsbookCheckboxes).filter(cb => cb.parentElement.style.display !== 'none');
+            const allChecked = visibleCheckboxes.length > 0 && visibleCheckboxes.every(cb => cb.checked);
+            selectAllCheckbox.checked = allChecked;
+        }
+        function populatePlayer1Menu() {
+            const player1s = [...new Set(matchupData.map(row => row['PLAYER 1']))].sort();
+            const player1Menu = document.getElementById('player1Menu');
+            player1Menu.innerHTML = `
+                <input type="text" id="player1Search" placeholder="Search player 1..." oninput="filterPlayer1()">
+                <label><input type="checkbox" id="selectAllPlayer1" onchange="toggleSelectAllPlayer1()"> Select All</label>
+            `;
+            player1s.forEach(player => {
+                const label = document.createElement('label');
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.value = player;
+                checkbox.checked = selectedPlayer1s.includes(player);
+                checkbox.onchange = () => {
+                    updatePlayer1Selection(player, checkbox.checked);
+                    updateSelectAllPlayer1State();
+                    updateTable();
+                };
+                label.appendChild(checkbox);
+                label.appendChild(document.createTextNode(` ${player}`));
+                player1Menu.appendChild(label);
+            });
+            updateSelectAllPlayer1State();
+        }
+        function filterPlayer1() {
+            const searchTerm = document.getElementById('player1Search').value.toLowerCase();
+            const player1Menu = document.getElementById('player1Menu');
+            const labels = player1Menu.querySelectorAll('label:not(:first-child)');
+            labels.forEach(label => {
+                const player = label.textContent.toLowerCase();
+                label.style.display = player.includes(searchTerm) ? 'flex' : 'none';
+            });
+        }
+        function toggleSelectAllPlayer1() {
+            const selectAllCheckbox = document.getElementById('selectAllPlayer1');
+            const player1Checkboxes = document.getElementById('player1Menu').querySelectorAll('input[type="checkbox"]:not(#selectAllPlayer1)');
+            const visibleCheckboxes = Array.from(player1Checkboxes).filter(cb => cb.parentElement.style.display !== 'none');
+            selectedPlayer1s = selectAllCheckbox.checked ?
+                visibleCheckboxes.map(cb => cb.value) :
+                [];
+            visibleCheckboxes.forEach(cb => cb.checked = selectAllCheckbox.checked);
+            updateTable();
+        }
+        function updatePlayer1Selection(player, isChecked) {
+            if (isChecked) {
+                if (!selectedPlayer1s.includes(player)) selectedPlayer1s.push(player);
+            } else {
+                selectedPlayer1s = selectedPlayer1s.filter(p => p !== player);
+            }
+        }
+        function updateSelectAllPlayer1State() {
+            const selectAllCheckbox = document.getElementById('selectAllPlayer1');
+            const player1Checkboxes = document.getElementById('player1Menu').querySelectorAll('input[type="checkbox"]:not(#selectAllPlayer1)');
+            const visibleCheckboxes = Array.from(player1Checkboxes).filter(cb => cb.parentElement.style.display !== 'none');
+            const allChecked = visibleCheckboxes.length > 0 && visibleCheckboxes.every(cb => cb.checked);
+            selectAllCheckbox.checked = allChecked;
+        }
+        function populatePlayer2Menu() {
+            const player2s = [...new Set(matchupData.map(row => row['PLAYER 2']))].sort();
+            const player2Menu = document.getElementById('player2Menu');
+            player2Menu.innerHTML = `
+                <input type="text" id="player2Search" placeholder="Search player 2..." oninput="filterPlayer2()">
+                <label><input type="checkbox" id="selectAllPlayer2" onchange="toggleSelectAllPlayer2()"> Select All</label>
+            `;
+            player2s.forEach(player => {
+                const label = document.createElement('label');
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.value = player;
+                checkbox.checked = selectedPlayer2s.includes(player);
+                checkbox.onchange = () => {
+                    updatePlayer2Selection(player, checkbox.checked);
+                    updateSelectAllPlayer2State();
+                    updateTable();
+                };
+                label.appendChild(checkbox);
+                label.appendChild(document.createTextNode(` ${player}`));
+                player2Menu.appendChild(label);
+            });
+            updateSelectAllPlayer2State();
+        }
+        function filterPlayer2() {
+            const searchTerm = document.getElementById('player2Search').value.toLowerCase();
+            const player2Menu = document.getElementById('player2Menu');
+            const labels = player2Menu.querySelectorAll('label:not(:first-child)');
+            labels.forEach(label => {
+                const player = label.textContent.toLowerCase();
+                label.style.display = player.includes(searchTerm) ? 'flex' : 'none';
+            });
+        }
+        function toggleSelectAllPlayer2() {
+            const selectAllCheckbox = document.getElementById('selectAllPlayer2');
+            const player2Checkboxes = document.getElementById('player2Menu').querySelectorAll('input[type="checkbox"]:not(#selectAllPlayer2)');
+            const visibleCheckboxes = Array.from(player2Checkboxes).filter(cb => cb.parentElement.style.display !== 'none');
+            selectedPlayer2s = selectAllCheckbox.checked ?
+                visibleCheckboxes.map(cb => cb.value) :
+                [];
+            visibleCheckboxes.forEach(cb => cb.checked = selectAllCheckbox.checked);
+            updateTable();
+        }
+        function updatePlayer2Selection(player, isChecked) {
+            if (isChecked) {
+                if (!selectedPlayer2s.includes(player)) selectedPlayer2s.push(player);
+            } else {
+                selectedPlayer2s = selectedPlayer2s.filter(p => p !== player);
+            }
+        }
+        function updateSelectAllPlayer2State() {
+            const selectAllCheckbox = document.getElementById('selectAllPlayer2');
+            const player2Checkboxes = document.getElementById('player2Menu').querySelectorAll('input[type="checkbox"]:not(#selectAllPlayer2)');
+            const visibleCheckboxes = Array.from(player2Checkboxes).filter(cb => cb.parentElement.style.display !== 'none');
+            const allChecked = visibleCheckboxes.length > 0 && visibleCheckboxes.every(cb => cb.checked);
+            selectAllCheckbox.checked = allChecked;
+        }
+    </script>
 </body>
 </html>
