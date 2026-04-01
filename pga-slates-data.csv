@@ -1,106 +1,79 @@
 Player Name,Slate-Tournament,Headshot,Player ID,Draftable ID,Tournament,Game Start Time,Salary,Fantasy Points,Ownership,Made Cut,MC,Win,Top 5,Top 10,Top 20,Teetime,Course
-Jon Rahm,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/1173.png,680,42320568,LIV Golf South Africa,3/19/2026,12000,28.5,0,0.5,0.5,,,,,,
-Bryson DeChambeau,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/656.png,467,42320569,LIV Golf South Africa,3/19/2026,11000,26.5,0,0.5,0.5,,,,,,
 Tommy Fleetwood,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/733.png,871,42464033,Valero Texas Open,4/2/2026,10500,113.25,22.92,0.7779,0.2221,1463.2 (0.06),339.4 (0.23),171.0 (0.37),-120.6 (0.55),8:42:36 AM,MP
 Tommy Fleetwood,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/733.png,871,42475490,Valero Texas Open,4/2/2026,10400,60.38,22.92,0.7779,0.2221,1463.2 (0.06),339.4 (0.23),171.0 (0.37),-120.6 (0.55),8:42:36 AM,MP
 Ludvig Aberg,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/452216.png,690516,42475491,Valero Texas Open,4/2/2026,10200,55.23,14.43,0.7742,0.2258,1373.6 (0.07),343.9 (0.23),180.7 (0.36),-97.4 (0.49),1:42:36 PM,MP
-David Puig,Classic: LIV,https://dkn.gs/sports/images/countries/50/spain.png,756216,42320570,LIV Golf South Africa,3/19/2026,10200,24.9,0,0.5,0.5,,,,,,
 Ludvig Aberg,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/452216.png,690516,42464034,Valero Texas Open,4/2/2026,10100,101.16,14.43,0.7742,0.2258,1373.6 (0.07),343.9 (0.23),180.7 (0.36),-97.4 (0.49),1:42:36 PM,MP
-Tyrrell Hatton,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/1015.png,1356,42320571,LIV Golf South Africa,3/19/2026,10100,24.7,0,0.5,0.5,,,,,,
 Russell Henley,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/628.png,1654,42475492,Valero Texas Open,4/2/2026,10000,56.26,13.53,0.776,0.224,1558.6 (0.06),365.3 (0.21),189.4 (0.35),-115.5 (0.54),2:06:36 PM,MP
 Robert MacIntyre,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/822.png,670464,42464035,Valero Texas Open,4/2/2026,9900,107.35,9.11,0.7563,0.2437,1832.7 (0.05),425.9 (0.19),219.5 (0.31),45.5 (0.69),1:42:36 PM,MP
 Ludvig Aberg,Classic: Masters,https://dkn.gs/sports/images/golf/players/50/452216.png,690516,42313295,Masters Tournament,4/9/2026,9800,99.61,14.43,0.7742,0.2258,1373.6 (0.07),343.9 (0.23),180.7 (0.36),-97.4 (0.49),1:42:36 PM,MP
 Robert MacIntyre,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/822.png,670464,42475493,Valero Texas Open,4/2/2026,9800,57.08,9.11,0.7563,0.2437,1832.7 (0.05),425.9 (0.19),219.5 (0.31),45.5 (0.69),1:42:36 PM,MP
 Russell Henley,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/628.png,1654,42464036,Valero Texas Open,4/2/2026,9800,108.33,13.53,0.776,0.224,1558.6 (0.06),365.3 (0.21),189.4 (0.35),-115.5 (0.54),2:06:36 PM,MP
-Joaquin Niemann,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/563.png,509671,42320572,LIV Golf South Africa,3/19/2026,9700,23.9,0,0.5,0.5,,,,,,
 Si Woo Kim,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/870.png,1284,42464037,Valero Texas Open,4/2/2026,9600,98.83,14.91,0.7523,0.2477,1999.9 (0.05),454.5 (0.18),227.7 (0.31),68.2 (0.59),9:06:36 AM,MP
 Si Woo Kim,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/870.png,1284,42475494,Valero Texas Open,4/2/2026,9600,56.61,14.91,0.7523,0.2477,1999.9 (0.05),454.5 (0.18),227.7 (0.31),68.2 (0.59),9:06:36 AM,MP
 Jordan Spieth,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/882.png,171,42464038,Valero Texas Open,4/2/2026,9500,98.16,10.67,0.7679,0.2321,1628.6 (0.06),394.1 (0.20),203.4 (0.33),42.3 (0.70),1:42:36 PM,MP
 Jordan Spieth,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/882.png,171,42475495,Valero Texas Open,4/2/2026,9500,55.29,10.67,0.7679,0.2321,1628.6 (0.06),394.1 (0.20),203.4 (0.33),42.3 (0.70),1:42:36 PM,MP
 Collin Morikawa,Classic: Masters,https://dkn.gs/sports/images/golf/players/50/789.png,300102,42313297,Masters Tournament,4/9/2026,9500,94.64,23.76,0,0,,,,,,
-Dean Burmester,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/770.png,851,42320573,LIV Golf South Africa,3/19/2026,9500,23.5,0,0.5,0.5,,,,,,
 Collin Morikawa,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/789.png,300102,42464039,Valero Texas Open,4/2/2026,9400,94.12,23.76,0,0,,,,,,
 Sepp Straka,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/654.png,73285,42475496,Valero Texas Open,4/2/2026,9400,55.49,14.13,0.725,0.275,2243.4 (0.04),544.2 (0.16),269.1 (0.27),111.4 (0.47),1:54:36 PM,MP
-Cameron Smith,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/532.png,1194,42320574,LIV Golf South Africa,3/19/2026,9400,23.3,0,0.5,0.5,,,,,,
 Tommy Fleetwood,Classic: Masters,https://dkn.gs/sports/images/golf/players/50/733.png,871,42313298,Masters Tournament,4/9/2026,9300,107.03,22.92,0.7779,0.2221,1463.2 (0.06),339.4 (0.23),171.0 (0.37),-120.6 (0.55),8:42:36 AM,MP
 Collin Morikawa,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/789.png,300102,42475497,Valero Texas Open,4/2/2026,9300,54.3,23.76,0,0,,,,,,
 Hideki Matsuyama,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/1130.png,1931,42464040,Valero Texas Open,4/2/2026,9300,97.64,12.85,0.7475,0.2525,2163.1 (0.04),473.6 (0.17),242.7 (0.29),98.2 (0.50),8:42:36 AM,MP
-Sebastian Munoz,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/662.png,320038,42320575,LIV Golf South Africa,3/19/2026,9300,23.1,0,0.5,0.5,,,,,,
 Hideki Matsuyama,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/1130.png,1931,42475498,Valero Texas Open,4/2/2026,9200,58.65,12.85,0.7475,0.2525,2163.1 (0.04),473.6 (0.17),242.7 (0.29),98.2 (0.50),8:42:36 AM,MP
 Sepp Straka,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/654.png,73285,42464041,Valero Texas Open,4/2/2026,9200,99.61,14.13,0.725,0.275,2243.4 (0.04),544.2 (0.16),269.1 (0.27),111.4 (0.47),1:54:36 PM,MP
-Thomas Detry,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/842.png,121942,42320576,LIV Golf South Africa,3/19/2026,9200,22.9,0,0.5,0.5,,,,,,
 Nicolai Hojgaard,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/60190.png,600531,42464042,Valero Texas Open,4/2/2026,9100,95.64,11.76,0,0,,,,,,
 Maverick McNealy,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/543.png,1914,42475499,Valero Texas Open,4/2/2026,9100,54.23,6.43,0.733,0.267,2672.6 (0.04),554.2 (0.15),277.7 (0.26),128.8 (0.44),8:54:36 AM,MP
-Lucas Herbert,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/863.png,113,42320577,LIV Golf South Africa,3/19/2026,9100,22.7,0,0.5,0.5,,,,,,
 Maverick McNealy,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/543.png,1914,42464043,Valero Texas Open,4/2/2026,9000,95.28,6.43,0.733,0.267,2672.6 (0.04),554.2 (0.15),277.7 (0.26),128.8 (0.44),8:54:36 AM,MP
 Keith Mitchell,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/1076.png,427014,42475500,Valero Texas Open,4/2/2026,9000,55.48,8.27,0.707,0.293,3096.1 (0.03),690.7 (0.13),341.7 (0.23),158.7 (0.39),2:30:36 PM,MP
-Thomas Pieters,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/864.png,350,42320578,LIV Golf South Africa,3/19/2026,9000,22.5,0,0.5,0.5,,,,,,
 Hideki Matsuyama,Classic: Masters,https://dkn.gs/sports/images/golf/players/50/1130.png,1931,42313302,Masters Tournament,4/9/2026,8900,95.56,12.85,0.7475,0.2525,2163.1 (0.04),473.6 (0.17),242.7 (0.29),98.2 (0.50),8:42:36 AM,MP
 Michael Thorbjornsen,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/787.png,696522,42464044,Valero Texas Open,4/2/2026,8900,94.47,5.56,0.7117,0.2883,2809.6 (0.03),599.3 (0.14),305.7 (0.25),139.4 (0.42),9:06:36 AM,MP
 Michael Thorbjornsen,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/787.png,696522,42475501,Valero Texas Open,4/2/2026,8900,51.75,5.56,0.7117,0.2883,2809.6 (0.03),599.3 (0.14),305.7 (0.25),139.4 (0.42),9:06:36 AM,MP
-Carlos Ortiz,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/580.png,777,42320579,LIV Golf South Africa,3/19/2026,8900,22.3,0,0.5,0.5,,,,,,
 Rickie Fowler,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/991.png,1237,42464045,Valero Texas Open,4/2/2026,8800,93.93,9.48,0.7247,0.2753,2779.9 (0.03),609.6 (0.14),307.1 (0.25),142.7 (0.41),8:42:36 AM,MP
 Rickie Fowler,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/991.png,1237,42475502,Valero Texas Open,4/2/2026,8800,52.77,9.48,0.7247,0.2753,2779.9 (0.03),609.6 (0.14),307.1 (0.25),142.7 (0.41),8:42:36 AM,MP
-Tom McKibbin,Classic: LIV,https://dkn.gs/sports/images/countries/50/northern_ireland.png,671050,42320580,LIV Golf South Africa,3/19/2026,8800,22.1,0,0.5,0.5,,,,,,
 Alex Noren,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/1162.png,867,42464046,Valero Texas Open,4/2/2026,8700,96.93,5.38,0.7028,0.2972,3417.6 (0.03),749.4 (0.12),357.1 (0.22),168.6 (0.37),9:06:36 AM,MP
 Ryo Hisatsune,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/609130.png,760663,42475503,Valero Texas Open,4/2/2026,8700,52.52,6.3,0.6808,0.3192,3391.7 (0.03),756.6 (0.12),381.2 (0.21),178.8 (0.36),9:18:36 AM,MP
-Marc Leishman,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/555.png,142,42320581,LIV Golf South Africa,3/19/2026,8700,21.9,0,0.5,0.5,,,,,,
 Robert MacIntyre,Classic: Masters,https://dkn.gs/sports/images/golf/players/50/822.png,670464,42313305,Masters Tournament,4/9/2026,8600,100.61,9.11,0.7563,0.2437,1832.7 (0.05),425.9 (0.19),219.5 (0.31),45.5 (0.69),1:42:36 PM,MP
 J.J. Spaun,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/611.png,2167,42464047,Valero Texas Open,4/2/2026,8600,93.58,5.67,0.6796,0.3204,3743.7 (0.03),802.1 (0.11),389.1 (0.20),183.3 (0.35),2:06:36 PM,MP
 Sudarshan Yellamaraju,Showdown: Valero Texas,https://dkn.gs/sports/images/countries/50/canada.png,772264,42475504,Valero Texas Open,4/2/2026,8600,55.22,0,0.6357,0.3643,4675.6 (0.02),999.0 (0.09),451.4 (0.18),211.0 (0.32),9:18:36 AM,MP
-Louis Oosthuizen,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/918.png,584,42320582,LIV Golf South Africa,3/19/2026,8600,21.7,0,0.5,0.5,,,,,,
 Alex Noren,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/1162.png,867,42475505,Valero Texas Open,4/2/2026,8500,50.28,5.38,0.7028,0.2972,3417.6 (0.03),749.4 (0.12),357.1 (0.22),168.6 (0.37),9:06:36 AM,MP
 Keith Mitchell,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/1076.png,427014,42464048,Valero Texas Open,4/2/2026,8500,87.94,8.27,0.707,0.293,3096.1 (0.03),690.7 (0.13),341.7 (0.23),158.7 (0.39),2:30:36 PM,MP
-Branden Grace,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/661.png,956,42320583,LIV Golf South Africa,3/19/2026,8500,21.5,0,0.5,0.5,,,,,,
 Jordan Spieth,Classic: Masters,https://dkn.gs/sports/images/golf/players/50/882.png,171,42313307,Masters Tournament,4/9/2026,8400,92.46,10.67,0.7679,0.2321,1628.6 (0.06),394.1 (0.20),203.4 (0.33),42.3 (0.70),1:42:36 PM,MP
 Daniel Berger,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/1178.png,1870,42464049,Valero Texas Open,4/2/2026,8400,86.87,5.32,0,0,,,,,,
 Denny McCarthy,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/631.png,1018,42475506,Valero Texas Open,4/2/2026,8400,47.7,2.04,0.6758,0.3242,3799.2 (0.03),761.6 (0.12),370.5 (0.21),176.6 (0.36),2:30:36 PM,MP
-Talor Gooch,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/527.png,729,42320584,LIV Golf South Africa,3/19/2026,8400,21.3,0,0.5,0.5,,,,,,
 J.J. Spaun,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/611.png,2167,42475507,Valero Texas Open,4/2/2026,8300,49.97,5.67,0.6796,0.3204,3743.7 (0.03),802.1 (0.11),389.1 (0.20),183.3 (0.35),2:06:36 PM,MP
 Ryo Hisatsune,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/609130.png,760663,42464050,Valero Texas Open,4/2/2026,8300,86.28,6.3,0.6808,0.3192,3391.7 (0.03),756.6 (0.12),381.2 (0.21),178.8 (0.36),9:18:36 AM,MP
-Josele Ballester,Classic: LIV,https://dkn.gs/sports/images/countries/50/spain.png,773808,42320585,LIV Golf South Africa,3/19/2026,8300,21.1,0,0.5,0.5,,,,,,
 Denny McCarthy,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/631.png,1018,42464051,Valero Texas Open,4/2/2026,8200,85.8,2.04,0.6758,0.3242,3799.2 (0.03),761.6 (0.12),370.5 (0.21),176.6 (0.36),2:30:36 PM,MP
 Ricky Castillo,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/514324.png,702801,42475508,Valero Texas Open,4/2/2026,8200,49.04,0,0,0,234.5 (0.30),-302.8 (0.75),-1042.2 (0.91),-7250.0 (0.99),,
-Elvis Smylie,Classic: LIV,https://dkn.gs/sports/images/countries/50/australia.png,721846,42320586,LIV Golf South Africa,3/19/2026,8200,20.9,0,0.5,0.5,,,,,,
 Sudarshan Yellamaraju,Classic: Valero Texas,https://dkn.gs/sports/images/countries/50/canada.png,772264,42464052,Valero Texas Open,4/2/2026,8100,83.99,0,0.6357,0.3643,4675.6 (0.02),999.0 (0.09),451.4 (0.18),211.0 (0.32),9:18:36 AM,MP
 Brian Harman,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/533.png,805,42475509,Valero Texas Open,4/2/2026,8100,45.45,2.22,0.6301,0.3699,5800.2 (0.02),1172.2 (0.08),552.7 (0.15),248.0 (0.29),1:54:36 PM,MP
-Sergio Garcia,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/981.png,780,42320587,LIV Golf South Africa,3/19/2026,8100,20.7,0,0.5,0.5,,,,,,
 Sepp Straka,Classic: Masters,https://dkn.gs/sports/images/golf/players/50/654.png,73285,42313312,Masters Tournament,4/9/2026,8000,93.38,14.13,0.725,0.275,2243.4 (0.04),544.2 (0.16),269.1 (0.27),111.4 (0.47),1:54:36 PM,MP
 Nick Taylor,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/515.png,700,42464054,Valero Texas Open,4/2/2026,8000,85.7,5.56,0.633,0.367,5696.9 (0.02),1086.5 (0.08),500.9 (0.17),228.0 (0.30),1:54:36 PM,MP
 Nick Taylor,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/515.png,700,42475510,Valero Texas Open,4/2/2026,8000,48.42,5.56,0.633,0.367,5696.9 (0.02),1086.5 (0.08),500.9 (0.17),228.0 (0.30),1:54:36 PM,MP
 Thorbjorn Olesen,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/756.png,437,42475511,Valero Texas Open,4/2/2026,8000,47.97,0,0.6353,0.3647,5201.1 (0.02),1060.2 (0.09),500.5 (0.17),226.5 (0.31),9:30:36 AM,MP
-Dustin Johnson,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/720.png,1149,42320588,LIV Golf South Africa,3/19/2026,8000,20.5,0,0.5,0.5,,,,,,
 Russell Henley,Classic: Masters,https://dkn.gs/sports/images/golf/players/50/628.png,1654,42313314,Masters Tournament,4/9/2026,7900,98.48,13.53,0.776,0.224,1558.6 (0.06),365.3 (0.21),189.4 (0.35),-115.5 (0.54),2:06:36 PM,MP
 Gary Woodland,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/689.png,1055,42464055,Valero Texas Open,4/2/2026,7900,81.09,0,0,0,,,,,,
 Brian Harman,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/533.png,805,42464056,Valero Texas Open,4/2/2026,7900,85.04,2.22,0.6301,0.3699,5800.2 (0.02),1172.2 (0.08),552.7 (0.15),248.0 (0.29),1:54:36 PM,MP
 Alex Smalley,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/451986.png,509666,42475513,Valero Texas Open,4/2/2026,7900,48.08,0,0.6234,0.3766,6673.9 (0.01),1294.9 (0.07),595.0 (0.14),276.5 (0.27),1:06:36 PM,MP
-Abraham Ancer,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/768.png,662,42320589,LIV Golf South Africa,3/19/2026,7900,20.3,0,0.5,0.5,,,,,,
 Si Woo Kim,Classic: Masters,https://dkn.gs/sports/images/golf/players/50/870.png,1284,42313316,Masters Tournament,4/9/2026,7800,89.5,14.91,0.7523,0.2477,1999.9 (0.05),454.5 (0.18),227.7 (0.31),68.2 (0.59),9:06:36 AM,MP
 Thorbjorn Olesen,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/756.png,437,42464057,Valero Texas Open,4/2/2026,7800,82.69,0,0.6353,0.3647,5201.1 (0.02),1060.2 (0.09),500.5 (0.17),226.5 (0.31),9:30:36 AM,MP
 Marco Penge,Classic: Valero Texas,https://dkn.gs/sports/images/countries/50/england.png,698887,42464058,Valero Texas Open,4/2/2026,7800,87.72,0,0.6346,0.3654,5614.2 (0.02),1144.7 (0.08),539.5 (0.16),245.5 (0.29),9:06:36 AM,MP
 Marco Penge,Showdown: Valero Texas,https://dkn.gs/sports/images/countries/50/england.png,698887,42475514,Valero Texas Open,4/2/2026,7800,43.65,0,0.6346,0.3654,5614.2 (0.02),1144.7 (0.08),539.5 (0.16),245.5 (0.29),9:06:36 AM,MP
 Jordan L. Smith,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/820.png,73498,42475515,Valero Texas Open,4/2/2026,7800,48.69,0,0.627,0.373,6670.3 (0.01),1230.6 (0.08),576.4 (0.15),258.0 (0.28),2:30:36 PM,MP
-Byeong Hun An,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/639.png,1062,42320590,LIV Golf South Africa,3/19/2026,7800,20.1,0,0.5,0.5,,,,,,
 Jordan L. Smith,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/820.png,73498,42464059,Valero Texas Open,4/2/2026,7700,87.79,0,0.627,0.373,6670.3 (0.01),1230.6 (0.08),576.4 (0.15),258.0 (0.28),2:30:36 PM,MP
 Ricky Castillo,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/514324.png,702801,42464060,Valero Texas Open,4/2/2026,7700,82.73,0,0,0,234.5 (0.30),-302.8 (0.75),-1042.2 (0.91),-7250.0 (0.99),,
 Patrick Rodgers,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/574.png,1141,42475516,Valero Texas Open,4/2/2026,7700,47.96,3.16,0.5923,0.4077,8356.9 (0.01),1542.7 (0.06),718.2 (0.12),318.3 (0.24),8:30:36 AM,MP
 Stephan Jaeger,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/821.png,2044,42475517,Valero Texas Open,4/2/2026,7700,45.48,0,0.6148,0.3852,7339.4 (0.01),1453.0 (0.06),649.1 (0.13),294.0 (0.25),2:06:36 PM,MP
-Matthew Wolff,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/802.png,693781,42320591,LIV Golf South Africa,3/19/2026,7700,19.9,0,0.5,0.5,,,,,,
 Will Zalatoris,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/451105.png,1579,42464061,Valero Texas Open,4/2/2026,7600,79.98,0,0.612,0.388,6618.6 (0.01),1287.6 (0.07),584.1 (0.15),256.0 (0.28),8:30:36 AM,MP
 Pierceson Coody,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/562745.png,710732,42464062,Valero Texas Open,4/2/2026,7600,83.08,11.04,0,0,,,,,,
 Alex Smalley,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/451986.png,509666,42464063,Valero Texas Open,4/2/2026,7600,80.64,0,0.6234,0.3766,6673.9 (0.01),1294.9 (0.07),595.0 (0.14),276.5 (0.27),1:06:36 PM,MP
 Tony Finau,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/808.png,2125,42475520,Valero Texas Open,4/2/2026,7600,47.83,0,0.6278,0.3722,6831.7 (0.01),1280.3 (0.07),610.0 (0.14),279.5 (0.26),8:54:36 AM,MP
 Christiaan Bezuidenhout,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/1115.png,453,42475518,Valero Texas Open,4/2/2026,7600,47.37,0,0.636,0.364,7172.8 (0.01),1328.6 (0.07),606.8 (0.14),262.5 (0.28),8:18:36 AM,MP
 John Parry,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/450617.png,708,42475519,Valero Texas Open,4/2/2026,7600,45.02,0,0.6266,0.3734,12853.2 (0.01),2222.7 (0.04),997.3 (0.09),405.5 (0.20),3:06:36 PM,MP
-Caleb Surratt,Classic: LIV,https://dkn.gs/sports/images/countries/50/united_states.png,768996,42320592,LIV Golf South Africa,3/19/2026,7600,19.7,0,0.5,0.5,,,,,,
 Will Zalatoris,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/451105.png,1579,42475522,Valero Texas Open,4/2/2026,7500,46.05,0,0.612,0.388,6618.6 (0.01),1287.6 (0.07),584.1 (0.15),256.0 (0.28),8:30:36 AM,MP
 Davis Thompson,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/456332.png,700001,42464064,Valero Texas Open,4/2/2026,7500,80.05,0,0.6201,0.3799,7728.6 (0.01),1460.6 (0.06),646.8 (0.13),286.5 (0.26),9:18:36 AM,MP
 Rico Hoey,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/467626.png,700394,42464065,Valero Texas Open,4/2/2026,7500,83.9,0,0.6294,0.3706,5704.1 (0.02),1212.6 (0.08),557.3 (0.15),247.5 (0.29),9:30:36 AM,MP
 Patrick Rodgers,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/574.png,1141,42464066,Valero Texas Open,4/2/2026,7500,81.63,3.16,0.5923,0.4077,8356.9 (0.01),1542.7 (0.06),718.2 (0.12),318.3 (0.24),8:30:36 AM,MP
 Tom Kim,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/468158.png,700009,42475523,Valero Texas Open,4/2/2026,7500,45,0,0.5919,0.4081,9780.1 (0.01),1806.5 (0.05),820.0 (0.11),349.8 (0.22),1:06:36 PM,MP
 Adrien Dumont De Chassart,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/645032.png,765441,42475521,Valero Texas Open,4/2/2026,7500,43.57,0,0.6063,0.3937,8803.9 (0.01),1632.5 (0.06),760.0 (0.12),337.3 (0.23),10:06:36 AM,MP
-Richard T. Lee,Classic: LIV,https://dkn.gs/sports/images/countries/50/canada.png,165,42320593,LIV Golf South Africa,3/19/2026,7500,19.5,0,0.5,0.5,,,,,,
-Peter Uihlein,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/650.png,218,42320594,LIV Golf South Africa,3/19/2026,7500,19.5,0,0.5,0.5,,,,,,
 Davis Thompson,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/456332.png,700001,42475524,Valero Texas Open,4/2/2026,7400,45.76,0,0.6201,0.3799,7728.6 (0.01),1460.6 (0.06),646.8 (0.13),286.5 (0.26),9:18:36 AM,MP
 Rico Hoey,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/467626.png,700394,42475525,Valero Texas Open,4/2/2026,7400,45.94,0,0.6294,0.3706,5704.1 (0.02),1212.6 (0.08),557.3 (0.15),247.5 (0.29),9:30:36 AM,MP
 J.T. Poston,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/1165.png,300174,42464067,Valero Texas Open,4/2/2026,7400,81.55,2.03,0.628,0.372,7349.6 (0.01),1428.5 (0.07),656.8 (0.13),297.5 (0.25),8:42:36 AM,MP
@@ -109,8 +82,6 @@ Stephan Jaeger,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/5
 Tony Finau,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/808.png,2125,42464069,Valero Texas Open,4/2/2026,7400,79.88,0,0.6278,0.3722,6831.7 (0.01),1280.3 (0.07),610.0 (0.14),279.5 (0.26),8:54:36 AM,MP
 Max McGreevy,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/525640.png,703985,42464070,Valero Texas Open,4/2/2026,7400,82.25,0,0.6089,0.3911,7320.9 (0.01),1429.1 (0.07),686.4 (0.13),296.5 (0.25),8:06:36 AM,MP
 Max McGreevy,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/525640.png,703985,42475526,Valero Texas Open,4/2/2026,7400,44.84,0,0.6089,0.3911,7320.9 (0.01),1429.1 (0.07),686.4 (0.13),296.5 (0.25),8:06:36 AM,MP
-Paul Casey,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/1039.png,1859,42320595,LIV Golf South Africa,3/19/2026,7400,19.3,0,0.5,0.5,,,,,,
-Charl Schwartzel,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/938.png,193,42320596,LIV Golf South Africa,3/19/2026,7400,19.3,0,0.5,0.5,,,,,,
 Marco Penge,Classic: Masters,https://dkn.gs/sports/images/countries/50/england.png,698887,42313327,Masters Tournament,4/9/2026,7300,85.12,0,0.6346,0.3654,5614.2 (0.02),1144.7 (0.08),539.5 (0.16),245.5 (0.29),9:06:36 AM,MP
 Christiaan Bezuidenhout,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/1115.png,453,42464072,Valero Texas Open,4/2/2026,7300,81.71,0,0.636,0.364,7172.8 (0.01),1328.6 (0.07),606.8 (0.14),262.5 (0.28),8:18:36 AM,MP
 Mac Meissner,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/557402.png,708878,42464073,Valero Texas Open,4/2/2026,7300,79.95,0,0.6342,0.3658,6935.9 (0.01),1319.3 (0.07),614.5 (0.14),272.5 (0.27),8:06:36 AM,MP
@@ -121,8 +92,6 @@ Andrew Novak,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50
 Max Homa,Classic: Masters,https://dkn.gs/sports/images/golf/players/50/946.png,2024,42313326,Masters Tournament,4/9/2026,7300,80.35,0,0.5935,0.4065,11008.1 (0.01),2063.4 (0.05),910.9 (0.10),388.3 (0.20),8:54:36 AM,MP
 Eric Cole,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/525717.png,704063,42475532,Valero Texas Open,4/2/2026,7300,43.22,0,0.6201,0.3799,9585.4 (0.01),1834.7 (0.05),826.4 (0.11),363.3 (0.22),1:30:36 PM,MP
 Bronson Burgoon,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/584.png,1253,42475531,Valero Texas Open,4/2/2026,7300,36.95,0,0.5826,0.4174,14437.3 (0.01),2530.0 (0.04),1111.4 (0.08),472.0 (0.17),8:30:36 AM,MP
-Anthony Kim,Classic: LIV,https://dkn.gs/sports/images/countries/50/united_states.png,1119,42320597,LIV Golf South Africa,3/19/2026,7300,19.1,0,0.5,0.5,,,,,,
-Scott Vincent,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/979.png,772,42320598,LIV Golf South Africa,3/19/2026,7300,19.1,0,0.5,0.5,,,,,,
 Maverick McNealy,Classic: Masters,https://dkn.gs/sports/images/golf/players/50/543.png,1914,42313330,Masters Tournament,4/9/2026,7200,85.95,6.43,0.733,0.267,2672.6 (0.04),554.2 (0.15),277.7 (0.26),128.8 (0.44),8:54:36 AM,MP
 J.J. Spaun,Classic: Masters,https://dkn.gs/sports/images/golf/players/50/611.png,2167,42313329,Masters Tournament,4/9/2026,7200,86.32,5.67,0.6796,0.3204,3743.7 (0.03),802.1 (0.11),389.1 (0.20),183.3 (0.35),2:06:36 PM,MP
 Matt Wallace,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/1105.png,63191,42475536,Valero Texas Open,4/2/2026,7200,42.07,0,0.5955,0.4045,7870.9 (0.01),1535.5 (0.06),710.5 (0.12),315.9 (0.24),1:18:36 PM,MP
@@ -134,8 +103,6 @@ Michael Kim,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/
 Lee Hodges,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/1003.png,692607,42475535,Valero Texas Open,4/2/2026,7200,41.75,0,0.6118,0.3882,11840.9 (0.01),2179.2 (0.04),989.1 (0.09),427.5 (0.19),1:06:36 PM,MP
 Seonghyeon Kim,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/518682.png,703406,42475537,Valero Texas Open,4/2/2026,7200,38.93,0,0,0,,,,,,
 Seamus Power,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/541.png,185304,42475533,Valero Texas Open,4/2/2026,7200,37.95,0,0.5972,0.4028,15301.7 (0.01),2657.1 (0.04),1132.7 (0.08),472.0 (0.17),9:42:36 AM,MP
-Victor Perez,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/710.png,670428,42320599,LIV Golf South Africa,3/19/2026,7200,18.9,0,0.5,0.5,,,,,,
-Charles Howell III,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/1090.png,1645,42320600,LIV Golf South Africa,3/19/2026,7200,18.9,0,0.5,0.5,,,,,,
 Bud Cauley,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/549.png,1673,42475541,Valero Texas Open,4/2/2026,7100,45.82,1.66,0.6249,0.3751,9824.0 (0.01),1842.9 (0.05),820.9 (0.11),346.3 (0.22),8:18:36 AM,MP
 Hao-Tong Li,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/767.png,1132,42464080,Valero Texas Open,4/2/2026,7100,62.79,0,0,0,,,,,,
 Kristoffer Reitan,Classic: Valero Texas,https://dkn.gs/sports/images/countries/50/norway.png,671051,42464081,Valero Texas Open,4/2/2026,7100,88.61,0,0.6266,0.3734,9963.9 (0.01),1857.8 (0.05),850.0 (0.11),360.3 (0.22),1:18:36 PM,MP
@@ -146,8 +113,6 @@ Kevin Roy,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/52
 Beau Hossler,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/646.png,1689,42475538,Valero Texas Open,4/2/2026,7100,40.17,0,0.5904,0.4096,11163.9 (0.01),2156.5 (0.04),965.5 (0.09),426.5 (0.19),2:18:36 PM,MP
 Matt Kuchar,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/924.png,1639,42475539,Valero Texas Open,4/2/2026,7100,38.18,0,0.566,0.434,14991.4 (0.01),2697.7 (0.04),1145.5 (0.08),494.5 (0.17),9:06:36 AM,MP
 Andrew Putnam,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/730.png,665,42475540,Valero Texas Open,4/2/2026,7100,40.23,2.58,0.6088,0.3912,12494.9 (0.01),2170.0 (0.04),995.5 (0.09),386.5 (0.21),1:30:36 PM,MP
-Lee Westwood,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/867.png,638,42320601,LIV Golf South Africa,3/19/2026,7100,18.7,0,0.5,0.5,,,,,,
-Harold Varner III,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/624.png,190,42320602,LIV Golf South Africa,3/19/2026,7100,18.7,0,0.5,0.5,,,,,,
 Alex Noren,Classic: Masters,https://dkn.gs/sports/images/golf/players/50/1162.png,867,42313334,Masters Tournament,4/9/2026,7000,88.12,5.38,0.7028,0.2972,3417.6 (0.03),749.4 (0.12),357.1 (0.22),168.6 (0.37),9:06:36 AM,MP
 Chris Kirk,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/1078.png,2170,42475545,Valero Texas Open,4/2/2026,7000,44.09,2.76,0.5923,0.4077,9087.9 (0.01),1633.7 (0.06),740.0 (0.12),328.1 (0.23),2:06:36 PM,MP
 Hao-Tong Li,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/767.png,1132,42475547,Valero Texas Open,4/2/2026,7000,40.2,0,0,0,,,,,,
@@ -161,8 +126,6 @@ Matti Schmid,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/
 Austin Eckroat,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/1053.png,696563,42475543,Valero Texas Open,4/2/2026,7000,40.48,0,0.5797,0.4203,14732.2 (0.01),2552.3 (0.04),1122.7 (0.08),476.5 (0.17),9:42:36 AM,MP
 Jesper Svensson,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/630555.png,762723,42475544,Valero Texas Open,4/2/2026,7000,40.03,0,0.5411,0.4589,16521.4 (0.01),2761.7 (0.03),1206.8 (0.08),531.0 (0.16),2:54:36 PM,MP
 Billy Horschel,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/915.png,1725,42475548,Valero Texas Open,4/2/2026,7000,39.05,2.56,0.5848,0.4152,10311.0 (0.01),1929.3 (0.05),870.9 (0.10),381.0 (0.21),1:54:36 PM,MP
-Bubba Watson,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/637.png,411,42320603,LIV Golf South Africa,3/19/2026,7000,18.5,0,0.5,0.5,,,,,,
-Brendan Steele,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/566.png,549,42320604,LIV Golf South Africa,3/19/2026,7000,18.5,0,0.5,0.5,,,,,,
 Kristoffer Reitan,Showdown: Valero Texas,https://dkn.gs/sports/images/countries/50/norway.png,671051,42475553,Valero Texas Open,4/2/2026,6900,42.05,0,0.6266,0.3734,9963.9 (0.01),1857.8 (0.05),850.0 (0.11),360.3 (0.22),1:18:36 PM,MP
 Mackenzie Hughes,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/635.png,552,42475550,Valero Texas Open,4/2/2026,6900,42.43,0,0.6301,0.3699,9843.7 (0.01),1779.3 (0.05),821.8 (0.11),360.8 (0.22),2:18:36 PM,MP
 Eric Cole,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/525717.png,704063,42464091,Valero Texas Open,4/2/2026,6900,74.99,0,0.6201,0.3799,9585.4 (0.01),1834.7 (0.05),826.4 (0.11),363.3 (0.22),1:30:36 PM,MP
@@ -175,8 +138,6 @@ Vince Whaley,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50
 A.J. Ewart,Showdown: Valero Texas,https://dkn.gs/sports/images/countries/50/canada.png,765420,42475551,Valero Texas Open,4/2/2026,6900,36.98,0,0.5245,0.4755,18136.4 (0.01),3011.1 (0.03),1360.0 (0.07),580.0 (0.15),3:06:36 PM,MP
 Emiliano Grillo,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/1085.png,610,42475554,Valero Texas Open,4/2/2026,6900,36,0,0.5632,0.4368,17139.4 (0.01),2871.3 (0.03),1261.4 (0.07),531.5 (0.16),9:30:36 AM,MP
 David Ford,Showdown: Valero Texas,https://dkn.gs/sports/images/countries/50/united_states.png,773829,42475549,Valero Texas Open,4/2/2026,6900,38.52,0,0.5579,0.4421,19054.8 (0.01),3343.8 (0.03),1506.8 (0.06),605.0 (0.14),9:54:36 AM,MP
-Laurie Canter,Classic: LIV,https://dkn.gs/sports/images/countries/50/england.png,834,42320605,LIV Golf South Africa,3/19/2026,6900,18.3,0,0.5,0.5,,,,,,
-Cameron Tringale,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/622.png,1449,42320606,LIV Golf South Africa,3/19/2026,6900,18.3,0,0.5,0.5,,,,,,
 Max Homa,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/946.png,2024,42475558,Valero Texas Open,4/2/2026,6800,43.97,0,0.5935,0.4065,11008.1 (0.01),2063.4 (0.05),910.9 (0.10),388.3 (0.20),8:54:36 AM,MP
 Chad Ramey,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/983.png,2119,42475560,Valero Texas Open,4/2/2026,6800,44.35,0,0.6002,0.3998,11582.1 (0.01),2065.4 (0.05),950.0 (0.10),418.5 (0.19),2:18:36 PM,MP
 Austin Eckroat,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/1053.png,696563,42464097,Valero Texas Open,4/2/2026,6800,73.69,0,0.5797,0.4203,14732.2 (0.01),2552.3 (0.04),1122.7 (0.08),476.5 (0.17),9:42:36 AM,MP
@@ -188,8 +149,6 @@ Andrew Putnam,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50
 Kevin Yu,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/681.png,671066,42475557,Valero Texas Open,4/2/2026,6800,38.6,0,0.5598,0.4402,15917.9 (0.01),2862.0 (0.03),1195.5 (0.08),513.5 (0.16),1:54:36 PM,MP
 Daniel Brown,Showdown: Valero Texas,https://dkn.gs/sports/images/countries/50/england.png,769318,42475559,Valero Texas Open,4/2/2026,6800,39.45,0,0,0,,,,,,
 Steven Fisk,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/623838.png,761827,42475556,Valero Texas Open,4/2/2026,6800,39.13,0,0.5883,0.4117,15182.9 (0.01),2730.0 (0.04),1149.1 (0.08),476.5 (0.17),2:06:36 PM,MP
-Anirban Lahiri,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/585.png,846,42320607,LIV Golf South Africa,3/19/2026,6800,18.1,0,0.5,0.5,,,,,,
-Phil Mickelson,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/672.png,1135,42320608,LIV Golf South Africa,3/19/2026,6800,18.1,0,0.5,0.5,,,,,,
 Austin Smotherman,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/451957.png,477949,42475561,Valero Texas Open,4/2/2026,6700,42.45,4.06,0.5816,0.4184,7528.4 (0.01),1469.5 (0.06),681.8 (0.13),286.0 (0.26),8:18:36 AM,MP
 William Mouw,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/645034.png,765443,42475564,Valero Texas Open,4/2/2026,6700,40.48,0,0.5864,0.4136,9102.7 (0.01),1751.8 (0.05),812.7 (0.11),362.5 (0.22),8:42:36 AM,MP
 Michael Kim,Classic: Masters,https://dkn.gs/sports/images/golf/players/50/597.png,1932,42313346,Masters Tournament,4/9/2026,6700,76.77,3.23,0.5853,0.4147,13226.4 (0.01),2365.5 (0.04),1097.3 (0.08),458.0 (0.18),9:42:36 AM,MP
@@ -205,8 +164,6 @@ Chandler Blanchet,Showdown: Valero Texas,https://dkn.gs/sports/images/countries/
 Jhonattan Vegas,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/896.png,1478,42475565,Valero Texas Open,4/2/2026,6700,35.25,0.93,0.5406,0.4594,13615.4 (0.01),2561.7 (0.04),1118.2 (0.08),484.0 (0.17),1:42:36 PM,MP
 Adrien Saddier,Showdown: Valero Texas,https://dkn.gs/sports/images/countries/50/france.png,2649,42475562,Valero Texas Open,4/2/2026,6700,37.93,0,0.57,0.43,18316.6 (0.01),3125.8 (0.03),1334.1 (0.07),567.5 (0.15),2:42:36 PM,MP
 David Lipsky,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/752.png,586,42475563,Valero Texas Open,4/2/2026,6700,39.97,0,0,0,225000.0 (0.00),24875.0 (0.00),5375.0 (0.02),926.7 (0.10),,
-Richard Bland,Classic: LIV,https://dkn.gs/sports/images/countries/50/england.png,698,42320609,LIV Golf South Africa,3/19/2026,6700,17.9,0,0.5,0.5,,,,,,
-Graeme McDowell,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/1184.png,1314,42320610,LIV Golf South Africa,3/19/2026,6700,17.9,0,0.5,0.5,,,,,,
 Doug Ghim,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/546.png,670625,42475568,Valero Texas Open,4/2/2026,6600,41.5,0,0.5991,0.4009,13841.1 (0.01),2356.8 (0.04),1051.8 (0.09),438.5 (0.19),9:42:36 AM,MP
 Sami Valimaki,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/60434.png,698884,42464110,Valero Texas Open,4/2/2026,6600,75.83,0,0.5587,0.4413,16059.7 (0.01),2843.5 (0.03),1313.6 (0.07),531.0 (0.16),8:54:36 AM,MP
 Chandler Blanchet,Classic: Valero Texas,https://dkn.gs/sports/images/countries/50/united_states.png,703933,42464111,Valero Texas Open,4/2/2026,6600,69.26,0,0.5579,0.4421,17878.2 (0.01),3350.0 (0.03),1429.5 (0.07),571.0 (0.15),9:54:36 AM,MP
@@ -221,8 +178,6 @@ Lucas Glover,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50
 Karl Vilips,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/709867.png,773007,42475571,Valero Texas Open,4/2/2026,6600,36.2,0,0.526,0.474,17904.0 (0.01),3280.9 (0.03),1361.4 (0.07),592.5 (0.14),2:06:36 PM,MP
 Tom Hoge,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/648.png,1760,42475572,Valero Texas Open,4/2/2026,6600,34.05,2.16,0.5095,0.4905,17500.2 (0.01),3230.0 (0.03),1409.1 (0.07),593.5 (0.14),1:18:36 PM,MP
 Matthieu Pavon,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/1121.png,113835,42475570,Valero Texas Open,4/2/2026,6600,36.73,0,0.5265,0.4735,20138.4 (0.00),3260.0 (0.03),1440.9 (0.06),648.0 (0.13),2:30:36 PM,MP
-Jason Kokrak,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/589.png,1080,42320611,LIV Golf South Africa,3/19/2026,6600,17.7,0,0.5,0.5,,,,,,
-Adrian Meronk,Classic: LIV,https://dkn.gs/sports/images/countries/50/poland.png,292342,42320612,LIV Golf South Africa,3/19/2026,6600,17.7,0,0.5,0.5,,,,,,
 Nick Taylor,Classic: Masters,https://dkn.gs/sports/images/golf/players/50/515.png,700,42313353,Masters Tournament,4/9/2026,6500,77.92,5.56,0.633,0.367,5696.9 (0.02),1086.5 (0.08),500.9 (0.17),228.0 (0.30),1:54:36 PM,MP
 Brian Harman,Classic: Masters,https://dkn.gs/sports/images/golf/players/50/533.png,805,42313352,Masters Tournament,4/9/2026,6500,77.78,2.22,0.6301,0.3699,5800.2 (0.02),1172.2 (0.08),552.7 (0.15),248.0 (0.29),1:54:36 PM,MP
 Sami Valimaki,Classic: Masters,https://dkn.gs/sports/images/golf/players/50/60434.png,698884,42313351,Masters Tournament,4/9/2026,6500,75.31,0,0.5587,0.4413,16059.7 (0.01),2843.5 (0.03),1313.6 (0.07),531.0 (0.16),8:54:36 AM,MP
@@ -239,8 +194,6 @@ Takumi Kanaya,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/5
 Dylan Wu,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/69384.png,699433,42475579,Valero Texas Open,4/2/2026,6500,35.3,0,0.5471,0.4529,21964.4 (0.00),3760.0 (0.03),1645.5 (0.06),676.0 (0.13),8:06:36 AM,MP
 Brandt Snedeker,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/690.png,400,42475577,Valero Texas Open,4/2/2026,6500,33,0,0.5079,0.4921,26076.9 (0.00),4520.0 (0.02),1900.0 (0.05),774.0 (0.11),1:42:36 PM,MP
 Mark Hubbard,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/629.png,2056,42475578,Valero Texas Open,4/2/2026,6500,32.02,0,0.5159,0.4841,24818.2 (0.00),4233.3 (0.02),1847.5 (0.05),764.4 (0.12),2:18:36 PM,MP
-Younghan Song,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/450447.png,329,42320613,LIV Golf South Africa,3/19/2026,6500,17.5,0,0.5,0.5,,,,,,
-Ben Campbell,Classic: LIV,https://dkn.gs/sports/images/countries/50/new_zealand.png,286512,42320614,LIV Golf South Africa,3/19/2026,6500,17.5,0,0.5,0.5,,,,,,
 Andrew Novak,Classic: Masters,https://dkn.gs/sports/images/golf/players/50/658.png,670403,42313355,Masters Tournament,4/9/2026,6400,74.1,3.02,0.589,0.411,8224.1 (0.01),1601.3 (0.06),750.9 (0.12),328.6 (0.23),9:18:36 AM,MP
 Takumi Kanaya,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/788.png,693416,42464124,Valero Texas Open,4/2/2026,6400,72.39,0,0.5502,0.4498,23334.5 (0.00),3680.0 (0.03),1586.4 (0.06),656.0 (0.13),1:18:36 PM,MP
 Patrick Fishburn,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/454597.png,699896,42464125,Valero Texas Open,4/2/2026,6400,70.34,0,0.4938,0.5062,29242.2 (0.00),4700.0 (0.02),1963.6 (0.05),803.0 (0.11),2:54:36 PM,MP
@@ -255,8 +208,6 @@ Hank Lebioda,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50
 Pontus Nyholm,Showdown: Valero Texas,https://dkn.gs/sports/images/countries/50/sweden.png,690519,42475588,Valero Texas Open,4/2/2026,6400,34.26,0,0.4846,0.5154,22350.3 (0.00),3950.0 (0.02),1731.8 (0.05),729.0 (0.12),2:54:36 PM,MP
 Kevin Streelman,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/602.png,1554,42475586,Valero Texas Open,4/2/2026,6400,34.48,0,0.4774,0.5226,34090.9 (0.00),5355.6 (0.02),2225.0 (0.04),896.7 (0.10),8:06:36 AM,MP
 Danny Walker,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/519887.png,703606,42475587,Valero Texas Open,4/2/2026,6400,34.54,0,0.4522,0.5478,33590.9 (0.00),5411.1 (0.02),2250.0 (0.04),972.2 (0.09),2:18:36 PM,MP
-Bjorn Hellgren,Classic: LIV,https://dkn.gs/sports/images/countries/50/sweden.png,60263,42320615,LIV Golf South Africa,3/19/2026,6400,17.3,0,0.5,0.5,,,,,,
-Luis Masaveu,Classic: LIV,https://dkn.gs/sports/images/countries/50/spain.png,768539,42320616,LIV Golf South Africa,3/19/2026,6400,17.3,0,0.5,0.5,,,,,,
 Hao-Tong Li,Classic: Masters,https://dkn.gs/sports/images/golf/players/50/767.png,1132,42313360,Masters Tournament,4/9/2026,6300,58.65,0,0,0,,,,,,
 Kristoffer Reitan,Classic: Masters,https://dkn.gs/sports/images/countries/50/norway.png,671051,42313359,Masters Tournament,4/9/2026,6300,84.46,0,0.6266,0.3734,9963.9 (0.01),1857.8 (0.05),850.0 (0.11),360.3 (0.22),1:18:36 PM,MP
 Adam Svensson,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/1054.png,689,42464131,Valero Texas Open,4/2/2026,6300,66.09,0,0.5232,0.4768,27280.2 (0.00),4477.8 (0.02),1905.0 (0.05),761.1 (0.12),9:30:36 AM,MP
@@ -275,8 +226,6 @@ Erik Van Rooyen,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players
 Charley Hoffman,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/805.png,1631,42475595,Valero Texas Open,4/2/2026,6300,32.12,0,0.4113,0.5887,43409.1 (0.00),6155.6 (0.02),2730.0 (0.04),1066.7 (0.09),8:54:36 AM,MP
 Chandler Phillips,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/61619.png,698927,42475593,Valero Texas Open,4/2/2026,6300,29.89,0,0.4738,0.5262,38863.6 (0.00),5655.6 (0.02),2350.0 (0.04),971.1 (0.09),8:18:36 AM,MP
 Paul Waring,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/1082.png,261458,42475596,Valero Texas Open,4/2/2026,6300,29.78,0,0.4133,0.5867,51818.2 (0.00),7744.4 (0.01),3190.0 (0.03),1216.7 (0.08),2:42:36 PM,MP
-Miguel Tabuena,Classic: LIV,https://dkn.gs/sports/images/countries/50/philippines.png,406,42320617,LIV Golf South Africa,3/19/2026,6300,17.1,0,0.5,0.5,,,,,,
-Yosuke Asaji,Classic: LIV,https://dkn.gs/sports/images/countries/50/japan.png,697206,42320618,LIV Golf South Africa,3/19/2026,6300,17.1,0,0.5,0.5,,,,,,
 Adam Svensson,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/1054.png,689,42475598,Valero Texas Open,4/2/2026,6200,34.55,0,0.5232,0.4768,27280.2 (0.00),4477.8 (0.02),1905.0 (0.05),761.1 (0.12),9:30:36 AM,MP
 Davis Chatfield,Showdown: Valero Texas,https://dkn.gs/sports/images/countries/50/united_states.png,769810,42475599,Valero Texas Open,4/2/2026,6200,31.57,0,0.452,0.548,49772.7 (0.00),7044.4 (0.01),2870.0 (0.03),1113.9 (0.08),9:54:36 AM,MP
 Luke Clanton,Classic: Valero Texas,https://dkn.gs/sports/images/countries/50/united_states.png,796547,42464139,Valero Texas Open,4/2/2026,6200,66.81,0,0.4839,0.5161,27168.3 (0.00),4644.4 (0.02),1980.0 (0.05),766.7 (0.12),10:06:36 AM,MP
@@ -292,8 +241,6 @@ Chandler Phillips,Classic: Valero Texas,https://dkn.gs/sports/images/golf/player
 Paul Waring,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/1082.png,261458,42464146,Valero Texas Open,4/2/2026,6200,58.13,0,0.4133,0.5867,51818.2 (0.00),7744.4 (0.01),3190.0 (0.03),1216.7 (0.08),2:42:36 PM,MP
 Rafael Campos,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/570.png,1971,42475604,Valero Texas Open,4/2/2026,6200,29.47,0,0.333,0.667,109090.9 (0.00),17562.5 (0.01),6822.2 (0.01),2411.1 (0.04),9:30:36 AM,MP
 Danny Willett,Classic: Masters,https://dkn.gs/sports/images/golf/players/50/792.png,199,42313367,Masters Tournament,4/9/2026,6200,53.17,0,0,0,203571.4 (0.00),26500.0 (0.00),18833.3 (0.01),3200.0 (0.03),,
-Michael La Sasso,Classic: LIV,https://dkn.gs/sports/images/countries/50/united_states.png,849089,42320619,LIV Golf South Africa,3/19/2026,6200,16.9,0,0.5,0.5,,,,,,
-Ian Poulter,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/974.png,308,42320620,LIV Golf South Africa,3/19/2026,6200,16.9,0,0.5,0.5,,,,,,
 Adam Schenk,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/638.png,648099,42464147,Valero Texas Open,4/2/2026,6100,66.72,0,0.4252,0.5748,47954.5 (0.00),7477.8 (0.01),2980.0 (0.03),1150.0 (0.08),9:06:36 AM,MP
 Kensei Hirata,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/712328.png,773313,42464148,Valero Texas Open,4/2/2026,6100,64.43,0,0.4424,0.5576,55681.8 (0.00),8025.0 (0.01),3180.0 (0.03),1277.8 (0.07),2:42:36 PM,MP
 Peter Malnati,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/660.png,1210,42464149,Valero Texas Open,4/2/2026,6100,53.25,0,0.4444,0.5556,40909.1 (0.00),6122.2 (0.02),2520.0 (0.04),963.9 (0.09),9:42:36 AM,MP
@@ -309,8 +256,6 @@ Gordon Sargent,Showdown: Valero Texas,https://dkn.gs/sports/images/countries/50/
 Marcelo Rozo,Showdown: Valero Texas,https://dkn.gs/sports/images/countries/50/colombia.png,2083,42475607,Valero Texas Open,4/2/2026,6100,29.47,0,0.3217,0.6783,127272.7 (0.00),20062.5 (0.01),7450.0 (0.01),2588.9 (0.04),2:54:36 PM,MP
 Ryan Palmer,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/780.png,468,42475608,Valero Texas Open,4/2/2026,6100,31.47,0,0.273,0.727,143181.8 (0.00),24687.5 (0.00),9500.0 (0.01),3211.1 (0.03),8:06:36 AM,MP
 Austin Wylie,Showdown: Valero Texas,https://dkn.gs/sports/images/countries/50/united_states.png,793190,42475605,Valero Texas Open,4/2/2026,6100,29.47,0,0.1977,0.8023,185000.0 (0.00),28071.4 (0.00),14562.5 (0.01),4600.0 (0.02),10:06:36 AM,MP
-Sam Horsfield,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/806.png,1939,42320621,LIV Golf South Africa,3/19/2026,6100,16.7,0,0.5,0.5,,,,,,
-Danny Lee,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/604.png,1883,42320622,LIV Golf South Africa,3/19/2026,6100,16.7,0,0.5,0.5,,,,,,
 Adam Schenk,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/638.png,648099,42475615,Valero Texas Open,4/2/2026,6000,31.67,0,0.4252,0.5748,47954.5 (0.00),7477.8 (0.01),2980.0 (0.03),1150.0 (0.08),9:06:36 AM,MP
 Kensei Hirata,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/712328.png,773313,42475613,Valero Texas Open,4/2/2026,6000,31.57,0,0.4424,0.5576,55681.8 (0.00),8025.0 (0.01),3180.0 (0.03),1277.8 (0.07),2:42:36 PM,MP
 Nick Dunlap,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/561491.png,710663,42475614,Valero Texas Open,4/2/2026,6000,31.47,0,0.4241,0.5759,43250.0 (0.00),7000.0 (0.01),2750.0 (0.04),1100.0 (0.08),1:30:36 PM,MP
@@ -325,5 +270,3 @@ Ryan Palmer,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/7
 Jimmy Walker,Classic: Valero Texas,https://dkn.gs/sports/images/golf/players/50/554.png,2173,42464161,Valero Texas Open,4/2/2026,6000,59.47,0,0.3048,0.6952,132727.3 (0.00),23125.0 (0.00),8433.3 (0.01),2894.4 (0.03),1:06:36 PM,MP
 Jimmy Walker,Showdown: Valero Texas,https://dkn.gs/sports/images/golf/players/50/554.png,2173,42475616,Valero Texas Open,4/2/2026,6000,29.47,0,0.3048,0.6952,132727.3 (0.00),23125.0 (0.00),8433.3 (0.01),2894.4 (0.03),1:06:36 PM,MP
 Austin Wylie,Classic: Valero Texas,https://dkn.gs/sports/images/countries/50/united_states.png,793190,42464162,Valero Texas Open,4/2/2026,6000,55.5,0,0.1977,0.8023,185000.0 (0.00),28071.4 (0.00),14562.5 (0.01),4600.0 (0.02),10:06:36 AM,MP
-Martin Kaymer,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/817.png,1323,42320623,LIV Golf South Africa,3/19/2026,6000,16.5,0,0.5,0.5,,,,,,
-Minkyu Kim,Classic: LIV,https://dkn.gs/sports/images/countries/50/south_korea.png,671052,42320624,LIV Golf South Africa,3/19/2026,6000,16.5,0,0.5,0.5,,,,,,
