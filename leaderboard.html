@@ -1132,49 +1132,6 @@
         body[data-theme="dark"] tr.muted-non-fav {
             opacity: 0.5;
         }
-        tr.positive-edge-row {
-            background: color-mix(in srgb, #22c55e 8%, var(--card-bg)) !important;
-        }
-        body[data-theme="dark"] tr.positive-edge-row {
-            background: color-mix(in srgb, #22c55e 12%, var(--card-bg)) !important;
-        }
-
-        /* Matchup section styling (stacked like 3-Ball groups) */
-        .matchup-section {
-            border: 1px solid var(--border-color);
-            border-radius: 10px;
-            margin-bottom: 0.75rem;
-            background: var(--card-bg);
-            overflow: hidden;
-        }
-        .matchup-section-header {
-            background: var(--table-head-bg);
-            padding: 0.5rem 0.75rem;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            cursor: pointer;
-        }
-        .matchup-section-header:hover {
-            background: var(--input-bg);
-        }
-        .matchup-section-body {
-            padding: 0.6rem 0.75rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-            gap: 0.5rem 0.75rem;
-        }
-        .matchup-info-row {
-            display: flex;
-            flex-direction: column;
-            font-size: 0.8rem;
-        }
-        .matchup-info-row strong {
-            font-size: 0.7rem;
-            opacity: 0.6;
-            margin-bottom: 0.1rem;
-        }
         .group-fav-badge {
             font-size: 0.58rem;
             font-weight: 700;
@@ -1200,16 +1157,6 @@
         }
         body[data-theme="dark"] .value-flag-badge {
             color: #4ade80;
-        }
-        .value-badge-small {
-            font-size: 0.55rem;
-            font-weight: 700;
-            background: #22c55e;
-            color: white;
-            padding: 0.05rem 0.25rem;
-            border-radius: 3px;
-            margin-left: 4px;
-            vertical-align: middle;
         }
         .threeball-group-header td {
             background: color-mix(in srgb, var(--button-bg) 6%, var(--card-bg)) !important;
@@ -1766,10 +1713,6 @@
                 <span style="color:#f59e0b; font-weight:600;">FAV</span> = Group Favorite (best odds in 3-ball) &nbsp; 
                 <span style="color:#22c55e; font-weight:600;">VALUE</span> = Positive Edge % (model sees value vs Vegas)
             </div>
-            <div id="matchupLegend" style="display: none; font-size: 0.62rem; opacity: 0.65; margin-left: 0.4rem; white-space: nowrap;">
-                <span style="color:#22c55e; font-weight:600;">VALUE / positive Edge</span> = Model sees value vs Vegas &nbsp; 
-                <span style="color:#f59e0b; font-weight:600;">925 Bet Tag</span> = Recommended side
-            </div>
             <div id="correlatedBetsFilter" style="display: none;" title="Show only matchup bets tagged as correlated">
                 <label><input type="checkbox" id="showCorrelatedBets" onchange="updateTable()"> Show only Correlated Bets</label>
             </div>
@@ -2018,7 +1961,7 @@
         let threeBallGroupFilter = 'all';
         let threeBallSort = 'tee'; // only Earliest Tee Time sort remains (default)
         let collapsedThreeBallGroups = new Set();
-        let matchupSort = 'edge'; // edge (default) | sportsbook-edge | p1-win | default
+        let matchupSort = 'edge'; // edge | sportsbook-edge | p1-win | default
         let collapsedMatchupGroups = new Set(); // for future grouping
         try {
             const saved3b = JSON.parse(localStorage.getItem('threeBallPrefs') || 'null');
@@ -2232,9 +2175,6 @@
             document.getElementById('threeBallGroupFilterWrap').style.display = view === '3ball' ? 'block' : 'none';
             document.getElementById('threeBallSortWrap').style.display = view === '3ball' ? 'block' : 'none';
             document.getElementById('threeBallLegend').style.display = view === '3ball' ? 'inline-block' : 'none';
-            document.getElementById('matchupLegend').style.display = view === 'matchup' ? 'inline-block' : 'none';
-            document.getElementById('betTypeFilter').style.display = view === 'matchup' ? 'block' : 'none';
-            document.getElementById('sportsbookFilter').style.display = view === 'matchup' ? 'block' : 'none';
             document.getElementById('threeBallFavEdgeFilter').style.display = view === '3ball' ? 'block' : 'none';
             document.getElementById('threeBallFavEdgeFilter').style.display = view === '3ball' ? 'block' : 'none';
             document.getElementById('threeBallImpFilter').style.display = view === '3ball' ? 'block' : 'none';
@@ -2946,9 +2886,6 @@
                 displayColumns = [...fixedColumns, ...threeBallColumns];
             } else if (currentView === 'matchup') {
                 displayColumns = matchupColumns;
-                // Render Matchup as stacked sections (like 3-Ball groups)
-                renderMatchupAsSections(pivotedData, tableBody);
-                return;
             }
             const liveRanks = {};
             if (currentView !== 'matchup') {
@@ -3044,186 +2981,6 @@
                 tableBody.appendChild(tr);
             }
 
-            function enrichMatchupDataWithMainStats() {
-                if (!pivotedData || !pivotedData.length || !matchupData || !matchupData.length) return;
-
-                const normalize = (str) => str.toLowerCase().replace(/[^a-z0-9 ]/g, '').trim();
-
-                const findBestPlayerMatch = (targetName) => {
-                    if (!targetName) return null;
-                    const normTarget = normalize(targetName);
-                    let bestMatch = null;
-                    let bestScore = -1;
-
-                    for (const player of pivotedData) {
-                        if (!player.PLAYER) continue;
-                        const normPlayer = normalize(player.PLAYER);
-
-                        // Exact match
-                        if (normPlayer === normTarget) {
-                            return player;
-                        }
-
-                        // Strong contains match
-                        if (normPlayer.includes(normTarget) || normTarget.includes(normPlayer)) {
-                            return player;
-                        }
-
-                        // Simple character overlap score
-                        let score = 0;
-                        const minLen = Math.min(normTarget.length, normPlayer.length);
-                        for (let i = 0; i < minLen; i++) {
-                            if (normTarget[i] === normPlayer[i]) score++;
-                        }
-                        if (score > bestScore) {
-                            bestScore = score;
-                            bestMatch = player;
-                        }
-                    }
-
-                    // Return if decent overlap
-                    return bestScore >= Math.floor(normTarget.length * 0.6) ? bestMatch : null;
-                };
-
-                matchupData.forEach(row => {
-                    row._p1Stats = findBestPlayerMatch(row['PLAYER 1']);
-                    row._p2Stats = findBestPlayerMatch(row['PLAYER 2']);
-                });
-            }
-
-            function renderMatchupAsSections(data, container) {
-                container.innerHTML = '';
-
-                if (!data || data.length === 0) {
-                    container.innerHTML = `<div style="padding: 1rem; text-align: center; opacity: 0.6;">No matchup data available for the current filters.</div>`;
-                    return;
-                }
-
-                data.forEach((row) => {
-                    const section = document.createElement('div');
-                    section.className = 'matchup-section';
-
-                    // === HEADER (styled like 3-Ball group header) ===
-                    const header = document.createElement('div');
-                    header.className = 'section-header-row';
-                    header.style.marginBottom = '0';
-                    header.innerHTML = `
-                        <div class="section-header-inner" style="padding: 0.4rem 0.6rem; width: 100%; display: flex; align-items: center; gap: 0.5rem;">
-                            <span class="section-header-title" style="font-weight: 600;">
-                                ${row['PLAYER 1'] || 'Player 1'} vs ${row['PLAYER 2'] || 'Player 2'}
-                            </span>
-                            <span style="font-size: 0.75rem; opacity: 0.65; margin-left: auto;">
-                                ${row['SPORTSBOOK'] || ''} • ${row['BET TYPE'] || 'Matchup'}
-                            </span>
-                            <button class="section-action-btn" style="margin-left: 0.5rem;" data-copy-matchup>Copy</button>
-                        </div>
-                    `;
-
-                    const body = document.createElement('div');
-                    body.style.padding = '0.35rem 0.5rem';
-
-                    // Helper to create a row that looks like 3-Ball player rows
-                    const createMatchupPlayerRow = (name, oddsStr, edgePct, isFav, extra = {}) => {
-                        const div = document.createElement('div');
-                        div.style.cssText = `display: flex; align-items: center; gap: 0.5rem; padding: 0.35rem 0.4rem; border-radius: 6px; margin-bottom: 0.25rem; ${isFav ? 'background: color-mix(in srgb, #f59e0b 8%, var(--card-bg));' : ''}`;
-
-                        // Headshot
-                        const headshotHtml = extra.headshot 
-                            ? `<img src="${extra.headshot}" style="width: 24px; height: 24px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">` 
-                            : `<div style="width:24px; height:24px; border-radius:50%; background:#ddd; flex-shrink:0;"></div>`;
-
-                        // Name + optional FAV badge
-                        const nameHtml = `
-                            <div style="min-width: 170px; display: flex; align-items: center; gap: 0.4rem;">
-                                ${headshotHtml}
-                                <span style="font-weight: 600;">${name}</span>
-                                ${isFav ? '<span class="group-fav-badge" style="margin-left: 4px;">FAV</span>' : ''}
-                            </div>
-                        `;
-
-                        // Calculate implied % for American odds display (stacked like 3-Ball)
-                        let americanDisplay = oddsStr || '-';
-                        const imp = oddsToImpliedPct(oddsStr);
-                        if (imp !== null) {
-                            americanDisplay = `${oddsStr} <span style="font-size:0.68rem; opacity:0.6;">(${imp.toFixed(1)}%)</span>`;
-                        }
-
-                        // Data columns (matching 3-Ball style)
-                        const dataHtml = `
-                            <div style="display: flex; gap: 0.6rem; font-size: 0.75rem; flex: 1; flex-wrap: wrap;">
-                                <div><strong>Score:</strong> ${extra.score || '-'}</div>
-                                <div><strong>SG Total:</strong> ${extra.sgTotal || '-'}</div>
-                                <div><strong>SG Putt Diff:</strong> ${extra.sgPutt || '-'}</div>
-                                <div><strong>American:</strong> ${americanDisplay}</div>
-                                <div><strong>Edge:</strong> <span style="color: ${parseFloat(edgePct) > 0 ? '#22c55e' : '#ef4444'};">${edgePct || '-'}</span></div>
-                            </div>
-                        `;
-
-                        div.innerHTML = nameHtml + dataHtml;
-                        return div;
-                    };
-
-                    const edge = row['Edge %'] || '0';
-                    const p1IsFav = parseFloat(edge) > 0;
-
-                    const p1Stats = row._p1Stats || {};
-                    const p2Stats = row._p2Stats || {};
-
-                    // Player 1 row
-                    body.appendChild(createMatchupPlayerRow(
-                        row['PLAYER 1'] || 'Player 1',
-                        row['PLAYER 1 ODDS'],
-                        edge,
-                        p1IsFav,
-                        {
-                            score: p1Stats.Score || '-',
-                            sgTotal: p1Stats['LIVE SG TOTAL'] || '-',
-                            sgPutt: p1Stats['SG Putt Diff'] || '-',
-                            headshot: p1Stats['HEADSHOT'] || null
-                        }
-                    ));
-
-                    // Player 2 row
-                    body.appendChild(createMatchupPlayerRow(
-                        row['PLAYER 2'] || 'Player 2',
-                        row['PLAYER 2 ODDS'],
-                        edge,
-                        !p1IsFav && parseFloat(edge) > 0,
-                        {
-                            score: p2Stats.Score || '-',
-                            sgTotal: p2Stats['LIVE SG TOTAL'] || '-',
-                            sgPutt: p2Stats['SG Putt Diff'] || '-',
-                            headshot: p2Stats['HEADSHOT'] || null
-                        }
-                    ));
-
-                    section.appendChild(header);
-                    section.appendChild(body);
-
-                    // Click header to open popup
-                    header.onclick = (e) => {
-                        if (!e.target.classList.contains('section-action-btn') && typeof showMatchupPopup === 'function') {
-                            showMatchupPopup(row);
-                        }
-                    };
-
-                    // Copy button
-                    const copyBtn = header.querySelector('.section-action-btn');
-                    if (copyBtn) {
-                        copyBtn.onclick = (e) => {
-                            e.stopPropagation();
-                            const text = `${row['PLAYER 1']} vs ${row['PLAYER 2']} | Edge: ${row['Edge %']} | ${row['SPORTSBOOK']}`;
-                            navigator.clipboard.writeText(text).then(() => {
-                                copyBtn.textContent = 'Copied!';
-                                setTimeout(() => copyBtn.textContent = 'Copy', 1200);
-                            });
-                        };
-                    }
-
-                    container.appendChild(section);
-                });
-            }
-
             function appendRows(rows, opts = {}) {
                 const groupFavPlayers = opts.groupFavPlayers || new Set();
                 const valuePlayers = opts.valuePlayers || new Set();
@@ -3238,17 +2995,9 @@
                     if (row.Favorite) tr.classList.add('is-favorite-row');
                     if (groupFavPlayers.has(row.PLAYER)) tr.classList.add('group-favorite-row');
                     if (valuePlayers.has(row.PLAYER)) tr.classList.add('value-flag-row');
-                    // Only grey out non-FAV players when "Group FAV + Positive Edge" filter is explicitly checked
-                    const filterFavEdgeChecked = document.getElementById('showGroupFavPositiveEdge')?.checked;
-                    if (filterFavEdgeChecked && groupFavPlayers.size > 0 && !groupFavPlayers.has(row.PLAYER)) {
+                    // When Group FAV + Positive Edge filter is active, mute non-FAV players in the group
+                    if (groupFavPlayers.size > 0 && !groupFavPlayers.has(row.PLAYER)) {
                         tr.classList.add('muted-non-fav');
-                    }
-                    // Matchup: highlight rows with positive Edge %
-                    if (currentView === 'matchup') {
-                        const edgeVal = parseFloat(row['Edge %']);
-                        if (!isNaN(edgeVal) && edgeVal > 0) {
-                            tr.classList.add('positive-edge-row');
-                        }
                     }
                     displayColumns.forEach(col => {
                         const td = document.createElement('td');
@@ -3423,13 +3172,6 @@
                                         span.classList.add(getEdgeClass(edgeNum));
                                     } else if (edgeNum > 0) {
                                         span.classList.add('sg-positive');
-                                        // Add small VALUE badge for Matchup
-                                        if (currentView === 'matchup') {
-                                            const valBadge = document.createElement('span');
-                                            valBadge.className = 'value-badge-small';
-                                            valBadge.textContent = 'VALUE';
-                                            span.appendChild(valBadge);
-                                        }
                                     } else if (edgeNum < 0) {
                                         span.classList.add('sg-negative');
                                     }
