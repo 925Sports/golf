@@ -2,8 +2,8 @@ name: Update Golf Data CSVs
 
 on:
   schedule:
-    - cron: '*/15 * * * *'   # Every 15 minutes
-  workflow_dispatch:         # Allows manual trigger from GitHub
+    - cron: '*/30 * * * *'   # Every 30 minutes
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -35,9 +35,21 @@ jobs:
             -H "Cache-Control: no-cache, no-store, must-revalidate" \
             -H "Pragma: no-cache"
 
+      - name: Clean header rows from scoring CSVs
+        run: |
+          echo "Cleaning hole-by-hole-detail.csv (removing first 2 rows)..."
+          tail -n +3 hole-by-hole-detail.csv > temp.csv && mv temp.csv hole-by-hole-detail.csv
+
+          echo "Cleaning tournament-scorecard.csv (removing first 2 rows)..."
+          tail -n +3 tournament-scorecard.csv > temp.csv && mv temp.csv tournament-scorecard.csv
+
           echo ""
-          echo "=== Downloaded file sizes ==="
+          echo "=== Cleaned file sizes ==="
           ls -lh hole-by-hole-detail.csv tournament-scorecard.csv cheat-sheet-sportsbooks.csv
+
+          echo ""
+          echo "=== First 3 lines of tournament-scorecard.csv (should now start with header) ==="
+          head -n 3 tournament-scorecard.csv
 
       - name: Commit and push if changed
         run: |
@@ -46,7 +58,7 @@ jobs:
 
           git add hole-by-hole-detail.csv tournament-scorecard.csv cheat-sheet-sportsbooks.csv
 
-          if git commit -m "Auto-update golf data CSVs from Google Sheets"; then
+          if git commit -m "Auto-update golf data CSVs from Google Sheets (cleaned headers)"; then
             echo "✅ Changes committed — pushing to repo"
             git push
           else
