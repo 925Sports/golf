@@ -15,7 +15,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Download all 3 CSVs
+      - name: Download all CSVs
         run: |
           echo "=== Downloading hole-by-hole-detail.csv ==="
           curl -L -o hole-by-hole-detail.csv \
@@ -29,13 +29,25 @@ jobs:
             -H "Cache-Control: no-cache, no-store, must-revalidate" \
             -H "Pragma: no-cache"
 
+          echo "=== Downloading holes.csv ==="
+          curl -L -o holes.csv \
+            "https://docs.google.com/spreadsheets/d/e/2PACX-1vTAvsaoeBBocLCwCz8bqHJnTOgXd55ObC2lCnbu-hikUp_OHGCrOyTNLZlzxQWdhJl5x__28UAUDCdq/pub?gid=0&single=true&output=csv" \
+            -H "Cache-Control: no-cache, no-store, must-revalidate" \
+            -H "Pragma: no-cache"
+
+          echo "=== Downloading live-leaderboard.csv ==="
+          curl -L -o live-leaderboard.csv \
+            "https://docs.google.com/spreadsheets/d/e/2PACX-1vTAvsaoeBBocLCwCz8bqHJnTOgXd55ObC2lCnbu-hikUp_OHGCrOyTNLZlzxQWdhJl5x__28UAUDCdq/pub?gid=686766006&single=true&output=csv" \
+            -H "Cache-Control: no-cache, no-store, must-revalidate" \
+            -H "Pragma: no-cache"
+
           echo "=== Downloading cheat-sheet-sportsbooks.csv ==="
           curl -L -o cheat-sheet-sportsbooks.csv \
             "https://docs.google.com/spreadsheets/d/e/2PACX-1vRaE2ATXG7IcOEtFQN0oSydGAe2okpyuZ6dTfV_vfbolt2V7CSZzX4FDFnSemJhxcceG8idxPz8v2y5/pub?gid=1650347945&single=true&output=csv" \
             -H "Cache-Control: no-cache, no-store, must-revalidate" \
             -H "Pragma: no-cache"
 
-      - name: Clean header rows from scoring CSVs
+      - name: Clean header rows (only needed for some files)
         run: |
           echo "Cleaning hole-by-hole-detail.csv (removing first 2 rows)..."
           tail -n +3 hole-by-hole-detail.csv > temp.csv && mv temp.csv hole-by-hole-detail.csv
@@ -44,21 +56,17 @@ jobs:
           tail -n +3 tournament-scorecard.csv > temp.csv && mv temp.csv tournament-scorecard.csv
 
           echo ""
-          echo "=== Cleaned file sizes ==="
-          ls -lh hole-by-hole-detail.csv tournament-scorecard.csv cheat-sheet-sportsbooks.csv
-
-          echo ""
-          echo "=== First 3 lines of tournament-scorecard.csv (should now start with header) ==="
-          head -n 3 tournament-scorecard.csv
+          echo "=== Final file sizes ==="
+          ls -lh hole-by-hole-detail.csv tournament-scorecard.csv holes.csv live-leaderboard.csv cheat-sheet-sportsbooks.csv
 
       - name: Commit and push if changed
         run: |
           git config --global user.name "GitHub Action Bot"
           git config --global user.email "actions@github.com"
 
-          git add hole-by-hole-detail.csv tournament-scorecard.csv cheat-sheet-sportsbooks.csv
+          git add hole-by-hole-detail.csv tournament-scorecard.csv holes.csv live-leaderboard.csv cheat-sheet-sportsbooks.csv
 
-          if git commit -m "Auto-update golf data CSVs from Google Sheets (cleaned headers)"; then
+          if git commit -m "Auto-update golf data CSVs from Google Sheets"; then
             echo "✅ Changes committed — pushing to repo"
             git push
           else
