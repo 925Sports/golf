@@ -1542,6 +1542,201 @@
         .context-bar {
             display: none;
         }
+        .cs-chart-wrap {
+            position: relative;
+            height: 220px;
+            width: 100%;
+            margin: 0.25rem 0 1rem;
+            padding: 0.35rem 0.25rem 0.5rem;
+            background: color-mix(in srgb, var(--border-color) 10%, var(--card-bg));
+            border: 1px solid color-mix(in srgb, var(--border-color) 40%, transparent);
+            border-radius: 10px;
+        }
+        .cs-chart-wrap-lg { height: 280px; }
+        .cs-overview-chart-panel {
+            width: 100%;
+            max-width: 520px;
+            height: 280px;
+            max-height: 280px;
+            margin: 0.75rem auto 1rem;
+            padding: 0.5rem 0.65rem 0.35rem;
+            overflow: hidden;
+            background: color-mix(in srgb, #e2e8f0 35%, var(--card-bg));
+            box-sizing: border-box;
+        }
+        body[data-theme="dark"] .cs-overview-chart-panel {
+            background: color-mix(in srgb, #1e293b 55%, var(--card-bg));
+        }
+        .course-stats-wrap {
+            max-width: 100%;
+            width: 100%;
+            overflow-x: hidden;
+            box-sizing: border-box;
+            white-space: normal; /* override table td nowrap — prevents infinite horizontal scroll */
+        }
+        #leaderboard td.cs-full-cell {
+            white-space: normal;
+            text-align: left;
+            max-width: 0; /* forces cell to respect table width */
+            width: 100%;
+        }
+        #leaderboard.cs-mode {
+            min-width: 0 !important;
+            width: 100%;
+        }
+        .cs-near-cut-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem 0.5rem;
+            margin: 0.35rem 0 0;
+        }
+        .cs-near-chip {
+            font-size: 0.78rem;
+            padding: 0.22rem 0.5rem;
+            border-radius: 999px;
+            background: color-mix(in srgb, var(--border-color) 22%, var(--card-bg));
+            border: 1px solid color-mix(in srgb, var(--border-color) 50%, transparent);
+            white-space: nowrap;
+        }
+        .cs-near-chip .sc {
+            font-weight: 700;
+            margin-left: 0.25rem;
+        }
+        .cs-near-chip.on-cut { border-color: #f59e0b; background: color-mix(in srgb, #f59e0b 12%, var(--card-bg)); }
+        .cs-near-chip.inside { border-color: color-mix(in srgb, #22c55e 50%, var(--border-color)); }
+        .cs-near-chip.outside { border-color: color-mix(in srgb, #ef4444 45%, var(--border-color)); }
+        .cs-near-chart-wrap {
+            position: relative;
+            width: 100%;
+            max-width: 640px;
+            height: 400px;
+            max-height: 400px;
+            margin: 0.25rem auto 0;
+            overflow: hidden;
+        }
+        .cs-highlight-panel {
+            border-color: color-mix(in srgb, #14b8a6 45%, var(--border-color));
+            background: color-mix(in srgb, #14b8a6 8%, var(--card-bg));
+        }
+        .cs-overview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 0.55rem;
+            margin: 0.75rem 0 0.5rem;
+        }
+        .cs-overview-card {
+            background: color-mix(in srgb, var(--border-color) 14%, var(--card-bg));
+            border: 1px solid color-mix(in srgb, var(--border-color) 45%, transparent);
+            border-radius: 10px;
+            padding: 0.65rem 0.75rem;
+            transition: border-color 0.15s ease, transform 0.15s ease;
+        }
+        .cs-overview-card:hover {
+            border-color: #14b8a6;
+            transform: translateY(-1px);
+        }
+        .cs-ov-title { font-weight: 700; font-size: 0.88rem; }
+        .cs-ov-n { font-size: 0.72rem; opacity: 0.65; margin: 0.15rem 0 0.35rem; }
+        .cs-ov-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem 0.55rem;
+            font-size: 0.75rem;
+        }
+        .cs-bucket-row {
+            display: grid;
+            grid-template-columns: repeat(7, minmax(0, 1fr));
+            gap: 0.45rem;
+            margin: 0.5rem 0 0.65rem;
+        }
+        @media (max-width: 800px) {
+            .cs-bucket-row { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+        }
+        .cs-bucket {
+            background: color-mix(in srgb, var(--border-color) 16%, var(--card-bg));
+            border-radius: 8px;
+            padding: 0.45rem 0.35rem;
+            text-align: center;
+        }
+        .cs-bucket-label { font-size: 0.72rem; font-weight: 700; opacity: 0.75; }
+        .cs-bucket-val { font-size: 1.05rem; font-weight: 800; margin-top: 0.1rem; }
+        .cs-bucket-n { font-size: 0.68rem; opacity: 0.6; }
+        .cs-bucket-bar {
+            height: 4px;
+            background: color-mix(in srgb, var(--border-color) 40%, transparent);
+            border-radius: 2px;
+            margin-top: 0.35rem;
+            overflow: hidden;
+        }
+        .cs-bucket-bar span {
+            display: block;
+            height: 100%;
+            background: #14b8a6;
+        }
+        .cs-panel {
+            background: color-mix(in srgb, var(--border-color) 12%, var(--card-bg));
+            border: 1px solid color-mix(in srgb, var(--border-color) 50%, transparent);
+            border-radius: 10px;
+            padding: 0.75rem 0.9rem;
+            margin-bottom: 0.85rem;
+        }
+        .cs-panel h4 { margin: 0 0 0.4rem 0; font-size: 0.92rem; }
+        .cs-panel h5 { margin: 0.35rem 0; font-size: 0.8rem; opacity: 0.85; }
+        .cs-two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            margin-top: 0.5rem;
+        }
+        @media (max-width: 700px) {
+            .cs-two-col { grid-template-columns: 1fr; }
+        }
+        .cs-list {
+            margin: 0;
+            padding-left: 1.1rem;
+            font-size: 0.8rem;
+            line-height: 1.45;
+        }
+        .cs-diff.up { color: #15803d; font-weight: 700; }
+        .cs-diff.down { color: #b91c1c; font-weight: 700; }
+        .cs-in { color: #15803d; font-weight: 700; }
+        .cs-out { color: #dc2626; font-weight: 700; }
+        .cs-unk { opacity: 0.65; }
+        body[data-theme="dark"] .cs-in { color: #4ade80; }
+        body[data-theme="dark"] .cs-out { color: #f87171; }
+        .cs-narrative p {
+            font-size: 0.86rem;
+            line-height: 1.5;
+            margin: 0 0 0.55rem 0;
+        }
+        .cs-narrative p:last-child { margin-bottom: 0; }
+        .cs-mini-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.78rem;
+        }
+        .cs-mini-table th, .cs-mini-table td {
+            padding: 0.35rem 0.4rem;
+            border-bottom: 1px solid var(--border-color);
+            text-align: left;
+        }
+        .cs-lineup { font-size: 0.72rem; white-space: normal; }
+        .filter-row > div#cutSweatsUserFilter {
+            width: 180px;
+            max-width: 200px;
+        }
+        .filter-row > div#cutSweatsUserFilter input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0.35rem 0.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background: var(--input-bg, var(--card-bg));
+            color: var(--text-color);
+        }
+        .filter-row > div#cutSweatsContestFilter {
+            width: 150px;
+        }
         .context-chip {
             font-size: 0.72rem;
             padding: 0.2rem 0.55rem;
@@ -2198,6 +2393,7 @@
         <button class="view-button" onclick="switchView('showdown')">Showdown</button>
         <button class="view-button" onclick="switchView('3ball')">3-Ball Bets</button>
         <button class="view-button" onclick="switchView('matchup')">Matchup Bets</button>
+        <button class="view-button" onclick="switchView('cutsweats')">Cut Sweats</button>
     </div>
     <div class="filter-container">
         <div class="filter-row">
@@ -2343,6 +2539,21 @@
                     <option value="p1-win">Player 1 Win % (high to low)</option>
                     <option value="default">Default order</option>
                 </select>
+            </div>
+            <div id="cutSweatsContestFilter" style="display: none;" title="Choose which DraftKings contest to analyze">
+                <label for="cutSweatsContest">Contest</label>
+                <select id="cutSweatsContest" onchange="onCutSweatsContestChange()">
+                    <option value="overview" selected>All Contests (Overview)</option>
+                    <option value="millymaker">Milly Maker</option>
+                    <option value="minimax">Mini-Max</option>
+                    <option value="quarter">Quarter</option>
+                    <option value="cash">Cash</option>
+                    <option value="singleentrygpp">Single Entry GPP</option>
+                </select>
+            </div>
+            <div id="cutSweatsUserFilter" style="display: none;" title="Search your DraftKings entry name">
+                <label for="cutSweatsUserSearch">DK Username</label>
+                <input type="text" id="cutSweatsUserSearch" placeholder="Your DK name..." oninput="onCutSweatsUserSearch()" autocomplete="off">
             </div>
         </div>
         <div class="filter-row checkboxes">
@@ -2722,20 +2933,79 @@
         let currentBettingSort = 'edge';
         let lastCourseProfile = '';
         let lastCourseBlurb = '';
+        let cutSweatsByContest = {}; // contestKey -> parsed entries[]
+        let cutSweatsSummary = {}; // contestKey -> { n, buckets, pcts }
+        let cutStatusMap = null;
+        let currentCutSweatsContest = 'overview';
+        let cutSweatsUserQuery = '';
+        let cutSweatsChart = null;
+        let cutSweatsOverviewChart = null;
+        let cutSweatsNearChart = null;
+        const CUT_SWEATS_FILES = {
+            millymaker: 'cut-sweats-millymaker.csv',
+            minimax: 'cut-sweats-minimax.csv',
+            quarter: 'cut-sweats-quarter.csv',
+            cash: 'cut-sweats-cash.csv',
+            singleentrygpp: 'cut-sweats-singleentrygpp.csv'
+        };
+        // Optional direct Google “Publish to web” CSV URLs. When set, preferred over GitHub raw.
+        // Paste a fresh link per contest if a gid 404s or returns the wrong tab.
+        const CUT_SWEATS_SHEET_URLS = {
+            millymaker: '',
+            minimax: '',
+            quarter: '',
+            cash: '',
+            singleentrygpp: ''
+        };
+        const CUT_SWEATS_LABELS = {
+            millymaker: 'Milly Maker',
+            minimax: 'Mini-Max',
+            quarter: 'Quarter',
+            cash: 'Cash',
+            singleentrygpp: 'Single Entry GPP'
+        };
+        // 925 teal color scheme for contest bars
+        const CUT_SWEATS_COLORS = {
+            millymaker: '#0f766e',
+            minimax: '#14b8a6',
+            quarter: '#2dd4bf',
+            cash: '#0d9488',
+            singleentrygpp: '#5eead4'
+        };
+        let cutSweatsLoadState = {
+            total: Object.keys(CUT_SWEATS_FILES).length,
+            loaded: 0,
+            status: {},
+            finished: false
+        };
+        let cutSweatsNameIndex = {}; // contestKey -> Map(lowerEntryName -> [indexes])
+        let cheatSheetLoadedAt = null;
+        let bettingMobileBooksDefaulted = false;
 
         function getVisibleBettingBooks() {
+            let books;
             switch (currentBettingBooksFilter) {
-                case 'american': return [...americanBooks];
-                case 'others': return [...otherBooks];
-                case 'all': return [...bettingBookColumnsAll];
+                case 'american': books = [...americanBooks]; break;
+                case 'others': books = [...otherBooks]; break;
+                case 'all': books = [...bettingBookColumnsAll]; break;
                 case 'DRAFTKINGS':
                 case 'FANDUEL':
                 case 'BETMGM':
                 case 'CAESARS':
                 case 'POINTSBET':
-                    return [currentBettingBooksFilter];
-                default: return [...americanBooks];
+                    books = [currentBettingBooksFilter];
+                    break;
+                default: books = [...americanBooks]; break;
             }
+            // Mobile: max 3 book columns unless a single book is selected
+            if (typeof isMobileBettingLayout === 'function' && isMobileBettingLayout() && books.length > 3 &&
+                !['DRAFTKINGS','FANDUEL','BETMGM','CAESARS','POINTSBET'].includes(currentBettingBooksFilter)) {
+                const preferred = ['DRAFTKINGS', 'FANDUEL', 'BETMGM'];
+                books = preferred.filter(b => books.includes(b))
+                    .concat(books.filter(b => !preferred.includes(b)))
+                    .slice(0, 3);
+            }
+            return books;
         }
 
         function onBettingBooksChange() {
@@ -2944,7 +3214,7 @@
             fetchData();
             document.getElementById('tableBody').addEventListener('click', (event) => {
                 const tr = event.target.closest('tr');
-                if (tr && tr.parentElement.id === 'tableBody') {
+                if (tr && tr.parentElement && tr.parentElement.id === 'tableBody') {
                     if (currentView === 'tournament' && tr.dataset.player) {
                         toggleRowExpansion(tr);
                     } else if (currentView === 'matchup') {
@@ -2989,7 +3259,8 @@
             currentView = view;
             const buttons = document.querySelectorAll('.view-button');
             buttons.forEach(button => button.classList.remove('active'));
-            document.querySelector(`.view-button[onclick="switchView('${view}')"]`).classList.add('active');
+            const activeBtn = document.querySelector(`.view-button[onclick="switchView('${view}')"]`);
+            if (activeBtn) activeBtn.classList.add('active');
             document.getElementById('columnFilter').style.display = (view === 'tournament' || view === 'showdown') ? 'block' : 'none';
             document.getElementById('extraColumnFilter').style.display = (view === 'tournament' || view === 'showdown') ? 'block' : 'none';
             document.getElementById('roundFilter').style.display = view === 'showdown' ? 'block' : 'none';
@@ -3018,16 +3289,30 @@
             document.getElementById('bettingPlusEVFilter').style.display = view === 'betting' ? 'block' : 'none';
             document.getElementById('cutFocusFilter').style.display = (view === 'tournament' || view === 'showdown' || view === 'betting') ? 'block' : 'none';
             document.getElementById('favoritesOnlyFilter').style.display = (view === 'tournament' || view === 'showdown' || view === '3ball' || view === 'betting') ? 'block' : 'none';
+            document.getElementById('cutSweatsContestFilter').style.display = view === 'cutsweats' ? 'block' : 'none';
+            document.getElementById('cutSweatsUserFilter').style.display = view === 'cutsweats' ? 'block' : 'none';
+            if (view === 'betting') {
+                applyBettingMobileDefaults();
+                updateDataTimestamp();
+            }
             const profileChip = document.getElementById('contextProfile');
             if (profileChip) profileChip.style.display = (view === 'course' && lastCourseProfile) ? 'inline-flex' : (lastCourseProfile ? 'inline-flex' : 'none');
-            // Hide main filters that don't apply to course view
-            if (view === 'course') {
+            // Hide main filters that don't apply to course / cut sweats views
+            if (view === 'course' || view === 'cutsweats') {
                 document.getElementById('columnFilter').style.display = 'none';
                 document.getElementById('extraColumnFilter').style.display = 'none';
                 document.getElementById('columnPresetWrap').style.display = 'none';
                 document.getElementById('missedCutFilter').style.display = 'none';
                 document.getElementById('statusFilterWrap').style.display = 'none';
                 document.getElementById('favoritesOnlyFilter').style.display = 'none';
+            }
+            if (view === 'cutsweats') {
+                // Hide player multi-select on cut sweats
+                const playerWrap = document.querySelector('.filter-row > div[title*="specific players"]');
+                if (playerWrap) playerWrap.style.display = 'none';
+            } else {
+                const playerWrap = document.querySelector('.filter-row > div[title*="specific players"]');
+                if (playerWrap) playerWrap.style.display = '';
             }
             if (view !== 'matchup' && view !== 'betting') {
                 playerSearchTerm = '';
@@ -3174,6 +3459,25 @@
                         <li><strong>FAV</strong> badges mark the group favorite; <strong>VALUE</strong> marks positive edge.</li>
                     </ul>
                     <div class="how-tip"><strong>Tip:</strong> Use Table layout sorted by Edge % when you want the single best number on the board; use Grouped when you’re working tee-time by tee-time.</div>
+                `
+            },
+            cutsweats: {
+                title: 'How to use Cut Sweats',
+                html: `
+                    <p>Track how DraftKings PGA lineups sit relative to the cut — across every featured contest and for your username.</p>
+                    <h4>Overview (default)</h4>
+                    <ul>
+                        <li>See all contests at once with entry counts and 4/6 · 5/6 · 6/6 rates.</li>
+                        <li>Grouped bar chart compares those buckets across contests (same style as classic cut-sweat boards).</li>
+                        <li>Click a contest card to open its full detail view.</li>
+                    </ul>
+                    <h4>Single contest</h4>
+                    <ul>
+                        <li>Full <strong>6/6 … 0/6</strong> distribution + bar chart.</li>
+                        <li><strong>Most duplicated lineups</strong> and highest-owned players.</li>
+                        <li>Search your <strong>DK Username</strong> for personal cut profile and over/under-weight vs the field.</li>
+                    </ul>
+                    <div class="how-tip"><strong>Tip:</strong> Start on Overview to spot which contest is most “sweaty,” then drill into that contest for lineups and your entries.</div>
                 `
             },
             matchup: {
@@ -3359,6 +3663,7 @@
                     fetchLiveLeaderboard();
                     fetchCheatSheetData();
                     fetchRoundsData();
+                    fetchCutSweatsData();
                     updateDataTimestamp();
                     document.getElementById('loading').style.display = 'none';
                     // Deep link: #player=Name
@@ -3549,10 +3854,12 @@
                 skipEmptyLines: true,
                 complete: function(results) {
                     cheatSheetData = results.data.filter(r => r.PLAYER || r.Player);
+                    cheatSheetLoadedAt = new Date();
                     console.log('Cheat sheet loaded:', cheatSheetData.length, 'rows');
                     if (cheatSheetData.length > 0) {
                         console.log('Cheat sheet sample:', cheatSheetData[0]);
                     }
+                    updateDataTimestamp();
                     if (currentView === 'betting') updateTable();
                 },
                 error: function(err) {
@@ -3583,6 +3890,734 @@
                     roundsData = [];
                 }
             });
+        }
+
+        function parseDkLineup(lineupStr) {
+            if (!lineupStr) return [];
+            let s = String(lineupStr).trim();
+            // Normalize roster prefixes: leading G / F etc.
+            s = s.replace(/^\s*[A-Z]\s+/, '');
+            // Split on " G " or " F " style slot markers
+            let parts = s.split(/\s+[A-Z]\s+/).map(p => p.trim()).filter(Boolean);
+            if (parts.length < 2) {
+                // Fallback: split on " G "
+                parts = s.split(/\s+G\s+/i).map(p => p.trim()).filter(Boolean);
+            }
+            return parts.slice(0, 6);
+        }
+
+        function buildCutStatusMap() {
+            const map = new Map();
+            const setStatus = (name, status) => {
+                if (!name) return;
+                const key = normalizeName(name);
+                // Prefer definitive false (CUT) over true if conflict
+                if (status === false) map.set(key, false);
+                else if (status === true && map.get(key) !== false) map.set(key, true);
+            };
+            (liveLeaderboardData || []).forEach(r => {
+                const n = r['Player Name'] || r.Player || r.PLAYER;
+                if (!n) return;
+                const pos = String(r['Current Pos'] || r.Pos || r.Place || '').toUpperCase();
+                if (pos.includes('CUT') || pos === 'MC' || pos === 'WD' || pos === 'DQ') {
+                    setStatus(n, false);
+                    return;
+                }
+                const pNum = parsePlaceNum(pos);
+                if (pNum != null && pNum < 900) setStatus(n, true);
+                else if (r['Make Cut'] === 1 || r['Make Cut'] === '1') setStatus(n, true);
+            });
+            (rawData || []).forEach(r => {
+                if (!r.PLAYER) return;
+                const pos = String(r['CURRENT PLACE'] || r.Place || '').toUpperCase();
+                if (pos.includes('CUT') || pos === 'MC' || pos === 'WD' || pos === 'DQ') {
+                    setStatus(r.PLAYER, false);
+                    return;
+                }
+                const holes = String(r.Holes || r.THRU || '').toUpperCase();
+                if (holes === 'CUT' || holes === 'CU') {
+                    setStatus(r.PLAYER, false);
+                    return;
+                }
+                const pNum = parsePlaceNum(pos);
+                if (pNum != null && pNum < 900) setStatus(r.PLAYER, true);
+            });
+            cutStatusMap = map;
+            return map;
+        }
+
+        function playerMadeCut(name) {
+            if (!name) return null;
+            if (!cutStatusMap) buildCutStatusMap();
+            const v = cutStatusMap.get(normalizeName(name));
+            return v === undefined ? null : v;
+        }
+
+        function enrichCutSweatsEntries(rows) {
+            if (!cutStatusMap) buildCutStatusMap();
+            const out = new Array(rows.length);
+            for (let i = 0; i < rows.length; i++) {
+                const r = rows[i];
+                const lineupStr = r.Lineup || r.lineup || r.LINEUP || '';
+                const players = parseDkLineup(lineupStr);
+                let made = 0;
+                const detail = new Array(players.length);
+                for (let j = 0; j < players.length; j++) {
+                    const p = players[j];
+                    const status = playerMadeCut(p);
+                    if (status === true) made++;
+                    detail[j] = { name: p, madeCut: status };
+                }
+                out[i] = {
+                    rank: r.Rank || r.rank || '',
+                    entryId: r.EntryId || r.EntryID || '',
+                    entryName: r.EntryName || r.entryName || '',
+                    points: parseFloat(r.Points || r.points) || 0,
+                    lineupStr,
+                    players,
+                    detail,
+                    madeCount: made,
+                    bucket: made + '/6'
+                };
+            }
+            return out;
+        }
+
+        function summarizeCutSweatsContest(entries) {
+            const buckets = { '6/6': 0, '5/6': 0, '4/6': 0, '3/6': 0, '2/6': 0, '1/6': 0, '0/6': 0 };
+            const n = entries.length;
+            for (let i = 0; i < n; i++) {
+                const b = entries[i].bucket;
+                if (b in buckets) buckets[b]++;
+                else {
+                    const m = Math.min(6, Math.max(0, entries[i].madeCount || 0));
+                    buckets[m + '/6']++;
+                }
+            }
+            const pcts = {};
+            Object.keys(buckets).forEach(k => { pcts[k] = n ? (buckets[k] / n) * 100 : 0; });
+            return { n, buckets, pcts };
+        }
+
+        function getPrimaryCutSweatsContestKey() {
+            let best = 'millymaker';
+            let bestN = (cutSweatsByContest.millymaker || []).length;
+            Object.keys(CUT_SWEATS_FILES).forEach(k => {
+                const n = (cutSweatsByContest[k] || []).length;
+                if (n > bestN) { bestN = n; best = k; }
+            });
+            return best;
+        }
+
+        function csPct(n, d) { return d ? (n / d) * 100 : 0; }
+
+        function analyzeDuplicateLadder(entries, limit = 20) {
+            const map = new Map();
+            for (let i = 0; i < entries.length; i++) {
+                const e = entries[i];
+                const players = e.players || [];
+                if (players.length < 6) continue;
+                const key = players.map(p => p.toLowerCase()).sort().join('|');
+                let g = map.get(key);
+                if (!g) {
+                    g = { count: 0, players, madeSum: 0, ranks: [], bestRank: null, bestPoints: -Infinity, detail: e.detail || [] };
+                    map.set(key, g);
+                }
+                g.count++;
+                g.madeSum += e.madeCount || 0;
+                const rk = parseFloat(e.rank);
+                if (!isNaN(rk)) {
+                    g.ranks.push(rk);
+                    if (g.bestRank == null || rk < g.bestRank) g.bestRank = rk;
+                }
+                if ((e.points || 0) > g.bestPoints) g.bestPoints = e.points || 0;
+            }
+            return [...map.values()]
+                .filter(x => x.count >= 2)
+                .map(x => ({
+                    ...x,
+                    avgMade: x.madeSum / x.count,
+                    medianRank: x.ranks.length ? x.ranks.sort((a, b) => a - b)[Math.floor(x.ranks.length / 2)] : null
+                }))
+                .sort((a, b) => b.count - a.count || b.bestPoints - a.bestPoints)
+                .slice(0, limit);
+        }
+
+        function analyzeChokePoints(entries, cutValue, ownMap, limit = 10) {
+            if (!entries.length || cutValue == null) return [];
+            const n = entries.length;
+            const inGood = {}; // player counts in 5/6 or 6/6 lineups
+            let goodN = 0;
+            for (let i = 0; i < n; i++) {
+                const e = entries[i];
+                if ((e.madeCount || 0) < 5) continue;
+                goodN++;
+                (e.players || []).forEach(p => { inGood[p] = (inGood[p] || 0) + 1; });
+            }
+            if (!goodN) return [];
+            // One-pass score index (avoid O(players × field) .find)
+            const scoreByKey = new Map();
+            (rawData || []).forEach(r => {
+                if (!r.PLAYER) return;
+                const sc = scoreToNumber(r.Score);
+                if (!isNaN(sc)) scoreByKey.set(normalizeName(r.PLAYER), sc);
+            });
+            (liveLeaderboardData || []).forEach(r => {
+                const nm = r['Player Name'] || r.Player || r.PLAYER;
+                if (!nm) return;
+                const sc = scoreToNumber(r['Current Score'] || r.Score);
+                if (!isNaN(sc)) scoreByKey.set(normalizeName(nm), sc);
+            });
+            const out = [];
+            Object.keys(inGood).forEach(p => {
+                const key = normalizeName(p);
+                const own = ownMap.get(key);
+                const ownPct = own ? own.own : csPct(inGood[p], n);
+                const score = scoreByKey.has(key) ? scoreByKey.get(key) : NaN;
+                if (isNaN(score)) return;
+                const dist = score - cutValue;
+                if (dist < -0.5 || dist > 2.5) return; // on number through ~2 over
+                const made = playerMadeCut(p);
+                out.push({
+                    name: p,
+                    own: ownPct,
+                    goodOwn: csPct(inGood[p], goodN),
+                    score,
+                    dist,
+                    made,
+                    leverage: ownPct * (dist >= 0 ? 1.2 : 0.8)
+                });
+            });
+            return out.sort((a, b) => b.own - a.own || b.goodOwn - a.goodOwn).slice(0, limit);
+        }
+
+        function analyzeOwnershipTiers(entries, ownMap) {
+            const tiers = {
+                chalk: { label: 'Chalk (avg own ≥ 15%)', n: 0, good: 0 },
+                mid: { label: 'Mid (8–15%)', n: 0, good: 0 },
+                lev: { label: 'Leverage (avg own < 8%)', n: 0, good: 0 }
+            };
+            for (let i = 0; i < entries.length; i++) {
+                const e = entries[i];
+                const players = e.players || [];
+                if (!players.length) continue;
+                let sum = 0, c = 0;
+                players.forEach(p => {
+                    const o = ownMap.get(normalizeName(p));
+                    if (o) { sum += o.own; c++; }
+                });
+                const avg = c ? sum / c : 0;
+                const t = avg >= 15 ? tiers.chalk : (avg >= 8 ? tiers.mid : tiers.lev);
+                t.n++;
+                if ((e.madeCount || 0) >= 5) t.good++;
+            }
+            return Object.keys(tiers).map(k => {
+                const t = tiers[k];
+                return { key: k, label: t.label, n: t.n, goodPct: csPct(t.good, t.n), sixPct: null };
+            });
+        }
+
+        function analyzeCorrelations(entries, mode = 'good', limit = 12) {
+            // mode: 'good' = 5+/6, 'bad' = 0-2/6
+            // Cap sample size so large GPPs don't freeze the tab
+            const MAX_SAMPLE = 8000;
+            const pairCounts = new Map();
+            let baseN = 0;
+            for (let i = 0; i < entries.length && baseN < MAX_SAMPLE; i++) {
+                const e = entries[i];
+                const m = e.madeCount || 0;
+                if (mode === 'good' && m < 5) continue;
+                if (mode === 'bad' && m > 2) continue;
+                baseN++;
+                const players = (e.players || []).slice().sort((a, b) => a.localeCompare(b));
+                for (let a = 0; a < players.length; a++) {
+                    for (let b = a + 1; b < players.length; b++) {
+                        const key = players[a] + '|' + players[b];
+                        pairCounts.set(key, (pairCounts.get(key) || 0) + 1);
+                    }
+                }
+            }
+            return [...pairCounts.entries()]
+                .map(([key, count]) => {
+                    const [p1, p2] = key.split('|');
+                    return { p1, p2, count, pct: csPct(count, baseN) };
+                })
+                .sort((a, b) => b.count - a.count)
+                .slice(0, limit);
+        }
+
+        function analyzeLateWave(entries) {
+            // Players still on course: thru not finished
+            const stillPlaying = new Set();
+            const checkThru = (thru) => {
+                if (thru == null || thru === '') return false;
+                const t = String(thru).toUpperCase().trim();
+                if (!t || t === 'F' || t === '18' || t === 'CUT' || t === 'CU' || t === 'WD' || t === 'DQ' || t === 'MDF') return false;
+                const n = parseInt(t, 10);
+                if (!isNaN(n) && n >= 1 && n <= 17) return true;
+                if (t.includes('*')) return true;
+                return false;
+            };
+            (rawData || []).forEach(r => {
+                if (r.PLAYER && checkThru(r.Holes || r.THRU || r.Thru)) stillPlaying.add(normalizeName(r.PLAYER));
+            });
+            (liveLeaderboardData || []).forEach(r => {
+                const name = r['Player Name'] || r.Player || r.PLAYER;
+                if (name && checkThru(r.Thru || r.Holes || r.THRU)) stillPlaying.add(normalizeName(name));
+            });
+            let activeLineups = 0, finalLineups = 0;
+            for (let i = 0; i < entries.length; i++) {
+                const players = entries[i].players || [];
+                let onCourse = 0;
+                players.forEach(p => { if (stillPlaying.has(normalizeName(p))) onCourse++; });
+                if (onCourse >= 2) activeLineups++;
+                else finalLineups++;
+            }
+            return {
+                stillPlayingCount: stillPlaying.size,
+                activeLineups,
+                finalLineups,
+                activePct: csPct(activeLineups, entries.length),
+                names: [...stillPlaying].slice(0, 20)
+            };
+        }
+
+        function analyzeCashVsGpp() {
+            const gppKeys = ['millymaker', 'quarter', 'singleentrygpp', 'minimax'];
+            const cashKeys = ['cash']; // Cash only — Mini-Max is not cash
+            const sumKeys = (keys) => {
+                let n = 0, good = 0, six = 0;
+                keys.forEach(k => {
+                    const s = cutSweatsSummary[k];
+                    if (!s || !s.n) return;
+                    n += s.n;
+                    good += (s.buckets['5/6'] || 0) + (s.buckets['6/6'] || 0);
+                    six += (s.buckets['6/6'] || 0);
+                });
+                return { n, goodPct: csPct(good, n), sixPct: csPct(six, n) };
+            };
+            return { gpp: sumKeys(gppKeys), cash: sumKeys(cashKeys) };
+        }
+
+        function simulatePlayerMiss(entries, playerName) {
+            if (!playerName || !entries.length) return null;
+            const key = normalizeName(playerName);
+            const currentlyMade = playerMadeCut(playerName) === true;
+            let fieldSix = 0, fieldSixAfter = 0, withPlayer = 0;
+            for (let i = 0; i < entries.length; i++) {
+                const e = entries[i];
+                const m = e.madeCount || 0;
+                if (m >= 6) fieldSix++;
+                const has = (e.players || []).some(p => normalizeName(p) === key);
+                if (has) {
+                    withPlayer++;
+                    const after = currentlyMade ? m - 1 : m;
+                    if (after >= 6) fieldSixAfter++;
+                } else if (m >= 6) {
+                    fieldSixAfter++;
+                }
+            }
+            const n = entries.length;
+            return {
+                playerName,
+                withPlayer,
+                withPct: csPct(withPlayer, n),
+                sixBefore: csPct(fieldSix, n),
+                sixAfter: csPct(fieldSixAfter, n),
+                delta: csPct(fieldSixAfter, n) - csPct(fieldSix, n)
+            };
+        }
+
+        function simulatePlayerMake(entries, playerName) {
+            // Opposite scenario: treat player as making the cut
+            if (!playerName || !entries.length) return null;
+            const key = normalizeName(playerName);
+            const currentlyMade = playerMadeCut(playerName) === true;
+            let fieldSix = 0, fieldSixAfter = 0, withPlayer = 0;
+            for (let i = 0; i < entries.length; i++) {
+                const e = entries[i];
+                const m = e.madeCount || 0;
+                if (m >= 6) fieldSix++;
+                const has = (e.players || []).some(p => normalizeName(p) === key);
+                if (has) {
+                    withPlayer++;
+                    const after = currentlyMade ? m : m + 1;
+                    if (after >= 6) fieldSixAfter++;
+                } else if (m >= 6) {
+                    fieldSixAfter++;
+                }
+            }
+            const n = entries.length;
+            return {
+                playerName,
+                withPlayer,
+                withPct: csPct(withPlayer, n),
+                sixBefore: csPct(fieldSix, n),
+                sixAfter: csPct(fieldSixAfter, n),
+                delta: csPct(fieldSixAfter, n) - csPct(fieldSix, n)
+            };
+        }
+
+        function csPlayerNameHtml(name, madeOverride) {
+            const st = madeOverride !== undefined ? madeOverride : playerMadeCut(name);
+            const cls = st === true ? 'cs-in' : (st === false ? 'cs-out' : 'cs-unk');
+            return `<span class="${cls}">${name}</span>`;
+        }
+
+        function buildCutOwnershipNarrative(cutInfo, primaryKey, primaryEntries, ownMap, nearCut, chokes, tiers, shape, late, fieldSplit) {
+            const s = cutSweatsSummary[primaryKey] || summarizeCutSweatsContest(primaryEntries);
+            const lines = [];
+            const cutTxt = cutInfo ? cutInfo.display : '—';
+            lines.push(`<p><strong>Cutline:</strong> approximately <strong>${cutTxt}</strong>. Ownership baseline: <strong>Milly Maker</strong>. Summary field: <strong>${CUT_SWEATS_LABELS[primaryKey]}</strong> (${s.n.toLocaleString()} entries).</p>`);
+
+            lines.push(`<p><strong>Field cut shape:</strong> ${(s.pcts['6/6']||0).toFixed(1)}% are 6/6, ${((s.pcts['5/6']||0)+(s.pcts['6/6']||0)).toFixed(1)}% have 5+, and ${((s.pcts['0/6']||0)+(s.pcts['1/6']||0)+(s.pcts['2/6']||0)).toFixed(1)}% are at 2 or fewer through the cut.</p>`);
+
+            if (shape && shape.cash.n && shape.gpp.n) {
+                const diff = shape.cash.goodPct - shape.gpp.goodPct;
+                lines.push(`<p><strong>Cash vs GPP:</strong> Cash is at <strong>${shape.cash.sixPct.toFixed(1)}%</strong> 6/6 and <strong>${shape.cash.goodPct.toFixed(1)}%</strong> 5+, vs GPP at <strong>${shape.gpp.sixPct.toFixed(1)}%</strong> 6/6 and <strong>${shape.gpp.goodPct.toFixed(1)}%</strong> 5+ (${diff >= 0 ? 'cash +' : 'gpp +'}${Math.abs(diff).toFixed(1)} pts on 5+).</p>`);
+            }
+
+            if (tiers && tiers.length) {
+                const chalk = tiers.find(t => t.key === 'chalk');
+                const lev = tiers.find(t => t.key === 'lev');
+                if (chalk && lev) {
+                    lines.push(`<p><strong>Ownership vs cut:</strong> Chalk builds (avg own ≥15%) clear 5+ at <strong>${chalk.goodPct.toFixed(1)}%</strong> (${chalk.n.toLocaleString()} LUs). Leverage builds (avg own &lt;8%) clear 5+ at <strong>${lev.goodPct.toFixed(1)}%</strong> (${lev.n.toLocaleString()} LUs). ${lev.goodPct > chalk.goodPct ? 'Leverage is outperforming chalk on made-cut rate.' : 'Chalk is holding up better on made-cut rate than pure leverage.'}</p>`);
+                }
+            }
+
+            // Full-field highest owned by cut status (not limited to near-cut window)
+            const split = fieldSplit || getFieldPlayersSplitByCut(ownMap, cutInfo ? cutInfo.value : null);
+            const topOut = (split.outside || []).slice(0, 8).map(p =>
+                `${csPlayerNameHtml(p.name, false)} (${p.score != null ? formatScoreDisplay(p.score) : '—'}, ${p.own.toFixed(1)}%)`
+            ).join(', ');
+            const topIn = (split.inside || []).slice(0, 8).map(p =>
+                `${csPlayerNameHtml(p.name, true)} (${p.score != null ? formatScoreDisplay(p.score) : '—'}, ${p.own.toFixed(1)}%)`
+            ).join(', ');
+            if (topOut) lines.push(`<p><strong>Highest owned outside / missed cut:</strong> ${topOut}.</p>`);
+            if (topIn) lines.push(`<p><strong>Highest owned inside / on the number:</strong> ${topIn}.</p>`);
+
+            if (chokes && chokes.length) {
+                const top = chokes.slice(0, 5).map(c => {
+                    const made = c.made === false || (cutInfo && c.score > cutInfo.value) ? false : true;
+                    return `${csPlayerNameHtml(c.name, made)} (${c.own.toFixed(1)}% own, ${formatScoreDisplay(c.score)})`;
+                }).join(', ');
+                lines.push(`<p><strong>Choke points:</strong> ${top}. These are the highest-owned names still tied into 5+/6 lineups while sitting near the cut — the biggest field swing if they flip status.</p>`);
+            }
+
+            if (late) {
+                lines.push(`<p><strong>Live board:</strong> ${late.stillPlayingCount} players still on the course; <strong>${late.activePct.toFixed(1)}%</strong> of primary-contest lineups still have 2+ unfinished golfers.</p>`);
+            }
+
+            const topOwn = [...ownMap.values()].sort((a, b) => b.own - a.own).slice(0, 10);
+            if (topOwn.length) {
+                lines.push(`<p><strong>Top field ownership (Milly Maker):</strong> ${topOwn.map(p => {
+                    const st = playerMadeCut(p.name);
+                    return `${csPlayerNameHtml(p.name, st)} ${p.own.toFixed(1)}%`;
+                }).join(' · ')}.</p>`);
+            }
+
+            return lines.join('');
+        }
+
+        function buildCutSweatsNameIndex(key, entries) {
+            const idx = new Map();
+            for (let i = 0; i < entries.length; i++) {
+                const name = String(entries[i].entryName || '').toLowerCase();
+                if (!name) continue;
+                let arr = idx.get(name);
+                if (!arr) { arr = []; idx.set(name, arr); }
+                arr.push(i);
+            }
+            cutSweatsNameIndex[key] = idx;
+            return idx;
+        }
+
+        function searchCutSweatsUserEntries(key, query) {
+            const q = (query || '').toLowerCase().trim();
+            const entries = cutSweatsByContest[key] || [];
+            if (!q || !entries.length) return [];
+            let idx = cutSweatsNameIndex[key];
+            if (!idx) idx = buildCutSweatsNameIndex(key, entries);
+            // Exact match first
+            if (idx.has(q)) return idx.get(q).map(i => entries[i]);
+            // Prefix / includes over unique names (faster repeated searches than scanning all rows)
+            const out = [];
+            for (const [name, indices] of idx) {
+                if (name.includes(q)) {
+                    for (let i = 0; i < indices.length; i++) out.push(entries[indices[i]]);
+                }
+            }
+            return out;
+        }
+
+        function analyzeUserAcrossContests(query) {
+            const q = (query || '').toLowerCase().trim();
+            if (!q) return null;
+            const byContest = {};
+            Object.keys(CUT_SWEATS_FILES).forEach(k => {
+                const mine = searchCutSweatsUserEntries(k, q);
+                if (!mine.length) {
+                    byContest[k] = null;
+                    return;
+                }
+                const buckets = { '6/6': 0, '5/6': 0, '4/6': 0, '3/6': 0, '2/6': 0, '1/6': 0, '0/6': 0 };
+                let madeSum = 0, fivePlus = 0;
+                for (let i = 0; i < mine.length; i++) {
+                    const e = mine[i];
+                    buckets[e.bucket] = (buckets[e.bucket] || 0) + 1;
+                    madeSum += e.madeCount || 0;
+                    if ((e.madeCount || 0) >= 5) fivePlus++;
+                }
+                byContest[k] = {
+                    n: mine.length,
+                    buckets,
+                    avgMade: madeSum / mine.length,
+                    fivePlusPct: csPct(fivePlus, mine.length),
+                    spark: ['6/6','5/6','4/6','3/6','2/6','1/6','0/6'].map(b => csPct(buckets[b] || 0, mine.length))
+                };
+            });
+            return byContest;
+        }
+
+        function getCutSweatsDataHealth() {
+            const rows = [];
+            const milly = cutSweatsByContest.millymaker || [];
+            const millyFirst = milly[0] ? String(milly[0].entryId || '') : '';
+            Object.keys(CUT_SWEATS_FILES).forEach(k => {
+                const st = cutSweatsLoadState.status[k] || {};
+                const n = (cutSweatsByContest[k] || []).length;
+                let flag = st.state || (n ? 'ok' : 'loading');
+                if (k !== 'millymaker' && n && milly.length && n === milly.length) {
+                    const first = String((cutSweatsByContest[k][0] || {}).entryId || '');
+                    if (first && millyFirst && first === millyFirst) flag = 'dup';
+                }
+                rows.push({ key: k, label: CUT_SWEATS_LABELS[k] || k, n, flag, note: st.note || '' });
+            });
+            return rows;
+        }
+
+        function buildCutSweatsExportBlurb(cutInfo, userQuery) {
+            const lines = [];
+            lines.push('CUT SWEATS');
+            if (cutInfo) lines.push(`Cutline: ~${cutInfo.display}`);
+            lines.push('');
+            lines.push('Contest 6/6 rates:');
+            Object.keys(CUT_SWEATS_FILES).forEach(k => {
+                const s = cutSweatsSummary[k];
+                if (!s || !s.n) return;
+                lines.push(`• ${CUT_SWEATS_LABELS[k]}: ${(s.pcts['6/6'] || 0).toFixed(1)}% 6/6 · ${((s.pcts['5/6']||0)+(s.pcts['6/6']||0)).toFixed(1)}% 5+ (${s.n.toLocaleString()} entries)`);
+            });
+            const cutVal = cutInfo ? cutInfo.value : null;
+            if (cutVal != null) {
+                const near = getPlayersNearCut(cutVal, 3);
+                const outs = near.filter(p => p.made === false || p.score > cutVal).slice(0, 5);
+                const ins = near.filter(p => !(p.made === false || p.score > cutVal)).slice(0, 5);
+                if (outs.length) {
+                    lines.push('');
+                    lines.push('Highest owned outside cut:');
+                    outs.forEach(p => lines.push(`• ${p.name} (${formatScoreDisplay(p.score)}, ${p.own.toFixed(1)}%)`));
+                }
+                if (ins.length) {
+                    lines.push('');
+                    lines.push('Highest owned inside/on cut:');
+                    ins.forEach(p => lines.push(`• ${p.name} (${formatScoreDisplay(p.score)}, ${p.own.toFixed(1)}%)`));
+                }
+            }
+            if (userQuery) {
+                const cross = analyzeUserAcrossContests(userQuery);
+                lines.push('');
+                lines.push(`Portfolio — ${userQuery}:`);
+                Object.keys(cross || {}).forEach(k => {
+                    const c = cross[k];
+                    if (!c) return;
+                    lines.push(`• ${CUT_SWEATS_LABELS[k]}: ${c.n} entries · avg ${c.avgMade.toFixed(2)}/6 · ${c.fivePlusPct.toFixed(1)}% with 5+`);
+                });
+            }
+            lines.push('');
+            lines.push('via 925 Sports');
+            return lines.join('\n');
+        }
+
+        function copyCutSweatsBlurb() {
+            const cutInfo = estimateCutLine();
+            const text = buildCutSweatsExportBlurb(cutInfo, cutSweatsUserQuery);
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(() => alert('Cut Sweats blurb copied.')).catch(() => window.prompt('Copy blurb:', text));
+            } else {
+                window.prompt('Copy blurb:', text);
+            }
+        }
+
+        function onCutSweatsScenarioChange() {
+            updateTable();
+        }
+
+        function reapplyAllCutSweatsStatus() {
+            buildCutStatusMap();
+            Object.keys(cutSweatsByContest).forEach(key => {
+                const entries = cutSweatsByContest[key];
+                if (!entries || !entries.length) return;
+                for (let i = 0; i < entries.length; i++) {
+                    const e = entries[i];
+                    if (!e.players || !e.players.length) continue;
+                    let made = 0;
+                    const detail = new Array(e.players.length);
+                    for (let j = 0; j < e.players.length; j++) {
+                        const status = playerMadeCut(e.players[j]);
+                        if (status === true) made++;
+                        detail[j] = { name: e.players[j], madeCut: status };
+                    }
+                    e.detail = detail;
+                    e.madeCount = made;
+                    e.bucket = made + '/6';
+                }
+                cutSweatsSummary[key] = summarizeCutSweatsContest(entries);
+            });
+        }
+
+        function fetchCutSweatsData() {
+            const timestamp = new Date().getTime();
+            buildCutStatusMap();
+            _csAnalyticsCache = { key: '', data: null };
+            cutSweatsNameIndex = {};
+            const keys = Object.keys(CUT_SWEATS_FILES);
+            cutSweatsLoadState = {
+                total: keys.length,
+                loaded: 0,
+                status: {},
+                finished: false
+            };
+            keys.forEach(k => { cutSweatsLoadState.status[k] = { state: 'loading', n: 0, note: '' }; });
+
+            const scheduleRender = () => {
+                if (currentView !== 'cutsweats') return;
+                clearTimeout(window._csFetchRenderTimer);
+                window._csFetchRenderTimer = setTimeout(() => {
+                    try { updateTable(); } catch (e) { console.error('Cut Sweats post-load render failed:', e); }
+                }, 450);
+            };
+
+            const markDone = (key) => {
+                cutSweatsLoadState.loaded = Math.min(
+                    cutSweatsLoadState.total,
+                    Object.values(cutSweatsLoadState.status).filter(s => s && s.state !== 'loading').length
+                );
+                if (cutSweatsLoadState.loaded >= cutSweatsLoadState.total) {
+                    cutSweatsLoadState.finished = true;
+                }
+                scheduleRender();
+            };
+
+            keys.forEach(key => {
+                const file = CUT_SWEATS_FILES[key];
+                const sheetUrl = (CUT_SWEATS_SHEET_URLS[key] || '').trim();
+                const githubUrl = `https://raw.githubusercontent.com/925Sports/golf/main/${file}?t=${timestamp}`;
+                const csvUrl = sheetUrl || githubUrl;
+                Papa.parse(csvUrl, {
+                    download: true,
+                    header: true,
+                    skipEmptyLines: true,
+                    worker: false,
+                    complete: function(results) {
+                        try {
+                            const raw = (results.data || []).filter(r => (r.Lineup || r.lineup) && (r.EntryName || r.entryName));
+                            const milly = cutSweatsByContest.millymaker;
+                            if (key !== 'millymaker' && milly && milly.length && raw.length === milly.length) {
+                                const firstId = String(raw[0].EntryId || raw[0].EntryID || '');
+                                if (firstId && firstId === String(milly[0].entryId || '')) {
+                                    cutSweatsByContest[key] = milly;
+                                    cutSweatsSummary[key] = cutSweatsSummary.millymaker || summarizeCutSweatsContest(milly);
+                                    cutSweatsNameIndex[key] = cutSweatsNameIndex.millymaker || buildCutSweatsNameIndex('millymaker', milly);
+                                    cutSweatsLoadState.status[key] = {
+                                        state: 'dup',
+                                        n: milly.length,
+                                        note: 'Same field as Milly Maker'
+                                    };
+                                    console.warn('Cut Sweats', key, 'matches millymaker — reusing data. Fix sheet gid.');
+                                    markDone(key);
+                                    return;
+                                }
+                            }
+                            const parsed = new Array(raw.length);
+                            for (let i = 0; i < raw.length; i++) {
+                                const r = raw[i];
+                                const lineupStr = r.Lineup || r.lineup || '';
+                                const players = parseDkLineup(lineupStr);
+                                let made = 0;
+                                for (let j = 0; j < players.length; j++) {
+                                    if (playerMadeCut(players[j]) === true) made++;
+                                }
+                                parsed[i] = {
+                                    rank: r.Rank || r.rank || '',
+                                    entryId: r.EntryId || r.EntryID || '',
+                                    entryName: r.EntryName || r.entryName || '',
+                                    points: parseFloat(r.Points || r.points) || 0,
+                                    players,
+                                    madeCount: made,
+                                    bucket: made + '/6'
+                                };
+                            }
+                            cutSweatsByContest[key] = parsed;
+                            cutSweatsSummary[key] = summarizeCutSweatsContest(parsed);
+                            buildCutSweatsNameIndex(key, parsed);
+                            _csAnalyticsCache = { key: '', data: null };
+                            cutSweatsLoadState.status[key] = { state: 'ok', n: parsed.length, note: '' };
+                            console.log('Cut Sweats', key, 'loaded:', parsed.length, 'entries');
+                        } catch (err) {
+                            console.error('Cut Sweats parse failed for', key, err);
+                            cutSweatsByContest[key] = cutSweatsByContest[key] || [];
+                            cutSweatsSummary[key] = cutSweatsSummary[key] || { n: 0, buckets: {}, pcts: {} };
+                            cutSweatsLoadState.status[key] = { state: 'error', n: 0, note: err.message || 'parse failed' };
+                        }
+                        markDone(key);
+                    },
+                    error: function(err) {
+                        console.warn('Cut Sweats fetch failed for', key, err);
+                        if (!cutSweatsByContest[key]) cutSweatsByContest[key] = [];
+                        if (!cutSweatsSummary[key]) cutSweatsSummary[key] = { n: 0, buckets: {}, pcts: {} };
+                        cutSweatsLoadState.status[key] = { state: 'error', n: 0, note: 'download failed' };
+                        markDone(key);
+                    }
+                });
+            });
+            scheduleRender();
+        }
+
+        function onCutSweatsContestChange() {
+            currentCutSweatsContest = document.getElementById('cutSweatsContest')?.value || 'overview';
+            updateTable();
+        }
+        let _csUserTimer = null;
+        let _csAnalyticsCache = { key: '', data: null };
+        function escapeHtml(str) {
+            return String(str ?? '')
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;');
+        }
+        function onCutSweatsUserSearch() {
+            cutSweatsUserQuery = (document.getElementById('cutSweatsUserSearch')?.value || '').trim();
+            // Debounce heavier when contests are large
+            clearTimeout(_csUserTimer);
+            _csUserTimer = setTimeout(() => {
+                try { updateTable(); }
+                catch (err) { console.error('Cut Sweats user search render failed:', err); }
+            }, 400);
+        }
+        function getCachedPrimaryAnalytics(primaryKey, primaryEntries, ownMap, cutValue) {
+            const cacheKey = `${primaryKey}|${primaryEntries.length}|${cutValue ?? 'x'}|${(ownMap && ownMap.size) || 0}`;
+            if (_csAnalyticsCache.key === cacheKey && _csAnalyticsCache.data) return _csAnalyticsCache.data;
+            const data = {
+                chokes: analyzeChokePoints(primaryEntries, cutValue, ownMap, 10),
+                dups: analyzeDuplicateLadder(primaryEntries, 15),
+                tiers: analyzeOwnershipTiers(primaryEntries, ownMap),
+                corrGood: analyzeCorrelations(primaryEntries, 'good', 10),
+                corrBad: analyzeCorrelations(primaryEntries, 'bad', 10),
+                late: analyzeLateWave(primaryEntries)
+            };
+            _csAnalyticsCache = { key: cacheKey, data };
+            return data;
         }
 
         function calculateSeasonRanks() {
@@ -3818,7 +4853,31 @@
             dataFetchedAt = new Date();
             const el = document.getElementById('dataTimestamp');
             if (!el) return;
-            el.textContent = `Data as of ${dataFetchedAt.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' })}`;
+            const base = `Data as of ${dataFetchedAt.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' })}`;
+            if (currentView === 'betting' && cheatSheetLoadedAt) {
+                const oddsTime = cheatSheetLoadedAt.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' });
+                el.textContent = `${base} · Odds as of ${oddsTime}`;
+            } else {
+                el.textContent = base;
+            }
+        }
+        function isMobileBettingLayout() {
+            return !!(window.matchMedia && window.matchMedia('(max-width: 768px)').matches);
+        }
+        function applyBettingMobileDefaults() {
+            if (!isMobileBettingLayout()) {
+                bettingMobileBooksDefaulted = false;
+                return;
+            }
+            // On mobile, default books to DK / FD / MGM unless user already picked a single book
+            const sel = document.getElementById('bettingBooksSelect');
+            if (sel && (sel.value === 'american' || sel.value === 'all' || sel.value === 'others')) {
+                sel.value = 'american';
+                currentBettingBooksFilter = 'american';
+            }
+            bettingMobileBooksDefaulted = true;
+            // Prefer a compact column set: Score + Best Odds + Edge + model win if present
+            // Actual book columns still come from getVisibleBettingBooks(); CSS hides overflow via table scroll
         }
         function exportTableCsv() {
             if (!pivotedData.length) return;
@@ -3878,6 +4937,11 @@
             if (currentView === 'course') {
                 // Course stats builds from raw/live/scorecard sources directly
                 pivotedData = rawData.length ? rawData.map(r => ({ PLAYER: r.PLAYER })) : [{ PLAYER: '_' }];
+                return;
+            }
+            if (currentView === 'cutsweats') {
+                // Lightweight stub — renderCutSweats reads cutSweatsByContest / summaries directly
+                pivotedData = [{ PLAYER: '_' }];
                 return;
             }
             if (currentView === 'betting') {
@@ -4288,6 +5352,12 @@
         function renderTable() {
             const tableHeader = document.getElementById('tableHeader');
             const tableBody = document.getElementById('tableBody');
+            const tableEl = document.getElementById('leaderboard');
+            // Only Course / Cut Sweats use full-bleed layout; reset otherwise so normal tabs don't stretch
+            if (tableEl) {
+                if (currentView === 'course' || currentView === 'cutsweats') tableEl.classList.add('cs-mode');
+                else tableEl.classList.remove('cs-mode');
+            }
             tableHeader.innerHTML = '';
             tableBody.innerHTML = '';
             if (!pivotedData.length) {
@@ -4321,6 +5391,18 @@
                 return;
             } else if (currentView === 'course') {
                 renderCourseStats(tableHeader, tableBody);
+                return;
+            } else if (currentView === 'cutsweats') {
+                try {
+                    renderCutSweats(tableHeader, tableBody);
+                } catch (err) {
+                    console.error('Cut Sweats render failed:', err);
+                    tableHeader.innerHTML = '';
+                    tableBody.innerHTML = `<tr><td class="cs-full-cell" style="padding:1rem;text-align:left;">
+                        <strong>Cut Sweats hit an error while rendering.</strong><br>
+                        <span style="font-size:0.85rem;opacity:0.8;">${escapeHtml(err && err.message ? err.message : String(err))}</span>
+                    </td></tr>`;
+                }
                 return;
             } else if (currentView === 'betting') {
                 displayColumns = [...fixedColumns, ...bettingColumns];
@@ -6147,12 +7229,20 @@
         // ========== SCORECARD ==========
         function normalizeName(name) {
             if (!name) return '';
-            return String(name)
+            let s = String(name)
                 .toLowerCase()
                 .normalize('NFD').replace(/[\u0300-\u036f]/g, '') // strip accents
                 .replace(/[^a-z0-9\s,]/g, ' ')
                 .replace(/\s+/g, ' ')
                 .trim();
+            // Canonicalize "last, first middle" → "first middle last" so DK vs leaderboard match
+            if (s.includes(',')) {
+                const parts = s.split(',').map(x => x.trim()).filter(Boolean);
+                if (parts.length >= 2) {
+                    s = `${parts.slice(1).join(' ')} ${parts[0]}`.replace(/\s+/g, ' ').trim();
+                }
+            }
+            return s;
         }
 
         function getPlayerHoleData(playerName) {
@@ -7054,13 +8144,974 @@
                 </div>
             </div>`;
 
+            const tableEl = document.getElementById('leaderboard');
+            if (tableEl) tableEl.classList.add('cs-mode');
             const tr = document.createElement('tr');
             const td = document.createElement('td');
             td.colSpan = 24;
+            td.className = 'cs-full-cell';
             td.innerHTML = html;
             td.style.padding = '0.5rem';
             tr.appendChild(td);
             tableBody.appendChild(tr);
+        }
+
+        function estimateCutLine() {
+            // Returns { display, value } from players around places 60–75
+            const scores = [];
+            (rawData || []).forEach(r => {
+                const p = parsePlaceNum(r['CURRENT PLACE'] || r.Place);
+                if (p != null && p >= 60 && p <= 75) {
+                    const s = scoreToNumber(r.Score);
+                    if (!isNaN(s)) scores.push(s);
+                }
+            });
+            if (!scores.length) {
+                (liveLeaderboardData || []).forEach(r => {
+                    const p = parsePlaceNum(r['Current Pos'] || r.Pos || r.Place);
+                    if (p != null && p >= 60 && p <= 75) {
+                        const s = scoreToNumber(r['Current Score'] || r.Score);
+                        if (!isNaN(s)) scores.push(s);
+                    }
+                });
+            }
+            if (!scores.length) return null;
+            const avg = scores.reduce((a, b) => a + b, 0) / scores.length;
+            const value = Math.round(avg);
+            const display = value === 0 ? 'E' : (value > 0 ? '+' + value : String(value));
+            return { display, value };
+        }
+
+        function formatScoreDisplay(n) {
+            if (n == null || isNaN(n)) return '—';
+            if (n === 0) return 'E';
+            return n > 0 ? '+' + n : String(n);
+        }
+
+        function buildContestOwnershipMap(contestKey) {
+            // Global default = Milly Maker ownership. Only use another contest when explicitly requested.
+            let key = contestKey || 'millymaker';
+            let entries = cutSweatsByContest[key] || [];
+            if (!entries.length && key !== 'millymaker') {
+                key = 'millymaker';
+                entries = cutSweatsByContest.millymaker || [];
+            }
+            // If milly is empty, fall back to largest loaded file
+            if (!entries.length) {
+                Object.keys(CUT_SWEATS_FILES).forEach(k => {
+                    const n = (cutSweatsByContest[k] || []).length;
+                    if (n > entries.length) { entries = cutSweatsByContest[k]; key = k; }
+                });
+            }
+            const n = entries.length || 1;
+            const counts = {};
+            for (let i = 0; i < entries.length; i++) {
+                const players = entries[i].players || [];
+                for (let j = 0; j < players.length; j++) {
+                    const p = players[j];
+                    if (!p) continue;
+                    counts[p] = (counts[p] || 0) + 1;
+                }
+            }
+            const byNorm = new Map();
+            Object.keys(counts).forEach(p => {
+                byNorm.set(normalizeName(p), { name: p, own: (counts[p] / n) * 100, contest: key });
+            });
+            return byNorm;
+        }
+
+        function getFieldPlayersSplitByCut(ownMap, cutValue) {
+            // All golfers with ownership + cut status (full field, not near-cut only)
+            if (!cutStatusMap) buildCutStatusMap();
+            const byName = new Map();
+            const resolveMade = (name, posStr, holesStr, placeNum) => {
+                const fromMap = cutStatusMap ? cutStatusMap.get(normalizeName(name)) : undefined;
+                if (fromMap === false) return false;
+                const pos = String(posStr || '').toUpperCase();
+                const holes = String(holesStr || '').toUpperCase();
+                if (pos.includes('CUT') || pos === 'MC' || pos === 'WD' || pos === 'DQ' ||
+                    holes === 'CUT' || holes === 'CU' || holes === 'WD' || holes === 'DQ') {
+                    return false;
+                }
+                if (fromMap === true) return true;
+                if (placeNum != null && placeNum < 900 && !pos.includes('CUT')) return true;
+                return null;
+            };
+            const add = (name, score, place, made, thru) => {
+                if (!name) return;
+                const key = normalizeName(name);
+                const ownInfo = ownMap.get(key);
+                const own = ownInfo ? ownInfo.own : 0;
+                // Prefer DK-style display name from ownership map when available
+                const displayName = ownInfo ? ownInfo.name : name;
+                const prev = byName.get(key);
+                if (!prev) {
+                    byName.set(key, {
+                        name: displayName,
+                        score: isNaN(score) ? null : score,
+                        place,
+                        made,
+                        own,
+                        thru: thru || ''
+                    });
+                } else {
+                    if (own > (prev.own || 0)) {
+                        prev.own = own;
+                        if (ownInfo) prev.name = ownInfo.name;
+                    }
+                    if (!isNaN(score) && (prev.score == null || score !== prev.score)) prev.score = score;
+                    // CUT / miss always wins over a prior "made"
+                    if (made === false) prev.made = false;
+                    else if (made === true && prev.made !== false) prev.made = true;
+                    if (thru && (!prev.thru || prev.thru === '—')) prev.thru = thru;
+                    if (place != null && (prev.place == null || place < prev.place)) prev.place = place;
+                }
+            };
+            (rawData || []).forEach(r => {
+                if (!r.PLAYER) return;
+                const score = scoreToNumber(r.Score);
+                const place = parsePlaceNum(r['CURRENT PLACE'] || r.Place);
+                const pos = r['CURRENT PLACE'] || r.Place || '';
+                const holes = String(r.Holes || r.THRU || r.Thru || '').trim();
+                const made = resolveMade(r.PLAYER, pos, holes, place);
+                add(r.PLAYER, score, place, made, holes);
+            });
+            (liveLeaderboardData || []).forEach(r => {
+                const name = r['Player Name'] || r.Player || r.PLAYER;
+                if (!name) return;
+                const score = scoreToNumber(r['Current Score'] || r.Score);
+                const place = parsePlaceNum(r['Current Pos'] || r.Pos || r.Place);
+                const pos = r['Current Pos'] || r.Pos || r.Place || '';
+                const thru = String(r.Thru || r.Holes || r.THRU || '').trim();
+                const made = resolveMade(name, pos, thru, place);
+                add(name, score, place, made, thru);
+            });
+            // Fold in ownership-only names (still resolve cut via map)
+            ownMap.forEach((v, key) => {
+                if (!byName.has(key)) {
+                    const made = playerMadeCut(v.name);
+                    byName.set(key, { name: v.name, score: null, place: null, made, own: v.own, thru: '' });
+                } else if ((byName.get(key).own || 0) < v.own) {
+                    byName.get(key).own = v.own;
+                    byName.get(key).name = v.name;
+                }
+            });
+            // Final pass: trust cutStatusMap above anything else
+            byName.forEach((p, key) => {
+                const mapped = cutStatusMap ? cutStatusMap.get(key) : undefined;
+                if (mapped === false) p.made = false;
+                else if (mapped === true && p.made !== false) p.made = true;
+            });
+
+            const all = [...byName.values()].sort((a, b) => (b.own || 0) - (a.own || 0));
+            // Outside: explicitly missed, or over the cut number without a made-cut flag
+            const outside = all.filter(p => {
+                if (p.made === false) return true;
+                if (p.made === true) return false;
+                if (cutValue != null && p.score != null && p.score > cutValue) return true;
+                return false;
+            }).filter(p => (p.own || 0) > 0);
+            // Inside: explicitly made cut (or at/under cut number and not missed)
+            const inside = all.filter(p => {
+                if (p.made === false) return false;
+                if (p.made === true) return true;
+                if (cutValue != null && p.score != null && p.score <= cutValue) return true;
+                return false;
+            }).filter(p => (p.own || 0) > 0);
+            return { all, outside, inside };
+        }
+
+        function getPlayersNearCut(cutValue, margin = 3) {
+            if (cutValue == null || isNaN(cutValue)) return [];
+            const ownMap = buildContestOwnershipMap();
+            const byName = new Map();
+            const add = (name, score, place, made, thru) => {
+                if (!name || isNaN(score)) return;
+                if (score < cutValue - margin || score > cutValue + margin) return;
+                const key = normalizeName(name);
+                const ownInfo = ownMap.get(key);
+                const own = ownInfo ? ownInfo.own : 0;
+                const prev = byName.get(key);
+                if (!prev || (place != null && (prev.place == null || place < prev.place))) {
+                    byName.set(key, { name, score, place, made, own, thru: thru || '' });
+                } else {
+                    if (own > (prev.own || 0)) prev.own = own;
+                    if (thru && !prev.thru) prev.thru = thru;
+                }
+            };
+            (rawData || []).forEach(r => {
+                if (!r.PLAYER) return;
+                const score = scoreToNumber(r.Score);
+                const place = parsePlaceNum(r['CURRENT PLACE'] || r.Place);
+                const pos = String(r['CURRENT PLACE'] || r.Place || '').toUpperCase();
+                const holes = String(r.Holes || r.THRU || r.Thru || '').trim();
+                const holesUp = holes.toUpperCase();
+                let made = null;
+                if (pos.includes('CUT') || pos === 'MC' || holesUp === 'CUT' || holesUp === 'CU') made = false;
+                else if (place != null && place < 900) made = true;
+                add(r.PLAYER, score, place, made, holes);
+            });
+            (liveLeaderboardData || []).forEach(r => {
+                const name = r['Player Name'] || r.Player || r.PLAYER;
+                if (!name) return;
+                const score = scoreToNumber(r['Current Score'] || r.Score);
+                const place = parsePlaceNum(r['Current Pos'] || r.Pos || r.Place);
+                const pos = String(r['Current Pos'] || r.Pos || r.Place || '').toUpperCase();
+                const thru = String(r.Thru || r.Holes || r.THRU || '').trim();
+                let made = null;
+                if (pos.includes('CUT') || pos === 'MC' || pos === 'WD') made = false;
+                else if (place != null && place < 900) made = true;
+                add(name, score, place, made, thru);
+            });
+            // Group: outside/missed first, then inside/on-cut — each sorted by ownership
+            const all = [...byName.values()];
+            const outside = all
+                .filter(p => p.made === false || (cutValue != null && p.score > cutValue))
+                .sort((a, b) => (b.own || 0) - (a.own || 0) || a.score - b.score);
+            const inside = all
+                .filter(p => !(p.made === false || (cutValue != null && p.score > cutValue)))
+                .sort((a, b) => (b.own || 0) - (a.own || 0) || a.score - b.score);
+            return [...outside.slice(0, 6), ...inside.slice(0, 6)];
+        }
+
+        function renderCutSweatsOverview(tableHeader, tableBody) {
+            tableHeader.innerHTML = '';
+            tableBody.innerHTML = '';
+            const keys = Object.keys(CUT_SWEATS_FILES);
+            const loaded = keys.filter(k => (cutSweatsSummary[k] && cutSweatsSummary[k].n > 0) || (cutSweatsByContest[k] && cutSweatsByContest[k].length));
+            if (!loaded.length) {
+                tableBody.innerHTML = `<tr><td style="padding:1.5rem;text-align:center;opacity:0.75;">
+                    Loading contest data…<br>
+                    <span style="font-size:0.85rem;">Overview appears once contest files are available.</span>
+                </td></tr>`;
+                return;
+            }
+
+            const featuredBuckets = ['3/6', '4/6', '5/6', '6/6'];
+            const cutInfo = estimateCutLine();
+            const cutLine = cutInfo ? cutInfo.display : null;
+            const nearCut = cutInfo ? getPlayersNearCut(cutInfo.value, 3) : [];
+            const primaryKey = getPrimaryCutSweatsContestKey();
+            const primaryEntries = cutSweatsByContest[primaryKey] || [];
+            // Global ownership always from Milly Maker unless a specific contest view requests otherwise
+            const ownMap = buildContestOwnershipMap('millymaker');
+            const fieldSplit = getFieldPlayersSplitByCut(ownMap, cutInfo ? cutInfo.value : null);
+
+            const cards = loaded.map(k => {
+                const s = cutSweatsSummary[k] || summarizeCutSweatsContest(cutSweatsByContest[k] || []);
+                cutSweatsSummary[k] = s;
+                return `<div class="cs-overview-card" onclick="document.getElementById('cutSweatsContest').value='${k}'; onCutSweatsContestChange();" style="cursor:pointer;">
+                    <div class="cs-ov-title">${CUT_SWEATS_LABELS[k] || k}</div>
+                    <div class="cs-ov-n">${s.n.toLocaleString()} entries</div>
+                    <div class="cs-ov-stats">
+                        <span><strong>6/6</strong> ${(s.pcts['6/6'] || 0).toFixed(1)}%</span>
+                        <span><strong>5/6</strong> ${(s.pcts['5/6'] || 0).toFixed(1)}%</span>
+                        <span><strong>4/6</strong> ${(s.pcts['4/6'] || 0).toFixed(1)}%</span>
+                        <span><strong>3/6</strong> ${(s.pcts['3/6'] || 0).toFixed(1)}%</span>
+                    </div>
+                </div>`;
+            }).join('');
+
+            // 1. User portfolio sweat + 4. contest compare matrix + vs field
+            const userCross = cutSweatsUserQuery ? analyzeUserAcrossContests(cutSweatsUserQuery) : null;
+            let userPortfolioHtml = '';
+            if (cutSweatsUserQuery && userCross) {
+                const rows = Object.keys(CUT_SWEATS_FILES).map(k => {
+                    const c = userCross[k];
+                    if (!c) return `<tr><td>${CUT_SWEATS_LABELS[k]}</td><td colspan="9" style="opacity:0.6;">No entries matched</td></tr>`;
+                    const spark = c.spark.map((v, i) => {
+                        const h = Math.max(2, Math.round(v * 0.5));
+                        return `<span title="${['6/6','5/6','4/6','3/6','2/6','1/6','0/6'][i]}: ${v.toFixed(1)}%" style="display:inline-block;width:8px;height:${h}px;background:#14b8a6;margin-right:2px;vertical-align:bottom;border-radius:1px;"></span>`;
+                    }).join('');
+                    return `<tr>
+                        <td><strong>${CUT_SWEATS_LABELS[k]}</strong></td>
+                        <td>${c.n}</td>
+                        <td><strong>${c.fivePlusPct.toFixed(1)}%</strong></td>
+                        <td>${c.avgMade.toFixed(2)}</td>
+                        <td>${c.buckets['6/6'] || 0}</td>
+                        <td>${c.buckets['5/6'] || 0}</td>
+                        <td>${c.buckets['4/6'] || 0}</td>
+                        <td>${c.buckets['3/6'] || 0}</td>
+                        <td>${(c.buckets['2/6']||0)+(c.buckets['1/6']||0)+(c.buckets['0/6']||0)}</td>
+                        <td style="vertical-align:bottom;">${spark}</td>
+                    </tr>`;
+                }).join('');
+                let totalN = 0, totalFive = 0;
+                const userBucketPct = { '6/6': 0, '5/6': 0, '4/6': 0 };
+                Object.values(userCross).forEach(c => {
+                    if (!c) return;
+                    totalN += c.n;
+                    totalFive += (c.fivePlusPct / 100) * c.n;
+                    ['6/6', '5/6', '4/6'].forEach(b => { userBucketPct[b] += (c.buckets[b] || 0); });
+                });
+                const portPct = totalN ? (totalFive / totalN) * 100 : 0;
+                const u6 = totalN ? (userBucketPct['6/6'] / totalN) * 100 : 0;
+                const u5 = totalN ? (userBucketPct['5/6'] / totalN) * 100 : 0;
+                const u4 = totalN ? (userBucketPct['4/6'] / totalN) * 100 : 0;
+                // Field baseline = weighted across loaded contests
+                let fieldN = 0, f6 = 0, f5 = 0, f4 = 0;
+                Object.keys(CUT_SWEATS_FILES).forEach(k => {
+                    const s = cutSweatsSummary[k];
+                    if (!s || !s.n || !s.buckets) return;
+                    fieldN += s.n;
+                    f6 += s.buckets['6/6'] || 0;
+                    f5 += s.buckets['5/6'] || 0;
+                    f4 += s.buckets['4/6'] || 0;
+                });
+                const field6 = fieldN ? (f6 / fieldN) * 100 : 0;
+                const field5 = fieldN ? (f5 / fieldN) * 100 : 0;
+                const field4 = fieldN ? (f4 / fieldN) * 100 : 0;
+                const cmp = (you, field, label) => {
+                    const d = you - field;
+                    if (Math.abs(d) < 0.25) return `<span>${label}: <strong>${you.toFixed(1)}%</strong> vs field ${field.toFixed(1)}% — <strong>even</strong></span>`;
+                    const ahead = d > 0;
+                    return `<span>${label}: <strong>${you.toFixed(1)}%</strong> vs field ${field.toFixed(1)}% — <strong class="${ahead ? 'cs-in' : 'cs-out'}">${ahead ? 'ahead' : 'behind'} ${Math.abs(d).toFixed(1)} pts</strong></span>`;
+                };
+                const vsFieldHtml = `<div style="display:flex;flex-direction:column;gap:0.25rem;margin:0.35rem 0 0.65rem;font-size:0.88rem;">
+                    ${cmp(u6, field6, '6/6')}
+                    ${cmp(u5, field5, '5/6')}
+                    ${cmp(u4, field4, '4/6')}
+                </div>`;
+                userPortfolioHtml = `<div class="cs-panel cs-highlight-panel">
+                    <h4>Your portfolio — ${escapeHtml(cutSweatsUserQuery)}</h4>
+                    <p style="font-size:1rem;margin:0.25rem 0 0.35rem;"><strong>${portPct.toFixed(0)}%</strong> of your entries still have <strong>5+ through the cut</strong>
+                    <span style="opacity:0.7;font-size:0.85rem;"> · ${totalN} total entries across contests</span></p>
+                    <p style="margin:0 0 0.15rem;font-size:0.82rem;opacity:0.8;"><strong>You vs field</strong> (share of your entries in each bucket)</p>
+                    ${vsFieldHtml}
+                    <div style="overflow-x:auto;">
+                        <table class="cs-mini-table">
+                            <thead><tr>
+                                <th>Contest</th><th>Entries</th><th>5+ %</th><th>Avg</th>
+                                <th>6/6</th><th>5/6</th><th>4/6</th><th>3/6</th><th>≤2</th><th>Mix</th>
+                            </tr></thead>
+                            <tbody>${rows}</tbody>
+                        </table>
+                    </div>
+                </div>`;
+            } else if (cutSweatsUserQuery) {
+                userPortfolioHtml = `<div class="cs-panel"><h4>Your portfolio</h4><p>No entries matched “${escapeHtml(cutSweatsUserQuery)}”.</p></div>`;
+            } else {
+                userPortfolioHtml = `<div class="cs-panel"><h4>Your portfolio</h4><p class="course-stats-note" style="margin:0;">Enter your <strong>DK Username</strong> above to see live sweat score, you-vs-field on 6/6–4/6, and a contest compare matrix.</p></div>`;
+            }
+
+            // 2–7. Heavy analytics (cached — username typing should not recompute these)
+            const analytics = getCachedPrimaryAnalytics(primaryKey, primaryEntries, ownMap, cutInfo ? cutInfo.value : null);
+            const chokes = analytics.chokes;
+            const chokeHtml = `<div class="cs-panel">
+                <h4>Cut choke points</h4>
+                <p class="course-stats-note" style="margin:0 0 0.4rem;">High-owned in 5/6–6/6 lineups and sitting on/near the number — field leverage if they miss. (${CUT_SWEATS_LABELS[primaryKey]})</p>
+                ${chokes.length ? `<div style="overflow-x:auto;"><table class="cs-mini-table">
+                    <thead><tr><th>#</th><th>Player</th><th>Own</th><th>In 5+ LUs</th><th>Score</th><th>vs Cut</th></tr></thead>
+                    <tbody>${chokes.map((c, i) => {
+                        const made = !(c.made === false || (cutInfo && c.score > cutInfo.value));
+                        return `<tr>
+                        <td>${i + 1}</td>
+                        <td><strong>${csPlayerNameHtml(c.name, made)}</strong></td>
+                        <td>${c.own.toFixed(1)}%</td>
+                        <td>${c.goodOwn.toFixed(1)}%</td>
+                        <td>${formatScoreDisplay(c.score)}</td>
+                        <td>${c.dist === 0 ? 'on number' : (c.dist > 0 ? '+' + c.dist.toFixed(0) : c.dist.toFixed(0))}</td>
+                    </tr>`;
+                    }).join('')}</tbody>
+                </table></div>` : '<p style="font-size:0.85rem;opacity:0.75;">No choke-point players identified yet.</p>'}
+            </div>`;
+
+            // 3. Duplicate ladder (primary contest)
+            const dups = analytics.dups;
+            const dupHtml = `<div class="cs-panel">
+                <h4>Duplicate lineup ladder — ${CUT_SWEATS_LABELS[primaryKey]}</h4>
+                <p class="course-stats-note" style="margin:0 0 0.4rem;">Most copied builds with best rank, median rank, and avg made-cut.</p>
+                ${dups.length ? `<div style="overflow-x:auto;"><table class="cs-mini-table">
+                    <thead><tr><th>#</th><th>Copies</th><th>% Field</th><th>Best Rank</th><th>Med Rank</th><th>Avg Cut</th><th>Lineup</th></tr></thead>
+                    <tbody>${dups.map((d, i) => `<tr>
+                        <td>${i + 1}</td>
+                        <td><strong>${d.count.toLocaleString()}</strong></td>
+                        <td>${csPct(d.count, primaryEntries.length).toFixed(2)}%</td>
+                        <td>${d.bestRank ?? '—'}</td>
+                        <td>${d.medianRank ?? '—'}</td>
+                        <td>${d.avgMade.toFixed(2)}/6</td>
+                        <td class="cs-lineup">${(d.players || []).map(p => {
+                            const st = playerMadeCut(p);
+                            return `<span class="${st === true ? 'cs-in' : st === false ? 'cs-out' : 'cs-unk'}">${p}</span>`;
+                        }).join(' · ')}</td>
+                    </tr>`).join('')}</tbody>
+                </table></div>` : '<p style="font-size:0.85rem;opacity:0.75;">No duplicated lineups found.</p>'}
+            </div>`;
+
+            // 5. Ownership tiers
+            const tiers = analytics.tiers;
+            const tierHtml = `<div class="cs-panel">
+                <h4>Ownership tiers × cut buckets</h4>
+                <p class="course-stats-note" style="margin:0 0 0.4rem;">How often chalk vs leverage builds clear 5+ made cut (${CUT_SWEATS_LABELS[primaryKey]}).</p>
+                <div class="cs-bucket-row" style="grid-template-columns:repeat(3,minmax(0,1fr));">
+                    ${tiers.map(t => `<div class="cs-bucket">
+                        <div class="cs-bucket-label">${t.label}</div>
+                        <div class="cs-bucket-val">${t.goodPct.toFixed(1)}%</div>
+                        <div class="cs-bucket-n">${t.n.toLocaleString()} lineups · 5+</div>
+                    </div>`).join('')}
+                </div>
+            </div>`;
+
+            // 6. Correlations
+            const corrGood = analytics.corrGood;
+            const corrBad = analytics.corrBad;
+            const corrHtml = `<div class="cs-panel">
+                <h4>Correlation board — ${CUT_SWEATS_LABELS[primaryKey]}</h4>
+                <div class="cs-two-col">
+                    <div>
+                        <h5>Most paired in 5+/6 lineups</h5>
+                        <ul class="cs-list">${corrGood.length ? corrGood.map(p =>
+                            `<li><strong>${p.p1}</strong> + <strong>${p.p2}</strong> — ${p.pct.toFixed(1)}% of 5+ LUs</li>`
+                        ).join('') : '<li>None</li>'}</ul>
+                    </div>
+                    <div>
+                        <h5>Most paired in 0–2/6 lineups</h5>
+                        <ul class="cs-list">${corrBad.length ? corrBad.map(p =>
+                            `<li><strong>${p.p1}</strong> + <strong>${p.p2}</strong> — ${p.pct.toFixed(1)}% of 0–2 LUs</li>`
+                        ).join('') : '<li>None</li>'}</ul>
+                    </div>
+                </div>
+            </div>`;
+
+            // 7. Late wave
+            const late = analytics.late;
+            const lateHtml = `<div class="cs-panel">
+                <h4>Late-wave tracker</h4>
+                <p style="margin:0.25rem 0;"><strong>${late.activePct.toFixed(1)}%</strong> of ${CUT_SWEATS_LABELS[primaryKey]} lineups still have <strong>2+ players on the course</strong>
+                <span style="opacity:0.7;"> · ${late.stillPlayingCount} players still out · ${late.activeLineups.toLocaleString()} active LUs / ${late.finalLineups.toLocaleString()} final</span></p>
+            </div>`;
+
+            // 8. Cash vs GPP (Cash only — not Mini-Max)
+            const shape = analyzeCashVsGpp();
+            const shapeHtml = `<div class="cs-panel">
+                <h4>Cash vs GPP cut shape</h4>
+                <div class="cs-bucket-row" style="grid-template-columns:repeat(2,minmax(0,1fr));">
+                    <div class="cs-bucket">
+                        <div class="cs-bucket-label">GPP contests</div>
+                        <div class="cs-bucket-val">${shape.gpp.sixPct.toFixed(1)}%</div>
+                        <div class="cs-bucket-n">6/6 · ${shape.gpp.goodPct.toFixed(1)}% with 5+ · ${shape.gpp.n.toLocaleString()} entries</div>
+                    </div>
+                    <div class="cs-bucket">
+                        <div class="cs-bucket-label">Cash only</div>
+                        <div class="cs-bucket-val">${shape.cash.sixPct.toFixed(1)}%</div>
+                        <div class="cs-bucket-n">6/6 · ${shape.cash.goodPct.toFixed(1)}% with 5+ · ${shape.cash.n.toLocaleString()} entries</div>
+                    </div>
+                </div>
+                <p class="course-stats-note" style="margin:0.4rem 0 0;">
+                    ${shape.cash.n && shape.gpp.n
+                        ? ((shape.cash.goodPct - shape.gpp.goodPct) >= 0
+                            ? `Cash is <strong>${(shape.cash.goodPct - shape.gpp.goodPct).toFixed(1)} pts</strong> safer on 5+ made cut than GPP fields.`
+                            : `GPP fields are currently <strong>${(shape.gpp.goodPct - shape.cash.goodPct).toFixed(1)} pts</strong> higher on 5+ than Cash.`)
+                        : 'Need both Cash and GPP files loaded to compare.'}
+                </p>
+            </div>`;
+
+            // 9. Scenario — full field sorted by Milly Maker ownership
+            const scenarioPlayers = (fieldSplit.all || []).filter(p => (p.own || 0) > 0).slice(0, 80);
+            const selectedScenario = document.getElementById('cutSweatsScenario')?.value || (scenarioPlayers[0]?.name || '');
+            const simMiss = selectedScenario ? simulatePlayerMiss(primaryEntries, selectedScenario) : null;
+            const simMake = selectedScenario ? simulatePlayerMake(primaryEntries, selectedScenario) : null;
+            const selectedMeta = scenarioPlayers.find(p => p.name === selectedScenario);
+            const selectedMade = selectedMeta
+                ? (selectedMeta.made === true || (selectedMeta.made !== false && cutInfo && selectedMeta.score != null && selectedMeta.score <= cutInfo.value))
+                : playerMadeCut(selectedScenario) === true;
+            let userMissNote = '', userMakeNote = '';
+            if (selectedScenario && userCross && cutSweatsUserQuery) {
+                const mine = searchCutSweatsUserEntries(primaryKey, cutSweatsUserQuery);
+                if (mine.length) {
+                    const um = simulatePlayerMiss(mine, selectedScenario);
+                    const uk = simulatePlayerMake(mine, selectedScenario);
+                    if (um) userMissNote = ` Your ${CUT_SWEATS_LABELS[primaryKey]} entries: 6/6 ${um.sixBefore.toFixed(1)}% → ${um.sixAfter.toFixed(1)}% (${um.delta >= 0 ? '+' : ''}${um.delta.toFixed(1)}).`;
+                    if (uk) userMakeNote = ` Your ${CUT_SWEATS_LABELS[primaryKey]} entries: 6/6 ${uk.sixBefore.toFixed(1)}% → ${uk.sixAfter.toFixed(1)}% (${uk.delta >= 0 ? '+' : ''}${uk.delta.toFixed(1)}).`;
+                }
+            }
+            const nameHtml = selectedScenario ? csPlayerNameHtml(selectedScenario, selectedMade) : '';
+            const scenarioHtml = `<div class="cs-panel">
+                <h4>Scenario simulator</h4>
+                <p class="course-stats-note" style="margin:0 0 0.4rem;">All field golfers sorted by Milly Maker ownership. Simulates both miss and make.</p>
+                <div style="display:flex;flex-wrap:wrap;gap:0.5rem;align-items:center;margin-bottom:0.45rem;">
+                    <label for="cutSweatsScenario" style="font-size:0.8rem;">Player</label>
+                    <select id="cutSweatsScenario" onchange="onCutSweatsScenarioChange()" style="max-width:100%;padding:0.3rem 0.45rem;border-radius:6px;border:1px solid var(--border-color);background:var(--card-bg);color:var(--text-color);">
+                        ${scenarioPlayers.length ? scenarioPlayers.map(p => {
+                            const inside = p.made === true || (p.made !== false && cutInfo && p.score != null && p.score <= cutInfo.value);
+                            const tag = inside ? '✓ cut' : '✗ cut';
+                            const sc = p.score != null ? formatScoreDisplay(p.score) : '—';
+                            return `<option value="${p.name.replace(/"/g, '&quot;')}" ${p.name === selectedScenario ? 'selected' : ''}>${p.name} (${sc}, ${p.own.toFixed(1)}%, ${tag})</option>`;
+                        }).join('') : '<option value="">No players loaded</option>'}
+                    </select>
+                </div>
+                ${simMiss && simMake ? `
+                    <p style="margin:0 0 0.4rem;font-size:0.9rem;">
+                        <strong>If ${nameHtml} misses</strong> (${simMiss.withPct.toFixed(1)}% of ${CUT_SWEATS_LABELS[primaryKey]} lineups):
+                        field 6/6 <strong>${simMiss.sixBefore.toFixed(1)}% → ${simMiss.sixAfter.toFixed(1)}%</strong>
+                        (${simMiss.delta >= 0 ? '+' : ''}${simMiss.delta.toFixed(1)} pts).${userMissNote}
+                    </p>
+                    <p style="margin:0;font-size:0.9rem;">
+                        <strong>If ${nameHtml} makes the cut</strong> (opposite):
+                        field 6/6 <strong>${simMake.sixBefore.toFixed(1)}% → ${simMake.sixAfter.toFixed(1)}%</strong>
+                        (${simMake.delta >= 0 ? '+' : ''}${simMake.delta.toFixed(1)} pts).${userMakeNote}
+                    </p>
+                ` : '<p class="course-stats-note" style="margin:0;">Select a player to simulate miss and make scenarios.</p>'}
+            </div>`;
+
+            // Detailed narrative summary
+            const narrativeHtml = `<div class="cs-panel cs-highlight-panel">
+                <h4>Cut sweat &amp; ownership summary</h4>
+                <div class="cs-narrative">
+                    ${buildCutOwnershipNarrative(cutInfo, primaryKey, primaryEntries, ownMap, nearCut, chokes, tiers, shape, late, fieldSplit)}
+                </div>
+            </div>`;
+
+            // Near cut chart panel
+            const nearOutsideN = nearCut.filter(p => p.made === false || (cutInfo && p.score > cutInfo.value)).length;
+            const nearInsideN = nearCut.length - nearOutsideN;
+            const nearCutHtml = nearCut.length ? `
+                <div class="cs-panel" style="margin-top:0.75rem;">
+                    <h4>Highest owned near the cut${cutLine != null ? ` (${cutLine})` : ''}</h4>
+                    <p class="course-stats-note" style="margin:0 0 0.35rem;">
+                        Grouped by cut status · <span style="color:#ef4444;font-weight:700;">Red</span> = outside / missed (${nearOutsideN})
+                        · <span style="color:#22c55e;font-weight:700;">Green</span> = inside / on the number (${nearInsideN})
+                    </p>
+                    <div class="cs-near-chart-wrap">
+                        <canvas id="cutSweatsNearChart"></canvas>
+                    </div>
+                </div>
+            ` : '';
+
+            const chartTitle = cutLine != null ? `Cutline: ${cutLine}` : 'Lineup distributions by contest';
+
+            const healthRows = getCutSweatsDataHealth();
+            const loadingN = healthRows.filter(r => r.flag === 'loading').length;
+            const dupN = healthRows.filter(r => r.flag === 'dup').length;
+            const errN = healthRows.filter(r => r.flag === 'error').length;
+            const loadPct = cutSweatsLoadState.total
+                ? Math.round((cutSweatsLoadState.loaded / cutSweatsLoadState.total) * 100)
+                : 0;
+            const loadBanner = (loadingN || !cutSweatsLoadState.finished) ? `
+                <div class="cs-panel" style="border-color:#14b8a6;">
+                    <h4 style="margin-bottom:0.35rem;">Loading contests… ${cutSweatsLoadState.loaded}/${cutSweatsLoadState.total}</h4>
+                    <div style="height:8px;background:color-mix(in srgb,var(--border-color) 35%,transparent);border-radius:999px;overflow:hidden;">
+                        <div style="height:100%;width:${loadPct}%;background:#14b8a6;"></div>
+                    </div>
+                    <p class="course-stats-note" style="margin:0.4rem 0 0;">Wait for this to finish before searching a DK username on large fields.</p>
+                </div>` : '';
+            const healthBanner = `
+                <div class="cs-panel" style="${dupN || errN ? 'border-color:#f59e0b;' : ''}">
+                    <h4>Contest status</h4>
+                    <div style="overflow-x:auto;">
+                        <table class="cs-mini-table">
+                            <thead><tr><th>Contest</th><th>Entries</th><th>Status</th></tr></thead>
+                            <tbody>
+                                ${healthRows.map(r => {
+                                    const label = r.flag === 'ok' ? '<span class="cs-in">Ready</span>'
+                                        : r.flag === 'dup' ? '<span class="cs-out">Same field as Milly Maker</span>'
+                                        : r.flag === 'error' ? '<span class="cs-out">Unavailable</span>'
+                                        : '<span class="cs-unk">Loading…</span>';
+                                    return `<tr><td>${r.label}</td><td>${r.n ? r.n.toLocaleString() : '—'}</td><td>${label}</td></tr>`;
+                                }).join('')}
+                            </tbody>
+                        </table>
+                    </div>
+                    ${dupN ? `<p class="course-stats-note" style="margin:0.45rem 0 0;">
+                        <strong>${dupN}</strong> contest${dupN === 1 ? '' : 's'} currently show the same field as Milly Maker, so contest-to-contest compares may not be meaningful until those fields are updated.
+                    </p>` : ''}
+                    ${errN ? `<p class="course-stats-note" style="margin:0.35rem 0 0;">
+                        <strong>${errN}</strong> contest${errN === 1 ? '' : 's'} could not be loaded right now.
+                    </p>` : ''}
+                </div>`;
+
+            const html = `<div class="course-stats-wrap">
+                <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0.5rem;">
+                    <div>
+                        <h3 style="margin:0;">Cut Sweats Overview</h3>
+                        <p class="course-stats-note" style="margin:0.25rem 0 0;">
+                            ${cutLine != null ? `Current cutline (approx): <strong>${cutLine}</strong>` : 'Cutline: —'}
+                            · Click a contest card for full detail
+                        </p>
+                    </div>
+                    <button type="button" class="toolbar-btn" onclick="copyCutSweatsBlurb()" title="Copy summary for posts">Copy Cut Sweats Blurb</button>
+                </div>
+                ${loadBanner}
+                ${healthBanner}
+                <div class="cs-overview-grid">${cards}</div>
+                ${narrativeHtml}
+                ${userPortfolioHtml}
+                ${lateHtml}
+                ${shapeHtml}
+                ${chokeHtml}
+                ${scenarioHtml}
+                ${nearCutHtml}
+                ${tierHtml}
+                ${corrHtml}
+                ${dupHtml}
+                <div class="cs-chart-wrap cs-chart-wrap-lg cs-overview-chart-panel">
+                    <canvas id="cutSweatsOverviewChart" width="480" height="240"></canvas>
+                </div>
+            </div>`;
+
+            const tableEl = document.getElementById('leaderboard');
+            if (tableEl) tableEl.classList.add('cs-mode');
+            const tr = document.createElement('tr');
+            const td = document.createElement('td');
+            td.colSpan = 20;
+            td.className = 'cs-full-cell';
+            td.innerHTML = html;
+            td.style.padding = '0.5rem';
+            tr.appendChild(td);
+            tableBody.appendChild(tr);
+
+            try {
+                const canvas = document.getElementById('cutSweatsOverviewChart');
+                if (canvas && typeof Chart !== 'undefined') {
+                    if (cutSweatsOverviewChart) { cutSweatsOverviewChart.destroy(); cutSweatsOverviewChart = null; }
+                    if (cutSweatsChart) { cutSweatsChart.destroy(); cutSweatsChart = null; }
+                    if (cutSweatsNearChart) { cutSweatsNearChart.destroy(); cutSweatsNearChart = null; }
+                    const isDark = document.body.getAttribute('data-theme') === 'dark';
+                    const textColor = isDark ? '#e2e8f0' : '#1e293b';
+                    const mutedColor = isDark ? '#94a3b8' : '#64748b';
+                    const datasets = loaded.map(k => {
+                        const s = cutSweatsSummary[k];
+                        return {
+                            label: CUT_SWEATS_LABELS[k] || k,
+                            data: featuredBuckets.map(b => +(s.pcts[b] || 0).toFixed(2)),
+                            backgroundColor: CUT_SWEATS_COLORS[k] || '#64748b',
+                            borderWidth: 0,
+                            borderRadius: 2
+                        };
+                    });
+                    cutSweatsOverviewChart = new Chart(canvas.getContext('2d'), {
+                        type: 'bar',
+                        data: { labels: featuredBuckets, datasets },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            animation: false,
+                            resizeDelay: 200,
+                            datasets: { bar: { categoryPercentage: 0.72, barPercentage: 0.92 } },
+                            plugins: {
+                                title: { display: true, text: chartTitle, color: textColor, font: { size: 14, weight: '700' }, padding: { top: 2, bottom: 8 } },
+                                legend: { position: 'bottom', labels: { boxWidth: 12, padding: 12, color: textColor, font: { size: 11 } } },
+                                tooltip: { callbacks: { label: (ctx) => ` ${ctx.dataset.label}: ${ctx.parsed.y.toFixed(1)}%` } }
+                            },
+                            scales: {
+                                x: { ticks: { color: textColor, font: { weight: '700', size: 12 } }, grid: { display: false } },
+                                y: { beginAtZero: true, suggestedMax: 45, ticks: { color: mutedColor, callback: (v) => v }, grid: { color: isDark ? 'rgba(148,163,184,0.18)' : 'rgba(100,116,139,0.2)' } }
+                            }
+                        }
+                    });
+                }
+
+                const nearCanvas = document.getElementById('cutSweatsNearChart');
+                if (nearCanvas && nearCut.length && typeof Chart !== 'undefined') {
+                    if (cutSweatsNearChart) { cutSweatsNearChart.destroy(); cutSweatsNearChart = null; }
+                    const isDark2 = document.body.getAttribute('data-theme') === 'dark';
+                    const textColor2 = isDark2 ? '#e2e8f0' : '#1e293b';
+                    const ordered = [...nearCut];
+                    const labels = ordered.map(p => {
+                        const sc = formatScoreDisplay(p.score);
+                        const thru = p.thru ? String(p.thru).replace(/^F$/i, '18') : '—';
+                        return [p.name, `Score: ${sc}, Thru: ${thru}`];
+                    });
+                    const owns = ordered.map(p => +(p.own || 0).toFixed(2));
+                    const colors = ordered.map(p => {
+                        if (p.made === false || (cutInfo && p.score > cutInfo.value)) return '#ef4444';
+                        return '#22c55e';
+                    });
+                    cutSweatsNearChart = new Chart(nearCanvas.getContext('2d'), {
+                        type: 'bar',
+                        data: {
+                            labels,
+                            datasets: [{ label: 'Ownership %', data: owns, backgroundColor: colors, borderWidth: 0, borderRadius: 3, barThickness: 14 }]
+                        },
+                        options: {
+                            indexAxis: 'y',
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            animation: false,
+                            plugins: {
+                                legend: { display: false },
+                                tooltip: {
+                                    callbacks: {
+                                        title: (items) => ordered[items[0]?.dataIndex ?? 0]?.name || '',
+                                        label: (ctx) => {
+                                            const p = ordered[ctx.dataIndex];
+                                            return ` Own ${ctx.parsed.x.toFixed(1)}% · ${formatScoreDisplay(p?.score)} · Thru ${p?.thru || '—'}`;
+                                        }
+                                    }
+                                }
+                            },
+                            scales: {
+                                x: { beginAtZero: true, ticks: { color: isDark2 ? '#94a3b8' : '#64748b', callback: (v) => v + '%' }, grid: { color: isDark2 ? 'rgba(148,163,184,0.15)' : 'rgba(100,116,139,0.15)' } },
+                                y: { ticks: { color: textColor2, font: { size: 11, weight: '600' }, autoSkip: false }, grid: { display: false } }
+                            }
+                        }
+                    });
+                }
+            } catch (err) {
+                console.warn('Overview chart failed:', err);
+            }
+        }
+
+        function renderCutSweats(tableHeader, tableBody) {
+            const mode = document.getElementById('cutSweatsContest')?.value || currentCutSweatsContest || 'overview';
+            currentCutSweatsContest = mode;
+            if (mode === 'overview') {
+                renderCutSweatsOverview(tableHeader, tableBody);
+                return;
+            }
+
+            tableHeader.innerHTML = '';
+            tableBody.innerHTML = '';
+            const entries = cutSweatsByContest[mode] || [];
+            const contestLabel = CUT_SWEATS_LABELS[mode] || mode;
+
+            if (!entries.length) {
+                if (cutSweatsChart) { try { cutSweatsChart.destroy(); } catch (e) {} cutSweatsChart = null; }
+                tableBody.innerHTML = `<tr><td style="padding:1.5rem;text-align:center;opacity:0.75;">
+                    No contest data loaded yet for <strong>${contestLabel}</strong>.<br>
+                    <span style="font-size:0.85rem;">Switch to Overview or check back after the next data refresh.</span>
+                </td></tr>`;
+                return;
+            }
+
+            const bucketOrder = ['6/6', '5/6', '4/6', '3/6', '2/6', '1/6', '0/6'];
+            let summary = cutSweatsSummary[mode];
+            if (!summary || summary.n !== entries.length) {
+                summary = summarizeCutSweatsContest(entries);
+                cutSweatsSummary[mode] = summary;
+            }
+            const buckets = summary.buckets;
+            const n = summary.n;
+            const pcts = bucketOrder.map(b => summary.pcts[b] || 0);
+
+            // Field exposure + duplicates (single pass)
+            const fieldExposure = {};
+            const lineupMap = new Map();
+            for (let i = 0; i < entries.length; i++) {
+                const e = entries[i];
+                const players = e.players || [];
+                for (let j = 0; j < players.length; j++) {
+                    const k = players[j];
+                    if (!k) continue;
+                    fieldExposure[k] = (fieldExposure[k] || 0) + 1;
+                }
+                if (players.length) {
+                    const key = players.map(p => p.toLowerCase()).sort().join('|');
+                    const prev = lineupMap.get(key);
+                    if (prev) {
+                        prev.count += 1;
+                        if ((e.points || 0) > (prev.bestPoints || 0)) {
+                            prev.bestPoints = e.points || 0;
+                            prev.bestRank = e.rank;
+                        }
+                    } else {
+                        lineupMap.set(key, {
+                            count: 1,
+                            players,
+                            madeCount: e.madeCount || 0,
+                            detail: e.detail || [],
+                            bestPoints: e.points || 0,
+                            bestRank: e.rank
+                        });
+                    }
+                }
+            }
+            const fieldOwn = {};
+            Object.keys(fieldExposure).forEach(p => { fieldOwn[p] = (fieldExposure[p] / n) * 100; });
+            const dupLineups = [...lineupMap.values()]
+                .filter(x => x.count >= 2)
+                .sort((a, b) => b.count - a.count || b.bestPoints - a.bestPoints)
+                .slice(0, 25);
+            const topOwned = Object.keys(fieldOwn).map(p => ({ p, own: fieldOwn[p], made: playerMadeCut(p) }))
+                .sort((a, b) => b.own - a.own).slice(0, 15);
+
+            // User filter (only when searching)
+            const q = (cutSweatsUserQuery || '').toLowerCase();
+            let userHtml = '';
+            if (q) {
+                const userEntries = searchCutSweatsUserEntries(mode, cutSweatsUserQuery);
+                if (!userEntries.length) {
+                    userHtml = `<div class="cs-panel"><h4>Your entries</h4><p>No entries matched “${escapeHtml(cutSweatsUserQuery)}”.</p></div>`;
+                } else {
+                    const uBuckets = { '6/6': 0, '5/6': 0, '4/6': 0, '3/6': 0, '2/6': 0, '1/6': 0, '0/6': 0 };
+                    const uExp = {};
+                    let madeSum = 0;
+                    userEntries.forEach(e => {
+                        uBuckets[e.bucket] = (uBuckets[e.bucket] || 0) + 1;
+                        madeSum += e.madeCount || 0;
+                        (e.players || []).forEach(p => { uExp[p] = (uExp[p] || 0) + 1; });
+                    });
+                    const un = userEntries.length;
+                    const diffs = Object.keys(uExp).map(p => {
+                        const myOwn = (uExp[p] / un) * 100;
+                        const fOwn = fieldOwn[p] || 0;
+                        return { p, myOwn, fOwn, diff: myOwn - fOwn };
+                    }).sort((a, b) => b.diff - a.diff);
+                    const overweight = diffs.filter(d => d.diff > 0.5).slice(0, 8);
+                    const underweight = [...diffs].sort((a, b) => a.diff - b.diff).filter(d => d.diff < -0.5).slice(0, 8);
+                    userHtml = `<div class="cs-panel">
+                        <h4>Your entries — ${cutSweatsUserQuery}</h4>
+                        <p><strong>${un}</strong> entr${un === 1 ? 'y' : 'ies'} · Avg made cut: <strong>${(madeSum / un).toFixed(2)}</strong> / 6</p>
+                        <div class="cs-bucket-row">
+                            ${bucketOrder.map(b => {
+                                const pct = un ? (uBuckets[b] / un) * 100 : 0;
+                                return `<div class="cs-bucket"><div class="cs-bucket-label">${b}</div><div class="cs-bucket-val">${pct.toFixed(1)}%</div><div class="cs-bucket-n">${uBuckets[b]}</div></div>`;
+                            }).join('')}
+                        </div>
+                        <div class="cs-two-col">
+                            <div>
+                                <h5>Most overweight vs field</h5>
+                                <ul class="cs-list">${overweight.length ? overweight.map(d =>
+                                    `<li><strong>${d.p}</strong> — you ${d.myOwn.toFixed(1)}% · field ${d.fOwn.toFixed(1)}% <span class="cs-diff up">+${d.diff.toFixed(1)}</span></li>`
+                                ).join('') : '<li>None</li>'}</ul>
+                            </div>
+                            <div>
+                                <h5>Most underweight vs field</h5>
+                                <ul class="cs-list">${underweight.length ? underweight.map(d =>
+                                    `<li><strong>${d.p}</strong> — you ${d.myOwn.toFixed(1)}% · field ${d.fOwn.toFixed(1)}% <span class="cs-diff down">${d.diff.toFixed(1)}</span></li>`
+                                ).join('') : '<li>None</li>'}</ul>
+                            </div>
+                        </div>
+                        <div style="overflow-x:auto; margin-top:0.75rem;">
+                            <table class="cs-mini-table">
+                                <thead><tr><th>Rank</th><th>Entry</th><th>Points</th><th>Made Cut</th><th>Lineup</th></tr></thead>
+                                <tbody>
+                                    ${userEntries.slice(0, 40).map(e => `<tr>
+                                        <td>${e.rank}</td>
+                                        <td>${e.entryName}</td>
+                                        <td>${e.points}</td>
+                                        <td><strong>${e.madeCount}/6</strong></td>
+                                        <td class="cs-lineup">${(e.players || []).map(name => {
+                                            const st = playerMadeCut(name);
+                                            return `<span class="${st === true ? 'cs-in' : st === false ? 'cs-out' : 'cs-unk'}">${name}</span>`;
+                                        }).join(' · ')}</td>
+                                    </tr>`).join('')}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>`;
+                }
+            }
+
+            const html = `<div class="course-stats-wrap">
+                <h3>Cut Sweats — ${contestLabel}</h3>
+                <p class="course-stats-note">${n.toLocaleString()} entries · <a href="#" onclick="document.getElementById('cutSweatsContest').value='overview'; onCutSweatsContestChange(); return false;">← Back to Overview</a></p>
+                <h4 style="margin:0.5rem 0 0.35rem;">Field cut distribution</h4>
+                <div class="cs-bucket-row">
+                    ${bucketOrder.map((b, i) => `<div class="cs-bucket">
+                        <div class="cs-bucket-label">${b}</div>
+                        <div class="cs-bucket-val">${pcts[i].toFixed(1)}%</div>
+                        <div class="cs-bucket-n">${(buckets[b] || 0).toLocaleString()}</div>
+                    </div>`).join('')}
+                </div>
+                <div class="cs-chart-wrap">
+                    <canvas id="cutSweatsDistChart" height="140"></canvas>
+                </div>
+                ${userHtml}
+                <div class="cs-panel">
+                    <h4>Most duplicated lineups</h4>
+                    <p style="font-size:0.8rem;opacity:0.8;margin:0 0 0.5rem;">Same 6 players counted as one lineup (order ignored). Top ${dupLineups.length || 0} with 2+ copies.</p>
+                    ${dupLineups.length ? `
+                        <div style="overflow-x:auto;">
+                            <table class="cs-mini-table">
+                                <thead><tr><th>#</th><th>Copies</th><th>% Field</th><th>Made Cut</th><th>Best Rank</th><th>Best Pts</th><th>Lineup</th></tr></thead>
+                                <tbody>
+                                    ${dupLineups.map((d, i) => `<tr>
+                                        <td>${i + 1}</td>
+                                        <td><strong>${d.count.toLocaleString()}</strong></td>
+                                        <td>${((d.count / n) * 100).toFixed(2)}%</td>
+                                        <td><strong>${d.madeCount}/6</strong></td>
+                                        <td>${d.bestRank ?? '—'}</td>
+                                        <td>${d.bestPoints != null ? d.bestPoints : '—'}</td>
+                                        <td class="cs-lineup">${(d.detail && d.detail.length ? d.detail : d.players.map(name => ({ name, madeCut: playerMadeCut(name) }))).map(x =>
+                                            `<span class="${x.madeCut === true ? 'cs-in' : x.madeCut === false ? 'cs-out' : 'cs-unk'}">${x.name || x}</span>`
+                                        ).join(' · ')}</td>
+                                    </tr>`).join('')}
+                                </tbody>
+                            </table>
+                        </div>
+                    ` : `<p style="font-size:0.85rem;opacity:0.75;">No duplicated lineups found.</p>`}
+                </div>
+                <div class="cs-panel">
+                    <h4>Highest owned players (field)</h4>
+                    <ul class="cs-list">${topOwned.map(t =>
+                        `<li><span class="${t.made === true ? 'cs-in' : t.made === false ? 'cs-out' : 'cs-unk'}">${t.p}</span> — ${t.own.toFixed(1)}%</li>`
+                    ).join('')}</ul>
+                </div>
+            </div>`;
+
+            const tableEl = document.getElementById('leaderboard');
+            if (tableEl) tableEl.classList.add('cs-mode');
+            const tr = document.createElement('tr');
+            const td = document.createElement('td');
+            td.colSpan = 20;
+            td.className = 'cs-full-cell';
+            td.innerHTML = html;
+            td.style.padding = '0.5rem';
+            tr.appendChild(td);
+            tableBody.appendChild(tr);
+
+            try {
+                const canvas = document.getElementById('cutSweatsDistChart');
+                if (canvas && typeof Chart !== 'undefined') {
+                    if (cutSweatsChart) { cutSweatsChart.destroy(); cutSweatsChart = null; }
+                    if (cutSweatsOverviewChart) { cutSweatsOverviewChart.destroy(); cutSweatsOverviewChart = null; }
+                    if (cutSweatsNearChart) { cutSweatsNearChart.destroy(); cutSweatsNearChart = null; }
+                    const isDark = document.body.getAttribute('data-theme') === 'dark';
+                    cutSweatsChart = new Chart(canvas.getContext('2d'), {
+                        type: 'bar',
+                        data: {
+                            labels: bucketOrder,
+                            datasets: [{
+                                label: '% of field',
+                                data: pcts,
+                                backgroundColor: [
+                                    'rgba(20, 184, 166, 0.85)',
+                                    'rgba(34, 197, 94, 0.75)',
+                                    'rgba(132, 204, 22, 0.7)',
+                                    'rgba(250, 204, 21, 0.7)',
+                                    'rgba(251, 146, 60, 0.7)',
+                                    'rgba(248, 113, 113, 0.75)',
+                                    'rgba(239, 68, 68, 0.85)'
+                                ],
+                                borderRadius: 6,
+                                maxBarThickness: 48
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            plugins: {
+                                legend: { display: false },
+                                tooltip: {
+                                    callbacks: {
+                                        label: (ctx) => {
+                                            const count = buckets[bucketOrder[ctx.dataIndex]] || 0;
+                                            return `${ctx.parsed.y.toFixed(1)}%  (${count.toLocaleString()} entries)`;
+                                        }
+                                    }
+                                }
+                            },
+                            scales: {
+                                x: {
+                                    ticks: { color: isDark ? '#cbd5e1' : '#334155', font: { weight: '600' } },
+                                    grid: { display: false }
+                                },
+                                y: {
+                                    beginAtZero: true,
+                                    ticks: {
+                                        color: isDark ? '#94a3b8' : '#64748b',
+                                        callback: (v) => v + '%'
+                                    },
+                                    grid: { color: isDark ? 'rgba(148,163,184,0.15)' : 'rgba(15,23,42,0.08)' }
+                                }
+                            }
+                        }
+                    });
+                }
+            } catch (err) {
+                console.warn('Cut Sweats chart failed:', err);
+            }
         }
 
         function updateChart(playerName) {
