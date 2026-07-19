@@ -47,16 +47,8 @@ jobs:
             -H "Cache-Control: no-cache, no-store, must-revalidate" \
             -H "Pragma: no-cache"
 
-      - name: Clean header rows (only needed for some files)
-        run: |
-          echo "Cleaning hole-by-hole-detail.csv (removing first 2 rows)..."
-          tail -n +3 hole-by-hole-detail.csv > temp.csv && mv temp.csv hole-by-hole-detail.csv
-
-          echo "Cleaning tournament-scorecard.csv (removing first 2 rows)..."
-          tail -n +3 tournament-scorecard.csv > temp.csv && mv temp.csv tournament-scorecard.csv
-
           echo ""
-          echo "=== Final file sizes ==="
+          echo "=== File sizes ==="
           ls -lh hole-by-hole-detail.csv tournament-scorecard.csv holes.csv live-leaderboard.csv cheat-sheet-sportsbooks.csv
 
       - name: Commit and push if changed
