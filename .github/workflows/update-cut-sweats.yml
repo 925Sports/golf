@@ -1,0 +1,52 @@
+name: Update Cut Sweats CSVs
+
+on:
+  schedule:
+    # Every 30 minutes during tournament windows (UTC)
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download Cut Sweats contest CSVs
+        run: |
+          set -e
+          mkdir -p data
+
+          curl -fsSL -o cut-sweats-millymaker.csv \
+            "https://docs.google.com/spreadsheets/d/e/2PACX-1vRq1QijqPCJojdAS-V8DMSGTc9vhAJ9VYo9HZ5MUatMAuwVsCBD9aCoUiTq82Rq43JLCWT5tElO7ax3/pub?gid=0&single=true&output=csv"
+
+          curl -fsSL -o cut-sweats-minimax.csv \
+            "https://docs.google.com/spreadsheets/d/e/2PACX-1vRq1QijqPCJojdAS-V8DMSGTc9vhAJ9VYo9HZ5MUatMAuwVsCBD9aCoUiTq82Rq43JLCWT5tElO7ax3/pub?gid=946679170&single=true&output=csv"
+
+          curl -fsSL -o cut-sweats-quarter.csv \
+            "https://docs.google.com/spreadsheets/d/e/2PACX-1vRq1QijqPCJojdAS-V8DMSGTc9vhAJ9VYo9HZ5MUatMAuwVsCBD9aCoUiTq82Rq43JLCWT5tElO7ax3/pub?gid=326939776&single=true&output=csv"
+
+          curl -fsSL -o cut-sweats-cash.csv \
+            "https://docs.google.com/spreadsheets/d/e/2PACX-1vRq1QijqPCJojdAS-V8DMSGTc9vhAJ9VYo9HZ5MUatMAuwVsCBD9aCoUiTq82Rq43JLCWT5tElO7ax3/pub?gid=766009680&single=true&output=csv"
+
+          curl -fsSL -o cut-sweats-singleentrygpp.csv \
+            "https://docs.google.com/spreadsheets/d/e/2PACX-1vRq1QijqPCJojdAS-V8DMSGTc9vhAJ9VYo9HZ5MUatMAuwVsCBD9aCoUiTq82Rq43JLCWT5tElO7ax3/pub?gid=962655918&single=true&output=csv"
+
+          echo "Downloaded files:"
+          ls -la cut-sweats-*.csv
+          wc -l cut-sweats-*.csv
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cut-sweats-*.csv
+          if git diff --staged --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Auto-update Cut Sweats contest CSVs"
+            git push
+          fi
