@@ -5785,11 +5785,13 @@
                     const p1 = (row['PLAYER 1'] || '').trim();
                     const p2 = (row['PLAYER 2'] || '').trim();
                     if (!p1 || !p2) return;
-                    const key = [p1, p2].sort().join('||');
+                    const sorted = [p1, p2].sort();
+                    const key = sorted.join('||');
                     if (!visiblePairs.has(key)) return; // only show pairs that passed filters
 
                     if (!groups.has(key)) {
-                        groups.set(key, { p1, p2, lines: [] });
+                        // Always store names in stable alphabetical order so header columns never flip
+                        groups.set(key, { p1: sorted[0], p2: sorted[1], lines: [] });
                     }
                     groups.get(key).lines.push(row);
                 });
@@ -5943,6 +5945,9 @@
                                 display = '+' + parseInt(oddsStr, 10);
                             } else if (/^-\d+\.0+$/.test(oddsStr)) {
                                 display = String(parseInt(oddsStr, 10));
+                            } else if (/^\d+$/.test(oddsStr)) {
+                                // plain positive integer without sign → treat as American +N
+                                display = '+' + oddsStr;
                             }
                             const imp = oddsToImpliedPct(display);
                             cell.innerHTML = `<span style="font-weight:600;">${display}</span>` +
@@ -5951,8 +5956,19 @@
                             return cell;
                         };
 
-                        const p1OddsCell = makeOddsCell(row['PLAYER 1 ODDS']);
-                        const p2OddsCell = makeOddsCell(row['PLAYER 2 ODDS']);
+                        // Map odds to the header columns by PLAYER NAME, not by CSV PLAYER 1/2 order.
+                        // Rows can be flipped (P1/P2 swapped) depending on source orientation.
+                        const rowP1 = (row['PLAYER 1'] || '').trim();
+                        const rowP2 = (row['PLAYER 2'] || '').trim();
+                        const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
+                        const rowP1MatchesGroupP1 = norm(rowP1) === norm(group.p1) ||
+                            norm(rowP1).includes(norm(group.p1.split(' ').pop())) ||
+                            norm(group.p1).includes(norm(rowP1.split(' ').pop()));
+                        // If row's PLAYER 1 is the same person as group.p1, use row orientation as-is; otherwise flip
+                        const leftOdds = rowP1MatchesGroupP1 ? row['PLAYER 1 ODDS'] : row['PLAYER 2 ODDS'];
+                        const rightOdds = rowP1MatchesGroupP1 ? row['PLAYER 2 ODDS'] : row['PLAYER 1 ODDS'];
+                        const p1OddsCell = makeOddsCell(leftOdds);
+                        const p2OddsCell = makeOddsCell(rightOdds);
 
                         // Tie % = 100 - Imp1 - Imp2 (when both sides have valid implied probs)
                         const tieCell = document.createElement('div');
