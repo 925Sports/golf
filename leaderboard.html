@@ -345,8 +345,20 @@
         }
         .filter-row.checkboxes > div {
             width: auto;
+            max-width: none; /* override the 220px cap so long checkbox labels / legends don't clip and overlap */
+            flex: 0 0 auto;
             flex-direction: row;
             align-items: center;
+        }
+        #matchupLegend,
+        #threeBallLegend {
+            max-width: none;
+            flex: 1 1 auto;
+            min-width: 0;
+        }
+        #correlatedBetsFilter {
+            max-width: none;
+            flex: 0 0 auto;
         }
         .filter-container label,
         .filter-row label {
@@ -399,6 +411,15 @@
         }
         .dropdown-button:hover {
             border-color: var(--button-bg);
+        }
+        .dropdown-button.has-selection {
+            background: color-mix(in srgb, var(--button-bg) 14%, var(--input-bg));
+            border-color: var(--button-bg);
+            font-weight: 600;
+            color: var(--text-color);
+        }
+        body[data-theme="dark"] .dropdown-button.has-selection {
+            background: color-mix(in srgb, var(--button-bg) 28%, var(--input-bg));
         }
         .dropdown-button::after {
             content: '▼';
@@ -2573,12 +2594,12 @@
                 <span style="color:#f59e0b; font-weight:600;">FAV</span> = Group Favorite (best odds in 3-ball) &nbsp; 
                 <span style="color:#22c55e; font-weight:600;">VALUE</span> = Positive Edge % (model sees value vs Vegas)
             </div>
-            <div id="matchupLegend" style="display: none; font-size: 0.62rem; opacity: 0.65; margin-left: 0.4rem; white-space: nowrap;">
-                <span style="color:#22c55e; font-weight:600;">VALUE / positive Edge</span> = Model sees value vs Vegas &nbsp; 
-                <span style="color:#f59e0b; font-weight:600;">925 Bet Tag</span> = Recommended side
-            </div>
             <div id="correlatedBetsFilter" style="display: none;" title="Show only lines where both Projected Edge and Sportsbook (Book) Edge are positive">
                 <label><input type="checkbox" id="showCorrelatedBets" onchange="updateTable()"> Show only Correlated Bets (both edges +)</label>
+            </div>
+            <div id="matchupLegend" style="display: none; font-size: 0.62rem; opacity: 0.65; margin-left: 0.35rem; line-height: 1.35;">
+                <span style="color:#22c55e; font-weight:600;">VALUE</span> = Model sees value vs Vegas &nbsp;·&nbsp;
+                <span style="color:#f59e0b; font-weight:600;">925 Tag</span> = Recommended side
             </div>
             <div id="bettingPlusEVFilter" style="display: none;" title="Only players with a positive model edge">
                 <label><input type="checkbox" id="showPlusEVOnly" onchange="updateTable()"> +EV only</label>
@@ -3058,31 +3079,97 @@
             }
         }
         function copyTopEdges() {
-            if (currentView !== 'betting') {
-                // Build from current cheat sheet quickly
-            }
-            const rows = (pivotedData || []).filter(r => r._edgeNum != null).slice();
-            rows.sort((a, b) => (b._edgeNum ?? -999) - (a._edgeNum ?? -999));
-            const top = rows.slice(0, 5);
-            if (!top.length) {
-                alert('No edge data to copy. Open Betting Odds first.');
+            let lines = [];
+            let header = 'Top edges';
+            const data = pivotedData || [];
+
+            if (currentView === 'betting') {
+                const rows = data.filter(r => r._edgeNum != null).slice();
+                rows.sort((a, b) => (b._edgeNum ?? -999) - (a._edgeNum ?? -999));
+                const top = rows.slice(0, 5);
+                if (!top.length) {
+                    showCopyFeedback('No edge data available to copy.');
+                    return;
+                }
+                lines = top.map((r, i) =>
+                    `${i + 1}. ${r.PLAYER} — ${r['Best Odds']} @ ${r['Best Book'] || '—'} · Edge ${typeof r.Edge === 'number' ? r.Edge.toFixed(2) : r.Edge} · Score ${r.Score}`
+                );
+                header = `Top ${top.length} betting edges (${currentBettingMarket})`;
+            } else if (currentView === '3ball') {
+                // Prefer players with positive Edge %
+                const rows = data.filter(r => {
+                    const e = parseFloat(r['Edge %']);
+                    return !isNaN(e) && e > 0;
+                }).slice();
+                rows.sort((a, b) => (parseFloat(b['Edge %']) || -999) - (parseFloat(a['Edge %']) || -999));
+                const top = rows.slice(0, 5);
+                if (!top.length) {
+                    showCopyFeedback('No positive 3-ball edges available to copy.');
+                    return;
+                }
+                lines = top.map((r, i) => {
+                    const edge = r['Edge %'];
+                    const odds = r['American Odds'] || r['Matchup Odds'] || '—';
+                    const group = r['Group'] || '—';
+                    return `${i + 1}. ${r.PLAYER} (Group ${group}) — ${odds} · Edge ${edge}% · Imp ${r['Implied Win %'] || '—'}%`;
+                });
+                header = `Top ${top.length} 3-ball edges`;
+            } else if (currentView === 'matchup') {
+                // Use projected edge; dedupe by player pair roughly
+                const rows = data.filter(r => {
+                    const e = parseFloat(r['PROJECTED EDGE']);
+                    return !isNaN(e) && e > 0;
+                }).slice();
+                rows.sort((a, b) => (parseFloat(b['PROJECTED EDGE']) || -999) - (parseFloat(a['PROJECTED EDGE']) || -999));
+                const top = rows.slice(0, 5);
+                if (!top.length) {
+                    showCopyFeedback('No positive matchup edges available to copy.');
+                    return;
+                }
+                lines = top.map((r, i) => {
+                    const p1 = r['PLAYER 1'] || '';
+                    const p2 = r['PLAYER 2'] || '';
+                    const edge = (parseFloat(r['PROJECTED EDGE']) || 0).toFixed(1);
+                    const book = r['SPORTSBOOK'] || '—';
+                    const tag = r['NINETOFIVE BET TAG'] || '';
+                    const bet = r['NINETOFIVE BET'] || '';
+                    return `${i + 1}. ${p1} vs ${p2} @ ${book} · Proj Edge +${edge}% ${tag ? '· ' + tag : ''} ${bet ? '→ ' + bet : ''}`;
+                });
+                header = `Top ${top.length} matchup edges`;
+            } else {
+                showCopyFeedback('Switch to Betting Odds, 3-Ball Bets, or Matchup Bets to copy edges.');
                 return;
             }
-            const lines = top.map((r, i) =>
-                `${i + 1}. ${r.PLAYER} — ${r['Best Odds']} @ ${r['Best Book'] || '—'} · Edge ${typeof r.Edge === 'number' ? r.Edge.toFixed(2) : r.Edge} · Score ${r.Score}`
-            );
-            const text = `Top ${top.length} betting edges (${currentBettingMarket}):\n` + lines.join('\n');
+
+            const text = header + ':\n' + lines.join('\n');
             navigator.clipboard.writeText(text).then(() => {
                 const btn = document.getElementById('copyTopEdgesBtn');
                 if (btn) { const t = btn.textContent; btn.textContent = 'Copied!'; setTimeout(() => btn.textContent = t, 1200); }
-            }).catch(() => alert(text));
+            }).catch(() => {
+                // Fallback that does not use alert (avoids origin disclosure in embeds)
+                showCopyFeedback('Copied to clipboard (or check console if blocked).');
+                console.log(text);
+            });
+        }
+        function showCopyFeedback(msg) {
+            const btn = document.getElementById('copyTopEdgesBtn');
+            if (btn) {
+                const t = btn.textContent;
+                btn.textContent = msg.length > 28 ? 'No data' : msg;
+                setTimeout(() => btn.textContent = t, 1800);
+            } else {
+                console.warn(msg);
+            }
         }
         function copyCourseBlurb() {
             const text = lastCourseBlurb || lastCourseProfile || 'No course profile yet — open Course Stats first.';
             navigator.clipboard.writeText(text).then(() => {
                 const btn = document.getElementById('copyCourseBlurbBtn');
                 if (btn) { const t = btn.textContent; btn.textContent = 'Copied!'; setTimeout(() => btn.textContent = t, 1200); }
-            }).catch(() => alert(text));
+            }).catch(() => {
+                console.warn('Clipboard blocked');
+                console.log(text);
+            });
         }
         const columns = ['Favorite', 'PLAYER', ...predefinedColumns, ...showdownColumns, ...threeBallColumns, ...matchupColumns, ...bettingColumns];
         const fixedColumns = ['Favorite', 'PLAYER'];
@@ -3272,7 +3359,7 @@
             document.getElementById('threeBallLayoutWrap').style.display = view === '3ball' ? 'block' : 'none';
             document.getElementById('threeBallSortWrap').style.display = (view === '3ball' && threeBallLayout === 'grouped') ? 'block' : 'none';
             document.getElementById('threeBallLegend').style.display = view === '3ball' ? 'inline-block' : 'none';
-            document.getElementById('matchupLegend').style.display = view === 'matchup' ? 'inline-block' : 'none';
+            document.getElementById('matchupLegend').style.display = view === 'matchup' ? 'flex' : 'none';
             document.getElementById('betTypeFilter').style.display = view === 'matchup' ? 'block' : 'none';
             document.getElementById('sportsbookFilter').style.display = view === 'matchup' ? 'block' : 'none';
             document.getElementById('threeBallFavEdgeFilter').style.display = view === '3ball' ? 'block' : 'none';
@@ -3281,7 +3368,7 @@
             document.getElementById('betTypeFilter').style.display = view === 'matchup' ? 'block' : 'none';
             document.getElementById('sportsbookFilter').style.display = view === 'matchup' ? 'block' : 'none';
             document.getElementById('playerSearchFilter').style.display = (view === 'matchup' || view === 'betting') ? 'block' : 'none';
-            document.getElementById('correlatedBetsFilter').style.display = view === 'matchup' ? 'block' : 'none';
+            document.getElementById('correlatedBetsFilter').style.display = view === 'matchup' ? 'flex' : 'none';
             document.getElementById('bettingMarketFilter').style.display = view === 'betting' ? 'block' : 'none';
             document.getElementById('bettingBooksFilter').style.display = view === 'betting' ? 'block' : 'none';
             document.getElementById('bettingSortFilter').style.display = view === 'betting' ? 'block' : 'none';
@@ -3411,6 +3498,7 @@
                         <li>The context bar shows a short “Favors: …” profile chip once insights are built.</li>
                         <li><strong>Copy Course Blurb</strong> copies that profile as text for content or notes.</li>
                     </ul>
+                    <div class="how-tip"><strong>Note:</strong> Course Stats refresh after Round 1 of the current tournament week begins. Mid-week (e.g. Tuesday–Wednesday) you will typically still see the previous tournament’s data — that is expected.</div>
                     <div class="how-tip"><strong>Tip:</strong> Check this tab after a round or two — the story gets clearer once more live holes are in.</div>
                 `
             },
@@ -4442,9 +4530,15 @@
             const cutInfo = estimateCutLine();
             const text = buildCutSweatsExportBlurb(cutInfo, cutSweatsUserQuery);
             if (navigator.clipboard && navigator.clipboard.writeText) {
-                navigator.clipboard.writeText(text).then(() => alert('Cut Sweats blurb copied.')).catch(() => window.prompt('Copy blurb:', text));
+                navigator.clipboard.writeText(text).then(() => {
+                    const btn = document.querySelector('[onclick="copyCutSweatsBlurb()"]');
+                    if (btn) { const t = btn.textContent; btn.textContent = 'Copied!'; setTimeout(() => btn.textContent = t, 1200); }
+                }).catch(() => {
+                    console.warn('Clipboard blocked');
+                    console.log(text);
+                });
             } else {
-                window.prompt('Copy blurb:', text);
+                console.log(text);
             }
         }
 
@@ -4840,7 +4934,9 @@
             });
             navigator.clipboard.writeText(lines.join('\n')).then(() => {
                 // brief feedback via section title if present
-            }).catch(() => alert('Could not copy group'));
+            }).catch(() => {
+                console.warn('Clipboard blocked for group copy');
+            });
         }
         function applyColumnPreset(presetKey) {
             const cols = columnPresets[presetKey] || defaultColumns;
@@ -4925,7 +5021,9 @@
                     btn.textContent = 'Copied!';
                     setTimeout(() => { btn.textContent = prev; }, 1200);
                 }
-            }).catch(() => alert('Could not copy to clipboard'));
+            }).catch(() => {
+                console.warn('Clipboard blocked');
+            });
         }
         function onBettingMarketChange() {
             const sel = document.getElementById('bettingMarketSelect');
@@ -4950,16 +5048,25 @@
                 bettingBookColumns = visibleBooks;
                 bettingColumns = [...bettingBaseColumns, ...bettingBookColumns];
 
-                // Helper: convert American/decimal to a comparable "higher is better for bettor" score
+                // Helper: convert to a comparable "higher is better for bettor" decimal score
+                // Source data uses fractional "to 1" (25 = 25/1 → decimal 26)
                 const toCompare = (v) => {
-                    const n = parseFloat(v);
+                    if (v === undefined || v === null || v === '' || v === 0 || v === '0') return null;
+                    const raw = String(v).trim();
+                    // Explicit American
+                    if (/^[+-]\d/.test(raw)) {
+                        const n = parseFloat(raw);
+                        if (isNaN(n) || n === 0) return null;
+                        if (n > 0) return 1 + n / 100;       // +150 → 2.5
+                        return 1 + 100 / Math.abs(n);         // -200 → 1.5
+                    }
+                    const n = parseFloat(raw);
                     if (isNaN(n) || n === 0) return null;
-                    // Decimal odds (typically 1.01 – 50)
-                    if (n > 1 && n < 100 && n !== Math.floor(n)) return n;
-                    if (n >= 1.01 && n <= 100) return n;
-                    // American
-                    if (n > 0) return 1 + n / 100;      // +150 → 2.5
-                    if (n < 0) return 1 + 100 / Math.abs(n); // -200 → 1.5
+                    if (n < 0) return 1 + 100 / Math.abs(n);
+                    // Fractional to-1 (and plain positives from this CSV)
+                    if (n >= 1) return n + 1;                 // 25 → 26.0 decimal
+                    // True decimal 1.xx
+                    if (n > 1) return n;
                     return null;
                 };
 
@@ -5115,6 +5222,17 @@
                     const p2Win = parseFloat(row['PLAYER 2 WIN %']);
                     return !(p1Win === 0 || p1Win === 1 || p2Win === 0 || p2Win === 1);
                 });
+                // Hide rows where both sides have zero / missing odds (placeholder data)
+                filtered = filtered.filter(row => {
+                    const o1 = String(row['PLAYER 1 ODDS'] ?? '').trim();
+                    const o2 = String(row['PLAYER 2 ODDS'] ?? '').trim();
+                    const isZero = (s) => {
+                        if (!s || s === '-' || s === '—' || s === '0' || s === '+0' || s === '0.0' || s === '+0.0') return true;
+                        const n = parseFloat(s.replace(/[^\d.-]/g, ''));
+                        return !isNaN(n) && Math.abs(n) < 1;
+                    };
+                    return !(isZero(o1) && isZero(o2));
+                });
                 pivotedData = filtered;
                 // Apply matchup sort
                 if (matchupSort === 'edge') {
@@ -5142,7 +5260,8 @@
                 const statusFilter = document.getElementById('statusFilter')?.value || 'all';
                 let filteredData = rawData.filter(row => {
                     const csvScore = row['Score'] && row['Score'].trim() !== '' && !row['Score'].includes('#REF!') ? scoreToNumber(row['Score']) : null;
-                    const hasValidScore = (currentView === '3ball') || (csvScore !== null && Number.isInteger(csvScore));
+                    // 3-ball and Showdown: allow players without a scored round yet (pre-tournament / not started)
+                    const hasValidScore = (currentView === '3ball' || currentView === 'showdown') || (csvScore !== null && Number.isInteger(csvScore));
                     const matchesPlayer = !selectedPlayers.length || selectedPlayers.includes(row.PLAYER);
                     const isNotMissedCut = !excludeMissedCut || row['THRU'] !== 'CU';
                     const isFavoriteOk = !showFavoritesOnly || favoritePlayers.includes(row.PLAYER);
@@ -5522,6 +5641,64 @@
                 const bStr = (bValue == null || bValue === '') ? '' : String(bValue);
                 return sortDirection === 'asc' ? aStr.localeCompare(bStr) : bStr.localeCompare(aStr);
             });
+
+            // 3-Ball Table layout: Group FAV + Positive Edge
+            // Per checkbox tooltip: only group favorites (lowest American odds) that also have positive Edge %.
+            // Table is a flat list, so we keep only those FAV players (not the full group).
+            if (currentView === '3ball' && threeBallLayout === 'table') {
+                const filterFavEdge = document.getElementById('showGroupFavPositiveEdge')?.checked;
+                const filterImp40 = document.getElementById('showImpWin40')?.checked;
+                if (filterFavEdge || filterImp40) {
+                    const groupsMap = new Map();
+                    sortedData.forEach(r => {
+                        const g = String(r['Group'] ?? '').trim() || '—';
+                        if (!groupsMap.has(g)) groupsMap.set(g, []);
+                        groupsMap.get(g).push(r);
+                    });
+
+                    const qualifyingPlayers = new Set();
+                    groupsMap.forEach((rows) => {
+                        // Group favorite = lowest American odds (true market favorite)
+                        // American Odds Num: -117 < +150 < +300, so ascending = favorite first
+                        const sortedGroup = [...rows].sort((a, b) => {
+                            const aa = a['American Odds Num'];
+                            const bb = b['American Odds Num'];
+                            const aOk = aa != null && aa !== 999999;
+                            const bOk = bb != null && bb !== 999999;
+                            if (aOk && bOk) return aa - bb;
+                            if (aOk) return -1;
+                            if (bOk) return 1;
+                            // fallback: highest model Implied Win %
+                            const ai = parseFloat(String(a['Implied Win %']).replace('%', ''));
+                            const bi = parseFloat(String(b['Implied Win %']).replace('%', ''));
+                            if (!isNaN(ai) && !isNaN(bi)) return bi - ai;
+                            return 0;
+                        });
+                        const favRow = sortedGroup[0] || null;
+                        if (!favRow) return;
+
+                        if (filterFavEdge) {
+                            // Only keep this group's FAV, and only if they have positive Edge %
+                            const e = parseFloat(String(favRow['Edge %']).replace('%', ''));
+                            if (isNaN(e) || e <= 0) return; // FAV has no edge → drop group
+                            // Optional Imp Win filter on the FAV
+                            if (filterImp40) {
+                                const imp = parseFloat(String(favRow['Implied Win %']).replace('%', ''));
+                                if (isNaN(imp) || imp < 40) return;
+                            }
+                            qualifyingPlayers.add(favRow.PLAYER);
+                        } else if (filterImp40) {
+                            // Imp Win only: keep any player in the group meeting the threshold
+                            sortedGroup.forEach(r => {
+                                const imp = parseFloat(String(r['Implied Win %']).replace('%', ''));
+                                if (!isNaN(imp) && imp >= 40) qualifyingPlayers.add(r.PLAYER);
+                            });
+                        }
+                    });
+                    sortedData = sortedData.filter(r => qualifyingPlayers.has(r.PLAYER));
+                }
+            }
+
             const showFavOnly = document.getElementById('showFavoritesOnly')?.checked;
             const useSections = currentView !== 'matchup' && currentView !== '3ball' && !showFavOnly;
             const favRows = useSections ? sortedData.filter(r => r.Favorite) : [];
@@ -5616,6 +5793,50 @@
                     }
                     groups.get(key).lines.push(row);
                 });
+
+                // Clean each group's lines: drop 0-odds / invalid rows, and keep only ONE orientation per sportsbook
+                groups.forEach(group => {
+                    // 1. Drop lines with essentially zero / missing odds on both sides
+                    group.lines = group.lines.filter(row => {
+                        const o1 = String(row['PLAYER 1 ODDS'] ?? '').trim();
+                        const o2 = String(row['PLAYER 2 ODDS'] ?? '').trim();
+                        const isZero = (s) => {
+                            if (!s || s === '-' || s === '—' || s === '0' || s === '+0' || s === '0.0' || s === '+0.0') return true;
+                            const n = parseFloat(s.replace(/[^\d.-]/g, ''));
+                            return !isNaN(n) && Math.abs(n) < 1; // treat |odds| < 1 as zero/invalid
+                        };
+                        // Keep only if at least one side has real odds
+                        return !(isZero(o1) && isZero(o2));
+                    });
+
+                    // 2. Dedupe by SPORTSBOOK — keep the orientation with the higher PROJECTED EDGE
+                    //    (or the one the model tagged as WINNER / recommended bet)
+                    const byBook = new Map();
+                    group.lines.forEach(row => {
+                        const book = String(row['SPORTSBOOK'] || '').trim() || 'Unknown';
+                        const existing = byBook.get(book);
+                        if (!existing) {
+                            byBook.set(book, row);
+                            return;
+                        }
+                        const edgeNew = parseFloat(row['PROJECTED EDGE']) || -999;
+                        const edgeOld = parseFloat(existing['PROJECTED EDGE']) || -999;
+                        const tagNew = String(row['NINETOFIVE BET TAG'] || '').toUpperCase();
+                        const tagOld = String(existing['NINETOFIVE BET TAG'] || '').toUpperCase();
+                        // Prefer WINNER / positive-edge side
+                        if (tagNew.includes('WINNER') && !tagOld.includes('WINNER')) {
+                            byBook.set(book, row);
+                        } else if (edgeNew > edgeOld) {
+                            byBook.set(book, row);
+                        }
+                    });
+                    group.lines = [...byBook.values()];
+                });
+
+                // Drop groups that ended up with no valid lines
+                for (const [k, g] of [...groups.entries()]) {
+                    if (!g.lines.length) groups.delete(k);
+                }
 
                 // Sort groups by best (highest) Projected Edge across their lines
                 const sortedGroups = [...groups.values()].sort((a, b) => {
@@ -6298,14 +6519,20 @@
                     } else if (threeBallSort === 'odds-high-low') {
                         copy.sort((a, b) => b['American Odds Num'] - a['American Odds Num']);
                     } else {
-                        // odds: favorite first = lowest decimal odds = highest implied %
+                        // odds (default): market favorite first = lowest American odds number
+                        // e.g. -117 before +150 before +300
                         copy.sort((a, b) => {
-                            const ai = parseFloat(a['Implied Win %']);
-                            const bi = parseFloat(b['Implied Win %']);
-                            const aOk = !isNaN(ai), bOk = !isNaN(bi);
-                            if (aOk && bOk) return bi - ai;
+                            const aa = a['American Odds Num'];
+                            const bb = b['American Odds Num'];
+                            const aOk = aa != null && aa !== 999999;
+                            const bOk = bb != null && bb !== 999999;
+                            if (aOk && bOk) return aa - bb;
                             if (aOk) return -1;
                             if (bOk) return 1;
+                            // fallback: highest model Implied Win %
+                            const ai = parseFloat(a['Implied Win %']);
+                            const bi = parseFloat(b['Implied Win %']);
+                            if (!isNaN(ai) && !isNaN(bi)) return bi - ai;
                             return 0;
                         });
                     }
@@ -6318,6 +6545,7 @@
                 visibleGroups.forEach(g => {
                     let rows = sortWithinGroup(groupsMap.get(g));
                     // Group favorite = the first (top) player currently displayed in the group
+                    // With default odds sort this is the market favorite (lowest American odds)
                     const bestPlayer = rows.length > 0 ? rows[0].PLAYER : null;
                     const groupFavPlayers = new Set(bestPlayer ? [bestPlayer] : []);
                     // Value flag: positive 925 edge vs Vegas
@@ -6437,14 +6665,72 @@
             }
         }
         function showMatchupPopup(row) {
-            document.getElementById('popupPlayer1Name').textContent = row['PLAYER 1'];
-            document.getElementById('popupPlayer1Odds').textContent = `Odds: ${row['PLAYER 1 ODDS']}`;
+            const p1Name = row['PLAYER 1'] || '';
+            const p2Name = row['PLAYER 2'] || '';
+            const p1El = document.getElementById('popupPlayer1Name');
+            const p2El = document.getElementById('popupPlayer2Name');
+            const p1OddsEl = document.getElementById('popupPlayer1Odds');
+            const p2OddsEl = document.getElementById('popupPlayer2Odds');
+
+            p1El.textContent = p1Name;
+            p1OddsEl.textContent = `Odds: ${row['PLAYER 1 ODDS']}`;
             document.getElementById('popupSportsbook').textContent = `Sportsbook: ${row['SPORTSBOOK']}`;
             document.getElementById('popupProjectedEdge').textContent = `Projected Edge: ${formatPercent(row['PROJECTED EDGE'], true)}`;
             document.getElementById('popupSportsbookEdge').textContent = `Sportsbook Edge: ${formatPercent(row['SPORTSBOOK EDGE'], true)}`;
             document.getElementById('popupBetType').textContent = `Bet Type: ${row['BET TYPE']}`;
-            document.getElementById('popupPlayer2Name').textContent = row['PLAYER 2'];
-            document.getElementById('popupPlayer2Odds').textContent = `Odds: ${row['PLAYER 2 ODDS']}`;
+            p2El.textContent = p2Name;
+            p2OddsEl.textContent = `Odds: ${row['PLAYER 2 ODDS']}`;
+
+            // Determine the recommended / winning side and highlight it in green
+            const bet = String(row['NINETOFIVE BET'] || '').toUpperCase();
+            const tag = String(row['NINETOFIVE BET TAG'] || '').toUpperCase();
+            const p1Win = parseFloat(row['PLAYER 1 WIN %']) || 0;
+            const p2Win = parseFloat(row['PLAYER 2 WIN %']) || 0;
+            const projEdge = parseFloat(row['PROJECTED EDGE']) || 0;
+
+            // Reset styles
+            [p1El, p2El, p1OddsEl, p2OddsEl].forEach(el => {
+                el.style.color = '';
+                el.style.fontWeight = '';
+            });
+            const p1Info = p1El.closest('.player1-info');
+            const p2Info = p2El.closest('.player2-info');
+            if (p1Info) p1Info.style.background = '';
+            if (p2Info) p2Info.style.background = '';
+
+            let winnerSide = null; // 'p1' | 'p2'
+            if (tag.includes('WINNER') || bet) {
+                // Prefer explicit 925 recommendation
+                const betUpper = bet;
+                const p1Last = p1Name.split(' ').pop().toUpperCase();
+                const p2Last = p2Name.split(' ').pop().toUpperCase();
+                if (betUpper.includes('PLAYER 1') || (p1Last && betUpper.includes(p1Last)) || betUpper === p1Name.toUpperCase()) {
+                    winnerSide = 'p1';
+                } else if (betUpper.includes('PLAYER 2') || (p2Last && betUpper.includes(p2Last)) || betUpper === p2Name.toUpperCase()) {
+                    winnerSide = 'p2';
+                }
+            }
+            // Fallback: higher model win % when edge is positive
+            if (!winnerSide && projEdge > 0) {
+                winnerSide = p1Win >= p2Win ? 'p1' : 'p2';
+            } else if (!winnerSide) {
+                winnerSide = p1Win >= p2Win ? 'p1' : 'p2';
+            }
+
+            const green = '#16a34a';
+            const greenBg = 'color-mix(in srgb, #22c55e 12%, var(--card-bg))';
+            if (winnerSide === 'p1') {
+                p1El.style.color = green;
+                p1El.style.fontWeight = '700';
+                p1OddsEl.style.color = green;
+                if (p1Info) p1Info.style.background = greenBg;
+            } else if (winnerSide === 'p2') {
+                p2El.style.color = green;
+                p2El.style.fontWeight = '700';
+                p2OddsEl.style.color = green;
+                if (p2Info) p2Info.style.background = greenBg;
+            }
+
             const ctx = document.getElementById('matchupChart').getContext('2d');
             if (matchupChart) {
                 matchupChart.destroy();
@@ -6453,22 +6739,22 @@
             const player2Vegas = parseFloat(row['PLAYER 2 VEGAS ODDS']) * 100 || 0;
             const player1Average = parseFloat(row['PLAYER 1 AVERAGE ODDS']) * 100 || 0;
             const player2Average = parseFloat(row['PLAYER 2 AVERAGE ODDS']) * 100 || 0;
-            const player1Win = parseFloat(row['PLAYER 1 WIN %']) * 100 || 0;
-            const player2Win = parseFloat(row['PLAYER 2 WIN %']) * 100 || 0;
+            const player1WinPct = p1Win <= 1 ? p1Win * 100 : p1Win;
+            const player2WinPct = p2Win <= 1 ? p2Win * 100 : p2Win;
             matchupChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
                     labels: ['VEGAS ODDS', 'AVERAGE ODDS', 'WIN %'],
                     datasets: [
                         {
-                            label: row['PLAYER 1'],
-                            data: [player1Vegas, player1Average, player1Win],
-                            backgroundColor: 'rgba(75, 192, 192, 0.6)',
+                            label: p1Name,
+                            data: [player1Vegas, player1Average, player1WinPct],
+                            backgroundColor: winnerSide === 'p1' ? 'rgba(34, 197, 94, 0.75)' : 'rgba(75, 192, 192, 0.55)',
                         },
                         {
-                            label: row['PLAYER 2'],
-                            data: [player2Vegas, player2Average, player2Win],
-                            backgroundColor: 'rgba(255, 99, 132, 0.6)',
+                            label: p2Name,
+                            data: [player2Vegas, player2Average, player2WinPct],
+                            backgroundColor: winnerSide === 'p2' ? 'rgba(34, 197, 94, 0.75)' : 'rgba(255, 99, 132, 0.55)',
                         }
                     ]
                 },
@@ -7504,14 +7790,25 @@
 
         function formatAmerican(odds) {
             if (odds === null || odds === undefined || odds === '' || odds === 0) return '—';
-            const n = parseFloat(odds);
-            if (isNaN(n)) return String(odds);
-            // Already American?
-            if (n > 20 || n < -100) return n > 0 ? `+${Math.round(n)}` : String(Math.round(n));
-            // Decimal → American
-            if (n >= 2) return `+${Math.round((n - 1) * 100)}`;
+            const raw = String(odds).trim();
+            // Already explicit American (has + or - sign)
+            if (/^[+-]\d/.test(raw)) {
+                const n = parseFloat(raw);
+                if (isNaN(n)) return raw;
+                return n > 0 ? `+${Math.round(n)}` : String(Math.round(n));
+            }
+            const n = parseFloat(raw);
+            if (isNaN(n)) return raw;
+            // Negative without sign → American
+            if (n < 0) return String(Math.round(n));
+            // This data source stores outright odds as fractional "to 1"
+            // e.g. 25 = 25/1 → American +2500, 32.5 = 32.5/1 → +3250
+            if (n >= 1) {
+                return `+${Math.round(n * 100)}`;
+            }
+            // Decimal odds between 1 and 2 (rare for outrights)
             if (n > 1) return String(Math.round(-100 / (n - 1)));
-            return String(odds);
+            return raw;
         }
 
         function renderOverviewOddsSummary(playerName) {
@@ -9308,6 +9605,7 @@
                 betTypeMenu.appendChild(label);
             });
             updateSelectAllBetTypesState();
+            updateBetTypeDropdownLabel();
         }
         function filterBetTypes() {
             const searchTerm = document.getElementById('betTypeSearch').value.toLowerCase();
@@ -9326,6 +9624,7 @@
                 visibleCheckboxes.map(cb => cb.value) :
                 [];
             visibleCheckboxes.forEach(cb => cb.checked = selectAllCheckbox.checked);
+            updateBetTypeDropdownLabel();
             updateTable();
         }
         function updateBetTypeSelection(betType, isChecked) {
@@ -9334,6 +9633,7 @@
             } else {
                 selectedBetTypes = selectedBetTypes.filter(b => b !== betType);
             }
+            updateBetTypeDropdownLabel();
         }
         function updateSelectAllBetTypesState() {
             const selectAllCheckbox = document.getElementById('selectAllBetTypes');
@@ -9341,6 +9641,29 @@
             const visibleCheckboxes = Array.from(betTypeCheckboxes).filter(cb => cb.parentElement.style.display !== 'none');
             const allChecked = visibleCheckboxes.length > 0 && visibleCheckboxes.every(cb => cb.checked);
             selectAllCheckbox.checked = allChecked;
+            updateBetTypeDropdownLabel();
+        }
+        function updateBetTypeDropdownLabel() {
+            const btn = document.getElementById('betTypeDropdown');
+            if (!btn) return;
+            const n = selectedBetTypes.length;
+            if (n === 0) {
+                btn.textContent = 'Select Bet Type';
+                btn.classList.remove('has-selection');
+                btn.title = '';
+            } else if (n === 1) {
+                btn.textContent = selectedBetTypes[0];
+                btn.classList.add('has-selection');
+                btn.title = selectedBetTypes[0];
+            } else if (n <= 3) {
+                btn.textContent = selectedBetTypes.join(', ');
+                btn.classList.add('has-selection');
+                btn.title = selectedBetTypes.join(', ');
+            } else {
+                btn.textContent = `${n} bet types`;
+                btn.classList.add('has-selection');
+                btn.title = selectedBetTypes.join(', ');
+            }
         }
         // Known major American / US-facing sportsbooks
         const AMERICAN_SPORTSBOOKS = [
@@ -9428,6 +9751,7 @@
             const ot = document.getElementById('selectOtherBooks');
             if (am) am.checked = selectAllCheckbox.checked;
             if (ot) ot.checked = selectAllCheckbox.checked;
+            updateSportsbookDropdownLabel();
             updateTable();
         }
 
@@ -9439,6 +9763,7 @@
                 updateSportsbookSelection(cb.value, checked);
             });
             updateSelectAllSportsbooksState();
+            updateSportsbookDropdownLabel();
             updateTable();
         }
 
@@ -9450,6 +9775,7 @@
                 updateSportsbookSelection(cb.value, checked);
             });
             updateSelectAllSportsbooksState();
+            updateSportsbookDropdownLabel();
             updateTable();
         }
 
@@ -9458,6 +9784,29 @@
                 if (!selectedSportsbooks.includes(sportsbook)) selectedSportsbooks.push(sportsbook);
             } else {
                 selectedSportsbooks = selectedSportsbooks.filter(s => s !== sportsbook);
+            }
+            updateSportsbookDropdownLabel();
+        }
+        function updateSportsbookDropdownLabel() {
+            const btn = document.getElementById('sportsbookDropdown');
+            if (!btn) return;
+            const n = selectedSportsbooks.length;
+            if (n === 0) {
+                btn.textContent = 'Select Sportsbook';
+                btn.classList.remove('has-selection');
+                btn.title = '';
+            } else if (n === 1) {
+                btn.textContent = selectedSportsbooks[0];
+                btn.classList.add('has-selection');
+                btn.title = selectedSportsbooks[0];
+            } else if (n <= 2) {
+                btn.textContent = selectedSportsbooks.join(', ');
+                btn.classList.add('has-selection');
+                btn.title = selectedSportsbooks.join(', ');
+            } else {
+                btn.textContent = `${n} sportsbooks`;
+                btn.classList.add('has-selection');
+                btn.title = selectedSportsbooks.join(', ');
             }
         }
 
@@ -9476,6 +9825,7 @@
             const otToggle = document.getElementById('selectOtherBooks');
             if (amToggle) amToggle.checked = amCbs.length > 0 && amCbs.every(cb => cb.checked);
             if (otToggle) otToggle.checked = otCbs.length > 0 && otCbs.every(cb => cb.checked);
+            updateSportsbookDropdownLabel();
         }
         function populatePlayer1Menu() {
             const player1s = [...new Set(matchupData.map(row => row['PLAYER 1']))].sort();
