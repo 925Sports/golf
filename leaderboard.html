@@ -256,6 +256,38 @@
             border-bottom: 2px solid var(--button-bg);
             display: inline-block;
         }
+        /* Missed cut / projected cut divider (PGA-style bar) */
+        tr.cut-divider-row td {
+            background: color-mix(in srgb, #64748b 14%, var(--card-bg)) !important;
+            border: none !important;
+            padding: 0.55rem 0.75rem !important;
+            text-align: left !important;
+        }
+        .cut-divider-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-color);
+            opacity: 0.92;
+        }
+        .cut-divider-bar .cut-divider-label {
+            letter-spacing: -0.01em;
+        }
+        .cut-divider-bar .cut-divider-meta {
+            font-weight: 500;
+            opacity: 0.7;
+            font-size: 0.78rem;
+        }
+        body[data-theme="dark"] tr.cut-divider-row td {
+            background: color-mix(in srgb, #94a3b8 12%, var(--card-bg)) !important;
+        }
+        tr.missed-cut-row td {
+            opacity: 0.72;
+        }
         tr.is-favorite-row td {
             background: color-mix(in srgb, #fbbf24 6%, var(--card-bg)) !important;
         }
@@ -2542,8 +2574,8 @@
             <div id="bettingSortFilter" style="display: none;" title="Sort the betting odds board">
                 <label for="bettingSortSelect">Sort</label>
                 <select id="bettingSortSelect" onchange="onBettingSortChange()">
-                    <option value="edge" selected>Edge (high → low)</option>
-                    <option value="score">Score (best first)</option>
+                    <option value="score" selected>Score (best first)</option>
+                    <option value="edge">Edge (high → low)</option>
                     <option value="odds">Best Odds (longest)</option>
                     <option value="name">Player name</option>
                 </select>
@@ -2951,7 +2983,7 @@
         const bettingBaseColumns = ['Score', 'Holes', 'TEE TIME (LOCAL)', 'Best Odds', 'Best Book', 'Edge'];
         let bettingColumns = [...bettingBaseColumns, ...bettingBookColumns];
         let currentBettingMarket = 'OUTRIGHT';
-        let currentBettingSort = 'edge';
+        let currentBettingSort = 'score';
         let lastCourseProfile = '';
         let lastCourseBlurb = '';
         let cutSweatsByContest = {}; // contestKey -> parsed entries[]
@@ -2959,6 +2991,7 @@
         let cutStatusMap = null;
         let currentCutSweatsContest = 'overview';
         let cutSweatsUserQuery = '';
+        let cutSweatsScenarioPlayer = '';
         let cutSweatsChart = null;
         let cutSweatsOverviewChart = null;
         let cutSweatsNearChart = null;
@@ -3037,7 +3070,7 @@
             updateTable();
         }
         function onBettingSortChange() {
-            currentBettingSort = document.getElementById('bettingSortSelect')?.value || 'edge';
+            currentBettingSort = document.getElementById('bettingSortSelect')?.value || 'score';
             updateTable();
         }
         function updateContextBar() {
@@ -3257,6 +3290,9 @@
             if (value === '-' || value === '') return NaN;
             if (column === 'Score') {
                 return scoreToNumber(value);
+            } else if (column === 'Place') {
+                const n = parsePlaceNum(value);
+                return n != null ? n : NaN;
             } else if (column.endsWith('WIN %') || column.endsWith('EDGE') || column.endsWith('VEGAS ODDS') || column.endsWith('AVERAGE ODDS')) {
                 return parseFloat(String(value).replace('%', ''));
             } else if (column === 'ODDS') {
@@ -3925,8 +3961,11 @@
                 complete: function(results) {
                     liveLeaderboardData = results.data.filter(r => r['Player Name'] || r.Player);
                     console.log('Live leaderboard loaded:', liveLeaderboardData.length, 'rows');
-                    // Re-apply filters so Win % / Top 5 % / Top 20 % columns populate
-                    if (currentView === 'tournament' || currentView === 'showdown') {
+                    cutStatusMap = null;
+                    if (typeof reapplyAllCutSweatsStatus === 'function') {
+                        try { reapplyAllCutSweatsStatus(); } catch (e) { /* contests may not be loaded yet */ }
+                    }
+                    if (currentView === 'tournament' || currentView === 'showdown' || currentView === 'cutsweats' || currentView === 'course') {
                         updateTable();
                     }
                 }
@@ -4003,33 +4042,98 @@
                 if (status === false) map.set(key, false);
                 else if (status === true && map.get(key) !== false) map.set(key, true);
             };
+
+            // Collect scores by normalized name for cut-line comparisons
+            const scoreByName = new Map();
+            (rawData || []).forEach(r => {
+                if (!r.PLAYER) return;
+                const s = scoreToNumber(r.Score);
+                if (!isNaN(s)) scoreByName.set(normalizeName(r.PLAYER), s);
+            });
             (liveLeaderboardData || []).forEach(r => {
                 const n = r['Player Name'] || r.Player || r.PLAYER;
                 if (!n) return;
-                const pos = String(r['Current Pos'] || r.Pos || r.Place || '').toUpperCase();
-                if (pos.includes('CUT') || pos === 'MC' || pos === 'WD' || pos === 'DQ') {
+                const s = scoreToNumber(r['Current Score'] || r.Score);
+                if (!isNaN(s) && !scoreByName.has(normalizeName(n))) {
+                    scoreByName.set(normalizeName(n), s);
+                }
+            });
+
+            // Estimate cut SCORE (not place) from players near the cut
+            const cutInfo = typeof estimateCutLine === 'function' ? estimateCutLine() : null;
+            const cutScore = cutInfo && cutInfo.value != null ? cutInfo.value : null;
+
+            // Pass 1: explicit miss / make markers only
+            let sawExplicitCut = false;
+            (liveLeaderboardData || []).forEach(r => {
+                const n = r['Player Name'] || r.Player || r.PLAYER;
+                if (!n) return;
+                const pos = String(r['Current Pos'] || r.Pos || r.Place || '').toUpperCase().trim();
+                const thru = String(r.Thru || r.Holes || r.THRU || '').toUpperCase().trim();
+                if (pos.includes('CUT') || pos === 'MC' || pos === 'WD' || pos === 'DQ' ||
+                    thru === 'CUT' || thru === 'CU' || thru === 'MC' || thru === 'WD' || thru === 'DQ') {
                     setStatus(n, false);
+                    sawExplicitCut = true;
                     return;
                 }
-                const pNum = parsePlaceNum(pos);
-                if (pNum != null && pNum < 900) setStatus(n, true);
-                else if (r['Make Cut'] === 1 || r['Make Cut'] === '1') setStatus(n, true);
+                // Explicit make-cut flag from live feed
+                if (r['Make Cut'] === 1 || r['Make Cut'] === '1' || r['MakeCut'] === 1 || r['MakeCut'] === '1') {
+                    setStatus(n, true);
+                }
             });
             (rawData || []).forEach(r => {
                 if (!r.PLAYER) return;
-                const pos = String(r['CURRENT PLACE'] || r.Place || '').toUpperCase();
-                if (pos.includes('CUT') || pos === 'MC' || pos === 'WD' || pos === 'DQ') {
+                const pos = String(r['CURRENT PLACE'] || r.Place || '').toUpperCase().trim();
+                const holes = String(r.Holes || r.THRU || r.Thru || '').toUpperCase().trim();
+                if (pos.includes('CUT') || pos === 'MC' || pos === 'WD' || pos === 'DQ' ||
+                    holes === 'CUT' || holes === 'CU' || holes === 'MC' || holes === 'WD' || holes === 'DQ') {
                     setStatus(r.PLAYER, false);
-                    return;
+                    sawExplicitCut = true;
                 }
-                const holes = String(r.Holes || r.THRU || '').toUpperCase();
-                if (holes === 'CUT' || holes === 'CU') {
-                    setStatus(r.PLAYER, false);
-                    return;
-                }
-                const pNum = parsePlaceNum(pos);
-                if (pNum != null && pNum < 900) setStatus(r.PLAYER, true);
             });
+
+            // Pass 2: numeric places — do NOT treat every place as made cut.
+            // PGA cut is typically top 65 and ties. T67 almost always means MISSED.
+            // Rules:
+            //   place <= 65  → made
+            //   place >= 67  → missed (always — do not override with score)
+            //   place == 66  → use score vs cut line (tie bubble)
+            const applyPlaceLogic = (name, posStr) => {
+                if (!name) return;
+                const key = normalizeName(name);
+                if (map.has(key) && map.get(key) === false) return; // already explicit miss
+                if (map.has(key) && map.get(key) === true) return;  // already explicit make
+                const pNum = parsePlaceNum(posStr);
+                if (pNum == null || pNum >= 900) return;
+
+                if (pNum <= 65) {
+                    setStatus(name, true);
+                    return;
+                }
+
+                // T67+ → always missed (official boards list these under the cut bar)
+                if (pNum >= 67) {
+                    setStatus(name, false);
+                    return;
+                }
+
+                // place == 66 only: score vs estimated cut line
+                const sc = scoreByName.get(key);
+                if (cutScore != null && sc != null && !isNaN(sc)) {
+                    setStatus(name, sc <= cutScore);
+                }
+            };
+
+            (liveLeaderboardData || []).forEach(r => {
+                const n = r['Player Name'] || r.Player || r.PLAYER;
+                if (!n) return;
+                applyPlaceLogic(n, r['Current Pos'] || r.Pos || r.Place || '');
+            });
+            (rawData || []).forEach(r => {
+                if (!r.PLAYER) return;
+                applyPlaceLogic(r.PLAYER, r['CURRENT PLACE'] || r.Place || '');
+            });
+
             cutStatusMap = map;
             return map;
         }
@@ -4543,6 +4647,8 @@
         }
 
         function onCutSweatsScenarioChange() {
+            const sel = document.getElementById('cutSweatsScenario');
+            if (sel) cutSweatsScenarioPlayer = (sel.value || '').trim();
             updateTable();
         }
 
@@ -5159,10 +5265,11 @@
                     });
                 }
 
-                const sortMode = document.getElementById('bettingSortSelect')?.value || currentBettingSort || 'edge';
+                const sortMode = document.getElementById('bettingSortSelect')?.value || currentBettingSort || 'score';
                 currentBettingSort = sortMode;
                 rows.sort((a, b) => {
                     if (sortMode === 'score') {
+                        // Best score first (leader at top); tie-break by edge
                         if (a._scoreNum !== b._scoreNum) return a._scoreNum - b._scoreNum;
                         return (b._edgeNum ?? -999) - (a._edgeNum ?? -999);
                     }
@@ -5176,7 +5283,7 @@
                     if (sortMode === 'name') {
                         return String(a.PLAYER).localeCompare(String(b.PLAYER));
                     }
-                    // edge default
+                    // edge
                     const ae = a._edgeNum, be = b._edgeNum;
                     if (ae == null && be == null) return a._scoreNum - b._scoreNum;
                     if (ae == null) return 1;
@@ -5428,20 +5535,90 @@
                     playerData['American Odds Num'] = parseAmericanToNum(playerData['American Odds']);
                     return playerData;
                 });
-                pivotedData.sort((a, b) => scoreToNumber(a['Score']) - scoreToNumber(b['Score']));
-                let currentPlace = 1;
-                let playersAtPlace = 1;
-                pivotedData.forEach((row, index) => {
-                    if (index > 0 && scoreToNumber(row['Score']) > scoreToNumber(pivotedData[index - 1]['Score'])) {
-                        currentPlace += playersAtPlace;
-                        playersAtPlace = 1;
-                    } else if (index > 0 && scoreToNumber(row['Score']) === scoreToNumber(pivotedData[index - 1]['Score'])) {
-                        playersAtPlace++;
-                    } else {
-                        playersAtPlace = 1;
+                // Mark missed-cut players and set Place from live Current Pos when available.
+                // Score ranking is only a fallback for players without live place data.
+                if (!cutStatusMap) buildCutStatusMap();
+                pivotedData.forEach(row => {
+                    const live = findLiveRow(row.PLAYER);
+                    const made = playerMadeCut(row.PLAYER);
+                    row['_missedCut'] = made === false;
+
+                    // Prefer live Current Pos (handles CUT, T5, etc.)
+                    // T67+ is treated as missed cut even when the feed still shows a place number.
+                    if (live) {
+                        const rawPos = live['Current Pos'] || live.Pos || live.Place || live['CURRENT PLACE'];
+                        if (rawPos != null && String(rawPos).trim() !== '' && String(rawPos).trim() !== '-') {
+                            const posStr = String(rawPos).trim().toUpperCase();
+                            if (posStr.includes('CUT') || posStr === 'MC' || posStr === 'WD' || posStr === 'DQ') {
+                                row['Place'] = 'CUT';
+                                row['_placeNum'] = 999;
+                                row['_missedCut'] = true;
+                                return;
+                            }
+                            const num = parsePlaceNum(posStr);
+                            if (num != null && num >= 67) {
+                                // Past standard top-65 cut → show CUT, not T67
+                                row['Place'] = 'CUT';
+                                row['_placeNum'] = 999;
+                                row['_missedCut'] = true;
+                                return;
+                            }
+                            if (num != null && num < 900) {
+                                row['Place'] = posStr.startsWith('T') ? posStr.replace(/\s+/g, '') : String(num);
+                                row['_placeNum'] = num;
+                                if (made === false) row['_missedCut'] = true;
+                                return;
+                            }
+                        }
                     }
-                    row['Place'] = currentPlace;
+                    // Also check Holes/Thru from tournament-stats
+                    const holes = String(row['Holes'] || row['THRU'] || row['Thru'] || '').toUpperCase().trim();
+                    if (holes === 'CUT' || holes === 'CU' || holes === 'MC' || holes === 'WD' || holes === 'DQ') {
+                        row['Place'] = 'CUT';
+                        row['_placeNum'] = 999;
+                        row['_missedCut'] = true;
+                    }
+                    // Final safety: playerMadeCut said missed
+                    if (made === false) {
+                        row['Place'] = 'CUT';
+                        row['_placeNum'] = 999;
+                        row['_missedCut'] = true;
+                    }
                 });
+
+                // Score-based ranking as fallback only for players still missing a Place
+                const needsRank = pivotedData.filter(r => r['Place'] == null || r['Place'] === '-' || r['Place'] === '');
+                if (needsRank.length) {
+                    const byScore = [...needsRank].sort((a, b) => scoreToNumber(a['Score']) - scoreToNumber(b['Score']));
+                    let currentPlace = 1;
+                    let playersAtPlace = 1;
+                    byScore.forEach((row, index) => {
+                        if (index > 0 && scoreToNumber(row['Score']) > scoreToNumber(byScore[index - 1]['Score'])) {
+                            currentPlace += playersAtPlace;
+                            playersAtPlace = 1;
+                        } else if (index > 0 && scoreToNumber(row['Score']) === scoreToNumber(byScore[index - 1]['Score'])) {
+                            playersAtPlace++;
+                        } else {
+                            playersAtPlace = 1;
+                        }
+                        if (row['_missedCut']) {
+                            row['Place'] = 'CUT';
+                            row['_placeNum'] = 999;
+                        } else {
+                            row['Place'] = currentPlace;
+                            row['_placeNum'] = currentPlace;
+                        }
+                    });
+                }
+
+                // Ensure every missed-cut player shows CUT even if score-ranked earlier
+                pivotedData.forEach(row => {
+                    if (row['_missedCut'] && row['Place'] !== 'CUT') {
+                        row['Place'] = 'CUT';
+                        row['_placeNum'] = 999;
+                    }
+                });
+
                 // SG Putt Diff = season putting − live putting (higher = more room to improve)
                 // Rank 1 = highest diff among players with a value
                 pivotedData.forEach(row => {
@@ -6099,6 +6276,7 @@
                         tr.dataset.player = row.PLAYER;
                     }
                     if (row.Favorite) tr.classList.add('is-favorite-row');
+                    if (row['_missedCut'] || row['Place'] === 'CUT') tr.classList.add('missed-cut-row');
                     if (groupFavPlayers.has(row.PLAYER)) tr.classList.add('group-favorite-row');
                     if (valuePlayers.has(row.PLAYER)) tr.classList.add('value-flag-row');
                     // Only grey out non-FAV players when "Group FAV + Positive Edge" filter is checked.
@@ -6662,12 +6840,37 @@
                     appendRows(rows);
                 });
             } else {
+                // Tournament / Showdown: Favorites → Made Cut → Missed Cut bar → Missed Cut players
+                const isTournamentLike = currentView === 'tournament' || currentView === 'showdown';
+                const missedRows = isTournamentLike ? sortedData.filter(r => r['_missedCut'] || r['Place'] === 'CUT') : [];
+                const madeRows = isTournamentLike ? sortedData.filter(r => !(r['_missedCut'] || r['Place'] === 'CUT')) : sortedData;
+                const cutAlreadyMade = missedRows.length > 0;
+                const cutInfo = typeof estimateCutLine === 'function' ? estimateCutLine() : null;
+                const cutScoreTxt = cutInfo ? cutInfo.display : null;
+
+                // Detect round for projected vs actual cut label
+                const roundStr = String((rawData && rawData[0] && (rawData[0].ROUND || rawData[0].Round)) || '').trim();
+                const roundNum = parseInt(roundStr, 10);
+                const preCut = !cutAlreadyMade && (isNaN(roundNum) || roundNum <= 2);
+
+                function appendCutDivider(label, meta) {
+                    const tr = document.createElement('tr');
+                    tr.className = 'cut-divider-row';
+                    const td = document.createElement('td');
+                    td.colSpan = displayColumns.length;
+                    td.innerHTML = `<div class="cut-divider-bar">
+                        <span class="cut-divider-label">${label}</span>
+                        ${meta ? `<span class="cut-divider-meta">${meta}</span>` : ''}
+                    </div>`;
+                    tr.appendChild(td);
+                    tableBody.appendChild(tr);
+                }
+
                 if (useSections) {
                     if (favRows.length > 0) {
                         appendSectionHeader('Favorites');
                         appendRows(favRows);
-                        appendSectionHeader('All Players');
-                    } else if (favoritePlayers.length === 0) {
+                    } else if (favoritePlayers.length === 0 && isTournamentLike) {
                         const hintTr = document.createElement('tr');
                         hintTr.className = 'favorites-hint-row';
                         const hintTd = document.createElement('td');
@@ -6677,7 +6880,25 @@
                         tableBody.appendChild(hintTr);
                     }
                 }
-                appendRows(sortedData);
+
+                if (isTournamentLike && (madeRows.length || missedRows.length)) {
+                    if (madeRows.length) {
+                        if (useSections || favRows.length > 0) {
+                            appendSectionHeader(cutAlreadyMade ? 'Made Cut' : 'Field');
+                        }
+                        appendRows(madeRows);
+                    }
+                    if (missedRows.length) {
+                        const label = `The following players failed to make the cut${cutScoreTxt ? ' ' + cutScoreTxt : ''}`;
+                        appendCutDivider(label, `${missedRows.length} players`);
+                        appendRows(missedRows);
+                    } else if (preCut && cutScoreTxt) {
+                        // Round 1/2: show projected cut line even before anyone is cut
+                        appendCutDivider(`Projected cut ${cutScoreTxt}`, 'Updates as scores come in');
+                    }
+                } else {
+                    appendRows(sortedData);
+                }
             }
         }
         function showMatchupPopup(row) {
@@ -8470,27 +8691,53 @@
         }
 
         function estimateCutLine() {
-            // Returns { display, value } from players around places 60–75
-            const scores = [];
-            (rawData || []).forEach(r => {
-                const p = parsePlaceNum(r['CURRENT PLACE'] || r.Place);
-                if (p != null && p >= 60 && p <= 75) {
-                    const s = scoreToNumber(r.Score);
-                    if (!isNaN(s)) scores.push(s);
+            // Cut SCORE = worst score among players who made the cut (place <= 65).
+            // Official boards print this as e.g. "failed to make the cut -3".
+            // Exclude CUT/MC markers and place >= 67 so missed players don't pollute the line.
+            const madeScores = [];
+            const missedScores = [];
+
+            const ingest = (posRaw, scoreRaw, thruRaw) => {
+                const pos = String(posRaw || '').toUpperCase().trim();
+                const thru = String(thruRaw || '').toUpperCase().trim();
+                const s = scoreToNumber(scoreRaw);
+                if (isNaN(s)) return;
+                if (pos.includes('CUT') || pos === 'MC' || pos === 'WD' || pos === 'DQ' ||
+                    thru === 'CUT' || thru === 'CU' || thru === 'MC' || thru === 'WD' || thru === 'DQ') {
+                    missedScores.push(s);
+                    return;
                 }
+                const p = parsePlaceNum(pos);
+                if (p != null && p >= 67) {
+                    missedScores.push(s);
+                    return;
+                }
+                if (p != null && p <= 65) {
+                    madeScores.push(s);
+                }
+            };
+
+            (rawData || []).forEach(r => {
+                ingest(r['CURRENT PLACE'] || r.Place, r.Score, r.Holes || r.THRU || r.Thru);
             });
-            if (!scores.length) {
-                (liveLeaderboardData || []).forEach(r => {
-                    const p = parsePlaceNum(r['Current Pos'] || r.Pos || r.Place);
-                    if (p != null && p >= 60 && p <= 75) {
-                        const s = scoreToNumber(r['Current Score'] || r.Score);
-                        if (!isNaN(s)) scores.push(s);
-                    }
-                });
+            (liveLeaderboardData || []).forEach(r => {
+                ingest(
+                    r['Current Pos'] || r.Pos || r.Place,
+                    r['Current Score'] || r.Score,
+                    r.Thru || r.Holes || r.THRU
+                );
+            });
+
+            let value = null;
+            if (madeScores.length) {
+                // Worst score that still made the cut
+                value = Math.max(...madeScores);
+            } else if (missedScores.length) {
+                // Fallback: one stroke better than the best missed score
+                value = Math.min(...missedScores) - 1;
             }
-            if (!scores.length) return null;
-            const avg = scores.reduce((a, b) => a + b, 0) / scores.length;
-            const value = Math.round(avg);
+            if (value == null || isNaN(value)) return null;
+            value = Math.round(value);
             const display = value === 0 ? 'E' : (value > 0 ? '+' + value : String(value));
             return { display, value };
         }
@@ -8538,16 +8785,20 @@
             if (!cutStatusMap) buildCutStatusMap();
             const byName = new Map();
             const resolveMade = (name, posStr, holesStr, placeNum) => {
+                // Trust cutStatusMap first (handles T67 missed-cut cases correctly)
                 const fromMap = cutStatusMap ? cutStatusMap.get(normalizeName(name)) : undefined;
                 if (fromMap === false) return false;
+                if (fromMap === true) return true;
                 const pos = String(posStr || '').toUpperCase();
                 const holes = String(holesStr || '').toUpperCase();
                 if (pos.includes('CUT') || pos === 'MC' || pos === 'WD' || pos === 'DQ' ||
                     holes === 'CUT' || holes === 'CU' || holes === 'WD' || holes === 'DQ') {
                     return false;
                 }
-                if (fromMap === true) return true;
-                if (placeNum != null && placeNum < 900 && !pos.includes('CUT')) return true;
+                // Do NOT treat every numeric place as made — T67 etc. often missed.
+                // Only safe auto-make is place <= 65; otherwise leave null for score fallback.
+                if (placeNum != null && placeNum <= 65) return true;
+                if (placeNum != null && placeNum >= 67) return false;
                 return null;
             };
             const add = (name, score, place, made, thru) => {
@@ -8660,8 +8911,11 @@
                 const holes = String(r.Holes || r.THRU || r.Thru || '').trim();
                 const holesUp = holes.toUpperCase();
                 let made = null;
-                if (pos.includes('CUT') || pos === 'MC' || holesUp === 'CUT' || holesUp === 'CU') made = false;
-                else if (place != null && place < 900) made = true;
+                // Prefer global cut map (correctly handles T67 missed, etc.)
+                const mapped = cutStatusMap ? cutStatusMap.get(normalizeName(r.PLAYER)) : undefined;
+                if (mapped === false || pos.includes('CUT') || pos === 'MC' || holesUp === 'CUT' || holesUp === 'CU') made = false;
+                else if (mapped === true || (place != null && place <= 65)) made = true;
+                else if (place != null && place >= 67) made = false;
                 add(r.PLAYER, score, place, made, holes);
             });
             (liveLeaderboardData || []).forEach(r => {
@@ -8672,8 +8926,10 @@
                 const pos = String(r['Current Pos'] || r.Pos || r.Place || '').toUpperCase();
                 const thru = String(r.Thru || r.Holes || r.THRU || '').trim();
                 let made = null;
-                if (pos.includes('CUT') || pos === 'MC' || pos === 'WD') made = false;
-                else if (place != null && place < 900) made = true;
+                const mapped = cutStatusMap ? cutStatusMap.get(normalizeName(name)) : undefined;
+                if (mapped === false || pos.includes('CUT') || pos === 'MC' || pos === 'WD') made = false;
+                else if (mapped === true || (place != null && place <= 65)) made = true;
+                else if (place != null && place >= 67) made = false;
                 add(name, score, place, made, thru);
             });
             // Group: outside/missed first, then inside/on-cut — each sorted by ownership
@@ -8921,7 +9177,15 @@
 
             // 9. Scenario — full field sorted by Milly Maker ownership
             const scenarioPlayers = (fieldSplit.all || []).filter(p => (p.own || 0) > 0).slice(0, 80);
-            const selectedScenario = document.getElementById('cutSweatsScenario')?.value || (scenarioPlayers[0]?.name || '');
+            let selectedScenario = cutSweatsScenarioPlayer || '';
+            if (selectedScenario && !scenarioPlayers.some(p => p.name === selectedScenario)) {
+                selectedScenario = '';
+                cutSweatsScenarioPlayer = '';
+            }
+            if (!selectedScenario && scenarioPlayers.length) {
+                selectedScenario = scenarioPlayers[0].name;
+                cutSweatsScenarioPlayer = selectedScenario;
+            }
             const simMiss = selectedScenario ? simulatePlayerMiss(primaryEntries, selectedScenario) : null;
             const simMake = selectedScenario ? simulatePlayerMake(primaryEntries, selectedScenario) : null;
             const selectedMeta = scenarioPlayers.find(p => p.name === selectedScenario);
