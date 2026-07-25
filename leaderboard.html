@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
     <style>
         :root {
             --transition: all 0.2s ease;
@@ -423,6 +424,10 @@
         .dropdown-container {
             position: relative;
             width: 100%;
+            z-index: 30;
+        }
+        .dropdown-container:has(.dropdown-menu.show) {
+            z-index: 250; /* open menu above sticky table headers */
         }
         .dropdown-button {
             padding: 0.42rem 0.6rem;
@@ -483,7 +488,7 @@
             border-radius: 6px;
             max-height: 300px;
             overflow-y: auto;
-            z-index: 10;
+            z-index: 200; /* above sticky table headers (z-index 20) */
             padding: 0.5rem;
             box-shadow: var(--shadow);
         }
@@ -1688,6 +1693,86 @@
             border-color: #14b8a6;
             transform: translateY(-1px);
         }
+        .cs-overview-details {
+            margin-top: 0.75rem;
+            border: 1px solid color-mix(in srgb, var(--border-color) 50%, transparent);
+            border-radius: 10px;
+            background: color-mix(in srgb, var(--border-color) 8%, var(--card-bg));
+            padding: 0.35rem 0.65rem 0.5rem;
+        }
+        .cs-overview-summary {
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.88rem;
+            padding: 0.45rem 0.25rem;
+            list-style: none;
+            color: var(--text-color);
+            opacity: 0.9;
+            user-select: none;
+        }
+        .cs-overview-summary::-webkit-details-marker { display: none; }
+        .cs-overview-summary::before {
+            content: '▸ ';
+            opacity: 0.7;
+        }
+        .cs-overview-details[open] > .cs-overview-summary::before {
+            content: '▾ ';
+        }
+        .cs-overview-details-body {
+            padding-top: 0.35rem;
+        }
+        .cs-star-panel {
+            margin-top: 0.85rem;
+            border: 1.5px solid color-mix(in srgb, #14b8a6 55%, var(--border-color));
+            background:
+                linear-gradient(135deg,
+                    color-mix(in srgb, #14b8a6 10%, var(--card-bg)),
+                    var(--card-bg) 55%);
+            box-shadow: 0 6px 18px color-mix(in srgb, #14b8a6 12%, transparent);
+            position: relative;
+            padding-top: 0.75rem;
+        }
+        body[data-theme="dark"] .cs-star-panel {
+            background:
+                linear-gradient(135deg,
+                    color-mix(in srgb, #14b8a6 16%, var(--card-bg)),
+                    var(--card-bg) 60%);
+        }
+        .cs-star-badge {
+            display: inline-block;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #0f766e;
+            background: color-mix(in srgb, #14b8a6 18%, var(--card-bg));
+            border: 1px solid color-mix(in srgb, #14b8a6 40%, transparent);
+            border-radius: 999px;
+            padding: 0.12rem 0.5rem;
+            margin-right: 0.35rem;
+            flex-shrink: 0;
+        }
+        body[data-theme="dark"] .cs-star-badge {
+            color: #5eead4;
+        }
+        .cs-star-panel h4 {
+            font-size: 1.05rem;
+            margin: 0;
+            display: inline;
+        }
+        .cs-star-title {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+            min-width: 0;
+        }
+        .cs-chart-wrap-xl {
+            height: 320px;
+        }
+        .cs-near-chart-wrap-lg {
+            min-height: 260px;
+        }
         .cs-ov-title { font-weight: 700; font-size: 0.88rem; }
         .cs-ov-n { font-size: 0.72rem; opacity: 0.65; margin: 0.15rem 0 0.35rem; }
         .cs-ov-stats {
@@ -1735,6 +1820,29 @@
         }
         .cs-panel h4 { margin: 0 0 0.4rem 0; font-size: 0.92rem; }
         .cs-panel h5 { margin: 0.35rem 0; font-size: 0.8rem; opacity: 0.85; }
+        .cs-panel-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.35rem;
+        }
+        .cs-panel-head h4 { margin: 0; }
+        .cs-copy-img-btn {
+            flex-shrink: 0;
+            padding: 0.22rem 0.55rem;
+            font-size: 0.72rem;
+            font-weight: 600;
+            background: var(--input-bg);
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            cursor: pointer;
+            opacity: 0.85;
+        }
+        .cs-copy-img-btn:hover { opacity: 1; border-color: #14b8a6; }
+        .cs-copy-img-btn:disabled { opacity: 0.55; cursor: wait; }
         .cs-two-col {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -2620,7 +2728,7 @@
                 <label><input type="checkbox" id="showGroupFavPositiveEdge" onchange="updateTable()"> Group FAV + Positive Edge</label>
             </div>
             <div id="threeBallImpFilter" style="display: none;" title="Only players with 40%+ implied win probability in their 3-ball">
-                <label><input type="checkbox" id="showImpWin40" onchange="updateTable()"> Imp Win ≥ 40%</label>
+                <label><input type="checkbox" id="showImpWin40" onchange="updateTable()" title="Based on Odds column (implied win from Matchup/American Odds)"> Imp Win ≥ 40%</label>
             </div>
             <div id="threeBallLegend" style="display: none; font-size: 0.62rem; opacity: 0.65; margin-left: 0.4rem; white-space: nowrap;">
                 <span style="color:#f59e0b; font-weight:600;">FAV</span> = Group Favorite (best odds in 3-ball) &nbsp; 
@@ -2948,10 +3056,12 @@
         let matchupSort = 'edge'; // edge (default) | sportsbook-edge | p1-win | default
         let collapsedMatchupGroups = new Set(); // for future grouping
         try {
-            const saved3b = JSON.parse(localStorage.getItem('threeBallPrefs') || 'null');
-            if (saved3b) {
-                if (saved3b.groupFilter) threeBallGroupFilter = saved3b.groupFilter;
-                if (saved3b.sort) threeBallSort = saved3b.sort;
+            if (isLocalStorageAvailable) {
+                const saved3b = JSON.parse(localStorage.getItem('threeBallPrefs') || 'null');
+                if (saved3b) {
+                    if (saved3b.groupFilter) threeBallGroupFilter = saved3b.groupFilter;
+                    if (saved3b.sort) threeBallSort = saved3b.sort;
+                }
             }
         } catch (e) { /* ignore */ }
         // Logical order for Matchup Bets: comparison first, then edges/value, then metadata
@@ -2980,7 +3090,7 @@
         const otherBooks = bettingBookColumnsAll.filter(b => !americanBooks.includes(b));
         let currentBettingBooksFilter = 'american';
         let bettingBookColumns = [...americanBooks]; // currently visible book columns
-        const bettingBaseColumns = ['Score', 'Holes', 'TEE TIME (LOCAL)', 'Best Odds', 'Best Book', 'Edge'];
+        const bettingBaseColumns = ['Score', 'Holes', 'TEE TIME (LOCAL)', 'Best Odds', 'Average Odds', 'Best Book', 'Edge'];
         let bettingColumns = [...bettingBaseColumns, ...bettingBookColumns];
         let currentBettingMarket = 'OUTRIGHT';
         let currentBettingSort = 'score';
@@ -2991,7 +3101,7 @@
         let cutStatusMap = null;
         let currentCutSweatsContest = 'overview';
         let cutSweatsUserQuery = '';
-        let cutSweatsScenarioPlayer = '';
+        let cutSweatsScenarioPlayers = []; // multi-select scenario simulator
         let cutSweatsChart = null;
         let cutSweatsOverviewChart = null;
         let cutSweatsNearChart = null;
@@ -3211,13 +3321,15 @@
         let selectedColumns = [...defaultColumns];
         let selectedExtraColumns = [];
         try {
-            const savedCols = JSON.parse(localStorage.getItem('selectedColumns') || 'null');
-            if (Array.isArray(savedCols) && savedCols.length) {
-                selectedColumns = savedCols.filter(c => predefinedColumns.includes(c));
-                if (!selectedColumns.length) selectedColumns = [...defaultColumns];
+            if (typeof isLocalStorageAvailable !== 'undefined' && isLocalStorageAvailable) {
+                const savedCols = JSON.parse(localStorage.getItem('selectedColumns') || 'null');
+                if (Array.isArray(savedCols) && savedCols.length) {
+                    selectedColumns = savedCols.filter(c => predefinedColumns.includes(c));
+                    if (!selectedColumns.length) selectedColumns = [...defaultColumns];
+                }
+                const savedExtra = JSON.parse(localStorage.getItem('selectedExtraColumns') || 'null');
+                if (Array.isArray(savedExtra)) selectedExtraColumns = savedExtra;
             }
-            const savedExtra = JSON.parse(localStorage.getItem('selectedExtraColumns') || 'null');
-            if (Array.isArray(savedExtra)) selectedExtraColumns = savedExtra;
         } catch (e) { /* ignore */ }
         const sgColumns = ['LIVE SG TOTAL', 'LIVE SG OT', 'LIVE SGT2G', 'LIVE SG AP', 'LIVE SG ARG', 'LIVE SG PUTT'];
         const expandedColumns = sgColumns.concat(['LIVE GIRS HIT', 'LIVE FAIRWAYS HIT']);
@@ -3900,6 +4012,10 @@
                             if (holeByHoleData.length > 0) {
                                 console.log('Sample player names:', [...new Set(holeByHoleData.slice(0, 40).map(r => r.Player))].slice(0, 8));
                             }
+                            // Refresh Course Stats so Wave Edge can use today's hole scores
+                            if (currentView === 'course') {
+                                try { updateTable(); } catch (e) { /* ignore */ }
+                            }
                         },
                         error: function(err) {
                             console.error('PapaParse error:', err);
@@ -4141,8 +4257,13 @@
         function playerMadeCut(name) {
             if (!name) return null;
             if (!cutStatusMap) buildCutStatusMap();
-            const v = cutStatusMap.get(normalizeName(name));
-            return v === undefined ? null : v;
+            const key = normalizeName(name);
+            if (cutStatusMap.has(key)) return cutStatusMap.get(key);
+            // Fuzzy fallback: Jr/Sr stripped + Ben/Benjamin style aliases
+            for (const [k, v] of cutStatusMap.entries()) {
+                if (namesMatch(name, k)) return v;
+            }
+            return null;
         }
 
         function enrichCutSweatsEntries(rows) {
@@ -4192,8 +4313,11 @@
         }
 
         function getPrimaryCutSweatsContestKey() {
+            // Always prefer Milly Maker when it has data; never fall through to Mini-Max/etc by size alone
+            if ((cutSweatsByContest.millymaker || []).length > 0) return 'millymaker';
+            // Fallback only if Milly Maker is empty
             let best = 'millymaker';
-            let bestN = (cutSweatsByContest.millymaker || []).length;
+            let bestN = 0;
             Object.keys(CUT_SWEATS_FILES).forEach(k => {
                 const n = (cutSweatsByContest[k] || []).length;
                 if (n > bestN) { bestN = n; best = k; }
@@ -4400,7 +4524,7 @@
                 const e = entries[i];
                 const m = e.madeCount || 0;
                 if (m >= 6) fieldSix++;
-                const has = (e.players || []).some(p => normalizeName(p) === key);
+                const has = (e.players || []).some(p => normalizeName(p) === key || namesMatch(p, playerName));
                 if (has) {
                     withPlayer++;
                     const after = currentlyMade ? m - 1 : m;
@@ -4430,7 +4554,7 @@
                 const e = entries[i];
                 const m = e.madeCount || 0;
                 if (m >= 6) fieldSix++;
-                const has = (e.players || []).some(p => normalizeName(p) === key);
+                const has = (e.players || []).some(p => normalizeName(p) === key || namesMatch(p, playerName));
                 if (has) {
                     withPlayer++;
                     const after = currentlyMade ? m : m + 1;
@@ -4444,6 +4568,85 @@
                 playerName,
                 withPlayer,
                 withPct: csPct(withPlayer, n),
+                sixBefore: csPct(fieldSix, n),
+                sixAfter: csPct(fieldSixAfter, n),
+                delta: csPct(fieldSixAfter, n) - csPct(fieldSix, n)
+            };
+        }
+
+        /** Multi-player miss: all selected players who currently made cut flip to missed */
+        function simulatePlayersMiss(entries, playerNames) {
+            if (!playerNames || !playerNames.length || !entries.length) return null;
+            if (playerNames.length === 1) return simulatePlayerMiss(entries, playerNames[0]);
+            const madeKeys = new Set();
+            playerNames.forEach(n => {
+                if (playerMadeCut(n) === true) madeKeys.add(normalizeName(n));
+            });
+            let fieldSix = 0, fieldSixAfter = 0, withAny = 0;
+            for (let i = 0; i < entries.length; i++) {
+                const e = entries[i];
+                const m = e.madeCount || 0;
+                if (m >= 6) fieldSix++;
+                let flip = 0;
+                let hit = false;
+                (e.players || []).forEach(p => {
+                    const matched = playerNames.some(sel => namesMatch(p, sel) || normalizeName(p) === normalizeName(sel));
+                    if (!matched) return;
+                    hit = true;
+                    if (madeKeys.has(normalizeName(p)) || playerNames.some(sel => namesMatch(p, sel) && playerMadeCut(sel) === true)) {
+                        flip++;
+                    }
+                });
+                // recount flips more carefully
+                flip = 0;
+                playerNames.forEach(sel => {
+                    const inLu = (e.players || []).some(p => namesMatch(p, sel) || normalizeName(p) === normalizeName(sel));
+                    if (inLu && playerMadeCut(sel) === true) flip++;
+                });
+                if (hit || flip > 0) {
+                    withAny++;
+                    if ((m - flip) >= 6) fieldSixAfter++;
+                } else if (m >= 6) {
+                    fieldSixAfter++;
+                }
+            }
+            const n = entries.length;
+            return {
+                playerNames: playerNames.slice(),
+                withPlayer: withAny,
+                withPct: csPct(withAny, n),
+                sixBefore: csPct(fieldSix, n),
+                sixAfter: csPct(fieldSixAfter, n),
+                delta: csPct(fieldSixAfter, n) - csPct(fieldSix, n)
+            };
+        }
+
+        /** Multi-player make: all selected players who currently missed flip to made */
+        function simulatePlayersMake(entries, playerNames) {
+            if (!playerNames || !playerNames.length || !entries.length) return null;
+            if (playerNames.length === 1) return simulatePlayerMake(entries, playerNames[0]);
+            let fieldSix = 0, fieldSixAfter = 0, withAny = 0;
+            for (let i = 0; i < entries.length; i++) {
+                const e = entries[i];
+                const m = e.madeCount || 0;
+                if (m >= 6) fieldSix++;
+                let flip = 0;
+                playerNames.forEach(sel => {
+                    const inLu = (e.players || []).some(p => namesMatch(p, sel) || normalizeName(p) === normalizeName(sel));
+                    if (inLu && playerMadeCut(sel) !== true) flip++;
+                });
+                if (flip > 0) {
+                    withAny++;
+                    if ((m + flip) >= 6) fieldSixAfter++;
+                } else if (m >= 6) {
+                    fieldSixAfter++;
+                }
+            }
+            const n = entries.length;
+            return {
+                playerNames: playerNames.slice(),
+                withPlayer: withAny,
+                withPct: csPct(withAny, n),
                 sixBefore: csPct(fieldSix, n),
                 sixAfter: csPct(fieldSixAfter, n),
                 delta: csPct(fieldSixAfter, n) - csPct(fieldSix, n)
@@ -4571,6 +4774,87 @@
             return byContest;
         }
 
+        /**
+         * Plays vs Ways: user exposure vs field ownership, with live place context.
+         * Positive leverage = overweight vs field. Top-10 / made-cut overweight = good.
+         */
+        function analyzeUserPlaysVsField(query, contestKey, ownMap, limit = 20) {
+            const key = contestKey || 'millymaker';
+            const mine = searchCutSweatsUserEntries(key, query);
+            if (!mine.length) return null;
+            const n = mine.length;
+            const counts = new Map(); // normalizeName -> { name, count }
+            mine.forEach(e => {
+                (e.players || []).forEach(p => {
+                    if (!p) return;
+                    const k = normalizeName(p);
+                    const cur = counts.get(k) || { name: p, count: 0 };
+                    cur.count++;
+                    // prefer longer/display name
+                    if (p.length > (cur.name || '').length) cur.name = p;
+                    counts.set(k, cur);
+                });
+            });
+            if (!cutStatusMap) buildCutStatusMap();
+            const rows = [];
+            counts.forEach((v, k) => {
+                const userOwn = (v.count / n) * 100;
+                let fieldOwn = 0;
+                let fieldHit = ownMap ? ownMap.get(k) : null;
+                if (!fieldHit && ownMap && typeof namesMatch === 'function') {
+                    for (const [, ov] of ownMap.entries()) {
+                        if (namesMatch(v.name, ov.name)) { fieldHit = ov; break; }
+                    }
+                }
+                if (fieldHit && fieldHit.own != null) fieldOwn = fieldHit.own;
+                const lev = userOwn - fieldOwn; // + = overweight
+
+                const live = findLiveRow(v.name);
+                let placeStr = '—';
+                let placeNum = null;
+                let score = null;
+                if (live) {
+                    placeStr = String(live['Current Pos'] || live.Pos || live.Place || '—').trim() || '—';
+                    placeNum = parsePlaceNum(placeStr);
+                    score = scoreToNumber(live['Current Score'] || live.Score);
+                }
+                const made = playerMadeCut(v.name);
+                if (made === false && (placeStr === '—' || placeStr === '-')) {
+                    placeStr = 'CUT';
+                    placeNum = 999;
+                }
+                rows.push({
+                    name: v.name,
+                    userOwn,
+                    fieldOwn,
+                    lev,
+                    placeStr,
+                    placeNum,
+                    score: isNaN(score) ? null : score,
+                    made,
+                    count: v.count
+                });
+            });
+            rows.sort((a, b) => b.lev - a.lev);
+            const overweight = rows.filter(r => r.lev >= 1.0);
+            const underweight = [...rows].filter(r => r.lev <= -1.0).sort((a, b) => a.lev - b.lev);
+            // Good: overweight + top 20 (or top 10 highlight)
+            const overweightGood = overweight.filter(r => r.placeNum != null && r.placeNum <= 20 && r.made !== false);
+            const overweightBad = overweight.filter(r => r.made === false || (r.placeNum != null && r.placeNum >= 50));
+            // Missed leverage: underweight on top-10 leaders
+            const missedLeaders = underweight.filter(r => r.placeNum != null && r.placeNum <= 10 && r.made !== false);
+            return {
+                n,
+                contest: key,
+                all: rows.slice(0, limit),
+                overweight: overweight.slice(0, limit),
+                underweight: underweight.slice(0, limit),
+                overweightGood: overweightGood.slice(0, 12),
+                overweightBad: overweightBad.slice(0, 12),
+                missedLeaders: missedLeaders.slice(0, 12)
+            };
+        }
+
         function getCutSweatsDataHealth() {
             const rows = [];
             const milly = cutSweatsByContest.millymaker || [];
@@ -4647,9 +4931,65 @@
         }
 
         function onCutSweatsScenarioChange() {
-            const sel = document.getElementById('cutSweatsScenario');
-            if (sel) cutSweatsScenarioPlayer = (sel.value || '').trim();
+            const box = document.getElementById('cutSweatsScenarioList');
+            if (box) {
+                cutSweatsScenarioPlayers = Array.from(box.querySelectorAll('input[type="checkbox"]:checked'))
+                    .map(el => (el.value || '').trim())
+                    .filter(Boolean);
+            }
             updateTable();
+        }
+
+        /** Copy a Cut Sweats panel to the clipboard as a PNG (falls back to download). */
+        async function copyCutSweatsSectionAsImage(panelId) {
+            const el = document.getElementById(panelId);
+            if (!el) return;
+            const btn = el.querySelector('.cs-copy-img-btn');
+            const prevLabel = btn ? btn.textContent : '';
+            if (btn) { btn.textContent = 'Capturing…'; btn.disabled = true; }
+            try {
+                if (typeof html2canvas !== 'function') {
+                    throw new Error('html2canvas not loaded');
+                }
+                const isDark = document.body.getAttribute('data-theme') === 'dark';
+                const canvas = await html2canvas(el, {
+                    backgroundColor: isDark ? '#0f172a' : '#ffffff',
+                    scale: Math.min(2, window.devicePixelRatio || 2),
+                    useCORS: true,
+                    logging: false
+                });
+                const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
+                if (!blob) throw new Error('Could not create image');
+                let copied = false;
+                if (navigator.clipboard && window.ClipboardItem) {
+                    try {
+                        await navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })]);
+                        copied = true;
+                    } catch (e) { /* fall through to download */ }
+                }
+                if (!copied) {
+                    const a = document.createElement('a');
+                    a.href = URL.createObjectURL(blob);
+                    a.download = (panelId || 'cut-sweats-section') + '.png';
+                    document.body.appendChild(a);
+                    a.click();
+                    a.remove();
+                    setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+                }
+                if (btn) btn.textContent = copied ? 'Copied!' : 'Downloaded';
+            } catch (err) {
+                console.error('copyCutSweatsSectionAsImage', err);
+                if (btn) btn.textContent = 'Failed';
+                alert('Could not capture section as image. Try a different browser or download fallback.');
+            } finally {
+                setTimeout(() => {
+                    if (btn) { btn.textContent = prevLabel || '📷 Copy image'; btn.disabled = false; }
+                }, 1600);
+            }
+        }
+
+        function csCopyImgBtn(panelId) {
+            return `<button type="button" class="cs-copy-img-btn" onclick="event.stopPropagation(); copyCutSweatsSectionAsImage('${panelId}')" title="Copy this section as an image">📷 Copy image</button>`;
         }
 
         function reapplyAllCutSweatsStatus() {
@@ -5186,16 +5526,23 @@
                     let bestBook = '';
                     let bestRaw = null;
                     let bestCmp = -Infinity;
+                    const cmpVals = [];
                     visibleBooks.forEach(book => {
                         const v = cs[book];
                         if (v === undefined || v === null || v === '' || v === 0 || v === '0') return;
                         const cmp = toCompare(v);
-                        if (cmp != null && cmp > bestCmp) {
-                            bestCmp = cmp;
-                            bestRaw = v;
-                            bestBook = book;
+                        if (cmp != null) {
+                            cmpVals.push(cmp);
+                            if (cmp > bestCmp) {
+                                bestCmp = cmp;
+                                bestRaw = v;
+                                bestBook = book;
+                            }
                         }
                     });
+                    const avgDec = cmpVals.length
+                        ? cmpVals.reduce((a, b) => a + b, 0) / cmpVals.length
+                        : null;
 
                     const playerData = {
                         PLAYER: name,
@@ -5205,6 +5552,7 @@
                         Holes: tRow.Holes || live.Thru || '-',
                         'TEE TIME (LOCAL)': formatTime(tRow['TEE TIME (LOCAL)'] || tRow['Tee Time'] || cs['TEE TIME'] || '') || '-',
                         'Best Odds': bestRaw != null ? formatAmerican(bestRaw) : '-',
+                        'Average Odds': avgDec != null ? decimalToAmerican(avgDec) : '-',
                         'Best Book': bestBook || '-',
                         Edge: (() => {
                             const e = parseFloat(cs.Edge ?? cs['925 - VEGAS'] ?? cs['Edge']);
@@ -5412,6 +5760,11 @@
                     playerData['% Owned'] = roundToOneDecimal(row['% Owned']) || '-';
                     playerData['VEGAS WIN %'] = roundToOneDecimal(row['VEGAS WIN %']) || '-';
                     playerData['ODDS'] = roundToOneDecimal(row['ODDS']) ? `${roundToOneDecimal(row['ODDS'])}/1` : '-';
+                    // Showdown PTS columns → 1 decimal place
+                    ['RD1 PTS', 'RD2 PTS', 'RD3 PTS', 'RD 4 PTS'].forEach(k => {
+                        const v = parseFloat(playerData[k]);
+                        if (!isNaN(v)) playerData[k] = (Math.round(v * 10) / 10).toFixed(1);
+                    });
                     playerData['LIVE SG TOTAL'] = roundToTwoDecimals(row['LIVE SG TOTAL'] || '-');
                     playerData['LIVE SG OT'] = roundToTwoDecimals(row['LIVE SG OT'] || '-');
                     playerData['LIVE SGT2G'] = roundToTwoDecimals(row['LIVE SGT2G'] || '-');
@@ -5643,6 +5996,29 @@
                     r['SG Putt Diff Rank'] = puttRank;
                     r['SG Putt Diff'] = `${r['SG Putt Diff']} (${puttRank})`;
                 });
+
+                // Overlay % Owned from Cut Sweats Milly Maker when that data is loaded
+                try {
+                    if (typeof buildContestOwnershipMap === 'function' &&
+                        cutSweatsByContest && (cutSweatsByContest.millymaker || []).length) {
+                        const ownMap = buildContestOwnershipMap('millymaker');
+                        pivotedData.forEach(row => {
+                            if (!row.PLAYER) return;
+                            let hit = ownMap.get(normalizeName(row.PLAYER));
+                            if (!hit && typeof namesMatch === 'function') {
+                                for (const [k, v] of ownMap.entries()) {
+                                    if (namesMatch(row.PLAYER, v.name) || namesMatch(row.PLAYER, k)) {
+                                        hit = v;
+                                        break;
+                                    }
+                                }
+                            }
+                            if (hit && hit.own != null && !isNaN(hit.own)) {
+                                row['% Owned'] = Math.round(hit.own * 10) / 10;
+                            }
+                        });
+                    }
+                } catch (e) { console.warn('Milly ownership overlay failed', e); }
             }
         }
         function renderTable() {
@@ -5854,21 +6230,28 @@
                         const favRow = sortedGroup[0] || null;
                         if (!favRow) return;
 
+                        // Imp ≥ 40% from Odds column (Matchup Odds / American Odds), not the stored Imp Win field
+                        const oddsImplied = (r) => {
+                            const fromOdds = oddsToImpliedPct(r['Matchup Odds'] || r['Odds'] || r['American Odds']);
+                            if (fromOdds != null && !isNaN(fromOdds)) return fromOdds;
+                            const fallback = parseFloat(String(r['Implied Win %'] || '').replace('%', ''));
+                            return isNaN(fallback) ? null : fallback;
+                        };
+
                         if (filterFavEdge) {
                             // Only keep this group's FAV, and only if they have positive Edge %
                             const e = parseFloat(String(favRow['Edge %']).replace('%', ''));
                             if (isNaN(e) || e <= 0) return; // FAV has no edge → drop group
-                            // Optional Imp Win filter on the FAV
                             if (filterImp40) {
-                                const imp = parseFloat(String(favRow['Implied Win %']).replace('%', ''));
-                                if (isNaN(imp) || imp < 40) return;
+                                const imp = oddsImplied(favRow);
+                                if (imp == null || imp < 40) return;
                             }
                             qualifyingPlayers.add(favRow.PLAYER);
                         } else if (filterImp40) {
-                            // Imp Win only: keep any player in the group meeting the threshold
+                            // Odds-implied win only: keep any player in the group with Odds → ≥ 40%
                             sortedGroup.forEach(r => {
-                                const imp = parseFloat(String(r['Implied Win %']).replace('%', ''));
-                                if (!isNaN(imp) && imp >= 40) qualifyingPlayers.add(r.PLAYER);
+                                const imp = oddsImplied(r);
+                                if (imp != null && imp >= 40) qualifyingPlayers.add(r.PLAYER);
                             });
                         }
                     });
@@ -7750,6 +8133,32 @@
         }
 
         // ========== SCORECARD ==========
+        // Common first-name short forms → canonical (for Ben/Benjamin, Chris/Christopher, etc.)
+        const FIRST_NAME_ALIASES = {
+            ben: 'benjamin', benjamin: 'benjamin',
+            chris: 'christopher', christopher: 'christopher',
+            matt: 'matthew', matthew: 'matthew',
+            mike: 'michael', michael: 'michael',
+            nick: 'nicholas', nicholas: 'nicholas',
+            rob: 'robert', bob: 'robert', robert: 'robert',
+            bill: 'william', will: 'william', william: 'william',
+            jim: 'james', jimmy: 'james', james: 'james',
+            joe: 'joseph', joseph: 'joseph',
+            tom: 'thomas', tommy: 'thomas', thomas: 'thomas',
+            dan: 'daniel', danny: 'daniel', daniel: 'daniel',
+            steve: 'stephen', stephen: 'stephen', steven: 'stephen',
+            alex: 'alexander', alexander: 'alexander',
+            tony: 'anthony', anthony: 'anthony',
+            rick: 'richard', rich: 'richard', richard: 'richard',
+            josh: 'joshua', joshua: 'joshua',
+            andy: 'andrew', andrew: 'andrew',
+            sam: 'samuel', samuel: 'samuel',
+            max: 'maximilian', maximilian: 'maximilian',
+            cam: 'cameron', cameron: 'cameron',
+            zac: 'zachary', zach: 'zachary', zachary: 'zachary',
+            jonas: 'jonas'
+        };
+
         function normalizeName(name) {
             if (!name) return '';
             let s = String(name)
@@ -7765,7 +8174,39 @@
                     s = `${parts.slice(1).join(' ')} ${parts[0]}`.replace(/\s+/g, ' ').trim();
                 }
             }
+            // Strip generational suffixes (jr, sr, ii, iii, iv, 2nd, 3rd)
+            s = s.replace(/\b(jr|sr|ii|iii|iv|2nd|3rd|junior|senior)\b/g, ' ').replace(/\s+/g, ' ').trim();
+            // Canonicalize first-name aliases (Ben → benjamin) so Ben James ≈ Benjamin James
+            const tokens = s.split(' ').filter(Boolean);
+            if (tokens.length >= 2) {
+                const first = tokens[0];
+                if (FIRST_NAME_ALIASES[first]) tokens[0] = FIRST_NAME_ALIASES[first];
+                s = tokens.join(' ');
+            }
             return s;
+        }
+
+        /** Fuzzy name match: exact, suffix-stripped, or same last name + first-name prefix/alias */
+        function namesMatch(a, b) {
+            if (!a || !b) return false;
+            const na = normalizeName(a);
+            const nb = normalizeName(b);
+            if (na === nb) return true;
+            const pa = na.split(' ').filter(Boolean);
+            const pb = nb.split(' ').filter(Boolean);
+            if (pa.length < 2 || pb.length < 2) return false;
+            const lastA = pa[pa.length - 1];
+            const lastB = pb[pb.length - 1];
+            if (lastA !== lastB) return false;
+            // Same last name: first names equal, or one is a prefix of the other
+            const fA = pa[0];
+            const fB = pb[0];
+            if (fA === fB) return true;
+            if (fA.startsWith(fB) || fB.startsWith(fA)) return true;
+            // Also try raw (pre-alias) first tokens via alias map
+            const aliasA = FIRST_NAME_ALIASES[fA] || fA;
+            const aliasB = FIRST_NAME_ALIASES[fB] || fB;
+            return aliasA === aliasB;
         }
 
         function getPlayerHoleData(playerName) {
@@ -8015,13 +8456,22 @@
             const parts = target.split(/[\s,]+/).filter(Boolean);
             const last = parts[parts.length - 1];
 
+            // 1) Exact normalized match
+            let hit = liveLeaderboardData.find(r => {
+                const p = normalizeName(r['Player Name'] || r.Player || r.PLAYER || '');
+                return p === target;
+            });
+            if (hit) return hit;
+            // 2) Fuzzy: Jr/Sr + Ben/Benjamin style
+            hit = liveLeaderboardData.find(r => {
+                const raw = r['Player Name'] || r.Player || r.PLAYER || '';
+                return namesMatch(playerName, raw);
+            });
+            if (hit) return hit;
+            // 3) Last-name fallback
             return liveLeaderboardData.find(r => {
                 const p = normalizeName(r['Player Name'] || r.Player || r.PLAYER || '');
-                return p === target ||
-                       (last && last.length > 2 && (p.endsWith(' ' + last) || p.startsWith(last + ',') || p.includes(', ' + last) === false && p.includes(last)));
-            }) || liveLeaderboardData.find(r => {
-                const p = normalizeName(r['Player Name'] || r.Player || '');
-                return last && p.includes(last);
+                return last && last.length > 2 && (p.endsWith(' ' + last) || p.startsWith(last + ' '));
             }) || null;
         }
 
@@ -8046,6 +8496,13 @@
             // Decimal odds between 1 and 2 (rare for outrights)
             if (n > 1) return String(Math.round(-100 / (n - 1)));
             return raw;
+        }
+
+        /** Convert decimal odds (e.g. 6.5) to American display string */
+        function decimalToAmerican(dec) {
+            if (dec == null || isNaN(dec) || dec <= 1) return '—';
+            if (dec >= 2) return `+${Math.round((dec - 1) * 100)}`;
+            return String(Math.round(-100 / (dec - 1)));
         }
 
         function renderOverviewOddsSummary(playerName) {
@@ -8310,9 +8767,16 @@
                     fwAvg = (fwPct / 100) * 14;
                 }
 
+                // Wave: Early / Late from "AM OR PM" column (also accept AM/PM aliases)
+                const waveRaw = String(r['AM OR PM'] || r['AM/PM'] || r['Wave'] || r['TEE WAVE'] || '').trim().toUpperCase();
+                let wave = null;
+                if (waveRaw === 'EARLY' || waveRaw === 'AM') wave = 'Early';
+                else if (waveRaw === 'LATE' || waveRaw === 'PM') wave = 'Late';
+
                 byName.set(normalizeName(r.PLAYER), {
                     name: r.PLAYER,
                     place,
+                    wave,
                     score: (() => { const s = scoreToNumber(r.Score); return isNaN(s) ? null : s; })(),
                     sgTotal: num(r, ['LIVE SG TOTAL']),
                     sgOT,
@@ -8570,6 +9034,127 @@
                     : `No strong distance/accuracy failure pattern yet.`)
                 : '';
 
+            // Wave edge from AM OR PM (Early/Late).
+            // On R3+ pairings track standings (leaders often go late), so tournament totals
+            // are biased. Use TODAY's round to-par (sum of hole scores) whenever possible.
+            const roundRaw = String(
+                (rawData && rawData[0] && (rawData[0].ROUND || rawData[0].Round || rawData[0]['Current Round'])) ||
+                selectedRound || '1'
+            );
+            const waveRoundMatch = roundRaw.match(/(\d+)/);
+            const waveRoundNum = waveRoundMatch ? parseInt(waveRoundMatch[1], 10) : 1;
+
+            const parseToParLoose = (v) => {
+                if (v == null || v === '' || v === '-') return NaN;
+                if (typeof v === 'number') return v;
+                const s = String(v).trim().replace(/−/g, '-'); // unicode minus
+                if (s === 'E' || s === 'e') return 0;
+                const n = parseFloat(s.replace(/^\+/, ''));
+                return isNaN(n) ? NaN : n;
+            };
+
+            // 1) Preferred: sum hole-level To Par for the current round + capture Round Score (strokes)
+            const todayHoleSum = new Map(); // key -> { sum, n }
+            const todayRdScore = new Map(); // key -> round strokes (from Round Score field)
+            (holeByHoleData || []).forEach(r => {
+                const rd = String(r.Round || r.ROUND || '');
+                if (!rd.includes(String(waveRoundNum))) return;
+                const nm = r.Player || r.PLAYER || r['Player Name'];
+                if (!nm) return;
+                const key = normalizeName(nm);
+                let tp = parseToParLoose(r['To Par'] ?? r['Hole To Par'] ?? r['Score To Par']);
+                if (!isNaN(tp)) {
+                    const rec = todayHoleSum.get(key) || { sum: 0, n: 0 };
+                    rec.sum += tp;
+                    rec.n += 1;
+                    todayHoleSum.set(key, rec);
+                }
+                const rs = parseFloat(r['Round Score'] || r.RoundScore || r['ROUND SCORE']);
+                if (!isNaN(rs) && rs > 30 && rs < 120) todayRdScore.set(key, rs);
+            });
+            const todayToPar = new Map();
+            todayHoleSum.forEach((rec, key) => {
+                if (rec.n > 0) todayToPar.set(key, rec.sum);
+            });
+            // 2) Fill gaps from Round To Par field if hole sum missing
+            (holeByHoleData || []).forEach(r => {
+                const rd = String(r.Round || r.ROUND || '');
+                if (!rd.includes(String(waveRoundNum))) return;
+                const nm = r.Player || r.PLAYER || r['Player Name'];
+                if (!nm) return;
+                const key = normalizeName(nm);
+                if (todayToPar.has(key)) return;
+                const tp = parseToParLoose(r['Round To Par'] || r['ROUND TO PAR']);
+                if (!isNaN(tp)) todayToPar.set(key, tp);
+            });
+            // 3) Live leaderboard "Today" style fields if present
+            (liveLeaderboardData || []).forEach(r => {
+                const nm = r['Player Name'] || r.Player || r.PLAYER;
+                if (!nm) return;
+                const key = normalizeName(nm);
+                if (todayToPar.has(key)) return;
+                const tp = parseToParLoose(r.Today || r.TODAY || r['Today Score']);
+                if (!isNaN(tp)) todayToPar.set(key, tp);
+            });
+
+            // Use today scores on R3+ when we have a usable sample among waved players
+            const wavedWithToday = players.filter(p =>
+                (p.wave === 'Early' || p.wave === 'Late') && todayToPar.has(normalizeName(p.name))
+            ).length;
+            const useToday = waveRoundNum >= 3 && wavedWithToday >= 8;
+
+            const waveMetric = (p) => {
+                if (useToday) {
+                    const t = todayToPar.get(normalizeName(p.name));
+                    return t != null && !isNaN(t) ? t : null;
+                }
+                return p.score;
+            };
+            // Avg RD Score (strokes) for the wave — today Round Score when available, else player avgRoundScore
+            const waveRdScore = (p) => {
+                const key = normalizeName(p.name);
+                if (todayRdScore.has(key)) return todayRdScore.get(key);
+                if (p.avgRoundScore != null && !isNaN(p.avgRoundScore)) return p.avgRoundScore;
+                return null;
+            };
+            const earlyWave = players.filter(p => p.wave === 'Early' && waveMetric(p) != null);
+            const lateWave = players.filter(p => p.wave === 'Late' && waveMetric(p) != null);
+            const earlyAvg = mean(earlyWave.map(waveMetric));
+            const lateAvg = mean(lateWave.map(waveMetric));
+            const earlyRd = mean(earlyWave.map(waveRdScore));
+            const lateRd = mean(lateWave.map(waveRdScore));
+            let waveAdvantageHtml = '';
+            if (earlyAvg != null && lateAvg != null && earlyWave.length >= 3 && lateWave.length >= 3) {
+                const diff = earlyAvg - lateAvg; // negative => Early scoring better
+                const fmtS = (v) => (v === 0 ? 'E' : (v > 0 ? '+' + v.toFixed(2) : v.toFixed(2)));
+                const fmtRd = (v) => (v != null && !isNaN(v) ? v.toFixed(1) : '—');
+                let winner = 'Even';
+                if (Math.abs(diff) < 0.15) winner = 'Even';
+                else if (diff < 0) winner = 'Early';
+                else winner = 'Late';
+                const scope = useToday ? `Today R${waveRoundNum}` : 'Tournament';
+                const note = useToday
+                    ? 'Today round to-par by Early/Late wave (with avg RD score)'
+                    : (waveRoundNum >= 3
+                        ? 'Tournament totals (today scores unavailable — may reflect standing-based tee times)'
+                        : 'Tournament scoring average by Early/Late wave');
+                waveAdvantageHtml = `<div class="course-summary-card" title="${note}">
+                    <div class="lbl">Wave Edge (${scope})</div>
+                    <div class="val">${winner}</div>
+                    <div style="font-size:0.72rem;opacity:0.75;margin-top:0.2rem;line-height:1.35;">
+                        Early avg ${fmtS(earlyAvg)} · Rd ${fmtRd(earlyRd)}<br>
+                        Late avg ${fmtS(lateAvg)} · Rd ${fmtRd(lateRd)}
+                        ${!useToday && waveRoundNum >= 3 ? '<br><span style="color:#f59e0b;">⚠ standing-based waves</span>' : ''}
+                    </div>
+                </div>`;
+            } else if (earlyWave.length || lateWave.length) {
+                waveAdvantageHtml = `<div class="course-summary-card">
+                    <div class="lbl">Wave Edge</div>
+                    <div class="val">—</div>
+                    <div style="font-size:0.72rem;opacity:0.75;margin-top:0.2rem;">Need more Early/Late scores</div>
+                </div>`;
+            }
+
             let insightHtml = `<div class="course-insight-grid">
                 <div class="course-insight">
                     <div class="course-insight-title">What's leading to success</div>
@@ -8643,6 +9228,7 @@
                     <div class="course-summary-card"><div class="lbl">FW Avg</div><div class="val">${fieldFw != null ? fieldFw.toFixed(1) : '—'}</div></div>
                     <div class="course-summary-card"><div class="lbl">FW %</div><div class="val">${fieldFwPct != null ? fieldFwPct.toFixed(1) + '%' : '—'}</div></div>
                     <div class="course-summary-card"><div class="lbl">Avg SG Total</div><div class="val">${fieldSg != null ? fieldSg.toFixed(2) : '—'}</div></div>
+                    ${waveAdvantageHtml || ''}
                 </div>
 
                 ${insightHtml}
@@ -9041,8 +9627,76 @@
                     ${cmp(u5, field5, '5/6')}
                     ${cmp(u4, field4, '4/6')}
                 </div>`;
-                userPortfolioHtml = `<div class="cs-panel cs-highlight-panel">
-                    <h4>Your portfolio — ${escapeHtml(cutSweatsUserQuery)}</h4>
+
+                // Plays vs Ways (exposure vs field ownership + live place)
+                const plays = analyzeUserPlaysVsField(cutSweatsUserQuery, primaryKey, ownMap, 25);
+                const fmtLev = (v) => {
+                    const s = (v >= 0 ? '+' : '') + v.toFixed(1);
+                    return `<span class="${v >= 1 ? 'cs-in' : (v <= -1 ? 'cs-out' : '')}">${s}</span>`;
+                };
+                const fmtOwn = (v) => v.toFixed(1) + '%';
+                const placeCell = (r) => {
+                    const cls = r.made === false ? 'cs-out' : (r.placeNum != null && r.placeNum <= 10 ? 'cs-in' : (r.placeNum != null && r.placeNum <= 20 ? 'cs-in' : ''));
+                    return `<span class="${cls}">${escapeHtml(r.placeStr)}</span>`;
+                };
+                const playsRow = (r) => `<tr>
+                    <td>${csPlayerNameHtml(r.name, r.made)}</td>
+                    <td>${fmtOwn(r.userOwn)}</td>
+                    <td>${fmtOwn(r.fieldOwn)}</td>
+                    <td><strong>${fmtLev(r.lev)}</strong></td>
+                    <td>${placeCell(r)}</td>
+                    <td>${r.score != null ? (r.score === 0 ? 'E' : (r.score > 0 ? '+' + r.score : String(r.score))) : '—'}</td>
+                </tr>`;
+                let playsHtml = '';
+                if (plays && plays.overweight.length) {
+                    const goodNote = plays.overweightGood.length
+                        ? plays.overweightGood.slice(0, 5).map(r =>
+                            `<strong>${escapeHtml(r.name)}</strong> (${fmtOwn(r.userOwn)} vs ${fmtOwn(r.fieldOwn)}, ${escapeHtml(r.placeStr)})`
+                          ).join(' · ')
+                        : null;
+                    playsHtml = `
+                        <div style="margin-top:0.85rem;padding-top:0.65rem;border-top:1px solid var(--border-color);">
+                            <h5 style="margin:0 0 0.25rem;">Plays vs Ways — ${CUT_SWEATS_LABELS[primaryKey] || primaryKey}</h5>
+                            <p class="course-stats-note" style="margin:0 0 0.45rem;">
+                                Your exposure vs field ownership (Milly/field). <strong>+</strong> = overweight.
+                                ${goodNote ? `<br><span class="cs-in">Overweight &amp; in top 20:</span> ${goodNote}` : ''}
+                            </p>
+                            ${plays.overweightGood.length ? `
+                                <p style="margin:0 0 0.25rem;font-size:0.82rem;"><strong class="cs-in">✓ Paying overweight</strong> (top 20 / made cut)</p>
+                                <div style="overflow-x:auto;margin-bottom:0.55rem;">
+                                    <table class="cs-mini-table">
+                                        <thead><tr><th>Player</th><th>Your %</th><th>Field %</th><th>Lev</th><th>Place</th><th>Score</th></tr></thead>
+                                        <tbody>${plays.overweightGood.map(playsRow).join('')}</tbody>
+                                    </table>
+                                </div>` : ''}
+                            ${plays.overweightBad.length ? `
+                                <p style="margin:0 0 0.25rem;font-size:0.82rem;"><strong class="cs-out">✗ Overweight &amp; struggling</strong> (missed cut / back of pack)</p>
+                                <div style="overflow-x:auto;margin-bottom:0.55rem;">
+                                    <table class="cs-mini-table">
+                                        <thead><tr><th>Player</th><th>Your %</th><th>Field %</th><th>Lev</th><th>Place</th><th>Score</th></tr></thead>
+                                        <tbody>${plays.overweightBad.map(playsRow).join('')}</tbody>
+                                    </table>
+                                </div>` : ''}
+                            ${plays.missedLeaders.length ? `
+                                <p style="margin:0 0 0.25rem;font-size:0.82rem;"><strong>Missed leverage</strong> — underweight on current top 10</p>
+                                <div style="overflow-x:auto;margin-bottom:0.55rem;">
+                                    <table class="cs-mini-table">
+                                        <thead><tr><th>Player</th><th>Your %</th><th>Field %</th><th>Lev</th><th>Place</th><th>Score</th></tr></thead>
+                                        <tbody>${plays.missedLeaders.map(playsRow).join('')}</tbody>
+                                    </table>
+                                </div>` : ''}
+                            <p style="margin:0 0 0.25rem;font-size:0.82rem;"><strong>Biggest overweight</strong> (all)</p>
+                            <div style="overflow-x:auto;">
+                                <table class="cs-mini-table">
+                                    <thead><tr><th>Player</th><th>Your %</th><th>Field %</th><th>Lev</th><th>Place</th><th>Score</th></tr></thead>
+                                    <tbody>${plays.overweight.slice(0, 12).map(playsRow).join('')}</tbody>
+                                </table>
+                            </div>
+                        </div>`;
+                }
+
+                userPortfolioHtml = `<div class="cs-panel cs-highlight-panel" id="cs-panel-portfolio">
+                    <div class="cs-panel-head"><h4>Your portfolio — ${escapeHtml(cutSweatsUserQuery)}</h4>${csCopyImgBtn('cs-panel-portfolio')}</div>
                     <p style="font-size:1rem;margin:0.25rem 0 0.35rem;"><strong>${portPct.toFixed(0)}%</strong> of your entries still have <strong>5+ through the cut</strong>
                     <span style="opacity:0.7;font-size:0.85rem;"> · ${totalN} total entries across contests</span></p>
                     <p style="margin:0 0 0.15rem;font-size:0.82rem;opacity:0.8;"><strong>You vs field</strong> (share of your entries in each bucket)</p>
@@ -9056,18 +9710,25 @@
                             <tbody>${rows}</tbody>
                         </table>
                     </div>
+                    ${playsHtml}
                 </div>`;
             } else if (cutSweatsUserQuery) {
-                userPortfolioHtml = `<div class="cs-panel"><h4>Your portfolio</h4><p>No entries matched “${escapeHtml(cutSweatsUserQuery)}”.</p></div>`;
+                userPortfolioHtml = `<div class="cs-panel" id="cs-panel-portfolio">
+                    <div class="cs-panel-head"><h4>Your portfolio</h4>${csCopyImgBtn('cs-panel-portfolio')}</div>
+                    <p>No entries matched “${escapeHtml(cutSweatsUserQuery)}”.</p>
+                </div>`;
             } else {
-                userPortfolioHtml = `<div class="cs-panel"><h4>Your portfolio</h4><p class="course-stats-note" style="margin:0;">Enter your <strong>DK Username</strong> above to see live sweat score, you-vs-field on 6/6–4/6, and a contest compare matrix.</p></div>`;
+                userPortfolioHtml = `<div class="cs-panel" id="cs-panel-portfolio">
+                    <div class="cs-panel-head"><h4>Your portfolio</h4>${csCopyImgBtn('cs-panel-portfolio')}</div>
+                    <p class="course-stats-note" style="margin:0;">Enter your <strong>DK Username</strong> above to see live sweat score, you-vs-field on 6/6–4/6, Plays vs Ways, and a contest compare matrix.</p>
+                </div>`;
             }
 
             // 2–7. Heavy analytics (cached — username typing should not recompute these)
             const analytics = getCachedPrimaryAnalytics(primaryKey, primaryEntries, ownMap, cutInfo ? cutInfo.value : null);
             const chokes = analytics.chokes;
-            const chokeHtml = `<div class="cs-panel">
-                <h4>Cut choke points</h4>
+            const chokeHtml = `<div class="cs-panel" id="cs-panel-choke">
+                <div class="cs-panel-head"><h4>Cut choke points</h4>${csCopyImgBtn('cs-panel-choke')}</div>
                 <p class="course-stats-note" style="margin:0 0 0.4rem;">High-owned in 5/6–6/6 lineups and sitting on/near the number — field leverage if they miss. (${CUT_SWEATS_LABELS[primaryKey]})</p>
                 ${chokes.length ? `<div style="overflow-x:auto;"><table class="cs-mini-table">
                     <thead><tr><th>#</th><th>Player</th><th>Own</th><th>In 5+ LUs</th><th>Score</th><th>vs Cut</th></tr></thead>
@@ -9087,8 +9748,8 @@
 
             // 3. Duplicate ladder (primary contest)
             const dups = analytics.dups;
-            const dupHtml = `<div class="cs-panel">
-                <h4>Duplicate lineup ladder — ${CUT_SWEATS_LABELS[primaryKey]}</h4>
+            const dupHtml = `<div class="cs-panel" id="cs-panel-dup">
+                <div class="cs-panel-head"><h4>Duplicate lineup ladder — ${CUT_SWEATS_LABELS[primaryKey]}</h4>${csCopyImgBtn('cs-panel-dup')}</div>
                 <p class="course-stats-note" style="margin:0 0 0.4rem;">Most copied builds with best rank, median rank, and avg made-cut.</p>
                 ${dups.length ? `<div style="overflow-x:auto;"><table class="cs-mini-table">
                     <thead><tr><th>#</th><th>Copies</th><th>% Field</th><th>Best Rank</th><th>Med Rank</th><th>Avg Cut</th><th>Lineup</th></tr></thead>
@@ -9109,8 +9770,8 @@
 
             // 5. Ownership tiers
             const tiers = analytics.tiers;
-            const tierHtml = `<div class="cs-panel">
-                <h4>Ownership tiers × cut buckets</h4>
+            const tierHtml = `<div class="cs-panel" id="cs-panel-tiers">
+                <div class="cs-panel-head"><h4>Ownership tiers × cut buckets</h4>${csCopyImgBtn('cs-panel-tiers')}</div>
                 <p class="course-stats-note" style="margin:0 0 0.4rem;">How often chalk vs leverage builds clear 5+ made cut (${CUT_SWEATS_LABELS[primaryKey]}).</p>
                 <div class="cs-bucket-row" style="grid-template-columns:repeat(3,minmax(0,1fr));">
                     ${tiers.map(t => `<div class="cs-bucket">
@@ -9124,8 +9785,8 @@
             // 6. Correlations
             const corrGood = analytics.corrGood;
             const corrBad = analytics.corrBad;
-            const corrHtml = `<div class="cs-panel">
-                <h4>Correlation board — ${CUT_SWEATS_LABELS[primaryKey]}</h4>
+            const corrHtml = `<div class="cs-panel" id="cs-panel-corr">
+                <div class="cs-panel-head"><h4>Correlation board — ${CUT_SWEATS_LABELS[primaryKey]}</h4>${csCopyImgBtn('cs-panel-corr')}</div>
                 <div class="cs-two-col">
                     <div>
                         <h5>Most paired in 5+/6 lineups</h5>
@@ -9144,16 +9805,16 @@
 
             // 7. Late wave
             const late = analytics.late;
-            const lateHtml = `<div class="cs-panel">
-                <h4>Late-wave tracker</h4>
+            const lateHtml = `<div class="cs-panel" id="cs-panel-late">
+                <div class="cs-panel-head"><h4>Late-wave tracker</h4>${csCopyImgBtn('cs-panel-late')}</div>
                 <p style="margin:0.25rem 0;"><strong>${late.activePct.toFixed(1)}%</strong> of ${CUT_SWEATS_LABELS[primaryKey]} lineups still have <strong>2+ players on the course</strong>
                 <span style="opacity:0.7;"> · ${late.stillPlayingCount} players still out · ${late.activeLineups.toLocaleString()} active LUs / ${late.finalLineups.toLocaleString()} final</span></p>
             </div>`;
 
             // 8. Cash vs GPP (Cash only — not Mini-Max)
             const shape = analyzeCashVsGpp();
-            const shapeHtml = `<div class="cs-panel">
-                <h4>Cash vs GPP cut shape</h4>
+            const shapeHtml = `<div class="cs-panel" id="cs-panel-shape">
+                <div class="cs-panel-head"><h4>Cash vs GPP cut shape</h4>${csCopyImgBtn('cs-panel-shape')}</div>
                 <div class="cs-bucket-row" style="grid-template-columns:repeat(2,minmax(0,1fr));">
                     <div class="cs-bucket">
                         <div class="cs-bucket-label">GPP contests</div>
@@ -9175,81 +9836,88 @@
                 </p>
             </div>`;
 
-            // 9. Scenario — full field sorted by Milly Maker ownership
+            // 9. Scenario — multi-select, field sorted by Milly Maker ownership
             const scenarioPlayers = (fieldSplit.all || []).filter(p => (p.own || 0) > 0).slice(0, 80);
-            let selectedScenario = cutSweatsScenarioPlayer || '';
-            if (selectedScenario && !scenarioPlayers.some(p => p.name === selectedScenario)) {
-                selectedScenario = '';
-                cutSweatsScenarioPlayer = '';
-            }
-            if (!selectedScenario && scenarioPlayers.length) {
-                selectedScenario = scenarioPlayers[0].name;
-                cutSweatsScenarioPlayer = selectedScenario;
-            }
-            const simMiss = selectedScenario ? simulatePlayerMiss(primaryEntries, selectedScenario) : null;
-            const simMake = selectedScenario ? simulatePlayerMake(primaryEntries, selectedScenario) : null;
-            const selectedMeta = scenarioPlayers.find(p => p.name === selectedScenario);
-            const selectedMade = selectedMeta
-                ? (selectedMeta.made === true || (selectedMeta.made !== false && cutInfo && selectedMeta.score != null && selectedMeta.score <= cutInfo.value))
-                : playerMadeCut(selectedScenario) === true;
+            // Keep only still-valid selections
+            cutSweatsScenarioPlayers = (cutSweatsScenarioPlayers || []).filter(n =>
+                scenarioPlayers.some(p => p.name === n)
+            );
+            const selectedList = cutSweatsScenarioPlayers.slice();
+            const simMiss = selectedList.length ? simulatePlayersMiss(primaryEntries, selectedList) : null;
+            const simMake = selectedList.length ? simulatePlayersMake(primaryEntries, selectedList) : null;
             let userMissNote = '', userMakeNote = '';
-            if (selectedScenario && userCross && cutSweatsUserQuery) {
+            if (selectedList.length && userCross && cutSweatsUserQuery) {
                 const mine = searchCutSweatsUserEntries(primaryKey, cutSweatsUserQuery);
                 if (mine.length) {
-                    const um = simulatePlayerMiss(mine, selectedScenario);
-                    const uk = simulatePlayerMake(mine, selectedScenario);
+                    const um = simulatePlayersMiss(mine, selectedList);
+                    const uk = simulatePlayersMake(mine, selectedList);
                     if (um) userMissNote = ` Your ${CUT_SWEATS_LABELS[primaryKey]} entries: 6/6 ${um.sixBefore.toFixed(1)}% → ${um.sixAfter.toFixed(1)}% (${um.delta >= 0 ? '+' : ''}${um.delta.toFixed(1)}).`;
                     if (uk) userMakeNote = ` Your ${CUT_SWEATS_LABELS[primaryKey]} entries: 6/6 ${uk.sixBefore.toFixed(1)}% → ${uk.sixAfter.toFixed(1)}% (${uk.delta >= 0 ? '+' : ''}${uk.delta.toFixed(1)}).`;
                 }
             }
-            const nameHtml = selectedScenario ? csPlayerNameHtml(selectedScenario, selectedMade) : '';
-            const scenarioHtml = `<div class="cs-panel">
-                <h4>Scenario simulator</h4>
-                <p class="course-stats-note" style="margin:0 0 0.4rem;">All field golfers sorted by Milly Maker ownership. Simulates both miss and make.</p>
-                <div style="display:flex;flex-wrap:wrap;gap:0.5rem;align-items:center;margin-bottom:0.45rem;">
-                    <label for="cutSweatsScenario" style="font-size:0.8rem;">Player</label>
-                    <select id="cutSweatsScenario" onchange="onCutSweatsScenarioChange()" style="max-width:100%;padding:0.3rem 0.45rem;border-radius:6px;border:1px solid var(--border-color);background:var(--card-bg);color:var(--text-color);">
-                        ${scenarioPlayers.length ? scenarioPlayers.map(p => {
-                            const inside = p.made === true || (p.made !== false && cutInfo && p.score != null && p.score <= cutInfo.value);
-                            const tag = inside ? '✓ cut' : '✗ cut';
-                            const sc = p.score != null ? formatScoreDisplay(p.score) : '—';
-                            return `<option value="${p.name.replace(/"/g, '&quot;')}" ${p.name === selectedScenario ? 'selected' : ''}>${p.name} (${sc}, ${p.own.toFixed(1)}%, ${tag})</option>`;
-                        }).join('') : '<option value="">No players loaded</option>'}
-                    </select>
+            const namesHtml = selectedList.length
+                ? selectedList.map(n => {
+                    const meta = scenarioPlayers.find(p => p.name === n);
+                    const made = meta
+                        ? (meta.made === true || (meta.made !== false && cutInfo && meta.score != null && meta.score <= cutInfo.value))
+                        : playerMadeCut(n) === true;
+                    return csPlayerNameHtml(n, made);
+                }).join(', ')
+                : '';
+            const scenarioHtml = `<div class="cs-panel" id="cs-panel-scenario">
+                <div class="cs-panel-head"><h4>Scenario simulator</h4>${csCopyImgBtn('cs-panel-scenario')}</div>
+                <p class="course-stats-note" style="margin:0 0 0.4rem;">Select one or more golfers (sorted by Milly Maker ownership). Simulates all selected missing <em>and</em> all selected making the cut.</p>
+                <div id="cutSweatsScenarioList" style="max-height:180px;overflow-y:auto;border:1px solid var(--border-color);border-radius:8px;padding:0.35rem 0.5rem;margin-bottom:0.5rem;background:var(--input-bg);">
+                    ${scenarioPlayers.length ? scenarioPlayers.map(p => {
+                        const inside = p.made === true || (p.made !== false && cutInfo && p.score != null && p.score <= cutInfo.value);
+                        const tag = inside ? '✓ cut' : '✗ cut';
+                        const sc = p.score != null ? formatScoreDisplay(p.score) : '—';
+                        const checked = selectedList.includes(p.name) ? 'checked' : '';
+                        const id = 'cs-scen-' + normalizeName(p.name).replace(/\s+/g, '-');
+                        return `<label for="${id}" style="display:flex;align-items:center;gap:0.4rem;font-size:0.82rem;padding:0.15rem 0;cursor:pointer;">
+                            <input type="checkbox" id="${id}" value="${p.name.replace(/"/g, '&quot;')}" ${checked} onchange="onCutSweatsScenarioChange()">
+                            <span>${p.name} <span style="opacity:0.65;">(${sc}, ${p.own.toFixed(1)}%, ${tag})</span></span>
+                        </label>`;
+                    }).join('') : '<span class="course-stats-note">No players loaded</span>'}
                 </div>
+                ${selectedList.length ? `<p class="course-stats-note" style="margin:0 0 0.35rem;">Selected: <strong>${selectedList.length}</strong> — ${namesHtml}</p>` : ''}
                 ${simMiss && simMake ? `
                     <p style="margin:0 0 0.4rem;font-size:0.9rem;">
-                        <strong>If ${nameHtml} misses</strong> (${simMiss.withPct.toFixed(1)}% of ${CUT_SWEATS_LABELS[primaryKey]} lineups):
+                        <strong>If ${selectedList.length > 1 ? 'they all miss' : namesHtml + ' misses'}</strong>
+                        (${simMiss.withPct.toFixed(1)}% of ${CUT_SWEATS_LABELS[primaryKey]} lineups own at least one):
                         field 6/6 <strong>${simMiss.sixBefore.toFixed(1)}% → ${simMiss.sixAfter.toFixed(1)}%</strong>
                         (${simMiss.delta >= 0 ? '+' : ''}${simMiss.delta.toFixed(1)} pts).${userMissNote}
                     </p>
                     <p style="margin:0;font-size:0.9rem;">
-                        <strong>If ${nameHtml} makes the cut</strong> (opposite):
+                        <strong>If ${selectedList.length > 1 ? 'they all make the cut' : namesHtml + ' makes the cut'}</strong> (opposite):
                         field 6/6 <strong>${simMake.sixBefore.toFixed(1)}% → ${simMake.sixAfter.toFixed(1)}%</strong>
                         (${simMake.delta >= 0 ? '+' : ''}${simMake.delta.toFixed(1)} pts).${userMakeNote}
                     </p>
-                ` : '<p class="course-stats-note" style="margin:0;">Select a player to simulate miss and make scenarios.</p>'}
+                ` : '<p class="course-stats-note" style="margin:0;">Check one or more players to simulate miss and make scenarios.</p>'}
             </div>`;
 
             // Detailed narrative summary
-            const narrativeHtml = `<div class="cs-panel cs-highlight-panel">
-                <h4>Cut sweat &amp; ownership summary</h4>
+            const narrativeHtml = `<div class="cs-panel cs-highlight-panel" id="cs-panel-narrative">
+                <div class="cs-panel-head"><h4>Cut sweat &amp; ownership summary</h4>${csCopyImgBtn('cs-panel-narrative')}</div>
                 <div class="cs-narrative">
                     ${buildCutOwnershipNarrative(cutInfo, primaryKey, primaryEntries, ownMap, nearCut, chokes, tiers, shape, late, fieldSplit)}
                 </div>
             </div>`;
 
-            // Near cut chart panel
+            // Near cut chart panel — featured "star" block
             const nearOutsideN = nearCut.filter(p => p.made === false || (cutInfo && p.score > cutInfo.value)).length;
             const nearInsideN = nearCut.length - nearOutsideN;
             const nearCutHtml = nearCut.length ? `
-                <div class="cs-panel" style="margin-top:0.75rem;">
-                    <h4>Highest owned near the cut${cutLine != null ? ` (${cutLine})` : ''}</h4>
+                <div class="cs-panel cs-star-panel" id="cs-panel-nearcut">
+                    <div class="cs-panel-head">
+                        <div class="cs-star-title"><span class="cs-star-badge">★ Spotlight</span><h4>Highest owned near the cut${cutLine != null ? ` (${cutLine})` : ''}</h4></div>
+                        ${csCopyImgBtn('cs-panel-nearcut')}
+                    </div>
                     <p class="course-stats-note" style="margin:0 0 0.35rem;">
                         Grouped by cut status · <span style="color:#ef4444;font-weight:700;">Red</span> = outside / missed (${nearOutsideN})
                         · <span style="color:#22c55e;font-weight:700;">Green</span> = inside / on the number (${nearInsideN})
                     </p>
-                    <div class="cs-near-chart-wrap">
+                    <div class="cs-near-chart-wrap cs-near-chart-wrap-lg">
                         <canvas id="cutSweatsNearChart"></canvas>
                     </div>
                 </div>
@@ -9273,28 +9941,42 @@
                     <p class="course-stats-note" style="margin:0.4rem 0 0;">Wait for this to finish before searching a DK username on large fields.</p>
                 </div>` : '';
             const healthBanner = `
-                <div class="cs-panel" style="${dupN || errN ? 'border-color:#f59e0b;' : ''}">
-                    <h4>Contest status</h4>
-                    <div style="overflow-x:auto;">
-                        <table class="cs-mini-table">
-                            <thead><tr><th>Contest</th><th>Entries</th><th>Status</th></tr></thead>
-                            <tbody>
-                                ${healthRows.map(r => {
-                                    const label = r.flag === 'ok' ? '<span class="cs-in">Ready</span>'
-                                        : r.flag === 'dup' ? '<span class="cs-out">Same field as Milly Maker</span>'
-                                        : r.flag === 'error' ? '<span class="cs-out">Unavailable</span>'
-                                        : '<span class="cs-unk">Loading…</span>';
-                                    return `<tr><td>${r.label}</td><td>${r.n ? r.n.toLocaleString() : '—'}</td><td>${label}</td></tr>`;
-                                }).join('')}
-                            </tbody>
-                        </table>
+                <details class="cs-overview-details cs-contest-status" style="${dupN || errN ? 'border-color:#f59e0b;' : ''}">
+                    <summary class="cs-overview-summary">Contest status${dupN || errN ? ' · needs attention' : ''}</summary>
+                    <div class="cs-overview-details-body">
+                        <div style="overflow-x:auto;">
+                            <table class="cs-mini-table">
+                                <thead><tr><th>Contest</th><th>Entries</th><th>Status</th></tr></thead>
+                                <tbody>
+                                    ${healthRows.map(r => {
+                                        const label = r.flag === 'ok' ? '<span class="cs-in">Ready</span>'
+                                            : r.flag === 'dup' ? '<span class="cs-out">Same field as Milly Maker</span>'
+                                            : r.flag === 'error' ? '<span class="cs-out">Unavailable</span>'
+                                            : '<span class="cs-unk">Loading…</span>';
+                                        return `<tr><td>${r.label}</td><td>${r.n ? r.n.toLocaleString() : '—'}</td><td>${label}</td></tr>`;
+                                    }).join('')}
+                                </tbody>
+                            </table>
+                        </div>
+                        ${dupN ? `<p class="course-stats-note" style="margin:0.45rem 0 0;">
+                            <strong>${dupN}</strong> contest${dupN === 1 ? '' : 's'} currently show the same field as Milly Maker, so contest-to-contest compares may not be meaningful until those fields are updated.
+                        </p>` : ''}
+                        ${errN ? `<p class="course-stats-note" style="margin:0.35rem 0 0;">
+                            <strong>${errN}</strong> contest${errN === 1 ? '' : 's'} could not be loaded right now.
+                        </p>` : ''}
                     </div>
-                    ${dupN ? `<p class="course-stats-note" style="margin:0.45rem 0 0;">
-                        <strong>${dupN}</strong> contest${dupN === 1 ? '' : 's'} currently show the same field as Milly Maker, so contest-to-contest compares may not be meaningful until those fields are updated.
-                    </p>` : ''}
-                    ${errN ? `<p class="course-stats-note" style="margin:0.35rem 0 0;">
-                        <strong>${errN}</strong> contest${errN === 1 ? '' : 's'} could not be loaded right now.
-                    </p>` : ''}
+                </details>`;
+
+            const chartPanelHtml = `
+                <div class="cs-panel cs-star-panel cs-chart-star" id="cs-panel-buckets">
+                    <div class="cs-panel-head">
+                        <div class="cs-star-title"><span class="cs-star-badge">★ Spotlight</span><h4>Contest sweat — lineup buckets</h4></div>
+                        ${csCopyImgBtn('cs-panel-buckets')}
+                    </div>
+                    <p class="course-stats-note" style="margin:0 0 0.35rem;">6/6 through 0/6 distribution across loaded contests${cutLine != null ? ` · cutline ${cutLine}` : ''}</p>
+                    <div class="cs-chart-wrap cs-chart-wrap-xl cs-overview-chart-panel">
+                        <canvas id="cutSweatsOverviewChart" width="560" height="300"></canvas>
+                    </div>
                 </div>`;
 
             const html = `<div class="course-stats-wrap">
@@ -9311,19 +9993,22 @@
                 ${loadBanner}
                 ${healthBanner}
                 <div class="cs-overview-grid">${cards}</div>
-                ${narrativeHtml}
-                ${userPortfolioHtml}
-                ${lateHtml}
-                ${shapeHtml}
-                ${chokeHtml}
-                ${scenarioHtml}
                 ${nearCutHtml}
-                ${tierHtml}
-                ${corrHtml}
-                ${dupHtml}
-                <div class="cs-chart-wrap cs-chart-wrap-lg cs-overview-chart-panel">
-                    <canvas id="cutSweatsOverviewChart" width="480" height="240"></canvas>
-                </div>
+                ${chartPanelHtml}
+                ${scenarioHtml}
+                <details class="cs-overview-details" id="cutSweatsOverviewDetails" open>
+                    <summary class="cs-overview-summary">More analytics (narrative, choke points, tiers…)</summary>
+                    <div class="cs-overview-details-body">
+                        ${narrativeHtml}
+                        ${userPortfolioHtml}
+                        ${lateHtml}
+                        ${shapeHtml}
+                        ${chokeHtml}
+                        ${tierHtml}
+                        ${corrHtml}
+                        ${dupHtml}
+                    </div>
+                </details>
             </div>`;
 
             const tableEl = document.getElementById('leaderboard');
