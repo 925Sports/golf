@@ -2724,11 +2724,11 @@
             <div id="favoritesOnlyFilter" title="Show only players you’ve starred with the star icon">
                 <label><input type="checkbox" id="showFavoritesOnly" onchange="updateTable()"> Show Only Starred Players</label>
             </div>
-            <div id="threeBallFavEdgeFilter" style="display: none;" title="Only group favorites (lowest American odds) that also have a positive Edge %">
+            <div id="threeBallFavEdgeFilter" style="display: none;" title="Only groups where the market favorite (lowest American odds) also has positive Edge %. Full group still shown.">
                 <label><input type="checkbox" id="showGroupFavPositiveEdge" onchange="updateTable()"> Group FAV + Positive Edge</label>
             </div>
-            <div id="threeBallImpFilter" style="display: none;" title="Only players with 40%+ implied win probability in their 3-ball">
-                <label><input type="checkbox" id="showImpWin40" onchange="updateTable()" title="Based on Odds column (implied win from Matchup/American Odds)"> Imp Win ≥ 40%</label>
+            <div id="threeBallImpFilter" style="display: none;" title="Only players with ≥40% in the Odds column (group win probability)">
+                <label><input type="checkbox" id="showImpWin40" onchange="updateTable()" title="Only players with ≥40% in the Odds column (group win probability)"> Imp Win ≥ 40%</label>
             </div>
             <div id="threeBallLegend" style="display: none; font-size: 0.62rem; opacity: 0.65; margin-left: 0.4rem; white-space: nowrap;">
                 <span style="color:#f59e0b; font-weight:600;">FAV</span> = Group Favorite (best odds in 3-ball) &nbsp; 
@@ -3690,8 +3690,8 @@
                     <h4>Filters</h4>
                     <ul>
                         <li><strong>Group</strong> — jump to one tee group.</li>
-                        <li><strong>Group FAV + Positive Edge</strong> — only groups where the favorite also has model edge.</li>
-                        <li><strong>Imp Win ≥ 40%</strong> — focus on players the market prices as strong favorites.</li>
+                        <li><strong>Group FAV + Positive Edge</strong> — only groups where the market favorite (best American odds) also has positive model edge. Still shows the full group.</li>
+                        <li><strong>Imp Win ≥ 40%</strong> — players with ≥40% in the Odds column (group win probability).</li>
                         <li><strong>FAV</strong> badges mark the group favorite; <strong>VALUE</strong> marks positive edge.</li>
                     </ul>
                     <div class="how-tip"><strong>Tip:</strong> Use Table layout sorted by Edge % when you want the single best number on the board; use Grouped when you’re working tee-time by tee-time.</div>
@@ -6221,17 +6221,19 @@
                             if (aOk && bOk) return aa - bb;
                             if (aOk) return -1;
                             if (bOk) return 1;
-                            // fallback: highest model Implied Win %
-                            const ai = parseFloat(String(a['Implied Win %']).replace('%', ''));
-                            const bi = parseFloat(String(b['Implied Win %']).replace('%', ''));
-                            if (!isNaN(ai) && !isNaN(bi)) return bi - ai;
+                            // fallback: highest Odds column (group win %)
+                            const ao = parseFloat(String(a['Matchup Odds'] ?? a['Odds'] ?? '').replace('%', ''));
+                            const bo = parseFloat(String(b['Matchup Odds'] ?? b['Odds'] ?? '').replace('%', ''));
+                            if (!isNaN(ao) && !isNaN(bo)) return bo - ao;
                             return 0;
                         });
                         const favRow = sortedGroup[0] || null;
                         if (!favRow) return;
 
-                        // Imp ≥ 40% from Odds column (Matchup Odds / American Odds), not the stored Imp Win field
-                        const oddsImplied = (r) => {
+                        // Odds column = Matchup Odds (already a group win % like 33.15). Prefer that over oddsToImpliedPct.
+                        const oddsPct = (r) => {
+                            const direct = parseFloat(String(r['Matchup Odds'] ?? r['Odds'] ?? '').replace('%', ''));
+                            if (!isNaN(direct) && direct > 1 && direct <= 100) return direct;
                             const fromOdds = oddsToImpliedPct(r['Matchup Odds'] || r['Odds'] || r['American Odds']);
                             if (fromOdds != null && !isNaN(fromOdds)) return fromOdds;
                             const fallback = parseFloat(String(r['Implied Win %'] || '').replace('%', ''));
@@ -6243,14 +6245,14 @@
                             const e = parseFloat(String(favRow['Edge %']).replace('%', ''));
                             if (isNaN(e) || e <= 0) return; // FAV has no edge → drop group
                             if (filterImp40) {
-                                const imp = oddsImplied(favRow);
+                                const imp = oddsPct(favRow);
                                 if (imp == null || imp < 40) return;
                             }
                             qualifyingPlayers.add(favRow.PLAYER);
                         } else if (filterImp40) {
-                            // Odds-implied win only: keep any player in the group with Odds → ≥ 40%
+                            // Odds column ≥ 40%: keep any player in the group meeting the threshold
                             sortedGroup.forEach(r => {
-                                const imp = oddsImplied(r);
+                                const imp = oddsPct(r);
                                 if (imp != null && imp >= 40) qualifyingPlayers.add(r.PLAYER);
                             });
                         }
@@ -6799,7 +6801,7 @@
                                 const favBadge = document.createElement('span');
                                 favBadge.className = 'group-fav-badge';
                                 favBadge.textContent = 'FAV';
-                                favBadge.title = 'Group favorite (top player in this group\'s current sort order)';
+                                favBadge.title = 'Group favorite (best / lowest American odds in the 3-ball)';
                                 inner.appendChild(favBadge);
                             }
                             if (valuePlayers.has(row.PLAYER)) {
@@ -7121,9 +7123,23 @@
 
                 visibleGroups.forEach(g => {
                     let rows = sortWithinGroup(groupsMap.get(g));
-                    // Group favorite = the first (top) player currently displayed in the group
-                    // With default odds sort this is the market favorite (lowest American odds)
-                    const bestPlayer = rows.length > 0 ? rows[0].PLAYER : null;
+                    // True group favorite = lowest American odds (market favorite), independent of display sort
+                    // American Odds Num: -117 < +150 < +300, so ascending = favorite first
+                    const byOdds = [...rows].sort((a, b) => {
+                        const aa = a['American Odds Num'];
+                        const bb = b['American Odds Num'];
+                        const aOk = aa != null && aa !== 999999;
+                        const bOk = bb != null && bb !== 999999;
+                        if (aOk && bOk) return aa - bb;
+                        if (aOk) return -1;
+                        if (bOk) return 1;
+                        // fallback: highest Odds column (group win %)
+                        const ao = parseFloat(String(a['Matchup Odds'] ?? a['Odds'] ?? '').replace('%', ''));
+                        const bo = parseFloat(String(b['Matchup Odds'] ?? b['Odds'] ?? '').replace('%', ''));
+                        if (!isNaN(ao) && !isNaN(bo)) return bo - ao;
+                        return 0;
+                    });
+                    const bestPlayer = byOdds.length > 0 ? byOdds[0].PLAYER : null;
                     const groupFavPlayers = new Set(bestPlayer ? [bestPlayer] : []);
                     // Value flag: positive 925 edge vs Vegas
                     const valuePlayers = new Set();
@@ -7142,11 +7158,11 @@
 
                     // 3-ball specific filters
                     if (filterFavEdge) {
-                        // Only include groups where the Group FAV has positive Edge %
-                        // but still show ALL players in qualifying groups
+                        // Only include groups where the true Group FAV (best American odds) has positive Edge %
+                        // still show ALL players in qualifying groups
                         let favHasPositiveEdge = false;
                         if (bestPlayer) {
-                            const favRow = rows.find(r => r.PLAYER === bestPlayer);
+                            const favRow = rows.find(r => r.PLAYER === bestPlayer) || byOdds[0];
                             if (favRow) {
                                 const e = parseFloat(favRow['Edge %']);
                                 if (!isNaN(e) && e > 0) favHasPositiveEdge = true;
@@ -7155,9 +7171,13 @@
                         if (!favHasPositiveEdge) return; // skip group entirely
                     }
                     if (filterImp40) {
+                        // Odds column = Matchup Odds (group win probability %). Filter on that, not broken Implied Win %.
                         rows = rows.filter(r => {
-                            const imp = parseFloat(r['Implied Win %']);
-                            return !isNaN(imp) && imp >= 40;
+                            const oddsPct = parseFloat(String(r['Matchup Odds'] ?? r['Odds'] ?? '').replace('%', ''));
+                            if (!isNaN(oddsPct) && oddsPct >= 40) return true;
+                            // fallback if Odds is stored as American/decimal
+                            const fromOdds = oddsToImpliedPct(r['Matchup Odds'] || r['Odds'] || r['American Odds']);
+                            return fromOdds != null && fromOdds >= 40;
                         });
                     }
                     if (!rows.length) return; // hide empty groups after filter
