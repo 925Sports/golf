@@ -1,5 +1,5 @@
 HOLE-BY-HOLE DETAIL,,,,,,,,,
-"Event: Rocket Classic (401811960) | Players: 147 | Updated: 8/1/2026, 6:14:21 AM",,,,,,,,,
+"Event: Rocket Classic (401811960) | Players: 147 | Updated: 8/1/2026, 7:29:30 AM",,,,,,,,,
 ,,,,,,,,,
 Player,Player ID,Round,Hole,Par,Strokes,Score Type,To Par,Round Score,Round To Par
 Cameron Young,4425906,1,1,4,4,Par,E,69,-1
@@ -2270,6 +2270,8 @@ Chandler Blanchet,4618114,2,15,3,3,Par,E,65,-5
 Chandler Blanchet,4618114,2,16,4,4,Par,E,65,-5
 Chandler Blanchet,4618114,2,17,4,4,Par,E,65,-5
 Chandler Blanchet,4618114,2,18,4,3,Birdie,-1,65,-5
+Chandler Blanchet,4618114,3,1,4,3,Birdie,-1,7,-1
+Chandler Blanchet,4618114,3,2,4,4,Par,E,7,-1
 William Mouw,5076025,1,1,4,3,Birdie,-1,71,+1
 William Mouw,5076025,1,2,4,4,Par,E,71,+1
 William Mouw,5076025,1,3,4,4,Par,E,71,+1
@@ -2306,6 +2308,9 @@ William Mouw,5076025,2,6,4,3,Birdie,-1,66,-4
 William Mouw,5076025,2,7,4,5,Bogey,+1,66,-4
 William Mouw,5076025,2,8,4,4,Par,E,66,-4
 William Mouw,5076025,2,9,3,3,Par,E,66,-4
+William Mouw,5076025,3,1,4,4,Par,E,12,E
+William Mouw,5076025,3,2,4,4,Par,E,12,E
+William Mouw,5076025,3,3,4,4,Par,E,12,E
 Mac Meissner,4791222,1,1,4,4,Par,E,69,-1
 Mac Meissner,4791222,1,2,4,4,Par,E,69,-1
 Mac Meissner,4791222,1,3,4,4,Par,E,69,-1
@@ -2378,6 +2383,7 @@ Rasmus Højgaard,11253,2,15,3,3,Par,E,68,-2
 Rasmus Højgaard,11253,2,16,4,4,Par,E,68,-2
 Rasmus Højgaard,11253,2,17,4,5,Bogey,+1,68,-2
 Rasmus Højgaard,11253,2,18,4,4,Par,E,68,-2
+Rasmus Højgaard,11253,3,1,4,3,Birdie,-1,3,-1
 Marcelo Rozo,7120,1,1,4,4,Par,E,69,-1
 Marcelo Rozo,7120,1,2,4,4,Par,E,69,-1
 Marcelo Rozo,7120,1,3,4,5,Bogey,+1,69,-1
@@ -2414,6 +2420,9 @@ Marcelo Rozo,7120,2,6,4,4,Par,E,68,-2
 Marcelo Rozo,7120,2,7,4,4,Par,E,68,-2
 Marcelo Rozo,7120,2,8,4,5,Bogey,+1,68,-2
 Marcelo Rozo,7120,2,9,3,3,Par,E,68,-2
+Marcelo Rozo,7120,3,1,4,4,Par,E,14,+2
+Marcelo Rozo,7120,3,2,4,5,Bogey,+1,14,+2
+Marcelo Rozo,7120,3,3,4,5,Bogey,+1,14,+2
 Adam Svensson,9127,1,1,4,3,Birdie,-1,69,-1
 Adam Svensson,9127,1,2,4,3,Birdie,-1,69,-1
 Adam Svensson,9127,1,3,4,5,Bogey,+1,69,-1
@@ -2450,6 +2459,9 @@ Adam Svensson,9127,2,6,4,4,Par,E,68,-2
 Adam Svensson,9127,2,7,4,4,Par,E,68,-2
 Adam Svensson,9127,2,8,4,4,Par,E,68,-2
 Adam Svensson,9127,2,9,3,2,Birdie,-1,68,-2
+Adam Svensson,9127,3,1,4,4,Par,E,13,+1
+Adam Svensson,9127,3,2,4,5,Bogey,+1,13,+1
+Adam Svensson,9127,3,3,4,4,Par,E,13,+1
 Christiaan Bezuidenhout,9243,1,1,4,4,Par,E,68,-2
 Christiaan Bezuidenhout,9243,1,2,4,4,Par,E,68,-2
 Christiaan Bezuidenhout,9243,1,3,4,3,Birdie,-1,68,-2
@@ -2486,6 +2498,9 @@ Christiaan Bezuidenhout,9243,2,6,4,3,Birdie,-1,69,-1
 Christiaan Bezuidenhout,9243,2,7,4,5,Bogey,+1,69,-1
 Christiaan Bezuidenhout,9243,2,8,4,3,Birdie,-1,69,-1
 Christiaan Bezuidenhout,9243,2,9,3,3,Par,E,69,-1
+Christiaan Bezuidenhout,9243,3,1,4,4,Par,E,13,+1
+Christiaan Bezuidenhout,9243,3,2,4,4,Par,E,13,+1
+Christiaan Bezuidenhout,9243,3,3,4,5,Bogey,+1,13,+1
 Dylan Wu,4423323,1,1,4,4,Par,E,67,-3
 Dylan Wu,4423323,1,2,4,4,Par,E,67,-3
 Dylan Wu,4423323,1,3,4,4,Par,E,67,-3
@@ -2522,6 +2537,7 @@ Dylan Wu,4423323,2,6,4,4,Par,E,70,E
 Dylan Wu,4423323,2,7,4,5,Bogey,+1,70,E
 Dylan Wu,4423323,2,8,4,4,Par,E,70,E
 Dylan Wu,4423323,2,9,3,3,Par,E,70,E
+Dylan Wu,4423323,3,1,4,4,Par,E,4,E
 Neal Shipley,5209442,1,1,4,3,Birdie,-1,67,-3
 Neal Shipley,5209442,1,2,4,4,Par,E,67,-3
 Neal Shipley,5209442,1,3,4,4,Par,E,67,-3
@@ -2558,6 +2574,11 @@ Neal Shipley,5209442,2,6,4,4,Par,E,70,E
 Neal Shipley,5209442,2,7,4,5,Bogey,+1,70,E
 Neal Shipley,5209442,2,8,4,4,Par,E,70,E
 Neal Shipley,5209442,2,9,3,3,Par,E,70,E
+Neal Shipley,5209442,3,1,4,4,Par,E,19,-1
+Neal Shipley,5209442,3,2,4,4,Par,E,19,-1
+Neal Shipley,5209442,3,3,4,3,Birdie,-1,19,-1
+Neal Shipley,5209442,3,4,5,5,Par,E,19,-1
+Neal Shipley,5209442,3,5,3,3,Par,E,19,-1
 Jordan Smith,9506,1,1,4,3,Birdie,-1,66,-4
 Jordan Smith,9506,1,2,4,3,Birdie,-1,66,-4
 Jordan Smith,9506,1,3,4,4,Par,E,66,-4
@@ -2630,6 +2651,8 @@ Jackson Suber,4982182,2,15,3,3,Par,E,71,+1
 Jackson Suber,4982182,2,16,4,4,Par,E,71,+1
 Jackson Suber,4982182,2,17,4,5,Bogey,+1,71,+1
 Jackson Suber,4982182,2,18,4,4,Par,E,71,+1
+Jackson Suber,4982182,3,1,4,4,Par,E,8,E
+Jackson Suber,4982182,3,2,4,4,Par,E,8,E
 Ben Silverman,8910,1,1,4,5,Bogey,+1,71,+1
 Ben Silverman,8910,1,2,4,4,Par,E,71,+1
 Ben Silverman,8910,1,3,4,4,Par,E,71,+1
