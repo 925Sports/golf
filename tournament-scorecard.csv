@@ -1,27 +1,23 @@
 TOURNAMENT SCORECARD SUMMARY,,,,,,,,,,,
-"Event: Rocket Classic (401811960) | Players: 147 | Updated: 8/2/2026, 6:59:15 PM",,,,,,,,,,,
+"Event: Rocket Classic (401811960) | Players: 147 | Updated: 8/2/2026, 10:59:37 PM",,,,,,,,,,,
 ,,,,,,,,,,,
 Player,Round,Score,To Par,Birdies,Eagles,Bogeys,Doubles+,Front 9,Back 9,Pars,Thru
 Michael Thorbjornsen,1,69,-1,4,0,3,0,35,34,11,F
 Michael Thorbjornsen,2,64,-6,7,0,1,0,31,33,10,F
 Michael Thorbjornsen,3,66,-4,5,0,1,0,33,33,12,F
 Michael Thorbjornsen,4,63,-7,7,0,0,0,33,30,11,F
-Davis Riley,1,68,-2,5,0,3,0,33,35,10,F
-Davis Riley,2,64,-6,6,0,0,0,32,32,12,F
-Davis Riley,3,63,-7,7,0,0,0,32,31,11,F
-Davis Riley,4,70,E,4,0,4,0,36,34,10,F
 Xander Schauffele,1,66,-4,5,0,1,0,32,34,12,F
 Xander Schauffele,2,66,-4,5,0,1,0,33,33,12,F
 Xander Schauffele,3,67,-3,4,0,1,0,33,34,13,F
 Xander Schauffele,4,65,-5,6,0,1,0,31,34,11,F
+Davis Riley,1,68,-2,5,0,3,0,33,35,10,F
+Davis Riley,2,64,-6,6,0,0,0,32,32,12,F
+Davis Riley,3,63,-7,7,0,0,0,32,31,11,F
+Davis Riley,4,70,E,4,0,4,0,36,34,10,F
 Rasmus Højgaard,1,69,-1,4,0,3,0,34,35,11,F
 Rasmus Højgaard,2,68,-2,3,0,1,0,32,36,14,F
 Rasmus Højgaard,3,61,-9,9,0,0,0,31,30,9,F
 Rasmus Højgaard,4,68,-2,3,1,3,0,32,36,11,F
-Michael Brennan,1,65,-5,8,0,3,0,32,33,7,F
-Michael Brennan,2,67,-3,4,1,1,1,35,32,11,F
-Michael Brennan,3,64,-6,7,0,1,0,30,34,10,F
-Michael Brennan,4,73,+3,3,0,2,2,34,39,11,F
 Hideki Matsuyama,1,67,-3,4,0,1,0,34,33,13,F
 Hideki Matsuyama,2,68,-2,4,0,2,0,34,34,12,F
 Hideki Matsuyama,3,68,-2,4,0,2,0,33,35,12,F
@@ -34,10 +30,6 @@ Kristoffer Ventura,1,68,-2,4,0,2,0,34,34,12,F
 Kristoffer Ventura,2,66,-4,7,0,3,0,34,32,8,F
 Kristoffer Ventura,3,65,-5,4,2,1,1,32,33,10,F
 Kristoffer Ventura,4,68,-2,3,0,1,0,32,36,14,F
-Cameron Young,1,69,-1,2,0,1,0,34,35,15,F
-Cameron Young,2,61,-9,9,0,0,0,28,33,9,F
-Cameron Young,3,68,-2,3,0,1,0,34,34,14,F
-Cameron Young,4,70,E,2,0,2,0,34,36,14,F
 Davis Thompson,1,67,-3,6,0,3,0,35,32,9,F
 Davis Thompson,2,68,-2,3,1,1,1,33,35,12,F
 Davis Thompson,3,67,-3,5,0,2,0,34,33,11,F
@@ -58,6 +50,14 @@ Chris Kirk,1,65,-5,7,0,2,0,30,35,9,F
 Chris Kirk,2,67,-3,4,0,1,0,33,34,13,F
 Chris Kirk,3,66,-4,5,0,1,0,32,34,12,F
 Chris Kirk,4,70,E,3,0,1,1,33,37,13,F
+Rickie Fowler,1,63,-7,6,1,1,0,32,31,10,F
+Rickie Fowler,2,68,-2,5,0,3,0,32,36,10,F
+Rickie Fowler,3,67,-3,4,0,1,0,35,32,13,F
+Rickie Fowler,4,70,E,2,0,2,0,35,35,14,F
+Cameron Young,1,69,-1,2,0,1,0,34,35,15,F
+Cameron Young,2,61,-9,9,0,0,0,28,33,9,F
+Cameron Young,3,68,-2,3,0,1,0,34,34,14,F
+Cameron Young,4,70,E,2,0,2,0,34,36,14,F
 Sungjae Im,1,67,-3,5,0,2,0,34,33,11,F
 Sungjae Im,2,69,-1,3,0,2,0,34,35,13,F
 Sungjae Im,3,66,-4,4,0,0,0,34,32,14,F
@@ -74,10 +74,10 @@ Rico Hoey,1,66,-4,4,1,2,0,33,33,11,F
 Rico Hoey,2,69,-1,6,0,3,1,38,31,8,F
 Rico Hoey,3,66,-4,8,0,4,0,32,34,6,F
 Rico Hoey,4,68,-2,5,0,3,0,35,33,10,F
-Rickie Fowler,1,63,-7,6,1,1,0,32,31,10,F
-Rickie Fowler,2,68,-2,5,0,3,0,32,36,10,F
-Rickie Fowler,3,67,-3,4,0,1,0,35,32,13,F
-Rickie Fowler,4,70,E,2,0,2,0,35,35,14,F
+Michael Brennan,1,65,-5,8,0,3,0,32,33,7,F
+Michael Brennan,2,67,-3,4,1,1,1,35,32,11,F
+Michael Brennan,3,64,-6,7,0,1,0,30,34,10,F
+Michael Brennan,4,73,+3,3,0,2,2,34,39,11,F
 Chandler Blanchet,1,72,+2,2,0,4,0,36,36,12,F
 Chandler Blanchet,2,65,-5,7,0,2,0,31,34,9,F
 Chandler Blanchet,3,66,-4,6,0,2,0,33,33,10,F
@@ -270,14 +270,14 @@ Zecheng Dou,1,69,-1,3,0,2,0,35,34,13,F
 Zecheng Dou,2,67,-3,6,0,3,0,32,35,9,F
 Zecheng Dou,3,66,-4,6,0,2,0,34,32,10,F
 Zecheng Dou,4,77,+7,2,0,7,1,37,40,8,F
-Peter Malnati,1,61,-9,9,0,0,0,28,33,9,F
-Peter Malnati,2,71,+1,2,0,3,0,38,33,13,F
-Peter Malnati,3,74,+4,1,0,5,0,36,38,12,F
-Peter Malnati,4,74,+4,1,0,3,1,40,34,13,F
 William Mouw,1,71,+1,3,0,4,0,35,36,11,F
 William Mouw,2,66,-4,7,0,3,0,34,32,8,F
 William Mouw,3,75,+5,4,0,5,2,38,37,7,F
 William Mouw,4,68,-2,2,0,0,0,33,35,16,F
+Peter Malnati,1,61,-9,9,0,0,0,28,33,9,F
+Peter Malnati,2,71,+1,2,0,3,0,38,33,13,F
+Peter Malnati,3,74,+4,1,0,5,0,36,38,12,F
+Peter Malnati,4,74,+4,1,0,3,1,40,34,13,F
 Adam Svensson,1,69,-1,5,0,4,0,33,36,9,F
 Adam Svensson,2,68,-2,3,0,1,0,35,33,14,F
 Adam Svensson,3,74,+4,2,0,4,1,39,35,11,F
