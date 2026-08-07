@@ -1,10 +1,13 @@
 Player Name,Slate-Tournament,Headshot,Player ID,Draftable ID,Tournament,Game Start Time,Salary,Fantasy Points,Ownership,Made Cut,MC,Win,Top 5,Top 10,Top 20,Teetime,Course
 Jon Rahm,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/1173.png,680,43755372,LIV Golf New York,8/6/2026,11500,27.5,0,0.5,0.5,,,,,,
+Jon Rahm,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/1173.png,680,43755372,LIV Golf New York,8/6/2026,11500,27.5,0,0.5,0.5,,,,,,
+Bryson DeChambeau,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/656.png,467,43755373,LIV Golf New York,8/6/2026,11000,26.5,0,0.5,0.5,,,,,,
 Bryson DeChambeau,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/656.png,467,43755373,LIV Golf New York,8/6/2026,11000,26.5,0,0.5,0.5,,,,,,
 Cameron Young,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/849.png,696569,43783729,Wyndham Championship,8/8/2026,10800,114.33,26.06,0,0,8415.9 (0.01),1761.1 (0.05),777.8 (0.11),396.0 (0.20),1:41:36 PM,SF
 Cameron Young,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/849.png,696569,43783145,Wyndham Championship,8/8/2026,10700,40.27,26.06,0,0,8415.9 (0.01),1761.1 (0.05),777.8 (0.11),396.0 (0.20),1:41:36 PM,SF
 Hideki Matsuyama,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/1130.png,1931,43783730,Wyndham Championship,8/8/2026,10500,102.43,19.83,0,0,1238.2 (0.07),265.0 (0.27),121.9 (0.45),-217.4 (0.68),8:10:36 AM,SF
 Hideki Matsuyama,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/1130.png,1931,43783146,Wyndham Championship,8/8/2026,10500,43.13,19.83,0,0,1238.2 (0.07),265.0 (0.27),121.9 (0.45),-217.4 (0.68),8:10:36 AM,SF
+Tyrrell Hatton,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/1015.png,1356,43755374,LIV Golf New York,8/6/2026,10500,25.5,0,0.5,0.5,,,,,,
 Tyrrell Hatton,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/1015.png,1356,43755374,LIV Golf New York,8/6/2026,10500,25.5,0,0.5,0.5,,,,,,
 Jackson Koivun,Classic: Wyndham Championship,https://dkn.gs/sports/images/countries/50/united_states.png,796535,43783731,Wyndham Championship,8/8/2026,10400,101.1,23.14,0,0,2721.1 (0.04),522.0 (0.16),240.0 (0.29),73.3 (0.58),8:10:36 AM,SF
 Jackson Koivun,Showdown: Wyndham Championship,https://dkn.gs/sports/images/countries/50/united_states.png,796535,43783147,Wyndham Championship,8/8/2026,10400,42.6,23.14,0,0,2721.1 (0.04),522.0 (0.16),240.0 (0.29),73.3 (0.58),8:10:36 AM,SF
@@ -13,66 +16,86 @@ Tom Kim,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players
 Ryan Gerard,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/645035.png,765444,43783733,Wyndham Championship,8/8/2026,10000,95.71,19.07,0,0,3582.9 (0.03),640.0 (0.14),297.5 (0.25),128.8 (0.44),8:21:36 AM,SF
 Ryan Gerard,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/645035.png,765444,43783149,Wyndham Championship,8/8/2026,10000,41.73,19.07,0,0,3582.9 (0.03),640.0 (0.14),297.5 (0.25),128.8 (0.44),8:21:36 AM,SF
 Joaquin Niemann,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/563.png,509671,43755375,LIV Golf New York,8/6/2026,10000,24.5,0,0.5,0.5,,,,,,
+Joaquin Niemann,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/563.png,509671,43755375,LIV Golf New York,8/6/2026,10000,24.5,0,0.5,0.5,,,,,,
 Justin Thomas,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/1012.png,1701,43783734,Wyndham Championship,8/8/2026,9700,96.31,16.99,0,0,2549.9 (0.04),479.5 (0.17),228.1 (0.30),-67.0 (0.40),1:41:36 PM,SF
 Justin Thomas,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/1012.png,1701,43783150,Wyndham Championship,8/8/2026,9700,39.67,16.99,0,0,2549.9 (0.04),479.5 (0.17),228.1 (0.30),-67.0 (0.40),1:41:36 PM,SF
+Lucas Herbert,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/863.png,113,43755376,LIV Golf New York,8/6/2026,9700,23.9,0,0.5,0.5,,,,,,
 Lucas Herbert,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/863.png,113,43755376,LIV Golf New York,8/6/2026,9700,23.9,0,0.5,0.5,,,,,,
 Davis Thompson,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/456332.png,700001,43783735,Wyndham Championship,8/8/2026,9600,91.57,14.34,0,0,1482.9 (0.06),295.0 (0.25),142.0 (0.41),-192.0 (0.66),1:30:36 PM,SF
 Alex Fitzpatrick,Showdown: Wyndham Championship,https://dkn.gs/sports/images/countries/50/england.png,690047,43783151,Wyndham Championship,8/8/2026,9600,37.4,14.94,0,0,3523.3 (0.03),625.6 (0.14),292.8 (0.25),87.5 (0.53),1:41:36 PM,SF
 David Puig,Classic: LIV,https://dkn.gs/sports/images/countries/50/spain.png,756216,43755377,LIV Golf New York,8/6/2026,9600,23.7,0,0.5,0.5,,,,,,
+David Puig,Classic: LIV,https://dkn.gs/sports/images/countries/50/spain.png,756216,43755377,LIV Golf New York,8/6/2026,9600,23.7,0,0.5,0.5,,,,,,
 Alex Fitzpatrick,Classic: Wyndham Championship,https://dkn.gs/sports/images/countries/50/england.png,690047,43783736,Wyndham Championship,8/8/2026,9500,91.88,14.94,0,0,3523.3 (0.03),625.6 (0.14),292.8 (0.25),87.5 (0.53),1:41:36 PM,SF
 Davis Thompson,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/456332.png,700001,43783152,Wyndham Championship,8/8/2026,9500,36.8,14.34,0,0,1482.9 (0.06),295.0 (0.25),142.0 (0.41),-192.0 (0.66),1:30:36 PM,SF
 Cameron Smith,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/532.png,1194,43755378,LIV Golf New York,8/6/2026,9500,23.5,0,0.5,0.5,,,,,,
+Cameron Smith,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/532.png,1194,43755378,LIV Golf New York,8/6/2026,9500,23.5,0,0.5,0.5,,,,,,
+Dean Burmester,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/770.png,851,43755379,LIV Golf New York,8/6/2026,9400,23.3,0,0.5,0.5,,,,,,
 Dean Burmester,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/770.png,851,43755379,LIV Golf New York,8/6/2026,9400,23.3,0,0.5,0.5,,,,,,
 Ben Griffin,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/1029.png,692605,43783737,Wyndham Championship,8/8/2026,9300,92.57,17.7,0,0,12037.4 (0.01),1743.8 (0.05),801.1 (0.11),328.0 (0.23),8:32:36 AM,SF
 Ben Griffin,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/1029.png,692605,43783153,Wyndham Championship,8/8/2026,9300,41.07,17.7,0,0,12037.4 (0.01),1743.8 (0.05),801.1 (0.11),328.0 (0.23),8:32:36 AM,SF
 Aaron Rai,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/861.png,353925,43783738,Wyndham Championship,8/8/2026,9200,92.41,20.04,0,0,14106.9 (0.01),2222.2 (0.04),921.9 (0.10),377.0 (0.21),2:03:36 PM,SF
 Aaron Rai,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/861.png,353925,43783154,Wyndham Championship,8/8/2026,9200,36.4,20.04,0,0,14106.9 (0.01),2222.2 (0.04),921.9 (0.10),377.0 (0.21),2:03:36 PM,SF
 Marc Leishman,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/555.png,142,43755380,LIV Golf New York,8/6/2026,9200,22.9,0,0.5,0.5,,,,,,
+Marc Leishman,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/555.png,142,43755380,LIV Golf New York,8/6/2026,9200,22.9,0,0.5,0.5,,,,,,
 Maverick McNealy,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/543.png,1914,43783739,Wyndham Championship,8/8/2026,9100,92.13,8.06,0,0,5923.5 (0.02),1047.2 (0.09),453.8 (0.18),197.2 (0.34),1:30:36 PM,SF
 Maverick McNealy,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/543.png,1914,43783155,Wyndham Championship,8/8/2026,9100,36.8,8.06,0,0,5923.5 (0.02),1047.2 (0.09),453.8 (0.18),197.2 (0.34),1:30:36 PM,SF
+Abraham Ancer,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/768.png,662,43755381,LIV Golf New York,8/6/2026,9100,22.7,0,0.5,0.5,,,,,,
 Abraham Ancer,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/768.png,662,43755381,LIV Golf New York,8/6/2026,9100,22.7,0,0.5,0.5,,,,,,
 Michael Brennan,Classic: Wyndham Championship,https://dkn.gs/sports/images/countries/50/united_states.png,762470,43783740,Wyndham Championship,8/8/2026,9000,85.03,4.81,0,0,4913.5 (0.02),805.6 (0.11),368.9 (0.21),150.6 (0.40),1:19:36 PM,SF
 Ben Kohles,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/451327.png,1907,43783156,Wyndham Championship,8/8/2026,9000,34.33,15.34,0,0,4338.8 (0.02),728.9 (0.12),332.9 (0.23),140.0 (0.42),2:25:36 PM,SF
 Carlos Ortiz,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/580.png,777,43755382,LIV Golf New York,8/6/2026,9000,22.5,0,0.5,0.5,,,,,,
+Carlos Ortiz,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/580.png,777,43755382,LIV Golf New York,8/6/2026,9000,22.5,0,0.5,0.5,,,,,,
 Ben Kohles,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/451327.png,1907,43783741,Wyndham Championship,8/8/2026,8900,87.31,15.34,0,0,4338.8 (0.02),728.9 (0.12),332.9 (0.23),140.0 (0.42),2:25:36 PM,SF
 Michael Brennan,Showdown: Wyndham Championship,https://dkn.gs/sports/images/countries/50/united_states.png,762470,43783157,Wyndham Championship,8/8/2026,8900,37.47,4.81,0,0,4913.5 (0.02),805.6 (0.11),368.9 (0.21),150.6 (0.40),1:19:36 PM,SF
+Dustin Johnson,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/720.png,1149,43755383,LIV Golf New York,8/6/2026,8900,22.3,0,0.5,0.5,,,,,,
 Dustin Johnson,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/720.png,1149,43755383,LIV Golf New York,8/6/2026,8900,22.3,0,0.5,0.5,,,,,,
 Blades Brown,Classic: Wyndham Championship,https://dkn.gs/sports/images/countries/50/united_states.png,795495,43783742,Wyndham Championship,8/8/2026,8800,86.58,0,0,0,98888.9 (0.00),18142.9 (0.01),6742.9 (0.01),2287.5 (0.04),9:16:36 AM,SF
 Blades Brown,Showdown: Wyndham Championship,https://dkn.gs/sports/images/countries/50/united_states.png,795495,43783158,Wyndham Championship,8/8/2026,8800,38.67,0,0,0,98888.9 (0.00),18142.9 (0.01),6742.9 (0.01),2287.5 (0.04),9:16:36 AM,SF
 Thomas Detry,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/842.png,121942,43755384,LIV Golf New York,8/6/2026,8800,22.1,0,0.5,0.5,,,,,,
+Thomas Detry,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/842.png,121942,43755384,LIV Golf New York,8/6/2026,8800,22.1,0,0.5,0.5,,,,,,
 Keegan Bradley,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/518.png,804,43783743,Wyndham Championship,8/8/2026,8700,87.22,8.81,0,0,33100.0 (0.00),5028.6 (0.02),2085.7 (0.05),802.0 (0.11),1:52:36 PM,SF
 Mac Meissner,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/557402.png,708878,43783159,Wyndham Championship,8/8/2026,8700,35.33,14.32,0,0,10875.7 (0.01),1618.8 (0.06),705.0 (0.12),303.3 (0.25),12:57:36 PM,SF
+Victor Perez,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/710.png,670428,43755385,LIV Golf New York,8/6/2026,8700,21.9,0,0.5,0.5,,,,,,
 Victor Perez,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/710.png,670428,43755385,LIV Golf New York,8/6/2026,8700,21.9,0,0.5,0.5,,,,,,
 Mac Meissner,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/557402.png,708878,43783744,Wyndham Championship,8/8/2026,8600,87.86,14.32,0,0,10875.7 (0.01),1618.8 (0.06),705.0 (0.12),303.3 (0.25),12:57:36 PM,SF
 Keegan Bradley,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/518.png,804,43783160,Wyndham Championship,8/8/2026,8600,37.4,8.81,0,0,33100.0 (0.00),5028.6 (0.02),2085.7 (0.05),802.0 (0.11),1:52:36 PM,SF
 Branden Grace,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/661.png,956,43755386,LIV Golf New York,8/6/2026,8600,21.7,0,0.5,0.5,,,,,,
+Branden Grace,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/661.png,956,43755386,LIV Golf New York,8/6/2026,8600,21.7,0,0.5,0.5,,,,,,
 Doug Ghim,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/546.png,670625,43783745,Wyndham Championship,8/8/2026,8500,87.22,9.21,0,0,1369.8 (0.07),282.8 (0.26),142.3 (0.41),-180.2 (0.64),7:26:36 AM,SF
 Doug Ghim,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/546.png,670625,43783161,Wyndham Championship,8/8/2026,8500,38.27,9.21,0,0,1369.8 (0.07),282.8 (0.26),142.3 (0.41),-180.2 (0.64),7:26:36 AM,SF
+Josele Ballester,Classic: LIV,https://dkn.gs/sports/images/countries/50/spain.png,773808,43755387,LIV Golf New York,8/6/2026,8500,21.5,0,0.5,0.5,,,,,,
 Josele Ballester,Classic: LIV,https://dkn.gs/sports/images/countries/50/spain.png,773808,43755387,LIV Golf New York,8/6/2026,8500,21.5,0,0.5,0.5,,,,,,
 Keith Mitchell,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/1076.png,427014,43783746,Wyndham Championship,8/8/2026,8400,86.39,4.16,0,0,3189.2 (0.03),576.0 (0.15),270.6 (0.27),111.8 (0.47),7:37:36 AM,SF
 Keith Mitchell,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/1076.png,427014,43783162,Wyndham Championship,8/8/2026,8400,38.8,4.16,0,0,3189.2 (0.03),576.0 (0.15),270.6 (0.27),111.8 (0.47),7:37:36 AM,SF
 Charles Howell III,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/1090.png,1645,43755388,LIV Golf New York,8/6/2026,8400,21.3,0,0.5,0.5,,,,,,
+Charles Howell III,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/1090.png,1645,43755388,LIV Golf New York,8/6/2026,8400,21.3,0,0.5,0.5,,,,,,
 Brian Harman,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/533.png,805,43783747,Wyndham Championship,8/8/2026,8300,84.82,10.52,0,0,6927.4 (0.01),1158.3 (0.08),533.9 (0.16),226.7 (0.31),8:10:36 AM,SF
 Sungjae Im,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/621.png,670620,43783163,Wyndham Championship,8/8/2026,8300,34.87,13.62,0,0,5907.5 (0.02),969.4 (0.09),440.0 (0.19),193.3 (0.34),1:30:36 PM,SF
+Talor Gooch,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/527.png,729,43755389,LIV Golf New York,8/6/2026,8300,21.1,0,0.5,0.5,,,,,,
 Talor Gooch,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/527.png,729,43755389,LIV Golf New York,8/6/2026,8300,21.1,0,0.5,0.5,,,,,,
 Brooks Koepka,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/1014.png,1417,43783748,Wyndham Championship,8/8/2026,8200,83.08,5.86,0,0,8976.1 (0.01),1466.7 (0.06),653.9 (0.13),258.3 (0.28),1:52:36 PM,SF
 Brian Harman,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/533.png,805,43783164,Wyndham Championship,8/8/2026,8200,38.2,10.52,0,0,6927.4 (0.01),1158.3 (0.08),533.9 (0.16),226.7 (0.31),8:10:36 AM,SF
 Tom McKibbin,Classic: LIV,https://dkn.gs/sports/images/countries/50/northern_ireland.png,671050,43755390,LIV Golf New York,8/6/2026,8200,20.9,0,0.5,0.5,,,,,,
+Tom McKibbin,Classic: LIV,https://dkn.gs/sports/images/countries/50/northern_ireland.png,671050,43755390,LIV Golf New York,8/6/2026,8200,20.9,0,0.5,0.5,,,,,,
 Sungjae Im,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/621.png,670620,43783749,Wyndham Championship,8/8/2026,8100,83.66,13.62,0,0,5907.5 (0.02),969.4 (0.09),440.0 (0.19),193.3 (0.34),1:30:36 PM,SF
 Brooks Koepka,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/1014.png,1417,43783165,Wyndham Championship,8/8/2026,8100,37,5.86,0,0,8976.1 (0.01),1466.7 (0.06),653.9 (0.13),258.3 (0.28),1:52:36 PM,SF
 Byeong Hun An,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/639.png,1062,43755391,LIV Golf New York,8/6/2026,8100,20.7,0,0.5,0.5,,,,,,
+Byeong Hun An,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/639.png,1062,43755391,LIV Golf New York,8/6/2026,8100,20.7,0,0.5,0.5,,,,,,
 Jordan L. Smith,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/820.png,73498,43783750,Wyndham Championship,8/8/2026,8000,83.07,8.9,0,0,2466.9 (0.04),481.1 (0.17),231.7 (0.30),-8.7 (0.08),12:46:36 PM,SF
 Harris English,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/598.png,1600,43783166,Wyndham Championship,8/8/2026,8000,37.93,8.71,0,0,264375.0 (0.00),38500.0 (0.00),27000.0 (0.00),9375.0 (0.01),1:19:36 PM,SF
+Sergio Garcia,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/981.png,780,43755392,LIV Golf New York,8/6/2026,8000,20.5,0,0.5,0.5,,,,,,
 Sergio Garcia,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/981.png,780,43755392,LIV Golf New York,8/6/2026,8000,20.5,0,0.5,0.5,,,,,,
 Bud Cauley,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/549.png,1673,43783751,Wyndham Championship,8/8/2026,7900,84.51,10.43,0,0,2671.6 (0.04),520.0 (0.16),240.6 (0.29),-24.8 (0.20),1:52:36 PM,SF
 Harris English,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/598.png,1600,43783752,Wyndham Championship,8/8/2026,7900,82.3,8.71,0,0,264375.0 (0.00),38500.0 (0.00),27000.0 (0.00),9375.0 (0.01),1:19:36 PM,SF
 Jordan L. Smith,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/820.png,73498,43783167,Wyndham Championship,8/8/2026,7900,32.93,8.9,0,0,2466.9 (0.04),481.1 (0.17),231.7 (0.30),-8.7 (0.08),12:46:36 PM,SF
 Bud Cauley,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/549.png,1673,43783168,Wyndham Championship,8/8/2026,7900,32.53,10.43,0,0,2671.6 (0.04),520.0 (0.16),240.6 (0.29),-24.8 (0.20),1:52:36 PM,SF
 Harold Varner III,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/624.png,190,43755393,LIV Golf New York,8/6/2026,7900,20.3,0,0.5,0.5,,,,,,
+Harold Varner III,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/624.png,190,43755393,LIV Golf New York,8/6/2026,7900,20.3,0,0.5,0.5,,,,,,
 Benjamin James,Classic: Wyndham Championship,https://dkn.gs/sports/images/countries/50/united_states.png,765775,43783753,Wyndham Championship,8/8/2026,7800,77.28,0,0,0,,,,,,
 Sahith Theegala,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/451906.png,404847,43783754,Wyndham Championship,8/8/2026,7800,82.69,4.93,0,0,1097.5 (0.08),243.3 (0.29),116.7 (0.46),-225.8 (0.69),8:10:36 AM,SF
 Benjamin James,Showdown: Wyndham Championship,https://dkn.gs/sports/images/countries/50/united_states.png,765775,43783169,Wyndham Championship,8/8/2026,7800,0,0,0,0,,,,,,
 Sahith Theegala,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/451906.png,404847,43783170,Wyndham Championship,8/8/2026,7800,35.2,4.93,0,0,1097.5 (0.08),243.3 (0.29),116.7 (0.46),-225.8 (0.69),8:10:36 AM,SF
+Scott Vincent,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/979.png,772,43755394,LIV Golf New York,8/6/2026,7800,20.1,0,0.5,0.5,,,,,,
 Scott Vincent,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/979.png,772,43755394,LIV Golf New York,8/6/2026,7800,20.1,0,0.5,0.5,,,,,,
 Eric Cole,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/525717.png,704063,43783755,Wyndham Championship,8/8/2026,7700,82.16,5.76,0,0,1620.8 (0.06),332.8 (0.23),160.6 (0.38),-155.8 (0.61),8:54:36 AM,SF
 Ryo Hisatsune,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/609130.png,760663,43783756,Wyndham Championship,8/8/2026,7700,85.51,10.57,0,0,243333.3 (0.00),35300.0 (0.00),16700.0 (0.01),5100.0 (0.02),8:43:36 AM,SF
@@ -80,6 +103,7 @@ Jordan Spieth,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/pl
 Eric Cole,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/525717.png,704063,43783172,Wyndham Championship,8/8/2026,7700,34.93,5.76,0,0,1620.8 (0.06),332.8 (0.23),160.6 (0.38),-155.8 (0.61),8:54:36 AM,SF
 Ryo Hisatsune,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/609130.png,760663,43783173,Wyndham Championship,8/8/2026,7700,34.33,10.57,0,0,243333.3 (0.00),35300.0 (0.00),16700.0 (0.01),5100.0 (0.02),8:43:36 AM,SF
 Jordan Spieth,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/882.png,171,43783171,Wyndham Championship,8/8/2026,7700,37.47,7.06,0,0,15057.9 (0.01),2366.7 (0.04),977.5 (0.09),397.0 (0.20),8:21:36 AM,SF
+Paul Casey,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/1039.png,1859,43755395,LIV Golf New York,8/6/2026,7700,19.9,0,0.5,0.5,,,,,,
 Paul Casey,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/1039.png,1859,43755395,LIV Golf New York,8/6/2026,7700,19.9,0,0.5,0.5,,,,,,
 Alex Noren,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/1162.png,867,43783758,Wyndham Championship,8/8/2026,7600,80.04,7.8,0,0,5617.8 (0.02),913.9 (0.10),414.4 (0.19),175.6 (0.36),8:21:36 AM,SF
 Ricky Castillo,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/514324.png,702801,43783759,Wyndham Championship,8/8/2026,7600,82.68,3.77,0,0,12778.8 (0.01),1906.3 (0.05),777.5 (0.11),301.0 (0.25),1:52:36 PM,SF
@@ -90,12 +114,15 @@ Ricky Castillo,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/
 Alex Smalley,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/451986.png,509666,43783174,Wyndham Championship,8/8/2026,7600,36.73,8.83,0,0,7894.2 (0.01),1375.0 (0.07),604.4 (0.14),253.3 (0.28),8:32:36 AM,SF
 Michael Kim,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/597.png,1932,43783176,Wyndham Championship,8/8/2026,7600,34.53,8.48,0,0,10587.4 (0.01),1590.0 (0.06),671.3 (0.13),271.0 (0.27),7:48:36 AM,SF
 Laurie Canter,Classic: LIV,https://dkn.gs/sports/images/countries/50/england.png,834,43755396,LIV Golf New York,8/6/2026,7600,19.7,0,0.5,0.5,,,,,,
+Laurie Canter,Classic: LIV,https://dkn.gs/sports/images/countries/50/england.png,834,43755396,LIV Golf New York,8/6/2026,7600,19.7,0,0.5,0.5,,,,,,
 Michael Kim,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/597.png,1932,43783762,Wyndham Championship,8/8/2026,7500,79.85,8.48,0,0,10587.4 (0.01),1590.0 (0.06),671.3 (0.13),271.0 (0.27),7:48:36 AM,SF
 Denny McCarthy,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/631.png,1018,43783763,Wyndham Championship,8/8/2026,7500,77.78,6.92,0,0,2406.8 (0.04),464.4 (0.18),219.4 (0.31),-72.0 (0.42),1:08:36 PM,SF
 Jackson Suber,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/632390.png,763051,43783764,Wyndham Championship,8/8/2026,7500,78.17,5.52,0,0,11744.5 (0.01),1718.8 (0.06),747.8 (0.12),294.0 (0.25),2:36:36 PM,SF
 Kevin Yu,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/681.png,671066,43783181,Wyndham Championship,8/8/2026,7500,28.2,0,0,0,5136.8 (0.02),866.7 (0.10),375.6 (0.21),161.7 (0.38),1:41:36 PM,SF
 Denny McCarthy,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/631.png,1018,43783179,Wyndham Championship,8/8/2026,7500,29.2,6.92,0,0,2406.8 (0.04),464.4 (0.18),219.4 (0.31),-72.0 (0.42),1:08:36 PM,SF
 Jackson Suber,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/632390.png,763051,43783178,Wyndham Championship,8/8/2026,7500,29,5.52,0,0,11744.5 (0.01),1718.8 (0.06),747.8 (0.12),294.0 (0.25),2:36:36 PM,SF
+Bubba Watson,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/637.png,411,43755397,LIV Golf New York,8/6/2026,7500,19.5,0,0.5,0.5,,,,,,
+Caleb Surratt,Classic: LIV,https://dkn.gs/sports/images/countries/50/united_states.png,768996,43755398,LIV Golf New York,8/6/2026,7500,19.5,0,0.5,0.5,,,,,,
 Bubba Watson,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/637.png,411,43755397,LIV Golf New York,8/6/2026,7500,19.5,0,0.5,0.5,,,,,,
 Caleb Surratt,Classic: LIV,https://dkn.gs/sports/images/countries/50/united_states.png,768996,43755398,LIV Golf New York,8/6/2026,7500,19.5,0,0.5,0.5,,,,,,
 J.T. Poston,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/1165.png,300174,43783766,Wyndham Championship,8/8/2026,7400,82.74,9.7,0,0,35750.0 (0.00),5162.5 (0.02),1971.4 (0.05),774.0 (0.11),2:03:36 PM,SF
@@ -106,6 +133,8 @@ J.T. Poston,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/pla
 Christiaan Bezuidenhout,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/1115.png,453,43783184,Wyndham Championship,8/8/2026,7400,33.4,0,0,0,18915.4 (0.01),2800.0 (0.03),1110.7 (0.08),423.8 (0.19),2:14:36 PM,SF
 Max Greyserman,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/451990.png,510213,43783185,Wyndham Championship,8/8/2026,7400,34.4,2.43,0,0,5601.3 (0.02),933.3 (0.10),427.5 (0.19),173.2 (0.37),7:48:36 AM,SF
 Emiliano Grillo,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/1085.png,610,43783186,Wyndham Championship,8/8/2026,7400,35.67,9.06,0,0,30833.3 (0.00),4350.0 (0.02),1643.8 (0.06),668.0 (0.13),8:54:36 AM,SF
+Thomas Pieters,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/864.png,350,43755399,LIV Golf New York,8/6/2026,7400,19.3,0,0.5,0.5,,,,,,
+Sebastián Muñoz,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/662.png,320038,43755400,LIV Golf New York,8/6/2026,7400,19.3,0,0.5,0.5,,,,,,
 Thomas Pieters,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/864.png,350,43755399,LIV Golf New York,8/6/2026,7400,19.3,0,0.5,0.5,,,,,,
 Sebastián Muñoz,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/662.png,320038,43755400,LIV Golf New York,8/6/2026,7400,19.3,0,0.5,0.5,,,,,,
 Matt Wallace,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/1105.png,63191,43783771,Wyndham Championship,8/8/2026,7300,77.61,7.01,0,0,106666.7 (0.00),14357.1 (0.01),4285.7 (0.02),1590.0 (0.06),7:37:36 AM,SF
@@ -120,6 +149,8 @@ Nick Taylor,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/pla
 Matti Schmid,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/790.png,697208,43783191,Wyndham Championship,8/8/2026,7300,22.27,1.1,0,0,4505.8 (0.02),755.6 (0.12),333.9 (0.23),143.5 (0.41),12:46:36 PM,SF
 Anthony Kim,Classic: LIV,https://dkn.gs/sports/images/countries/50/united_states.png,1119,43755401,LIV Golf New York,8/6/2026,7300,19.1,0,0.5,0.5,,,,,,
 Louis Oosthuizen,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/918.png,584,43755402,LIV Golf New York,8/6/2026,7300,19.1,0,0.5,0.5,,,,,,
+Anthony Kim,Classic: LIV,https://dkn.gs/sports/images/countries/50/united_states.png,1119,43755401,LIV Golf New York,8/6/2026,7300,19.1,0,0.5,0.5,,,,,,
+Louis Oosthuizen,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/918.png,584,43755402,LIV Golf New York,8/6/2026,7300,19.1,0,0.5,0.5,,,,,,
 Matti Schmid,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/790.png,697208,43783776,Wyndham Championship,8/8/2026,7200,71.81,1.1,0,0,4505.8 (0.02),755.6 (0.12),333.9 (0.23),143.5 (0.41),12:46:36 PM,SF
 Zachary Bauchou,Classic: Wyndham Championship,https://dkn.gs/sports/images/countries/50/united_states.png,689973,43783777,Wyndham Championship,8/8/2026,7200,68.43,0,0,0,,,,,,
 John Parry,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/450617.png,708,43783778,Wyndham Championship,8/8/2026,7200,75.19,1.99,0,0,12834.8 (0.01),1818.8 (0.05),748.9 (0.12),279.0 (0.26),2:47:36 PM,SF
@@ -130,6 +161,8 @@ Zachary Bauchou,Showdown: Wyndham Championship,https://dkn.gs/sports/images/coun
 John Parry,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/450617.png,708,43783195,Wyndham Championship,8/8/2026,7200,21.8,1.99,0,0,12834.8 (0.01),1818.8 (0.05),748.9 (0.12),279.0 (0.26),2:47:36 PM,SF
 Tom Hoge,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/648.png,1760,43783194,Wyndham Championship,8/8/2026,7200,20.07,2.3,0,0,9646.7 (0.01),1493.8 (0.06),635.6 (0.14),254.0 (0.28),12:57:36 PM,SF
 Beau Hossler,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/646.png,1689,43783196,Wyndham Championship,8/8/2026,7200,27,0,0,0,755.8 (0.12),171.5 (0.37),-103.4 (0.51),-360.0 (0.78),2:14:36 PM,SF
+Peter Uihlein,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/650.png,218,43755403,LIV Golf New York,8/6/2026,7200,18.9,0,0.5,0.5,,,,,,
+Anirban Lahiri,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/585.png,846,43755404,LIV Golf New York,8/6/2026,7200,18.9,0,0.5,0.5,,,,,,
 Peter Uihlein,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/650.png,218,43755403,LIV Golf New York,8/6/2026,7200,18.9,0,0.5,0.5,,,,,,
 Anirban Lahiri,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/585.png,846,43755404,LIV Golf New York,8/6/2026,7200,18.9,0,0.5,0.5,,,,,,
 Beau Hossler,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/646.png,1689,43783781,Wyndham Championship,8/8/2026,7100,73.95,0,0,0,755.8 (0.12),171.5 (0.37),-103.4 (0.51),-360.0 (0.78),2:14:36 PM,SF
@@ -146,6 +179,8 @@ Luke Clanton,Showdown: Wyndham Championship,https://dkn.gs/sports/images/countri
 Rasmus Neergaard-Petersen,Showdown: Wyndham Championship,https://dkn.gs/sports/images/countries/50/denmark.png,720984,43783202,Wyndham Championship,8/8/2026,7100,32.07,3.36,0,0,38050.0 (0.00),5300.0 (0.02),2012.5 (0.05),716.0 (0.12),2:36:36 PM,SF
 Matthew Wolff,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/802.png,693781,43755405,LIV Golf New York,8/6/2026,7100,18.7,0,0.5,0.5,,,,,,
 Ian Poulter,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/974.png,308,43755406,LIV Golf New York,8/6/2026,7100,18.7,0,0.5,0.5,,,,,,
+Matthew Wolff,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/802.png,693781,43755405,LIV Golf New York,8/6/2026,7100,18.7,0,0.5,0.5,,,,,,
+Ian Poulter,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/974.png,308,43755406,LIV Golf New York,8/6/2026,7100,18.7,0,0.5,0.5,,,,,,
 Rasmus Neergaard-Petersen,Classic: Wyndham Championship,https://dkn.gs/sports/images/countries/50/denmark.png,720984,43783787,Wyndham Championship,8/8/2026,7000,76.52,3.36,0,0,38050.0 (0.00),5300.0 (0.02),2012.5 (0.05),716.0 (0.12),2:36:36 PM,SF
 Chandler Phillips,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/61619.png,698927,43783788,Wyndham Championship,8/8/2026,7000,74.36,2.72,0,0,26169.8 (0.00),3775.0 (0.03),1544.4 (0.06),519.0 (0.16),7:37:36 AM,SF
 Brandt Snedeker,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/690.png,400,43783789,Wyndham Championship,8/8/2026,7000,73.93,0,0,0,7659.1 (0.01),1261.1 (0.07),529.4 (0.16),210.6 (0.32),7:59:36 AM,SF
@@ -160,6 +195,8 @@ Patrick Fishburn,Showdown: Wyndham Championship,https://dkn.gs/sports/images/gol
 Kevin Roy,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/525542.png,703862,43783204,Wyndham Championship,8/8/2026,7000,27.73,0,0,0,27468.1 (0.00),4200.0 (0.02),1627.8 (0.06),576.0 (0.15),1:08:36 PM,SF
 Lee Hodges,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/1003.png,692607,43783206,Wyndham Championship,8/8/2026,7000,28.8,3.85,0,0,7778.4 (0.01),1377.8 (0.07),596.9 (0.14),225.0 (0.31),8:54:36 AM,SF
 Sepp Straka,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/654.png,73285,43783208,Wyndham Championship,8/8/2026,7000,33.53,6.5,0,0,202777.8 (0.00),30500.0 (0.00),15300.0 (0.01),5525.0 (0.02),8:32:36 AM,SF
+Charl Schwartzel,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/938.png,193,43755407,LIV Golf New York,8/6/2026,7000,18.5,0,0.5,0.5,,,,,,
+Cameron Tringale,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/622.png,1449,43755408,LIV Golf New York,8/6/2026,7000,18.5,0,0.5,0.5,,,,,,
 Charl Schwartzel,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/938.png,193,43755407,LIV Golf New York,8/6/2026,7000,18.5,0,0.5,0.5,,,,,,
 Cameron Tringale,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/622.png,1449,43755408,LIV Golf New York,8/6/2026,7000,18.5,0,0.5,0.5,,,,,,
 Kevin Roy,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/525542.png,703862,43783794,Wyndham Championship,8/8/2026,6900,72.85,0,0,0,27468.1 (0.00),4200.0 (0.02),1627.8 (0.06),576.0 (0.15),1:08:36 PM,SF
@@ -180,6 +217,8 @@ Karl Vilips,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/pla
 Andrew Putnam,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/730.png,665,43783214,Wyndham Championship,8/8/2026,6900,24.67,3.91,0,0,48000.0 (0.00),6687.5 (0.01),2342.9 (0.04),910.0 (0.10),7:26:36 AM,SF
 Travis Smyth,Classic: LIV,https://dkn.gs/sports/images/countries/50/australia.png,670421,43755409,LIV Golf New York,8/6/2026,6900,18.3,0,0.5,0.5,,,,,,
 Richard T. Lee,Classic: LIV,https://dkn.gs/sports/images/countries/50/canada.png,165,43755410,LIV Golf New York,8/6/2026,6900,18.3,0,0.5,0.5,,,,,,
+Travis Smyth,Classic: LIV,https://dkn.gs/sports/images/countries/50/australia.png,670421,43755409,LIV Golf New York,8/6/2026,6900,18.3,0,0.5,0.5,,,,,,
+Richard T. Lee,Classic: LIV,https://dkn.gs/sports/images/countries/50/canada.png,165,43755410,LIV Golf New York,8/6/2026,6900,18.3,0,0.5,0.5,,,,,,
 Jesper Svensson,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/630555.png,762723,43783802,Wyndham Championship,8/8/2026,6800,70.69,0.08,0,0,80750.0 (0.00),10642.9 (0.01),3457.1 (0.03),1240.0 (0.07),9:16:36 AM,SF
 Sam Stevens,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/564993.png,720888,43783803,Wyndham Championship,8/8/2026,6800,74.68,1.7,0,0,273750.0 (0.00),38300.0 (0.00),22400.0 (0.00),6725.0 (0.01),1:08:36 PM,SF
 Stephan Jaeger,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/821.png,2044,43783804,Wyndham Championship,8/8/2026,6800,75.05,0,0,0,257222.2 (0.00),38300.0 (0.00),17100.0 (0.01),4675.0 (0.02),7:59:36 AM,SF
@@ -197,6 +236,8 @@ Harry Hall,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/play
 Joel Dahmen,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/521.png,1622,43783222,Wyndham Championship,8/8/2026,6800,21.27,0,0,0,32134.1 (0.00),4744.4 (0.02),1818.8 (0.05),701.7 (0.12),8:54:36 AM,SF
 Adrian Meronk,Classic: LIV,https://dkn.gs/sports/images/countries/50/poland.png,292342,43755411,LIV Golf New York,8/6/2026,6800,18.1,0,0.5,0.5,,,,,,
 Younghan Song,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/450447.png,329,43755412,LIV Golf New York,8/6/2026,6800,18.1,0,0.5,0.5,,,,,,
+Adrian Meronk,Classic: LIV,https://dkn.gs/sports/images/countries/50/poland.png,292342,43755411,LIV Golf New York,8/6/2026,6800,18.1,0,0.5,0.5,,,,,,
+Younghan Song,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/450447.png,329,43755412,LIV Golf New York,8/6/2026,6800,18.1,0,0.5,0.5,,,,,,
 William Mouw,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/645034.png,765443,43783810,Wyndham Championship,8/8/2026,6700,69.31,2.71,0,0,30623.3 (0.00),4637.5 (0.02),1638.9 (0.06),592.0 (0.14),8:10:36 AM,SF
 Harry Hall,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/62315.png,699070,43783811,Wyndham Championship,8/8/2026,6700,70.39,2,0,0,51250.0 (0.00),6962.5 (0.01),2800.0 (0.03),1058.0 (0.09),8:21:36 AM,SF
 Joel Dahmen,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/521.png,1622,43783812,Wyndham Championship,8/8/2026,6700,69.35,0,0,0,32134.1 (0.00),4744.4 (0.02),1818.8 (0.05),701.7 (0.12),8:54:36 AM,SF
@@ -210,6 +251,8 @@ Davis Chatfield,Showdown: Wyndham Championship,https://dkn.gs/sports/images/coun
 Adrien Saddier,Showdown: Wyndham Championship,https://dkn.gs/sports/images/countries/50/france.png,2649,43783232,Wyndham Championship,8/8/2026,6700,19.47,0,0,0,34045.5 (0.00),5012.5 (0.02),1918.8 (0.05),684.0 (0.13),9:16:36 AM,SF
 Jason Day,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/1122.png,815,43783230,Wyndham Championship,8/8/2026,6700,31.93,2.2,0,0,121111.1 (0.00),19583.3 (0.01),7280.0 (0.01),2575.0 (0.04),8:21:36 AM,SF
 Marco Penge,Showdown: Wyndham Championship,https://dkn.gs/sports/images/countries/50/england.png,698887,43783231,Wyndham Championship,8/8/2026,6700,30.4,3.06,0,0,264375.0 (0.00),34300.0 (0.00),19700.0 (0.01),7125.0 (0.01),2:25:36 PM,SF
+Luis Masaveu,Classic: LIV,https://dkn.gs/sports/images/countries/50/spain.png,768539,43755413,LIV Golf New York,8/6/2026,6700,17.9,0,0.5,0.5,,,,,,
+Richard Bland,Classic: LIV,https://dkn.gs/sports/images/countries/50/england.png,698,43755414,LIV Golf New York,8/6/2026,6700,17.9,0,0.5,0.5,,,,,,
 Luis Masaveu,Classic: LIV,https://dkn.gs/sports/images/countries/50/spain.png,768539,43755413,LIV Golf New York,8/6/2026,6700,17.9,0,0.5,0.5,,,,,,
 Richard Bland,Classic: LIV,https://dkn.gs/sports/images/countries/50/england.png,698,43755414,LIV Golf New York,8/6/2026,6700,17.9,0,0.5,0.5,,,,,,
 Jason Day,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/1122.png,815,43783819,Wyndham Championship,8/8/2026,6600,73.96,2.2,0,0,121111.1 (0.00),19583.3 (0.01),7280.0 (0.01),2575.0 (0.04),8:21:36 AM,SF
@@ -226,6 +269,8 @@ Matt Kuchar,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/pla
 Davis Riley,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/1103.png,1625,43783237,Wyndham Championship,8/8/2026,6600,24.07,0,0,0,251875.0 (0.00),38500.0 (0.00),28000.0 (0.00),14750.0 (0.01),8:10:36 AM,SF
 Aldrich Potgieter,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/648552.png,765936,43783238,Wyndham Championship,8/8/2026,6600,22.47,0.78,0,0,142500.0 (0.00),20071.4 (0.01),6414.3 (0.02),2175.0 (0.04),1:30:36 PM,SF
 Chad Ramey,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/983.png,2119,43783242,Wyndham Championship,8/8/2026,6600,20.07,0,0,0,23406.2 (0.00),3237.5 (0.03),1334.4 (0.07),458.0 (0.18),7:48:36 AM,SF
+Brendan Steele,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/566.png,549,43755415,LIV Golf New York,8/6/2026,6600,17.7,0,0.5,0.5,,,,,,
+Jason Kokrak,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/589.png,1080,43755416,LIV Golf New York,8/6/2026,6600,17.7,0,0.5,0.5,,,,,,
 Brendan Steele,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/566.png,549,43755415,LIV Golf New York,8/6/2026,6600,17.7,0,0.5,0.5,,,,,,
 Jason Kokrak,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/589.png,1080,43755416,LIV Golf New York,8/6/2026,6600,17.7,0,0.5,0.5,,,,,,
 Aldrich Potgieter,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/648552.png,765936,43783827,Wyndham Championship,8/8/2026,6500,68.43,0.78,0,0,142500.0 (0.00),20071.4 (0.01),6414.3 (0.02),2175.0 (0.04),1:30:36 PM,SF
@@ -247,6 +292,9 @@ Justin Lower,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/pl
 Doyeob Mun,Classic: LIV,https://dkn.gs/sports/images/countries/50/south_korea.png,692221,43755417,LIV Golf New York,8/6/2026,6500,17.5,0,0.5,0.5,,,,,,
 Lee Westwood,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/867.png,638,43755418,LIV Golf New York,8/6/2026,6500,17.5,0,0.5,0.5,,,,,,
 Martin Vorster,Classic: LIV,https://dkn.gs/sports/images/countries/50/south_africa.png,700284,43763259,LIV Golf New York,8/6/2026,6500,17.5,0,0.5,0.5,,,,,,
+Doyeob Mun,Classic: LIV,https://dkn.gs/sports/images/countries/50/south_korea.png,692221,43755417,LIV Golf New York,8/6/2026,6500,17.5,0,0.5,0.5,,,,,,
+Lee Westwood,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/867.png,638,43755418,LIV Golf New York,8/6/2026,6500,17.5,0,0.5,0.5,,,,,,
+Martin Vorster,Classic: LIV,https://dkn.gs/sports/images/countries/50/south_africa.png,700284,43763259,LIV Golf New York,8/6/2026,6500,17.5,0,0.5,0.5,,,,,,
 Justin Lower,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/450914.png,1295,43783835,Wyndham Championship,8/8/2026,6400,65.36,0,0,0,149000.0 (0.00),18642.9 (0.01),6912.5 (0.01),2270.0 (0.04),2:14:36 PM,SF
 Chandler Blanchet,Classic: Wyndham Championship,https://dkn.gs/sports/images/countries/50/united_states.png,703933,43783836,Wyndham Championship,8/8/2026,6400,67.05,0,0,0,251875.0 (0.00),38300.0 (0.00),22200.0 (0.00),6800.0 (0.01),9:05:36 AM,SF
 Trace Crowe,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/452008.png,560242,43783837,Wyndham Championship,8/8/2026,6400,66.7,0,0,0,112500.0 (0.00),16000.0 (0.01),5414.3 (0.02),1920.0 (0.05),9:38:36 AM,SF
@@ -263,6 +311,8 @@ Mark Hubbard,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/pl
 Hao-Tong Li,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/767.png,1132,43783254,Wyndham Championship,8/8/2026,6400,0,0,0,0,,,,,,
 Webb Simpson,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/913.png,703,43783255,Wyndham Championship,8/8/2026,6400,20,1.81,0,0,131500.0 (0.00),19500.0 (0.01),6757.1 (0.01),2240.0 (0.04),1:30:36 PM,SF
 Erik Van Rooyen,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/671.png,417,43783256,Wyndham Championship,8/8/2026,6400,14.87,0.43,0,0,123500.0 (0.00),18571.4 (0.01),6737.5 (0.01),2010.0 (0.05),12:57:36 PM,SF
+Martin Kaymer,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/817.png,1323,43755419,LIV Golf New York,8/6/2026,6400,17.3,0,0.5,0.5,,,,,,
+Danny Lee,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/604.png,1883,43755420,LIV Golf New York,8/6/2026,6400,17.3,0,0.5,0.5,,,,,,
 Martin Kaymer,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/817.png,1323,43755419,LIV Golf New York,8/6/2026,6400,17.3,0,0.5,0.5,,,,,,
 Danny Lee,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/604.png,1883,43755420,LIV Golf New York,8/6/2026,6400,17.3,0,0.5,0.5,,,,,,
 Erik Van Rooyen,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/671.png,417,43783843,Wyndham Championship,8/8/2026,6300,63.06,0.43,0,0,123500.0 (0.00),18571.4 (0.01),6737.5 (0.01),2010.0 (0.05),12:57:36 PM,SF
@@ -282,6 +332,8 @@ Brian Campbell,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/
 Tyler Collet,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/549844.png,705485,43783263,Wyndham Championship,8/8/2026,6300,11.87,0,0,0,176500.0 (0.00),19714.3 (0.01),8471.4 (0.01),2680.0 (0.04),2:47:36 PM,SF
 Ben Campbell,Classic: LIV,https://dkn.gs/sports/images/countries/50/new_zealand.png,286512,43755421,LIV Golf New York,8/6/2026,6300,17.1,0,0.5,0.5,,,,,,
 Graeme McDowell,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/1184.png,1314,43755422,LIV Golf New York,8/6/2026,6300,17.1,0,0.5,0.5,,,,,,
+Ben Campbell,Classic: LIV,https://dkn.gs/sports/images/countries/50/new_zealand.png,286512,43755421,LIV Golf New York,8/6/2026,6300,17.1,0,0.5,0.5,,,,,,
+Graeme McDowell,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/1184.png,1314,43755422,LIV Golf New York,8/6/2026,6300,17.1,0,0.5,0.5,,,,,,
 Tyler Collet,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/549844.png,705485,43783851,Wyndham Championship,8/8/2026,6200,56.4,0,0,0,176500.0 (0.00),19714.3 (0.01),8471.4 (0.01),2680.0 (0.04),2:47:36 PM,SF
 Matthieu Pavon,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/1121.png,113835,43783853,Wyndham Championship,8/8/2026,6200,66.14,0.61,0,0,161500.0 (0.00),19000.0 (0.01),6700.0 (0.01),2290.0 (0.04),7:48:36 AM,SF
 Hank Lebioda,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/526.png,692004,43783854,Wyndham Championship,8/8/2026,6200,63.59,0,0,0,264375.0 (0.00),38500.0 (0.00),28000.0 (0.00),14750.0 (0.01),12:57:36 PM,SF
@@ -296,6 +348,8 @@ Hank Lebioda,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/pl
 Lanto Griffin,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/605.png,648084,43783269,Wyndham Championship,8/8/2026,6200,18.93,0,0,0,264375.0 (0.00),38500.0 (0.00),23700.0 (0.00),8375.0 (0.01),2:14:36 PM,SF
 Kensei Hirata,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/712328.png,773313,43783272,Wyndham Championship,8/8/2026,6200,15.07,0,0,0,117500.0 (0.00),15687.5 (0.01),5800.0 (0.02),1825.0 (0.05),9:38:36 AM,SF
 Stefano Mazzoli,Showdown: Wyndham Championship,https://dkn.gs/sports/images/countries/50/italy.png,122743,43783270,Wyndham Championship,8/8/2026,6200,15.33,0,0,0,121500.0 (0.00),16285.7 (0.01),5457.1 (0.02),1900.0 (0.05),1:52:36 PM,SF
+Björn Hellgren,Classic: LIV,https://dkn.gs/sports/images/countries/50/sweden.png,60263,43755423,LIV Golf New York,8/6/2026,6200,16.9,0,0.5,0.5,,,,,,
+Michael La Sasso,Classic: LIV,https://dkn.gs/sports/images/countries/50/united_states.png,849089,43755424,LIV Golf New York,8/6/2026,6200,16.9,0,0.5,0.5,,,,,,
 Björn Hellgren,Classic: LIV,https://dkn.gs/sports/images/countries/50/sweden.png,60263,43755423,LIV Golf New York,8/6/2026,6200,16.9,0,0.5,0.5,,,,,,
 Michael La Sasso,Classic: LIV,https://dkn.gs/sports/images/countries/50/united_states.png,849089,43755424,LIV Golf New York,8/6/2026,6200,16.9,0,0.5,0.5,,,,,,
 Nick Dunlap,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/561491.png,710663,43783860,Wyndham Championship,8/8/2026,6100,63.14,0,0,0,286250.0 (0.00),38500.0 (0.00),22100.0 (0.00),7025.0 (0.01),8:43:36 AM,SF
@@ -313,11 +367,15 @@ Jeffrey Kang,Showdown: Wyndham Championship,https://dkn.gs/sports/images/countri
 Cameron Davis,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/578.png,330678,43783281,Wyndham Championship,8/8/2026,6100,0,0,0,0,,,,,,
 Sam Horsfield,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/806.png,1939,43755425,LIV Golf New York,8/6/2026,6100,16.7,0,0.5,0.5,,,,,,
 Miguel Tabuena,Classic: LIV,https://dkn.gs/sports/images/countries/50/philippines.png,406,43755426,LIV Golf New York,8/6/2026,6100,16.7,0,0.5,0.5,,,,,,
+Sam Horsfield,Classic: LIV,https://dkn.gs/sports/images/golf/players/50/806.png,1939,43755425,LIV Golf New York,8/6/2026,6100,16.7,0,0.5,0.5,,,,,,
+Miguel Tabuena,Classic: LIV,https://dkn.gs/sports/images/countries/50/philippines.png,406,43755426,LIV Golf New York,8/6/2026,6100,16.7,0,0.5,0.5,,,,,,
 Cameron Davis,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/578.png,330678,43783867,Wyndham Championship,8/8/2026,6000,58.71,0,0,0,,,,,,
 Dylan Wu,Classic: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/69384.png,699433,43783870,Wyndham Championship,8/8/2026,6000,61.66,0,0,0,273571.4 (0.00),38500.0 (0.00),28750.0 (0.00),16333.3 (0.01),7:26:36 AM,SF
 Christo Lamprecht,Classic: Wyndham Championship,https://dkn.gs/sports/images/countries/50/south_africa.png,670532,43783871,Wyndham Championship,8/8/2026,6000,61.09,0,0,0,270000.0 (0.00),38500.0 (0.00),28000.0 (0.00),15000.0 (0.01),9:05:36 AM,SF
 Marcelo Rozo,Showdown: Wyndham Championship,https://dkn.gs/sports/images/countries/50/colombia.png,2083,43783284,Wyndham Championship,8/8/2026,6000,13.83,0,0,0,264375.0 (0.00),38500.0 (0.00),28000.0 (0.00),14750.0 (0.01),2:25:36 PM,SF
 Dylan Wu,Showdown: Wyndham Championship,https://dkn.gs/sports/images/golf/players/50/69384.png,699433,43783283,Wyndham Championship,8/8/2026,6000,17.07,0,0,0,273571.4 (0.00),38500.0 (0.00),28750.0 (0.00),16333.3 (0.01),7:26:36 AM,SF
 Christo Lamprecht,Showdown: Wyndham Championship,https://dkn.gs/sports/images/countries/50/south_africa.png,670532,43783285,Wyndham Championship,8/8/2026,6000,14.13,0,0,0,270000.0 (0.00),38500.0 (0.00),28000.0 (0.00),15000.0 (0.01),9:05:36 AM,SF
+Yosuke Asaji,Classic: LIV,https://dkn.gs/sports/images/countries/50/japan.png,697206,43755427,LIV Golf New York,8/6/2026,6000,16.5,0,0.5,0.5,,,,,,
+Minkyu Kim,Classic: LIV,https://dkn.gs/sports/images/countries/50/south_korea.png,671052,43755428,LIV Golf New York,8/6/2026,6000,16.5,0,0.5,0.5,,,,,,
 Yosuke Asaji,Classic: LIV,https://dkn.gs/sports/images/countries/50/japan.png,697206,43755427,LIV Golf New York,8/6/2026,6000,16.5,0,0.5,0.5,,,,,,
 Minkyu Kim,Classic: LIV,https://dkn.gs/sports/images/countries/50/south_korea.png,671052,43755428,LIV Golf New York,8/6/2026,6000,16.5,0,0.5,0.5,,,,,,
