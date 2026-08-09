@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golf Leaderboard</title>
+    <title>925 Live Golf Leaderboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
@@ -137,15 +137,25 @@
             width: 95%;
             max-width: 1200px;
             background: var(--card-bg);
-            padding: 0.85rem 1.1rem;
+            padding: 0.75rem 1.1rem;
             border-radius: 10px;
             margin: 0.35rem 0;
             font-size: 0.84rem;
             line-height: 1.45;
             box-shadow: var(--shadow);
-            text-align: center;
             color: var(--text-color);
             opacity: 0.92;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.65rem 0.85rem;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .description-text {
+            flex: 1 1 16rem;
+            min-width: 0;
+            max-width: 52rem;
         }
         .course-info {
             width: 95%;
@@ -666,6 +676,34 @@
             min-width: 1.6rem;
             text-align: center;
         }
+        .player-score-inline {
+            font-weight: 700;
+            font-size: 0.72rem;
+            font-variant-numeric: tabular-nums;
+            flex-shrink: 0;
+            margin-left: 2px;
+            padding: 0 4px;
+            border-radius: 4px;
+            line-height: 1.35;
+        }
+        .player-score-inline.score-under {
+            color: #16a34a;
+            background: color-mix(in srgb, #22c55e 12%, transparent);
+        }
+        .player-score-inline.score-even {
+            color: var(--text-color);
+            opacity: 0.8;
+        }
+        .player-score-inline.score-over {
+            color: #dc2626;
+            background: color-mix(in srgb, #ef4444 12%, transparent);
+        }
+        body[data-theme="dark"] .player-score-inline.score-under {
+            color: #4ade80;
+        }
+        body[data-theme="dark"] .player-score-inline.score-over {
+            color: #f87171;
+        }
         .player-name {
             font-weight: 600;
             font-size: 0.76rem;
@@ -790,6 +828,149 @@
             background: var(--button-bg);
             color: var(--button-text);
             transform: rotate(90deg);
+        }
+        /* Props detail popup */
+        .props-popup-content {
+            max-width: 560px;
+            padding-bottom: 1rem;
+        }
+        .props-popup-header {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+            padding: 1.35rem 1.4rem 0.9rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .props-popup-headshot {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: var(--input-bg);
+            border: 2px solid var(--border-color);
+            flex-shrink: 0;
+        }
+        .props-popup-meta { flex: 1; min-width: 0; }
+        .props-popup-kicker {
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            opacity: 0.55;
+            margin-bottom: 0.15rem;
+        }
+        .props-popup-title {
+            margin: 0;
+            font-size: 1.15rem;
+            font-weight: 750;
+            letter-spacing: -0.02em;
+            line-height: 1.25;
+        }
+        .props-popup-sub {
+            margin-top: 0.2rem;
+            font-size: 0.82rem;
+            opacity: 0.75;
+            font-weight: 500;
+        }
+        .props-popup-side-badge {
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            padding: 0.35rem 0.65rem;
+            border-radius: 999px;
+            flex-shrink: 0;
+        }
+        .props-popup-side-badge.over {
+            background: color-mix(in srgb, #22c55e 18%, var(--card-bg));
+            color: #16a34a;
+        }
+        .props-popup-side-badge.under {
+            background: color-mix(in srgb, #ef4444 16%, var(--card-bg));
+            color: #dc2626;
+        }
+        body[data-theme="dark"] .props-popup-side-badge.over { color: #4ade80; }
+        body[data-theme="dark"] .props-popup-side-badge.under { color: #f87171; }
+        .props-popup-body {
+            padding: 0.9rem 1.25rem 0.4rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .props-popup-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+        }
+        @media (max-width: 480px) {
+            .props-popup-grid { grid-template-columns: 1fr; }
+        }
+        .props-popup-card {
+            background: color-mix(in srgb, var(--border-color) 14%, var(--card-bg));
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 0.65rem 0.75rem;
+        }
+        .props-popup-card.wide { grid-column: 1 / -1; }
+        .props-popup-card .lbl {
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            opacity: 0.6;
+            margin-bottom: 0.25rem;
+        }
+        .props-popup-card .val {
+            font-size: 1.15rem;
+            font-weight: 750;
+            font-variant-numeric: tabular-nums;
+            letter-spacing: -0.01em;
+        }
+        .props-popup-card .hint {
+            margin-top: 0.2rem;
+            font-size: 0.7rem;
+            opacity: 0.6;
+            line-height: 1.3;
+        }
+        .props-popup-lines {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.45rem;
+        }
+        .props-popup-line-chip {
+            display: inline-flex;
+            align-items: baseline;
+            gap: 0.35rem;
+            padding: 0.4rem 0.65rem;
+            border-radius: 8px;
+            background: color-mix(in srgb, var(--border-color) 16%, var(--card-bg));
+            border: 1px solid var(--border-color);
+            font-size: 0.8rem;
+        }
+        .props-popup-line-chip .book {
+            font-weight: 700;
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            opacity: 0.65;
+        }
+        .props-popup-line-chip .num {
+            font-weight: 750;
+            font-variant-numeric: tabular-nums;
+            font-size: 0.95rem;
+        }
+        .props-popup-line-chip.primary {
+            border-color: color-mix(in srgb, #0d9488 45%, var(--border-color));
+            background: color-mix(in srgb, #0d9488 12%, var(--card-bg));
+        }
+        .props-popup-footer {
+            font-size: 0.72rem;
+            opacity: 0.55;
+            padding: 0.15rem 0 0.35rem;
+            line-height: 1.35;
+        }
+        tr.props-row { cursor: pointer; }
+        tr.props-row:hover td {
+            background: color-mix(in srgb, #0d9488 8%, var(--card-bg));
         }
         .popup-header {
             display: flex;
@@ -1216,6 +1397,73 @@
             font-weight: 700;
             margin-top: 0.15rem;
         }
+        .props-trends-strip {
+            width: 95%;
+            max-width: 1200px;
+            margin: 0.25rem auto 0.5rem;
+            padding: 0.4rem 0.75rem 0.45rem;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            background: color-mix(in srgb, var(--border-color) 12%, var(--card-bg));
+            box-sizing: border-box;
+            box-shadow: var(--shadow);
+        }
+        .props-trends-strip .pts-title {
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            opacity: 0.7;
+            margin-bottom: 0.3rem;
+        }
+        .props-trends-strip .pts-grid {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            gap: 0.3rem 0.35rem;
+        }
+        .props-trends-strip .pts-card {
+            background: color-mix(in srgb, var(--border-color) 14%, var(--card-bg));
+            border-radius: 6px;
+            padding: 0.22rem 0.45rem;
+            text-align: left;
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            gap: 0.35rem;
+            white-space: nowrap;
+            flex: 0 0 auto;
+        }
+        .props-trends-strip .pts-card .lbl {
+            font-size: 0.62rem;
+            opacity: 0.65;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            line-height: 1.2;
+        }
+        .props-trends-strip .pts-card .val {
+            font-size: 0.82rem;
+            font-weight: 700;
+            margin-top: 0;
+            font-variant-numeric: tabular-nums;
+        }
+        .props-trends-strip .pts-card.wave {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.1rem;
+            white-space: normal;
+            max-width: 160px;
+        }
+        .props-trends-strip .pts-card.wave .val {
+            font-size: 0.8rem;
+        }
+        .props-trends-strip .pts-card.wave .sub {
+            font-size: 0.6rem;
+            opacity: 0.7;
+            margin-top: 0;
+            line-height: 1.25;
+            white-space: normal;
+        }
         .course-insight {
             background: color-mix(in srgb, #14b8a6 10%, var(--card-bg));
             border: 1px solid color-mix(in srgb, #14b8a6 35%, var(--border-color));
@@ -1463,9 +1711,62 @@
             background: color-mix(in srgb, #3b82f6 14%, var(--card-bg));
             color: #2563eb;
         }
+        /* Props side colors: OVER = green, UNDER = red */
+        .holes-badge.prop-over {
+            background: color-mix(in srgb, #22c55e 18%, var(--card-bg));
+            color: #16a34a;
+        }
+        .holes-badge.prop-under {
+            background: color-mix(in srgb, #ef4444 16%, var(--card-bg));
+            color: #dc2626;
+        }
         body[data-theme="dark"] .holes-badge.finished { color: #4ade80; }
         body[data-theme="dark"] .holes-badge.cut { color: #f87171; }
         body[data-theme="dark"] .holes-badge.playing { color: #60a5fa; }
+        body[data-theme="dark"] .holes-badge.prop-over { color: #4ade80; }
+        body[data-theme="dark"] .holes-badge.prop-under { color: #f87171; }
+        /* Props Edge / +EV pill badges (same shape language as OVER/UNDER tags) */
+        .edge-pill {
+            display: inline-block;
+            padding: 0.12rem 0.45rem;
+            border-radius: 999px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            font-variant-numeric: tabular-nums;
+            line-height: 1.35;
+            white-space: nowrap;
+        }
+        .edge-pill.edge-tier-blue {
+            color: #1d4ed8;
+            background: color-mix(in srgb, #3b82f6 16%, var(--card-bg));
+        }
+        .edge-pill.edge-tier-green {
+            color: #15803d;
+            background: color-mix(in srgb, #22c55e 16%, var(--card-bg));
+        }
+        .edge-pill.edge-tier-yellow {
+            color: #a16207;
+            background: color-mix(in srgb, #eab308 18%, var(--card-bg));
+        }
+        .edge-pill.edge-tier-red {
+            color: #b91c1c;
+            background: color-mix(in srgb, #ef4444 14%, var(--card-bg));
+        }
+        body[data-theme="dark"] .edge-pill.edge-tier-blue { color: #60a5fa; }
+        body[data-theme="dark"] .edge-pill.edge-tier-green { color: #4ade80; }
+        body[data-theme="dark"] .edge-pill.edge-tier-yellow { color: #fbbf24; }
+        body[data-theme="dark"] .edge-pill.edge-tier-red { color: #f87171; }
+        .prop-book-tag {
+            display: inline-block;
+            font-size: 0.62rem;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            padding: 0.08rem 0.32rem;
+            border-radius: 4px;
+            background: color-mix(in srgb, var(--border-color) 35%, transparent);
+            opacity: 0.9;
+            white-space: nowrap;
+        }
         /* Sticky Score */
         th.sticky-score, td.sticky-score {
             position: sticky;
@@ -1573,6 +1874,174 @@
             border-top: 1px solid color-mix(in srgb, var(--border-color) 70%, transparent);
         }
         .how-to-body[hidden] { display: none; }
+        /* Guided tour / video-style walkthrough */
+        .tour-launch-group {
+            flex: 0 0 auto;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+        .tour-launch-btn {
+            flex: 0 0 auto;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            margin: 0;
+            padding: 0.22rem 0.55rem;
+            border-radius: 999px;
+            border: 1px solid color-mix(in srgb, var(--border-color) 85%, transparent);
+            background: color-mix(in srgb, var(--border-color) 12%, var(--card-bg));
+            color: var(--text-color);
+            font-size: 0.7rem;
+            font-weight: 650;
+            letter-spacing: 0.01em;
+            cursor: pointer;
+            opacity: 0.78;
+            transition: opacity 0.15s ease, border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+            white-space: nowrap;
+            line-height: 1.2;
+        }
+        .tour-launch-btn::before {
+            content: '?';
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 0.95rem;
+            height: 0.95rem;
+            border-radius: 50%;
+            background: color-mix(in srgb, #0d9488 18%, transparent);
+            color: #0d9488;
+            font-size: 0.62rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+        .tour-launch-btn.tour-launch-deep::before {
+            content: 'ⓘ';
+            font-size: 0.55rem;
+            background: color-mix(in srgb, #3b82f6 16%, transparent);
+            color: #2563eb;
+        }
+        .tour-launch-btn:hover {
+            opacity: 1;
+            border-color: color-mix(in srgb, #0d9488 45%, var(--border-color));
+            color: #0d9488;
+            background: color-mix(in srgb, #0d9488 10%, var(--card-bg));
+        }
+        .tour-launch-btn.tour-launch-deep:hover {
+            border-color: color-mix(in srgb, #3b82f6 45%, var(--border-color));
+            color: #2563eb;
+            background: color-mix(in srgb, #3b82f6 10%, var(--card-bg));
+        }
+        body[data-theme="dark"] .tour-launch-btn:hover {
+            color: #2dd4bf;
+        }
+        body[data-theme="dark"] .tour-launch-btn::before {
+            color: #2dd4bf;
+            background: color-mix(in srgb, #2dd4bf 16%, transparent);
+        }
+        body[data-theme="dark"] .tour-launch-btn.tour-launch-deep:hover {
+            color: #93c5fd;
+        }
+        body[data-theme="dark"] .tour-launch-btn.tour-launch-deep::before {
+            color: #93c5fd;
+            background: color-mix(in srgb, #60a5fa 18%, transparent);
+        }
+        #tourOverlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 2000;
+        }
+        #tourOverlay.active { display: block; }
+        .tour-backdrop {
+            position: absolute;
+            inset: 0;
+            background: rgba(15, 23, 42, 0.55);
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+        }
+        .tour-spotlight {
+            position: absolute;
+            border-radius: 12px;
+            box-shadow: 0 0 0 9999px rgba(15, 23, 42, 0.62);
+            border: 2px solid #14b8a6;
+            pointer-events: none;
+            transition: top 0.25s ease, left 0.25s ease, width 0.25s ease, height 0.25s ease;
+            z-index: 1;
+        }
+        .tour-card {
+            position: absolute;
+            z-index: 2;
+            width: min(380px, calc(100vw - 2rem));
+            background: var(--card-bg);
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.28);
+            padding: 1rem 1.05rem 0.9rem;
+            transition: top 0.25s ease, left 0.25s ease;
+        }
+        .tour-card-kicker {
+            font-size: 0.65rem;
+            font-weight: 800;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #0d9488;
+            margin-bottom: 0.25rem;
+        }
+        .tour-card-title {
+            margin: 0 0 0.4rem;
+            font-size: 1.05rem;
+            font-weight: 750;
+            letter-spacing: -0.015em;
+            line-height: 1.25;
+        }
+        .tour-card-body {
+            font-size: 0.84rem;
+            line-height: 1.45;
+            opacity: 0.9;
+            margin-bottom: 0.85rem;
+        }
+        .tour-card-body ul {
+            margin: 0.35rem 0 0;
+            padding-left: 1.1rem;
+        }
+        .tour-card-body li { margin: 0.2rem 0; }
+        .tour-card-footer {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+        }
+        .tour-progress {
+            flex: 1;
+            font-size: 0.72rem;
+            opacity: 0.55;
+            font-weight: 600;
+            min-width: 4rem;
+        }
+        .tour-btn {
+            border: 1px solid var(--border-color);
+            background: var(--input-bg);
+            color: var(--text-color);
+            border-radius: 8px;
+            padding: 0.35rem 0.7rem;
+            font-size: 0.78rem;
+            font-weight: 650;
+            cursor: pointer;
+        }
+        .tour-btn:hover { border-color: #0d9488; }
+        .tour-btn.primary {
+            background: #0d9488;
+            border-color: #0d9488;
+            color: #fff;
+        }
+        .tour-btn.primary:hover { filter: brightness(1.05); }
+        .tour-btn.ghost {
+            background: transparent;
+            opacity: 0.75;
+        }
+        body.tour-active { overflow: hidden; }
         .how-to-body h4 {
             margin: 0.75rem 0 0.3rem 0;
             font-size: 0.82rem;
@@ -2282,24 +2751,198 @@
         #loading {
             display: none;
             position: fixed;
-            top: 0;
-            left: 0;
+            inset: 0;
             width: 100%;
             height: 100%;
-            background: var(--loading-bg);
             z-index: 1000;
             justify-content: center;
             align-items: center;
+            background:
+                radial-gradient(1200px 600px at 50% -10%, color-mix(in srgb, #0d9488 18%, transparent), transparent 60%),
+                radial-gradient(900px 500px at 80% 100%, color-mix(in srgb, #3b82f6 10%, transparent), transparent 55%),
+                color-mix(in srgb, var(--bg-color) 92%, #0f172a);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
         }
         #loading[style*="flex"] {
             display: flex !important;
         }
-        #loading > div {
+        body[data-theme="dark"] #loading {
+            background:
+                radial-gradient(1200px 600px at 50% -10%, color-mix(in srgb, #14b8a6 16%, transparent), transparent 60%),
+                radial-gradient(900px 500px at 80% 100%, color-mix(in srgb, #3b82f6 12%, transparent), transparent 55%),
+                color-mix(in srgb, var(--bg-color) 88%, #020617);
+        }
+        #loading .loading-card {
             text-align: center;
-            background: var(--card-bg);
-            padding: 1.5rem 2.2rem;
-            border-radius: 12px;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            background: color-mix(in srgb, var(--card-bg) 92%, transparent);
+            padding: 1.75rem 2.25rem 1.65rem;
+            border-radius: 20px;
+            box-shadow:
+                0 1px 0 color-mix(in srgb, #fff 8%, transparent) inset,
+                0 18px 50px rgba(15, 23, 42, 0.16),
+                0 4px 14px rgba(15, 23, 42, 0.06);
+            min-width: 300px;
+            max-width: 360px;
+            border: 1px solid color-mix(in srgb, var(--border-color) 80%, transparent);
+            animation: loadingCardIn 0.45s ease-out;
+        }
+        @keyframes loadingCardIn {
+            from { opacity: 0; transform: translateY(10px) scale(0.98); }
+            to   { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        .loading-brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #0d9488;
+            margin-bottom: 0.35rem;
+        }
+        .loading-brand-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #0d9488;
+            box-shadow: 0 0 0 3px color-mix(in srgb, #0d9488 22%, transparent);
+        }
+        .golfer-stage {
+            margin: 0.15rem auto 0.55rem;
+            width: 200px;
+            height: 150px;
+            position: relative;
+            border-radius: 14px;
+            background:
+                linear-gradient(180deg,
+                    color-mix(in srgb, var(--border-color) 18%, transparent) 0%,
+                    color-mix(in srgb, #0d9488 6%, transparent) 100%);
+            border: 1px solid color-mix(in srgb, var(--border-color) 70%, transparent);
+            overflow: hidden;
+        }
+        .stick-golfer {
+            display: block;
+            margin: 0.35rem auto 0;
+            overflow: visible;
+        }
+        .stick-golfer .g-stroke {
+            stroke: color-mix(in srgb, var(--text-color) 88%, #0f172a);
+            stroke-width: 2.8;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            fill: none;
+        }
+        .stick-golfer .g-stroke-fill {
+            stroke: color-mix(in srgb, var(--text-color) 88%, #0f172a);
+            stroke-width: 2.8;
+            fill: var(--card-bg);
+        }
+        .stick-golfer .g-club,
+        .stick-golfer .g-club-head {
+            stroke: #0d9488;
+            stroke-width: 3;
+            stroke-linecap: round;
+            fill: none;
+        }
+        .stick-golfer .g-ground {
+            stroke: color-mix(in srgb, #10b981 45%, var(--border-color));
+            stroke-width: 2.5;
+            stroke-linecap: round;
+            opacity: 0.85;
+        }
+        .stick-golfer .g-ball {
+            fill: color-mix(in srgb, var(--text-color) 90%, #fff);
+            opacity: 0.9;
+        }
+        .stick-golfer .g-whoosh {
+            stroke: color-mix(in srgb, #0d9488 55%, transparent);
+            stroke-width: 1.8;
+            stroke-linecap: round;
+            stroke-dasharray: 3 5;
+            opacity: 0;
+        }
+        .stick-golfer .g-swing {
+            transform-origin: 88px 52px;
+            animation: golfSwing 1.45s cubic-bezier(0.45, 0.05, 0.25, 1) infinite;
+        }
+        .stick-golfer .g-arm-back {
+            animation: golfArmBack 1.45s cubic-bezier(0.45, 0.05, 0.25, 1) infinite;
+            transform-origin: 88px 52px;
+        }
+        .stick-golfer .g-ball {
+            animation: golfBall 1.45s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        }
+        .stick-golfer .g-whoosh {
+            animation: golfWhoosh 1.45s ease-in-out infinite;
+        }
+        @keyframes golfSwing {
+            0%   { transform: rotate(-52deg); }
+            32%  { transform: rotate(-52deg); }
+            46%  { transform: rotate(18deg); }
+            56%  { transform: rotate(68deg); }
+            78%  { transform: rotate(68deg); }
+            100% { transform: rotate(-52deg); }
+        }
+        @keyframes golfArmBack {
+            0%, 32% { transform: rotate(8deg); }
+            46% { transform: rotate(-4deg); }
+            56%, 78% { transform: rotate(-12deg); }
+            100% { transform: rotate(8deg); }
+        }
+        @keyframes golfBall {
+            0%, 48% { transform: translate(0, 0); opacity: 0.9; }
+            56% { transform: translate(10px, -8px); opacity: 0.95; }
+            70% { transform: translate(48px, -30px); opacity: 0.5; }
+            82% { transform: translate(78px, -16px); opacity: 0; }
+            100% { transform: translate(0, 0); opacity: 0; }
+        }
+        @keyframes golfWhoosh {
+            0%, 40% { opacity: 0; }
+            50% { opacity: 0.65; }
+            62% { opacity: 0.3; }
+            75%, 100% { opacity: 0; }
+        }
+        .loading-progress {
+            width: 100%;
+            height: 3px;
+            border-radius: 99px;
+            background: color-mix(in srgb, var(--border-color) 70%, transparent);
+            overflow: hidden;
+            margin: 0.85rem 0 0.55rem;
+        }
+        .loading-progress > i {
+            display: block;
+            height: 100%;
+            width: 40%;
+            border-radius: 99px;
+            background: linear-gradient(90deg, #0d9488, #14b8a6, #2dd4bf);
+            animation: loadingBar 1.35s ease-in-out infinite;
+        }
+        @keyframes loadingBar {
+            0%   { transform: translateX(-120%); }
+            100% { transform: translateX(280%); }
+        }
+        .loading-title {
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: 750;
+            letter-spacing: -0.02em;
+            color: var(--text-color);
+        }
+        .loading-sub {
+            margin: 0.3rem 0 0;
+            font-size: 0.84rem;
+            opacity: 0.7;
+            font-weight: 500;
+        }
+        .loading-tip {
+            margin: 0.7rem 0 0;
+            font-size: 0.72rem;
+            opacity: 0.5;
+            min-height: 1.15em;
+            letter-spacing: 0.01em;
         }
         .switch-container {
             position: fixed;
@@ -2533,7 +3176,26 @@
 
     <h2 id="leaderboardHeader">Golf Leaderboard</h2>
     <div class="description">
-        View golf leaderboard data, including player scores, places, and strokes gained stats. Star players to pin them in Favorites at the top.
+        <span class="description-text">Live tournament HQ — scores, SG, betting odds, finish props, matchups, 3-balls, and cut sweats. Star players to pin them in Favorites.</span>
+        <span class="tour-launch-group">
+            <button type="button" class="tour-launch-btn" id="tourLaunchBtn" onclick="startGuidedTour('overview')" title="Quick overview of every tab">Overview</button>
+            <button type="button" class="tour-launch-btn tour-launch-deep" id="tourDeepBtn" onclick="startGuidedTour('deep')" title="Detailed definitions and how to use each tool">Deep dive</button>
+        </span>
+    </div>
+    <div id="tourOverlay" aria-hidden="true">
+        <div class="tour-backdrop" onclick="endGuidedTour()"></div>
+        <div class="tour-spotlight" id="tourSpotlight"></div>
+        <div class="tour-card" id="tourCard" role="dialog" aria-modal="true" aria-labelledby="tourCardTitle">
+            <div class="tour-card-kicker" id="tourCardKicker">Tutorial</div>
+            <h3 class="tour-card-title" id="tourCardTitle">—</h3>
+            <div class="tour-card-body" id="tourCardBody"></div>
+            <div class="tour-card-footer">
+                <span class="tour-progress" id="tourProgress">1 / 1</span>
+                <button type="button" class="tour-btn ghost" onclick="endGuidedTour()">Skip</button>
+                <button type="button" class="tour-btn" id="tourPrevBtn" onclick="guidedTourPrev()">Back</button>
+                <button type="button" class="tour-btn primary" id="tourNextBtn" onclick="guidedTourNext()">Next</button>
+            </div>
+        </div>
     </div>
     <div class="course-info">
         <h3>Course Information</h3>
@@ -2550,6 +3212,7 @@
     <div class="view-menu">
         <button class="view-button active" onclick="switchView('tournament')">Tournament Stats</button>
         <button class="view-button" onclick="switchView('betting')">Betting Odds</button>
+        <button class="view-button" onclick="switchView('props')">Props</button>
         <button class="view-button" onclick="switchView('course')">Course Stats</button>
         <button class="view-button" onclick="switchView('showdown')">Showdown</button>
         <button class="view-button" onclick="switchView('3ball')">3-Ball Bets</button>
@@ -2684,6 +3347,8 @@
                 <select id="bettingSortSelect" onchange="onBettingSortChange()">
                     <option value="score" selected>Score (best first)</option>
                     <option value="edge">Edge (high → low)</option>
+                    <option value="925rank">925 Rank (best first)</option>
+                    <option value="projpts">Proj PTS (high → low)</option>
                     <option value="odds">Best Odds (longest)</option>
                     <option value="name">Player name</option>
                 </select>
@@ -2691,6 +3356,45 @@
             <div id="bettingMinEdgeFilter" style="display: none;" title="Only show players with edge at or above this value">
                 <label for="bettingMinEdge">Min Edge</label>
                 <input type="number" id="bettingMinEdge" step="0.1" placeholder="0" style="width: 4rem; padding: 0.25rem;" onchange="updateTable()" oninput="updateTable()">
+            </div>
+            <!-- Props view filters (PrizePicks / Underdog) -->
+            <div id="propsMarketFilter" style="display: none;" title="Filter by prop stat type">
+                <label for="propsMarketSelect">Stat</label>
+                <select id="propsMarketSelect" onchange="onPropsMarketChange()">
+                    <option value="all" selected>All stats</option>
+                    <option value="Birdies Or Better">Birdies Or Better</option>
+                    <option value="Bogeys or Worse">Bogeys or Worse</option>
+                    <option value="Fairways Hit">Fairways Hit</option>
+                    <option value="Greens In Regulation">Greens In Regulation</option>
+                    <option value="Pars">Pars</option>
+                    <option value="Round Strokes">Round Strokes</option>
+                    <option value="Strokes">Strokes</option>
+                    <option value="R3 Leaderboard Position">R3 Leaderboard Position</option>
+                    <option value="Tourney Finishing Position">Tourney Finishing Position</option>
+                    <option value="Birdies or Better Matchup">Birdies Matchup</option>
+                </select>
+            </div>
+            <div id="propsStatusFilter" style="display: none;" title="Filter by platform lines available">
+                <label for="propsPlatformSelect">Platform</label>
+                <select id="propsPlatformSelect" onchange="onPropsPlatformChange()">
+                    <option value="all" selected>PP + Underdog</option>
+                    <option value="pp">PrizePicks only</option>
+                    <option value="ud">Underdog only</option>
+                </select>
+            </div>
+            <div id="propsSortFilter" style="display: none;" title="Sort the props board">
+                <label for="propsSortSelect">Sort</label>
+                <select id="propsSortSelect" onchange="onPropsSortChange()">
+                    <option value="ev" selected>+EV % (high → low)</option>
+                    <option value="edge">Edge % (high → low)</option>
+                    <option value="player">Player name</option>
+                    <option value="stat">Stat type</option>
+                    <option value="proj">925 Rank (best first)</option>
+                </select>
+            </div>
+            <div id="propsMinEdgeFilter" style="display: none;" title="Minimum +EV % points (e.g. 2 = only legs with ≥ +2% EV)">
+                <label for="propsMinEdge">Min +EV %</label>
+                <input type="number" id="propsMinEdge" step="0.5" placeholder="0" style="width: 4rem; padding: 0.25rem;" onchange="updateTable()" oninput="updateTable()">
             </div>
             <div id="matchupSortWrap" style="display: none;" title="Sort the matchup list">
                 <label for="matchupSort">Sort by</label>
@@ -2744,21 +3448,50 @@
             <div id="bettingPlusEVFilter" style="display: none;" title="Only players with a positive model edge">
                 <label><input type="checkbox" id="showPlusEVOnly" onchange="updateTable()"> +EV only</label>
             </div>
+            <div id="propsPlusEVFilter" style="display: none;" title="Only props with positive +EV % (no-vig side &gt; 50%)">
+                <label><input type="checkbox" id="showPropsPlusEVOnly" onchange="updateTable()" checked> +EV only</label>
+            </div>
+            <div id="propsHideMatchupsFilter" style="display: none;" title="Hide head-to-head birdie matchup props">
+                <label><input type="checkbox" id="hidePropsMatchups" onchange="updateTable()" checked> Hide matchups</label>
+            </div>
+            <div id="propsLegend" style="display: none; font-size: 0.62rem; opacity: 0.7; margin-left: 0.35rem; line-height: 1.35;">
+                <strong>Edge %</strong> = no-vig side ·
+                <strong>+EV %</strong> = Edge − 50 ·
+                <span style="color:#22c55e;font-weight:600;">+EV</span> good PP leg ·
+                Line Δ = PP ≠ UD
+            </div>
             <div id="cutFocusFilter" style="display: none;" title="Highlight / focus make-cut board context">
                 <label><input type="checkbox" id="cutFocusMode" onchange="updateTable()"> Cut focus mode</label>
             </div>
         </div>
     </div>
-    <div id="loading">
-        <div>
-            <h3>Loading data...</h3>
-            <p>Please wait, this may take up to 10 seconds.</p>
-            <div class="skeleton-lines">
-                <div class="skeleton-line"></div>
-                <div class="skeleton-line"></div>
-                <div class="skeleton-line"></div>
-                <div class="skeleton-line short"></div>
+    <div id="loading" role="status" aria-live="polite" aria-busy="true" style="display:flex;">
+        <div class="loading-card">
+            <div class="loading-brand"><span class="loading-brand-dot"></span> 925 Sports</div>
+            <div class="golfer-stage" aria-hidden="true">
+                <svg class="stick-golfer" viewBox="0 0 200 140" width="190" height="133">
+                    <line class="g-ground" x1="18" y1="120" x2="182" y2="120" />
+                    <circle class="g-ball" cx="148" cy="116" r="4.2" />
+                    <g class="g-golfer">
+                        <line class="g-stroke" x1="88" y1="78" x2="73" y2="116" />
+                        <line class="g-stroke" x1="88" y1="78" x2="103" y2="116" />
+                        <line class="g-stroke" x1="88" y1="44" x2="88" y2="78" />
+                        <circle class="g-stroke-fill" cx="88" cy="31" r="11" />
+                        <line class="g-stroke" x1="77" y1="25" x2="102" y2="25" />
+                        <g class="g-swing">
+                            <line class="g-stroke" x1="88" y1="52" x2="116" y2="68" />
+                            <line class="g-club" x1="116" y1="68" x2="144" y2="111" />
+                            <line class="g-club-head" x1="139" y1="111" x2="151" y2="111" />
+                        </g>
+                        <line class="g-stroke g-arm-back" x1="88" y1="52" x2="72" y2="66" />
+                    </g>
+                    <path class="g-whoosh" d="M128 58 Q142 72 148 96" fill="none" />
+                </svg>
             </div>
+            <h3 class="loading-title">Live Golf Leaderboard</h3>
+            <p class="loading-sub">Loading tournament data</p>
+            <div class="loading-progress" aria-hidden="true"><i></i></div>
+            <p class="loading-tip" id="loadingTip">Preparing the board…</p>
         </div>
     </div>
     <div id="howToUse" class="how-to-use">
@@ -2788,6 +3521,7 @@
             <button type="button" class="toolbar-btn" id="copyCourseBlurbBtn" onclick="copyCourseBlurb()" title="Copy course profile blurb">Copy Course Blurb</button>
         </div>
     </div>
+    <div id="propsTrendsStrip" class="props-trends-strip" style="display:none;" aria-label="Course and tournament trends"></div>
     <div class="table-container">
         <table id="leaderboard" role="table">
             <thead>
@@ -2896,6 +3630,21 @@
             <div class="popup-chart-container">
                 <canvas id="matchupChart"></canvas>
             </div>
+        </div>
+    </div>
+    <div id="propsPopup" class="popup" role="dialog" aria-modal="true" aria-labelledby="propsPopupTitle">
+        <div class="popup-content props-popup-content">
+            <span class="close-popup" onclick="closePropsPopup()" title="Close">×</span>
+            <div class="props-popup-header">
+                <img id="propsPopupHeadshot" class="props-popup-headshot" alt="" />
+                <div class="props-popup-meta">
+                    <div class="props-popup-kicker">Prop detail</div>
+                    <h3 id="propsPopupTitle" class="props-popup-title">—</h3>
+                    <div id="propsPopupSub" class="props-popup-sub">—</div>
+                </div>
+                <div id="propsPopupSide" class="props-popup-side-badge">—</div>
+            </div>
+            <div id="propsPopupBody" class="props-popup-body"></div>
         </div>
     </div>
     <script>
@@ -3090,12 +3839,35 @@
         const otherBooks = bettingBookColumnsAll.filter(b => !americanBooks.includes(b));
         let currentBettingBooksFilter = 'american';
         let bettingBookColumns = [...americanBooks]; // currently visible book columns
-        const bettingBaseColumns = ['Score', 'Holes', 'TEE TIME (LOCAL)', 'Best Odds', 'Average Odds', 'Best Book', 'Edge'];
+        // 925 Rank / Proj PTS / 925 Odds are round-aware projections from Showdown model data
+        const bettingBaseColumns = ['Score', 'Holes', '925 Rank', 'Proj PTS', '925 Odds', 'Best Odds', 'Average Odds', 'Best Book', 'Edge'];
         let bettingColumns = [...bettingBaseColumns, ...bettingBookColumns];
         let currentBettingMarket = 'OUTRIGHT';
         let currentBettingSort = 'score';
+        let last925RankSource = ''; // e.g. "Model Rank (R1)" | "Win RK into RD3"
+        // Props (PrizePicks / Underdog) state
+        let propsBoardData = [];
+        let propsBoardLoadedAt = null;
+        let currentPropsStatFilter = 'all';
+        let currentPropsPlatform = 'all'; // all | pp | ud
+        let currentPropsSort = 'ev';
+        // Pre-round props board. Score lives inside the sticky PLAYER cell.
+        // Prop = one phrase: "UNDER 13.5 Greens In Regulation"
+        // Line (left of Edge %): both → Avg Line · PP only → UD Line · UD only → PP Line
+        const propsColumns = [
+            'Prop', 'Line', 'Edge %', '+EV %',
+            'Proj', 'UD Higher', 'UD Lower'
+        ];
+        // Stats where lower is better (side labeling / push heuristics)
+        const PROPS_LOWER_BETTER = new Set([
+            'strokes', 'round strokes', 'tourney finishing position',
+            'r3 leaderboard position', 'r1 leaderboard position', 'r2 leaderboard position',
+            'r4 leaderboard position', 'bogeys or worse', 'leaderboard position'
+        ]);
         let lastCourseProfile = '';
         let lastCourseBlurb = '';
+        // Field averages shared by Course Stats + Props trends strip
+        let courseFieldTrends = null;
         let cutSweatsByContest = {}; // contestKey -> parsed entries[]
         let cutSweatsSummary = {}; // contestKey -> { n, buckets, pcts }
         let cutStatusMap = null;
@@ -3448,6 +4220,8 @@
             updateHowToUse(currentView || 'tournament');
             fetchData();
             document.getElementById('tableBody').addEventListener('click', (event) => {
+                // Don't open popup when clicking the favorite star or info icon
+                if (event.target.closest('.favorite-star, .info-icon, button, a, input')) return;
                 const tr = event.target.closest('tr');
                 if (tr && tr.parentElement && tr.parentElement.id === 'tableBody') {
                     if (currentView === 'tournament' && tr.dataset.player) {
@@ -3456,6 +4230,12 @@
                         const originalIndex = tr.dataset.originalIndex;
                         const row = pivotedData[originalIndex];
                         showMatchupPopup(row);
+                    } else if (currentView === 'props') {
+                        const originalIndex = tr.dataset.originalIndex;
+                        const row = (originalIndex != null && pivotedData[originalIndex])
+                            ? pivotedData[originalIndex]
+                            : pivotedData.find(r => r.PLAYER === tr.dataset.player);
+                        if (row) showPropsPopup(row);
                     }
                 }
             });
@@ -3469,8 +4249,38 @@
                     closeMatchupPopup();
                 }
             });
+            document.getElementById('propsPopup').addEventListener('click', (event) => {
+                if (event.target === document.getElementById('propsPopup')) {
+                    closePropsPopup();
+                }
+            });
             // Keyboard nav for player popup
             document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    if (typeof guidedTourActive !== 'undefined' && guidedTourActive) {
+                        e.preventDefault();
+                        endGuidedTour();
+                        return;
+                    }
+                    const propsPop = document.getElementById('propsPopup');
+                    if (propsPop && propsPop.style.display === 'block') {
+                        e.preventDefault();
+                        closePropsPopup();
+                        return;
+                    }
+                }
+                if (typeof guidedTourActive !== 'undefined' && guidedTourActive) {
+                    if (e.key === 'ArrowRight' || e.key === 'Enter') {
+                        e.preventDefault();
+                        guidedTourNext();
+                        return;
+                    }
+                    if (e.key === 'ArrowLeft') {
+                        e.preventDefault();
+                        guidedTourPrev();
+                        return;
+                    }
+                }
                 const popup = document.getElementById('playerPopup');
                 if (!popup || popup.style.display !== 'block') return;
                 if (e.key === 'ArrowLeft') {
@@ -3515,20 +4325,36 @@
             document.getElementById('threeBallImpFilter').style.display = view === '3ball' ? 'block' : 'none';
             document.getElementById('betTypeFilter').style.display = view === 'matchup' ? 'block' : 'none';
             document.getElementById('sportsbookFilter').style.display = view === 'matchup' ? 'block' : 'none';
-            document.getElementById('playerSearchFilter').style.display = (view === 'matchup' || view === 'betting') ? 'block' : 'none';
+            document.getElementById('playerSearchFilter').style.display = (view === 'matchup' || view === 'betting' || view === 'props') ? 'block' : 'none';
             document.getElementById('correlatedBetsFilter').style.display = view === 'matchup' ? 'flex' : 'none';
             document.getElementById('bettingMarketFilter').style.display = view === 'betting' ? 'block' : 'none';
             document.getElementById('bettingBooksFilter').style.display = view === 'betting' ? 'block' : 'none';
             document.getElementById('bettingSortFilter').style.display = view === 'betting' ? 'block' : 'none';
             document.getElementById('bettingMinEdgeFilter').style.display = view === 'betting' ? 'block' : 'none';
             document.getElementById('bettingPlusEVFilter').style.display = view === 'betting' ? 'block' : 'none';
+            // Props filters
+            document.getElementById('propsMarketFilter').style.display = view === 'props' ? 'block' : 'none';
+            document.getElementById('propsStatusFilter').style.display = view === 'props' ? 'block' : 'none';
+            document.getElementById('propsSortFilter').style.display = view === 'props' ? 'block' : 'none';
+            document.getElementById('propsMinEdgeFilter').style.display = view === 'props' ? 'block' : 'none';
+            document.getElementById('propsPlusEVFilter').style.display = view === 'props' ? 'block' : 'none';
+            const hideMu = document.getElementById('propsHideMatchupsFilter');
+            if (hideMu) hideMu.style.display = view === 'props' ? 'block' : 'none';
+            document.getElementById('propsLegend').style.display = view === 'props' ? 'inline-block' : 'none';
             document.getElementById('cutFocusFilter').style.display = (view === 'tournament' || view === 'showdown' || view === 'betting') ? 'block' : 'none';
-            document.getElementById('favoritesOnlyFilter').style.display = (view === 'tournament' || view === 'showdown' || view === '3ball' || view === 'betting') ? 'block' : 'none';
+            document.getElementById('favoritesOnlyFilter').style.display = (view === 'tournament' || view === 'showdown' || view === '3ball' || view === 'betting' || view === 'props') ? 'block' : 'none';
             document.getElementById('cutSweatsContestFilter').style.display = view === 'cutsweats' ? 'block' : 'none';
             document.getElementById('cutSweatsUserFilter').style.display = view === 'cutsweats' ? 'block' : 'none';
             if (view === 'betting') {
                 applyBettingMobileDefaults();
                 updateDataTimestamp();
+            }
+            if (view === 'props') {
+                updateDataTimestamp();
+                try { renderPropsTrendsStrip(); } catch (e) { console.warn('props trends', e); }
+            } else {
+                const strip = document.getElementById('propsTrendsStrip');
+                if (strip) { strip.style.display = 'none'; strip.innerHTML = ''; }
             }
             const profileChip = document.getElementById('contextProfile');
             if (profileChip) profileChip.style.display = (view === 'course' && lastCourseProfile) ? 'inline-flex' : (lastCourseProfile ? 'inline-flex' : 'none');
@@ -3549,7 +4375,7 @@
                 const playerWrap = document.querySelector('.filter-row > div[title*="specific players"]');
                 if (playerWrap) playerWrap.style.display = '';
             }
-            if (view !== 'matchup' && view !== 'betting') {
+            if (view !== 'matchup' && view !== 'betting' && view !== 'props') {
                 playerSearchTerm = '';
                 const searchInput = document.getElementById('bettingPlayerSearch');
                 if (searchInput) searchInput.value = '';
@@ -3598,19 +4424,26 @@
             betting: {
                 title: 'How to use Betting Odds',
                 html: `
-                    <p>Compare prices across sportsbooks and find where the model sees value versus the market.</p>
+                    <p>Compare prices across sportsbooks and find where the model sees value versus the market — with a live <strong>925 projection</strong> tied to the current round.</p>
+                    <h4>925 projection (round-aware)</h4>
+                    <ul>
+                        <li><strong>925 Rank</strong> — Round 1 uses <em>Model Rank</em>; Round 2+ uses <em>Win RK Going into RD2/3/4</em> from the Showdown model.</li>
+                        <li><strong>Proj PTS</strong> — projected fantasy points for the active round (RD1–RD4 PTS).</li>
+                        <li><strong>925 Odds</strong> — American odds implied by the 925 win % when available; otherwise shows the rank as a fallback.</li>
+                        <li>Hover the 925 Rank header to see which source is active for this round.</li>
+                    </ul>
                     <h4>Core controls</h4>
                     <ul>
-                        <li><strong>Market</strong> — switch between Outright, FRL, Top 5 / 10 / 20, Made Cut, and Missed Cut.</li>
-                        <li><strong>Books</strong> — show American books only, a single book, others, or all books.</li>
-                        <li><strong>Sort</strong> — Edge (default), Score, longest odds, or player name.</li>
-                        <li><strong>Min Edge</strong> and <strong>+EV only</strong> — hide lines that don’t clear your edge threshold.</li>
-                        <li><strong>Search Player</strong> — jump to a specific golfer without leaving the board.</li>
+                        <li><strong>Market</strong> — Outright, FRL, Top 5 / 10 / 20, Made Cut, Missed Cut.</li>
+                        <li><strong>Books</strong> — American books, a single book, others, or all.</li>
+                        <li><strong>Sort</strong> — Score, Edge, <strong>925 Rank</strong>, <strong>Proj PTS</strong>, longest odds, or name.</li>
+                        <li><strong>Min Edge</strong> and <strong>+EV only</strong> — hide lines that don’t clear your threshold.</li>
+                        <li><strong>Search Player</strong> — jump to a golfer without leaving the board.</li>
                     </ul>
                     <h4>Reading the board</h4>
                     <ul>
-                        <li><strong>Best Odds</strong> and the matching book cell are highlighted for each player (based on the books you’re viewing).</li>
-                        <li><strong>Edge</strong> shows model edge vs the market; positive edges are highlighted.</li>
+                        <li>Compare <strong>925 Odds</strong> / Rank against <strong>Best Odds</strong> to spot live value.</li>
+                        <li><strong>Edge</strong> is model edge vs the market; positive edges are highlighted.</li>
                         <li>Score and thru stay visible so you can weight price against live position.</li>
                     </ul>
                     <h4>Sharing picks</h4>
@@ -3618,7 +4451,7 @@
                         <li>Use <strong>Copy Top 5 Edges</strong> for a clean text list ready for posts or notes.</li>
                         <li>Click a player to open their full card and odds tab for deeper comparison.</li>
                     </ul>
-                    <div class="how-tip"><strong>Tip:</strong> Start with American Books + Edge sort + a small Min Edge filter to surface the cleanest value list quickly.</div>
+                    <div class="how-tip"><strong>Tip:</strong> Sort by <strong>925 Rank</strong> during the round, then scan Edge — that’s the fastest path to live bets the model still likes.</div>
                 `
             },
             course: {
@@ -3739,6 +4572,35 @@
                     </ul>
                     <div class="how-tip"><strong>Tip:</strong> Start with Correlated Bets + Projected Edge sort to surface the cleanest head-to-head spots first.</div>
                 `
+            },
+            props: {
+                title: 'How to use Props (Pre-Round · PrizePicks / Underdog)',
+                html: `
+                    <p>Pre-round PrizePicks &amp; Underdog board. Edge comes from <strong>no-vig Over/Under prices</strong> (UD Higher / UD Lower), not from the feed’s line-implied proj.</p>
+                    <h4>Edge math (standard pick’em)</h4>
+                    <ul>
+                        <li>Convert UD Higher (Over) + UD Lower (Under) → implied → <strong>no-vig</strong> probabilities.</li>
+                        <li><strong>Side</strong> = the no-vig favorite (OVER or UNDER).</li>
+                        <li><strong>Edge %</strong> = no-vig % of that side (e.g. 54%).</li>
+                        <li><strong>+EV %</strong> = Edge % − 50 (e.g. +4%). Fair PrizePicks leg = 50%.</li>
+                    </ul>
+                    <h4>Push / line bumps</h4>
+                    <ul>
+                        <li>PP often posts a whole number when the .5 market is juiced (e.g. Under 9.5 at −170 → PP Under 9).</li>
+                        <li>Market no-vig Under 9.5 = P(X ≤ 9) includes the push mass P(X = 9). On PP Under 9 you only win if X ≤ 8.</li>
+                        <li>We estimate push mass ≈ 85% of the market under’s excess over 50% (clamped 3–10pp), then Edge % uses the <em>raw hit rate</em> (not renormalized) — push voids the leg, it doesn’t help you win.</li>
+                        <li>Example: market Under 55.9% → est. push ~5pp → PP Under hit ~51% → +EV ~+1% (not +5.9%).</li>
+                        <li><strong>Δ / ℗ on Side</strong> — hover for market vs PP-adjusted no-vig and push mass. Needs outcome data later to replace the heuristic.</li>
+                    </ul>
+                    <h4>Columns</h4>
+                    <ul>
+                        <li><strong>Prop</strong> — one phrase: <em>UNDER 13.5 Greens In Regulation</em> (side + primary line + stat).</li>
+                        <li><strong>Line</strong> — left of Edge %: <em>Avg Line</em> when both books selected; <em>UD Line</em> when PrizePicks-only; <em>PP Line</em> when Underdog-only.</li>
+                        <li><strong>925 Rank</strong> — Model Rank (R1) or Win RK Going Into. Context only — not the edge source.</li>
+                        <li><strong>UD Higher / Lower</strong> — raw American prices used for the no-vig calc.</li>
+                    </ul>
+                    <div class="how-tip"><strong>Tip:</strong> Sort by +EV %, leave “+EV only” on, and focus on Edge % ≥ 54% (+4% EV). Check Δ rows when comparing PP vs UD lines.</div>
+                `
             }
         };
 
@@ -3767,6 +4629,479 @@
             if (titleEl) titleEl.textContent = entry.title;
             if (contentEl) contentEl.innerHTML = entry.html;
         }
+
+        /* ========== Guided tours (overview + deep dive) ========== */
+        let guidedTourIndex = 0;
+        let guidedTourActive = false;
+        let guidedTourMode = 'overview'; // 'overview' | 'deep'
+
+        // Overview: quick map of the tool (~1 min)
+        const TOUR_OVERVIEW = [
+            {
+                title: 'Welcome to 925 Live Golf',
+                kicker: 'Overview · Start',
+                body: `<p>This is your <strong>in-tournament HQ</strong> — live scores, props, matchups, and cut tracking.</p>
+                       <p>This is the short tour. For definitions and exact workflows, use <strong>Deep dive</strong>.</p>`,
+                target: '.description',
+                view: 'tournament'
+            },
+            {
+                title: 'Course strip',
+                kicker: 'Overview',
+                body: `<p>Event context chips: designer, greens, location, scoring, weather, and current round.</p>`,
+                target: '.course-info',
+                view: 'tournament'
+            },
+            {
+                title: 'Tab navigation',
+                kicker: 'Overview',
+                body: `<p>Each button opens a different board. Pre-tournament research stays on the Fantasy Golf Hub.</p>`,
+                target: '.view-menu',
+                view: 'tournament'
+            },
+            {
+                title: 'Tournament Stats',
+                kicker: 'Overview · Tab 1',
+                body: `<p>Live leaderboard + SG. Star players, expand rows for season vs live, ℹ️ for the full popup.</p>`,
+                target: '.table-container',
+                view: 'tournament'
+            },
+            {
+                title: 'Filters & columns',
+                kicker: 'Overview · Tab 1',
+                body: `<p>These controls sit above the table: players, search, column presets, and status filters.</p>
+                       <p>On Tournament Stats, open <strong>Select Columns</strong> to show/hide SG, GIR, ownership, and more.</p>`,
+                target: '#columnFilter, #columnPresetWrap, .filter-container',
+                view: 'tournament'
+            },
+            {
+                title: 'Betting Odds',
+                kicker: 'Overview · Tab 2',
+                body: `<p>Outrights and finish markets with 925 ranks vs books. Look for positive edge vs the market.</p>`,
+                target: '.table-container',
+                view: 'betting'
+            },
+            {
+                title: 'Props board',
+                kicker: 'Overview · Tab 3',
+                body: `<p>PrizePicks / Underdog prop board. Prop column reads like a bet slip; Edge % and +EV % rank the legs.</p>`,
+                target: '.table-container',
+                view: 'props'
+            },
+            {
+                title: 'Props filters',
+                kicker: 'Overview · Tab 3',
+                body: `<p>Use <strong>Platform</strong> (PP / UD / both), stat type, sort, and <strong>+EV only</strong> to narrow value legs.</p>`,
+                target: '#propsStatusFilter, #propsMarketFilter, #propsSortFilter, #propsPlusEVFilter',
+                view: 'props'
+            },
+            {
+                title: 'Props rows & popup',
+                kicker: 'Overview · Tab 3',
+                body: `<p>Each row is a bet. Click a player row for lines, player avg, field avg, and live count for that prop.</p>`,
+                target: '#tableBody, .table-container',
+                view: 'props'
+            },
+            {
+                title: 'Course Stats',
+                kicker: 'Overview · Tab 4',
+                body: `<p>How the field is scoring this week — birdies, GIR, fairways, SG. Frame every prop line against this.</p>`,
+                target: '.table-container, .course-summary-grid',
+                view: 'course'
+            },
+            {
+                title: 'Showdown',
+                kicker: 'Overview · Tab 5',
+                body: `<p>Round model ranks / projected points. Same ranks that feed 925 Rank on Props and Betting Odds.</p>`,
+                target: '.table-container',
+                view: 'showdown'
+            },
+            {
+                title: '3-Ball Bets',
+                kicker: 'Overview · Tab 6',
+                body: `<p>Three-player groups. Filter by book; positive Edge % is the model side to stress-test.</p>`,
+                target: '.table-container',
+                view: '3ball'
+            },
+            {
+                title: 'Matchup Bets',
+                kicker: 'Overview · Tab 7',
+                body: `<p>H2H matchups. Click a row for the matchup popup and 925 bet tags.</p>`,
+                target: '.table-container',
+                view: 'matchup'
+            },
+            {
+                title: 'Cut Sweats',
+                kicker: 'Overview · Tab 8',
+                body: `<p>Bubble board — inside the cut, on the number, or sweating.</p>`,
+                target: '.table-container',
+                view: 'cutsweats'
+            },
+            {
+                title: 'You’re set',
+                kicker: 'Overview · Done',
+                body: `<p>Quick props flow: Course Stats → Props → platform + +EV sort → click a row to verify → star names to track.</p>
+                       <p>Want definitions and exact math? Run <strong>Deep dive</strong>.</p>`,
+                target: '.tour-launch-group, .description',
+                view: 'props'
+            }
+        ];
+
+        // Deep dive: purpose, definitions, practical use
+        const TOUR_DEEP = [
+            {
+                title: 'Deep dive: how to use 925 Live',
+                kicker: 'Deep dive · Start',
+                body: `<p>This walkthrough explains <strong>purpose</strong>, <strong>definitions</strong>, and <strong>how to actually bet</strong> from each board.</p>
+                       <p>Pre-tournament research (course history, long-range models) stays on the Fantasy Golf Hub. This tool is for <em>this event, this week</em>.</p>`,
+                target: '.description',
+                view: 'tournament'
+            },
+            {
+                title: 'Tournament Stats — purpose',
+                kicker: 'Deep dive · Leaderboard',
+                body: `<p><strong>Purpose:</strong> live situational awareness while the round is on.</p>
+                       <ul>
+                         <li>Who is hot (SG total / approach / putt)</li>
+                         <li>Who is through enough holes to trust the number</li>
+                         <li>Who to star for the rest of the day</li>
+                       </ul>
+                       <p><strong>Practice:</strong> sort by LIVE SG TOTAL, filter to players still on course, star 3–5 names you’ll track on Props / Matchups.</p>`,
+                target: '.table-container',
+                view: 'tournament'
+            },
+            {
+                title: 'Tournament Stats — definitions',
+                kicker: 'Deep dive · Leaderboard',
+                body: `<ul>
+                         <li><strong>Score</strong> — tournament to-par</li>
+                         <li><strong>Thru / Holes</strong> — holes completed this round (F = finished)</li>
+                         <li><strong>LIVE SG *</strong> — strokes gained vs field this round so far</li>
+                         <li><strong>GIR / FW Hit</strong> — greens &amp; fairways this round</li>
+                         <li><strong>⭐ Favorite</strong> — pins the player across boards</li>
+                       </ul>
+                       <p>Click a row to compare season SG rates vs live. ℹ️ opens scorecard + odds radar.</p>`,
+                target: '#columnFilter, .filter-container',
+                view: 'tournament'
+            },
+            {
+                title: 'Betting Odds — purpose',
+                kicker: 'Deep dive · Odds',
+                body: `<p><strong>Purpose:</strong> find finish/outright value when the model disagrees with the books.</p>
+                       <p><strong>Practice:</strong> pick a market (Outright / Top 5 / Make Cut), scan for positive edge, cross-check live form on Tournament Stats before ticketing.</p>`,
+                target: '.table-container',
+                view: 'betting'
+            },
+            {
+                title: 'Betting Odds — definitions',
+                kicker: 'Deep dive · Odds',
+                body: `<ul>
+                         <li><strong>925 Rank / odds</strong> — model projection for this event state</li>
+                         <li><strong>Book odds</strong> — market price</li>
+                         <li><strong>Edge</strong> — model probability vs market implied</li>
+                       </ul>
+                       <p>Round-aware: R1 leans Model Rank; later rounds lean “Win RK Going Into” from Showdown.</p>`,
+                target: '.table-container',
+                view: 'betting'
+            },
+            {
+                title: 'Props — purpose',
+                kicker: 'Deep dive · Props',
+                body: `<p><strong>Purpose:</strong> pre-round PrizePicks &amp; Underdog legs with a clean no-vig edge.</p>
+                       <p><strong>Practice:</strong></p>
+                       <ol>
+                         <li>Set Platform to the book you’re actually playing</li>
+                         <li>Sort by +EV % (or turn on +EV only)</li>
+                         <li>Click the row → compare player avg vs field avg vs line</li>
+                         <li>Only ticket when the story matches the number</li>
+                       </ol>`,
+                target: '.table-container',
+                view: 'props'
+            },
+            {
+                title: 'Props — Edge % defined',
+                kicker: 'Deep dive · Props',
+                body: `<p><strong>Edge %</strong> is the no-vig probability of the recommended side (OVER or UNDER).</p>
+                       <ul>
+                         <li>Built from Underdog Higher/Lower American prices when present</li>
+                         <li>Blue ≥58 · Green 54–58 · Yellow 52–53 · Red ≤52</li>
+                         <li>This is <em>not</em> the same as +EV on Underdog (juice still applies)</li>
+                       </ul>`,
+                target: '.table-container',
+                view: 'props'
+            },
+            {
+                title: 'Props — +EV % defined',
+                kicker: 'Deep dive · Props',
+                body: `<p><strong>+EV %</strong> is where the book math differs:</p>
+                       <ul>
+                         <li><strong>PrizePicks</strong> — pick’em vs 50% fair → <code>Edge % − 50</code> (e.g. 58.8 → +8.8%)</li>
+                         <li><strong>Underdog</strong> — true EV at the offered American price (often negative even with 58% no-vig)</li>
+                       </ul>
+                       <p>Book tags (PP / UD) mark which book the displayed +EV applies to. A PP +8.8% leg is not automatically a +EV UD bet.</p>`,
+                target: '.table-container',
+                view: 'props'
+            },
+            {
+                title: 'Props — platform filters',
+                kicker: 'Deep dive · Props',
+                body: `<ul>
+                         <li><strong>PP + Underdog</strong> — shows both; +EV uses PP math when a PP line exists, else UD odds EV</li>
+                         <li><strong>PrizePicks</strong> — PP lines only; Line column can show the other book for reference</li>
+                         <li><strong>Underdog</strong> — UD only; +EV is always true odds EV</li>
+                       </ul>
+                       <p>Also filter by stat (GIR, Birdies+, Fairways…), min +EV, and hide matchup props when you only want pure numbers.</p>`,
+                target: '#propsStatusFilter, #propsMarketFilter, #propsPlusEVFilter, #propsSortFilter',
+                view: 'props'
+            },
+            {
+                title: 'Props — row popup',
+                kicker: 'Deep dive · Props',
+                body: `<p>Click any props row for the detail card:</p>
+                       <ul>
+                         <li><strong>Lines</strong> — PP and UD side by side</li>
+                         <li><strong>Player avg</strong> — this event (or season rate for GIR/FW)</li>
+                         <li><strong>Field avg</strong> — live tournament average for that stat</li>
+                         <li><strong>Live</strong> — current round count / thru</li>
+                       </ul>
+                       <p>Good bet = edge number <em>and</em> averages that support the side.</p>`,
+                target: '#tableBody, .table-container',
+                view: 'props'
+            },
+            {
+                title: 'Course Stats — purpose & use',
+                kicker: 'Deep dive · Course',
+                body: `<p><strong>Purpose:</strong> know the week’s baseline before you trust a prop line.</p>
+                       <ul>
+                         <li>Field birdies+ / GIR / FW vs a posted line</li>
+                         <li>If field averages 3.2 birdies and the line is 4.5, UNDER is the market’s default lean</li>
+                         <li>Pair with wave / weather chips when morning vs afternoon differs</li>
+                       </ul>`,
+                target: '.table-container, .course-summary-grid, .props-trends-strip',
+                view: 'course'
+            },
+            {
+                title: 'Showdown — ranks that feed 925 Rank',
+                kicker: 'Deep dive · Showdown',
+                body: `<p><strong>Purpose:</strong> round-by-round model strength.</p>
+                       <ul>
+                         <li><strong>R1</strong> — Model Rank going into the event</li>
+                         <li><strong>Later rounds</strong> — Win RK Going Into that round</li>
+                       </ul>
+                       <p>Props “925 Rank” pulls from this. Low rank + supportive prop averages = stronger story.</p>`,
+                target: '.table-container',
+                view: 'showdown'
+            },
+            {
+                title: '3-Ball & Matchup — purpose',
+                kicker: 'Deep dive · H2H',
+                body: `<p><strong>3-Ball:</strong> pick the winner of a three-player group. Positive Edge % + Group FAV badge is the model side.</p>
+                       <p><strong>Matchup:</strong> head-to-head. Click the row for win % bars and the 925 recommended side.</p>
+                       <p><strong>Practice:</strong> filter to your sportsbook, require positive edge, then confirm live form on Tournament Stats.</p>`,
+                target: '.table-container',
+                view: '3ball'
+            },
+            {
+                title: 'Matchup board',
+                kicker: 'Deep dive · H2H',
+                body: `<p>Same idea as 3-ball but 1v1. Projected edge and sportsbook edge both matter — model can like a side the book already prices correctly.</p>
+                       <p>Click any matchup row for the detailed popup.</p>`,
+                target: '.table-container',
+                view: 'matchup'
+            },
+            {
+                title: 'Cut Sweats — purpose',
+                kicker: 'Deep dive · Cut',
+                body: `<p><strong>Purpose:</strong> track who is safe, on the number, or in trouble relative to the projected cut.</p>
+                       <p><strong>Practice:</strong> late Friday, filter to the bubble, cross-check holes remaining and course difficulty before Make/Miss Cut tickets.</p>`,
+                target: '.table-container',
+                view: 'cutsweats'
+            },
+            {
+                title: 'End-to-end props checklist',
+                kicker: 'Deep dive · Done',
+                body: `<ol>
+                         <li>Course Stats — is this a birdie-fest or a grind?</li>
+                         <li>Props → platform = book you’re playing</li>
+                         <li>Sort +EV · optional +EV only</li>
+                         <li>Open row → player avg vs field avg vs line</li>
+                         <li>Confirm 925 Rank / live SG if the round is on</li>
+                         <li>Star the name · ticket only when story + number agree</li>
+                       </ol>
+                       <p>Re-run <strong>Overview</strong> or <strong>Deep dive</strong> anytime from the description card.</p>`,
+                target: '.tour-launch-group, .description',
+                view: 'props'
+            }
+        ];
+
+        function getActiveTourSteps() {
+            return guidedTourMode === 'deep' ? TOUR_DEEP : TOUR_OVERVIEW;
+        }
+
+        function startGuidedTour(mode) {
+            guidedTourMode = (mode === 'deep') ? 'deep' : 'overview';
+            guidedTourIndex = 0;
+            guidedTourActive = true;
+            document.body.classList.add('tour-active');
+            const overlay = document.getElementById('tourOverlay');
+            if (overlay) {
+                overlay.classList.add('active');
+                overlay.setAttribute('aria-hidden', 'false');
+            }
+            renderGuidedTourStep();
+        }
+
+        function endGuidedTour() {
+            guidedTourActive = false;
+            document.body.classList.remove('tour-active');
+            const overlay = document.getElementById('tourOverlay');
+            if (overlay) {
+                overlay.classList.remove('active');
+                overlay.setAttribute('aria-hidden', 'true');
+            }
+            const spot = document.getElementById('tourSpotlight');
+            if (spot) spot.style.cssText = '';
+            try { if (typeof closePropsPopup === 'function') closePropsPopup(); } catch (e) {}
+        }
+
+        function guidedTourNext() {
+            const steps = getActiveTourSteps();
+            if (guidedTourIndex >= steps.length - 1) {
+                endGuidedTour();
+                return;
+            }
+            guidedTourIndex += 1;
+            renderGuidedTourStep();
+        }
+
+        function guidedTourPrev() {
+            if (guidedTourIndex <= 0) return;
+            guidedTourIndex -= 1;
+            renderGuidedTourStep();
+        }
+
+        function renderGuidedTourStep() {
+            if (!guidedTourActive) return;
+            const steps = getActiveTourSteps();
+            const step = steps[guidedTourIndex];
+            if (!step) return;
+
+            if (step.view && typeof switchView === 'function') {
+                if (currentView !== step.view) switchView(step.view);
+            }
+
+            const kicker = document.getElementById('tourCardKicker');
+            const title = document.getElementById('tourCardTitle');
+            const body = document.getElementById('tourCardBody');
+            const progress = document.getElementById('tourProgress');
+            const nextBtn = document.getElementById('tourNextBtn');
+            const prevBtn = document.getElementById('tourPrevBtn');
+            if (kicker) kicker.textContent = step.kicker || (guidedTourMode === 'deep' ? 'Deep dive' : 'Overview');
+            if (title) title.textContent = step.title || '';
+            if (body) body.innerHTML = step.body || '';
+            if (progress) progress.textContent = `${guidedTourIndex + 1} / ${steps.length}`;
+            if (nextBtn) nextBtn.textContent = guidedTourIndex >= steps.length - 1 ? 'Finish' : 'Next';
+            if (prevBtn) prevBtn.disabled = guidedTourIndex <= 0;
+
+            // Longer delay so filters/table from switchView are painted
+            requestAnimationFrame(() => {
+                setTimeout(() => positionTourChrome(step), 180);
+            });
+        }
+
+        function positionTourChrome(step) {
+            const spot = document.getElementById('tourSpotlight');
+            const card = document.getElementById('tourCard');
+            if (!spot || !card) return;
+
+            let el = null;
+            if (step.target) {
+                const selectors = String(step.target).split(',').map(s => s.trim());
+                for (const sel of selectors) {
+                    let candidate = document.querySelector(sel);
+                    if (!candidate) continue;
+                    // Prefer visible parent wrapper for form controls
+                    if (candidate.matches && candidate.matches('select, input, button') && candidate.parentElement) {
+                        const parent = candidate.parentElement;
+                        const ps = window.getComputedStyle(parent);
+                        if (ps.display !== 'none') candidate = parent;
+                    }
+                    const style = window.getComputedStyle(candidate);
+                    if (style.display === 'none' || style.visibility === 'hidden') continue;
+                    const r = candidate.getBoundingClientRect();
+                    if (r.width < 2 && r.height < 2) continue;
+                    el = candidate;
+                    break;
+                }
+            }
+
+            // Multi-target union box for filter groups (props filters)
+            if (step.target && String(step.target).includes('#props')) {
+                const boxes = [];
+                String(step.target).split(',').map(s => s.trim()).forEach(sel => {
+                    if (!sel.startsWith('#props')) return;
+                    const n = document.querySelector(sel);
+                    if (!n) return;
+                    const st = window.getComputedStyle(n);
+                    if (st.display === 'none') return;
+                    const r = n.getBoundingClientRect();
+                    if (r.width < 2 && r.height < 2) return;
+                    boxes.push(r);
+                });
+                if (boxes.length >= 2) {
+                    const top = Math.min(...boxes.map(b => b.top));
+                    const left = Math.min(...boxes.map(b => b.left));
+                    const right = Math.max(...boxes.map(b => b.right));
+                    const bottom = Math.max(...boxes.map(b => b.bottom));
+                    el = {
+                        getBoundingClientRect: () => ({ top, left, right, bottom, width: right - left, height: bottom - top }),
+                        scrollIntoView: () => window.scrollTo({ top: window.scrollY + top - 120, behavior: 'smooth' })
+                    };
+                }
+            }
+
+            const pad = 10;
+            const vw = window.innerWidth;
+            const vh = window.innerHeight;
+
+            if (el) {
+                try { el.scrollIntoView({ block: 'center', behavior: 'smooth' }); } catch (e) {}
+                // re-measure after scroll
+                setTimeout(() => {
+                    const r = el.getBoundingClientRect();
+                    spot.style.display = 'block';
+                    spot.style.top = Math.max(6, r.top - pad) + 'px';
+                    spot.style.left = Math.max(6, r.left - pad) + 'px';
+                    spot.style.width = Math.min(vw - 12, r.width + pad * 2) + 'px';
+                    spot.style.height = Math.min(vh - 12, r.height + pad * 2) + 'px';
+
+                    const cardW = Math.min(400, vw - 24);
+                    let top = r.bottom + 14;
+                    let left = Math.min(Math.max(12, r.left), vw - cardW - 12);
+                    card.style.width = cardW + 'px';
+                    card.style.top = '0px';
+                    card.style.left = '0px';
+                    const ch = card.offsetHeight || 240;
+                    if (top + ch > vh - 12) top = Math.max(12, r.top - ch - 14);
+                    if (top < 12) top = Math.max(12, (vh - ch) / 2);
+                    card.style.top = top + 'px';
+                    card.style.left = left + 'px';
+                }, 80);
+            } else {
+                spot.style.display = 'none';
+                const cardW = Math.min(400, vw - 24);
+                card.style.width = cardW + 'px';
+                const ch = card.offsetHeight || 240;
+                card.style.top = Math.max(24, (vh - ch) / 2) + 'px';
+                card.style.left = Math.max(12, (vw - cardW) / 2) + 'px';
+            }
+        }
+
+        window.addEventListener('resize', () => {
+            if (!guidedTourActive) return;
+            const steps = getActiveTourSteps();
+            positionTourChrome(steps[guidedTourIndex]);
+        });
 
         function scoreToNumber(score) {
             if (score === 'E' || score === 'e') return 0;
@@ -3845,8 +5180,34 @@
             const hour12 = hours % 12 || 12;
             return `${hour12}:${String(minutes).padStart(2, '0')} ${period}${shortTz ? ' ' + shortTz : ''}`;
         }
+        let loadingTipTimer = null;
+        const LOADING_TIPS = [
+            'Fetching live leaderboard…',
+            'Syncing course & scoring trends…',
+            'Loading props and market lines…',
+            'Building player models…',
+            'Almost ready…'
+        ];
+        function startLoadingTips() {
+            const tipEl = document.getElementById('loadingTip');
+            if (!tipEl) return;
+            let i = Math.floor(Math.random() * LOADING_TIPS.length);
+            tipEl.textContent = LOADING_TIPS[i];
+            if (loadingTipTimer) clearInterval(loadingTipTimer);
+            loadingTipTimer = setInterval(() => {
+                i = (i + 1) % LOADING_TIPS.length;
+                tipEl.textContent = LOADING_TIPS[i];
+            }, 2200);
+        }
+        function stopLoadingTips() {
+            if (loadingTipTimer) {
+                clearInterval(loadingTipTimer);
+                loadingTipTimer = null;
+            }
+        }
         function fetchData() {
             document.getElementById('loading').style.display = 'flex';
+            startLoadingTips();
             const timestamp = new Date().getTime();
             const csvUrl = `https://raw.githubusercontent.com/925Sports/golf/main/tournament-stats.csv?t=${timestamp}`;
             Papa.parse(csvUrl, {
@@ -3898,9 +5259,11 @@
                     fetchHolesData();
                     fetchLiveLeaderboard();
                     fetchCheatSheetData();
+                    fetchPropsBoardData();
                     fetchRoundsData();
                     fetchCutSweatsData();
                     updateDataTimestamp();
+                    stopLoadingTips();
                     document.getElementById('loading').style.display = 'none';
                     // Deep link: #player=Name
                     const hash = decodeURIComponent(location.hash || '');
@@ -3914,6 +5277,7 @@
                 },
                 error: function(error) {
                     console.error('Error fetching CSV:', error);
+                    stopLoadingTips();
                     document.getElementById('loading').style.display = 'none';
                     document.body.innerHTML += '<p style="text-align:center;color:red;">Failed to load leaderboard data. Please try refreshing the page.</p>';
                 }
@@ -4107,6 +5471,38 @@
                 },
                 error: function(err) {
                     console.error('Cheat sheet fetch error:', err);
+                }
+            });
+        }
+
+        function fetchPropsBoardData() {
+            const timestamp = new Date().getTime();
+            const csvUrl = `https://raw.githubusercontent.com/925Sports/pga-tour-data/refs/heads/main/data/props_board.csv?t=${timestamp}`;
+            Papa.parse(csvUrl, {
+                download: true,
+                header: true,
+                skipEmptyLines: true,
+                complete: function(results) {
+                    propsBoardData = (results.data || []).filter(r => r.player_name || r.PLAYER || r.Player);
+                    propsBoardLoadedAt = new Date();
+                    console.log('Props board loaded:', propsBoardData.length, 'rows');
+                    // Populate stat filter options from data
+                    try {
+                        const sel = document.getElementById('propsMarketSelect');
+                        if (sel && propsBoardData.length) {
+                            const types = [...new Set(propsBoardData.map(r => String(r.stat_type || '').trim()).filter(Boolean))]
+                                .sort((a, b) => a.localeCompare(b));
+                            const prev = sel.value || 'all';
+                            sel.innerHTML = '<option value="all">All stats</option>' +
+                                types.map(t => `<option value="${t.replace(/"/g, '&quot;')}">${t}</option>`).join('');
+                            if ([...sel.options].some(o => o.value === prev)) sel.value = prev;
+                        }
+                    } catch (e) { /* ignore */ }
+                    if (currentView === 'props') updateTable();
+                    try { updateDataTimestamp(); } catch (e) { /* ignore */ }
+                },
+                error: function(err) {
+                    console.error('Props board fetch error:', err);
                 }
             });
         }
@@ -5396,9 +6792,28 @@
             const el = document.getElementById('dataTimestamp');
             if (!el) return;
             const base = `Data as of ${dataFetchedAt.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' })}`;
-            if (currentView === 'betting' && cheatSheetLoadedAt) {
-                const oddsTime = cheatSheetLoadedAt.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' });
-                el.textContent = `${base} · Odds as of ${oddsTime}`;
+            if (currentView === 'betting') {
+                const bits = [base];
+                if (cheatSheetLoadedAt) {
+                    const oddsTime = cheatSheetLoadedAt.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' });
+                    bits.push(`Odds as of ${oddsTime}`);
+                }
+                // Surface which 925 rank source is active for this round
+                try {
+                    const src = last925RankSource || get925Projection({}).source;
+                    const rd = getCurrentTournamentRound();
+                    if (src) bits.push(`925 Rank: ${src} · R${rd}`);
+                } catch (e) { /* ignore */ }
+                el.textContent = bits.join(' · ');
+            } else if (currentView === 'props') {
+                const bits = [base];
+                if (propsBoardLoadedAt) {
+                    const t = propsBoardLoadedAt.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' });
+                    bits.push(`Props as of ${t}`);
+                }
+                bits.push(`${(propsBoardData || []).length} lines`);
+                try { bits.push(`R${getCurrentTournamentRound()}`); } catch (e) { /* ignore */ }
+                el.textContent = bits.join(' · ');
             } else {
                 el.textContent = base;
             }
@@ -5428,6 +6843,7 @@
             else if (currentView === 'showdown') displayColumns = [...fixedColumns, 'ODDS', ...showdownColumnsByRound[selectedRound], ...selectedExtraColumns];
             else if (currentView === '3ball') displayColumns = threeBallLayout === 'table' ? [...fixedColumns, ...threeBallTableColumns] : [...fixedColumns, ...threeBallColumns];
             else if (currentView === 'betting') displayColumns = [...fixedColumns, ...bettingColumns];
+            else if (currentView === 'props') displayColumns = [...fixedColumns, ...propsColumns];
             else displayColumns = matchupColumns;
             const headers = displayColumns.filter(c => c !== 'Favorite');
             const lines = [headers.join(',')];
@@ -5454,6 +6870,7 @@
             else if (currentView === 'showdown') displayColumns = [...fixedColumns, 'ODDS', ...showdownColumnsByRound[selectedRound], ...selectedExtraColumns];
             else if (currentView === '3ball') displayColumns = threeBallLayout === 'table' ? [...fixedColumns, ...threeBallTableColumns] : [...fixedColumns, ...threeBallColumns];
             else if (currentView === 'betting') displayColumns = [...fixedColumns, ...bettingColumns];
+            else if (currentView === 'props') displayColumns = [...fixedColumns, ...propsColumns];
             else displayColumns = matchupColumns;
             const headers = displayColumns.filter(c => c !== 'Favorite');
             const lines = [headers.join('\t')];
@@ -5477,6 +6894,907 @@
             updateTable();
         }
 
+        /** Detect current tournament round from leaderboard data (1–4). */
+        function getCurrentTournamentRound() {
+            // Prefer selectedRound when already set from data load / Showdown control
+            const fromSel = parseInt(selectedRound, 10);
+            if (!isNaN(fromSel) && fromSel >= 1 && fromSel <= 4) return fromSel;
+            const sample = (rawData || []).find(r => r.ROUND || r.Round);
+            const n = parseInt(sample && (sample.ROUND || sample.Round), 10);
+            if (!isNaN(n) && n >= 1 && n <= 4) return n;
+            return 1;
+        }
+
+        /**
+         * Round-aware 925 projection from Showdown model fields.
+         * R1 → Model Rank + RD1 PTS
+         * R2+ → Win RK Going into RD{n} + corresponding Proj PTS
+         */
+        /**
+         * Which round is this player going into / currently playing?
+         * Prefer live thru + tournament ROUND; fall back to field round.
+         */
+        function getPlayerGoingIntoRound(tRow, liveRow) {
+            const fieldRd = getCurrentTournamentRound();
+            const live = liveRow || {};
+            const row = tRow || {};
+            // Explicit round on live/tournament row
+            const fromLive = parseInt(live.Round || live.ROUND || row.ROUND || row.Round, 10);
+            if (!isNaN(fromLive) && fromLive >= 1 && fromLive <= 4) return fromLive;
+            // Infer from holes completed across rounds via hole-by-hole if needed
+            const thru = String(live.Thru || live.Holes || live.THRU || row.Holes || row.THRU || row.Thru || '').toUpperCase().trim();
+            // If field is R3+ and player has no thru yet, they may still be on prior round — use field
+            return fieldRd;
+        }
+
+        /**
+         * Round-aware 925 rank from Showdown model fields.
+         * R1 → Model Rank · R2+ → Win RK Going into RD{n}
+         * Optional roundOverride: per-player going-into round.
+         */
+        function get925Projection(tRow, roundOverride) {
+            const empty = { rank: null, pts: null, source: '—', rankLabel: '925 Rank', round: null };
+            if (!tRow) return empty;
+            const rd = (roundOverride != null && !isNaN(roundOverride))
+                ? roundOverride
+                : getCurrentTournamentRound();
+
+            const parseRank = (v) => {
+                if (v === undefined || v === null || v === '' || v === '-') return null;
+                const n = parseFloat(String(v).replace(/[^\d.-]/g, ''));
+                return isNaN(n) || n <= 0 ? null : n;
+            };
+            const parsePts = (v) => {
+                if (v === undefined || v === null || v === '' || v === '-') return null;
+                const n = parseFloat(v);
+                return isNaN(n) ? null : n;
+            };
+
+            // Model Rank: prefer uppercase MODEL RANK, fall back to mixed-case
+            const modelRank = parseRank(tRow['MODEL RANK'] ?? tRow['Model Rank'] ?? tRow['R1 RANK']);
+
+            if (rd <= 1) {
+                return {
+                    rank: modelRank,
+                    pts: parsePts(tRow['RD1 PTS']),
+                    source: 'Model Rank (R1)',
+                    rankLabel: 'Model Rank',
+                    round: 1
+                };
+            }
+            if (rd === 2) {
+                return {
+                    rank: parseRank(tRow['Win RK Going into RD2']) ?? modelRank,
+                    pts: parsePts(tRow['RD2 PTS']),
+                    source: 'Win RK into RD2',
+                    rankLabel: 'Win RK → R2',
+                    round: 2
+                };
+            }
+            if (rd === 3) {
+                return {
+                    rank: parseRank(tRow['Win RK Going into RD3']) ?? modelRank,
+                    pts: parsePts(tRow['RD3 PTS']),
+                    source: 'Win RK into RD3',
+                    rankLabel: 'Win RK → R3',
+                    round: 3
+                };
+            }
+            // Round 4+
+            return {
+                rank: parseRank(tRow['Win RK Going into RD4']) ?? modelRank,
+                pts: parsePts(tRow['RD 4 PTS'] ?? tRow['RD4 PTS']),
+                source: 'Win RK into RD4',
+                rankLabel: 'Win RK → R4',
+                round: 4
+            };
+        }
+
+        /** Convert a win probability (0–100 or 0–1) to American odds string. */
+        function winPctToAmerican(pct) {
+            if (pct == null || isNaN(pct)) return null;
+            let p = Number(pct);
+            if (p > 1) p = p / 100; // was percent
+            if (p <= 0 || p >= 1) return null;
+            if (p >= 0.5) {
+                const a = Math.round((-100 * p) / (1 - p));
+                return String(a);
+            }
+            const a = Math.round((100 * (1 - p)) / p);
+            return '+' + a;
+        }
+
+        /** Pull 925 win % from tournament-stats row when present. */
+        function get925WinPct(tRow, market) {
+            if (!tRow) return null;
+            // Prefer market-specific model % when available; fall back to outright win %
+            const candidates = [];
+            if (market === 'TOP5' || market === 'TOP10' || market === 'TOP20') {
+                candidates.push(tRow['925 TOP 10 %'], tRow['TOP 10 %'], tRow['Top 5 %'], tRow['Top 10 %'], tRow['Top 20 %']);
+            }
+            if (market === 'MADE_CUT') {
+                candidates.push(tRow['Make Cut %'], tRow['MAKE CUT %']);
+            }
+            candidates.push(tRow['925 WIN %'], tRow['WIN %'], tRow['Win %']);
+            for (const c of candidates) {
+                if (c === undefined || c === null || c === '' || c === '-') continue;
+                const n = parseFloat(String(c).replace('%', ''));
+                if (!isNaN(n) && n > 0) return n > 1 ? n : n * 100; // normalize to percent
+            }
+            return null;
+        }
+
+        function onPropsMarketChange() {
+            const sel = document.getElementById('propsMarketSelect');
+            if (sel) currentPropsStatFilter = sel.value || 'all';
+            updateTable();
+        }
+        function onPropsPlatformChange() {
+            const sel = document.getElementById('propsPlatformSelect');
+            if (sel) currentPropsPlatform = sel.value || 'all';
+            updateTable();
+        }
+        function onPropsSortChange() {
+            const sel = document.getElementById('propsSortSelect');
+            if (sel) currentPropsSort = sel.value || 'edge';
+            updateTable();
+        }
+
+        function normalizePropStat(stat) {
+            return String(stat || '').toLowerCase().replace(/\s+/g, ' ').trim();
+        }
+        function isLowerBetterProp(stat) {
+            const s = normalizePropStat(stat);
+            if (PROPS_LOWER_BETTER.has(s)) return true;
+            if (s.includes('leaderboard position') || s.includes('finishing position')) return true;
+            if (s.includes('strokes') || s.includes('bogey')) return true;
+            return false;
+        }
+        function parsePropNum(v) {
+            if (v === undefined || v === null || v === '') return null;
+            const n = parseFloat(String(v).replace(/[^\d.+-]/g, ''));
+            return isNaN(n) ? null : n;
+        }
+
+        /** American odds → implied probability (0–1). */
+        function americanToImplied(american) {
+            const a = parseFloat(american);
+            if (isNaN(a) || a === 0) return null;
+            if (a > 0) return 100 / (a + 100);
+            return Math.abs(a) / (Math.abs(a) + 100);
+        }
+
+        /**
+         * No-vig Over / Under from UD Higher (over) + UD Lower (under) American prices.
+         * Returns probabilities 0–1 and the favored side.
+         */
+        function noVigFromUdPrices(higherAmerican, lowerAmerican) {
+            const impOver = americanToImplied(higherAmerican);
+            const impUnder = americanToImplied(lowerAmerican);
+            if (impOver == null || impUnder == null) return null;
+            const total = impOver + impUnder;
+            if (total <= 0) return null;
+            const over = impOver / total;
+            const under = impUnder / total;
+            const favSide = over >= under ? 'OVER' : 'UNDER';
+            const favProb = Math.max(over, under);
+            return { over, under, favSide, favProb, impOver, impUnder, vig: total - 1 };
+        }
+
+        /**
+         * PrizePicks edge vs 50% fair pick'em.
+         * Edge % = no-vig probability the recommended side HITS (e.g. 54).
+         * +EV % = Edge % − 50 (e.g. 4).
+         *
+         * Push / line-bump (the important case):
+         * PP often takes a juiced .5 market (e.g. Under 9.5 at −170) and posts a whole
+         * number (Under 9). Market no-vig Under 9.5 = P(X ≤ 9) includes the push mass
+         * P(X = 9). On PP Under 9 you only win if X ≤ 8, so the true hit rate is lower.
+         *
+         * Heuristic (until we have outcome distributions):
+         *   pushMass ≈ clamp((marketUnder − 0.50) * 0.85, 0.03, 0.10)
+         *   underHit ≈ marketUnder − pushMass   // ≈ 51% when market under is ~56%
+         *   overHit  ≈ marketOver               // same threshold as Over 9.5 (≥ 10)
+         * Use RAW hit rate (not renormalized) — push voids the leg, it doesn't help you win.
+         */
+        function americanToDecimal(american) {
+            const a = parseFloat(american);
+            if (isNaN(a) || a === 0) return null;
+            if (a > 0) return 1 + a / 100;
+            return 1 + 100 / Math.abs(a);
+        }
+
+        /**
+         * platform: 'all' | 'pp' | 'ud'
+         * Edge % = no-vig probability of recommended side (always).
+         * +EV %:
+         *   PP / both → Edge % − 50  (pick'em fair)
+         *   UD only  → true EV at the offered American price:
+         *              no_vig_prob * decimal_odds − 1
+         *              (so −170 on a 59.8% side is roughly −EV, not +9.8%)
+         */
+        function computePropsNoVigEdge(ppLine, udLine, higherAmerican, lowerAmerican, platform) {
+            const nv = noVigFromUdPrices(higherAmerican, lowerAmerican);
+            if (!nv) return null;
+
+            let overProb = nv.over;   // 0–1, market no-vig Over
+            let underProb = nv.under; // 0–1, market no-vig Under
+            let pushMass = 0;
+            let adjusted = false;
+
+            const pp = ppLine != null && !isNaN(ppLine) ? ppLine : null;
+            const ud = udLine != null && !isNaN(udLine) ? udLine : null;
+            const lineDiff = (pp != null && ud != null && Math.abs(pp - ud) > 0.05);
+            const ppIsInteger = (pp != null && Math.abs(pp - Math.round(pp)) < 0.05);
+            const udIsHalf = (ud != null && Math.abs(ud * 2 - Math.round(ud * 2)) < 0.05 && Math.abs(ud - Math.round(ud)) > 0.05);
+
+            // Push / line-bump adjustments only matter for PrizePicks pricing
+            if (platform !== 'ud') {
+                if (ppIsInteger && udIsHalf && lineDiff && Math.abs(pp - ud) < 0.55) {
+                    if (pp < ud - 0.05) {
+                        const excess = Math.max(0, underProb - 0.5);
+                        pushMass = Math.min(0.10, Math.max(0.03, excess * 0.85));
+                        underProb = Math.max(0.50, underProb - pushMass);
+                        adjusted = true;
+                    } else if (pp > ud + 0.05) {
+                        const excess = Math.max(0, overProb - 0.5);
+                        pushMass = Math.min(0.10, Math.max(0.03, excess * 0.85));
+                        overProb = Math.max(0.50, overProb - pushMass);
+                        adjusted = true;
+                    }
+                } else if (ppIsInteger && !udIsHalf) {
+                    overProb = 0.5 + (overProb - 0.5) * 0.9;
+                    underProb = 0.5 + (underProb - 0.5) * 0.9;
+                    adjusted = true;
+                } else if (lineDiff && pp != null && ud != null) {
+                    const delta = pp - ud;
+                    if (delta > 0.05) {
+                        overProb = 0.5 + (overProb - 0.5) * 0.75;
+                        underProb = Math.min(0.65, underProb + 0.015);
+                    } else if (delta < -0.05) {
+                        underProb = 0.5 + (underProb - 0.5) * 0.75;
+                        overProb = Math.min(0.65, overProb + 0.015);
+                    }
+                    adjusted = true;
+                }
+            }
+
+            const side = overProb >= underProb ? 'OVER' : 'UNDER';
+            const edgeProb = Math.max(overProb, underProb);
+            const edgePct = edgeProb * 100;
+
+            // PrizePicks-style pick'em EV (fair = 50%)
+            const ppPlusEv = edgePct - 50;
+
+            // Underdog-style EV at the actual offered price on the recommended side
+            const offeredAmerican = side === 'OVER' ? higherAmerican : lowerAmerican;
+            const offeredImplied = americanToImplied(offeredAmerican);
+            const offeredDecimal = americanToDecimal(offeredAmerican);
+            let udPlusEv = null;
+            if (offeredDecimal != null && edgeProb != null) {
+                udPlusEv = (edgeProb * offeredDecimal - 1) * 100;
+            }
+
+            // Which +EV to surface:
+            //  - UD filter  → always true odds EV
+            //  - PP filter  → always pick'em EV
+            //  - Both       → pick'em only when a PP line exists; pure UD props use odds EV
+            //    (so UD-only "60% edge" rows don't fake +10% EV when you can only bet them on UD)
+            const hasPP = pp != null;
+            let plusEv;
+            let evMode;
+            if (platform === 'ud') {
+                plusEv = udPlusEv;
+                evMode = 'ud_odds';
+            } else if (platform === 'pp') {
+                plusEv = ppPlusEv;
+                evMode = 'pp_pickem';
+            } else if (hasPP) {
+                plusEv = ppPlusEv;
+                evMode = 'pp_pickem';
+            } else {
+                plusEv = udPlusEv;
+                evMode = 'ud_odds';
+            }
+
+            return {
+                side,
+                edgePct,
+                plusEv,
+                ppPlusEv,
+                udPlusEv,
+                evMode,
+                offeredAmerican,
+                offeredImplied: offeredImplied != null ? offeredImplied * 100 : null,
+                overPct: overProb * 100,
+                underPct: underProb * 100,
+                marketOverPct: nv.over * 100,
+                marketUnderPct: nv.under * 100,
+                pushMassPct: pushMass * 100,
+                lineDiff,
+                ppIsInteger,
+                pushRisk: ppIsInteger && platform !== 'ud',
+                adjusted,
+                udValueSpot: lineDiff
+            };
+        }
+
+        /** Aggregate hole-by-hole counts for the active round for a player. */
+        function getLiveHoleStats(playerName) {
+            const out = {
+                birdies: 0, pars: 0, bogeys: 0, holes: 0,
+                roundStrokes: null, roundToPar: null, found: false
+            };
+            if (!holeByHoleData || !holeByHoleData.length) return out;
+            const key = normalizeName(playerName);
+            const rd = getCurrentTournamentRound();
+            const rows = holeByHoleData.filter(r => {
+                const nm = r.Player || r.PLAYER || r['Player Name'];
+                if (!nm || normalizeName(nm) !== key) return false;
+                const rrd = parseInt(r.Round || r.ROUND || '', 10);
+                return !isNaN(rrd) ? rrd === rd : true;
+            });
+            if (!rows.length) return out;
+            out.found = true;
+            rows.forEach(r => {
+                out.holes += 1;
+                const st = String(r['Score Type'] || r.ScoreType || '').toLowerCase();
+                if (st.includes('birdie') || st.includes('eagle') || st.includes('albatross') || st.includes('double eagle')) {
+                    out.birdies += 1;
+                } else if (st === 'par') {
+                    out.pars += 1;
+                } else if (st.includes('bogey') || st.includes('double') || st.includes('triple') || st.includes('quad')) {
+                    out.bogeys += 1;
+                }
+                const rs = parseFloat(r['Round Score'] || r.RoundScore);
+                if (!isNaN(rs) && rs > 30 && rs < 120) out.roundStrokes = rs;
+                const rtp = parsePropNum(r['Round To Par'] || r['ROUND TO PAR']);
+                if (rtp != null) out.roundToPar = rtp;
+            });
+            return out;
+        }
+
+        /** Map a prop stat_type to current live value + pace context. */
+        function getPropLiveSnapshot(playerName, statType, tRow, liveRow) {
+            const stat = normalizePropStat(statType);
+            const hole = getLiveHoleStats(playerName);
+            const thruRaw = String(
+                liveRow.Thru || liveRow.Holes || liveRow.THRU ||
+                tRow.Holes || tRow.THRU || tRow.Thru || ''
+            ).trim();
+            const thruUp = thruRaw.toUpperCase();
+            let holesPlayed = hole.holes || 0;
+            if (!holesPlayed) {
+                if (thruUp === 'F' || thruUp === '18') holesPlayed = 18;
+                else {
+                    const n = parseInt(thruRaw, 10);
+                    if (!isNaN(n) && n >= 1 && n <= 18) holesPlayed = n;
+                }
+            }
+            const place = liveRow['Current Pos'] || liveRow.Pos || liveRow.Place ||
+                tRow['CURRENT PLACE'] || tRow.Place || null;
+            const placeNum = parsePlaceNum(place);
+            const score = liveRow['Current Score'] || liveRow.Score || tRow.Score || null;
+            const scoreNum = scoreToNumber(score);
+
+            const snap = {
+                live: null,
+                liveLabel: '—',
+                holesPlayed,
+                thru: thruRaw || '—',
+                score: score != null && score !== '' ? score : '—',
+                place: place != null && place !== '' ? place : '—',
+                placeNum,
+                scoreNum: isNaN(scoreNum) ? null : scoreNum
+            };
+
+            // Birdies Or Better (and matchup variant)
+            if (stat.includes('birdie')) {
+                if (hole.found) {
+                    snap.live = hole.birdies;
+                    snap.liveLabel = String(hole.birdies);
+                }
+                return snap;
+            }
+            if (stat.includes('bogey')) {
+                if (hole.found) {
+                    snap.live = hole.bogeys;
+                    snap.liveLabel = String(hole.bogeys);
+                }
+                return snap;
+            }
+            if (stat === 'pars' || stat.startsWith('par')) {
+                if (hole.found) {
+                    snap.live = hole.pars;
+                    snap.liveLabel = String(hole.pars);
+                }
+                return snap;
+            }
+            if (stat.includes('fairway')) {
+                const fw = parsePropNum(tRow['LIVE FAIRWAYS HIT'] ?? liveRow['Fairways'] ?? liveRow['FW']);
+                if (fw != null) {
+                    snap.live = fw;
+                    snap.liveLabel = Number.isInteger(fw) ? String(fw) : fw.toFixed(1);
+                }
+                return snap;
+            }
+            if (stat.includes('green') || stat.includes('gir')) {
+                const gir = parsePropNum(tRow['LIVE GIRS HIT'] ?? liveRow['GIR'] ?? liveRow['Greens']);
+                if (gir != null) {
+                    snap.live = gir;
+                    snap.liveLabel = Number.isInteger(gir) ? String(gir) : gir.toFixed(1);
+                }
+                return snap;
+            }
+            if (stat.includes('round strokes') || stat === 'strokes') {
+                // Prefer hole-level round score, else derive from to-par if we know par is ~72
+                if (hole.roundStrokes != null) {
+                    snap.live = hole.roundStrokes;
+                    snap.liveLabel = String(hole.roundStrokes);
+                } else if (hole.roundToPar != null) {
+                    // incomplete round — show running to-par as context
+                    snap.live = hole.roundToPar;
+                    snap.liveLabel = (hole.roundToPar === 0 ? 'E' : (hole.roundToPar > 0 ? '+' + hole.roundToPar : String(hole.roundToPar))) + ' (run)';
+                } else if (!isNaN(scoreNum) && (thruUp === 'F' || holesPlayed >= 18)) {
+                    // finished — score is tournament to-par; for single-round props less useful mid-event
+                    snap.liveLabel = String(score);
+                }
+                return snap;
+            }
+            if (stat.includes('leaderboard position') || stat.includes('finishing position')) {
+                if (placeNum != null) {
+                    snap.live = placeNum;
+                    snap.liveLabel = String(place).replace(/\s+/g, '');
+                } else if (place) {
+                    snap.liveLabel = String(place);
+                }
+                return snap;
+            }
+            return snap;
+        }
+
+        /**
+         * Pace vs line given holes played.
+         * For counting stats: expected = line * (holes/18); compare live count.
+         * For position/strokes: use simple over/under vs line when live exists.
+         */
+        function computePropPace(statType, line, live, holesPlayed) {
+            if (live == null || line == null || isNaN(live) || isNaN(line)) {
+                return { key: 'na', label: '—', score: 0 };
+            }
+            const stat = normalizePropStat(statType);
+            const lowerBetter = isLowerBetterProp(statType);
+            const hp = holesPlayed > 0 ? holesPlayed : null;
+
+            // Position props — live place vs line
+            if (stat.includes('leaderboard') || stat.includes('finishing')) {
+                const diff = live - line; // negative = better than line for lower-better
+                if (Math.abs(diff) < 0.5) return { key: 'on', label: 'ON PACE', score: 0 };
+                if (diff < 0) return { key: 'over', label: 'BEATING', score: 1 }; // better place
+                return { key: 'under', label: 'BEHIND', score: -1 };
+            }
+
+            // Full-round counting stats with holes played
+            if (hp != null && hp > 0 && hp < 18 && !stat.includes('stroke')) {
+                const expected = line * (hp / 18);
+                const diff = live - expected;
+                const tol = Math.max(0.35, line * 0.08);
+                if (Math.abs(diff) <= tol) return { key: 'on', label: 'ON PACE', score: 0 };
+                if (lowerBetter) {
+                    // below expected count is good for bogeys
+                    if (diff < 0) return { key: 'over', label: 'UNDER pace', score: 1 };
+                    return { key: 'under', label: 'OVER pace', score: -1 };
+                }
+                // higher-better (birdies, GIR, FW, pars)
+                if (diff > 0) return { key: 'over', label: 'OVER pace', score: 1 };
+                return { key: 'under', label: 'UNDER pace', score: -1 };
+            }
+
+            // Completed or no thru — compare live total to line
+            const diff = live - line;
+            const tol = 0.25;
+            if (Math.abs(diff) <= tol) return { key: 'on', label: 'ON LINE', score: 0 };
+            if (lowerBetter) {
+                if (diff < 0) return { key: 'over', label: 'UNDER', score: 1 };
+                return { key: 'under', label: 'OVER', score: -1 };
+            }
+            if (diff > 0) return { key: 'over', label: 'OVER', score: 1 };
+            return { key: 'under', label: 'UNDER', score: -1 };
+        }
+
+        /**
+         * Build / refresh field averages for the Props trends strip.
+         * Prefer values already computed by Course Stats; otherwise derive a light version.
+         */
+        function ensureCourseFieldTrends() {
+            if (courseFieldTrends && courseFieldTrends.fieldBob != null) return courseFieldTrends;
+
+            const mean = (arr) => {
+                const a = (arr || []).filter(v => v != null && !isNaN(v));
+                return a.length ? a.reduce((x, y) => x + y, 0) / a.length : null;
+            };
+            const num = (row, keys) => {
+                for (const k of keys) {
+                    if (row[k] === undefined || row[k] === null || row[k] === '') continue;
+                    const v = parseFloat(row[k]);
+                    if (!isNaN(v)) return v;
+                }
+                return null;
+            };
+
+            // Scorecard per-round rates
+            const perRound = {};
+            (scorecardData || []).forEach(r => {
+                const name = r.Player || r.PLAYER;
+                if (!name) return;
+                const key = normalizeName(name);
+                if (!perRound[key]) perRound[key] = { birdies: [], eagles: [], bogeys: [], doubles: [], pars: [], scores: [] };
+                const pr = perRound[key];
+                const push = (arr, v) => { const n = parseFloat(v); if (!isNaN(n)) arr.push(n); };
+                push(pr.birdies, r.Birdies);
+                push(pr.eagles, r.Eagles);
+                push(pr.bogeys, r.Bogeys);
+                push(pr.doubles, r['Doubles+'] || r.Doubles);
+                push(pr.pars, r.Pars);
+                push(pr.scores, r.Score);
+            });
+
+            const scores = [], rds = [], bobs = [], bobPcts = [], pars = [], bogeys = [];
+            const bogeyAvoids = [], ratios = [], girs = [], girPcts = [], fws = [], fwPcts = [], sgs = [];
+
+            (rawData || []).forEach(r => {
+                if (!r.PLAYER) return;
+                const key = normalizeName(r.PLAYER);
+                const sc = scoreToNumber(r.Score);
+                if (!isNaN(sc)) scores.push(sc);
+                const sg = num(r, ['LIVE SG TOTAL']);
+                if (sg != null) sgs.push(sg);
+
+                let gir = num(r, ['LIVE GIRS HIT']);
+                let girPct = num(r, ['LIVE GIR']);
+                if (gir == null && girPct != null && girPct <= 18) { gir = girPct; girPct = (gir / 18) * 100; }
+                else if (gir == null && girPct != null && girPct > 18) gir = (girPct / 100) * 18;
+                else if (gir != null && (girPct == null || girPct <= 18)) girPct = (gir / 18) * 100;
+                if (gir != null) girs.push(gir);
+                if (girPct != null) girPcts.push(girPct);
+
+                let fw = num(r, ['LIVE FAIRWAYS HIT']);
+                let fwPct = num(r, ['LIVE ACCURACY']);
+                if (fw == null && fwPct != null && fwPct <= 14) { fw = fwPct; fwPct = (fw / 14) * 100; }
+                else if (fw == null && fwPct != null && fwPct > 14) fw = (fwPct / 100) * 14;
+                else if (fw != null && (fwPct == null || fwPct <= 14)) fwPct = (fw / 14) * 100;
+                if (fw != null) fws.push(fw);
+                if (fwPct != null) fwPcts.push(fwPct);
+
+                const pr = perRound[key];
+                if (pr) {
+                    const bob = mean(pr.birdies);
+                    const eag = mean(pr.eagles);
+                    const birdiesPlus = (bob != null || eag != null) ? (bob || 0) + (eag || 0) : null;
+                    const bg = mean(pr.bogeys);
+                    const dbl = mean(pr.doubles);
+                    const bogeysPlus = (bg != null || dbl != null) ? (bg || 0) + (dbl || 0) : null;
+                    const pPars = mean(pr.pars);
+                    const pRd = mean(pr.scores);
+                    if (birdiesPlus != null) { bobs.push(birdiesPlus); bobPcts.push((birdiesPlus / 18) * 100); }
+                    if (bogeysPlus != null) { bogeys.push(bogeysPlus); bogeyAvoids.push(((18 - bogeysPlus) / 18) * 100); }
+                    if (pPars != null) pars.push(pPars);
+                    if (pRd != null) rds.push(pRd);
+                    if (birdiesPlus != null && bogeysPlus != null && bogeysPlus > 0) ratios.push(birdiesPlus / bogeysPlus);
+                }
+            });
+
+            const fmtScore = (v) => {
+                if (v == null) return '—';
+                if (Math.abs(v) < 0.05) return 'E';
+                return v > 0 ? '+' + v.toFixed(1) : v.toFixed(1);
+            };
+
+            courseFieldTrends = {
+                fieldScore: mean(scores),
+                fieldRd: mean(rds),
+                fieldBob: mean(bobs),
+                fieldBobPct: mean(bobPcts),
+                fieldPars: mean(pars),
+                fieldBogey: mean(bogeys),
+                fieldBogeyAvoid: mean(bogeyAvoids),
+                fieldRatio: mean(ratios),
+                fieldGir: mean(girs),
+                fieldGirPct: mean(girPcts),
+                fieldFw: mean(fws),
+                fieldFwPct: mean(fwPcts),
+                fieldSg: mean(sgs),
+                wave: courseFieldTrends && courseFieldTrends.wave ? courseFieldTrends.wave : null,
+                fmtScore
+            };
+            return courseFieldTrends;
+        }
+
+        function renderPropsTrendsStrip() {
+            const el = document.getElementById('propsTrendsStrip');
+            if (!el) return;
+            if (currentView !== 'props') {
+                el.style.display = 'none';
+                el.innerHTML = '';
+                return;
+            }
+            const t = ensureCourseFieldTrends();
+            if (!t) {
+                el.style.display = 'none';
+                return;
+            }
+            const fmt = t.fmtScore || ((v) => (v == null ? '—' : v));
+            const n1 = (v, d = 1) => (v == null || isNaN(v) ? '—' : v.toFixed(d));
+            const n2 = (v) => n1(v, 2);
+            const pct = (v) => (v == null || isNaN(v) ? '—' : v.toFixed(1) + '%');
+
+            let waveHtml = '';
+            if (t.wave && t.wave.winner) {
+                const w = t.wave;
+                const fmtS = (v) => (v == null ? '—' : (Math.abs(v) < 0.05 ? 'E' : (v > 0 ? '+' + v.toFixed(2) : v.toFixed(2))));
+                waveHtml = `<div class="pts-card wave" title="Early vs Late scoring">
+                    <div class="lbl">Wave Edge (${w.scope || ''})</div>
+                    <div class="val">${w.winner}</div>
+                    <div class="sub">Early ${fmtS(w.earlyAvg)} · Rd ${n1(w.earlyRd)}<br>Late ${fmtS(w.lateAvg)} · Rd ${n1(w.lateRd)}</div>
+                </div>`;
+            }
+
+            el.innerHTML = `
+                <div class="pts-title">Course / Tournament Trends · Field averages</div>
+                <div class="pts-grid">
+                    <div class="pts-card"><div class="lbl">Field To Par</div><div class="val">${fmt(t.fieldScore)}</div></div>
+                    <div class="pts-card"><div class="lbl">Avg Rd Score</div><div class="val">${n2(t.fieldRd)}</div></div>
+                    <div class="pts-card"><div class="lbl">Birdies+ / Rd</div><div class="val">${n2(t.fieldBob)}</div></div>
+                    <div class="pts-card"><div class="lbl">Birdie+ %</div><div class="val">${pct(t.fieldBobPct)}</div></div>
+                    <div class="pts-card"><div class="lbl">Pars / Rd</div><div class="val">${n2(t.fieldPars)}</div></div>
+                    <div class="pts-card"><div class="lbl">Bogeys+ / Rd</div><div class="val">${n2(t.fieldBogey)}</div></div>
+                    <div class="pts-card"><div class="lbl">Bogey Avoid %</div><div class="val">${pct(t.fieldBogeyAvoid)}</div></div>
+                    <div class="pts-card"><div class="lbl">Birdie:Bogey</div><div class="val">${n2(t.fieldRatio)}</div></div>
+                    <div class="pts-card"><div class="lbl">GIR Avg</div><div class="val">${n1(t.fieldGir)}</div></div>
+                    <div class="pts-card"><div class="lbl">GIR %</div><div class="val">${pct(t.fieldGirPct)}</div></div>
+                    <div class="pts-card"><div class="lbl">FW Avg</div><div class="val">${n1(t.fieldFw)}</div></div>
+                    <div class="pts-card"><div class="lbl">FW %</div><div class="val">${pct(t.fieldFwPct)}</div></div>
+                    <div class="pts-card"><div class="lbl">Avg SG Total</div><div class="val">${n2(t.fieldSg)}</div></div>
+                    ${waveHtml}
+                </div>`;
+            el.style.display = 'block';
+        }
+
+        function buildPropsRows() {
+            const platform = document.getElementById('propsPlatformSelect')?.value || currentPropsPlatform || 'all';
+            currentPropsPlatform = platform;
+            const statFilter = document.getElementById('propsMarketSelect')?.value || currentPropsStatFilter || 'all';
+            currentPropsStatFilter = statFilter;
+            const hideMatchups = document.getElementById('hidePropsMatchups')?.checked !== false;
+
+            if (!propsBoardData || !propsBoardData.length) {
+                return [];
+            }
+
+            let rows = propsBoardData.map(raw => {
+                const name = raw.player_name || raw.PLAYER || raw.Player || '';
+                if (!name) return null;
+                const stat = String(raw.stat_type || '').trim();
+                if (!stat) return null;
+                const isMatchup = String(raw.is_matchup || '').toLowerCase() === 'true';
+
+                const ppLine = parsePropNum(raw.prizepicks_line);
+                const udLine = parsePropNum(raw.underdog_line);
+                // raw.proj is line-implied — ignore
+                const udHigher = parsePropNum(raw.higher_price_ud);
+                const udLower = parsePropNum(raw.lower_price_ud);
+
+                // Platform filter
+                if (platform === 'pp' && ppLine == null) return null;
+                if (platform === 'ud' && udLine == null) return null;
+
+                // Need UD two-way prices to compute no-vig edge
+                const edgeInfo = computePropsNoVigEdge(ppLine, udLine, udHigher, udLower, platform);
+
+                const tRow = (rawData || []).find(r => normalizeName(r.PLAYER) === normalizeName(name)) || {};
+                const liveRow = (typeof findLiveRow === 'function' ? findLiveRow(name) : null) || {};
+
+                // 925 Rank = Win RK Going Into (Model Rank in R1) for player round
+                const playerRd = getPlayerGoingIntoRound(tRow, liveRow);
+                const model = get925Projection(tRow, playerRd);
+                const projRank = model.rank;
+
+                const snap = getPropLiveSnapshot(name, stat, tRow, liveRow);
+
+                const fmtLine = (v) => (v == null ? '—' : (Number.isInteger(v) ? String(v) : v.toFixed(1)));
+                const fmtPrice = (v) => {
+                    if (v == null) return '—';
+                    const n = Math.round(v);
+                    return n > 0 ? '+' + n : String(n);
+                };
+                const projDisplay = projRank != null ? String(Math.round(projRank)) : '—';
+
+                // Bet (side) / Edge % / +EV %
+                let sideLabel = '—';
+                let edgePctLabel = '—';
+                let plusEvLabel = '—';
+                let edgePctNum = null;
+                let plusEvNum = null;
+                if (edgeInfo) {
+                    sideLabel = edgeInfo.side;
+                    if (edgeInfo.lineDiff) sideLabel += ' Δ';
+                    if (edgeInfo.pushRisk) sideLabel += ' ℗';
+                    edgePctNum = edgeInfo.edgePct;
+                    plusEvNum = edgeInfo.plusEv;
+                    edgePctLabel = edgePctNum.toFixed(1) + '%';
+                    plusEvLabel = (plusEvNum >= 0 ? '+' : '') + plusEvNum.toFixed(1) + '%';
+                }
+
+                // Primary line (goes inside Prop phrase — the line you're betting):
+                //   PP only → PP line · UD only → UD line · both → average
+                // Reference Line column (left of Edge %):
+                //   PP only → UD line · UD only → PP line · both → Avg Line
+                const feedAvg = parsePropNum(raw.average_line);
+                let primaryLine = null;
+                let lineVal = null;
+                let lineLabel = 'Line';
+                if (platform === 'pp') {
+                    primaryLine = ppLine;
+                    lineVal = udLine;
+                    lineLabel = 'UD Line';
+                } else if (platform === 'ud') {
+                    primaryLine = udLine;
+                    lineVal = ppLine;
+                    lineLabel = 'PP Line';
+                } else {
+                    lineLabel = 'Avg Line';
+                    if (feedAvg != null) primaryLine = feedAvg;
+                    else if (ppLine != null && udLine != null) primaryLine = (ppLine + udLine) / 2;
+                    else primaryLine = ppLine != null ? ppLine : udLine;
+                    lineVal = primaryLine;
+                }
+
+                // One readable prop phrase: "UNDER 13.5 Greens In Regulation"
+                // Book tags = which book the displayed +EV applies to (not every book that lists it).
+                // PP pick'em EV → PP only. True UD odds EV → UD only.
+                const sideWord = edgeInfo ? edgeInfo.side : '—';
+                const statLabel = stat + (isMatchup ? ' ⚔' : '');
+                const booksAvailable = [];
+                if (ppLine != null) booksAvailable.push('PP');
+                if (udLine != null) booksAvailable.push('UD');
+                const evMode = edgeInfo ? edgeInfo.evMode : null;
+                const books = [];
+                if (evMode === 'ud_odds') {
+                    if (udLine != null) books.push('UD');
+                } else if (evMode === 'pp_pickem') {
+                    if (ppLine != null) books.push('PP');
+                } else {
+                    // fallback: whatever lines exist
+                    books.push(...booksAvailable);
+                }
+                let propPhrase = sideWord;
+                if (primaryLine != null) propPhrase += ' ' + fmtLine(primaryLine);
+                if (statLabel) propPhrase += ' ' + statLabel;
+                if (platform === 'all' && books.length) propPhrase += ' · ' + books.join('/');
+                if (edgeInfo && edgeInfo.lineDiff) propPhrase += ' Δ';
+                if (edgeInfo && edgeInfo.pushRisk) propPhrase += ' ℗';
+
+                return {
+                    PLAYER: name,
+                    Favorite: favoritePlayers.includes(name),
+                    HEADSHOT: tRow.HEADSHOT || '',
+                    Prop: propPhrase,
+                    Line: fmtLine(lineVal),
+                    _books: books,
+                    _booksAvailable: booksAvailable,
+                    'Edge %': edgePctLabel,
+                    '+EV %': plusEvLabel,
+                    Proj: projDisplay,
+                    'UD Higher': fmtPrice(udHigher),
+                    'UD Lower': fmtPrice(udLower),
+                    // keep score for inline player cell
+                    Score: snap.score,
+                    Place: snap.place,
+                    _lineLabel: lineLabel,
+                    _primaryLine: primaryLine,
+                    _edgeNum: plusEvNum,          // sort / +EV filter uses +EV %
+                    _edgePct: edgePctNum,
+                    _plusEv: plusEvNum,
+                    _evMode: edgeInfo ? edgeInfo.evMode : null,
+                    _offeredAmerican: edgeInfo ? edgeInfo.offeredAmerican : null,
+                    _offeredImplied: edgeInfo ? edgeInfo.offeredImplied : null,
+                    _side: edgeInfo ? edgeInfo.side : null,
+                    _lineDiff: edgeInfo ? edgeInfo.lineDiff : false,
+                    _pushRisk: edgeInfo ? edgeInfo.pushRisk : false,
+                    _udValueSpot: edgeInfo ? edgeInfo.udValueSpot : false,
+                    _adjusted: edgeInfo ? edgeInfo.adjusted : false,
+                    _overPct: edgeInfo ? edgeInfo.overPct : null,
+                    _underPct: edgeInfo ? edgeInfo.underPct : null,
+                    _marketOverPct: edgeInfo ? edgeInfo.marketOverPct : null,
+                    _marketUnderPct: edgeInfo ? edgeInfo.marketUnderPct : null,
+                    _pushMassPct: edgeInfo ? edgeInfo.pushMassPct : null,
+                    _projNum: projRank,
+                    _projSource: model.source,
+                    _projRound: model.round || playerRd,
+                    _ppLine: ppLine,
+                    _udLine: udLine,
+                    _isMatchup: isMatchup,
+                    _stat: stat,
+                    _scoreNum: snap.scoreNum != null ? snap.scoreNum : 999
+                };
+            }).filter(Boolean);
+
+            // Filters
+            if (statFilter && statFilter !== 'all') {
+                const want = normalizePropStat(statFilter);
+                rows = rows.filter(r => normalizePropStat(r._stat) === want || normalizePropStat(r._stat).includes(want));
+            }
+            if (hideMatchups) {
+                rows = rows.filter(r => !r._isMatchup);
+            }
+            if (document.getElementById('showFavoritesOnly')?.checked) {
+                rows = rows.filter(r => r.Favorite);
+            }
+            // +EV only = positive +EV % (no-vig side > 50%)
+            if (document.getElementById('showPropsPlusEVOnly')?.checked) {
+                rows = rows.filter(r => r._plusEv != null && r._plusEv > 0);
+            }
+            const minEdgeEl = document.getElementById('propsMinEdge');
+            if (minEdgeEl && minEdgeEl.value !== '') {
+                const minE = parseFloat(minEdgeEl.value);
+                // Min filter applies to +EV % points (e.g. 2 = need ≥ +2% EV)
+                if (!isNaN(minE)) rows = rows.filter(r => r._plusEv != null && r._plusEv >= minE);
+            }
+            if (playerSearchTerm) {
+                const term = playerSearchTerm.toLowerCase().trim();
+                const words = term.split(/\s+/).filter(Boolean);
+                rows = rows.filter(r => {
+                    const n = (r.PLAYER || '').toLowerCase();
+                    return words.every(w => n.includes(w)) || n.includes(term);
+                });
+            }
+            if (selectedPlayers.length && !selectedPlayers.includes('__ALL__')) {
+                const set = new Set(selectedPlayers.map(normalizeName));
+                if (set.size) rows = rows.filter(r => set.has(normalizeName(r.PLAYER)));
+            }
+
+            // Platform nuance: when filtering UD only, prefer line-diff spots (true UD value)
+            // (still show all UD rows; just sort line-diff higher below)
+
+            const sortMode = document.getElementById('propsSortSelect')?.value || currentPropsSort || 'ev';
+            currentPropsSort = sortMode;
+            rows.sort((a, b) => {
+                if (sortMode === 'player') return String(a.PLAYER).localeCompare(String(b.PLAYER));
+                if (sortMode === 'stat') {
+                    const c = String(a._stat).localeCompare(String(b._stat));
+                    if (c) return c;
+                    return String(a.PLAYER).localeCompare(String(b.PLAYER));
+                }
+                if (sortMode === 'proj') {
+                    // best rank first (lower number)
+                    const ap = a._projNum, bp = b._projNum;
+                    if (ap == null && bp == null) return 0;
+                    if (ap == null) return 1;
+                    if (bp == null) return -1;
+                    return ap - bp;
+                }
+                if (sortMode === 'edge') {
+                    const ae = a._edgePct, be = b._edgePct;
+                    if (ae == null && be == null) return 0;
+                    if (ae == null) return 1;
+                    if (be == null) return -1;
+                    if (be !== ae) return be - ae;
+                    return String(a.PLAYER).localeCompare(String(b.PLAYER));
+                }
+                // default: +EV % high → low
+                const ae = a._plusEv, be = b._plusEv;
+                if (ae == null && be == null) return String(a.PLAYER).localeCompare(String(b.PLAYER));
+                if (ae == null) return 1;
+                if (be == null) return -1;
+                if (be !== ae) return be - ae;
+                // tie-break: line-diff UD spots first
+                if (a._lineDiff !== b._lineDiff) return a._lineDiff ? -1 : 1;
+                return String(a.PLAYER).localeCompare(String(b.PLAYER));
+            });
+
+            return rows;
+        }
+
         function applyFilters() {
             if (currentView === 'course') {
                 // Course stats builds from raw/live/scorecard sources directly
@@ -5486,6 +7804,10 @@
             if (currentView === 'cutsweats') {
                 // Lightweight stub — renderCutSweats reads cutSweatsByContest / summaries directly
                 pivotedData = [{ PLAYER: '_' }];
+                return;
+            }
+            if (currentView === 'props') {
+                pivotedData = buildPropsRows();
                 return;
             }
             if (currentView === 'betting') {
@@ -5544,12 +7866,23 @@
                         ? cmpVals.reduce((a, b) => a + b, 0) / cmpVals.length
                         : null;
 
+                    // Round-aware 925 projection (Model Rank in R1, Win RK Going Into thereafter)
+                    const proj = get925Projection(tRow);
+                    last925RankSource = proj.source;
+                    const winPct = get925WinPct(tRow, currentBettingMarket);
+                    const projAmerican = winPctToAmerican(winPct);
+
                     const playerData = {
                         PLAYER: name,
                         Favorite: favoritePlayers.includes(name),
                         HEADSHOT: tRow.HEADSHOT || cs.Headshot || cs.HEADSHOT || '',
                         Score: tRow.Score || live['Current Score'] || '-',
                         Holes: tRow.Holes || live.Thru || '-',
+                        '925 Rank': proj.rank != null ? proj.rank : '—',
+                        'Proj PTS': proj.pts != null ? proj.pts.toFixed(1) : '—',
+                        '925 Odds': projAmerican != null
+                            ? projAmerican
+                            : (proj.rank != null ? `RK ${proj.rank}` : '—'),
                         'TEE TIME (LOCAL)': formatTime(tRow['TEE TIME (LOCAL)'] || tRow['Tee Time'] || cs['TEE TIME'] || '') || '-',
                         'Best Odds': bestRaw != null ? formatAmerican(bestRaw) : '-',
                         'Average Odds': avgDec != null ? decimalToAmerican(avgDec) : '-',
@@ -5569,6 +7902,10 @@
                             const n = parseFloat(s);
                             return isNaN(n) ? 999 : n;
                         })(),
+                        _925RankNum: proj.rank,
+                        _projPtsNum: proj.pts,
+                        _925WinPct: winPct,
+                        _925RankSource: proj.source,
                         'Make Cut %': (() => {
                             const liveRow = live;
                             const v = parseFloat(liveRow['Make Cut %'] ?? liveRow['MakeCut %'] ?? liveRow['Make Cut']);
@@ -5620,6 +7957,22 @@
                         // Best score first (leader at top); tie-break by edge
                         if (a._scoreNum !== b._scoreNum) return a._scoreNum - b._scoreNum;
                         return (b._edgeNum ?? -999) - (a._edgeNum ?? -999);
+                    }
+                    if (sortMode === '925rank') {
+                        const ar = a._925RankNum, br = b._925RankNum;
+                        if (ar == null && br == null) return a._scoreNum - b._scoreNum;
+                        if (ar == null) return 1;
+                        if (br == null) return -1;
+                        if (ar !== br) return ar - br; // lower rank = better
+                        return (b._edgeNum ?? -999) - (a._edgeNum ?? -999);
+                    }
+                    if (sortMode === 'projpts') {
+                        const ap = a._projPtsNum, bp = b._projPtsNum;
+                        if (ap == null && bp == null) return a._scoreNum - b._scoreNum;
+                        if (ap == null) return 1;
+                        if (bp == null) return -1;
+                        if (bp !== ap) return bp - ap; // higher PTS = better
+                        return (a._925RankNum ?? 999) - (b._925RankNum ?? 999);
                     }
                     if (sortMode === 'odds') {
                         const an = a._bestOddsNum, bn = b._bestOddsNum;
@@ -6042,8 +8395,15 @@
                     colCount = matchupColumns.length;
                 } else if (currentView === 'betting') {
                     colCount = fixedColumns.length + bettingColumns.length;
+                } else if (currentView === 'props') {
+                    colCount = fixedColumns.length + propsColumns.length;
                 }
-                tableBody.innerHTML = `<tr><td colspan="${colCount}">No data available.</td></tr>`;
+                const emptyMsg = currentView === 'props'
+                    ? (!propsBoardData.length
+                        ? 'Loading PrizePicks / Underdog props… (or feed is empty).'
+                        : 'No props match the current filters.')
+                    : 'No data available.';
+                tableBody.innerHTML = `<tr><td colspan="${colCount || 8}" style="padding:1.2rem;opacity:0.75;">${emptyMsg}</td></tr>`;
                 return;
             }
             let displayColumns = [];
@@ -6078,6 +8438,8 @@
                 return;
             } else if (currentView === 'betting') {
                 displayColumns = [...fixedColumns, ...bettingColumns];
+            } else if (currentView === 'props') {
+                displayColumns = [...fixedColumns, ...propsColumns];
             }
             const liveRanks = {};
             if (currentView !== 'matchup') {
@@ -6129,6 +8491,48 @@
                 if (col === 'Edge %') th.textContent = 'Edge %';
                 if (col === 'SG Putt Diff') th.textContent = 'SG Putt Diff';
                 if (col === '% Owned') th.textContent = 'Owned %';
+                // 925 projection headers (Betting Odds)
+                if (col === '925 Rank') {
+                    th.textContent = '925 Rank';
+                    th.title = last925RankSource
+                        ? `925 model rank · source: ${last925RankSource}`
+                        : 'Round-aware 925 rank (Model Rank in R1, Win RK Going Into thereafter)';
+                }
+                if (col === 'Proj PTS') {
+                    th.textContent = 'Proj PTS';
+                    th.title = 'Projected fantasy points for the active round (Showdown model)';
+                }
+                if (col === '925 Odds') {
+                    th.textContent = '925 Odds';
+                    th.title = '925 projected American odds from model win % (falls back to rank when % unavailable)';
+                }
+                if (col === 'Proj' && currentView === 'props') {
+                    th.textContent = '925 Rank';
+                    th.title = 'Showdown model rank for the round this player is going into (Model Rank in R1, Win RK Going Into RD2/3/4 after). Context only — edge comes from no-vig prices.';
+                }
+                if (col === 'Edge %' && currentView === 'props') {
+                    th.title = 'No-vig probability of the recommended side (from UD Higher/Lower). Fair PrizePicks leg = 50%.';
+                }
+                if (col === '+EV %' && currentView === 'props') {
+                    th.title = 'Edge % − 50. Positive = +EV PrizePicks leg.';
+                }
+                if (col === 'Prop' && currentView === 'props') {
+                    th.textContent = 'Prop';
+                    th.title = 'Bet phrase: Side · Line · Stat (e.g. UNDER 13.5 Greens In Regulation). Δ = PP≠UD · ℗ = push risk';
+                }
+                if (col === 'Line' && currentView === 'props') {
+                    const plat = document.getElementById('propsPlatformSelect')?.value || currentPropsPlatform || 'all';
+                    if (plat === 'pp') {
+                        th.textContent = 'UD Line';
+                        th.title = 'Underdog line (cross-book reference while filtering PrizePicks)';
+                    } else if (plat === 'ud') {
+                        th.textContent = 'PP Line';
+                        th.title = 'PrizePicks line (cross-book reference while filtering Underdog)';
+                    } else {
+                        th.textContent = 'Avg Line';
+                        th.title = 'Average of PrizePicks + Underdog lines';
+                    }
+                }
                 // Matchup-friendly short headers
                 if (col === 'PLAYER 1') th.textContent = 'Player 1';
                 if (col === 'PLAYER 2') th.textContent = 'Player 2';
@@ -6157,10 +8561,13 @@
                 th.onclick = () => sortTable(col);
                 tableHeader.appendChild(th);
             });
-            const numericSortColumns = ['SALARY', 'Place', 'Score', 'LIVE SG TOTAL', 'LIVE SG OT', 'LIVE SGT2G', 'LIVE SG AP', 'LIVE SG ARG', 'LIVE SG PUTT', 'LIVE GIRS HIT', '% Owned', 'VEGAS WIN %', 'Win %', 'Top 5 %', 'Top 20 %', 'Make Cut %', 'Implied Win %', 'Edge %', 'RD1Rank', 'RD 2 Ranking', 'RD 3 Ranking', 'RD 4 Ranking', 'RD2 Regression', 'RD3 Regression', 'RD4 Regression', 'Win RK Going into RD2', 'Win RK Going into RD3', 'Win RK Going into RD4', 'RD1 PTS', 'RD2 PTS', 'RD3 PTS', 'RD 4 PTS', 'Matchup Odds', ...calculatedColumns, 'PLAYER 1 ODDS', 'PLAYER 2 ODDS', 'PLAYER 1 VEGAS ODDS', 'PLAYER 2 VEGAS ODDS', 'PLAYER 1 AVERAGE ODDS', 'PLAYER 2 AVERAGE ODDS', 'PLAYER 1 POINTS TO WIN (925)', 'PLAYER 2 POINTS TO WIN (925)', 'PLAYER 1 WIN %', 'PLAYER 2 WIN %', 'PROJECTED EDGE', 'SPORTSBOOK EDGE'];
+            const numericSortColumns = ['SALARY', 'Place', 'Score', 'LIVE SG TOTAL', 'LIVE SG OT', 'LIVE SGT2G', 'LIVE SG AP', 'LIVE SG ARG', 'LIVE SG PUTT', 'LIVE GIRS HIT', '% Owned', 'VEGAS WIN %', 'Win %', 'Top 5 %', 'Top 20 %', 'Make Cut %', 'Implied Win %', 'Edge %', 'Edge', '925 Rank', 'Proj PTS', 'RD1Rank', 'RD 2 Ranking', 'RD 3 Ranking', 'RD 4 Ranking', 'RD2 Regression', 'RD3 Regression', 'RD4 Regression', 'Win RK Going into RD2', 'Win RK Going into RD3', 'Win RK Going into RD4', 'RD1 PTS', 'RD2 PTS', 'RD3 PTS', 'RD 4 PTS', 'Matchup Odds', ...calculatedColumns, 'PLAYER 1 ODDS', 'PLAYER 2 ODDS', 'PLAYER 1 VEGAS ODDS', 'PLAYER 2 VEGAS ODDS', 'PLAYER 1 AVERAGE ODDS', 'PLAYER 2 AVERAGE ODDS', 'PLAYER 1 POINTS TO WIN (925)', 'PLAYER 2 POINTS TO WIN (925)', 'PLAYER 1 WIN %', 'PLAYER 2 WIN %', 'PROJECTED EDGE', 'SPORTSBOOK EDGE'];
             let sortedData = [...pivotedData].sort((a, b) => {
-                // Betting view is already sorted in applyFilters — keep that order unless user picked another column
+                // Betting / Props views are already sorted in applyFilters — keep that order unless user picked another column
                 if (currentView === 'betting' && (!sortColumn || sortColumn === 'Score') && currentBettingSort !== 'score') {
+                    return 0;
+                }
+                if (currentView === 'props' && (!sortColumn || sortColumn === 'Score') && currentPropsSort !== 'score') {
                     return 0;
                 }
                 // 3-Ball table layout: default to Edge % high → low
@@ -6654,8 +9061,10 @@
                 const valuePlayers = opts.valuePlayers || new Set();
                 rows.forEach((row, index) => {
                     const tr = document.createElement('tr');
-                    if (currentView === 'matchup') {
+                    if (currentView === 'matchup' || currentView === 'props') {
                         tr.dataset.originalIndex = pivotedData.indexOf(row);
+                        tr.dataset.player = row.PLAYER || '';
+                        if (currentView === 'props') tr.classList.add('props-row');
                     } else {
                         tr.dataset.index = index;
                         tr.dataset.player = row.PLAYER;
@@ -6786,7 +9195,7 @@
                                 inner.appendChild(img);
                             }
                             // Place sits between headshot and name: [photo] (1) Name
-                            if (row['Place'] !== undefined && row['Place'] !== null && row['Place'] !== '-') {
+                            if (row['Place'] !== undefined && row['Place'] !== null && row['Place'] !== '-' && row['Place'] !== '—') {
                                 const placeSpan = document.createElement('span');
                                 placeSpan.className = 'player-place';
                                 placeSpan.textContent = `(${row['Place']})`;
@@ -6797,6 +9206,15 @@
                             nameSpan.textContent = row['PLAYER'] || '-';
                             nameSpan.title = row['PLAYER'] || '';
                             inner.appendChild(nameSpan);
+                            // Props: fold live score into the player cell (no separate Score column)
+                            // Neutral styling — no green/red score chips on this tab
+                            if (currentView === 'props' && row.Score != null && row.Score !== '' && row.Score !== '—' && row.Score !== '-') {
+                                const scoreSpan = document.createElement('span');
+                                scoreSpan.className = 'player-score-inline';
+                                scoreSpan.textContent = String(row.Score);
+                                scoreSpan.title = 'Tournament score to par';
+                                inner.appendChild(scoreSpan);
+                            }
                             if (groupFavPlayers.has(row.PLAYER)) {
                                 const favBadge = document.createElement('span');
                                 favBadge.className = 'group-fav-badge';
@@ -6876,7 +9294,7 @@
                                 td.textContent = (imp !== undefined && imp !== null && imp !== '-') ? `${imp}%` : '-';
                                 td.style.fontWeight = '600';
                                 td.style.fontVariantNumeric = 'tabular-nums';
-                            } else if (col === 'Edge %') {
+                            } else if (col === 'Edge %' && currentView !== 'props') {
                                 const edgeNum = parseFloat(row[col]);
                                 if (!isNaN(edgeNum)) {
                                     const span = document.createElement('span');
@@ -6920,6 +9338,171 @@
                                     wrap.appendChild(bot);
                                 }
                                 td.appendChild(wrap);
+                            } else if (col === '925 Rank' && currentView === 'betting') {
+                                const rk = row._925RankNum;
+                                if (rk != null && !isNaN(rk)) {
+                                    td.textContent = String(Math.round(rk));
+                                    td.style.fontWeight = '700';
+                                    td.style.fontVariantNumeric = 'tabular-nums';
+                                    td.title = row._925RankSource || '925 Rank';
+                                    if (rk <= 5) td.classList.add('model-hot');
+                                    else if (rk <= 15) td.classList.add('model-warm');
+                                    else if (rk <= 30) td.classList.add('model-mid');
+                                    else td.classList.add('model-cool');
+                                } else {
+                                    td.textContent = '—';
+                                }
+                            } else if (col === 'Proj PTS' && currentView === 'betting') {
+                                const pts = row._projPtsNum;
+                                if (pts != null && !isNaN(pts)) {
+                                    td.textContent = pts.toFixed(1);
+                                    td.style.fontWeight = '600';
+                                    td.style.fontVariantNumeric = 'tabular-nums';
+                                    td.title = 'Projected points for active round';
+                                } else {
+                                    td.textContent = '—';
+                                }
+                            } else if (col === '925 Odds' && currentView === 'betting') {
+                                const txt = row[col] || '—';
+                                td.textContent = txt;
+                                td.style.fontWeight = '700';
+                                td.style.fontVariantNumeric = 'tabular-nums';
+                                if (row._925WinPct != null) {
+                                    td.title = `925 Win % ≈ ${row._925WinPct.toFixed(1)}% → ${txt}`;
+                                    // Highlight when 925 is longer than best market price (value)
+                                    const bestCmp = row._bestOddsNum;
+                                    // Rough: if we have win % and best odds, positive edge already covers it
+                                    if (row._edgeNum != null && row._edgeNum > 0) {
+                                        td.classList.add('edge-positive-cell');
+                                    }
+                                } else if (row._925RankNum != null) {
+                                    td.title = `No win % — showing rank ${row._925RankNum} (${row._925RankSource || ''})`;
+                                }
+                            } else if (currentView === 'props' && col === 'Prop') {
+                                td.style.textAlign = 'left';
+                                td.style.whiteSpace = 'normal';
+                                td.style.maxWidth = '260px';
+                                td.style.lineHeight = '1.25';
+                                const wrap = document.createElement('div');
+                                wrap.style.display = 'flex';
+                                wrap.style.alignItems = 'baseline';
+                                wrap.style.gap = '0.35rem';
+                                wrap.style.flexWrap = 'wrap';
+                                if (row._side) {
+                                    const badge = document.createElement('span');
+                                    badge.className = 'holes-badge';
+                                    badge.textContent = row._side;
+                                    // OVER = green, UNDER = red
+                                    if (row._side === 'OVER') badge.classList.add('prop-over');
+                                    else if (row._side === 'UNDER') badge.classList.add('prop-under');
+                                    wrap.appendChild(badge);
+                                }
+                                const rest = document.createElement('span');
+                                rest.style.fontWeight = '600';
+                                rest.style.fontSize = '0.78rem';
+                                // Drop leading SIDE from phrase (badge shows it); also strip trailing book tags (rendered separately)
+                                let phrase = String(row.Prop || '—');
+                                if (row._side && phrase.toUpperCase().startsWith(row._side)) {
+                                    phrase = phrase.slice(row._side.length).trim();
+                                }
+                                phrase = phrase.replace(/\s*·\s*PP\/UD\s*/g, ' ').replace(/\s*·\s*PP\s*/g, ' ').replace(/\s*·\s*UD\s*/g, ' ').replace(/\s+/g, ' ').trim();
+                                rest.textContent = phrase;
+                                wrap.appendChild(rest);
+                                // Book tags = book the displayed +EV applies to (PP pick'em vs UD odds)
+                                if ((currentPropsPlatform === 'all' || document.getElementById('propsPlatformSelect')?.value === 'all') && row._books && row._books.length) {
+                                    row._books.forEach(b => {
+                                        const tag = document.createElement('span');
+                                        tag.className = 'prop-book-tag';
+                                        tag.textContent = b;
+                                        if (b === 'PP') {
+                                            tag.title = 'PrizePicks — +EV is vs 50% pick’em (not Underdog odds)';
+                                        } else {
+                                            tag.title = 'Underdog — +EV is at the offered American price';
+                                        }
+                                        wrap.appendChild(tag);
+                                    });
+                                }
+                                td.appendChild(wrap);
+                                let tip = '';
+                                if (row._marketOverPct != null && row._marketUnderPct != null) {
+                                    tip = `Market no-vig Over ${row._marketOverPct.toFixed(1)}% · Under ${row._marketUnderPct.toFixed(1)}%`;
+                                }
+                                if (row._overPct != null && row._underPct != null && row._adjusted) {
+                                    tip += ` → PP-adj Over ${row._overPct.toFixed(1)}% · Under ${row._underPct.toFixed(1)}%`;
+                                }
+                                if (row._pushMassPct != null && row._pushMassPct > 0) {
+                                    tip += ` · est. push mass ${row._pushMassPct.toFixed(1)}pp`;
+                                }
+                                if (row._ppLine != null) tip += (tip ? ' · ' : '') + `PP ${row._ppLine}`;
+                                if (row._udLine != null) tip += (tip ? ' · ' : '') + `UD ${row._udLine}`;
+                                if (tip) td.title = tip;
+                            } else if (currentView === 'props' && col === 'Edge %') {
+                                const ep = row._edgePct;
+                                const pill = document.createElement('span');
+                                pill.className = 'edge-pill';
+                                pill.textContent = row[col] || '—';
+                                if (ep != null && !isNaN(ep)) {
+                                    if (ep >= 58) pill.classList.add('edge-tier-blue');
+                                    else if (ep >= 54) pill.classList.add('edge-tier-green');
+                                    else if (ep >= 52) pill.classList.add('edge-tier-yellow');
+                                    else pill.classList.add('edge-tier-red');
+                                }
+                                td.appendChild(pill);
+                                td.style.textAlign = 'center';
+                                td.title = 'No-vig side % · Blue ≥58 · Green 54–58 · Yellow 52–53 · Red ≤52';
+                            } else if (currentView === 'props' && col === '+EV %') {
+                                const pev = row._plusEv;
+                                const pill = document.createElement('span');
+                                pill.className = 'edge-pill';
+                                pill.textContent = row[col] || '—';
+                                if (pev != null && !isNaN(pev)) {
+                                    if (pev >= 8) pill.classList.add('edge-tier-blue');
+                                    else if (pev >= 4) pill.classList.add('edge-tier-green');
+                                    else if (pev >= 2) pill.classList.add('edge-tier-yellow');
+                                    else if (pev > 0) pill.classList.add('edge-tier-green');
+                                    else pill.classList.add('edge-tier-red');
+                                }
+                                td.appendChild(pill);
+                                td.style.textAlign = 'center';
+                                td.classList.add('edge-cell');
+                                if (row._evMode === 'ud_odds') {
+                                    const oa = row._offeredAmerican != null ? (row._offeredAmerican > 0 ? '+' + Math.round(row._offeredAmerican) : String(Math.round(row._offeredAmerican))) : '—';
+                                    const oi = row._offeredImplied != null ? row._offeredImplied.toFixed(1) + '%' : '—';
+                                    td.title = `Underdog +EV at offered price ${oa} (implied ${oi}) vs no-vig ${row._edgePct != null ? row._edgePct.toFixed(1) + '%' : '—'}. Not vs 50%.`;
+                                } else {
+                                    let tip = 'PrizePicks +EV = Edge % − 50 (pick’em fair).';
+                                    if (row._udLine != null) tip += ' Underdog lists this line too, but UD juice means this +EV does not apply on UD.';
+                                    td.title = tip;
+                                }
+                            } else if (currentView === 'props' && (col === 'Line' || col === 'Proj')) {
+                                td.textContent = row[col] || '—';
+                                td.style.fontWeight = '600';
+                                td.style.fontVariantNumeric = 'tabular-nums';
+                                if (col === 'Proj') {
+                                    const rk = row._projNum;
+                                    td.title = row._projSource
+                                        ? `${row._projSource}${row._projRound ? ' · R' + row._projRound : ''}`
+                                        : '925 Rank';
+                                    if (rk != null && !isNaN(rk)) {
+                                        if (rk <= 5) td.classList.add('model-hot');
+                                        else if (rk <= 15) td.classList.add('model-warm');
+                                        else if (rk <= 30) td.classList.add('model-mid');
+                                        else td.classList.add('model-cool');
+                                    }
+                                }
+                                if (col === 'Line') {
+                                    let tip = row._lineLabel || 'Line';
+                                    if (row._ppLine != null) tip += ` · PP ${row._ppLine}`;
+                                    if (row._udLine != null) tip += ` · UD ${row._udLine}`;
+                                    if (row._lineDiff) tip += ' · lines differ';
+                                    td.title = tip;
+                                    if (row._lineDiff) td.style.textDecoration = 'underline dotted';
+                                }
+                            } else if (currentView === 'props' && (col === 'UD Higher' || col === 'UD Lower')) {
+                                td.textContent = row[col] || '—';
+                                td.style.fontVariantNumeric = 'tabular-nums';
+                                td.style.fontSize = '0.72rem';
+                                td.title = col === 'UD Higher' ? 'Underdog Over price (American)' : 'Underdog Under price (American)';
                             } else {
                                 td.textContent = row[col] || '-';
                             }
@@ -7420,6 +10003,236 @@
                 matchupChart = null;
             }
         }
+
+        /** Field (tournament) average for a given prop type from courseFieldTrends / scorecards. */
+        function getFieldPropAverage(statType) {
+            ensureCourseFieldTrends();
+            const t = courseFieldTrends || {};
+            const stat = normalizePropStat(statType);
+            if (stat.includes('birdie')) return { value: t.fieldBob, label: 'Field Birdies+ / Rd', unit: '' };
+            if (stat.includes('bogey')) return { value: t.fieldBogey, label: 'Field Bogeys+ / Rd', unit: '' };
+            if (stat === 'pars' || (stat.startsWith('par') && !stat.includes('to par'))) {
+                return { value: t.fieldPars, label: 'Field Pars / Rd', unit: '' };
+            }
+            if (stat.includes('fairway')) return { value: t.fieldFw, label: 'Field Fairways / Rd', unit: '' };
+            if (stat.includes('green') || stat.includes('gir')) {
+                return { value: t.fieldGir, label: 'Field GIR / Rd', unit: '' };
+            }
+            if (stat.includes('round strokes') || stat === 'strokes') {
+                return { value: t.fieldRd, label: 'Field Avg Rd Score', unit: '' };
+            }
+            if (stat.includes('finishing') || stat.includes('leaderboard')) {
+                return { value: null, label: 'Field position avg', unit: '' };
+            }
+            return { value: null, label: 'Field avg', unit: '' };
+        }
+
+        /**
+         * Player average for this prop:
+         *  - counting stats: mean of completed rounds from scorecardData (this event)
+         *  - GIR / FW: season rate scaled to per-round when available, else live
+         */
+        function getPlayerPropAverage(playerName, statType) {
+            const stat = normalizePropStat(statType);
+            const key = normalizeName(playerName);
+            const out = { value: null, label: 'Player avg', source: '—', rounds: 0 };
+
+            // Per-round counts from scorecards this tournament
+            const roundVals = [];
+            (scorecardData || []).forEach(r => {
+                const nm = r.Player || r.PLAYER || r['Player Name'];
+                if (!nm || normalizeName(nm) !== key) return;
+                if (stat.includes('birdie')) {
+                    const b = parseFloat(r.Birdies);
+                    const e = parseFloat(r.Eagles);
+                    if (!isNaN(b) || !isNaN(e)) roundVals.push((isNaN(b) ? 0 : b) + (isNaN(e) ? 0 : e));
+                } else if (stat.includes('bogey')) {
+                    const b = parseFloat(r.Bogeys);
+                    const d = parseFloat(r['Doubles+'] || r.Doubles);
+                    if (!isNaN(b) || !isNaN(d)) roundVals.push((isNaN(b) ? 0 : b) + (isNaN(d) ? 0 : d));
+                } else if (stat === 'pars' || (stat.startsWith('par') && !stat.includes('to par'))) {
+                    const p = parseFloat(r.Pars);
+                    if (!isNaN(p)) roundVals.push(p);
+                } else if (stat.includes('round strokes') || stat === 'strokes') {
+                    const s = parseFloat(r.Score);
+                    if (!isNaN(s) && s > 50 && s < 120) roundVals.push(s);
+                }
+            });
+            if (roundVals.length) {
+                const avg = roundVals.reduce((a, b) => a + b, 0) / roundVals.length;
+                out.value = avg;
+                out.rounds = roundVals.length;
+                out.source = `This event · ${roundVals.length} rd${roundVals.length > 1 ? 's' : ''}`;
+                out.label = 'Player avg (event)';
+                return out;
+            }
+
+            // Season rates from tournament pivot row
+            const tRow = (rawData || []).find(r => r.PLAYER && normalizeName(r.PLAYER) === key)
+                || (pivotedData || []).find(r => r.PLAYER && normalizeName(r.PLAYER) === key)
+                || {};
+            if (stat.includes('green') || stat.includes('gir')) {
+                let girPct = parsePropNum(tRow['Greens in Regulation']);
+                if (girPct != null) {
+                    // stored as 0–1 or 0–100
+                    if (girPct > 1.5) girPct = girPct / 100;
+                    out.value = girPct * 18;
+                    out.source = 'Season GIR % × 18';
+                    out.label = 'Player season GIR / Rd';
+                    return out;
+                }
+            }
+            if (stat.includes('fairway')) {
+                let fwPct = parsePropNum(tRow['Fairway Hit %'] ?? tRow['Fairways Hit']);
+                if (fwPct != null) {
+                    if (fwPct > 1.5) fwPct = fwPct / 100;
+                    // ~14 driving holes typical
+                    out.value = fwPct * 14;
+                    out.source = 'Season FW % × 14';
+                    out.label = 'Player season FW / Rd';
+                    return out;
+                }
+            }
+            return out;
+        }
+
+        function fmtPropNum(v, digits) {
+            if (v == null || isNaN(v)) return '—';
+            const d = digits != null ? digits : (Math.abs(v - Math.round(v)) < 0.05 ? 0 : 1);
+            return Number(v).toFixed(d);
+        }
+
+        function showPropsPopup(row) {
+            if (!row) return;
+            closePlayerPopup();
+            closeMatchupPopup();
+
+            const name = row.PLAYER || '—';
+            const stat = row._stat || (String(row.Prop || '').replace(/^(OVER|UNDER)\s+/i, '').replace(/^\d+(\.\d+)?\s+/, '').trim()) || '—';
+            const side = row._side || null;
+            const ppLine = row._ppLine;
+            const udLine = row._udLine;
+            const primaryLine = row._primaryLine;
+            const platform = currentPropsPlatform || document.getElementById('propsPlatformSelect')?.value || 'all';
+
+            // Headshot
+            const img = document.getElementById('propsPopupHeadshot');
+            const hs = row.HEADSHOT || '';
+            if (hs) {
+                img.src = hs;
+                img.style.display = '';
+            } else {
+                img.removeAttribute('src');
+                img.style.display = 'none';
+            }
+
+            document.getElementById('propsPopupTitle').textContent = name;
+            const placeScore = [row.Place, row.Score].filter(x => x != null && x !== '' && x !== '—').join(' · ');
+            document.getElementById('propsPopupSub').textContent = placeScore
+                ? `${stat} · ${placeScore}`
+                : String(stat);
+
+            const sideEl = document.getElementById('propsPopupSide');
+            if (side === 'OVER') {
+                sideEl.textContent = 'OVER';
+                sideEl.className = 'props-popup-side-badge over';
+            } else if (side === 'UNDER') {
+                sideEl.textContent = 'UNDER';
+                sideEl.className = 'props-popup-side-badge under';
+            } else {
+                sideEl.textContent = '—';
+                sideEl.className = 'props-popup-side-badge';
+            }
+
+            // Averages
+            const playerAvg = getPlayerPropAverage(name, stat);
+            const fieldAvg = getFieldPropAverage(stat);
+
+            // Live snapshot for this prop
+            const tRow = (rawData || []).find(r => r.PLAYER && normalizeName(r.PLAYER) === normalizeName(name)) || {};
+            const liveRow = tRow;
+            const snap = getPropLiveSnapshot(name, stat, tRow, liveRow);
+
+            // Line chips — primary + opposite book
+            const lineChips = [];
+            const addChip = (book, line, isPrimary) => {
+                if (line == null || line === '' || isNaN(line)) return;
+                lineChips.push(
+                    `<span class="props-popup-line-chip${isPrimary ? ' primary' : ''}">` +
+                    `<span class="book">${book}</span>` +
+                    `<span class="num">${fmtPropNum(line, 1)}</span>` +
+                    `</span>`
+                );
+            };
+            if (platform === 'pp') {
+                addChip('PrizePicks', ppLine, true);
+                addChip('Underdog', udLine, false);
+            } else if (platform === 'ud') {
+                addChip('Underdog', udLine, true);
+                addChip('PrizePicks', ppLine, false);
+            } else {
+                addChip('PrizePicks', ppLine, ppLine != null);
+                addChip('Underdog', udLine, udLine != null && ppLine == null);
+                if (primaryLine != null && ppLine != null && udLine != null && Math.abs(ppLine - udLine) > 0.05) {
+                    addChip('Avg', primaryLine, false);
+                }
+            }
+
+            const edgeTxt = row['Edge %'] && row['Edge %'] !== '—' ? row['Edge %'] : '—';
+            const evTxt = row['+EV %'] && row['+EV %'] !== '—' ? row['+EV %'] : '—';
+            const rankTxt = row.Proj && row.Proj !== '—' ? row.Proj : '—';
+
+            const body = document.getElementById('propsPopupBody');
+            body.innerHTML = `
+                <div class="props-popup-card wide">
+                    <div class="lbl">Lines</div>
+                    <div class="props-popup-lines">${lineChips.length ? lineChips.join('') : '<span class="hint">No lines available</span>'}</div>
+                    <div class="hint" style="margin-top:0.45rem;">
+                        ${side ? `Recommended: <strong>${side}</strong>` : ''}
+                        ${row._lineDiff ? ' · PP ≠ UD line' : ''}
+                        ${row._pushRisk ? ' · Push risk on whole-number PP line' : ''}
+                    </div>
+                </div>
+                <div class="props-popup-grid">
+                    <div class="props-popup-card">
+                        <div class="lbl">${playerAvg.label || 'Player avg'}</div>
+                        <div class="val">${fmtPropNum(playerAvg.value, 1)}</div>
+                        <div class="hint">${playerAvg.source || '—'}</div>
+                    </div>
+                    <div class="props-popup-card">
+                        <div class="lbl">${fieldAvg.label || 'Tournament field avg'}</div>
+                        <div class="val">${fmtPropNum(fieldAvg.value, 1)}</div>
+                        <div class="hint">Live field average this event</div>
+                    </div>
+                    <div class="props-popup-card">
+                        <div class="lbl">Live (this round)</div>
+                        <div class="val">${snap.liveLabel || '—'}</div>
+                        <div class="hint">${snap.holesPlayed ? `Thru ${snap.holesPlayed}` : (snap.thru && snap.thru !== '—' ? `Thru ${snap.thru}` : 'No live count yet')}</div>
+                    </div>
+                    <div class="props-popup-card">
+                        <div class="lbl">Edge / +EV</div>
+                        <div class="val">${edgeTxt}</div>
+                        <div class="hint">+EV ${evTxt} · 925 Rank ${rankTxt}</div>
+                    </div>
+                </div>
+                <div class="props-popup-footer">
+                    Click outside or press Esc to close · Prop: ${stat}
+                    ${row['UD Higher'] && row['UD Higher'] !== '—' ? ` · UD ${row['UD Higher']} / ${row['UD Lower']}` : ''}
+                </div>
+            `;
+
+            const pop = document.getElementById('propsPopup');
+            pop.style.display = 'block';
+            pop.classList.add('show');
+        }
+
+        function closePropsPopup() {
+            const pop = document.getElementById('propsPopup');
+            if (!pop) return;
+            pop.style.display = 'none';
+            pop.classList.remove('show');
+        }
+
         function toggleRowExpansion(tr) {
             if (currentView !== 'tournament') return;
             const player = tr.dataset.player;
@@ -7547,6 +10360,14 @@
             applyFilters();
             renderTable();
             try { updateContextBar(); } catch (e) { /* ignore */ }
+            try {
+                if (currentView === 'betting' || currentView === 'props') updateDataTimestamp();
+                if (currentView === 'props') renderPropsTrendsStrip();
+                else {
+                    const strip = document.getElementById('propsTrendsStrip');
+                    if (strip) { strip.style.display = 'none'; }
+                }
+            } catch (e) { /* ignore */ }
         }
         function populateColumnMenu() {
             const columnMenu = document.getElementById('columnMenu');
@@ -8953,6 +11774,12 @@
                 if (Math.abs(v) < 0.05) return 'E';
                 return v > 0 ? '+' + v.toFixed(1) : v.toFixed(1);
             };
+            // Persist for Props trends strip (wave filled in later in this function)
+            courseFieldTrends = {
+                fieldScore, fieldRd, fieldBob, fieldBobPct, fieldPars, fieldBogey,
+                fieldBogeyAvoid, fieldRatio, fieldGir, fieldGirPct, fieldFw, fieldFwPct, fieldSg,
+                wave: null, fmtScore
+            };
 
             // Structured insights — exclude SG Total / SG T2G (always predictive)
             // Focus: (1) best of SG OTT / App / ARG / Putt  (2) Distance vs Accuracy  (3) B2B / BOB% / BA
@@ -9167,6 +11994,12 @@
                         ${!useToday && waveRoundNum >= 3 ? '<br><span style="color:#f59e0b;">⚠ standing-based waves</span>' : ''}
                     </div>
                 </div>`;
+                if (courseFieldTrends) {
+                    courseFieldTrends.wave = {
+                        winner, scope, earlyAvg, lateAvg, earlyRd, lateRd, useToday, waveRoundNum,
+                        earlyN: earlyWave.length, lateN: lateWave.length
+                    };
+                }
             } else if (earlyWave.length || lateWave.length) {
                 waveAdvantageHtml = `<div class="course-summary-card">
                     <div class="lbl">Wave Edge</div>
