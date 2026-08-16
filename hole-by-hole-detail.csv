@@ -1,5 +1,5 @@
 HOLE-BY-HOLE DETAIL,,,,,,,,,
-"Event: FedEx St. Jude Championship (401811962) | Success: 69 | Failed: 0 | Updated: 8/16/2026, 6:43:52 AM",,,,,,,,,
+"Event: FedEx St. Jude Championship (401811962) | Success: 69 | Failed: 0 | Updated: 8/16/2026, 7:44:03 AM",,,,,,,,,
 ,,,,,,,,,
 Player,Player ID,Round,Hole,Par,Strokes,Score Type,To Par,Round Score,Round To Par
 Xander Schauffele,10140,1,1,4,4,Par,E,67,-3
@@ -434,6 +434,10 @@ Sahith Theegala,10980,3,15,4,4,Par,E,79,+9
 Sahith Theegala,10980,3,16,5,5,Par,E,79,+9
 Sahith Theegala,10980,3,17,4,5,Bogey,+1,79,+9
 Sahith Theegala,10980,3,18,4,5,Bogey,+1,79,+9
+Sahith Theegala,10980,4,1,4,4,Par,E,17,+1
+Sahith Theegala,10980,4,2,4,4,Par,E,17,+1
+Sahith Theegala,10980,4,3,5,7,Double Bogey,+2,17,+1
+Sahith Theegala,10980,4,4,3,2,Birdie,-1,17,+1
 Wyndham Clark,11119,1,1,4,3,Birdie,-1,69,-1
 Wyndham Clark,11119,1,2,4,4,Par,E,69,-1
 Wyndham Clark,11119,1,3,5,5,Par,E,69,-1
@@ -722,6 +726,7 @@ Rory McIlroy,3470,3,15,4,4,Par,E,72,+2
 Rory McIlroy,3470,3,16,5,5,Par,E,72,+2
 Rory McIlroy,3470,3,17,4,4,Par,E,72,+2
 Rory McIlroy,3470,3,18,4,6,Double Bogey,+2,72,+2
+Rory McIlroy,3470,4,1,4,6,Double Bogey,+2,6,+2
 Gary Woodland,3550,1,1,4,4,Par,E,66,-4
 Gary Woodland,3550,1,2,4,3,Birdie,-1,66,-4
 Gary Woodland,3550,1,3,5,5,Par,E,66,-4
@@ -1046,6 +1051,10 @@ Ryan Fox,4251,3,15,4,4,Par,E,72,+2
 Ryan Fox,4251,3,16,5,6,Bogey,+1,72,+2
 Ryan Fox,4251,3,17,4,5,Bogey,+1,72,+2
 Ryan Fox,4251,3,18,4,4,Par,E,72,+2
+Ryan Fox,4251,4,1,4,4,Par,E,14,-2
+Ryan Fox,4251,4,2,4,4,Par,E,14,-2
+Ryan Fox,4251,4,3,5,3,Eagle,-2,14,-2
+Ryan Fox,4251,4,4,3,3,Par,E,14,-2
 Kristoffer Reitan,4348470,1,1,4,4,Par,E,72,+2
 Kristoffer Reitan,4348470,1,2,4,3,Birdie,-1,72,+2
 Kristoffer Reitan,4348470,1,3,5,5,Par,E,72,+2
@@ -1100,6 +1109,7 @@ Kristoffer Reitan,4348470,3,15,4,5,Bogey,+1,73,+3
 Kristoffer Reitan,4348470,3,16,5,5,Par,E,73,+3
 Kristoffer Reitan,4348470,3,17,4,4,Par,E,73,+3
 Kristoffer Reitan,4348470,3,18,4,4,Par,E,73,+3
+Kristoffer Reitan,4348470,4,1,4,4,Par,E,4,E
 Alex Fitzpatrick,4364865,1,1,4,4,Par,E,71,+1
 Alex Fitzpatrick,4364865,1,2,4,4,Par,E,71,+1
 Alex Fitzpatrick,4364865,1,3,5,6,Bogey,+1,71,+1
@@ -1154,6 +1164,7 @@ Alex Fitzpatrick,4364865,3,15,4,3,Birdie,-1,70,E
 Alex Fitzpatrick,4364865,3,16,5,4,Birdie,-1,70,E
 Alex Fitzpatrick,4364865,3,17,4,4,Par,E,70,E
 Alex Fitzpatrick,4364865,3,18,4,4,Par,E,70,E
+Alex Fitzpatrick,4364865,4,1,4,4,Par,E,4,E
 Viktor Hovland,4364873,1,1,4,3,Birdie,-1,68,-2
 Viktor Hovland,4364873,1,2,4,3,Birdie,-1,68,-2
 Viktor Hovland,4364873,1,3,5,4,Birdie,-1,68,-2
@@ -1478,6 +1489,8 @@ Akshay Bhatia,4419142,3,15,4,4,Par,E,73,+3
 Akshay Bhatia,4419142,3,16,5,5,Par,E,73,+3
 Akshay Bhatia,4419142,3,17,4,4,Par,E,73,+3
 Akshay Bhatia,4419142,3,18,4,5,Bogey,+1,73,+3
+Akshay Bhatia,4419142,4,1,4,5,Bogey,+1,9,+1
+Akshay Bhatia,4419142,4,2,4,4,Par,E,9,+1
 Michael Thorbjornsen,4425904,1,1,4,4,Par,E,65,-5
 Michael Thorbjornsen,4425904,1,2,4,3,Birdie,-1,65,-5
 Michael Thorbjornsen,4425904,1,3,5,5,Par,E,65,-5
@@ -2180,6 +2193,7 @@ Matt McCarty,4901368,3,15,4,5,Bogey,+1,71,+1
 Matt McCarty,4901368,3,16,5,5,Par,E,71,+1
 Matt McCarty,4901368,3,17,4,5,Bogey,+1,71,+1
 Matt McCarty,4901368,3,18,4,5,Bogey,+1,71,+1
+Matt McCarty,4901368,4,1,4,4,Par,E,4,E
 Michael Brennan,4921329,1,1,4,5,Bogey,+1,73,+3
 Michael Brennan,4921329,1,2,4,5,Bogey,+1,73,+3
 Michael Brennan,4921329,1,3,5,7,Double Bogey,+2,73,+3
@@ -2828,6 +2842,8 @@ Justin Rose,569,3,15,4,3,Birdie,-1,73,+3
 Justin Rose,569,3,16,5,4,Birdie,-1,73,+3
 Justin Rose,569,3,17,4,4,Par,E,73,+3
 Justin Rose,569,3,18,4,7,Triple Bogey,+3,73,+3
+Justin Rose,569,4,1,4,4,Par,E,9,+1
+Justin Rose,569,4,2,4,5,Bogey,+1,9,+1
 Hideki Matsuyama,5860,1,1,4,4,Par,E,66,-4
 Hideki Matsuyama,5860,1,2,4,5,Bogey,+1,66,-4
 Hideki Matsuyama,5860,1,3,5,5,Par,E,66,-4
