@@ -1,23 +1,23 @@
 TOURNAMENT SCORECARD SUMMARY,,,,,,,,,,,
-"Event: FedEx St. Jude Championship (401811962) | Success: 69 | Failed: 0 | Updated: 8/16/2026, 1:28:57 PM",,,,,,,,,,,
+"Event: FedEx St. Jude Championship (401811962) | Success: 69 | Failed: 0 | Updated: 8/16/2026, 2:14:08 PM",,,,,,,,,,,
 ⚠ No scorecard data retrieved. Most players are probably not in this event's field.,,,,,,,,,,,
 Player,Round,Score,To Par,Birdies,Eagles,Bogeys,Doubles+,Front 9,Back 9,Pars,Thru
 Xander Schauffele,1,67,-3,3,1,2,0,33,34,12,F
 Xander Schauffele,2,72,+2,3,0,5,0,37,35,10,F
 Xander Schauffele,3,68,-2,4,0,0,1,33,35,13,F
-Xander Schauffele,4,45,-1,3,0,2,0,34,11,7,12
+Xander Schauffele,4,55,-2,4,0,2,0,34,21,9,15
 J.J. Spaun,1,71,+1,3,0,2,1,35,36,12,F
 J.J. Spaun,2,69,-1,3,0,2,0,34,35,13,F
 J.J. Spaun,3,67,-3,6,0,3,0,35,32,9,F
-J.J. Spaun,4,39,E,1,0,1,0,35,4,8,10
+J.J. Spaun,4,54,+1,1,0,2,0,35,19,11,14
 Kurt Kitayama,1,65,-5,5,1,2,0,33,32,10,F
 Kurt Kitayama,2,73,+3,3,0,4,1,37,36,10,F
 Kurt Kitayama,3,66,-4,5,0,1,0,31,35,12,F
-Kurt Kitayama,4,26,+2,1,0,1,1,26,,3,6
+Kurt Kitayama,4,42,+3,2,0,1,2,38,4,5,10
 J.T. Poston,1,71,+1,4,0,3,1,35,36,10,F
 J.T. Poston,2,68,-2,5,0,3,0,30,38,10,F
 J.T. Poston,3,66,-4,5,1,1,1,31,35,10,F
-J.T. Poston,4,29,+1,0,0,1,0,29,,6,7
+J.T. Poston,4,45,+3,0,0,1,1,38,7,9,11
 Eric Cole,1,72,+2,2,0,4,0,36,36,12,F
 Eric Cole,2,72,+2,1,0,3,0,37,35,14,F
 Eric Cole,3,70,E,3,0,3,0,35,35,12,F
@@ -29,7 +29,7 @@ Collin Morikawa,4,72,+2,2,0,4,0,35,37,12,F
 Aaron Rai,1,72,+2,2,0,4,0,35,37,12,F
 Aaron Rai,2,66,-4,4,0,0,0,33,33,14,F
 Aaron Rai,3,71,+1,4,0,3,1,33,38,10,F
-Aaron Rai,4,73,+7,0,0,7,0,38,35,10,17
+Aaron Rai,4,78,+8,0,0,8,0,38,40,10,F
 Sahith Theegala,1,69,-1,4,0,3,0,34,35,11,F
 Sahith Theegala,2,72,+2,3,0,5,0,36,36,10,F
 Sahith Theegala,3,79,+9,2,0,6,2,38,41,8,F
@@ -37,7 +37,7 @@ Sahith Theegala,4,71,+1,4,0,1,2,38,33,11,F
 Wyndham Clark,1,69,-1,5,0,4,0,33,36,9,F
 Wyndham Clark,2,66,-4,7,0,1,1,32,34,9,F
 Wyndham Clark,3,70,E,2,0,2,0,36,34,14,F
-Wyndham Clark,4,32,+1,1,0,2,0,32,,5,8
+Wyndham Clark,4,42,E,2,0,2,0,36,6,7,11
 Nicolai Højgaard,1,73,+3,2,0,3,1,34,39,12,F
 Nicolai Højgaard,2,70,E,4,0,4,0,34,36,10,F
 Nicolai Højgaard,3,68,-2,4,0,2,0,35,33,12,F
@@ -46,11 +46,11 @@ Robert MacIntyre,1,82,+12,1,0,4,4,43,39,9,F
 Sungjae Im,1,66,-4,7,0,3,0,33,33,8,F
 Sungjae Im,2,66,-4,6,0,2,0,30,36,10,F
 Sungjae Im,3,67,-3,5,0,2,0,33,34,11,F
-Sungjae Im,4,16,E,0,0,0,0,16,,4,4
+Sungjae Im,4,30,+2,0,0,2,0,30,,5,7
 Brian Harman,1,70,E,2,0,2,0,35,35,14,F
 Brian Harman,2,64,-6,6,0,0,0,31,33,12,F
 Brian Harman,3,69,-1,3,0,2,0,35,34,13,F
-Brian Harman,4,25,+1,0,0,1,0,25,,5,6
+Brian Harman,4,37,+2,0,0,2,0,37,,7,9
 Rory McIlroy,1,74,+4,2,0,4,1,36,38,11,F
 Rory McIlroy,2,70,E,3,0,3,0,34,36,12,F
 Rory McIlroy,3,72,+2,2,0,2,1,35,37,13,F
@@ -58,23 +58,23 @@ Rory McIlroy,4,72,+2,5,0,5,1,39,33,7,F
 Gary Woodland,1,66,-4,6,0,2,0,32,34,10,F
 Gary Woodland,2,71,+1,2,0,3,0,36,35,13,F
 Gary Woodland,3,70,E,4,0,2,1,34,36,11,F
-Gary Woodland,4,47,+1,1,0,2,0,36,11,9,12
+Gary Woodland,4,64,+2,2,0,4,0,36,28,10,16
 Rickie Fowler,1,68,-2,5,0,3,0,34,34,10,F
 Rickie Fowler,2,73,+3,3,0,4,1,33,40,10,F
 Rickie Fowler,3,66,-4,4,0,0,0,33,33,14,F
-Rickie Fowler,4,38,-1,2,0,1,0,34,4,7,10
+Rickie Fowler,4,51,+1,2,0,1,1,34,17,9,13
 Nick Taylor,1,69,-1,3,0,2,0,35,34,13,F
 Nick Taylor,2,68,-2,4,0,2,0,36,32,12,F
 Nick Taylor,3,69,-1,4,0,1,1,36,33,12,F
-Nick Taylor,4,37,+2,0,0,2,0,37,,7,9
+Nick Taylor,4,48,+2,0,0,2,0,37,11,10,12
 Alex Noren,1,71,+1,2,0,3,0,36,35,13,F
 Alex Noren,2,66,-4,4,0,0,0,34,32,14,F
 Alex Noren,3,66,-4,5,0,1,0,35,31,12,F
-Alex Noren,4,21,+1,0,0,1,0,21,,4,5
+Alex Noren,4,32,+1,0,0,1,0,32,,7,8
 Adam Scott,1,66,-4,5,0,1,0,34,32,12,F
 Adam Scott,2,70,E,3,0,3,0,33,37,12,F
 Adam Scott,3,69,-1,5,0,2,1,34,35,10,F
-Adam Scott,4,28,E,2,0,2,0,28,,3,7
+Adam Scott,4,41,-1,3,0,2,0,35,6,6,11
 Ryan Fox,1,73,+3,3,0,3,1,34,39,11,F
 Ryan Fox,2,73,+3,2,0,3,1,36,37,12,F
 Ryan Fox,3,72,+2,1,0,3,0,35,37,14,F
@@ -90,11 +90,11 @@ Alex Fitzpatrick,4,71,+1,3,0,2,1,34,37,12,F
 Viktor Hovland,1,68,-2,5,0,1,1,32,36,11,F
 Viktor Hovland,2,64,-6,6,0,0,0,32,32,12,F
 Viktor Hovland,3,72,+2,4,0,4,1,34,38,9,F
-Viktor Hovland,4,25,+1,2,0,1,1,25,,2,6
+Viktor Hovland,4,42,+3,2,0,3,1,37,5,4,10
 Ludvig Åberg,1,68,-2,4,0,2,0,34,34,12,F
 Ludvig Åberg,2,65,-5,7,0,0,1,31,34,10,F
 Ludvig Åberg,3,74,+4,2,0,4,1,36,38,11,F
-Ludvig Åberg,4,51,-2,3,0,1,0,33,18,10,14
+Ludvig Åberg,4,63,-3,4,0,1,0,33,30,12,17
 Ben Griffin,1,73,+3,1,0,4,0,37,36,13,F
 Ben Griffin,2,71,+1,3,0,2,1,34,37,12,F
 Ben Griffin,3,69,-1,3,0,2,0,33,36,13,F
@@ -102,7 +102,7 @@ Ben Griffin,4,68,-2,5,0,3,0,32,36,10,F
 Nico Echavarria,1,68,-2,3,0,1,0,34,34,14,F
 Nico Echavarria,2,66,-4,7,0,3,0,32,34,8,F
 Nico Echavarria,3,71,+1,3,0,4,0,36,35,11,F
-Nico Echavarria,4,34,-1,1,0,0,0,34,,8,9
+Nico Echavarria,4,44,-2,2,0,0,0,34,10,10,12
 Min Woo Lee,1,67,-3,3,1,2,0,33,34,12,F
 Min Woo Lee,2,71,+1,4,0,3,1,33,38,10,F
 Min Woo Lee,3,75,+5,1,0,4,1,35,40,12,F
@@ -134,15 +134,15 @@ Shane Lowry,4,70,E,5,0,5,0,37,33,8,F
 Harry Hall,1,72,+2,2,0,4,0,36,36,12,F
 Harry Hall,2,68,-2,5,0,1,1,35,33,11,F
 Harry Hall,3,68,-2,3,0,1,0,34,34,14,F
-Harry Hall,4,58,+1,3,0,4,0,38,20,8,15
+Harry Hall,4,69,-1,5,0,4,0,38,31,9,F
 Tom Kim,1,69,-1,4,0,3,0,36,33,11,F
 Tom Kim,2,72,+2,6,0,5,1,35,37,6,F
 Tom Kim,3,63,-7,9,0,2,0,29,34,7,F
-Tom Kim,4,23,-1,2,0,1,0,23,,3,6
+Tom Kim,4,34,-1,2,0,1,0,34,,6,9
 Chris Gotterup,1,66,-4,5,0,1,0,33,33,12,F
 Chris Gotterup,2,70,E,4,0,4,0,33,37,10,F
 Chris Gotterup,3,69,-1,3,0,2,0,33,36,13,F
-Chris Gotterup,4,32,+1,1,0,2,0,32,,5,8
+Chris Gotterup,4,42,E,2,0,2,0,36,6,7,11
 Ricky Castillo,1,72,+2,3,0,3,1,36,36,11,F
 Ricky Castillo,2,74,+4,3,0,4,1,34,40,10,F
 Ricky Castillo,3,68,-2,4,0,2,0,35,33,12,F
@@ -150,11 +150,11 @@ Ricky Castillo,4,73,+3,2,0,3,1,37,36,12,F
 Pierceson Coody,1,71,+1,4,1,2,2,32,39,9,F
 Pierceson Coody,2,66,-4,5,1,3,0,35,31,9,F
 Pierceson Coody,3,70,E,2,0,2,0,35,35,14,F
-Pierceson Coody,4,50,E,1,0,1,0,34,16,11,13
+Pierceson Coody,4,60,-2,3,0,1,0,34,26,12,16
 Justin Thomas,1,70,E,2,0,2,0,34,36,14,F
 Justin Thomas,2,67,-3,4,0,1,0,33,34,13,F
 Justin Thomas,3,72,+2,3,0,5,0,36,36,10,F
-Justin Thomas,4,69,+3,2,0,3,1,35,34,11,17
+Justin Thomas,4,73,+3,2,0,3,1,35,38,12,F
 Ryo Hisatsune,1,69,-1,4,0,3,0,36,33,11,F
 Ryo Hisatsune,2,70,E,5,1,7,0,34,36,5,F
 Ryo Hisatsune,3,71,+1,1,0,2,0,36,35,15,F
@@ -170,11 +170,11 @@ Michael Brennan,4,71,+1,5,0,6,0,36,35,7,F
 Jacob Bridgeman,1,69,-1,4,0,3,0,35,34,11,F
 Jacob Bridgeman,2,70,E,4,0,4,0,36,34,10,F
 Jacob Bridgeman,3,68,-2,4,0,2,0,33,35,12,F
-Jacob Bridgeman,4,45,-1,2,0,1,0,35,10,9,12
+Jacob Bridgeman,4,56,-1,2,0,1,0,35,21,12,15
 Ryan Gerard,1,70,E,2,0,2,0,33,37,14,F
 Ryan Gerard,2,70,E,3,0,1,1,34,36,13,F
 Ryan Gerard,3,68,-2,5,0,3,0,35,33,10,F
-Ryan Gerard,4,57,E,4,0,4,0,37,20,7,15
+Ryan Gerard,4,69,-1,5,0,4,0,37,32,9,F
 Aldrich Potgieter,1,71,+1,4,0,3,1,35,36,10,F
 Aldrich Potgieter,2,71,+1,2,0,1,1,34,37,14,F
 Aldrich Potgieter,3,72,+2,2,0,4,0,35,37,12,F
@@ -186,11 +186,11 @@ Sudarshan Yellamaraju,4,71,+1,1,1,4,0,35,36,12,F
 Jackson Koivun,1,71,+1,4,0,3,1,36,35,10,F
 Jackson Koivun,2,70,E,2,0,2,0,34,36,14,F
 Jackson Koivun,3,66,-4,5,0,1,0,33,33,12,F
-Jackson Koivun,4,45,+3,0,0,0,1,35,10,10,11
+Jackson Koivun,4,55,+2,1,0,0,1,35,20,12,14
 Bud Cauley,1,66,-4,6,0,2,0,34,32,10,F
 Bud Cauley,2,72,+2,3,0,3,1,36,36,11,F
 Bud Cauley,3,70,E,3,0,3,0,35,35,12,F
-Bud Cauley,4,55,-2,3,0,1,0,33,22,11,15
+Bud Cauley,4,67,-3,4,0,1,0,33,34,13,F
 Harris English,1,68,-2,6,0,2,1,32,36,9,F
 Harris English,2,75,+5,0,0,3,1,37,38,14,F
 Harris English,3,71,+1,2,0,3,0,37,34,13,F
@@ -198,15 +198,15 @@ Harris English,4,67,-3,6,0,3,0,33,34,9,F
 Russell Henley,1,71,+1,3,0,2,1,38,33,12,F
 Russell Henley,2,70,E,3,0,3,0,34,36,12,F
 Russell Henley,3,67,-3,7,0,1,1,33,34,9,F
-Russell Henley,4,59,+2,1,0,1,1,34,25,12,15
+Russell Henley,4,70,E,3,0,1,1,34,36,13,F
 Jordan Spieth,1,65,-5,5,0,0,0,34,31,13,F
 Jordan Spieth,2,69,-1,4,0,3,0,36,33,11,F
 Jordan Spieth,3,72,+2,2,0,4,0,36,36,12,F
-Jordan Spieth,4,37,-2,2,0,0,0,33,4,8,10
+Jordan Spieth,4,49,-1,3,0,2,0,33,16,8,13
 Tommy Fleetwood,1,66,-4,3,1,1,0,31,35,13,F
 Tommy Fleetwood,2,68,-2,2,0,0,0,34,34,16,F
 Tommy Fleetwood,3,68,-2,4,0,2,0,33,35,12,F
-Tommy Fleetwood,4,15,-1,1,0,0,0,15,,3,4
+Tommy Fleetwood,4,31,E,2,0,2,0,31,,4,8
 Justin Rose,1,73,+3,1,1,4,1,38,35,11,F
 Justin Rose,2,70,E,3,0,3,0,34,36,12,F
 Justin Rose,3,73,+3,3,0,3,1,36,37,11,F
@@ -214,23 +214,23 @@ Justin Rose,4,64,-6,8,0,2,0,32,32,8,F
 Hideki Matsuyama,1,66,-4,7,0,3,0,36,30,8,F
 Hideki Matsuyama,2,70,E,3,0,3,0,36,34,12,F
 Hideki Matsuyama,3,67,-3,5,0,2,0,32,35,11,F
-Hideki Matsuyama,4,21,+1,1,0,2,0,21,,2,5
+Hideki Matsuyama,4,35,E,2,0,2,0,35,,5,9
 Patrick Cantlay,1,69,-1,4,1,5,0,35,34,8,F
 Patrick Cantlay,2,66,-4,4,1,2,0,32,34,11,F
 Patrick Cantlay,3,70,E,4,0,2,1,35,35,11,F
-Patrick Cantlay,4,34,-1,2,0,1,0,34,,6,9
+Patrick Cantlay,4,45,-1,3,0,2,0,34,11,7,12
 Patrick Rodgers,1,67,-3,4,0,1,0,34,33,13,F
 Patrick Rodgers,2,69,-1,5,0,2,1,37,32,10,F
 Patrick Rodgers,3,71,+1,2,0,3,0,35,36,13,F
-Patrick Rodgers,4,51,+1,2,0,3,0,35,16,8,13
+Patrick Rodgers,4,61,-1,4,0,3,0,35,26,9,16
 Si Woo Kim,1,70,E,2,1,2,1,34,36,12,F
 Si Woo Kim,2,68,-2,3,0,1,0,33,35,14,F
 Si Woo Kim,3,65,-5,7,0,2,0,31,34,9,F
-Si Woo Kim,4,15,-1,1,0,0,0,15,,3,4
+Si Woo Kim,4,30,-1,1,0,0,0,30,,7,8
 Keith Mitchell,1,69,-1,4,0,1,1,35,34,12,F
 Keith Mitchell,2,66,-4,7,0,1,1,30,36,9,F
 Keith Mitchell,3,72,+2,1,0,3,0,37,35,14,F
-Keith Mitchell,4,54,+1,2,0,3,0,35,19,9,14
+Keith Mitchell,4,67,+1,2,0,3,0,35,32,12,17
 Sepp Straka,1,68,-2,2,1,2,0,34,34,13,F
 Sepp Straka,2,73,+3,3,0,6,0,38,35,9,F
 Sepp Straka,3,72,+2,2,0,2,1,34,38,13,F
@@ -238,7 +238,7 @@ Sepp Straka,4,66,-4,4,0,0,0,33,33,14,F
 Max Homa,1,73,+3,4,0,3,0,34,39,10,F
 Max Homa,2,67,-3,4,0,1,0,33,34,13,F
 Max Homa,3,69,-1,4,0,3,0,33,36,11,F
-Max Homa,4,60,-2,4,0,2,0,34,26,10,16
+Max Homa,4,68,-2,4,0,2,0,34,34,12,F
 Michael Kim,1,65,-5,6,0,1,0,32,33,11,F
 Michael Kim,2,72,+2,0,0,2,0,37,35,16,F
 Michael Kim,3,74,+4,0,0,4,0,36,38,14,F
@@ -246,7 +246,7 @@ Michael Kim,4,73,+3,2,0,5,0,34,39,11,F
 Matt Fitzpatrick,1,70,E,3,0,1,1,32,38,13,F
 Matt Fitzpatrick,2,67,-3,4,0,1,0,35,32,13,F
 Matt Fitzpatrick,3,69,-1,3,0,2,0,34,35,13,F
-Matt Fitzpatrick,4,33,-2,3,0,1,0,33,,5,9
+Matt Fitzpatrick,4,43,-3,4,0,1,0,33,10,7,12
 Corey Conners,1,71,+1,2,0,1,1,37,34,14,F
 Corey Conners,2,71,+1,3,0,4,0,34,37,11,F
 Corey Conners,3,70,E,3,0,3,0,35,35,12,F
@@ -254,11 +254,11 @@ Corey Conners,4,70,E,2,0,2,0,34,36,14,F
 Scottie Scheffler,1,68,-2,3,0,1,0,34,34,14,F
 Scottie Scheffler,2,61,-9,11,0,2,0,30,31,5,F
 Scottie Scheffler,3,68,-2,4,0,2,0,35,33,12,F
-Scottie Scheffler,4,8,E,0,0,0,0,8,,2,2
+Scottie Scheffler,4,23,-1,2,0,1,0,23,,3,6
 Alex Smalley,1,68,-2,3,0,1,0,34,34,14,F
 Alex Smalley,2,68,-2,4,0,2,0,31,37,12,F
 Alex Smalley,3,72,+2,4,0,6,0,34,38,8,F
-Alex Smalley,4,61,-1,4,0,3,0,32,29,9,16
+Alex Smalley,4,69,-1,5,0,4,0,32,37,9,F
 Jordan Smith,1,71,+1,2,0,3,0,34,37,13,F
 Jordan Smith,2,73,+3,3,0,6,0,36,37,9,F
 Jordan Smith,3,67,-3,3,1,2,0,32,35,12,F
@@ -266,12 +266,12 @@ Jordan Smith,4,73,+3,0,0,3,0,37,36,15,F
 Maverick McNealy,1,68,-2,1,1,1,0,34,34,15,F
 Maverick McNealy,2,70,E,1,0,1,0,34,36,16,F
 Maverick McNealy,3,69,-1,3,0,0,1,33,36,14,F
-Maverick McNealy,4,46,E,2,0,2,0,36,10,8,12
+Maverick McNealy,4,61,-1,3,0,2,0,36,25,11,16
 Jake Knapp,1,65,-5,7,0,2,0,34,31,9,F
 Jake Knapp,2,70,E,2,0,2,0,35,35,14,F
 Jake Knapp,3,67,-3,5,0,0,1,33,34,12,F
-Jake Knapp,4,13,E,0,0,0,0,13,,3,3
+Jake Knapp,4,24,E,0,0,0,0,24,,6,6
 Sam Burns,1,67,-3,4,0,1,0,33,34,13,F
 Sam Burns,2,70,E,3,0,1,1,37,33,13,F
 Sam Burns,3,62,-8,8,0,0,0,30,32,10,F
-Sam Burns,4,8,E,0,0,0,0,8,,2,2
+Sam Burns,4,27,+3,0,0,1,1,27,,4,6
