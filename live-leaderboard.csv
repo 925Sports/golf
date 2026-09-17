@@ -1,31 +1,133 @@
 Event Name,Last Update,Current Round,Dead Heat Rules,Player Name,DG ID,Player Num,Country,Current Pos,Current Score,Today,Thru,Round,End Hole,Make Cut,Win %,Top 5 %,Top 20 %
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Scheffler, Scottie",18417,,USA,1,-16,-4,18,4,18,1,1,1,1
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Schauffele, Xander",19895,,USA,T14,-9,-4,18,4,18,1,0,0,1
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Bhatia, Akshay",26096,,USA,T18,-7,-2,18,4,18,1,0,0,1
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Kim, Si Woo",14609,,KOR,T14,-9,-1,18,4,18,1,0,0,1
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Woodland, Gary",12577,,USA,29,2,7,18,4,18,1,0,0,0
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Hovland, Viktor",18841,,NOR,2,-13,2,18,4,18,1,0,1,1
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Gerard, Ryan",29767,,USA,3,-12,2,18,4,18,1,0,1,1
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Aberg, Ludvig",23950,,SWE,T4,-11,1,18,4,18,1,0,1,1
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Bridgeman, Jacob",29433,,USA,T4,-11,-2,18,4,18,1,0,1,1
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Fitzpatrick, Alex",25362,,ENG,T4,-11,-4,18,4,18,1,0,1,1
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Gotterup, Chris",27774,,USA,T4,-11,1,18,4,18,1,0,1,1
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Lee, Min Woo",16841,,AUS,T4,-11,-2,18,4,18,1,0,1,1
-TOUR Championship,2026-08-30 6:00 PM,4,no,"McIlroy, Rory",10091,,NIR,T4,-11,-1,18,4,18,1,0,1,1
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Fleetwood, Tommy",12294,,ENG,T11,-10,-3,18,4,18,1,0,0,1
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Scott, Adam",6430,,AUS,T11,-10,2,18,4,18,1,0,0,1
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Young, Cameron",26651,,USA,T11,-10,0,18,4,18,1,0,0,1
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Henley, Russell",14578,,USA,T4,-11,-2,18,4,18,1,0,1,1
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Kim, Tom",24766,,KOR,T14,-9,-2,18,4,18,1,0,0,1
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Clark, Wyndham",23604,,USA,T21,-5,2,18,4,18,1,0,0,0
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Morikawa, Collin",22085,,USA,T14,-9,-2,18,4,18,1,0,0,1
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Smalley, Alex",18474,,USA,27,-1,2,18,4,18,1,0,0,0
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Fox, Ryan",11889,,NZL,26,-2,4,18,4,18,1,0,0,0
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Reitan, Kristoffer",21407,,NOR,25,-3,0,18,4,18,1,0,0,0
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Matsuyama, Hideki",13562,,JPN,T21,-5,-1,18,4,18,1,0,0,0
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Fitzpatrick, Matt",17646,,ENG,T21,-5,3,18,4,18,1,0,0,0
-TOUR Championship,2026-08-30 6:00 PM,4,no,"MacIntyre, Robert",23323,,SCO,28,0,4,18,4,18,1,0,0,0
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Cantlay, Patrick",15466,,USA,T21,-5,-1,18,4,18,1,0,0,0
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Rose, Justin",6093,,ENG,T18,-7,1,18,4,18,1,0,0,1
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Burns, Sam",19483,,USA,T18,-7,2,18,4,18,1,0,0,1
-TOUR Championship,2026-08-30 6:00 PM,4,no,"Spaun, J.J.",17536,,USA,WD,0,0,,1,18,0,0,0,0
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Conners, Corey",17576,,CAN,T1,-4,-4,9,1,9,0.93628,0.07021134559,0.27256,0.60736
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Koivun, Jackson",32319,,USA,--,0,0,,1,18,0.82328,0.05877599121,0.22864,0.5184
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Bridgeman, Jacob",29433,,USA,--,0,0,,1,18,0.79944,0.04143381752,0.185,0.46652
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Ghim, Doug",24550,,USA,--,0,0,,1,18,0.77352,0.03298591122,0.15432,0.41684
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"James, Ben",29827,,USA,--,0,0,,1,18,0.7574,0.03041485889,0.14132,0.3938
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Thompson, Davis",27364,,USA,--,0,0,,1,9,0.75532,0.02825759756,0.137,0.38772
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Kohles, Ben",16395,,USA,T1,-4,-4,9,1,9,0.90988,0.02648433704,0.1508,0.46312
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Penge, Marco",22465,,ENG,--,0,0,,1,9,0.7242,0.02647116585,0.12424,0.35192
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Meissner, Mac",28159,,USA,--,0,0,,1,9,0.76232,0.02471449842,0.13008,0.38704
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Cole, Eric",21756,,USA,--,0,0,,1,9,0.74232,0.0239560906,0.12564,0.36616
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Hisatsune, Ryo",22760,,JPN,T8,-2,-2,9,1,9,0.81624,0.02353615673,0.1314,0.40568
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Poston, J.T.",21554,,USA,--,0,0,,1,18,0.74108,0.02146247612,0.11656,0.35624
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Suber, Jackson",29279,,USA,--,0,0,,1,18,0.70352,0.02071484752,0.1016,0.31772
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Novak, Andrew",23475,,USA,T17,-1,-1,7,1,18,0.78556,0.0191672858,0.1136,0.3604
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Yu, Kevin",17881,,TPE,--,0,0,,1,9,0.71948,0.01906351197,0.10464,0.32596
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Ventura, Kristoffer",15651,,NOR,T17,-1,-1,6,1,18,0.78388,0.01888065714,0.11164,0.3528
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Hossler, Beau",15470,,USA,--,0,0,,1,9,0.7128,0.01719379599,0.0976,0.31672
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Taylor, Nick",13126,,CAN,T4,-3,-3,8,1,9,0.8492,0.01701321144,0.11016,0.38844
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Hughes, Mackenzie",15556,,CAN,T8,-2,-2,7,1,9,0.79652,0.01640595668,0.0968,0.3372
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Parry, John",13764,,ENG,T4,-3,-3,10,1,18,0.85728,0.0155492553,0.10104,0.36452
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Greyserman, Max",23465,,USA,T17,-1,-1,6,1,18,0.747,0.0146669327,0.08636,0.29688
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Nakajima, Keita",21074,,JPN,T34,0,0,5,1,18,0.71596,0.01459789501,0.09604,0.31868
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Castillo, Ricky",27819,,USA,--,0,0,,1,9,0.69224,0.01454068751,0.08436,0.28724
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Coody, Pierceson",28309,,USA,--,0,0,,1,18,0.67212,0.01391218854,0.0802,0.27768
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Roy, Kevin",18424,,USA,--,0,0,,1,9,0.68904,0.01355434943,0.08356,0.28496
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Kirk, Chris",12423,,USA,T8,-2,-2,9,1,18,0.7912,0.01316812548,0.0856,0.315
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Grillo, Emiliano",12808,,ARG,T8,-2,-2,10,1,18,0.80096,0.01308770084,0.08992,0.33584
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Bezuidenhout, Christiaan",18103,,RSA,--,0,0,,1,18,0.70052,0.01195948819,0.07704,0.2802
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Hoey, Rico",23504,,PHI,--,0,0,,1,18,0.66156,0.01152675443,0.07028,0.25616
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Horschel, Billy",11276,,USA,T8,-2,-2,8,1,9,0.74472,0.01078969118,0.0772,0.28684
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Finau, Tony",11676,,USA,--,0,0,,1,18,0.64348,0.01077371872,0.06568,0.23876
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"McCarthy, Denny",19870,,USA,--,0,0,,1,9,0.6806,0.0101348553,0.06736,0.2614
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Dou, Zecheng",16757,,CHN,--,0,0,,1,18,0.63788,0.009263626867,0.06204,0.23428
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Dumont De Chassart, Adrien",22002,,BEL,T17,-1,-1,4,1,18,0.69212,0.008605280169,0.05692,0.23192
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Eckroat, Austin",26653,,USA,--,0,0,,1,18,0.63164,0.008537571345,0.0556,0.21528
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Li, Haotong",15310,,CHN,--,0,0,,1,9,0.61092,0.008171720151,0.0512,0.202
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Fishburn, Patrick",25094,,USA,--,0,0,,1,9,0.61604,0.007964801188,0.0522,0.20796
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Keefer, Johnny",32457,,USA,T17,-1,-1,9,1,9,0.663,0.007906948205,0.05756,0.23768
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Watts, Tyler",34445,,USA,--,0,0,,1,9,0.6016,0.007814570904,0.05044,0.19748
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Fisk, Steven",26657,,USA,--,0,0,,1,9,0.61432,0.007706807823,0.05112,0.20252
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Salinda, Isaiah",27183,,USA,T8,-2,-2,6,1,9,0.67816,0.007669897673,0.04864,0.19352
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Bauchou, Zach",19846,,USA,T17,-1,-1,10,1,9,0.695,0.007597321275,0.06024,0.2484
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Svensson, Jesper",26850,,SWE,--,0,0,,1,18,0.5714,0.007510053564,0.04584,0.1756
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Moore, Taylor",21944,,USA,T17,-1,-1,7,1,9,0.66944,0.007475556452,0.05244,0.2216
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Kim, Michael",17543,,USA,T34,0,0,7,1,9,0.63352,0.007417335768,0.05652,0.23324
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Ford, David",31343,,USA,--,0,0,,1,18,0.58156,0.007368808839,0.04724,0.18092
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Shipley, Neal",32055,,USA,--,0,0,,1,9,0.58256,0.007125715134,0.0438,0.17624
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Pendrith, Taylor",17780,,CAN,T17,-1,-1,8,1,18,0.66484,0.007018881433,0.05188,0.2212
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Crowe, Trace",27780,,USA,T17,-1,-1,5,1,18,0.66292,0.006980170466,0.04608,0.19536
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Jaeger, Stephan",16394,,GER,T17,-1,-1,9,1,18,0.66848,0.006550443883,0.05088,0.22232
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"McGreevy, Max",23505,,USA,--,0,0,,1,9,0.62864,0.006321294694,0.047,0.2042
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Davis, Cam",17786,,AUS,T1,-4,-4,8,1,18,0.7512,0.006187284646,0.04332,0.1872
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Blair, Zac",17639,,USA,--,0,0,,1,9,0.65516,0.005998589456,0.04892,0.22312
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Vilips, Karl",24304,,AUS,T8,-2,-2,8,1,18,0.69544,0.005844056561,0.04568,0.20648
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Springer, Hayden",21995,,USA,--,0,0,,1,18,0.60044,0.005654599484,0.04528,0.18696
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Gordon, Will",26660,,USA,T4,-3,-3,9,1,18,0.74308,0.005325724385,0.04072,0.18712
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Van Rooyen, Erik",17550,,RSA,--,0,0,,1,9,0.56644,0.005256052542,0.03424,0.158
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Power, Seamus",10104,,IRL,--,0,0,,1,18,0.57704,0.004659826722,0.03476,0.16368
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Ramey, Chad",19840,,USA,T8,-2,-2,10,1,18,0.71188,0.004437150946,0.04044,0.19892
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Putnam, Andrew",14704,,USA,T17,-1,-1,7,1,9,0.66704,0.004261582581,0.03708,0.19252
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Smotherman, Austin",22985,,USA,--,0,0,,1,9,0.56248,0.0041462104,0.03404,0.15632
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Brown, Blades",32152,,USA,T34,0,0,8,1,9,0.55588,0.004118488835,0.03956,0.18024
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Hoge, Tom",15575,,USA,--,0,0,,1,18,0.56496,0.003878085912,0.03316,0.1556
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Dahmen, Joel",14509,,USA,--,0,0,,1,9,0.58096,0.003873038833,0.03424,0.16236
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Skinns, David",10873,,ENG,--,0,0,,1,18,0.54292,0.003690962201,0.029,0.13792
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Griffin, Lanto",15330,,USA,--,0,0,,1,18,0.55816,0.003621252654,0.03108,0.14564
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Kanaya, Takumi",19729,,JPN,--,0,0,,1,18,0.57856,0.003486651787,0.03116,0.15796
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Pavon, Matthieu",19960,,FRA,T48,1,1,6,1,18,0.49524,0.003287337567,0.02328,0.12528
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Chatfield, Davis",30620,,USA,--,0,0,,1,18,0.5592,0.003104842106,0.02756,0.14196
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Hojgaard, Rasmus",23838,,DEN,T63,3,3,7,1,18,0.38024,0.002971088639,0.02684,0.1262
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Nyholm, Pontus",25475,,SWE,--,0,0,,1,18,0.50352,0.002859410802,0.0248,0.11984
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Simpson, Webb",11049,,USA,--,0,0,,1,18,0.51904,0.002834978591,0.02408,0.12172
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Sargent, Gordon",30814,,USA,--,0,0,,1,18,0.46952,0.002747038318,0.02364,0.1064
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Glover, Lucas",7399,,USA,T17,-1,-1,7,1,18,0.63764,0.002540958849,0.02804,0.15196
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Lipsky, David",15980,,USA,--,0,0,,1,18,0.50592,0.002507035648,0.0198,0.10752
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Clanton, Luke",32330,,USA,T48,1,1,5,1,9,0.47748,0.002437879853,0.02128,0.10928
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Wise, Aaron",22051,,USA,--,0,0,,1,9,0.46764,0.00239024804,0.019,0.09984
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Stanger, Jimmy",23048,,USA,T34,0,0,5,1,18,0.47304,0.002321390565,0.01632,0.09144
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"VanDerLaan, John",25319,,USA,--,0,0,,1,9,0.48292,0.002239662409,0.01944,0.10688
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Peterson, Paul",16341,,USA,--,0,0,,1,18,0.52864,0.002126831787,0.01868,0.11484
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Blanchet, Chandler",24956,,USA,T48,1,1,5,1,18,0.42992,0.001930132151,0.0154,0.09024
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Silverman, Ben",17381,,CAN,--,0,0,,1,18,0.49184,0.00192281235,0.01916,0.10324
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Streelman, Kevin",8480,,USA,--,0,0,,1,9,0.49336,0.001762544543,0.019,0.10612
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Martin, Ben",14007,,USA,T8,-2,-2,6,1,9,0.63512,0.001754026879,0.02164,0.12552
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Lamprecht, Christo",24343,,RSA,T4,-3,-3,6,1,9,0.58584,0.001721693359,0.01616,0.09
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Riley, Davis",19872,,USA,T34,0,0,7,1,18,0.46516,0.001712044797,0.01412,0.08336
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Lebioda, Hank",21943,,USA,T17,-1,-1,9,1,18,0.56256,0.001575553744,0.01892,0.11868
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Higgs, Harry",14140,,USA,--,0,0,,1,9,0.45128,0.001572455434,0.01484,0.08716
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Garnett, Brice",11451,,USA,--,0,0,,1,9,0.48232,0.001545373652,0.01572,0.09068
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"List, Luke",7960,,USA,--,0,0,,1,9,0.41332,0.001440222413,0.0116,0.06556
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Hadwin, Adam",13965,,CAN,T17,-1,-1,7,1,9,0.5462,0.001363002985,0.01616,0.10196
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Whaley, Vince",25908,,USA,--,0,0,,1,9,0.4612,0.00130682308,0.01224,0.083
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Tosti, Alejandro",17032,,ARG,T34,0,0,5,1,9,0.43128,0.001263873342,0.01152,0.07056
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Rozo, Marcelo",16591,,COL,T17,-1,-1,5,1,9,0.49392,0.001262843054,0.00956,0.066
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Kang, Jeffrey",21889,,USA,T34,0,0,4,1,18,0.44852,0.001223131494,0.0132,0.0778
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Champ, Cameron",23542,,USA,--,0,0,,1,18,0.40624,0.001208408044,0.01252,0.06904
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Mouw, William",29770,,USA,T48,1,1,8,1,18,0.3996,0.001192539617,0.0148,0.09248
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Valdes, Brendan",31188,,USA,--,0,0,,1,9,0.3452,0.001167012371,0.00848,0.0502
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Ewart, A.J.",21883,,CAN,T48,1,1,6,1,9,0.3828,0.001114849792,0.01164,0.07624
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Malnati, Peter",14926,,USA,--,0,0,,1,18,0.40808,0.00105787895,0.00944,0.06304
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Svensson, Adam",13997,,CAN,--,0,0,,1,9,0.44292,0.001037788442,0.01176,0.07616
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Schenk, Adam",19477,,USA,--,0,0,,1,9,0.41388,0.000893118182,0.01028,0.06656
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Hirata, Kensei",20954,,JPN,T34,0,0,5,1,18,0.42,0.000824357657,0.009,0.05628
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Hardy, Nick",19865,,USA,T34,0,0,11,1,18,0.4274,0.0007700355968,0.00868,0.06584
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Echavarria, Nico",22833,,COL,T60,2,2,9,1,9,0.2826,0.0007360002389,0.01064,0.06344
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Duncan, Tyler",18187,,USA,T48,1,1,7,1,18,0.38568,0.0006776669197,0.00804,0.05876
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Paul, Jeremy",22087,,GER,T34,0,0,4,1,9,0.3834,0.0006372931048,0.00544,0.045
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Phillips, Chandler",27164,,USA,T60,2,2,9,1,18,0.31052,0.0006319399903,0.00804,0.06596
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Gomez, Fabian",8571,,ARG,--,0,0,,1,9,0.43988,0.0006112881031,0.0096,0.07052
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Walker, Danny",25003,,USA,T48,1,1,9,1,9,0.24436,0.0005544470887,0.00452,0.0324
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Villegas, Camilo",9171,,COL,--,0,0,,1,18,0.37684,0.0005258989027,0.00604,0.0468
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Kisner, Kevin",11328,,USA,--,0,0,,1,9,0.32192,0.0005170633559,0.0052,0.0364
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Kizzire, Patton",13470,,USA,--,0,0,,1,18,0.36432,0.000494743232,0.0064,0.04704
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Byrd, Jonathan",6931,,USA,--,0,0,,1,18,0.37136,0.0004929690444,0.00672,0.0474
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Campos, Rafael",12909,,PUR,T48,1,1,6,1,9,0.26064,0.0003739574324,0.00364,0.02956
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Thompson, Michael",12946,,USA,--,0,0,,1,9,0.3376,0.000329402335,0.005,0.04184
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Merritt, Troy",13367,,USA,T17,-1,-1,11,1,9,0.48024,0.0002702278541,0.00672,0.05756
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Lower, Justin",17723,,USA,T48,1,1,11,1,9,0.30576,0.0002575963336,0.00424,0.03932
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Hubbard, Mark",16333,,USA,T60,2,2,11,1,18,0.23812,0.0002366903409,0.00424,0.03372
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Duncan, Austin",30937,,USA,T34,0,0,4,1,18,0.29792,0.0002303331827,0.00288,0.02672
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Dunlap, Nick",28270,,USA,T34,0,0,10,1,9,0.34892,0.000192082823,0.00528,0.04144
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Todd, Brendon",12425,,USA,T17,-1,-1,7,1,18,0.3368,0.0001131447838,0.0022,0.0208
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Wu, Dylan",25002,,USA,T48,1,1,7,1,9,0.28248,0.00009833775128,0.003,0.03388
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Harper, Keller",28570,,USA,T34,0,0,6,1,9,0.13804,0.00009617237654,0.00064,0.00536
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Oxendine, Spencer",30030060,,USA,T48,1,1,5,1,9,0.12668,0.00004,0.00072,0.00556
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Bertagnole, Carson",34966,,USA,66,5,5,5,1,18,0.06584,0.00004,0.00068,0.00756
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Yribarren, Phillip",26502,,USA,--,0,0,,1,9,0.028,0,0,0.00016
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Streb, Robert",14852,,USA,65,4,4,11,1,18,0.019,0,0,0.0002
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Norlander, Henrik",11657,,SWE,T63,3,3,10,1,9,0.06852,0,0.00032,0.00444
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Jones, Tyler",30037685,,USA,T34,0,0,4,1,9,0.07996,0,0.00016,0.0014
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Deneen, Morgan",28075,,USA,--,0,0,,1,18,0.0586,0,0.00008,0.00104
+Biltmore Championship Asheville,2026-09-17 11:05 AM,1,no,"Brehm, Ryan",10423,,USA,T48,1,1,11,1,9,0.1304,0,0.00028,0.00432
