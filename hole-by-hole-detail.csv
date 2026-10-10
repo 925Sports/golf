@@ -1,5 +1,5 @@
 HOLE-BY-HOLE DETAIL,,,,,,,,,
-"Event: Baycurrent Classic (401850916) | Success: 72 | Failed: 0 | Updated: 10/9/2026, 3:14:04 PM",,,,,,,,,
+"Event: Baycurrent Classic (401850916) | Success: 72 | Failed: 0 | Updated: 10/9/2026, 7:14:04 PM",,,,,,,,,
 ,,,,,,,,,
 Player,Player ID,Round,Hole,Par,Strokes,Score Type,To Par,Round Score,Round To Par
 Zach Bauchou,10030,1,1,4,4,Par,E,69,-2
@@ -110,6 +110,8 @@ Xander Schauffele,10140,2,15,4,4,Par,E,69,-2
 Xander Schauffele,10140,2,16,3,3,Par,E,69,-2
 Xander Schauffele,10140,2,17,4,5,Bogey,+1,69,-2
 Xander Schauffele,10140,2,18,4,3,Birdie,-1,69,-2
+Xander Schauffele,10140,3,1,4,5,Bogey,+1,8,E
+Xander Schauffele,10140,3,2,4,3,Birdie,-1,8,E
 Kurt Kitayama,10364,1,1,4,9,Other,OTHER,71,E
 Kurt Kitayama,10364,1,2,4,4,Par,E,71,E
 Kurt Kitayama,10364,1,3,3,3,Par,E,71,E
@@ -542,6 +544,7 @@ Tony Finau,2230,2,15,4,4,Par,E,68,-3
 Tony Finau,2230,2,16,3,3,Par,E,68,-3
 Tony Finau,2230,2,17,4,4,Par,E,68,-3
 Tony Finau,2230,2,18,4,5,Bogey,+1,68,-3
+Tony Finau,2230,3,1,4,4,Par,E,4,E
 Rickie Fowler,3702,1,1,4,4,Par,E,73,+2
 Rickie Fowler,3702,1,2,4,4,Par,E,73,+2
 Rickie Fowler,3702,1,3,3,4,Bogey,+1,73,+2
@@ -650,6 +653,8 @@ Hiroshi Iwata,3827,2,15,4,3,Birdie,-1,72,+1
 Hiroshi Iwata,3827,2,16,3,4,Bogey,+1,72,+1
 Hiroshi Iwata,3827,2,17,4,4,Par,E,72,+1
 Hiroshi Iwata,3827,2,18,4,6,Double Bogey,+2,72,+1
+Hiroshi Iwata,3827,3,10,4,4,Par,E,8,E
+Hiroshi Iwata,3827,3,11,4,4,Par,E,8,E
 Adam Scott,388,1,1,4,4,Par,E,69,-2
 Adam Scott,388,1,2,4,4,Par,E,69,-2
 Adam Scott,388,1,3,3,3,Par,E,69,-2
@@ -794,6 +799,7 @@ Lee Hodges,4404991,2,15,4,5,Bogey,+1,71,E
 Lee Hodges,4404991,2,16,3,3,Par,E,71,E
 Lee Hodges,4404991,2,17,4,3,Birdie,-1,71,E
 Lee Hodges,4404991,2,18,4,5,Bogey,+1,71,E
+Lee Hodges,4404991,3,10,4,3,Birdie,-1,3,-1
 Nico Echavarria,4408316,1,1,4,3,Birdie,-1,67,-4
 Nico Echavarria,4408316,1,2,4,5,Bogey,+1,67,-4
 Nico Echavarria,4408316,1,3,3,3,Par,E,67,-4
@@ -902,6 +908,8 @@ Takumi Kanaya,4410612,2,6,5,4,Birdie,-1,69,-2
 Takumi Kanaya,4410612,2,7,3,4,Bogey,+1,69,-2
 Takumi Kanaya,4410612,2,8,4,4,Par,E,69,-2
 Takumi Kanaya,4410612,2,9,4,3,Birdie,-1,69,-2
+Takumi Kanaya,4410612,3,1,4,3,Birdie,-1,7,-1
+Takumi Kanaya,4410612,3,2,4,4,Par,E,7,-1
 Min Woo Lee,4410932,1,10,4,4,Par,E,67,-4
 Min Woo Lee,4410932,1,11,4,5,Bogey,+1,67,-4
 Min Woo Lee,4410932,1,12,4,4,Par,E,67,-4
@@ -1190,6 +1198,8 @@ John Parry,4671,2,15,4,4,Par,E,71,E
 John Parry,4671,2,16,3,3,Par,E,71,E
 John Parry,4671,2,17,4,4,Par,E,71,E
 John Parry,4671,2,18,4,3,Birdie,-1,71,E
+John Parry,4671,3,1,4,4,Par,E,8,E
+John Parry,4671,3,2,4,4,Par,E,8,E
 Ricky Castillo,4691931,1,10,4,3,Birdie,-1,65,-6
 Ricky Castillo,4691931,1,11,4,4,Par,E,65,-6
 Ricky Castillo,4691931,1,12,4,4,Par,E,65,-6
@@ -1334,6 +1344,8 @@ Tomohiro Ishizaka,4705834,2,15,4,4,Par,E,70,-1
 Tomohiro Ishizaka,4705834,2,16,3,4,Bogey,+1,70,-1
 Tomohiro Ishizaka,4705834,2,17,4,4,Par,E,70,-1
 Tomohiro Ishizaka,4705834,2,18,4,4,Par,E,70,-1
+Tomohiro Ishizaka,4705834,3,10,4,6,Double Bogey,+2,10,+2
+Tomohiro Ishizaka,4705834,3,11,4,4,Par,E,10,+2
 Mac Meissner,4791222,1,10,4,4,Par,E,65,-6
 Mac Meissner,4791222,1,11,4,4,Par,E,65,-6
 Mac Meissner,4791222,1,12,4,4,Par,E,65,-6
@@ -1406,6 +1418,7 @@ Pierceson Coody,4837368,2,6,5,5,Par,E,75,+4
 Pierceson Coody,4837368,2,7,3,3,Par,E,75,+4
 Pierceson Coody,4837368,2,8,4,4,Par,E,75,+4
 Pierceson Coody,4837368,2,9,4,4,Par,E,75,+4
+Pierceson Coody,4837368,3,10,4,4,Par,E,4,E
 Justin Thomas,4848,1,1,4,4,Par,E,69,-2
 Justin Thomas,4848,1,2,4,4,Par,E,69,-2
 Justin Thomas,4848,1,3,3,3,Par,E,69,-2
@@ -1874,6 +1887,8 @@ Kosuke Sunagawa,5240165,2,6,5,4,Birdie,-1,70,-1
 Kosuke Sunagawa,5240165,2,7,3,4,Bogey,+1,70,-1
 Kosuke Sunagawa,5240165,2,8,4,4,Par,E,70,-1
 Kosuke Sunagawa,5240165,2,9,4,4,Par,E,70,-1
+Kosuke Sunagawa,5240165,3,10,4,4,Par,E,8,E
+Kosuke Sunagawa,5240165,3,11,4,4,Par,E,8,E
 Koshin Nagasaki,5455776,1,1,4,4,Par,E,72,+1
 Koshin Nagasaki,5455776,1,2,4,3,Birdie,-1,72,+1
 Koshin Nagasaki,5455776,1,3,3,4,Bogey,+1,72,+1
@@ -1946,6 +1961,7 @@ Jordan Spieth,5467,2,15,4,4,Par,E,66,-5
 Jordan Spieth,5467,2,16,3,3,Par,E,66,-5
 Jordan Spieth,5467,2,17,4,4,Par,E,66,-5
 Jordan Spieth,5467,2,18,4,3,Birdie,-1,66,-5
+Jordan Spieth,5467,3,1,4,4,Par,E,4,E
 Andrew Putnam,5502,1,10,4,4,Par,E,66,-5
 Andrew Putnam,5502,1,11,4,4,Par,E,66,-5
 Andrew Putnam,5502,1,12,4,4,Par,E,66,-5
@@ -1982,6 +1998,7 @@ Andrew Putnam,5502,2,15,4,3,Birdie,-1,73,+2
 Andrew Putnam,5502,2,16,3,3,Par,E,73,+2
 Andrew Putnam,5502,2,17,4,5,Bogey,+1,73,+2
 Andrew Putnam,5502,2,18,4,4,Par,E,73,+2
+Andrew Putnam,5502,3,1,4,4,Par,E,4,E
 Hideki Matsuyama,5860,1,1,4,3,Birdie,-1,67,-4
 Hideki Matsuyama,5860,1,2,4,4,Par,E,67,-4
 Hideki Matsuyama,5860,1,3,3,2,Birdie,-1,67,-4
@@ -2018,6 +2035,7 @@ Hideki Matsuyama,5860,2,6,5,6,Bogey,+1,72,+1
 Hideki Matsuyama,5860,2,7,3,3,Par,E,72,+1
 Hideki Matsuyama,5860,2,8,4,4,Par,E,72,+1
 Hideki Matsuyama,5860,2,9,4,4,Par,E,72,+1
+Hideki Matsuyama,5860,3,1,4,4,Par,E,4,E
 Beau Hossler,6011,1,1,4,3,Birdie,-1,70,-1
 Beau Hossler,6011,1,2,4,4,Par,E,70,-1
 Beau Hossler,6011,1,3,3,3,Par,E,70,-1
@@ -2054,6 +2072,7 @@ Beau Hossler,6011,2,6,5,5,Par,E,70,-1
 Beau Hossler,6011,2,7,3,3,Par,E,70,-1
 Beau Hossler,6011,2,8,4,3,Birdie,-1,70,-1
 Beau Hossler,6011,2,9,4,4,Par,E,70,-1
+Beau Hossler,6011,3,10,4,4,Par,E,4,E
 Tom Hoge,6086,1,10,4,5,Bogey,+1,81,+10
 Tom Hoge,6086,1,11,4,5,Bogey,+1,81,+10
 Tom Hoge,6086,1,12,4,6,Double Bogey,+2,81,+10
