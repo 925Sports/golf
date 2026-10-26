@@ -1,5 +1,5 @@
 HOLE-BY-HOLE DETAIL,,,,,,,,,
-"Event: Butterfield Bermuda Championship (401850917) | Success: 120 | Failed: 0 | Updated: 10/26/2026, 2:29:11 AM",,,,,,,,,
+"Event: Butterfield Bermuda Championship (401850917) | Success: 120 | Failed: 0 | Updated: 10/26/2026, 9:59:16 AM",,,,,,,,,
 ,,,,,,,,,
 Player,Player ID,Round,Hole,Par,Strokes,Score Type,To Par,Round Score,Round To Par
 Nick Hardy,10048,1,10,4,4,Par,E,69,-2
@@ -758,6 +758,9 @@ Austin Smotherman,11056,3,15,4,3,Birdie,-1,66,-5
 Austin Smotherman,11056,3,16,3,4,Bogey,+1,66,-5
 Austin Smotherman,11056,3,17,5,5,Par,E,66,-5
 Austin Smotherman,11056,3,18,4,4,Par,E,66,-5
+Austin Smotherman,11056,4,16,3,3,Par,E,9,E
+Austin Smotherman,11056,4,16,3,3,Par,E,9,E
+Austin Smotherman,11056,4,16,3,3,Par,E,9,E
 Cameron Champ,11098,1,10,4,4,Par,E,70,-1
 Cameron Champ,11098,1,11,4,4,Par,E,70,-1
 Cameron Champ,11098,1,12,4,4,Par,E,70,-1
@@ -4548,6 +4551,9 @@ Séamus Power,6001,3,15,4,4,Par,E,67,-4
 Séamus Power,6001,3,16,3,3,Par,E,67,-4
 Séamus Power,6001,3,17,5,4,Birdie,-1,67,-4
 Séamus Power,6001,3,18,4,4,Par,E,67,-4
+Séamus Power,6001,4,16,3,3,Par,E,10,+1
+Séamus Power,6001,4,16,3,3,Par,E,10,+1
+Séamus Power,6001,4,16,3,4,Bogey,+1,10,+1
 Adam Long,6015,1,10,4,4,Par,E,70,-1
 Adam Long,6015,1,11,4,4,Par,E,70,-1
 Adam Long,6015,1,12,4,3,Birdie,-1,70,-1
