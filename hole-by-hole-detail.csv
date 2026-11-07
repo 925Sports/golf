@@ -1,5 +1,5 @@
 HOLE-BY-HOLE DETAIL,,,,,,,,,
-"Event: World Wide Technology Championship (401850979) | Success: 120 | Failed: 0 | Updated: 11/7/2026, 9:29:07 AM",,,,,,,,,
+"Event: World Wide Technology Championship (401850979) | Success: 120 | Failed: 0 | Updated: 11/7/2026, 1:59:24 PM",,,,,,,,,
 ,,,,,,,,,
 Player,Player ID,Round,Hole,Par,Strokes,Score Type,To Par,Round Score,Round To Par
 Zach Bauchou,10030,1,10,4,3,Birdie,-1,67,-5
@@ -38,6 +38,14 @@ Zach Bauchou,10030,2,15,4,4,Par,E,67,-5
 Zach Bauchou,10030,2,16,3,3,Par,E,67,-5
 Zach Bauchou,10030,2,17,4,3,Birdie,-1,67,-5
 Zach Bauchou,10030,2,18,5,4,Birdie,-1,67,-5
+Zach Bauchou,10030,3,1,5,4,Birdie,-1,30,-3
+Zach Bauchou,10030,3,2,3,2,Birdie,-1,30,-3
+Zach Bauchou,10030,3,3,4,4,Par,E,30,-3
+Zach Bauchou,10030,3,4,4,4,Par,E,30,-3
+Zach Bauchou,10030,3,5,4,4,Par,E,30,-3
+Zach Bauchou,10030,3,6,5,5,Par,E,30,-3
+Zach Bauchou,10030,3,7,4,3,Birdie,-1,30,-3
+Zach Bauchou,10030,3,8,4,4,Par,E,30,-3
 Denny McCarthy,10054,1,1,5,4,Birdie,-1,68,-4
 Denny McCarthy,10054,1,2,3,3,Par,E,68,-4
 Denny McCarthy,10054,1,3,4,4,Par,E,68,-4
@@ -74,6 +82,13 @@ Denny McCarthy,10054,2,6,5,4,Birdie,-1,65,-7
 Denny McCarthy,10054,2,7,4,4,Par,E,65,-7
 Denny McCarthy,10054,2,8,4,3,Birdie,-1,65,-7
 Denny McCarthy,10054,2,9,3,3,Par,E,65,-7
+Denny McCarthy,10054,3,1,5,4,Birdie,-1,26,-3
+Denny McCarthy,10054,3,2,3,2,Birdie,-1,26,-3
+Denny McCarthy,10054,3,3,4,3,Birdie,-1,26,-3
+Denny McCarthy,10054,3,4,4,4,Par,E,26,-3
+Denny McCarthy,10054,3,5,4,4,Par,E,26,-3
+Denny McCarthy,10054,3,6,5,5,Par,E,26,-3
+Denny McCarthy,10054,3,7,4,4,Par,E,26,-3
 Chad Ramey,10057,1,10,4,4,Par,E,68,-4
 Chad Ramey,10057,1,11,3,3,Par,E,68,-4
 Chad Ramey,10057,1,12,4,5,Bogey,+1,68,-4
@@ -110,6 +125,19 @@ Chad Ramey,10057,2,15,4,4,Par,E,68,-4
 Chad Ramey,10057,2,16,3,4,Bogey,+1,68,-4
 Chad Ramey,10057,2,17,4,4,Par,E,68,-4
 Chad Ramey,10057,2,18,5,4,Birdie,-1,68,-4
+Chad Ramey,10057,3,1,5,4,Birdie,-1,49,-2
+Chad Ramey,10057,3,2,3,2,Birdie,-1,49,-2
+Chad Ramey,10057,3,3,4,4,Par,E,49,-2
+Chad Ramey,10057,3,4,4,4,Par,E,49,-2
+Chad Ramey,10057,3,5,4,3,Birdie,-1,49,-2
+Chad Ramey,10057,3,6,5,5,Par,E,49,-2
+Chad Ramey,10057,3,7,4,4,Par,E,49,-2
+Chad Ramey,10057,3,8,4,5,Bogey,+1,49,-2
+Chad Ramey,10057,3,9,3,3,Par,E,49,-2
+Chad Ramey,10057,3,10,4,3,Birdie,-1,49,-2
+Chad Ramey,10057,3,11,3,3,Par,E,49,-2
+Chad Ramey,10057,3,12,4,5,Bogey,+1,49,-2
+Chad Ramey,10057,3,13,4,4,Par,E,49,-2
 Davis Riley,10058,1,10,4,4,Par,E,71,-1
 Davis Riley,10058,1,11,3,4,Bogey,+1,71,-1
 Davis Riley,10058,1,12,4,4,Par,E,71,-1
@@ -182,6 +210,17 @@ Alvaro Ortiz,10481,2,6,5,5,Par,E,66,-6
 Alvaro Ortiz,10481,2,7,4,4,Par,E,66,-6
 Alvaro Ortiz,10481,2,8,4,4,Par,E,66,-6
 Alvaro Ortiz,10481,2,9,3,3,Par,E,66,-6
+Alvaro Ortiz,10481,3,1,5,4,Birdie,-1,39,-4
+Alvaro Ortiz,10481,3,2,3,3,Par,E,39,-4
+Alvaro Ortiz,10481,3,3,4,3,Birdie,-1,39,-4
+Alvaro Ortiz,10481,3,4,4,5,Bogey,+1,39,-4
+Alvaro Ortiz,10481,3,5,4,4,Par,E,39,-4
+Alvaro Ortiz,10481,3,6,5,4,Birdie,-1,39,-4
+Alvaro Ortiz,10481,3,7,4,4,Par,E,39,-4
+Alvaro Ortiz,10481,3,8,4,3,Birdie,-1,39,-4
+Alvaro Ortiz,10481,3,9,3,3,Par,E,39,-4
+Alvaro Ortiz,10481,3,10,4,3,Birdie,-1,39,-4
+Alvaro Ortiz,10481,3,11,3,3,Par,E,39,-4
 Hayden Springer,10562,1,10,4,4,Par,E,67,-5
 Hayden Springer,10562,1,11,3,3,Par,E,67,-5
 Hayden Springer,10562,1,12,4,4,Par,E,67,-5
@@ -218,6 +257,19 @@ Hayden Springer,10562,2,15,4,4,Par,E,70,-2
 Hayden Springer,10562,2,16,3,3,Par,E,70,-2
 Hayden Springer,10562,2,17,4,4,Par,E,70,-2
 Hayden Springer,10562,2,18,5,5,Par,E,70,-2
+Hayden Springer,10562,3,10,4,3,Birdie,-1,52,E
+Hayden Springer,10562,3,11,3,3,Par,E,52,E
+Hayden Springer,10562,3,12,4,4,Par,E,52,E
+Hayden Springer,10562,3,13,4,5,Bogey,+1,52,E
+Hayden Springer,10562,3,14,5,5,Par,E,52,E
+Hayden Springer,10562,3,15,4,4,Par,E,52,E
+Hayden Springer,10562,3,16,3,3,Par,E,52,E
+Hayden Springer,10562,3,17,4,4,Par,E,52,E
+Hayden Springer,10562,3,18,5,4,Birdie,-1,52,E
+Hayden Springer,10562,3,1,5,4,Birdie,-1,52,E
+Hayden Springer,10562,3,2,3,3,Par,E,52,E
+Hayden Springer,10562,3,3,4,3,Birdie,-1,52,E
+Hayden Springer,10562,3,4,4,7,Triple Bogey,+3,52,E
 Aaron Wise,10577,1,10,4,3,Birdie,-1,72,E
 Aaron Wise,10577,1,11,3,4,Bogey,+1,72,E
 Aaron Wise,10577,1,12,4,4,Par,E,72,E
@@ -290,6 +342,17 @@ Matthieu Pavon,10596,2,6,5,4,Birdie,-1,70,-2
 Matthieu Pavon,10596,2,7,4,3,Birdie,-1,70,-2
 Matthieu Pavon,10596,2,8,4,4,Par,E,70,-2
 Matthieu Pavon,10596,2,9,3,3,Par,E,70,-2
+Matthieu Pavon,10596,3,1,5,6,Bogey,+1,40,-3
+Matthieu Pavon,10596,3,2,3,2,Birdie,-1,40,-3
+Matthieu Pavon,10596,3,3,4,3,Birdie,-1,40,-3
+Matthieu Pavon,10596,3,4,4,5,Bogey,+1,40,-3
+Matthieu Pavon,10596,3,5,4,3,Birdie,-1,40,-3
+Matthieu Pavon,10596,3,6,5,5,Par,E,40,-3
+Matthieu Pavon,10596,3,7,4,4,Par,E,40,-3
+Matthieu Pavon,10596,3,8,4,4,Par,E,40,-3
+Matthieu Pavon,10596,3,9,3,2,Birdie,-1,40,-3
+Matthieu Pavon,10596,3,10,4,3,Birdie,-1,40,-3
+Matthieu Pavon,10596,3,11,3,3,Par,E,40,-3
 Taylor Moore,10664,1,10,4,4,Par,E,71,-1
 Taylor Moore,10664,1,11,3,2,Birdie,-1,71,-1
 Taylor Moore,10664,1,12,4,6,Double Bogey,+2,71,-1
@@ -362,6 +425,19 @@ Kevin Streelman,1077,2,15,4,4,Par,E,67,-5
 Kevin Streelman,1077,2,16,3,4,Bogey,+1,67,-5
 Kevin Streelman,1077,2,17,4,4,Par,E,67,-5
 Kevin Streelman,1077,2,18,5,5,Par,E,67,-5
+Kevin Streelman,1077,3,1,5,5,Par,E,52,+1
+Kevin Streelman,1077,3,2,3,3,Par,E,52,+1
+Kevin Streelman,1077,3,3,4,4,Par,E,52,+1
+Kevin Streelman,1077,3,4,4,5,Bogey,+1,52,+1
+Kevin Streelman,1077,3,5,4,4,Par,E,52,+1
+Kevin Streelman,1077,3,6,5,5,Par,E,52,+1
+Kevin Streelman,1077,3,7,4,4,Par,E,52,+1
+Kevin Streelman,1077,3,8,4,4,Par,E,52,+1
+Kevin Streelman,1077,3,9,3,4,Bogey,+1,52,+1
+Kevin Streelman,1077,3,10,4,3,Birdie,-1,52,+1
+Kevin Streelman,1077,3,11,3,3,Par,E,52,+1
+Kevin Streelman,1077,3,12,4,4,Par,E,52,+1
+Kevin Streelman,1077,3,13,4,4,Par,E,52,+1
 Cam Davis,10863,1,10,4,3,Birdie,-1,68,-4
 Cam Davis,10863,1,11,3,3,Par,E,68,-4
 Cam Davis,10863,1,12,4,4,Par,E,68,-4
@@ -398,6 +474,18 @@ Cam Davis,10863,2,15,4,4,Par,E,68,-4
 Cam Davis,10863,2,16,3,3,Par,E,68,-4
 Cam Davis,10863,2,17,4,4,Par,E,68,-4
 Cam Davis,10863,2,18,5,5,Par,E,68,-4
+Cam Davis,10863,3,1,5,3,Eagle,-2,43,-4
+Cam Davis,10863,3,2,3,2,Birdie,-1,43,-4
+Cam Davis,10863,3,3,4,4,Par,E,43,-4
+Cam Davis,10863,3,4,4,4,Par,E,43,-4
+Cam Davis,10863,3,5,4,3,Birdie,-1,43,-4
+Cam Davis,10863,3,6,5,5,Par,E,43,-4
+Cam Davis,10863,3,7,4,4,Par,E,43,-4
+Cam Davis,10863,3,8,4,4,Par,E,43,-4
+Cam Davis,10863,3,9,3,3,Par,E,43,-4
+Cam Davis,10863,3,10,4,4,Par,E,43,-4
+Cam Davis,10863,3,11,3,3,Par,E,43,-4
+Cam Davis,10863,3,12,4,4,Par,E,43,-4
 Jimmy Stanger,10990,1,10,4,4,Par,E,75,+3
 Jimmy Stanger,10990,1,11,3,3,Par,E,75,+3
 Jimmy Stanger,10990,1,12,4,6,Double Bogey,+2,75,+3
@@ -470,6 +558,17 @@ Max Greyserman,11101,2,15,4,4,Par,E,71,-1
 Max Greyserman,11101,2,16,3,3,Par,E,71,-1
 Max Greyserman,11101,2,17,4,4,Par,E,71,-1
 Max Greyserman,11101,2,18,5,5,Par,E,71,-1
+Max Greyserman,11101,3,10,4,3,Birdie,-1,40,-4
+Max Greyserman,11101,3,11,3,3,Par,E,40,-4
+Max Greyserman,11101,3,12,4,4,Par,E,40,-4
+Max Greyserman,11101,3,13,4,5,Bogey,+1,40,-4
+Max Greyserman,11101,3,14,5,5,Par,E,40,-4
+Max Greyserman,11101,3,15,4,4,Par,E,40,-4
+Max Greyserman,11101,3,16,3,3,Par,E,40,-4
+Max Greyserman,11101,3,17,4,3,Birdie,-1,40,-4
+Max Greyserman,11101,3,18,5,4,Birdie,-1,40,-4
+Max Greyserman,11101,3,1,5,4,Birdie,-1,40,-4
+Max Greyserman,11101,3,2,3,2,Birdie,-1,40,-4
 Trace Crowe,11183,1,10,4,3,Birdie,-1,69,-3
 Trace Crowe,11183,1,11,3,2,Birdie,-1,69,-3
 Trace Crowe,11183,1,12,4,4,Par,E,69,-3
@@ -506,6 +605,19 @@ Trace Crowe,11183,2,15,4,5,Bogey,+1,67,-5
 Trace Crowe,11183,2,16,3,3,Par,E,67,-5
 Trace Crowe,11183,2,17,4,3,Birdie,-1,67,-5
 Trace Crowe,11183,2,18,5,3,Eagle,-2,67,-5
+Trace Crowe,11183,3,1,5,4,Birdie,-1,50,-1
+Trace Crowe,11183,3,2,3,2,Birdie,-1,50,-1
+Trace Crowe,11183,3,3,4,3,Birdie,-1,50,-1
+Trace Crowe,11183,3,4,4,5,Bogey,+1,50,-1
+Trace Crowe,11183,3,5,4,5,Bogey,+1,50,-1
+Trace Crowe,11183,3,6,5,5,Par,E,50,-1
+Trace Crowe,11183,3,7,4,4,Par,E,50,-1
+Trace Crowe,11183,3,8,4,5,Bogey,+1,50,-1
+Trace Crowe,11183,3,9,3,3,Par,E,50,-1
+Trace Crowe,11183,3,10,4,4,Par,E,50,-1
+Trace Crowe,11183,3,11,3,3,Par,E,50,-1
+Trace Crowe,11183,3,12,4,4,Par,E,50,-1
+Trace Crowe,11183,3,13,4,3,Birdie,-1,50,-1
 Rasmus Højgaard,11253,1,1,5,3,Eagle,-2,70,-2
 Rasmus Højgaard,11253,1,2,3,3,Par,E,70,-2
 Rasmus Højgaard,11253,1,3,4,4,Par,E,70,-2
@@ -542,6 +654,16 @@ Rasmus Højgaard,11253,2,6,5,6,Bogey,+1,69,-3
 Rasmus Højgaard,11253,2,7,4,4,Par,E,69,-3
 Rasmus Højgaard,11253,2,8,4,4,Par,E,69,-3
 Rasmus Højgaard,11253,2,9,3,3,Par,E,69,-3
+Rasmus Højgaard,11253,3,10,4,4,Par,E,38,-3
+Rasmus Højgaard,11253,3,11,3,3,Par,E,38,-3
+Rasmus Højgaard,11253,3,12,4,4,Par,E,38,-3
+Rasmus Højgaard,11253,3,13,4,4,Par,E,38,-3
+Rasmus Højgaard,11253,3,14,5,4,Birdie,-1,38,-3
+Rasmus Højgaard,11253,3,15,4,4,Par,E,38,-3
+Rasmus Højgaard,11253,3,16,3,3,Par,E,38,-3
+Rasmus Højgaard,11253,3,17,4,4,Par,E,38,-3
+Rasmus Højgaard,11253,3,18,5,4,Birdie,-1,38,-3
+Rasmus Højgaard,11253,3,1,5,4,Birdie,-1,38,-3
 Max McGreevy,11383,1,1,5,4,Birdie,-1,70,-2
 Max McGreevy,11383,1,2,3,3,Par,E,70,-2
 Max McGreevy,11383,1,3,4,3,Birdie,-1,70,-2
@@ -578,6 +700,17 @@ Max McGreevy,11383,2,6,5,5,Par,E,68,-4
 Max McGreevy,11383,2,7,4,4,Par,E,68,-4
 Max McGreevy,11383,2,8,4,3,Birdie,-1,68,-4
 Max McGreevy,11383,2,9,3,3,Par,E,68,-4
+Max McGreevy,11383,3,10,4,4,Par,E,43,-1
+Max McGreevy,11383,3,11,3,3,Par,E,43,-1
+Max McGreevy,11383,3,12,4,4,Par,E,43,-1
+Max McGreevy,11383,3,13,4,4,Par,E,43,-1
+Max McGreevy,11383,3,14,5,5,Par,E,43,-1
+Max McGreevy,11383,3,15,4,5,Bogey,+1,43,-1
+Max McGreevy,11383,3,16,3,4,Bogey,+1,43,-1
+Max McGreevy,11383,3,17,4,3,Birdie,-1,43,-1
+Max McGreevy,11383,3,18,5,5,Par,E,43,-1
+Max McGreevy,11383,3,1,5,4,Birdie,-1,43,-1
+Max McGreevy,11383,3,2,3,2,Birdie,-1,43,-1
 Rico Hoey,11385,1,1,5,4,Birdie,-1,67,-5
 Rico Hoey,11385,1,2,3,3,Par,E,67,-5
 Rico Hoey,11385,1,3,4,5,Bogey,+1,67,-5
@@ -614,6 +747,20 @@ Rico Hoey,11385,2,6,5,6,Bogey,+1,69,-3
 Rico Hoey,11385,2,7,4,4,Par,E,69,-3
 Rico Hoey,11385,2,8,4,5,Bogey,+1,69,-3
 Rico Hoey,11385,2,9,3,3,Par,E,69,-3
+Rico Hoey,11385,3,1,5,4,Birdie,-1,51,-5
+Rico Hoey,11385,3,2,3,2,Birdie,-1,51,-5
+Rico Hoey,11385,3,3,4,4,Par,E,51,-5
+Rico Hoey,11385,3,4,4,5,Bogey,+1,51,-5
+Rico Hoey,11385,3,5,4,3,Birdie,-1,51,-5
+Rico Hoey,11385,3,6,5,4,Birdie,-1,51,-5
+Rico Hoey,11385,3,7,4,4,Par,E,51,-5
+Rico Hoey,11385,3,8,4,4,Par,E,51,-5
+Rico Hoey,11385,3,9,3,3,Par,E,51,-5
+Rico Hoey,11385,3,10,4,3,Birdie,-1,51,-5
+Rico Hoey,11385,3,11,3,3,Par,E,51,-5
+Rico Hoey,11385,3,12,4,4,Par,E,51,-5
+Rico Hoey,11385,3,13,4,4,Par,E,51,-5
+Rico Hoey,11385,3,14,5,4,Birdie,-1,51,-5
 Hank Lebioda,11387,1,10,4,4,Par,E,69,-3
 Hank Lebioda,11387,1,11,3,3,Par,E,69,-3
 Hank Lebioda,11387,1,12,4,4,Par,E,69,-3
@@ -722,6 +869,18 @@ Christo Lamprecht,11395,2,6,5,5,Par,E,68,-4
 Christo Lamprecht,11395,2,7,4,5,Bogey,+1,68,-4
 Christo Lamprecht,11395,2,8,4,4,Par,E,68,-4
 Christo Lamprecht,11395,2,9,3,2,Birdie,-1,68,-4
+Christo Lamprecht,11395,3,10,4,4,Par,E,57,+9
+Christo Lamprecht,11395,3,11,3,2,Birdie,-1,57,+9
+Christo Lamprecht,11395,3,12,4,7,Triple Bogey,+3,57,+9
+Christo Lamprecht,11395,3,13,4,4,Par,E,57,+9
+Christo Lamprecht,11395,3,14,5,5,Par,E,57,+9
+Christo Lamprecht,11395,3,15,4,12,Other,OTHER,57,+9
+Christo Lamprecht,11395,3,16,3,2,Birdie,-1,57,+9
+Christo Lamprecht,11395,3,17,4,4,Par,E,57,+9
+Christo Lamprecht,11395,3,18,5,5,Par,E,57,+9
+Christo Lamprecht,11395,3,1,5,5,Par,E,57,+9
+Christo Lamprecht,11395,3,2,3,3,Par,E,57,+9
+Christo Lamprecht,11395,3,3,4,4,Par,E,57,+9
 Camilo Villegas,1264,1,1,5,4,Birdie,-1,68,-4
 Camilo Villegas,1264,1,2,3,3,Par,E,68,-4
 Camilo Villegas,1264,1,3,4,4,Par,E,68,-4
@@ -830,6 +989,17 @@ Tony Finau,2230,2,15,4,4,Par,E,68,-4
 Tony Finau,2230,2,16,3,3,Par,E,68,-4
 Tony Finau,2230,2,17,4,4,Par,E,68,-4
 Tony Finau,2230,2,18,5,4,Birdie,-1,68,-4
+Tony Finau,2230,3,10,4,4,Par,E,42,-2
+Tony Finau,2230,3,11,3,4,Bogey,+1,42,-2
+Tony Finau,2230,3,12,4,5,Bogey,+1,42,-2
+Tony Finau,2230,3,13,4,4,Par,E,42,-2
+Tony Finau,2230,3,14,5,5,Par,E,42,-2
+Tony Finau,2230,3,15,4,4,Par,E,42,-2
+Tony Finau,2230,3,16,3,2,Birdie,-1,42,-2
+Tony Finau,2230,3,17,4,4,Par,E,42,-2
+Tony Finau,2230,3,18,5,4,Birdie,-1,42,-2
+Tony Finau,2230,3,1,5,4,Birdie,-1,42,-2
+Tony Finau,2230,3,2,3,2,Birdie,-1,42,-2
 Brice Garnett,2283,1,10,4,4,Par,E,67,-5
 Brice Garnett,2283,1,11,3,3,Par,E,67,-5
 Brice Garnett,2283,1,12,4,4,Par,E,67,-5
@@ -866,6 +1036,21 @@ Brice Garnett,2283,2,15,4,4,Par,E,70,-2
 Brice Garnett,2283,2,16,3,3,Par,E,70,-2
 Brice Garnett,2283,2,17,4,4,Par,E,70,-2
 Brice Garnett,2283,2,18,5,5,Par,E,70,-2
+Brice Garnett,2283,3,10,4,5,Bogey,+1,60,-1
+Brice Garnett,2283,3,11,3,3,Par,E,60,-1
+Brice Garnett,2283,3,12,4,3,Birdie,-1,60,-1
+Brice Garnett,2283,3,13,4,3,Birdie,-1,60,-1
+Brice Garnett,2283,3,14,5,5,Par,E,60,-1
+Brice Garnett,2283,3,15,4,4,Par,E,60,-1
+Brice Garnett,2283,3,16,3,3,Par,E,60,-1
+Brice Garnett,2283,3,17,4,4,Par,E,60,-1
+Brice Garnett,2283,3,18,5,5,Par,E,60,-1
+Brice Garnett,2283,3,1,5,5,Par,E,60,-1
+Brice Garnett,2283,3,2,3,3,Par,E,60,-1
+Brice Garnett,2283,3,3,4,4,Par,E,60,-1
+Brice Garnett,2283,3,4,4,4,Par,E,60,-1
+Brice Garnett,2283,3,5,4,4,Par,E,60,-1
+Brice Garnett,2283,3,6,5,5,Par,E,60,-1
 Matt Kuchar,257,1,1,5,5,Par,E,68,-4
 Matt Kuchar,257,1,2,3,3,Par,E,68,-4
 Matt Kuchar,257,1,3,4,4,Par,E,68,-4
@@ -938,6 +1123,20 @@ David Skinns,3257,2,15,4,5,Bogey,+1,68,-4
 David Skinns,3257,2,16,3,2,Birdie,-1,68,-4
 David Skinns,3257,2,17,4,3,Birdie,-1,68,-4
 David Skinns,3257,2,18,5,4,Birdie,-1,68,-4
+David Skinns,3257,3,10,4,3,Birdie,-1,53,-3
+David Skinns,3257,3,11,3,3,Par,E,53,-3
+David Skinns,3257,3,12,4,4,Par,E,53,-3
+David Skinns,3257,3,13,4,5,Bogey,+1,53,-3
+David Skinns,3257,3,14,5,5,Par,E,53,-3
+David Skinns,3257,3,15,4,4,Par,E,53,-3
+David Skinns,3257,3,16,3,3,Par,E,53,-3
+David Skinns,3257,3,17,4,3,Birdie,-1,53,-3
+David Skinns,3257,3,18,5,4,Birdie,-1,53,-3
+David Skinns,3257,3,1,5,4,Birdie,-1,53,-3
+David Skinns,3257,3,2,3,3,Par,E,53,-3
+David Skinns,3257,3,3,4,4,Par,E,53,-3
+David Skinns,3257,3,4,4,4,Par,E,53,-3
+David Skinns,3257,3,5,4,4,Par,E,53,-3
 Chris Kirk,3449,1,1,5,4,Birdie,-1,63,-9
 Chris Kirk,3449,1,2,3,3,Par,E,63,-9
 Chris Kirk,3449,1,3,4,3,Birdie,-1,63,-9
@@ -974,6 +1173,17 @@ Chris Kirk,3449,2,6,5,5,Par,E,72,E
 Chris Kirk,3449,2,7,4,3,Birdie,-1,72,E
 Chris Kirk,3449,2,8,4,5,Bogey,+1,72,E
 Chris Kirk,3449,2,9,3,2,Birdie,-1,72,E
+Chris Kirk,3449,3,1,5,4,Birdie,-1,40,-3
+Chris Kirk,3449,3,2,3,2,Birdie,-1,40,-3
+Chris Kirk,3449,3,3,4,4,Par,E,40,-3
+Chris Kirk,3449,3,4,4,5,Bogey,+1,40,-3
+Chris Kirk,3449,3,5,4,4,Par,E,40,-3
+Chris Kirk,3449,3,6,5,4,Birdie,-1,40,-3
+Chris Kirk,3449,3,7,4,4,Par,E,40,-3
+Chris Kirk,3449,3,8,4,5,Bogey,+1,40,-3
+Chris Kirk,3449,3,9,3,2,Birdie,-1,40,-3
+Chris Kirk,3449,3,10,4,3,Birdie,-1,40,-3
+Chris Kirk,3449,3,11,3,3,Par,E,40,-3
 Rafael Campos,3683,1,10,4,4,Par,E,71,-1
 Rafael Campos,3683,1,11,3,3,Par,E,71,-1
 Rafael Campos,3683,1,12,4,4,Par,E,71,-1
@@ -1046,6 +1256,14 @@ Nick Taylor,3792,2,15,4,4,Par,E,70,-2
 Nick Taylor,3792,2,16,3,2,Birdie,-1,70,-2
 Nick Taylor,3792,2,17,4,4,Par,E,70,-2
 Nick Taylor,3792,2,18,5,3,Eagle,-2,70,-2
+Nick Taylor,3792,3,10,4,3,Birdie,-1,31,E
+Nick Taylor,3792,3,11,3,3,Par,E,31,E
+Nick Taylor,3792,3,12,4,4,Par,E,31,E
+Nick Taylor,3792,3,13,4,4,Par,E,31,E
+Nick Taylor,3792,3,14,5,5,Par,E,31,E
+Nick Taylor,3792,3,15,4,6,Double Bogey,+2,31,E
+Nick Taylor,3792,3,16,3,2,Birdie,-1,31,E
+Nick Taylor,3792,3,17,4,4,Par,E,31,E
 Patton Kizzire,3980,1,10,4,3,Birdie,-1,66,-6
 Patton Kizzire,3980,1,11,3,3,Par,E,66,-6
 Patton Kizzire,3980,1,12,4,3,Birdie,-1,66,-6
@@ -1082,6 +1300,22 @@ Patton Kizzire,3980,2,15,4,5,Bogey,+1,71,-1
 Patton Kizzire,3980,2,16,3,3,Par,E,71,-1
 Patton Kizzire,3980,2,17,4,5,Bogey,+1,71,-1
 Patton Kizzire,3980,2,18,5,5,Par,E,71,-1
+Patton Kizzire,3980,3,1,5,5,Par,E,62,-1
+Patton Kizzire,3980,3,2,3,3,Par,E,62,-1
+Patton Kizzire,3980,3,3,4,4,Par,E,62,-1
+Patton Kizzire,3980,3,4,4,5,Bogey,+1,62,-1
+Patton Kizzire,3980,3,5,4,3,Birdie,-1,62,-1
+Patton Kizzire,3980,3,6,5,4,Birdie,-1,62,-1
+Patton Kizzire,3980,3,7,4,4,Par,E,62,-1
+Patton Kizzire,3980,3,8,4,5,Bogey,+1,62,-1
+Patton Kizzire,3980,3,9,3,3,Par,E,62,-1
+Patton Kizzire,3980,3,10,4,4,Par,E,62,-1
+Patton Kizzire,3980,3,11,3,3,Par,E,62,-1
+Patton Kizzire,3980,3,12,4,4,Par,E,62,-1
+Patton Kizzire,3980,3,13,4,3,Birdie,-1,62,-1
+Patton Kizzire,3980,3,14,5,4,Birdie,-1,62,-1
+Patton Kizzire,3980,3,15,4,4,Par,E,62,-1
+Patton Kizzire,3980,3,16,3,4,Bogey,+1,62,-1
 Kevin Yu,4349547,1,1,5,4,Birdie,-1,69,-3
 Kevin Yu,4349547,1,2,3,3,Par,E,69,-3
 Kevin Yu,4349547,1,3,4,4,Par,E,69,-3
@@ -1118,6 +1352,14 @@ Kevin Yu,4349547,2,6,5,5,Par,E,70,-2
 Kevin Yu,4349547,2,7,4,3,Birdie,-1,70,-2
 Kevin Yu,4349547,2,8,4,4,Par,E,70,-2
 Kevin Yu,4349547,2,9,3,4,Bogey,+1,70,-2
+Kevin Yu,4349547,3,10,4,3,Birdie,-1,30,-1
+Kevin Yu,4349547,3,11,3,3,Par,E,30,-1
+Kevin Yu,4349547,3,12,4,5,Bogey,+1,30,-1
+Kevin Yu,4349547,3,13,4,3,Birdie,-1,30,-1
+Kevin Yu,4349547,3,14,5,5,Par,E,30,-1
+Kevin Yu,4349547,3,15,4,4,Par,E,30,-1
+Kevin Yu,4349547,3,16,3,4,Bogey,+1,30,-1
+Kevin Yu,4349547,3,17,4,3,Birdie,-1,30,-1
 Kristoffer Ventura,4351896,1,1,5,5,Par,E,68,-4
 Kristoffer Ventura,4351896,1,2,3,3,Par,E,68,-4
 Kristoffer Ventura,4351896,1,3,4,3,Birdie,-1,68,-4
@@ -1154,6 +1396,13 @@ Kristoffer Ventura,4351896,2,6,5,4,Birdie,-1,71,-1
 Kristoffer Ventura,4351896,2,7,4,4,Par,E,71,-1
 Kristoffer Ventura,4351896,2,8,4,3,Birdie,-1,71,-1
 Kristoffer Ventura,4351896,2,9,3,3,Par,E,71,-1
+Kristoffer Ventura,4351896,3,10,4,3,Birdie,-1,25,-2
+Kristoffer Ventura,4351896,3,11,3,3,Par,E,25,-2
+Kristoffer Ventura,4351896,3,12,4,4,Par,E,25,-2
+Kristoffer Ventura,4351896,3,13,4,3,Birdie,-1,25,-2
+Kristoffer Ventura,4351896,3,14,5,5,Par,E,25,-2
+Kristoffer Ventura,4351896,3,15,4,5,Bogey,+1,25,-2
+Kristoffer Ventura,4351896,3,16,3,2,Birdie,-1,25,-2
 Willie Mack III,4355611,1,10,4,4,Par,E,73,+1
 Willie Mack III,4355611,1,11,3,3,Par,E,73,+1
 Willie Mack III,4355611,1,12,4,4,Par,E,73,+1
@@ -1190,6 +1439,13 @@ Willie Mack III,4355611,2,15,4,5,Bogey,+1,66,-6
 Willie Mack III,4355611,2,16,3,2,Birdie,-1,66,-6
 Willie Mack III,4355611,2,17,4,3,Birdie,-1,66,-6
 Willie Mack III,4355611,2,18,5,5,Par,E,66,-6
+Willie Mack III,4355611,3,10,4,3,Birdie,-1,28,+1
+Willie Mack III,4355611,3,11,3,4,Bogey,+1,28,+1
+Willie Mack III,4355611,3,12,4,4,Par,E,28,+1
+Willie Mack III,4355611,3,13,4,4,Par,E,28,+1
+Willie Mack III,4355611,3,14,5,6,Bogey,+1,28,+1
+Willie Mack III,4355611,3,15,4,4,Par,E,28,+1
+Willie Mack III,4355611,3,16,3,3,Par,E,28,+1
 Alejandro Tosti,4358081,1,1,5,4,Birdie,-1,66,-6
 Alejandro Tosti,4358081,1,2,3,3,Par,E,66,-6
 Alejandro Tosti,4358081,1,3,4,4,Par,E,66,-6
@@ -1226,6 +1482,20 @@ Alejandro Tosti,4358081,2,6,5,4,Birdie,-1,70,-2
 Alejandro Tosti,4358081,2,7,4,3,Birdie,-1,70,-2
 Alejandro Tosti,4358081,2,8,4,4,Par,E,70,-2
 Alejandro Tosti,4358081,2,9,3,3,Par,E,70,-2
+Alejandro Tosti,4358081,3,1,5,4,Birdie,-1,56,E
+Alejandro Tosti,4358081,3,2,3,3,Par,E,56,E
+Alejandro Tosti,4358081,3,3,4,4,Par,E,56,E
+Alejandro Tosti,4358081,3,4,4,4,Par,E,56,E
+Alejandro Tosti,4358081,3,5,4,4,Par,E,56,E
+Alejandro Tosti,4358081,3,6,5,4,Birdie,-1,56,E
+Alejandro Tosti,4358081,3,7,4,4,Par,E,56,E
+Alejandro Tosti,4358081,3,8,4,4,Par,E,56,E
+Alejandro Tosti,4358081,3,9,3,4,Bogey,+1,56,E
+Alejandro Tosti,4358081,3,10,4,4,Par,E,56,E
+Alejandro Tosti,4358081,3,11,3,3,Par,E,56,E
+Alejandro Tosti,4358081,3,12,4,5,Bogey,+1,56,E
+Alejandro Tosti,4358081,3,13,4,4,Par,E,56,E
+Alejandro Tosti,4358081,3,14,5,5,Par,E,56,E
 Patrick Fishburn,4358083,1,10,4,4,Par,E,70,-2
 Patrick Fishburn,4358083,1,11,3,3,Par,E,70,-2
 Patrick Fishburn,4358083,1,12,4,4,Par,E,70,-2
@@ -1298,6 +1568,21 @@ John VanDerLaan,4361934,2,15,4,4,Par,E,68,-4
 John VanDerLaan,4361934,2,16,3,3,Par,E,68,-4
 John VanDerLaan,4361934,2,17,4,4,Par,E,68,-4
 John VanDerLaan,4361934,2,18,5,5,Par,E,68,-4
+John VanDerLaan,4361934,3,10,4,6,Double Bogey,+2,61,E
+John VanDerLaan,4361934,3,11,3,3,Par,E,61,E
+John VanDerLaan,4361934,3,12,4,4,Par,E,61,E
+John VanDerLaan,4361934,3,13,4,4,Par,E,61,E
+John VanDerLaan,4361934,3,14,5,5,Par,E,61,E
+John VanDerLaan,4361934,3,15,4,4,Par,E,61,E
+John VanDerLaan,4361934,3,16,3,3,Par,E,61,E
+John VanDerLaan,4361934,3,17,4,4,Par,E,61,E
+John VanDerLaan,4361934,3,18,5,4,Birdie,-1,61,E
+John VanDerLaan,4361934,3,1,5,4,Birdie,-1,61,E
+John VanDerLaan,4361934,3,2,3,3,Par,E,61,E
+John VanDerLaan,4361934,3,3,4,3,Birdie,-1,61,E
+John VanDerLaan,4361934,3,4,4,4,Par,E,61,E
+John VanDerLaan,4361934,3,5,4,4,Par,E,61,E
+John VanDerLaan,4361934,3,6,5,6,Bogey,+1,61,E
 Taylor Montgomery,4372851,1,1,5,5,Par,E,65,-7
 Taylor Montgomery,4372851,1,2,3,3,Par,E,65,-7
 Taylor Montgomery,4372851,1,3,4,3,Birdie,-1,65,-7
@@ -1334,6 +1619,20 @@ Taylor Montgomery,4372851,2,6,5,4,Birdie,-1,71,-1
 Taylor Montgomery,4372851,2,7,4,4,Par,E,71,-1
 Taylor Montgomery,4372851,2,8,4,4,Par,E,71,-1
 Taylor Montgomery,4372851,2,9,3,3,Par,E,71,-1
+Taylor Montgomery,4372851,3,1,5,4,Birdie,-1,55,-1
+Taylor Montgomery,4372851,3,2,3,2,Birdie,-1,55,-1
+Taylor Montgomery,4372851,3,3,4,5,Bogey,+1,55,-1
+Taylor Montgomery,4372851,3,4,4,6,Double Bogey,+2,55,-1
+Taylor Montgomery,4372851,3,5,4,3,Birdie,-1,55,-1
+Taylor Montgomery,4372851,3,6,5,5,Par,E,55,-1
+Taylor Montgomery,4372851,3,7,4,4,Par,E,55,-1
+Taylor Montgomery,4372851,3,8,4,4,Par,E,55,-1
+Taylor Montgomery,4372851,3,9,3,3,Par,E,55,-1
+Taylor Montgomery,4372851,3,10,4,4,Par,E,55,-1
+Taylor Montgomery,4372851,3,11,3,3,Par,E,55,-1
+Taylor Montgomery,4372851,3,12,4,4,Par,E,55,-1
+Taylor Montgomery,4372851,3,13,4,4,Par,E,55,-1
+Taylor Montgomery,4372851,3,14,5,4,Birdie,-1,55,-1
 Pontus Nyholm,4375977,1,1,5,4,Birdie,-1,69,-3
 Pontus Nyholm,4375977,1,2,3,3,Par,E,69,-3
 Pontus Nyholm,4375977,1,3,4,3,Birdie,-1,69,-3
@@ -1442,6 +1741,21 @@ Ben Griffin,4404992,2,6,5,4,Birdie,-1,67,-5
 Ben Griffin,4404992,2,7,4,4,Par,E,67,-5
 Ben Griffin,4404992,2,8,4,4,Par,E,67,-5
 Ben Griffin,4404992,2,9,3,3,Par,E,67,-5
+Ben Griffin,4404992,3,10,4,4,Par,E,57,-4
+Ben Griffin,4404992,3,11,3,3,Par,E,57,-4
+Ben Griffin,4404992,3,12,4,3,Birdie,-1,57,-4
+Ben Griffin,4404992,3,13,4,4,Par,E,57,-4
+Ben Griffin,4404992,3,14,5,5,Par,E,57,-4
+Ben Griffin,4404992,3,15,4,5,Bogey,+1,57,-4
+Ben Griffin,4404992,3,16,3,3,Par,E,57,-4
+Ben Griffin,4404992,3,17,4,3,Birdie,-1,57,-4
+Ben Griffin,4404992,3,18,5,4,Birdie,-1,57,-4
+Ben Griffin,4404992,3,1,5,4,Birdie,-1,57,-4
+Ben Griffin,4404992,3,2,3,3,Par,E,57,-4
+Ben Griffin,4404992,3,3,4,3,Birdie,-1,57,-4
+Ben Griffin,4404992,3,4,4,4,Par,E,57,-4
+Ben Griffin,4404992,3,5,4,4,Par,E,57,-4
+Ben Griffin,4404992,3,6,5,5,Par,E,57,-4
 Vince Whaley,4408315,1,1,5,4,Birdie,-1,73,+1
 Vince Whaley,4408315,1,2,3,3,Par,E,73,+1
 Vince Whaley,4408315,1,3,4,4,Par,E,73,+1
@@ -1514,6 +1828,20 @@ Jeffrey Kang,4408318,2,6,5,5,Par,E,67,-5
 Jeffrey Kang,4408318,2,7,4,4,Par,E,67,-5
 Jeffrey Kang,4408318,2,8,4,5,Bogey,+1,67,-5
 Jeffrey Kang,4408318,2,9,3,3,Par,E,67,-5
+Jeffrey Kang,4408318,3,1,5,4,Birdie,-1,56,E
+Jeffrey Kang,4408318,3,2,3,3,Par,E,56,E
+Jeffrey Kang,4408318,3,3,4,4,Par,E,56,E
+Jeffrey Kang,4408318,3,4,4,4,Par,E,56,E
+Jeffrey Kang,4408318,3,5,4,4,Par,E,56,E
+Jeffrey Kang,4408318,3,6,5,6,Bogey,+1,56,E
+Jeffrey Kang,4408318,3,7,4,4,Par,E,56,E
+Jeffrey Kang,4408318,3,8,4,4,Par,E,56,E
+Jeffrey Kang,4408318,3,9,3,3,Par,E,56,E
+Jeffrey Kang,4408318,3,10,4,4,Par,E,56,E
+Jeffrey Kang,4408318,3,11,3,3,Par,E,56,E
+Jeffrey Kang,4408318,3,12,4,4,Par,E,56,E
+Jeffrey Kang,4408318,3,13,4,4,Par,E,56,E
+Jeffrey Kang,4408318,3,14,5,5,Par,E,56,E
 Danny Walker,4408319,1,10,4,4,Par,E,70,-2
 Danny Walker,4408319,1,11,3,3,Par,E,70,-2
 Danny Walker,4408319,1,12,4,4,Par,E,70,-2
@@ -1694,6 +2022,15 @@ Austin Eckroat,4425898,2,6,5,4,Birdie,-1,66,-6
 Austin Eckroat,4425898,2,7,4,4,Par,E,66,-6
 Austin Eckroat,4425898,2,8,4,3,Birdie,-1,66,-6
 Austin Eckroat,4425898,2,9,3,3,Par,E,66,-6
+Austin Eckroat,4425898,3,1,5,5,Par,E,32,-4
+Austin Eckroat,4425898,3,2,3,2,Birdie,-1,32,-4
+Austin Eckroat,4425898,3,3,4,3,Birdie,-1,32,-4
+Austin Eckroat,4425898,3,4,4,3,Birdie,-1,32,-4
+Austin Eckroat,4425898,3,5,4,4,Par,E,32,-4
+Austin Eckroat,4425898,3,6,5,4,Birdie,-1,32,-4
+Austin Eckroat,4425898,3,7,4,4,Par,E,32,-4
+Austin Eckroat,4425898,3,8,4,5,Bogey,+1,32,-4
+Austin Eckroat,4425898,3,9,3,2,Birdie,-1,32,-4
 Steven Fisk,4426182,1,1,5,7,Double Bogey,+2,73,+1
 Steven Fisk,4426182,1,2,3,3,Par,E,73,+1
 Steven Fisk,4426182,1,3,4,4,Par,E,73,+1
@@ -1730,6 +2067,18 @@ Steven Fisk,4426182,2,6,5,4,Birdie,-1,65,-7
 Steven Fisk,4426182,2,7,4,3,Birdie,-1,65,-7
 Steven Fisk,4426182,2,8,4,3,Birdie,-1,65,-7
 Steven Fisk,4426182,2,9,3,3,Par,E,65,-7
+Steven Fisk,4426182,3,10,4,4,Par,E,46,-2
+Steven Fisk,4426182,3,11,3,2,Birdie,-1,46,-2
+Steven Fisk,4426182,3,12,4,4,Par,E,46,-2
+Steven Fisk,4426182,3,13,4,4,Par,E,46,-2
+Steven Fisk,4426182,3,14,5,5,Par,E,46,-2
+Steven Fisk,4426182,3,15,4,4,Par,E,46,-2
+Steven Fisk,4426182,3,16,3,4,Bogey,+1,46,-2
+Steven Fisk,4426182,3,17,4,4,Par,E,46,-2
+Steven Fisk,4426182,3,18,5,4,Birdie,-1,46,-2
+Steven Fisk,4426182,3,1,5,5,Par,E,46,-2
+Steven Fisk,4426182,3,2,3,3,Par,E,46,-2
+Steven Fisk,4426182,3,3,4,3,Birdie,-1,46,-2
 Will Gordon,4565482,1,10,4,4,Par,E,67,-5
 Will Gordon,4565482,1,11,3,2,Birdie,-1,67,-5
 Will Gordon,4565482,1,12,4,4,Par,E,67,-5
@@ -1766,6 +2115,20 @@ Will Gordon,4565482,2,15,4,4,Par,E,70,-2
 Will Gordon,4565482,2,16,3,3,Par,E,70,-2
 Will Gordon,4565482,2,17,4,4,Par,E,70,-2
 Will Gordon,4565482,2,18,5,5,Par,E,70,-2
+Will Gordon,4565482,3,10,4,3,Birdie,-1,58,+2
+Will Gordon,4565482,3,11,3,4,Bogey,+1,58,+2
+Will Gordon,4565482,3,12,4,3,Birdie,-1,58,+2
+Will Gordon,4565482,3,13,4,4,Par,E,58,+2
+Will Gordon,4565482,3,14,5,6,Bogey,+1,58,+2
+Will Gordon,4565482,3,15,4,7,Triple Bogey,+3,58,+2
+Will Gordon,4565482,3,16,3,3,Par,E,58,+2
+Will Gordon,4565482,3,17,4,4,Par,E,58,+2
+Will Gordon,4565482,3,18,5,4,Birdie,-1,58,+2
+Will Gordon,4565482,3,1,5,4,Birdie,-1,58,+2
+Will Gordon,4565482,3,2,3,3,Par,E,58,+2
+Will Gordon,4565482,3,3,4,5,Bogey,+1,58,+2
+Will Gordon,4565482,3,4,4,4,Par,E,58,+2
+Will Gordon,4565482,3,5,4,4,Par,E,58,+2
 Sami Välimäki,4585548,1,1,5,4,Birdie,-1,69,-3
 Sami Välimäki,4585548,1,2,3,2,Birdie,-1,69,-3
 Sami Välimäki,4585548,1,3,4,4,Par,E,69,-3
@@ -1910,6 +2273,15 @@ Isaiah Salinda,4589406,2,6,5,5,Par,E,71,-1
 Isaiah Salinda,4589406,2,7,4,3,Birdie,-1,71,-1
 Isaiah Salinda,4589406,2,8,4,3,Birdie,-1,71,-1
 Isaiah Salinda,4589406,2,9,3,3,Par,E,71,-1
+Isaiah Salinda,4589406,3,10,4,3,Birdie,-1,31,-5
+Isaiah Salinda,4589406,3,11,3,2,Birdie,-1,31,-5
+Isaiah Salinda,4589406,3,12,4,3,Birdie,-1,31,-5
+Isaiah Salinda,4589406,3,13,4,3,Birdie,-1,31,-5
+Isaiah Salinda,4589406,3,14,5,4,Birdie,-1,31,-5
+Isaiah Salinda,4589406,3,15,4,5,Bogey,+1,31,-5
+Isaiah Salinda,4589406,3,16,3,3,Par,E,31,-5
+Isaiah Salinda,4589406,3,17,4,4,Par,E,31,-5
+Isaiah Salinda,4589406,3,18,5,4,Birdie,-1,31,-5
 Harry Hall,4589438,1,1,5,4,Birdie,-1,65,-7
 Harry Hall,4589438,1,2,3,3,Par,E,65,-7
 Harry Hall,4589438,1,3,4,3,Birdie,-1,65,-7
@@ -1946,6 +2318,20 @@ Harry Hall,4589438,2,6,5,5,Par,E,71,-1
 Harry Hall,4589438,2,7,4,4,Par,E,71,-1
 Harry Hall,4589438,2,8,4,4,Par,E,71,-1
 Harry Hall,4589438,2,9,3,3,Par,E,71,-1
+Harry Hall,4589438,3,1,5,3,Eagle,-2,51,-5
+Harry Hall,4589438,3,2,3,2,Birdie,-1,51,-5
+Harry Hall,4589438,3,3,4,4,Par,E,51,-5
+Harry Hall,4589438,3,4,4,4,Par,E,51,-5
+Harry Hall,4589438,3,5,4,5,Bogey,+1,51,-5
+Harry Hall,4589438,3,6,5,4,Birdie,-1,51,-5
+Harry Hall,4589438,3,7,4,4,Par,E,51,-5
+Harry Hall,4589438,3,8,4,3,Birdie,-1,51,-5
+Harry Hall,4589438,3,9,3,3,Par,E,51,-5
+Harry Hall,4589438,3,10,4,3,Birdie,-1,51,-5
+Harry Hall,4589438,3,11,3,3,Par,E,51,-5
+Harry Hall,4589438,3,12,4,4,Par,E,51,-5
+Harry Hall,4589438,3,13,4,4,Par,E,51,-5
+Harry Hall,4589438,3,14,5,5,Par,E,51,-5
 Chandler Blanchet,4618114,1,1,5,4,Birdie,-1,75,+3
 Chandler Blanchet,4618114,1,2,3,3,Par,E,75,+3
 Chandler Blanchet,4618114,1,3,4,7,Triple Bogey,+3,75,+3
@@ -1982,6 +2368,15 @@ Chandler Blanchet,4618114,2,6,5,4,Birdie,-1,64,-8
 Chandler Blanchet,4618114,2,7,4,3,Birdie,-1,64,-8
 Chandler Blanchet,4618114,2,8,4,3,Birdie,-1,64,-8
 Chandler Blanchet,4618114,2,9,3,3,Par,E,64,-8
+Chandler Blanchet,4618114,3,10,4,6,Double Bogey,+2,38,+2
+Chandler Blanchet,4618114,3,11,3,5,Double Bogey,+2,38,+2
+Chandler Blanchet,4618114,3,12,4,4,Par,E,38,+2
+Chandler Blanchet,4618114,3,13,4,3,Birdie,-1,38,+2
+Chandler Blanchet,4618114,3,14,5,5,Par,E,38,+2
+Chandler Blanchet,4618114,3,15,4,5,Bogey,+1,38,+2
+Chandler Blanchet,4618114,3,16,3,3,Par,E,38,+2
+Chandler Blanchet,4618114,3,17,4,3,Birdie,-1,38,+2
+Chandler Blanchet,4618114,3,18,5,4,Birdie,-1,38,+2
 Ben Martin,4638,1,1,5,4,Birdie,-1,67,-5
 Ben Martin,4638,1,2,3,3,Par,E,67,-5
 Ben Martin,4638,1,3,4,4,Par,E,67,-5
@@ -2018,6 +2413,19 @@ Ben Martin,4638,2,6,5,5,Par,E,69,-3
 Ben Martin,4638,2,7,4,4,Par,E,69,-3
 Ben Martin,4638,2,8,4,4,Par,E,69,-3
 Ben Martin,4638,2,9,3,3,Par,E,69,-3
+Ben Martin,4638,3,1,5,4,Birdie,-1,46,-5
+Ben Martin,4638,3,2,3,2,Birdie,-1,46,-5
+Ben Martin,4638,3,3,4,3,Birdie,-1,46,-5
+Ben Martin,4638,3,4,4,4,Par,E,46,-5
+Ben Martin,4638,3,5,4,3,Birdie,-1,46,-5
+Ben Martin,4638,3,6,5,5,Par,E,46,-5
+Ben Martin,4638,3,7,4,4,Par,E,46,-5
+Ben Martin,4638,3,8,4,3,Birdie,-1,46,-5
+Ben Martin,4638,3,9,3,3,Par,E,46,-5
+Ben Martin,4638,3,10,4,4,Par,E,46,-5
+Ben Martin,4638,3,11,3,4,Bogey,+1,46,-5
+Ben Martin,4638,3,12,4,4,Par,E,46,-5
+Ben Martin,4638,3,13,4,3,Birdie,-1,46,-5
 John Parry,4671,1,1,5,4,Birdie,-1,69,-3
 John Parry,4671,1,2,3,3,Par,E,69,-3
 John Parry,4671,1,3,4,4,Par,E,69,-3
@@ -2054,6 +2462,18 @@ John Parry,4671,2,6,5,4,Birdie,-1,67,-5
 John Parry,4671,2,7,4,4,Par,E,67,-5
 John Parry,4671,2,8,4,4,Par,E,67,-5
 John Parry,4671,2,9,3,3,Par,E,67,-5
+John Parry,4671,3,1,5,4,Birdie,-1,46,-1
+John Parry,4671,3,2,3,2,Birdie,-1,46,-1
+John Parry,4671,3,3,4,4,Par,E,46,-1
+John Parry,4671,3,4,4,5,Bogey,+1,46,-1
+John Parry,4671,3,5,4,5,Bogey,+1,46,-1
+John Parry,4671,3,6,5,4,Birdie,-1,46,-1
+John Parry,4671,3,7,4,4,Par,E,46,-1
+John Parry,4671,3,8,4,4,Par,E,46,-1
+John Parry,4671,3,9,3,3,Par,E,46,-1
+John Parry,4671,3,10,4,4,Par,E,46,-1
+John Parry,4671,3,11,3,3,Par,E,46,-1
+John Parry,4671,3,12,4,4,Par,E,46,-1
 Jesper Svensson,4699329,1,10,4,3,Birdie,-1,70,-2
 Jesper Svensson,4699329,1,11,3,3,Par,E,70,-2
 Jesper Svensson,4699329,1,12,4,3,Birdie,-1,70,-2
@@ -2090,6 +2510,19 @@ Jesper Svensson,4699329,2,15,4,3,Birdie,-1,66,-6
 Jesper Svensson,4699329,2,16,3,2,Birdie,-1,66,-6
 Jesper Svensson,4699329,2,17,4,4,Par,E,66,-6
 Jesper Svensson,4699329,2,18,5,5,Par,E,66,-6
+Jesper Svensson,4699329,3,1,5,4,Birdie,-1,51,E
+Jesper Svensson,4699329,3,2,3,2,Birdie,-1,51,E
+Jesper Svensson,4699329,3,3,4,4,Par,E,51,E
+Jesper Svensson,4699329,3,4,4,4,Par,E,51,E
+Jesper Svensson,4699329,3,5,4,5,Bogey,+1,51,E
+Jesper Svensson,4699329,3,6,5,4,Birdie,-1,51,E
+Jesper Svensson,4699329,3,7,4,4,Par,E,51,E
+Jesper Svensson,4699329,3,8,4,6,Double Bogey,+2,51,E
+Jesper Svensson,4699329,3,9,3,3,Par,E,51,E
+Jesper Svensson,4699329,3,10,4,4,Par,E,51,E
+Jesper Svensson,4699329,3,11,3,3,Par,E,51,E
+Jesper Svensson,4699329,3,12,4,4,Par,E,51,E
+Jesper Svensson,4699329,3,13,4,4,Par,E,51,E
 Tyler Collet,4723205,1,10,4,4,Par,E,70,-2
 Tyler Collet,4723205,1,11,3,3,Par,E,70,-2
 Tyler Collet,4723205,1,12,4,4,Par,E,70,-2
@@ -2126,6 +2559,18 @@ Tyler Collet,4723205,2,15,4,5,Bogey,+1,68,-4
 Tyler Collet,4723205,2,16,3,3,Par,E,68,-4
 Tyler Collet,4723205,2,17,4,3,Birdie,-1,68,-4
 Tyler Collet,4723205,2,18,5,5,Par,E,68,-4
+Tyler Collet,4723205,3,10,4,4,Par,E,48,E
+Tyler Collet,4723205,3,11,3,3,Par,E,48,E
+Tyler Collet,4723205,3,12,4,4,Par,E,48,E
+Tyler Collet,4723205,3,13,4,3,Birdie,-1,48,E
+Tyler Collet,4723205,3,14,5,5,Par,E,48,E
+Tyler Collet,4723205,3,15,4,4,Par,E,48,E
+Tyler Collet,4723205,3,16,3,3,Par,E,48,E
+Tyler Collet,4723205,3,17,4,4,Par,E,48,E
+Tyler Collet,4723205,3,18,5,6,Bogey,+1,48,E
+Tyler Collet,4723205,3,1,5,4,Birdie,-1,48,E
+Tyler Collet,4723205,3,2,3,3,Par,E,48,E
+Tyler Collet,4723205,3,3,4,5,Bogey,+1,48,E
 Nick Dunlap,4832046,1,10,4,3,Birdie,-1,64,-8
 Nick Dunlap,4832046,1,11,3,3,Par,E,64,-8
 Nick Dunlap,4832046,1,12,4,3,Birdie,-1,64,-8
@@ -2162,6 +2607,15 @@ Nick Dunlap,4832046,2,15,4,4,Par,E,75,+3
 Nick Dunlap,4832046,2,16,3,3,Par,E,75,+3
 Nick Dunlap,4832046,2,17,4,4,Par,E,75,+3
 Nick Dunlap,4832046,2,18,5,4,Birdie,-1,75,+3
+Nick Dunlap,4832046,3,10,4,4,Par,E,33,-3
+Nick Dunlap,4832046,3,11,3,3,Par,E,33,-3
+Nick Dunlap,4832046,3,12,4,5,Bogey,+1,33,-3
+Nick Dunlap,4832046,3,13,4,3,Birdie,-1,33,-3
+Nick Dunlap,4832046,3,14,5,4,Birdie,-1,33,-3
+Nick Dunlap,4832046,3,15,4,4,Par,E,33,-3
+Nick Dunlap,4832046,3,16,3,2,Birdie,-1,33,-3
+Nick Dunlap,4832046,3,17,4,4,Par,E,33,-3
+Nick Dunlap,4832046,3,18,5,4,Birdie,-1,33,-3
 Pierceson Coody,4837368,1,1,5,5,Par,E,68,-4
 Pierceson Coody,4837368,1,2,3,3,Par,E,68,-4
 Pierceson Coody,4837368,1,3,4,3,Birdie,-1,68,-4
@@ -2198,6 +2652,18 @@ Pierceson Coody,4837368,2,6,5,5,Par,E,70,-2
 Pierceson Coody,4837368,2,7,4,3,Birdie,-1,70,-2
 Pierceson Coody,4837368,2,8,4,4,Par,E,70,-2
 Pierceson Coody,4837368,2,9,3,3,Par,E,70,-2
+Pierceson Coody,4837368,3,10,4,4,Par,E,46,-2
+Pierceson Coody,4837368,3,11,3,3,Par,E,46,-2
+Pierceson Coody,4837368,3,12,4,4,Par,E,46,-2
+Pierceson Coody,4837368,3,13,4,4,Par,E,46,-2
+Pierceson Coody,4837368,3,14,5,4,Birdie,-1,46,-2
+Pierceson Coody,4837368,3,15,4,6,Double Bogey,+2,46,-2
+Pierceson Coody,4837368,3,16,3,3,Par,E,46,-2
+Pierceson Coody,4837368,3,17,4,4,Par,E,46,-2
+Pierceson Coody,4837368,3,18,5,5,Par,E,46,-2
+Pierceson Coody,4837368,3,1,5,3,Eagle,-2,46,-2
+Pierceson Coody,4837368,3,2,3,3,Par,E,46,-2
+Pierceson Coody,4837368,3,3,4,3,Birdie,-1,46,-2
 Harry Higgs,4844,1,10,4,4,Par,E,80,+8
 Harry Higgs,4844,1,11,3,3,Par,E,80,+8
 Harry Higgs,4844,1,12,4,5,Bogey,+1,80,+8
@@ -2270,6 +2736,14 @@ Rasmus Neergaard-Petersen,4858859,2,15,4,4,Par,E,64,-8
 Rasmus Neergaard-Petersen,4858859,2,16,3,3,Par,E,64,-8
 Rasmus Neergaard-Petersen,4858859,2,17,4,3,Birdie,-1,64,-8
 Rasmus Neergaard-Petersen,4858859,2,18,5,4,Birdie,-1,64,-8
+Rasmus Neergaard-Petersen,4858859,3,1,5,4,Birdie,-1,36,+3
+Rasmus Neergaard-Petersen,4858859,3,2,3,3,Par,E,36,+3
+Rasmus Neergaard-Petersen,4858859,3,3,4,4,Par,E,36,+3
+Rasmus Neergaard-Petersen,4858859,3,4,4,5,Bogey,+1,36,+3
+Rasmus Neergaard-Petersen,4858859,3,5,4,5,Bogey,+1,36,+3
+Rasmus Neergaard-Petersen,4858859,3,6,5,5,Par,E,36,+3
+Rasmus Neergaard-Petersen,4858859,3,7,4,5,Bogey,+1,36,+3
+Rasmus Neergaard-Petersen,4858859,3,8,4,5,Bogey,+1,36,+3
 Joe Highsmith,4868733,1,1,5,4,Birdie,-1,66,-6
 Joe Highsmith,4868733,1,2,3,3,Par,E,66,-6
 Joe Highsmith,4868733,1,3,4,3,Birdie,-1,66,-6
@@ -2378,6 +2852,15 @@ Austin Hitt,5074950,2,6,5,5,Par,E,70,-2
 Austin Hitt,5074950,2,7,4,4,Par,E,70,-2
 Austin Hitt,5074950,2,8,4,3,Birdie,-1,70,-2
 Austin Hitt,5074950,2,9,3,4,Bogey,+1,70,-2
+Austin Hitt,5074950,3,10,4,4,Par,E,34,-2
+Austin Hitt,5074950,3,11,3,3,Par,E,34,-2
+Austin Hitt,5074950,3,12,4,4,Par,E,34,-2
+Austin Hitt,5074950,3,13,4,5,Bogey,+1,34,-2
+Austin Hitt,5074950,3,14,5,5,Par,E,34,-2
+Austin Hitt,5074950,3,15,4,4,Par,E,34,-2
+Austin Hitt,5074950,3,16,3,3,Par,E,34,-2
+Austin Hitt,5074950,3,17,4,3,Birdie,-1,34,-2
+Austin Hitt,5074950,3,18,5,3,Eagle,-2,34,-2
 Jorge Villar,5075258,1,10,4,5,Bogey,+1,87,+15
 Jorge Villar,5075258,1,11,3,4,Bogey,+1,87,+15
 Jorge Villar,5075258,1,12,4,6,Double Bogey,+2,87,+15
@@ -2450,6 +2933,15 @@ Kensei Hirata,5075548,2,15,4,4,Par,E,69,-3
 Kensei Hirata,5075548,2,16,3,3,Par,E,69,-3
 Kensei Hirata,5075548,2,17,4,3,Birdie,-1,69,-3
 Kensei Hirata,5075548,2,18,5,5,Par,E,69,-3
+Kensei Hirata,5075548,3,1,5,3,Eagle,-2,33,-3
+Kensei Hirata,5075548,3,2,3,2,Birdie,-1,33,-3
+Kensei Hirata,5075548,3,3,4,4,Par,E,33,-3
+Kensei Hirata,5075548,3,4,4,3,Birdie,-1,33,-3
+Kensei Hirata,5075548,3,5,4,4,Par,E,33,-3
+Kensei Hirata,5075548,3,6,5,5,Par,E,33,-3
+Kensei Hirata,5075548,3,7,4,4,Par,E,33,-3
+Kensei Hirata,5075548,3,8,4,5,Bogey,+1,33,-3
+Kensei Hirata,5075548,3,9,3,3,Par,E,33,-3
 A.J. Ewart,5075652,1,10,4,4,Par,E,73,+1
 A.J. Ewart,5075652,1,11,3,3,Par,E,73,+1
 A.J. Ewart,5075652,1,12,4,4,Par,E,73,+1
@@ -2522,6 +3014,19 @@ Adrien Dumont de Chassart,5076011,2,6,5,5,Par,E,70,-2
 Adrien Dumont de Chassart,5076011,2,7,4,4,Par,E,70,-2
 Adrien Dumont de Chassart,5076011,2,8,4,4,Par,E,70,-2
 Adrien Dumont de Chassart,5076011,2,9,3,3,Par,E,70,-2
+Adrien Dumont de Chassart,5076011,3,10,4,3,Birdie,-1,48,-4
+Adrien Dumont de Chassart,5076011,3,11,3,3,Par,E,48,-4
+Adrien Dumont de Chassart,5076011,3,12,4,4,Par,E,48,-4
+Adrien Dumont de Chassart,5076011,3,13,4,4,Par,E,48,-4
+Adrien Dumont de Chassart,5076011,3,14,5,5,Par,E,48,-4
+Adrien Dumont de Chassart,5076011,3,15,4,5,Bogey,+1,48,-4
+Adrien Dumont de Chassart,5076011,3,16,3,3,Par,E,48,-4
+Adrien Dumont de Chassart,5076011,3,17,4,3,Birdie,-1,48,-4
+Adrien Dumont de Chassart,5076011,3,18,5,4,Birdie,-1,48,-4
+Adrien Dumont de Chassart,5076011,3,1,5,4,Birdie,-1,48,-4
+Adrien Dumont de Chassart,5076011,3,2,3,4,Bogey,+1,48,-4
+Adrien Dumont de Chassart,5076011,3,3,4,2,Eagle,-2,48,-4
+Adrien Dumont de Chassart,5076011,3,4,4,4,Par,E,48,-4
 Ryan Gerard,5076021,1,10,4,3,Birdie,-1,66,-6
 Ryan Gerard,5076021,1,11,3,3,Par,E,66,-6
 Ryan Gerard,5076021,1,12,4,4,Par,E,66,-6
@@ -2558,6 +3063,15 @@ Ryan Gerard,5076021,2,15,4,4,Par,E,68,-4
 Ryan Gerard,5076021,2,16,3,3,Par,E,68,-4
 Ryan Gerard,5076021,2,17,4,4,Par,E,68,-4
 Ryan Gerard,5076021,2,18,5,6,Bogey,+1,68,-4
+Ryan Gerard,5076021,3,1,5,5,Par,E,33,-3
+Ryan Gerard,5076021,3,2,3,3,Par,E,33,-3
+Ryan Gerard,5076021,3,3,4,4,Par,E,33,-3
+Ryan Gerard,5076021,3,4,4,4,Par,E,33,-3
+Ryan Gerard,5076021,3,5,4,3,Birdie,-1,33,-3
+Ryan Gerard,5076021,3,6,5,4,Birdie,-1,33,-3
+Ryan Gerard,5076021,3,7,4,4,Par,E,33,-3
+Ryan Gerard,5076021,3,8,4,3,Birdie,-1,33,-3
+Ryan Gerard,5076021,3,9,3,3,Par,E,33,-3
 William Mouw,5076025,1,1,5,4,Birdie,-1,73,+1
 William Mouw,5076025,1,2,3,3,Par,E,73,+1
 William Mouw,5076025,1,3,4,5,Bogey,+1,73,+1
@@ -2630,6 +3144,13 @@ Ben James,5077389,2,6,5,5,Par,E,64,-8
 Ben James,5077389,2,7,4,4,Par,E,64,-8
 Ben James,5077389,2,8,4,4,Par,E,64,-8
 Ben James,5077389,2,9,3,2,Birdie,-1,64,-8
+Ben James,5077389,3,1,5,4,Birdie,-1,25,-4
+Ben James,5077389,3,2,3,2,Birdie,-1,25,-4
+Ben James,5077389,3,3,4,3,Birdie,-1,25,-4
+Ben James,5077389,3,4,4,4,Par,E,25,-4
+Ben James,5077389,3,5,4,4,Par,E,25,-4
+Ben James,5077389,3,6,5,4,Birdie,-1,25,-4
+Ben James,5077389,3,7,4,4,Par,E,25,-4
 Davis Chatfield,5113338,1,1,5,5,Par,E,73,+1
 Davis Chatfield,5113338,1,2,3,4,Bogey,+1,73,+1
 Davis Chatfield,5113338,1,3,4,4,Par,E,73,+1
@@ -2738,6 +3259,13 @@ Sudarshan Yellamaraju,5143175,2,6,5,5,Par,E,63,-9
 Sudarshan Yellamaraju,5143175,2,7,4,4,Par,E,63,-9
 Sudarshan Yellamaraju,5143175,2,8,4,4,Par,E,63,-9
 Sudarshan Yellamaraju,5143175,2,9,3,2,Birdie,-1,63,-9
+Sudarshan Yellamaraju,5143175,3,1,5,4,Birdie,-1,26,-3
+Sudarshan Yellamaraju,5143175,3,2,3,3,Par,E,26,-3
+Sudarshan Yellamaraju,5143175,3,3,4,3,Birdie,-1,26,-3
+Sudarshan Yellamaraju,5143175,3,4,4,4,Par,E,26,-3
+Sudarshan Yellamaraju,5143175,3,5,4,4,Par,E,26,-3
+Sudarshan Yellamaraju,5143175,3,6,5,5,Par,E,26,-3
+Sudarshan Yellamaraju,5143175,3,7,4,3,Birdie,-1,26,-3
 Karl Vilips,5147097,1,10,4,3,Birdie,-1,66,-6
 Karl Vilips,5147097,1,11,3,3,Par,E,66,-6
 Karl Vilips,5147097,1,12,4,6,Double Bogey,+2,66,-6
@@ -2810,6 +3338,17 @@ David Ford,5150294,2,15,4,4,Par,E,68,-4
 David Ford,5150294,2,16,3,4,Bogey,+1,68,-4
 David Ford,5150294,2,17,4,4,Par,E,68,-4
 David Ford,5150294,2,18,5,4,Birdie,-1,68,-4
+David Ford,5150294,3,1,5,3,Eagle,-2,38,-5
+David Ford,5150294,3,2,3,2,Birdie,-1,38,-5
+David Ford,5150294,3,3,4,3,Birdie,-1,38,-5
+David Ford,5150294,3,4,4,4,Par,E,38,-5
+David Ford,5150294,3,5,4,4,Par,E,38,-5
+David Ford,5150294,3,6,5,4,Birdie,-1,38,-5
+David Ford,5150294,3,7,4,4,Par,E,38,-5
+David Ford,5150294,3,8,4,5,Bogey,+1,38,-5
+David Ford,5150294,3,9,3,3,Par,E,38,-5
+David Ford,5150294,3,10,4,4,Par,E,38,-5
+David Ford,5150294,3,11,3,2,Birdie,-1,38,-5
 Neal Shipley,5209442,1,10,4,4,Par,E,68,-4
 Neal Shipley,5209442,1,11,3,3,Par,E,68,-4
 Neal Shipley,5209442,1,12,4,4,Par,E,68,-4
@@ -2846,6 +3385,18 @@ Neal Shipley,5209442,2,15,4,4,Par,E,70,-2
 Neal Shipley,5209442,2,16,3,4,Bogey,+1,70,-2
 Neal Shipley,5209442,2,17,4,5,Bogey,+1,70,-2
 Neal Shipley,5209442,2,18,5,4,Birdie,-1,70,-2
+Neal Shipley,5209442,3,10,4,5,Bogey,+1,47,-1
+Neal Shipley,5209442,3,11,3,3,Par,E,47,-1
+Neal Shipley,5209442,3,12,4,5,Bogey,+1,47,-1
+Neal Shipley,5209442,3,13,4,4,Par,E,47,-1
+Neal Shipley,5209442,3,14,5,5,Par,E,47,-1
+Neal Shipley,5209442,3,15,4,5,Bogey,+1,47,-1
+Neal Shipley,5209442,3,16,3,3,Par,E,47,-1
+Neal Shipley,5209442,3,17,4,4,Par,E,47,-1
+Neal Shipley,5209442,3,18,5,4,Birdie,-1,47,-1
+Neal Shipley,5209442,3,1,5,3,Eagle,-2,47,-1
+Neal Shipley,5209442,3,2,3,3,Par,E,47,-1
+Neal Shipley,5209442,3,3,4,3,Birdie,-1,47,-1
 Preston Stout,5210226,1,1,5,5,Par,E,71,-1
 Preston Stout,5210226,1,2,3,3,Par,E,71,-1
 Preston Stout,5210226,1,3,4,4,Par,E,71,-1
@@ -2882,6 +3433,13 @@ Preston Stout,5210226,2,6,5,5,Par,E,68,-4
 Preston Stout,5210226,2,7,4,4,Par,E,68,-4
 Preston Stout,5210226,2,8,4,4,Par,E,68,-4
 Preston Stout,5210226,2,9,3,3,Par,E,68,-4
+Preston Stout,5210226,3,10,4,4,Par,E,28,+1
+Preston Stout,5210226,3,11,3,3,Par,E,28,+1
+Preston Stout,5210226,3,12,4,4,Par,E,28,+1
+Preston Stout,5210226,3,13,4,5,Bogey,+1,28,+1
+Preston Stout,5210226,3,14,5,5,Par,E,28,+1
+Preston Stout,5210226,3,15,4,4,Par,E,28,+1
+Preston Stout,5210226,3,16,3,3,Par,E,28,+1
 Blades Brown,5211425,1,10,4,4,Par,E,66,-6
 Blades Brown,5211425,1,11,3,3,Par,E,66,-6
 Blades Brown,5211425,1,12,4,5,Bogey,+1,66,-6
@@ -2918,6 +3476,15 @@ Blades Brown,5211425,2,15,4,5,Bogey,+1,68,-4
 Blades Brown,5211425,2,16,3,3,Par,E,68,-4
 Blades Brown,5211425,2,17,4,4,Par,E,68,-4
 Blades Brown,5211425,2,18,5,4,Birdie,-1,68,-4
+Blades Brown,5211425,3,1,5,3,Eagle,-2,33,-3
+Blades Brown,5211425,3,2,3,2,Birdie,-1,33,-3
+Blades Brown,5211425,3,3,4,3,Birdie,-1,33,-3
+Blades Brown,5211425,3,4,4,4,Par,E,33,-3
+Blades Brown,5211425,3,5,4,5,Bogey,+1,33,-3
+Blades Brown,5211425,3,6,5,5,Par,E,33,-3
+Blades Brown,5211425,3,7,4,4,Par,E,33,-3
+Blades Brown,5211425,3,8,4,4,Par,E,33,-3
+Blades Brown,5211425,3,9,3,3,Par,E,33,-3
 Jackson Koivun,5215013,1,1,5,5,Par,E,70,-2
 Jackson Koivun,5215013,1,2,3,3,Par,E,70,-2
 Jackson Koivun,5215013,1,3,4,3,Birdie,-1,70,-2
@@ -2954,6 +3521,21 @@ Jackson Koivun,5215013,2,6,5,5,Par,E,67,-5
 Jackson Koivun,5215013,2,7,4,3,Birdie,-1,67,-5
 Jackson Koivun,5215013,2,8,4,4,Par,E,67,-5
 Jackson Koivun,5215013,2,9,3,4,Bogey,+1,67,-5
+Jackson Koivun,5215013,3,10,4,4,Par,E,59,-2
+Jackson Koivun,5215013,3,11,3,3,Par,E,59,-2
+Jackson Koivun,5215013,3,12,4,4,Par,E,59,-2
+Jackson Koivun,5215013,3,13,4,5,Bogey,+1,59,-2
+Jackson Koivun,5215013,3,14,5,5,Par,E,59,-2
+Jackson Koivun,5215013,3,15,4,3,Birdie,-1,59,-2
+Jackson Koivun,5215013,3,16,3,3,Par,E,59,-2
+Jackson Koivun,5215013,3,17,4,4,Par,E,59,-2
+Jackson Koivun,5215013,3,18,5,3,Eagle,-2,59,-2
+Jackson Koivun,5215013,3,1,5,5,Par,E,59,-2
+Jackson Koivun,5215013,3,2,3,3,Par,E,59,-2
+Jackson Koivun,5215013,3,3,4,4,Par,E,59,-2
+Jackson Koivun,5215013,3,4,4,4,Par,E,59,-2
+Jackson Koivun,5215013,3,5,4,4,Par,E,59,-2
+Jackson Koivun,5215013,3,6,5,5,Par,E,59,-2
 Luke Clanton,5215039,1,10,4,3,Birdie,-1,69,-3
 Luke Clanton,5215039,1,11,3,3,Par,E,69,-3
 Luke Clanton,5215039,1,12,4,4,Par,E,69,-3
@@ -2990,6 +3572,15 @@ Luke Clanton,5215039,2,15,4,4,Par,E,70,-2
 Luke Clanton,5215039,2,16,3,2,Birdie,-1,70,-2
 Luke Clanton,5215039,2,17,4,5,Bogey,+1,70,-2
 Luke Clanton,5215039,2,18,5,4,Birdie,-1,70,-2
+Luke Clanton,5215039,3,10,4,4,Par,E,33,-3
+Luke Clanton,5215039,3,11,3,2,Birdie,-1,33,-3
+Luke Clanton,5215039,3,12,4,3,Birdie,-1,33,-3
+Luke Clanton,5215039,3,13,4,3,Birdie,-1,33,-3
+Luke Clanton,5215039,3,14,5,5,Par,E,33,-3
+Luke Clanton,5215039,3,15,4,6,Double Bogey,+2,33,-3
+Luke Clanton,5215039,3,16,3,2,Birdie,-1,33,-3
+Luke Clanton,5215039,3,17,4,3,Birdie,-1,33,-3
+Luke Clanton,5215039,3,18,5,5,Par,E,33,-3
 Johnny Keefer,5217048,1,1,5,3,Eagle,-2,67,-5
 Johnny Keefer,5217048,1,2,3,3,Par,E,67,-5
 Johnny Keefer,5217048,1,3,4,4,Par,E,67,-5
@@ -3170,6 +3761,21 @@ Jay Leng,5461860,2,15,4,4,Par,E,70,-2
 Jay Leng,5461860,2,16,3,3,Par,E,70,-2
 Jay Leng,5461860,2,17,4,3,Birdie,-1,70,-2
 Jay Leng,5461860,2,18,5,4,Birdie,-1,70,-2
+Jay Leng,5461860,3,10,4,3,Birdie,-1,56,-5
+Jay Leng,5461860,3,11,3,3,Par,E,56,-5
+Jay Leng,5461860,3,12,4,4,Par,E,56,-5
+Jay Leng,5461860,3,13,4,3,Birdie,-1,56,-5
+Jay Leng,5461860,3,14,5,5,Par,E,56,-5
+Jay Leng,5461860,3,15,4,4,Par,E,56,-5
+Jay Leng,5461860,3,16,3,3,Par,E,56,-5
+Jay Leng,5461860,3,17,4,4,Par,E,56,-5
+Jay Leng,5461860,3,18,5,4,Birdie,-1,56,-5
+Jay Leng,5461860,3,1,5,4,Birdie,-1,56,-5
+Jay Leng,5461860,3,2,3,2,Birdie,-1,56,-5
+Jay Leng,5461860,3,3,4,4,Par,E,56,-5
+Jay Leng,5461860,3,4,4,4,Par,E,56,-5
+Jay Leng,5461860,3,5,4,4,Par,E,56,-5
+Jay Leng,5461860,3,6,5,5,Par,E,56,-5
 Nathan Tseng,5472447,1,1,5,4,Birdie,-1,77,+5
 Nathan Tseng,5472447,1,2,3,4,Bogey,+1,77,+5
 Nathan Tseng,5472447,1,3,4,5,Bogey,+1,77,+5
@@ -3278,6 +3884,19 @@ Andrew Putnam,5502,2,6,5,5,Par,E,70,-2
 Andrew Putnam,5502,2,7,4,4,Par,E,70,-2
 Andrew Putnam,5502,2,8,4,4,Par,E,70,-2
 Andrew Putnam,5502,2,9,3,2,Birdie,-1,70,-2
+Andrew Putnam,5502,3,10,4,4,Par,E,49,-3
+Andrew Putnam,5502,3,11,3,3,Par,E,49,-3
+Andrew Putnam,5502,3,12,4,4,Par,E,49,-3
+Andrew Putnam,5502,3,13,4,4,Par,E,49,-3
+Andrew Putnam,5502,3,14,5,4,Birdie,-1,49,-3
+Andrew Putnam,5502,3,15,4,4,Par,E,49,-3
+Andrew Putnam,5502,3,16,3,3,Par,E,49,-3
+Andrew Putnam,5502,3,17,4,4,Par,E,49,-3
+Andrew Putnam,5502,3,18,5,5,Par,E,49,-3
+Andrew Putnam,5502,3,1,5,4,Birdie,-1,49,-3
+Andrew Putnam,5502,3,2,3,2,Birdie,-1,49,-3
+Andrew Putnam,5502,3,3,4,4,Par,E,49,-3
+Andrew Putnam,5502,3,4,4,4,Par,E,49,-3
 Peter Malnati,5692,1,1,5,3,Eagle,-2,66,-6
 Peter Malnati,5692,1,2,3,3,Par,E,66,-6
 Peter Malnati,5692,1,3,4,4,Par,E,66,-6
@@ -3314,6 +3933,13 @@ Peter Malnati,5692,2,6,5,5,Par,E,64,-8
 Peter Malnati,5692,2,7,4,3,Birdie,-1,64,-8
 Peter Malnati,5692,2,8,4,3,Birdie,-1,64,-8
 Peter Malnati,5692,2,9,3,4,Bogey,+1,64,-8
+Peter Malnati,5692,3,1,5,4,Birdie,-1,27,-2
+Peter Malnati,5692,3,2,3,2,Birdie,-1,27,-2
+Peter Malnati,5692,3,3,4,4,Par,E,27,-2
+Peter Malnati,5692,3,4,4,4,Par,E,27,-2
+Peter Malnati,5692,3,5,4,4,Par,E,27,-2
+Peter Malnati,5692,3,6,5,5,Par,E,27,-2
+Peter Malnati,5692,3,7,4,4,Par,E,27,-2
 Emiliano Grillo,5882,1,1,5,4,Birdie,-1,70,-2
 Emiliano Grillo,5882,1,2,3,3,Par,E,70,-2
 Emiliano Grillo,5882,1,3,4,4,Par,E,70,-2
@@ -3350,6 +3976,22 @@ Emiliano Grillo,5882,2,6,5,5,Par,E,67,-5
 Emiliano Grillo,5882,2,7,4,3,Birdie,-1,67,-5
 Emiliano Grillo,5882,2,8,4,4,Par,E,67,-5
 Emiliano Grillo,5882,2,9,3,2,Birdie,-1,67,-5
+Emiliano Grillo,5882,3,1,5,5,Par,E,61,-2
+Emiliano Grillo,5882,3,2,3,2,Birdie,-1,61,-2
+Emiliano Grillo,5882,3,3,4,6,Double Bogey,+2,61,-2
+Emiliano Grillo,5882,3,4,4,4,Par,E,61,-2
+Emiliano Grillo,5882,3,5,4,4,Par,E,61,-2
+Emiliano Grillo,5882,3,6,5,4,Birdie,-1,61,-2
+Emiliano Grillo,5882,3,7,4,3,Birdie,-1,61,-2
+Emiliano Grillo,5882,3,8,4,4,Par,E,61,-2
+Emiliano Grillo,5882,3,9,3,3,Par,E,61,-2
+Emiliano Grillo,5882,3,10,4,3,Birdie,-1,61,-2
+Emiliano Grillo,5882,3,11,3,3,Par,E,61,-2
+Emiliano Grillo,5882,3,12,4,4,Par,E,61,-2
+Emiliano Grillo,5882,3,13,4,3,Birdie,-1,61,-2
+Emiliano Grillo,5882,3,14,5,6,Bogey,+1,61,-2
+Emiliano Grillo,5882,3,15,4,4,Par,E,61,-2
+Emiliano Grillo,5882,3,16,3,3,Par,E,61,-2
 Séamus Power,6001,1,10,4,4,Par,E,69,-3
 Séamus Power,6001,1,11,3,4,Bogey,+1,69,-3
 Séamus Power,6001,1,12,4,4,Par,E,69,-3
@@ -3386,6 +4028,17 @@ Séamus Power,6001,2,15,4,3,Birdie,-1,70,-2
 Séamus Power,6001,2,16,3,3,Par,E,70,-2
 Séamus Power,6001,2,17,4,4,Par,E,70,-2
 Séamus Power,6001,2,18,5,7,Double Bogey,+2,70,-2
+Séamus Power,6001,3,10,4,4,Par,E,40,-4
+Séamus Power,6001,3,11,3,3,Par,E,40,-4
+Séamus Power,6001,3,12,4,4,Par,E,40,-4
+Séamus Power,6001,3,13,4,3,Birdie,-1,40,-4
+Séamus Power,6001,3,14,5,5,Par,E,40,-4
+Séamus Power,6001,3,15,4,4,Par,E,40,-4
+Séamus Power,6001,3,16,3,3,Par,E,40,-4
+Séamus Power,6001,3,17,4,4,Par,E,40,-4
+Séamus Power,6001,3,18,5,4,Birdie,-1,40,-4
+Séamus Power,6001,3,1,5,3,Eagle,-2,40,-4
+Séamus Power,6001,3,2,3,3,Par,E,40,-4
 Beau Hossler,6011,1,10,4,4,Par,E,66,-6
 Beau Hossler,6011,1,11,3,3,Par,E,66,-6
 Beau Hossler,6011,1,12,4,4,Par,E,66,-6
@@ -3422,6 +4075,16 @@ Beau Hossler,6011,2,15,4,4,Par,E,69,-3
 Beau Hossler,6011,2,16,3,3,Par,E,69,-3
 Beau Hossler,6011,2,17,4,4,Par,E,69,-3
 Beau Hossler,6011,2,18,5,3,Eagle,-2,69,-3
+Beau Hossler,6011,3,1,5,3,Eagle,-2,37,-3
+Beau Hossler,6011,3,2,3,2,Birdie,-1,37,-3
+Beau Hossler,6011,3,3,4,4,Par,E,37,-3
+Beau Hossler,6011,3,4,4,5,Bogey,+1,37,-3
+Beau Hossler,6011,3,5,4,3,Birdie,-1,37,-3
+Beau Hossler,6011,3,6,5,5,Par,E,37,-3
+Beau Hossler,6011,3,7,4,4,Par,E,37,-3
+Beau Hossler,6011,3,8,4,4,Par,E,37,-3
+Beau Hossler,6011,3,9,3,3,Par,E,37,-3
+Beau Hossler,6011,3,10,4,4,Par,E,37,-3
 Tom Hoge,6086,1,10,4,4,Par,E,69,-3
 Tom Hoge,6086,1,11,3,4,Bogey,+1,69,-3
 Tom Hoge,6086,1,12,4,3,Birdie,-1,69,-3
@@ -3530,6 +4193,19 @@ David Lipsky,6701,2,15,4,4,Par,E,65,-7
 David Lipsky,6701,2,16,3,2,Birdie,-1,65,-7
 David Lipsky,6701,2,17,4,4,Par,E,65,-7
 David Lipsky,6701,2,18,5,4,Birdie,-1,65,-7
+David Lipsky,6701,3,1,5,4,Birdie,-1,51,E
+David Lipsky,6701,3,2,3,3,Par,E,51,E
+David Lipsky,6701,3,3,4,5,Bogey,+1,51,E
+David Lipsky,6701,3,4,4,4,Par,E,51,E
+David Lipsky,6701,3,5,4,4,Par,E,51,E
+David Lipsky,6701,3,6,5,5,Par,E,51,E
+David Lipsky,6701,3,7,4,4,Par,E,51,E
+David Lipsky,6701,3,8,4,4,Par,E,51,E
+David Lipsky,6701,3,9,3,3,Par,E,51,E
+David Lipsky,6701,3,10,4,4,Par,E,51,E
+David Lipsky,6701,3,11,3,3,Par,E,51,E
+David Lipsky,6701,3,12,4,4,Par,E,51,E
+David Lipsky,6701,3,13,4,4,Par,E,51,E
 Lucas Glover,676,1,10,4,4,Par,E,70,-2
 Lucas Glover,676,1,11,3,3,Par,E,70,-2
 Lucas Glover,676,1,12,4,4,Par,E,70,-2
@@ -3566,6 +4242,15 @@ Lucas Glover,676,2,15,4,4,Par,E,64,-8
 Lucas Glover,676,2,16,3,3,Par,E,64,-8
 Lucas Glover,676,2,17,4,4,Par,E,64,-8
 Lucas Glover,676,2,18,5,4,Birdie,-1,64,-8
+Lucas Glover,676,3,1,5,4,Birdie,-1,36,E
+Lucas Glover,676,3,2,3,3,Par,E,36,E
+Lucas Glover,676,3,3,4,5,Bogey,+1,36,E
+Lucas Glover,676,3,4,4,4,Par,E,36,E
+Lucas Glover,676,3,5,4,4,Par,E,36,E
+Lucas Glover,676,3,6,5,5,Par,E,36,E
+Lucas Glover,676,3,7,4,4,Par,E,36,E
+Lucas Glover,676,3,8,4,4,Par,E,36,E
+Lucas Glover,676,3,9,3,3,Par,E,36,E
 Patrick Rodgers,6825,1,10,4,3,Birdie,-1,68,-4
 Patrick Rodgers,6825,1,11,3,3,Par,E,68,-4
 Patrick Rodgers,6825,1,12,4,5,Bogey,+1,68,-4
@@ -3602,6 +4287,14 @@ Patrick Rodgers,6825,2,15,4,5,Bogey,+1,71,-1
 Patrick Rodgers,6825,2,16,3,3,Par,E,71,-1
 Patrick Rodgers,6825,2,17,4,5,Bogey,+1,71,-1
 Patrick Rodgers,6825,2,18,5,5,Par,E,71,-1
+Patrick Rodgers,6825,3,10,4,4,Par,E,33,+2
+Patrick Rodgers,6825,3,11,3,3,Par,E,33,+2
+Patrick Rodgers,6825,3,12,4,5,Bogey,+1,33,+2
+Patrick Rodgers,6825,3,13,4,4,Par,E,33,+2
+Patrick Rodgers,6825,3,14,5,4,Birdie,-1,33,+2
+Patrick Rodgers,6825,3,15,4,6,Double Bogey,+2,33,+2
+Patrick Rodgers,6825,3,16,3,4,Bogey,+1,33,+2
+Patrick Rodgers,6825,3,17,4,3,Birdie,-1,33,+2
 Ben Kohles,6922,1,1,5,4,Birdie,-1,68,-4
 Ben Kohles,6922,1,2,3,3,Par,E,68,-4
 Ben Kohles,6922,1,3,4,3,Birdie,-1,68,-4
@@ -3638,6 +4331,14 @@ Ben Kohles,6922,2,6,5,5,Par,E,66,-6
 Ben Kohles,6922,2,7,4,3,Birdie,-1,66,-6
 Ben Kohles,6922,2,8,4,4,Par,E,66,-6
 Ben Kohles,6922,2,9,3,3,Par,E,66,-6
+Ben Kohles,6922,3,1,5,5,Par,E,31,-2
+Ben Kohles,6922,3,2,3,2,Birdie,-1,31,-2
+Ben Kohles,6922,3,3,4,4,Par,E,31,-2
+Ben Kohles,6922,3,4,4,4,Par,E,31,-2
+Ben Kohles,6922,3,5,4,3,Birdie,-1,31,-2
+Ben Kohles,6922,3,6,5,4,Birdie,-1,31,-2
+Ben Kohles,6922,3,7,4,4,Par,E,31,-2
+Ben Kohles,6922,3,8,4,5,Bogey,+1,31,-2
 Mackenzie Hughes,6931,1,1,5,5,Par,E,72,E
 Mackenzie Hughes,6931,1,2,3,3,Par,E,72,E
 Mackenzie Hughes,6931,1,3,4,4,Par,E,72,E
@@ -3710,6 +4411,13 @@ Stephan Jaeger,6937,2,15,4,4,Par,E,65,-7
 Stephan Jaeger,6937,2,16,3,3,Par,E,65,-7
 Stephan Jaeger,6937,2,17,4,3,Birdie,-1,65,-7
 Stephan Jaeger,6937,2,18,5,4,Birdie,-1,65,-7
+Stephan Jaeger,6937,3,1,5,4,Birdie,-1,30,+1
+Stephan Jaeger,6937,3,2,3,3,Par,E,30,+1
+Stephan Jaeger,6937,3,3,4,4,Par,E,30,+1
+Stephan Jaeger,6937,3,4,4,4,Par,E,30,+1
+Stephan Jaeger,6937,3,5,4,5,Bogey,+1,30,+1
+Stephan Jaeger,6937,3,6,5,5,Par,E,30,+1
+Stephan Jaeger,6937,3,7,4,5,Bogey,+1,30,+1
 Nicholas Lindheim,6999,1,1,5,4,Birdie,-1,79,+7
 Nicholas Lindheim,6999,1,2,3,3,Par,E,79,+7
 Nicholas Lindheim,6999,1,3,4,7,Triple Bogey,+3,79,+7
@@ -3782,6 +4490,17 @@ Marcelo Rozo,7120,2,15,4,4,Par,E,69,-3
 Marcelo Rozo,7120,2,16,3,4,Bogey,+1,69,-3
 Marcelo Rozo,7120,2,17,4,4,Par,E,69,-3
 Marcelo Rozo,7120,2,18,5,5,Par,E,69,-3
+Marcelo Rozo,7120,3,10,4,6,Double Bogey,+2,44,E
+Marcelo Rozo,7120,3,11,3,3,Par,E,44,E
+Marcelo Rozo,7120,3,12,4,4,Par,E,44,E
+Marcelo Rozo,7120,3,13,4,3,Birdie,-1,44,E
+Marcelo Rozo,7120,3,14,5,5,Par,E,44,E
+Marcelo Rozo,7120,3,15,4,4,Par,E,44,E
+Marcelo Rozo,7120,3,16,3,3,Par,E,44,E
+Marcelo Rozo,7120,3,17,4,5,Bogey,+1,44,E
+Marcelo Rozo,7120,3,18,5,5,Par,E,44,E
+Marcelo Rozo,7120,3,1,5,4,Birdie,-1,44,E
+Marcelo Rozo,7120,3,2,3,2,Birdie,-1,44,E
 Zecheng Dou,8889,1,1,5,5,Par,E,72,E
 Zecheng Dou,8889,1,2,3,3,Par,E,72,E
 Zecheng Dou,8889,1,3,4,3,Birdie,-1,72,E
@@ -3854,6 +4573,15 @@ Keith Mitchell,8906,2,15,4,4,Par,E,66,-6
 Keith Mitchell,8906,2,16,3,4,Bogey,+1,66,-6
 Keith Mitchell,8906,2,17,4,3,Birdie,-1,66,-6
 Keith Mitchell,8906,2,18,5,4,Birdie,-1,66,-6
+Keith Mitchell,8906,3,1,5,3,Eagle,-2,33,-3
+Keith Mitchell,8906,3,2,3,2,Birdie,-1,33,-3
+Keith Mitchell,8906,3,3,4,3,Birdie,-1,33,-3
+Keith Mitchell,8906,3,4,4,4,Par,E,33,-3
+Keith Mitchell,8906,3,5,4,4,Par,E,33,-3
+Keith Mitchell,8906,3,6,5,5,Par,E,33,-3
+Keith Mitchell,8906,3,7,4,5,Bogey,+1,33,-3
+Keith Mitchell,8906,3,8,4,4,Par,E,33,-3
+Keith Mitchell,8906,3,9,3,3,Par,E,33,-3
 Ben Silverman,8910,1,1,5,5,Par,E,69,-3
 Ben Silverman,8910,1,2,3,3,Par,E,69,-3
 Ben Silverman,8910,1,3,4,4,Par,E,69,-3
@@ -3890,6 +4618,16 @@ Ben Silverman,8910,2,6,5,5,Par,E,66,-6
 Ben Silverman,8910,2,7,4,3,Birdie,-1,66,-6
 Ben Silverman,8910,2,8,4,4,Par,E,66,-6
 Ben Silverman,8910,2,9,3,3,Par,E,66,-6
+Ben Silverman,8910,3,1,5,5,Par,E,40,E
+Ben Silverman,8910,3,2,3,2,Birdie,-1,40,E
+Ben Silverman,8910,3,3,4,4,Par,E,40,E
+Ben Silverman,8910,3,4,4,4,Par,E,40,E
+Ben Silverman,8910,3,5,4,4,Par,E,40,E
+Ben Silverman,8910,3,6,5,5,Par,E,40,E
+Ben Silverman,8910,3,7,4,4,Par,E,40,E
+Ben Silverman,8910,3,8,4,5,Bogey,+1,40,E
+Ben Silverman,8910,3,9,3,3,Par,E,40,E
+Ben Silverman,8910,3,10,4,4,Par,E,40,E
 Michael Kim,8974,1,1,5,4,Birdie,-1,73,+1
 Michael Kim,8974,1,2,3,3,Par,E,73,+1
 Michael Kim,8974,1,3,4,5,Bogey,+1,73,+1
@@ -3926,6 +4664,15 @@ Michael Kim,8974,2,6,5,4,Birdie,-1,66,-6
 Michael Kim,8974,2,7,4,3,Birdie,-1,66,-6
 Michael Kim,8974,2,8,4,4,Par,E,66,-6
 Michael Kim,8974,2,9,3,4,Bogey,+1,66,-6
+Michael Kim,8974,3,10,4,4,Par,E,31,-5
+Michael Kim,8974,3,11,3,3,Par,E,31,-5
+Michael Kim,8974,3,12,4,3,Birdie,-1,31,-5
+Michael Kim,8974,3,13,4,4,Par,E,31,-5
+Michael Kim,8974,3,14,5,4,Birdie,-1,31,-5
+Michael Kim,8974,3,15,4,4,Par,E,31,-5
+Michael Kim,8974,3,16,3,2,Birdie,-1,31,-5
+Michael Kim,8974,3,17,4,3,Birdie,-1,31,-5
+Michael Kim,8974,3,18,5,4,Birdie,-1,31,-5
 Zac Blair,9040,1,1,5,4,Birdie,-1,64,-8
 Zac Blair,9040,1,2,3,3,Par,E,64,-8
 Zac Blair,9040,1,3,4,3,Birdie,-1,64,-8
@@ -3962,6 +4709,13 @@ Zac Blair,9040,2,6,5,5,Par,E,68,-4
 Zac Blair,9040,2,7,4,4,Par,E,68,-4
 Zac Blair,9040,2,8,4,3,Birdie,-1,68,-4
 Zac Blair,9040,2,9,3,3,Par,E,68,-4
+Zac Blair,9040,3,1,5,4,Birdie,-1,26,-3
+Zac Blair,9040,3,2,3,2,Birdie,-1,26,-3
+Zac Blair,9040,3,3,4,3,Birdie,-1,26,-3
+Zac Blair,9040,3,4,4,4,Par,E,26,-3
+Zac Blair,9040,3,5,4,4,Par,E,26,-3
+Zac Blair,9040,3,6,5,5,Par,E,26,-3
+Zac Blair,9040,3,7,4,4,Par,E,26,-3
 Adam Svensson,9127,1,10,4,4,Par,E,68,-4
 Adam Svensson,9127,1,11,3,2,Birdie,-1,68,-4
 Adam Svensson,9127,1,12,4,4,Par,E,68,-4
@@ -3998,6 +4752,20 @@ Adam Svensson,9127,2,15,4,5,Bogey,+1,69,-3
 Adam Svensson,9127,2,16,3,3,Par,E,69,-3
 Adam Svensson,9127,2,17,4,3,Birdie,-1,69,-3
 Adam Svensson,9127,2,18,5,6,Bogey,+1,69,-3
+Adam Svensson,9127,3,10,4,8,Other,OTHER,58,+2
+Adam Svensson,9127,3,11,3,3,Par,E,58,+2
+Adam Svensson,9127,3,12,4,4,Par,E,58,+2
+Adam Svensson,9127,3,13,4,3,Birdie,-1,58,+2
+Adam Svensson,9127,3,14,5,5,Par,E,58,+2
+Adam Svensson,9127,3,15,4,4,Par,E,58,+2
+Adam Svensson,9127,3,16,3,4,Bogey,+1,58,+2
+Adam Svensson,9127,3,17,4,4,Par,E,58,+2
+Adam Svensson,9127,3,18,5,4,Birdie,-1,58,+2
+Adam Svensson,9127,3,1,5,4,Birdie,-1,58,+2
+Adam Svensson,9127,3,2,3,2,Birdie,-1,58,+2
+Adam Svensson,9127,3,3,4,3,Birdie,-1,58,+2
+Adam Svensson,9127,3,4,4,4,Par,E,58,+2
+Adam Svensson,9127,3,5,4,6,Double Bogey,+2,58,+2
 Mark Hubbard,9143,1,1,5,4,Birdie,-1,74,+2
 Mark Hubbard,9143,1,2,3,3,Par,E,74,+2
 Mark Hubbard,9143,1,3,4,4,Par,E,74,+2
@@ -4106,6 +4874,21 @@ Haotong Li,9221,2,15,4,4,Par,E,66,-6
 Haotong Li,9221,2,16,3,3,Par,E,66,-6
 Haotong Li,9221,2,17,4,4,Par,E,66,-6
 Haotong Li,9221,2,18,5,5,Par,E,66,-6
+Haotong Li,9221,3,10,4,4,Par,E,61,E
+Haotong Li,9221,3,11,3,2,Birdie,-1,61,E
+Haotong Li,9221,3,12,4,8,Other,OTHER,61,E
+Haotong Li,9221,3,13,4,3,Birdie,-1,61,E
+Haotong Li,9221,3,14,5,5,Par,E,61,E
+Haotong Li,9221,3,15,4,4,Par,E,61,E
+Haotong Li,9221,3,16,3,5,Double Bogey,+2,61,E
+Haotong Li,9221,3,17,4,3,Birdie,-1,61,E
+Haotong Li,9221,3,18,5,4,Birdie,-1,61,E
+Haotong Li,9221,3,1,5,4,Birdie,-1,61,E
+Haotong Li,9221,3,2,3,3,Par,E,61,E
+Haotong Li,9221,3,3,4,3,Birdie,-1,61,E
+Haotong Li,9221,3,4,4,4,Par,E,61,E
+Haotong Li,9221,3,5,4,4,Par,E,61,E
+Haotong Li,9221,3,6,5,5,Par,E,61,E
 Christiaan Bezuidenhout,9243,1,1,5,5,Par,E,71,-1
 Christiaan Bezuidenhout,9243,1,2,3,3,Par,E,71,-1
 Christiaan Bezuidenhout,9243,1,3,4,4,Par,E,71,-1
@@ -4178,6 +4961,19 @@ Erik van Rooyen,9364,2,15,4,5,Bogey,+1,69,-3
 Erik van Rooyen,9364,2,16,3,4,Bogey,+1,69,-3
 Erik van Rooyen,9364,2,17,4,4,Par,E,69,-3
 Erik van Rooyen,9364,2,18,5,5,Par,E,69,-3
+Erik van Rooyen,9364,3,10,4,4,Par,E,49,-3
+Erik van Rooyen,9364,3,11,3,3,Par,E,49,-3
+Erik van Rooyen,9364,3,12,4,4,Par,E,49,-3
+Erik van Rooyen,9364,3,13,4,4,Par,E,49,-3
+Erik van Rooyen,9364,3,14,5,5,Par,E,49,-3
+Erik van Rooyen,9364,3,15,4,4,Par,E,49,-3
+Erik van Rooyen,9364,3,16,3,4,Bogey,+1,49,-3
+Erik van Rooyen,9364,3,17,4,4,Par,E,49,-3
+Erik van Rooyen,9364,3,18,5,4,Birdie,-1,49,-3
+Erik van Rooyen,9364,3,1,5,4,Birdie,-1,49,-3
+Erik van Rooyen,9364,3,2,3,2,Birdie,-1,49,-3
+Erik van Rooyen,9364,3,3,4,3,Birdie,-1,49,-3
+Erik van Rooyen,9364,3,4,4,4,Par,E,49,-3
 Jordan Smith,9506,1,1,5,4,Birdie,-1,70,-2
 Jordan Smith,9506,1,2,3,3,Par,E,70,-2
 Jordan Smith,9506,1,3,4,4,Par,E,70,-2
@@ -4214,6 +5010,22 @@ Jordan Smith,9506,2,6,5,5,Par,E,67,-5
 Jordan Smith,9506,2,7,4,4,Par,E,67,-5
 Jordan Smith,9506,2,8,4,4,Par,E,67,-5
 Jordan Smith,9506,2,9,3,3,Par,E,67,-5
+Jordan Smith,9506,3,1,5,5,Par,E,61,-2
+Jordan Smith,9506,3,2,3,2,Birdie,-1,61,-2
+Jordan Smith,9506,3,3,4,5,Bogey,+1,61,-2
+Jordan Smith,9506,3,4,4,4,Par,E,61,-2
+Jordan Smith,9506,3,5,4,4,Par,E,61,-2
+Jordan Smith,9506,3,6,5,4,Birdie,-1,61,-2
+Jordan Smith,9506,3,7,4,4,Par,E,61,-2
+Jordan Smith,9506,3,8,4,4,Par,E,61,-2
+Jordan Smith,9506,3,9,3,3,Par,E,61,-2
+Jordan Smith,9506,3,10,4,3,Birdie,-1,61,-2
+Jordan Smith,9506,3,11,3,3,Par,E,61,-2
+Jordan Smith,9506,3,12,4,4,Par,E,61,-2
+Jordan Smith,9506,3,13,4,4,Par,E,61,-2
+Jordan Smith,9506,3,14,5,5,Par,E,61,-2
+Jordan Smith,9506,3,15,4,4,Par,E,61,-2
+Jordan Smith,9506,3,16,3,3,Par,E,61,-2
 Tyler Duncan,9569,1,10,4,4,Par,E,69,-3
 Tyler Duncan,9569,1,11,3,3,Par,E,69,-3
 Tyler Duncan,9569,1,12,4,5,Bogey,+1,69,-3
@@ -4250,6 +5062,20 @@ Tyler Duncan,9569,2,15,4,5,Bogey,+1,68,-4
 Tyler Duncan,9569,2,16,3,3,Par,E,68,-4
 Tyler Duncan,9569,2,17,4,3,Birdie,-1,68,-4
 Tyler Duncan,9569,2,18,5,4,Birdie,-1,68,-4
+Tyler Duncan,9569,3,1,5,5,Par,E,58,+2
+Tyler Duncan,9569,3,2,3,4,Bogey,+1,58,+2
+Tyler Duncan,9569,3,3,4,5,Bogey,+1,58,+2
+Tyler Duncan,9569,3,4,4,5,Bogey,+1,58,+2
+Tyler Duncan,9569,3,5,4,4,Par,E,58,+2
+Tyler Duncan,9569,3,6,5,6,Bogey,+1,58,+2
+Tyler Duncan,9569,3,7,4,3,Birdie,-1,58,+2
+Tyler Duncan,9569,3,8,4,4,Par,E,58,+2
+Tyler Duncan,9569,3,9,3,3,Par,E,58,+2
+Tyler Duncan,9569,3,10,4,4,Par,E,58,+2
+Tyler Duncan,9569,3,11,3,3,Par,E,58,+2
+Tyler Duncan,9569,3,12,4,3,Birdie,-1,58,+2
+Tyler Duncan,9569,3,13,4,4,Par,E,58,+2
+Tyler Duncan,9569,3,14,5,5,Par,E,58,+2
 Paul Peterson,9600,1,10,4,4,Par,E,68,-4
 Paul Peterson,9600,1,11,3,2,Birdie,-1,68,-4
 Paul Peterson,9600,1,12,4,4,Par,E,68,-4
@@ -4286,6 +5112,18 @@ Paul Peterson,9600,2,15,4,4,Par,E,67,-5
 Paul Peterson,9600,2,16,3,3,Par,E,67,-5
 Paul Peterson,9600,2,17,4,4,Par,E,67,-5
 Paul Peterson,9600,2,18,5,4,Birdie,-1,67,-5
+Paul Peterson,9600,3,1,5,4,Birdie,-1,43,-4
+Paul Peterson,9600,3,2,3,3,Par,E,43,-4
+Paul Peterson,9600,3,3,4,4,Par,E,43,-4
+Paul Peterson,9600,3,4,4,5,Bogey,+1,43,-4
+Paul Peterson,9600,3,5,4,3,Birdie,-1,43,-4
+Paul Peterson,9600,3,6,5,4,Birdie,-1,43,-4
+Paul Peterson,9600,3,7,4,4,Par,E,43,-4
+Paul Peterson,9600,3,8,4,3,Birdie,-1,43,-4
+Paul Peterson,9600,3,9,3,3,Par,E,43,-4
+Paul Peterson,9600,3,10,4,3,Birdie,-1,43,-4
+Paul Peterson,9600,3,11,3,3,Par,E,43,-4
+Paul Peterson,9600,3,12,4,4,Par,E,43,-4
 Taylor Pendrith,9658,1,1,5,3,Eagle,-2,68,-4
 Taylor Pendrith,9658,1,2,3,2,Birdie,-1,68,-4
 Taylor Pendrith,9658,1,3,4,5,Bogey,+1,68,-4
