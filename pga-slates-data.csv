@@ -1,372 +1,488 @@
 Player Name,Slate-Tournament,Headshot,Player ID,Draftable ID,Tournament,Game Start Time,Salary,Fantasy Points,Ownership,Made Cut,MC,Win,Top 5,Top 10,Top 20,Teetime,Course
 Rory McIlroy,Classic: DP,https://dkn.gs/sports/images/golf/players/50/1080.png,463,44870510,DP World Tour,11/11/2026,11800,28.1,0,0.5,0.5,,,,,,
 Rory McIlroy,Classic: DP,https://dkn.gs/sports/images/golf/players/50/1080.png,463,44870510,DP World Tour,11/11/2026,11800,28.1,0,0.5,0.5,,,,,,
+Rory McIlroy,Classic: DP,https://dkn.gs/sports/images/golf/players/50/1080.png,463,44870510,DP World Tour,11/11/2026,11800,28.1,0,0.5,0.5,,,,,,
 Jon Rahm,Classic: DP,https://dkn.gs/sports/images/golf/players/50/1173.png,680,44870511,DP World Tour,11/11/2026,11300,27.1,0,0.5,0.5,,,,,,
 Jon Rahm,Classic: DP,https://dkn.gs/sports/images/golf/players/50/1173.png,680,44870511,DP World Tour,11/11/2026,11300,27.1,0,0.5,0.5,,,,,,
+Jon Rahm,Classic: DP,https://dkn.gs/sports/images/golf/players/50/1173.png,680,44870511,DP World Tour,11/11/2026,11300,27.1,0,0.5,0.5,,,,,,
+Benjamin James,Late Showdown: Late Round,,765775,44997750,Late Round 1,11/19/2026,10900,52.72,16.76,0.745,0.255,1651.8 (0.06),395.0 (0.20),217.5 (0.32),80.7 (0.55),10:34:36 AM,PL
 Tommy Fleetwood,Classic: DP,https://dkn.gs/sports/images/golf/players/50/733.png,871,44870512,DP World Tour,11/11/2026,10800,26.1,0,0.5,0.5,,,,,,
 Tommy Fleetwood,Classic: DP,https://dkn.gs/sports/images/golf/players/50/733.png,871,44870512,DP World Tour,11/11/2026,10800,26.1,0,0.5,0.5,,,,,,
-Benjamin James,Showdown: Round,,765775,44987694,Round 1,11/19/2026,10600,52.72,15.79,0.7611,0.2389,1728.8 (0.05),392.3 (0.20),216.4 (0.32),64.6 (0.61),10:34:36 AM,PL
-Benjamin James,Classic: PGA TOUR,,765775,44949653,PGA TOUR,11/19/2026,10500,107.39,15.79,0.7611,0.2389,1728.8 (0.05),392.3 (0.20),216.4 (0.32),64.6 (0.61),10:34:36 AM,PL
-Michael Brennan,Showdown: Round,,762470,44987695,Round 1,11/19/2026,10400,58.4,14.48,0.7171,0.2829,1751.6 (0.05),447.5 (0.18),230.6 (0.30),71.4 (0.58),10:45:36 AM,SS
-Michael Brennan,Classic: PGA TOUR,,762470,44949654,PGA TOUR,11/19/2026,10300,106.56,14.48,0.7171,0.2829,1751.6 (0.05),447.5 (0.18),230.6 (0.30),71.4 (0.58),10:45:36 AM,SS
+Tommy Fleetwood,Classic: DP,https://dkn.gs/sports/images/golf/players/50/733.png,871,44870512,DP World Tour,11/11/2026,10800,26.1,0,0.5,0.5,,,,,,
+Benjamin James,Showdown: Round,,765775,44987694,Round 1,11/19/2026,10600,52.72,16.76,0.745,0.255,1651.8 (0.06),395.0 (0.20),217.5 (0.32),80.7 (0.55),10:34:36 AM,PL
+Benjamin James,Classic: PGA TOUR,,765775,44949653,PGA TOUR,11/19/2026,10500,107.39,16.76,0.745,0.255,1651.8 (0.06),395.0 (0.20),217.5 (0.32),80.7 (0.55),10:34:36 AM,PL
+Michael Brennan,Showdown: Round,,762470,44987695,Round 1,11/19/2026,10400,58.4,13.54,0.7311,0.2689,1783.3 (0.05),453.5 (0.18),237.0 (0.30),92.6 (0.52),10:45:36 AM,SS
+Blades Brown,Late Showdown: Late Round,,795495,44997751,Late Round 1,11/19/2026,10400,51.45,14.87,0.7247,0.2753,2164.7 (0.04),555.5 (0.15),277.0 (0.27),130.1 (0.43),10:34:36 AM,SS
+Michael Brennan,Classic: PGA TOUR,,762470,44949654,PGA TOUR,11/19/2026,10300,106.92,13.54,0.7311,0.2689,1783.3 (0.05),453.5 (0.18),237.0 (0.30),92.6 (0.52),10:45:36 AM,SS
 Tyrrell Hatton,Classic: DP,https://dkn.gs/sports/images/golf/players/50/1015.png,1356,44870513,DP World Tour,11/11/2026,10300,25.1,0,0.5,0.5,,,,,,
 Tyrrell Hatton,Classic: DP,https://dkn.gs/sports/images/golf/players/50/1015.png,1356,44870513,DP World Tour,11/11/2026,10300,25.1,0,0.5,0.5,,,,,,
-Jackson Koivun,Classic: PGA TOUR,,796535,44949655,PGA TOUR,11/19/2026,10100,108.62,10.97,0.7482,0.2518,2057.2 (0.05),454.5 (0.18),235.0 (0.30),73.9 (0.57),9:28:36 AM,PL
-Jackson Koivun,Showdown: Round,,796535,44987696,Round 1,11/19/2026,10000,54.08,10.97,0.7482,0.2518,2057.2 (0.05),454.5 (0.18),235.0 (0.30),73.9 (0.57),9:28:36 AM,PL
+Tyrrell Hatton,Classic: DP,https://dkn.gs/sports/images/golf/players/50/1015.png,1356,44870513,DP World Tour,11/11/2026,10300,25.1,0,0.5,0.5,,,,,,
+Michael Brennan,Late Showdown: Late Round,,762470,44997752,Late Round 1,11/19/2026,10200,58.4,13.54,0.7311,0.2689,1783.3 (0.05),453.5 (0.18),237.0 (0.30),92.6 (0.52),10:45:36 AM,SS
+Jackson Koivun,Classic: PGA TOUR,,796535,44949655,PGA TOUR,11/19/2026,10100,108.48,11.54,0.7303,0.2697,2085.2 (0.05),465.0 (0.18),238.0 (0.30),91.5 (0.52),9:28:36 AM,PL
+Jackson Koivun,Showdown: Round,,796535,44987696,Round 1,11/19/2026,10000,54.08,11.54,0.7303,0.2697,2085.2 (0.05),465.0 (0.18),238.0 (0.30),91.5 (0.52),9:28:36 AM,PL
 Eugenio Lopez-Chacarra,Classic: DP,,696842,44870514,DP World Tour,11/11/2026,10000,24.5,0,0.5,0.5,,,,,,
 Eugenio Lopez-Chacarra,Classic: DP,,696842,44870514,DP World Tour,11/11/2026,10000,24.5,0,0.5,0.5,,,,,,
-Doug Ghim,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/546.png,670625,44949656,PGA TOUR,11/19/2026,9900,103.4,14.44,0.7426,0.2574,2322.8 (0.04),515.5 (0.16),261.8 (0.28),103.6 (0.49),9:50:36 AM,PL
-Blades Brown,Showdown: Round,,795495,44987697,Round 1,11/19/2026,9900,51.45,13.49,0.7049,0.2951,2186.1 (0.04),530.0 (0.16),268.6 (0.27),128.7 (0.44),10:34:36 AM,SS
+Eugenio Lopez-Chacarra,Classic: DP,,696842,44870514,DP World Tour,11/11/2026,10000,24.5,0,0.5,0.5,,,,,,
+Doug Ghim,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/546.png,670625,44949656,PGA TOUR,11/19/2026,9900,103.28,14.52,0.7321,0.2679,2299.0 (0.04),522.0 (0.16),264.0 (0.27),102.5 (0.49),9:50:36 AM,PL
+Blades Brown,Showdown: Round,,795495,44987697,Round 1,11/19/2026,9900,51.45,14.87,0.7247,0.2753,2164.7 (0.04),555.5 (0.15),277.0 (0.27),130.1 (0.43),10:34:36 AM,SS
+Ben Kohles,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/451327.png,1907,44997753,Late Round 1,11/19/2026,9800,56.47,16.01,0.6808,0.3192,3402.9 (0.03),782.0 (0.11),393.0 (0.20),187.5 (0.35),10:23:36 AM,SS
 Adam Scott,Classic: DP,https://dkn.gs/sports/images/golf/players/50/875.png,2078,44870515,DP World Tour,11/11/2026,9800,24.1,0,0.5,0.5,,,,,,
 Adam Scott,Classic: DP,https://dkn.gs/sports/images/golf/players/50/875.png,2078,44870515,DP World Tour,11/11/2026,9800,24.1,0,0.5,0.5,,,,,,
-Maverick McNealy,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/543.png,1914,44949657,PGA TOUR,11/19/2026,9700,99.16,9.47,0.714,0.286,3288.8 (0.03),650.9 (0.13),326.4 (0.23),155.2 (0.39),9:28:36 AM,PL
-Blades Brown,Classic: PGA TOUR,,795495,44949658,PGA TOUR,11/19/2026,9600,103.01,13.49,0.7049,0.2951,2186.1 (0.04),530.0 (0.16),268.6 (0.27),128.7 (0.44),10:34:36 AM,SS
-Doug Ghim,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/546.png,670625,44987698,Round 1,11/19/2026,9600,59.26,14.44,0.7426,0.2574,2322.8 (0.04),515.5 (0.16),261.8 (0.28),103.6 (0.49),9:50:36 AM,PL
-Andrew Novak,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/658.png,670403,44949659,PGA TOUR,11/19/2026,9500,96.6,6.46,0.6641,0.3359,3425.6 (0.03),780.0 (0.11),381.8 (0.21),181.9 (0.35),10:45:36 AM,SS
-Maverick McNealy,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/543.png,1914,44987699,Round 1,11/19/2026,9500,56.61,9.47,0.714,0.286,3288.8 (0.03),650.9 (0.13),326.4 (0.23),155.2 (0.39),9:28:36 AM,PL
-Keith Mitchell,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1076.png,427014,44987700,Round 1,11/19/2026,9400,56.83,9.39,0.6833,0.3167,2717.3 (0.04),616.4 (0.14),315.5 (0.24),150.9 (0.40),9:28:36 AM,SS
+Adam Scott,Classic: DP,https://dkn.gs/sports/images/golf/players/50/875.png,2078,44870515,DP World Tour,11/11/2026,9800,24.1,0,0.5,0.5,,,,,,
+Maverick McNealy,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/543.png,1914,44949657,PGA TOUR,11/19/2026,9700,98.94,9.68,0.7,0.3,3367.6 (0.03),687.0 (0.13),334.5 (0.23),157.7 (0.39),9:28:36 AM,PL
+Blades Brown,Classic: PGA TOUR,,795495,44949658,PGA TOUR,11/19/2026,9600,103.41,14.87,0.7247,0.2753,2164.7 (0.04),555.5 (0.15),277.0 (0.27),130.1 (0.43),10:34:36 AM,SS
+Doug Ghim,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/546.png,670625,44987698,Round 1,11/19/2026,9600,59.26,14.52,0.7321,0.2679,2299.0 (0.04),522.0 (0.16),264.0 (0.27),102.5 (0.49),9:50:36 AM,PL
+Andrew Novak,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/658.png,670403,44949659,PGA TOUR,11/19/2026,9500,97.06,6.61,0.6937,0.3063,3502.4 (0.03),808.0 (0.11),394.5 (0.20),185.9 (0.35),10:45:36 AM,SS
+Maverick McNealy,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/543.png,1914,44987699,Round 1,11/19/2026,9500,56.61,9.68,0.7,0.3,3367.6 (0.03),687.0 (0.13),334.5 (0.23),157.7 (0.39),9:28:36 AM,PL
+Keith Mitchell,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1076.png,427014,44987700,Round 1,11/19/2026,9400,56.83,10.78,0.709,0.291,2719.8 (0.04),635.0 (0.14),329.0 (0.23),155.0 (0.39),9:28:36 AM,SS
+Austin Smotherman,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/451957.png,477949,44997754,Late Round 1,11/19/2026,9400,52.15,12.82,0.6702,0.3298,3531.5 (0.03),772.0 (0.11),385.0 (0.21),181.0 (0.36),10:34:36 AM,PL
 Matt Wallace,Classic: DP,https://dkn.gs/sports/images/golf/players/50/1105.png,63191,44870516,DP World Tour,11/11/2026,9400,23.3,0,0.5,0.5,,,,,,
 Matt Wallace,Classic: DP,https://dkn.gs/sports/images/golf/players/50/1105.png,63191,44870516,DP World Tour,11/11/2026,9400,23.3,0,0.5,0.5,,,,,,
-Michael Thorbjornsen,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/787.png,696522,44949660,PGA TOUR,11/19/2026,9300,96.01,12.21,0.6843,0.3157,2533.6 (0.04),587.3 (0.15),314.5 (0.24),153.2 (0.40),10:34:36 AM,SS
-Brian Harman,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/533.png,805,44987701,Round 1,11/19/2026,9300,50.75,16.28,0.7334,0.2666,2574.3 (0.04),551.8 (0.15),288.2 (0.26),119.6 (0.46),9:39:36 AM,PL
-Keith Mitchell,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1076.png,427014,44949661,PGA TOUR,11/19/2026,9200,98.34,9.39,0.6833,0.3167,2717.3 (0.04),616.4 (0.14),315.5 (0.24),150.9 (0.40),9:28:36 AM,SS
-Andrew Novak,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/658.png,670403,44987702,Round 1,11/19/2026,9200,49.97,6.46,0.6641,0.3359,3425.6 (0.03),780.0 (0.11),381.8 (0.21),181.9 (0.35),10:45:36 AM,SS
+Matt Wallace,Classic: DP,https://dkn.gs/sports/images/golf/players/50/1105.png,63191,44870516,DP World Tour,11/11/2026,9400,23.3,0,0.5,0.5,,,,,,
+Michael Thorbjornsen,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/787.png,696522,44949660,PGA TOUR,11/19/2026,9300,96.46,13.02,0.7054,0.2946,2496.6 (0.04),596.0 (0.14),324.0 (0.24),156.5 (0.39),10:34:36 AM,SS
+Brian Harman,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/533.png,805,44987701,Round 1,11/19/2026,9300,50.75,18.37,0.7184,0.2816,2604.5 (0.04),559.5 (0.15),294.5 (0.25),120.3 (0.45),9:39:36 AM,PL
+Keith Mitchell,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1076.png,427014,44949661,PGA TOUR,11/19/2026,9200,98.81,10.78,0.709,0.291,2719.8 (0.04),635.0 (0.14),329.0 (0.23),155.0 (0.39),9:28:36 AM,SS
+Andrew Novak,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/658.png,670403,44987702,Round 1,11/19/2026,9200,49.97,6.61,0.6937,0.3063,3502.4 (0.03),808.0 (0.11),394.5 (0.20),185.9 (0.35),10:45:36 AM,SS
+Michael Thorbjornsen,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/787.png,696522,44997755,Late Round 1,11/19/2026,9200,55.15,13.02,0.7054,0.2946,2496.6 (0.04),596.0 (0.14),324.0 (0.24),156.5 (0.39),10:34:36 AM,SS
 Daniel Hillier,Classic: DP,,696565,44870517,DP World Tour,11/11/2026,9200,22.9,0,0.5,0.5,,,,,,
 Daniel Hillier,Classic: DP,,696565,44870517,DP World Tour,11/11/2026,9200,22.9,0,0.5,0.5,,,,,,
-J.T. Poston,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1165.png,300174,44949662,PGA TOUR,11/19/2026,9100,96.92,15.33,0.7249,0.2751,2942.8 (0.03),642.7 (0.13),332.3 (0.23),137.5 (0.42),9:28:36 AM,PL
-J.T. Poston,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1165.png,300174,44987703,Round 1,11/19/2026,9100,52.22,15.33,0.7249,0.2751,2942.8 (0.03),642.7 (0.13),332.3 (0.23),137.5 (0.42),9:28:36 AM,PL
+Daniel Hillier,Classic: DP,,696565,44870517,DP World Tour,11/11/2026,9200,22.9,0,0.5,0.5,,,,,,
+J.T. Poston,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1165.png,300174,44949662,PGA TOUR,11/19/2026,9100,96.64,14.9,0.6979,0.3021,2985.9 (0.03),652.0 (0.13),342.5 (0.23),138.7 (0.42),9:28:36 AM,PL
+Andrew Novak,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/658.png,670403,44997756,Late Round 1,11/19/2026,9100,49.97,6.61,0.6937,0.3063,3502.4 (0.03),808.0 (0.11),394.5 (0.20),185.9 (0.35),10:45:36 AM,SS
+J.T. Poston,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1165.png,300174,44987703,Round 1,11/19/2026,9100,52.22,14.9,0.6979,0.3021,2985.9 (0.03),652.0 (0.13),342.5 (0.23),138.7 (0.42),9:28:36 AM,PL
 Kristoffer Reitan,Classic: DP,,671051,44870518,DP World Tour,11/11/2026,9100,22.7,0,0.5,0.5,,,,,,
 Kristoffer Reitan,Classic: DP,,671051,44870518,DP World Tour,11/11/2026,9100,22.7,0,0.5,0.5,,,,,,
-Brooks Koepka,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1014.png,1417,44949663,PGA TOUR,11/19/2026,9000,90.38,7.96,0.602,0.398,4303.4 (0.02),952.7 (0.10),484.5 (0.17),235.0 (0.30),10:34:36 AM,SS
-Ben Kohles,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/451327.png,1907,44987704,Round 1,11/19/2026,9000,56.47,15.98,0.6579,0.3421,3441.6 (0.03),812.3 (0.11),396.4 (0.20),186.4 (0.35),10:23:36 AM,SS
+Kristoffer Reitan,Classic: DP,,671051,44870518,DP World Tour,11/11/2026,9100,22.7,0,0.5,0.5,,,,,,
+Brooks Koepka,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1014.png,1417,44949663,PGA TOUR,11/19/2026,9000,90.97,8.38,0.6347,0.3653,4266.6 (0.02),964.0 (0.09),495.5 (0.17),241.0 (0.29),10:34:36 AM,SS
+Ben Kohles,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/451327.png,1907,44987704,Round 1,11/19/2026,9000,56.47,16.01,0.6808,0.3192,3402.9 (0.03),782.0 (0.11),393.0 (0.20),187.5 (0.35),10:23:36 AM,SS
+Brooks Koepka,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/1014.png,1417,44997757,Late Round 1,11/19/2026,9000,48.9,8.38,0.6347,0.3653,4266.6 (0.02),964.0 (0.09),495.5 (0.17),241.0 (0.29),10:34:36 AM,SS
 Patrick Reed,Classic: DP,https://dkn.gs/sports/images/golf/players/50/976.png,782,44870519,DP World Tour,11/11/2026,9000,22.5,0,0.5,0.5,,,,,,
 Patrick Reed,Classic: DP,https://dkn.gs/sports/images/golf/players/50/976.png,782,44870519,DP World Tour,11/11/2026,9000,22.5,0,0.5,0.5,,,,,,
-Brian Harman,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/533.png,805,44949664,PGA TOUR,11/19/2026,8900,94.42,16.28,0.7334,0.2666,2574.3 (0.04),551.8 (0.15),288.2 (0.26),119.6 (0.46),9:39:36 AM,PL
-Michael Thorbjornsen,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/787.png,696522,44987705,Round 1,11/19/2026,8900,55.15,12.21,0.6843,0.3157,2533.6 (0.04),587.3 (0.15),314.5 (0.24),153.2 (0.40),10:34:36 AM,SS
+Patrick Reed,Classic: DP,https://dkn.gs/sports/images/golf/players/50/976.png,782,44870519,DP World Tour,11/11/2026,9000,22.5,0,0.5,0.5,,,,,,
+Brian Harman,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/533.png,805,44949664,PGA TOUR,11/19/2026,8900,94.26,18.37,0.7184,0.2816,2604.5 (0.04),559.5 (0.15),294.5 (0.25),120.3 (0.45),9:39:36 AM,PL
+Michael Thorbjornsen,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/787.png,696522,44987705,Round 1,11/19/2026,8900,55.15,13.02,0.7054,0.2946,2496.6 (0.04),596.0 (0.14),324.0 (0.24),156.5 (0.39),10:34:36 AM,SS
+Jordan L. Smith,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/820.png,73498,44997758,Late Round 1,11/19/2026,8900,55.53,14.36,0.7029,0.2971,2830.3 (0.03),639.0 (0.14),315.5 (0.24),150.9 (0.40),10:56:36 AM,SS
 Aaron Rai,Classic: DP,https://dkn.gs/sports/images/golf/players/50/861.png,353925,44870520,DP World Tour,11/11/2026,8900,22.3,0,0.5,0.5,,,,,,
 Aaron Rai,Classic: DP,https://dkn.gs/sports/images/golf/players/50/861.png,353925,44870520,DP World Tour,11/11/2026,8900,22.3,0,0.5,0.5,,,,,,
-Chris Kirk,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1078.png,2170,44949665,PGA TOUR,11/19/2026,8800,90.2,8.18,0.6847,0.3153,4260.5 (0.02),843.6 (0.11),413.2 (0.19),195.3 (0.34),10:34:36 AM,PL
-Brooks Koepka,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1014.png,1417,44987706,Round 1,11/19/2026,8800,48.9,7.96,0.602,0.398,4303.4 (0.02),952.7 (0.10),484.5 (0.17),235.0 (0.30),10:34:36 AM,SS
+Aaron Rai,Classic: DP,https://dkn.gs/sports/images/golf/players/50/861.png,353925,44870520,DP World Tour,11/11/2026,8900,22.3,0,0.5,0.5,,,,,,
+Chris Kirk,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1078.png,2170,44949665,PGA TOUR,11/19/2026,8800,89.95,7.94,0.6678,0.3322,4315.9 (0.02),864.0 (0.10),429.5 (0.19),199.3 (0.33),10:34:36 AM,PL
+Brooks Koepka,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1014.png,1417,44987706,Round 1,11/19/2026,8800,48.9,8.38,0.6347,0.3653,4266.6 (0.02),964.0 (0.09),495.5 (0.17),241.0 (0.29),10:34:36 AM,SS
+Matt Wallace,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/1105.png,63191,44997759,Late Round 1,11/19/2026,8800,47.52,7.94,0.6774,0.3226,3990.8 (0.02),868.0 (0.10),436.0 (0.19),196.2 (0.34),10:34:36 AM,SS
 Angel Ayora Fanegas,Classic: DP,,768633,44870521,DP World Tour,11/11/2026,8800,22.1,0,0.5,0.5,,,,,,
 Angel Ayora Fanegas,Classic: DP,,768633,44870521,DP World Tour,11/11/2026,8800,22.1,0,0.5,0.5,,,,,,
-Harris English,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/598.png,1600,44949666,PGA TOUR,11/19/2026,8700,88.74,7.01,0.6386,0.3614,4398.8 (0.02),982.7 (0.09),447.3 (0.18),217.5 (0.32),9:28:36 AM,SS
-Austin Smotherman,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/451957.png,477949,44987707,Round 1,11/19/2026,8700,52.15,12.36,0.6914,0.3086,3621.0 (0.03),787.3 (0.11),385.5 (0.21),184.1 (0.35),10:34:36 AM,PL
+Angel Ayora Fanegas,Classic: DP,,768633,44870521,DP World Tour,11/11/2026,8800,22.1,0,0.5,0.5,,,,,,
+Harris English,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/598.png,1600,44949666,PGA TOUR,11/19/2026,8700,89.23,6.95,0.6713,0.3287,4470.5 (0.02),1001.0 (0.09),462.0 (0.18),221.2 (0.31),9:28:36 AM,SS
+Austin Smotherman,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/451957.png,477949,44987707,Round 1,11/19/2026,8700,52.15,12.82,0.6702,0.3298,3531.5 (0.03),772.0 (0.11),385.0 (0.21),181.0 (0.36),10:34:36 AM,PL
+Chris Kirk,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/1078.png,2170,44997760,Late Round 1,11/19/2026,8700,53.27,7.94,0.6678,0.3322,4315.9 (0.02),864.0 (0.10),429.5 (0.19),199.3 (0.33),10:34:36 AM,PL
 David Puig,Classic: DP,,756216,44870522,DP World Tour,11/11/2026,8700,21.9,0,0.5,0.5,,,,,,
 David Puig,Classic: DP,,756216,44870522,DP World Tour,11/11/2026,8700,21.9,0,0.5,0.5,,,,,,
-Ben Kohles,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/451327.png,1907,44949667,PGA TOUR,11/19/2026,8600,94.9,15.98,0.6579,0.3421,3441.6 (0.03),812.3 (0.11),396.4 (0.20),186.4 (0.35),10:23:36 AM,SS
-Chris Kirk,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1078.png,2170,44987708,Round 1,11/19/2026,8600,53.27,8.18,0.6847,0.3153,4260.5 (0.02),843.6 (0.11),413.2 (0.19),195.3 (0.34),10:34:36 AM,PL
+David Puig,Classic: DP,,756216,44870522,DP World Tour,11/11/2026,8700,21.9,0,0.5,0.5,,,,,,
+Ben Kohles,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/451327.png,1907,44949667,PGA TOUR,11/19/2026,8600,95.29,16.01,0.6808,0.3192,3402.9 (0.03),782.0 (0.11),393.0 (0.20),187.5 (0.35),10:23:36 AM,SS
+Chris Kirk,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1078.png,2170,44987708,Round 1,11/19/2026,8600,53.27,7.94,0.6678,0.3322,4315.9 (0.02),864.0 (0.10),429.5 (0.19),199.3 (0.33),10:34:36 AM,PL
+Harry Hall,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/62315.png,699070,44997761,Late Round 1,11/19/2026,8600,47.6,10.62,0.6656,0.3344,4200.6 (0.02),883.0 (0.10),428.0 (0.19),198.3 (0.34),10:45:36 AM,SS
 Victor Perez,Classic: DP,https://dkn.gs/sports/images/golf/players/50/710.png,670428,44870523,DP World Tour,11/11/2026,8600,21.7,0,0.5,0.5,,,,,,
 Victor Perez,Classic: DP,https://dkn.gs/sports/images/golf/players/50/710.png,670428,44870523,DP World Tour,11/11/2026,8600,21.7,0,0.5,0.5,,,,,,
-Austin Smotherman,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/451957.png,477949,44949668,PGA TOUR,11/19/2026,8500,96.68,12.36,0.6914,0.3086,3621.0 (0.03),787.3 (0.11),385.5 (0.21),184.1 (0.35),10:34:36 AM,PL
-Harris English,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/598.png,1600,44987709,Round 1,11/19/2026,8500,50.45,7.01,0.6386,0.3614,4398.8 (0.02),982.7 (0.09),447.3 (0.18),217.5 (0.32),9:28:36 AM,SS
+Victor Perez,Classic: DP,https://dkn.gs/sports/images/golf/players/50/710.png,670428,44870523,DP World Tour,11/11/2026,8600,21.7,0,0.5,0.5,,,,,,
+Austin Smotherman,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/451957.png,477949,44949668,PGA TOUR,11/19/2026,8500,96.42,12.82,0.6702,0.3298,3531.5 (0.03),772.0 (0.11),385.0 (0.21),181.0 (0.36),10:34:36 AM,PL
+Harris English,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/598.png,1600,44987709,Round 1,11/19/2026,8500,50.45,6.95,0.6713,0.3287,4470.5 (0.02),1001.0 (0.09),462.0 (0.18),221.2 (0.31),9:28:36 AM,SS
+Ryo Hisatsune,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/609130.png,760663,44997762,Late Round 1,11/19/2026,8500,47.05,3.7,0.6089,0.3911,7135.7 (0.01),1407.5 (0.07),687.0 (0.13),303.5 (0.25),11:07:36 AM,SS
 Jacob Skov Olesen,Classic: DP,,797154,44870524,DP World Tour,11/11/2026,8500,21.5,0,0.5,0.5,,,,,,
 Jacob Skov Olesen,Classic: DP,,797154,44870524,DP World Tour,11/11/2026,8500,21.5,0,0.5,0.5,,,,,,
-Keegan Bradley,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/518.png,804,44949669,PGA TOUR,11/19/2026,8400,87.86,6.38,0.6668,0.3332,4775.5 (0.02),910.0 (0.10),450.0 (0.18),209.4 (0.32),9:39:36 AM,PL
-Jordan L. Smith,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/820.png,73498,44987710,Round 1,11/19/2026,8400,55.53,14.06,0.6793,0.3207,2888.5 (0.03),636.4 (0.14),317.1 (0.24),150.8 (0.40),10:56:36 AM,SS
+Jacob Skov Olesen,Classic: DP,,797154,44870524,DP World Tour,11/11/2026,8500,21.5,0,0.5,0.5,,,,,,
+Keegan Bradley,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/518.png,804,44949669,PGA TOUR,11/19/2026,8400,87.62,6.53,0.6527,0.3473,4833.7 (0.02),961.0 (0.09),460.5 (0.18),212.5 (0.32),9:39:36 AM,PL
+Jordan L. Smith,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/820.png,73498,44987710,Round 1,11/19/2026,8400,55.53,14.36,0.7029,0.2971,2830.3 (0.03),639.0 (0.14),315.5 (0.24),150.9 (0.40),10:56:36 AM,SS
+Kris Ventura,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/560.png,682435,44997763,Late Round 1,11/19/2026,8400,44.78,8.43,0.658,0.342,4632.1 (0.02),1000.0 (0.09),462.0 (0.18),223.8 (0.31),11:07:36 AM,SS
 Ryan Fox,Classic: DP,https://dkn.gs/sports/images/golf/players/50/1070.png,1048,44870525,DP World Tour,11/11/2026,8400,21.3,0,0.5,0.5,,,,,,
 Ryan Fox,Classic: DP,https://dkn.gs/sports/images/golf/players/50/1070.png,1048,44870525,DP World Tour,11/11/2026,8400,21.3,0,0.5,0.5,,,,,,
-Matt Wallace,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1105.png,63191,44949670,PGA TOUR,11/19/2026,8300,87.64,8.93,0.6495,0.3505,3954.5 (0.02),862.7 (0.10),429.1 (0.19),195.4 (0.34),10:34:36 AM,SS
-Matt Wallace,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1105.png,63191,44987711,Round 1,11/19/2026,8300,47.52,8.93,0.6495,0.3505,3954.5 (0.02),862.7 (0.10),429.1 (0.19),195.4 (0.34),10:34:36 AM,SS
+Ryan Fox,Classic: DP,https://dkn.gs/sports/images/golf/players/50/1070.png,1048,44870525,DP World Tour,11/11/2026,8400,21.3,0,0.5,0.5,,,,,,
+Matt Wallace,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1105.png,63191,44949670,PGA TOUR,11/19/2026,8300,87.99,7.94,0.6774,0.3226,3990.8 (0.02),868.0 (0.10),436.0 (0.19),196.2 (0.34),10:34:36 AM,SS
+Matt Wallace,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1105.png,63191,44987711,Round 1,11/19/2026,8300,47.52,7.94,0.6774,0.3226,3990.8 (0.02),868.0 (0.10),436.0 (0.19),196.2 (0.34),10:34:36 AM,SS
+Eric Cole,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/525717.png,704063,44997764,Late Round 1,11/19/2026,8300,50.57,8.89,0.6429,0.3571,4909.5 (0.02),1032.5 (0.09),509.5 (0.16),248.0 (0.29),10:56:36 AM,SS
 Ewen Ferguson,Classic: DP,,290967,44870526,DP World Tour,11/11/2026,8300,21.1,0,0.5,0.5,,,,,,
 Ewen Ferguson,Classic: DP,,290967,44870526,DP World Tour,11/11/2026,8300,21.1,0,0.5,0.5,,,,,,
-Jordan L. Smith,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/820.png,73498,44949671,PGA TOUR,11/19/2026,8200,95.29,14.06,0.6793,0.3207,2888.5 (0.03),636.4 (0.14),317.1 (0.24),150.8 (0.40),10:56:36 AM,SS
-Keegan Bradley,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/518.png,804,44987712,Round 1,11/19/2026,8200,53.67,6.38,0.6668,0.3332,4775.5 (0.02),910.0 (0.10),450.0 (0.18),209.4 (0.32),9:39:36 AM,PL
+Ewen Ferguson,Classic: DP,,290967,44870526,DP World Tour,11/11/2026,8300,21.1,0,0.5,0.5,,,,,,
+Jordan L. Smith,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/820.png,73498,44949671,PGA TOUR,11/19/2026,8200,95.49,14.36,0.7029,0.2971,2830.3 (0.03),639.0 (0.14),315.5 (0.24),150.9 (0.40),10:56:36 AM,SS
+Keegan Bradley,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/518.png,804,44987712,Round 1,11/19/2026,8200,53.67,6.53,0.6527,0.3473,4833.7 (0.02),961.0 (0.09),460.5 (0.18),212.5 (0.32),9:39:36 AM,PL
+Sami Välimäki,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/60434.png,698884,60434,Late Round 1,11/19/2026,8200,43.59,11.47,0.6495,0.3505,4758.5 (0.02),1062.5 (0.09),519.0 (0.16),243.0 (0.29),10:45:36 AM,SS
 Casey Jarvis,Classic: DP,,700282,44870527,DP World Tour,11/11/2026,8200,20.9,0,0.5,0.5,,,,,,
 Casey Jarvis,Classic: DP,,700282,44870527,DP World Tour,11/11/2026,8200,20.9,0,0.5,0.5,,,,,,
-Ryo Hisatsune,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/609130.png,760663,44949672,PGA TOUR,11/19/2026,8100,84.88,3.68,0.5551,0.4449,6924.7 (0.01),1388.6 (0.07),680.0 (0.13),303.2 (0.25),11:07:36 AM,SS
-Harry Hall,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/62315.png,699070,44987713,Round 1,11/19/2026,8100,47.6,10.63,0.632,0.368,4061.2 (0.02),875.5 (0.10),424.5 (0.19),196.6 (0.34),10:45:36 AM,SS
+Casey Jarvis,Classic: DP,,700282,44870527,DP World Tour,11/11/2026,8200,20.9,0,0.5,0.5,,,,,,
+Ryo Hisatsune,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/609130.png,760663,44949672,PGA TOUR,11/19/2026,8100,85.67,3.7,0.6089,0.3911,7135.7 (0.01),1407.5 (0.07),687.0 (0.13),303.5 (0.25),11:07:36 AM,SS
+Harry Hall,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/62315.png,699070,44987713,Round 1,11/19/2026,8100,47.6,10.62,0.6656,0.3344,4200.6 (0.02),883.0 (0.10),428.0 (0.19),198.3 (0.34),10:45:36 AM,SS
+Pierceson Coody,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/562745.png,710732,44997766,Late Round 1,11/19/2026,8100,49.82,6.25,0.6322,0.3678,5260.8 (0.02),1072.0 (0.09),543.5 (0.16),251.5 (0.28),10:12:36 AM,SS
 Jayden Trey Schaper,Classic: DP,,700083,44870528,DP World Tour,11/11/2026,8100,20.7,0,0.5,0.5,,,,,,
 Jayden Trey Schaper,Classic: DP,,700083,44870528,DP World Tour,11/11/2026,8100,20.7,0,0.5,0.5,,,,,,
-Eric Cole,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/525717.png,704063,44949673,PGA TOUR,11/19/2026,8000,87.43,8.72,0.6012,0.3988,4886.1 (0.02),1020.5 (0.09),499.5 (0.17),243.2 (0.29),10:56:36 AM,SS
-Davis Thompson,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/456332.png,700001,44949674,PGA TOUR,11/19/2026,8000,84.71,5.64,0.5819,0.4181,6104.0 (0.02),1238.6 (0.07),619.1 (0.14),278.6 (0.26),9:28:36 AM,SS
-Ryo Hisatsune,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/609130.png,760663,44987715,Round 1,11/19/2026,8000,47.05,3.68,0.5551,0.4449,6924.7 (0.01),1388.6 (0.07),680.0 (0.13),303.2 (0.25),11:07:36 AM,SS
-Kris Ventura,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/560.png,682435,44987714,Round 1,11/19/2026,8000,44.78,8.41,0.6136,0.3864,4721.8 (0.02),995.5 (0.09),463.6 (0.18),222.1 (0.31),11:07:36 AM,SS
+Jayden Trey Schaper,Classic: DP,,700083,44870528,DP World Tour,11/11/2026,8100,20.7,0,0.5,0.5,,,,,,
+Eric Cole,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/525717.png,704063,44949673,PGA TOUR,11/19/2026,8000,88.08,8.89,0.6429,0.3571,4909.5 (0.02),1032.5 (0.09),509.5 (0.16),248.0 (0.29),10:56:36 AM,SS
+Davis Thompson,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/456332.png,700001,44949674,PGA TOUR,11/19/2026,8000,85.46,5.25,0.6352,0.3648,6258.0 (0.02),1242.5 (0.07),630.0 (0.14),283.5 (0.26),9:28:36 AM,SS
+Ryo Hisatsune,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/609130.png,760663,44987715,Round 1,11/19/2026,8000,47.05,3.7,0.6089,0.3911,7135.7 (0.01),1407.5 (0.07),687.0 (0.13),303.5 (0.25),11:07:36 AM,SS
+Kris Ventura,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/560.png,682435,44987714,Round 1,11/19/2026,8000,44.78,8.43,0.658,0.342,4632.1 (0.02),1000.0 (0.09),462.0 (0.18),223.8 (0.31),11:07:36 AM,SS
+Ricky Castillo,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/514324.png,702801,44997767,Late Round 1,11/19/2026,8000,45.15,7.14,0.5924,0.4076,6812.1 (0.01),1350.0 (0.07),666.0 (0.13),293.0 (0.25),10:45:36 AM,SS
 Matthew Jordan,Classic: DP,https://dkn.gs/sports/images/golf/players/50/60718.png,691179,44870529,DP World Tour,11/11/2026,8000,20.5,0,0.5,0.5,,,,,,
 Matthew Jordan,Classic: DP,https://dkn.gs/sports/images/golf/players/50/60718.png,691179,44870529,DP World Tour,11/11/2026,8000,20.5,0,0.5,0.5,,,,,,
-Harry Hall,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/62315.png,699070,44949675,PGA TOUR,11/19/2026,7900,84.61,10.63,0.632,0.368,4061.2 (0.02),875.5 (0.10),424.5 (0.19),196.6 (0.34),10:45:36 AM,SS
-Kris Ventura,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/560.png,682435,44949676,PGA TOUR,11/19/2026,7900,81.91,8.41,0.6136,0.3864,4721.8 (0.02),995.5 (0.09),463.6 (0.18),222.1 (0.31),11:07:36 AM,SS
-Davis Thompson,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/456332.png,700001,44987717,Round 1,11/19/2026,7900,49.75,5.64,0.5819,0.4181,6104.0 (0.02),1238.6 (0.07),619.1 (0.14),278.6 (0.26),9:28:36 AM,SS
-Denny McCarthy,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/631.png,1018,44987716,Round 1,11/19/2026,7900,49.13,11.3,0.6271,0.3729,4386.8 (0.02),934.1 (0.10),455.0 (0.18),216.8 (0.32),9:50:36 AM,SS
+Matthew Jordan,Classic: DP,https://dkn.gs/sports/images/golf/players/50/60718.png,691179,44870529,DP World Tour,11/11/2026,8000,20.5,0,0.5,0.5,,,,,,
+Harry Hall,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/62315.png,699070,44949675,PGA TOUR,11/19/2026,7900,85.1,10.62,0.6656,0.3344,4200.6 (0.02),883.0 (0.10),428.0 (0.19),198.3 (0.34),10:45:36 AM,SS
+Kris Ventura,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/560.png,682435,44949676,PGA TOUR,11/19/2026,7900,82.21,8.43,0.658,0.342,4632.1 (0.02),1000.0 (0.09),462.0 (0.18),223.8 (0.31),11:07:36 AM,SS
+Davis Thompson,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/456332.png,700001,44987717,Round 1,11/19/2026,7900,50.42,5.25,0.6352,0.3648,6258.0 (0.02),1242.5 (0.07),630.0 (0.14),283.5 (0.26),9:28:36 AM,SS
+Denny McCarthy,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/631.png,1018,44987716,Round 1,11/19/2026,7900,49.13,11.25,0.6593,0.3407,4453.4 (0.02),940.0 (0.10),459.5 (0.18),220.0 (0.31),9:50:36 AM,SS
+Zachary Bauchou,Late Showdown: Late Round,,689973,44997768,Late Round 1,11/19/2026,7900,41.84,6.23,0.5863,0.4137,7042.6 (0.01),1425.0 (0.07),699.5 (0.13),307.8 (0.25),10:56:36 AM,SS
+Hayden Springer,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/626.png,77417,44997769,Late Round 1,11/19/2026,7900,38.4,3.39,0.5278,0.4722,16416.5 (0.01),2433.3 (0.04),1102.8 (0.08),493.9 (0.17),11:07:36 AM,PL
 Oliver Lindell,Classic: DP,,230887,44870530,DP World Tour,11/11/2026,7900,20.3,0,0.5,0.5,,,,,,
 Oliver Lindell,Classic: DP,,230887,44870530,DP World Tour,11/11/2026,7900,20.3,0,0.5,0.5,,,,,,
-Denny McCarthy,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/631.png,1018,44949677,PGA TOUR,11/19/2026,7800,85.21,11.3,0.6271,0.3729,4386.8 (0.02),934.1 (0.10),455.0 (0.18),216.8 (0.32),9:50:36 AM,SS
-Steven Fisk,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/623838.png,761827,44949678,PGA TOUR,11/19/2026,7800,88.19,5.74,0.5757,0.4243,6460.9 (0.02),1297.7 (0.07),625.5 (0.14),283.2 (0.26),10:45:36 AM,SS
-Eric Cole,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/525717.png,704063,44987718,Round 1,11/19/2026,7800,50.57,8.72,0.6012,0.3988,4886.1 (0.02),1020.5 (0.09),499.5 (0.17),243.2 (0.29),10:56:36 AM,SS
-Trace Crowe,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/452008.png,560242,44987719,Round 1,11/19/2026,7800,48.86,7.13,0.6479,0.3521,6844.7 (0.01),1272.7 (0.07),620.0 (0.14),273.6 (0.27),9:50:36 AM,PL
+Oliver Lindell,Classic: DP,,230887,44870530,DP World Tour,11/11/2026,7900,20.3,0,0.5,0.5,,,,,,
+Denny McCarthy,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/631.png,1018,44949677,PGA TOUR,11/19/2026,7800,85.7,11.25,0.6593,0.3407,4453.4 (0.02),940.0 (0.10),459.5 (0.18),220.0 (0.31),9:50:36 AM,SS
+Steven Fisk,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/623838.png,761827,44949678,PGA TOUR,11/19/2026,7800,88.96,5.62,0.6272,0.3728,6588.8 (0.01),1327.5 (0.07),638.0 (0.14),289.0 (0.26),10:45:36 AM,SS
+Eric Cole,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/525717.png,704063,44987718,Round 1,11/19/2026,7800,50.57,8.89,0.6429,0.3571,4909.5 (0.02),1032.5 (0.09),509.5 (0.16),248.0 (0.29),10:56:36 AM,SS
+Steven Fisk,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/623838.png,761827,44997771,Late Round 1,11/19/2026,7800,47.98,5.62,0.6272,0.3728,6588.8 (0.01),1327.5 (0.07),638.0 (0.14),289.0 (0.26),10:45:36 AM,SS
+Trace Crowe,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/452008.png,560242,44987719,Round 1,11/19/2026,7800,48.86,7.53,0.6068,0.3932,6924.3 (0.01),1332.5 (0.07),628.0 (0.14),279.0 (0.26),9:50:36 AM,PL
+Christiaan Bezuidenhout,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/1115.png,453,44997770,Late Round 1,11/19/2026,7800,44.73,6.44,0.5864,0.4136,7362.9 (0.01),1332.5 (0.07),622.5 (0.14),284.0 (0.26),10:45:36 AM,PL
 Bernd Wiesberger,Classic: DP,https://dkn.gs/sports/images/golf/players/50/718.png,479,44870531,DP World Tour,11/11/2026,7800,20.1,0,0.5,0.5,,,,,,
 Bernd Wiesberger,Classic: DP,https://dkn.gs/sports/images/golf/players/50/718.png,479,44870531,DP World Tour,11/11/2026,7800,20.1,0,0.5,0.5,,,,,,
-Max Greyserman,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/451990.png,510213,44949679,PGA TOUR,11/19/2026,7700,83.42,5.35,0.6644,0.3356,6441.7 (0.02),1275.0 (0.07),633.6 (0.14),285.5 (0.26),9:06:36 AM,PL
-Marco Penge,Classic: PGA TOUR,,698887,44949680,PGA TOUR,11/19/2026,7700,82.31,2.92,0.6407,0.3593,7818.8 (0.01),1504.5 (0.06),719.1 (0.12),326.8 (0.23),9:50:36 AM,PL
-Max Greyserman,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/451990.png,510213,44987721,Round 1,11/19/2026,7700,46.36,5.35,0.6644,0.3356,6441.7 (0.02),1275.0 (0.07),633.6 (0.14),285.5 (0.26),9:06:36 AM,PL
-Sami Välimäki,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/60434.png,698884,60434,Round 1,11/19/2026,7700,43.59,11.65,0.6076,0.3924,4989.0 (0.02),1093.2 (0.08),529.1 (0.16),245.5 (0.29),10:45:36 AM,SS
+Bernd Wiesberger,Classic: DP,https://dkn.gs/sports/images/golf/players/50/718.png,479,44870531,DP World Tour,11/11/2026,7800,20.1,0,0.5,0.5,,,,,,
+Max Greyserman,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/451990.png,510213,44949679,PGA TOUR,11/19/2026,7700,82.9,5.28,0.6296,0.3704,6566.5 (0.01),1305.0 (0.07),628.0 (0.14),291.5 (0.26),9:06:36 AM,PL
+Marco Penge,Classic: PGA TOUR,,698887,44949680,PGA TOUR,11/19/2026,7700,81.64,2.4,0.5946,0.4054,8148.1 (0.01),1560.0 (0.06),737.0 (0.12),342.5 (0.23),9:50:36 AM,PL
+Sami Välimäki,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/60434.png,698884,60434,Round 1,11/19/2026,7700,43.59,11.47,0.6495,0.3505,4758.5 (0.02),1062.5 (0.09),519.0 (0.16),243.0 (0.29),10:45:36 AM,SS
+Max Greyserman,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/451990.png,510213,44987721,Round 1,11/19/2026,7700,46.36,5.28,0.6296,0.3704,6566.5 (0.01),1305.0 (0.07),628.0 (0.14),291.5 (0.26),9:06:36 AM,PL
+Jackson Suber,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/632390.png,763051,44997772,Late Round 1,11/19/2026,7700,46.62,4.43,0.5916,0.4084,6972.5 (0.01),1330.0 (0.07),650.5 (0.13),302.0 (0.25),10:23:36 AM,PL
+Mackenzie Hughes,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/635.png,552,44997773,Late Round 1,11/19/2026,7700,45.73,8.31,0.6274,0.3726,6184.6 (0.02),1342.5 (0.07),631.0 (0.14),288.0 (0.26),10:23:36 AM,SS
 Francesco Laporta,Classic: DP,https://dkn.gs/sports/images/golf/players/50/69807.png,259,44870532,DP World Tour,11/11/2026,7700,19.9,0,0.5,0.5,,,,,,
 Francesco Laporta,Classic: DP,https://dkn.gs/sports/images/golf/players/50/69807.png,259,44870532,DP World Tour,11/11/2026,7700,19.9,0,0.5,0.5,,,,,,
-David Ford,Classic: PGA TOUR,,773829,44949681,PGA TOUR,11/19/2026,7600,85.17,5.02,0.6539,0.3461,6613.0 (0.01),1225.0 (0.08),613.2 (0.14),285.5 (0.26),10:01:36 AM,PL
-Mackenzie Hughes,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/635.png,552,44949682,PGA TOUR,11/19/2026,7600,82.51,8.18,0.578,0.422,6164.9 (0.02),1311.4 (0.07),617.7 (0.14),282.7 (0.26),10:23:36 AM,SS
-Sepp Straka,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/654.png,73285,44949683,PGA TOUR,11/19/2026,7600,82.86,9.87,0.5737,0.4263,5886.3 (0.02),1204.5 (0.08),603.2 (0.14),276.4 (0.27),9:39:36 AM,SS
-Sepp Straka,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/654.png,73285,44987723,Round 1,11/19/2026,7600,44.91,9.87,0.5737,0.4263,5886.3 (0.02),1204.5 (0.08),603.2 (0.14),276.4 (0.27),9:39:36 AM,SS
-Alex Smalley,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/451986.png,509666,44987722,Round 1,11/19/2026,7600,51.94,8.25,0.5843,0.4157,6129.8 (0.02),1277.3 (0.07),617.7 (0.14),278.2 (0.26),9:39:36 AM,SS
-Pierceson Coody,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/562745.png,710732,44987724,Round 1,11/19/2026,7600,48.82,6.63,0.5805,0.4195,5298.5 (0.02),1097.3 (0.08),541.8 (0.16),249.5 (0.29),10:12:36 AM,SS
+Francesco Laporta,Classic: DP,https://dkn.gs/sports/images/golf/players/50/69807.png,259,44870532,DP World Tour,11/11/2026,7700,19.9,0,0.5,0.5,,,,,,
+Mackenzie Hughes,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/635.png,552,44949682,PGA TOUR,11/19/2026,7600,83.25,8.31,0.6274,0.3726,6184.6 (0.02),1342.5 (0.07),631.0 (0.14),288.0 (0.26),10:23:36 AM,SS
+David Ford,Classic: PGA TOUR,,773829,44949681,PGA TOUR,11/19/2026,7600,84.6,5.24,0.6182,0.3818,6486.8 (0.02),1230.0 (0.08),594.5 (0.14),284.0 (0.26),10:01:36 AM,PL
+Sepp Straka,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/654.png,73285,44949683,PGA TOUR,11/19/2026,7600,83.62,9.27,0.6258,0.3742,5887.0 (0.02),1212.5 (0.08),611.0 (0.14),279.0 (0.26),9:39:36 AM,SS
+Pierceson Coody,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/562745.png,710732,44987724,Round 1,11/19/2026,7600,49.82,6.25,0.6322,0.3678,5260.8 (0.02),1072.0 (0.09),543.5 (0.16),251.5 (0.28),10:12:36 AM,SS
+Sepp Straka,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/654.png,73285,44987723,Round 1,11/19/2026,7600,44.91,9.27,0.6258,0.3742,5887.0 (0.02),1212.5 (0.08),611.0 (0.14),279.0 (0.26),9:39:36 AM,SS
+Alex Smalley,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/451986.png,509666,44987722,Round 1,11/19/2026,7600,51.94,8.51,0.62,0.38,6179.4 (0.02),1305.0 (0.07),627.0 (0.14),280.5 (0.26),9:39:36 AM,SS
+Rico Hoey,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/467626.png,700394,44997774,Late Round 1,11/19/2026,7600,48.33,3.66,0.5831,0.4169,7976.0 (0.01),1495.0 (0.06),704.0 (0.12),314.5 (0.24),10:45:36 AM,PL
+Greyson Sigg,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/452078.png,670398,44997775,Late Round 1,11/19/2026,7600,44.08,4.1,0.567,0.433,12916.0 (0.01),2140.0 (0.04),947.5 (0.10),413.5 (0.19),10:23:36 AM,PL
 Adrian Meronk,Classic: DP,,292342,44870533,DP World Tour,11/11/2026,7600,19.7,0,0.5,0.5,,,,,,
 Adrian Meronk,Classic: DP,,292342,44870533,DP World Tour,11/11/2026,7600,19.7,0,0.5,0.5,,,,,,
-Sami Välimäki,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/60434.png,698884,60434,PGA TOUR,11/19/2026,7500,84.33,11.65,0.6076,0.3924,4989.0 (0.02),1093.2 (0.08),529.1 (0.16),245.5 (0.29),10:45:36 AM,SS
-Alex Smalley,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/451986.png,509666,44949685,PGA TOUR,11/19/2026,7500,88.23,8.25,0.5843,0.4157,6129.8 (0.02),1277.3 (0.07),617.7 (0.14),278.2 (0.26),9:39:36 AM,SS
-Jackson Suber,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/632390.png,763051,44949686,PGA TOUR,11/19/2026,7500,84.9,4.47,0.6391,0.3609,6885.3 (0.01),1318.2 (0.07),639.1 (0.14),297.7 (0.25),10:23:36 AM,PL
-Steven Fisk,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/623838.png,761827,44987725,Round 1,11/19/2026,7500,47.98,5.74,0.5757,0.4243,6460.9 (0.02),1297.7 (0.07),625.5 (0.14),283.2 (0.26),10:45:36 AM,SS
-Marco Penge,Showdown: Round,,698887,44987726,Round 1,11/19/2026,7500,46.21,2.92,0.6407,0.3593,7818.8 (0.01),1504.5 (0.06),719.1 (0.12),326.8 (0.23),9:50:36 AM,PL
-Zac Blair,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/614.png,530,44987727,Round 1,11/19/2026,7500,48.23,8.62,0.5436,0.4564,7444.2 (0.01),1504.5 (0.06),705.0 (0.12),306.4 (0.25),9:06:36 AM,SS
+Adrian Meronk,Classic: DP,,292342,44870533,DP World Tour,11/11/2026,7600,19.7,0,0.5,0.5,,,,,,
+Sami Välimäki,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/60434.png,698884,60434,PGA TOUR,11/19/2026,7500,84.61,11.47,0.6495,0.3505,4758.5 (0.02),1062.5 (0.09),519.0 (0.16),243.0 (0.29),10:45:36 AM,SS
+Jackson Suber,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/632390.png,763051,44949686,PGA TOUR,11/19/2026,7500,84.26,4.43,0.5916,0.4084,6972.5 (0.01),1330.0 (0.07),650.5 (0.13),302.0 (0.25),10:23:36 AM,PL
+Alex Smalley,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/451986.png,509666,44949685,PGA TOUR,11/19/2026,7500,88.77,8.51,0.62,0.38,6179.4 (0.02),1305.0 (0.07),627.0 (0.14),280.5 (0.26),9:39:36 AM,SS
+Steven Fisk,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/623838.png,761827,44987725,Round 1,11/19/2026,7500,47.98,5.62,0.6272,0.3728,6588.8 (0.01),1327.5 (0.07),638.0 (0.14),289.0 (0.26),10:45:36 AM,SS
+Marco Penge,Showdown: Round,,698887,44987726,Round 1,11/19/2026,7500,46.21,2.4,0.5946,0.4054,8148.1 (0.01),1560.0 (0.06),737.0 (0.12),342.5 (0.23),9:50:36 AM,PL
+Zac Blair,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/614.png,530,44987727,Round 1,11/19/2026,7500,48.23,8.96,0.587,0.413,7208.5 (0.01),1467.5 (0.06),690.0 (0.13),293.0 (0.25),9:06:36 AM,SS
+Rasmus Neergaard-Petersen,Late Showdown: Late Round,,720984,44997776,Late Round 1,11/19/2026,7500,44.22,4.87,0.5877,0.4123,8065.3 (0.01),1425.0 (0.07),670.5 (0.13),302.5 (0.25),10:12:36 AM,PL
+A.J. Ewart,Late Showdown: Late Round,,765420,44997777,Late Round 1,11/19/2026,7500,37.28,2.64,0.5263,0.4737,19300.0 (0.01),3710.0 (0.03),1547.5 (0.06),637.0 (0.14),11:07:36 AM,SS
 Joe Dean,Classic: DP,,544869,44870534,DP World Tour,11/11/2026,7500,19.5,0,0.5,0.5,,,,,,
 Joe Dean,Classic: DP,,544869,44870534,DP World Tour,11/11/2026,7500,19.5,0,0.5,0.5,,,,,,
-Pierceson Coody,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/562745.png,710732,44949688,PGA TOUR,11/19/2026,7400,80.21,6.63,0.5805,0.4195,5298.5 (0.02),1097.3 (0.08),541.8 (0.16),249.5 (0.29),10:12:36 AM,SS
-Bud Cauley,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/549.png,1673,44949687,PGA TOUR,11/19/2026,7400,85.21,5.7,0.548,0.452,7135.4 (0.01),1397.7 (0.07),670.0 (0.13),295.9 (0.25),9:28:36 AM,SS
-Rico Hoey,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/467626.png,700394,44949689,PGA TOUR,11/19/2026,7400,81.56,3.61,0.6329,0.3671,8180.9 (0.01),1540.9 (0.06),712.7 (0.12),309.5 (0.24),10:45:36 AM,PL
-Zachary Bauchou,Classic: PGA TOUR,,689973,44949690,PGA TOUR,11/19/2026,7400,73.23,6.68,0.5438,0.4562,7044.8 (0.01),1443.2 (0.06),699.5 (0.13),305.3 (0.25),10:56:36 AM,SS
-Jackson Suber,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/632390.png,763051,44987732,Round 1,11/19/2026,7400,47.62,4.47,0.6391,0.3609,6885.3 (0.01),1318.2 (0.07),639.1 (0.14),297.7 (0.25),10:23:36 AM,PL
-Bud Cauley,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/549.png,1673,44987729,Round 1,11/19/2026,7400,45.8,5.7,0.548,0.452,7135.4 (0.01),1397.7 (0.07),670.0 (0.13),295.9 (0.25),9:28:36 AM,SS
-Rico Hoey,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/467626.png,700394,44987731,Round 1,11/19/2026,7400,48.33,3.61,0.6329,0.3671,8180.9 (0.01),1540.9 (0.06),712.7 (0.12),309.5 (0.24),10:45:36 AM,PL
-Ricky Castillo,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/514324.png,702801,44987728,Round 1,11/19/2026,7400,45.15,7.7,0.5468,0.4532,6680.4 (0.01),1309.1 (0.07),646.4 (0.13),288.2 (0.26),10:45:36 AM,SS
-Christiaan Bezuidenhout,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1115.png,453,44987730,Round 1,11/19/2026,7400,45.4,6.82,0.636,0.364,7500.2 (0.01),1338.6 (0.07),629.5 (0.14),284.1 (0.26),10:45:36 AM,PL
+Joe Dean,Classic: DP,,544869,44870534,DP World Tour,11/11/2026,7500,19.5,0,0.5,0.5,,,,,,
+Pierceson Coody,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/562745.png,710732,44949688,PGA TOUR,11/19/2026,7400,80.96,6.25,0.6322,0.3678,5260.8 (0.02),1072.0 (0.09),543.5 (0.16),251.5 (0.28),10:12:36 AM,SS
+Zachary Bauchou,Classic: PGA TOUR,,689973,44949690,PGA TOUR,11/19/2026,7400,73.51,6.23,0.5863,0.4137,7042.6 (0.01),1425.0 (0.07),699.5 (0.13),307.8 (0.25),10:56:36 AM,SS
+Rico Hoey,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/467626.png,700394,44949689,PGA TOUR,11/19/2026,7400,80.87,3.66,0.5831,0.4169,7976.0 (0.01),1495.0 (0.06),704.0 (0.12),314.5 (0.24),10:45:36 AM,PL
+Bud Cauley,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/549.png,1673,44949687,PGA TOUR,11/19/2026,7400,85.91,5.98,0.5938,0.4062,7167.8 (0.01),1437.5 (0.07),697.0 (0.13),312.5 (0.24),9:28:36 AM,SS
+Ricky Castillo,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/514324.png,702801,44987728,Round 1,11/19/2026,7400,45.15,7.14,0.5924,0.4076,6812.1 (0.01),1350.0 (0.07),666.0 (0.13),293.0 (0.25),10:45:36 AM,SS
+Christiaan Bezuidenhout,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1115.png,453,44987730,Round 1,11/19/2026,7400,44.73,6.44,0.5864,0.4136,7362.9 (0.01),1332.5 (0.07),622.5 (0.14),284.0 (0.26),10:45:36 AM,PL
+Jackson Suber,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/632390.png,763051,44987732,Round 1,11/19/2026,7400,46.62,4.43,0.5916,0.4084,6972.5 (0.01),1330.0 (0.07),650.5 (0.13),302.0 (0.25),10:23:36 AM,PL
+Rico Hoey,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/467626.png,700394,44987731,Round 1,11/19/2026,7400,48.33,3.66,0.5831,0.4169,7976.0 (0.01),1495.0 (0.06),704.0 (0.12),314.5 (0.24),10:45:36 AM,PL
+Bud Cauley,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/549.png,1673,44987729,Round 1,11/19/2026,7400,45.8,5.98,0.5938,0.4062,7167.8 (0.01),1437.5 (0.07),697.0 (0.13),312.5 (0.24),9:28:36 AM,SS
+Erik Van Rooyen,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/671.png,417,44997778,Late Round 1,11/19/2026,7400,38.7,6.23,0.5376,0.4624,10895.8 (0.01),1970.0 (0.05),940.0 (0.10),423.5 (0.19),10:23:36 AM,PL
 Martin Couvra,Classic: DP,,768104,44870535,DP World Tour,11/11/2026,7400,19.3,0,0.5,0.5,,,,,,
 Martin Couvra,Classic: DP,,768104,44870535,DP World Tour,11/11/2026,7400,19.3,0,0.5,0.5,,,,,,
-Trace Crowe,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/452008.png,560242,44949691,PGA TOUR,11/19/2026,7300,83.1,7.13,0.6479,0.3521,6844.7 (0.01),1272.7 (0.07),620.0 (0.14),273.6 (0.27),9:50:36 AM,PL
-Christiaan Bezuidenhout,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1115.png,453,44949694,PGA TOUR,11/19/2026,7300,82.69,6.82,0.636,0.364,7500.2 (0.01),1338.6 (0.07),629.5 (0.14),284.1 (0.26),10:45:36 AM,PL
+Martin Couvra,Classic: DP,,768104,44870535,DP World Tour,11/11/2026,7400,19.3,0,0.5,0.5,,,,,,
+Trace Crowe,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/452008.png,560242,44949691,PGA TOUR,11/19/2026,7300,82.51,7.53,0.6068,0.3932,6924.3 (0.01),1332.5 (0.07),628.0 (0.14),279.0 (0.26),9:50:36 AM,PL
+Christiaan Bezuidenhout,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1115.png,453,44949694,PGA TOUR,11/19/2026,7300,81.98,6.44,0.5864,0.4136,7362.9 (0.01),1332.5 (0.07),622.5 (0.14),284.0 (0.26),10:45:36 AM,PL
+Greyson Sigg,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/452078.png,670398,44949695,PGA TOUR,11/19/2026,7300,75.7,4.1,0.567,0.433,12916.0 (0.01),2140.0 (0.04),947.5 (0.10),413.5 (0.19),10:23:36 AM,PL
+Rasmus Neergaard-Petersen,Classic: PGA TOUR,,720984,44949693,PGA TOUR,11/19/2026,7300,79.41,4.87,0.5877,0.4123,8065.3 (0.01),1425.0 (0.07),670.5 (0.13),302.5 (0.25),10:12:36 AM,PL
 Daniel Berger,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1178.png,1870,44949692,PGA TOUR,11/19/2026,7300,78.55,0,0,0,,,,,,
-Rasmus Neergaard-Petersen,Classic: PGA TOUR,,720984,44949693,PGA TOUR,11/19/2026,7300,80.04,5.04,0.6347,0.3653,8325.8 (0.01),1450.0 (0.06),695.0 (0.13),310.9 (0.24),10:12:36 AM,PL
-Greyson Sigg,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/452078.png,670398,44949695,PGA TOUR,11/19/2026,7300,76.37,4.52,0.6117,0.3883,11751.9 (0.01),2072.7 (0.05),925.0 (0.10),401.4 (0.20),10:23:36 AM,PL
-David Ford,Showdown: Round,,773829,44987735,Round 1,11/19/2026,7300,47.89,5.02,0.6539,0.3461,6613.0 (0.01),1225.0 (0.08),613.2 (0.14),285.5 (0.26),10:01:36 AM,PL
-Mackenzie Hughes,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/635.png,552,44987733,Round 1,11/19/2026,7300,45.73,8.18,0.578,0.422,6164.9 (0.02),1311.4 (0.07),617.7 (0.14),282.7 (0.26),10:23:36 AM,SS
-Zachary Bauchou,Showdown: Round,,689973,44987734,Round 1,11/19/2026,7300,41.84,6.68,0.5438,0.4562,7044.8 (0.01),1443.2 (0.06),699.5 (0.13),305.3 (0.25),10:56:36 AM,SS
-Rasmus Neergaard-Petersen,Showdown: Round,,720984,44987737,Round 1,11/19/2026,7300,44.22,5.04,0.6347,0.3653,8325.8 (0.01),1450.0 (0.06),695.0 (0.13),310.9 (0.24),10:12:36 AM,PL
-Greyson Sigg,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/452078.png,670398,44987736,Round 1,11/19/2026,7300,44.58,4.52,0.6117,0.3883,11751.9 (0.01),2072.7 (0.05),925.0 (0.10),401.4 (0.20),10:23:36 AM,PL
+Zachary Bauchou,Showdown: Round,,689973,44987734,Round 1,11/19/2026,7300,41.84,6.23,0.5863,0.4137,7042.6 (0.01),1425.0 (0.07),699.5 (0.13),307.8 (0.25),10:56:36 AM,SS
+Mackenzie Hughes,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/635.png,552,44987733,Round 1,11/19/2026,7300,45.73,8.31,0.6274,0.3726,6184.6 (0.02),1342.5 (0.07),631.0 (0.14),288.0 (0.26),10:23:36 AM,SS
+David Ford,Showdown: Round,,773829,44987735,Round 1,11/19/2026,7300,47.89,5.24,0.6182,0.3818,6486.8 (0.02),1230.0 (0.08),594.5 (0.14),284.0 (0.26),10:01:36 AM,PL
+Greyson Sigg,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/452078.png,670398,44987736,Round 1,11/19/2026,7300,44.08,4.1,0.567,0.433,12916.0 (0.01),2140.0 (0.04),947.5 (0.10),413.5 (0.19),10:23:36 AM,PL
+Rasmus Neergaard-Petersen,Showdown: Round,,720984,44987737,Round 1,11/19/2026,7300,44.22,4.87,0.5877,0.4123,8065.3 (0.01),1425.0 (0.07),670.5 (0.13),302.5 (0.25),10:12:36 AM,PL
+Adrien Dumont De Chassart,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/645032.png,765441,44997780,Late Round 1,11/19/2026,7300,38.17,2.13,0.5143,0.4857,19581.5 (0.01),3470.0 (0.03),1622.5 (0.06),644.0 (0.13),11:18:36 AM,SS
+Jesper Svensson,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/630555.png,762723,44997781,Late Round 1,11/19/2026,7300,40.68,1.66,0.5034,0.4966,15512.0 (0.01),2800.0 (0.03),1277.5 (0.07),552.0 (0.15),11:07:36 AM,PL
 Niklas Nørgaard Møller,Classic: DP,https://dkn.gs/sports/images/golf/players/50/452233.png,690995,44870536,DP World Tour,11/11/2026,7300,19.1,0,0.5,0.5,,,,,,
 Niklas Nørgaard Møller,Classic: DP,https://dkn.gs/sports/images/golf/players/50/452233.png,690995,44870536,DP World Tour,11/11/2026,7300,19.1,0,0.5,0.5,,,,,,
-Ricky Castillo,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/514324.png,702801,44949697,PGA TOUR,11/19/2026,7200,84.06,7.7,0.5468,0.4532,6680.4 (0.01),1309.1 (0.07),646.4 (0.13),288.2 (0.26),10:45:36 AM,SS
-Neal Shipley,Classic: PGA TOUR,,793366,44949696,PGA TOUR,11/19/2026,7200,78.07,3.54,0.5442,0.4558,8028.5 (0.01),1631.8 (0.06),761.4 (0.12),342.3 (0.23),10:01:36 AM,SS
+Niklas Nørgaard Møller,Classic: DP,https://dkn.gs/sports/images/golf/players/50/452233.png,690995,44870536,DP World Tour,11/11/2026,7300,19.1,0,0.5,0.5,,,,,,
+Ricky Castillo,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/514324.png,702801,44949697,PGA TOUR,11/19/2026,7200,84.81,7.14,0.5924,0.4076,6812.1 (0.01),1350.0 (0.07),666.0 (0.13),293.0 (0.25),10:45:36 AM,SS
+Neal Shipley,Classic: PGA TOUR,,793366,44949696,PGA TOUR,11/19/2026,7200,78.8,3.52,0.5909,0.4091,8077.5 (0.01),1675.0 (0.06),774.0 (0.11),347.5 (0.22),10:01:36 AM,SS
 Sudarshan Yellamaraju,Classic: PGA TOUR,,772264,44949698,PGA TOUR,11/19/2026,7200,78.18,0,0,0,,,,,,
-Mac Meissner,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/557402.png,708878,44949699,PGA TOUR,11/19/2026,7200,82.82,8.06,0.6081,0.3919,5881.8 (0.02),1156.8 (0.08),565.5 (0.15),253.6 (0.28),9:50:36 AM,SS
-Austin Eckroat,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1053.png,696563,44949700,PGA TOUR,11/19/2026,7200,78.81,6.3,0.5404,0.4596,7831.6 (0.01),1545.5 (0.06),736.4 (0.12),323.6 (0.24),9:06:36 AM,SS
-Neal Shipley,Showdown: Round,,793366,44987740,Round 1,11/19/2026,7200,47.26,3.54,0.5442,0.4558,8028.5 (0.01),1631.8 (0.06),761.4 (0.12),342.3 (0.23),10:01:36 AM,SS
-Mac Meissner,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/557402.png,708878,44987739,Round 1,11/19/2026,7200,45.35,8.06,0.6081,0.3919,5881.8 (0.02),1156.8 (0.08),565.5 (0.15),253.6 (0.28),9:50:36 AM,SS
-Austin Eckroat,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1053.png,696563,44987738,Round 1,11/19/2026,7200,46.03,6.3,0.5404,0.4596,7831.6 (0.01),1545.5 (0.06),736.4 (0.12),323.6 (0.24),9:06:36 AM,SS
-A.J. Ewart,Showdown: Round,,765420,44987741,Round 1,11/19/2026,7200,37.28,2.78,0.4219,0.5781,20458.3 (0.00),3645.5 (0.03),1561.4 (0.06),638.2 (0.14),11:07:36 AM,SS
-Johnny Keefer,Showdown: Round,,814141,44987742,Round 1,11/19/2026,7200,47.22,6.24,0.6512,0.3488,6914.6 (0.01),1338.6 (0.07),643.6 (0.13),298.2 (0.25),9:50:36 AM,PL
-Max McGreevy,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/525640.png,703985,44987743,Round 1,11/19/2026,7200,45.27,5.31,0.5955,0.4045,10461.0 (0.01),1813.6 (0.05),848.2 (0.11),372.3 (0.21),9:06:36 AM,PL
+Mac Meissner,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/557402.png,708878,44949699,PGA TOUR,11/19/2026,7200,83.42,8.65,0.6498,0.3502,5606.5 (0.02),1180.0 (0.08),558.5 (0.15),251.5 (0.28),9:50:36 AM,SS
+Austin Eckroat,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1053.png,696563,44949700,PGA TOUR,11/19/2026,7200,79.55,6.35,0.5827,0.4173,7886.0 (0.01),1560.0 (0.06),747.5 (0.12),334.5 (0.23),9:06:36 AM,SS
+A.J. Ewart,Showdown: Round,,765420,44987741,Round 1,11/19/2026,7200,37.28,2.64,0.5263,0.4737,19300.0 (0.01),3710.0 (0.03),1547.5 (0.06),637.0 (0.14),11:07:36 AM,SS
+Neal Shipley,Showdown: Round,,793366,44987740,Round 1,11/19/2026,7200,46.93,3.52,0.5909,0.4091,8077.5 (0.01),1675.0 (0.06),774.0 (0.11),347.5 (0.22),10:01:36 AM,SS
+Mac Meissner,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/557402.png,708878,44987739,Round 1,11/19/2026,7200,45.85,8.65,0.6498,0.3502,5606.5 (0.02),1180.0 (0.08),558.5 (0.15),251.5 (0.28),9:50:36 AM,SS
+Austin Eckroat,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1053.png,696563,44987738,Round 1,11/19/2026,7200,46.37,6.35,0.5827,0.4173,7886.0 (0.01),1560.0 (0.06),747.5 (0.12),334.5 (0.23),9:06:36 AM,SS
+Johnny Keefer,Showdown: Round,,814141,44987742,Round 1,11/19/2026,7200,47.22,6.6,0.6051,0.3949,6879.5 (0.01),1305.0 (0.07),634.0 (0.14),284.5 (0.26),9:50:36 AM,PL
+Max McGreevy,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/525640.png,703985,44987743,Round 1,11/19/2026,7200,45.27,4.9,0.5548,0.4452,10679.3 (0.01),1875.0 (0.05),839.0 (0.11),377.0 (0.21),9:06:36 AM,PL
+Kevin Roy,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/525542.png,703862,44997782,Late Round 1,11/19/2026,7200,44.8,2.19,0.5776,0.4224,12158.1 (0.01),2250.0 (0.04),1034.0 (0.09),448.5 (0.18),10:12:36 AM,PL
+Matthieu Pavon,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/1121.png,113835,44997783,Late Round 1,11/19/2026,7200,36.15,2.46,0.5226,0.4774,17178.4 (0.01),3460.0 (0.03),1497.5 (0.06),610.0 (0.14),11:07:36 AM,SS
 Angel Hidalgo,Classic: DP,,670990,44870537,DP World Tour,11/11/2026,7200,18.9,0,0.5,0.5,,,,,,
 Angel Hidalgo,Classic: DP,,670990,44870537,DP World Tour,11/11/2026,7200,18.9,0,0.5,0.5,,,,,,
-Zac Blair,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/614.png,530,44949702,PGA TOUR,11/19/2026,7100,82.42,8.62,0.5436,0.4564,7444.2 (0.01),1504.5 (0.06),705.0 (0.12),306.4 (0.25),9:06:36 AM,SS
-Johnny Keefer,Classic: PGA TOUR,,814141,44949701,PGA TOUR,11/19/2026,7100,81.34,6.24,0.6512,0.3488,6914.6 (0.01),1338.6 (0.07),643.6 (0.13),298.2 (0.25),9:50:36 AM,PL
-Max McGreevy,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/525640.png,703985,44949704,PGA TOUR,11/19/2026,7100,74.7,5.31,0.5955,0.4045,10461.0 (0.01),1813.6 (0.05),848.2 (0.11),372.3 (0.21),9:06:36 AM,PL
-Billy Horschel,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/915.png,1725,44949703,PGA TOUR,11/19/2026,7100,76.35,5.29,0.6105,0.3895,9608.5 (0.01),1818.2 (0.05),813.6 (0.11),364.1 (0.22),9:39:36 AM,PL
-John Parry,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/450617.png,708,44949705,PGA TOUR,11/19/2026,7100,76.55,3.2,0.5996,0.4004,14566.2 (0.01),2354.5 (0.04),1061.4 (0.09),456.8 (0.18),9:06:36 AM,PL
-Kevin Roy,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/525542.png,703862,44949706,PGA TOUR,11/19/2026,7100,78.65,2.52,0.6113,0.3887,12866.4 (0.01),2286.4 (0.04),1030.0 (0.09),443.6 (0.18),10:12:36 AM,PL
-Billy Horschel,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/915.png,1725,44987744,Round 1,11/19/2026,7100,41.75,5.29,0.6105,0.3895,9608.5 (0.01),1818.2 (0.05),813.6 (0.11),364.1 (0.22),9:39:36 AM,PL
-Joel Dahmen,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/521.png,1622,44987745,Round 1,11/19/2026,7100,37.63,6.66,0.5811,0.4189,11176.2 (0.01),1890.9 (0.05),868.2 (0.10),399.5 (0.20),9:17:36 AM,PL
-Hayden Springer,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/626.png,77417,44987746,Round 1,11/19/2026,7100,38.4,3.39,0.53,0.47,15471.1 (0.01),2340.0 (0.04),1087.5 (0.08),489.0 (0.17),11:07:36 AM,PL
-Emiliano Grillo,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1085.png,610,44987747,Round 1,11/19/2026,7100,38.6,7.5,0.6579,0.3421,10224.9 (0.01),1786.4 (0.05),779.1 (0.11),362.7 (0.22),9:06:36 AM,PL
-Luke Clanton,Showdown: Round,,796547,44987748,Round 1,11/19/2026,7100,42.5,4.6,0.4654,0.5346,11557.0 (0.01),2272.7 (0.04),992.7 (0.09),436.8 (0.19),10:01:36 AM,SS
-Sam Stevens,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/564993.png,720888,44987749,Round 1,11/19/2026,7100,40.85,3.89,0.6241,0.3759,8615.7 (0.01),1536.4 (0.06),739.1 (0.12),328.6 (0.23),9:17:36 AM,PL
+Angel Hidalgo,Classic: DP,,670990,44870537,DP World Tour,11/11/2026,7200,18.9,0,0.5,0.5,,,,,,
+Zac Blair,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/614.png,530,44949702,PGA TOUR,11/19/2026,7100,83.16,8.96,0.587,0.413,7208.5 (0.01),1467.5 (0.06),690.0 (0.13),293.0 (0.25),9:06:36 AM,SS
+Johnny Keefer,Classic: PGA TOUR,,814141,44949701,PGA TOUR,11/19/2026,7100,80.74,6.6,0.6051,0.3949,6879.5 (0.01),1305.0 (0.07),634.0 (0.14),284.5 (0.26),9:50:36 AM,PL
+Max McGreevy,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/525640.png,703985,44949704,PGA TOUR,11/19/2026,7100,74.09,4.9,0.5548,0.4452,10679.3 (0.01),1875.0 (0.05),839.0 (0.11),377.0 (0.21),9:06:36 AM,PL
+Kevin Roy,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/525542.png,703862,44949706,PGA TOUR,11/19/2026,7100,77.76,2.19,0.5776,0.4224,12158.1 (0.01),2250.0 (0.04),1034.0 (0.09),448.5 (0.18),10:12:36 AM,PL
+Billy Horschel,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/915.png,1725,44949703,PGA TOUR,11/19/2026,7100,75.65,5.05,0.5585,0.4415,9463.3 (0.01),1795.0 (0.05),816.0 (0.11),365.0 (0.22),9:39:36 AM,PL
+John Parry,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/450617.png,708,44949705,PGA TOUR,11/19/2026,7100,75.7,2.7,0.575,0.425,14712.0 (0.01),2400.0 (0.04),1107.5 (0.08),470.5 (0.18),9:06:36 AM,PL
+Hayden Springer,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/626.png,77417,44987746,Round 1,11/19/2026,7100,38.4,3.39,0.5278,0.4722,16416.5 (0.01),2433.3 (0.04),1102.8 (0.08),493.9 (0.17),11:07:36 AM,PL
+Billy Horschel,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/915.png,1725,44987744,Round 1,11/19/2026,7100,41.75,5.05,0.5585,0.4415,9463.3 (0.01),1795.0 (0.05),816.0 (0.11),365.0 (0.22),9:39:36 AM,PL
+Joel Dahmen,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/521.png,1622,44987745,Round 1,11/19/2026,7100,37.63,6.44,0.5806,0.4194,10725.5 (0.01),1855.0 (0.05),862.0 (0.10),392.5 (0.20),9:17:36 AM,PL
+Emiliano Grillo,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1085.png,610,44987747,Round 1,11/19/2026,7100,38.6,7.32,0.6081,0.3919,9900.5 (0.01),1780.0 (0.05),767.0 (0.12),365.0 (0.22),9:06:36 AM,PL
+Luke Clanton,Showdown: Round,,796547,44987748,Round 1,11/19/2026,7100,42.5,5.13,0.5623,0.4377,11551.9 (0.01),2390.0 (0.04),1012.0 (0.09),445.5 (0.18),10:01:36 AM,SS
+Sam Stevens,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/564993.png,720888,44987749,Round 1,11/19/2026,7100,40.85,4.53,0.5656,0.4344,8509.9 (0.01),1530.0 (0.06),749.0 (0.12),327.5 (0.23),9:17:36 AM,PL
 Kevin Yu,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/681.png,671066,44987750,Round 1,11/19/2026,7100,0,0,0,0,65909.1 (0.00),3125.0 (0.03),703.8 (0.12),161.7 (0.38),,
+Patrick Fishburn,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/454597.png,699896,44997784,Late Round 1,11/19/2026,7100,37.13,0.9,0.5481,0.4519,16256.5 (0.01),2950.0 (0.03),1355.0 (0.07),577.0 (0.15),11:07:36 AM,SS
+Nick Dunlap,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/561491.png,710663,44997785,Late Round 1,11/19/2026,7100,33.75,2.04,0.3919,0.6081,33611.1 (0.00),5633.3 (0.02),2500.0 (0.04),1066.7 (0.09),10:45:36 AM,PL
 Andy Sullivan,Classic: DP,https://dkn.gs/sports/images/golf/players/50/1091.png,1000,44870538,DP World Tour,11/11/2026,7100,18.7,0,0.5,0.5,,,,,,
 Andy Sullivan,Classic: DP,https://dkn.gs/sports/images/golf/players/50/1091.png,1000,44870538,DP World Tour,11/11/2026,7100,18.7,0,0.5,0.5,,,,,,
-Luke Clanton,Classic: PGA TOUR,,796547,44949708,PGA TOUR,11/19/2026,7000,75.87,4.6,0.4654,0.5346,11557.0 (0.01),2272.7 (0.04),992.7 (0.09),436.8 (0.19),10:01:36 AM,SS
-Sam Stevens,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/564993.png,720888,44949709,PGA TOUR,11/19/2026,7000,78.55,3.89,0.6241,0.3759,8615.7 (0.01),1536.4 (0.06),739.1 (0.12),328.6 (0.23),9:17:36 AM,PL
+Andy Sullivan,Classic: DP,https://dkn.gs/sports/images/golf/players/50/1091.png,1000,44870538,DP World Tour,11/11/2026,7100,18.7,0,0.5,0.5,,,,,,
+Luke Clanton,Classic: PGA TOUR,,796547,44949708,PGA TOUR,11/19/2026,7000,77.01,5.13,0.5623,0.4377,11551.9 (0.01),2390.0 (0.04),1012.0 (0.09),445.5 (0.18),10:01:36 AM,SS
+Sam Stevens,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/564993.png,720888,44949709,PGA TOUR,11/19/2026,7000,77.8,4.53,0.5656,0.4344,8509.9 (0.01),1530.0 (0.06),749.0 (0.12),327.5 (0.23),9:17:36 AM,PL
 Kevin Yu,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/681.png,671066,44949707,PGA TOUR,11/19/2026,7000,79.32,0,0,0,65909.1 (0.00),3125.0 (0.03),703.8 (0.12),161.7 (0.38),,
-Tony Finau,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/808.png,2125,44949710,PGA TOUR,11/19/2026,7000,73.38,2.96,0.442,0.558,14491.3 (0.01),2645.5 (0.04),1222.7 (0.08),522.7 (0.16),9:39:36 AM,SS
-Lucas Glover,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/992.png,2158,44949711,PGA TOUR,11/19/2026,7000,78.49,3.08,0.5815,0.4185,17959.3 (0.01),3163.6 (0.03),1404.5 (0.07),580.9 (0.15),9:39:36 AM,PL
-Taylor Moore,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/451638.png,165746,44949712,PGA TOUR,11/19/2026,7000,76.55,2.74,0.4527,0.5473,13109.6 (0.01),2500.0 (0.04),1130.0 (0.08),478.6 (0.17),9:50:36 AM,SS
-Tony Finau,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/808.png,2125,44987751,Round 1,11/19/2026,7000,40.7,2.96,0.442,0.558,14491.3 (0.01),2645.5 (0.04),1222.7 (0.08),522.7 (0.16),9:39:36 AM,SS
-Ben Silverman,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/830.png,2102,44987752,Round 1,11/19/2026,7000,42.8,3.94,0.446,0.554,14826.0 (0.01),2659.1 (0.04),1218.2 (0.08),511.8 (0.16),9:06:36 AM,SS
-Chad Ramey,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/983.png,2119,44987754,Round 1,11/19/2026,7000,41.78,6.12,0.5176,0.4824,9580.3 (0.01),1731.8 (0.05),823.6 (0.11),372.1 (0.21),9:39:36 AM,SS
-Lee Hodges,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1003.png,692607,44987755,Round 1,11/19/2026,7000,43.75,6.76,0.6771,0.3229,9384.4 (0.01),1672.7 (0.06),810.0 (0.11),342.1 (0.23),9:06:36 AM,PL
-Hao-Tong Li,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/767.png,1132,44987756,Round 1,11/19/2026,7000,38.1,2.76,0.4782,0.5218,13159.0 (0.01),2318.2 (0.04),1138.6 (0.08),480.0 (0.17),10:01:36 AM,SS
-Taylor Pendrith,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/716.png,1802,44987757,Round 1,11/19/2026,7000,37.25,2.09,0.5858,0.4142,17297.2 (0.01),2618.2 (0.04),1238.6 (0.07),526.8 (0.16),9:28:36 AM,PL
+Tony Finau,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/808.png,2125,44949710,PGA TOUR,11/19/2026,7000,74.59,2.55,0.5506,0.4494,14168.3 (0.01),2640.0 (0.04),1215.0 (0.08),537.5 (0.16),9:39:36 AM,SS
+Lucas Glover,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/992.png,2158,44949711,PGA TOUR,11/19/2026,7000,77.39,2.82,0.4928,0.5072,17356.9 (0.01),3230.0 (0.03),1425.0 (0.07),589.0 (0.15),9:39:36 AM,PL
+Taylor Moore,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/451638.png,165746,44949712,PGA TOUR,11/19/2026,7000,77.82,2.61,0.5705,0.4295,12854.1 (0.01),2440.0 (0.04),1088.0 (0.08),463.0 (0.18),9:50:36 AM,SS
+Tony Finau,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/808.png,2125,44987751,Round 1,11/19/2026,7000,40.7,2.55,0.5506,0.4494,14168.3 (0.01),2640.0 (0.04),1215.0 (0.08),537.5 (0.16),9:39:36 AM,SS
+Ben Silverman,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/830.png,2102,44987752,Round 1,11/19/2026,7000,42.8,4.3,0.5663,0.4337,14563.8 (0.01),2645.0 (0.04),1219.0 (0.08),512.5 (0.16),9:06:36 AM,SS
+Chad Ramey,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/983.png,2119,44987754,Round 1,11/19/2026,7000,41.78,5.66,0.5656,0.4344,9501.8 (0.01),1745.0 (0.05),811.0 (0.11),369.8 (0.21),9:39:36 AM,SS
+Lee Hodges,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1003.png,692607,44987755,Round 1,11/19/2026,7000,43.25,6.94,0.5998,0.4002,9588.9 (0.01),1680.0 (0.06),831.0 (0.11),356.8 (0.22),9:06:36 AM,PL
+Hao-Tong Li,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/767.png,1132,44987756,Round 1,11/19/2026,7000,38.1,2.6,0.5209,0.4791,13139.5 (0.01),2405.0 (0.04),1107.5 (0.08),478.5 (0.17),10:01:36 AM,SS
+Taylor Pendrith,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/716.png,1802,44987757,Round 1,11/19/2026,7000,37.25,2,0.5276,0.4724,17301.9 (0.01),2630.0 (0.04),1235.0 (0.07),530.0 (0.16),9:28:36 AM,PL
+Adam Svensson,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/1054.png,689,44997786,Late Round 1,11/19/2026,7000,33,2.02,0.4479,0.5521,32944.4 (0.00),6188.9 (0.02),2522.2 (0.04),1020.0 (0.09),10:23:36 AM,SS
+Kevin Streelman,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/602.png,1554,44997787,Late Round 1,11/19/2026,7000,33.15,2.09,0.5102,0.4898,25551.5 (0.00),4511.1 (0.02),1972.2 (0.05),751.7 (0.12),10:56:36 AM,SS
 Joost Luiten,Classic: DP,https://dkn.gs/sports/images/golf/players/50/810.png,383,44870539,DP World Tour,11/11/2026,7000,18.5,0,0.5,0.5,,,,,,
 Joost Luiten,Classic: DP,https://dkn.gs/sports/images/golf/players/50/810.png,383,44870539,DP World Tour,11/11/2026,7000,18.5,0,0.5,0.5,,,,,,
-Ben Silverman,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/830.png,2102,44949716,PGA TOUR,11/19/2026,6900,76.76,3.94,0.446,0.554,14826.0 (0.01),2659.1 (0.04),1218.2 (0.08),511.8 (0.16),9:06:36 AM,SS
-Chad Ramey,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/983.png,2119,44949715,PGA TOUR,11/19/2026,6900,77.03,6.12,0.5176,0.4824,9580.3 (0.01),1731.8 (0.05),823.6 (0.11),372.1 (0.21),9:39:36 AM,SS
-Lee Hodges,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1003.png,692607,44949713,PGA TOUR,11/19/2026,6900,77.92,6.76,0.6771,0.3229,9384.4 (0.01),1672.7 (0.06),810.0 (0.11),342.1 (0.23),9:06:36 AM,PL
-Hao-Tong Li,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/767.png,1132,44949714,PGA TOUR,11/19/2026,6900,63.82,2.76,0.4782,0.5218,13159.0 (0.01),2318.2 (0.04),1138.6 (0.08),480.0 (0.17),10:01:36 AM,SS
-Adrien Dumont De Chassart,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/645032.png,765441,44949718,PGA TOUR,11/19/2026,6900,71.91,2.2,0.4206,0.5794,19071.6 (0.01),3381.8 (0.03),1581.8 (0.06),630.9 (0.14),11:18:36 AM,SS
-John Parry,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/450617.png,708,44987761,Round 1,11/19/2026,6900,42.28,3.2,0.5996,0.4004,14566.2 (0.01),2354.5 (0.04),1061.4 (0.09),456.8 (0.18),9:06:36 AM,PL
-Kevin Roy,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/525542.png,703862,44987762,Round 1,11/19/2026,6900,44.3,2.52,0.6113,0.3887,12866.4 (0.01),2286.4 (0.04),1030.0 (0.09),443.6 (0.18),10:12:36 AM,PL
-Lucas Glover,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/992.png,2158,44987764,Round 1,11/19/2026,6900,40.55,3.08,0.5815,0.4185,17959.3 (0.01),3163.6 (0.03),1404.5 (0.07),580.9 (0.15),9:39:36 AM,PL
-Taylor Moore,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/451638.png,165746,44987763,Round 1,11/19/2026,6900,41.23,2.74,0.4527,0.5473,13109.6 (0.01),2500.0 (0.04),1130.0 (0.08),478.6 (0.17),9:50:36 AM,SS
-Adrien Dumont De Chassart,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/645032.png,765441,44987765,Round 1,11/19/2026,6900,38.17,2.2,0.4206,0.5794,19071.6 (0.01),3381.8 (0.03),1581.8 (0.06),630.9 (0.14),11:18:36 AM,SS
-Patrick Rodgers,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/574.png,1141,44987758,Round 1,11/19/2026,6900,39.05,3.19,0.4319,0.5681,15803.6 (0.01),3063.6 (0.03),1350.0 (0.07),570.9 (0.15),9:06:36 AM,SS
-Erik Van Rooyen,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/671.png,417,44987759,Round 1,11/19/2026,6900,38.7,6.36,0.5855,0.4145,10836.9 (0.01),1972.7 (0.05),935.5 (0.10),416.4 (0.19),10:23:36 AM,PL
+Joost Luiten,Classic: DP,https://dkn.gs/sports/images/golf/players/50/810.png,383,44870539,DP World Tour,11/11/2026,7000,18.5,0,0.5,0.5,,,,,,
+Adrien Dumont De Chassart,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/645032.png,765441,44949718,PGA TOUR,11/19/2026,6900,73.29,2.13,0.5143,0.4857,19581.5 (0.01),3470.0 (0.03),1622.5 (0.06),644.0 (0.13),11:18:36 AM,SS
+Ben Silverman,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/830.png,2102,44949716,PGA TOUR,11/19/2026,6900,77.82,4.3,0.5663,0.4337,14563.8 (0.01),2645.0 (0.04),1219.0 (0.08),512.5 (0.16),9:06:36 AM,SS
+Chad Ramey,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/983.png,2119,44949715,PGA TOUR,11/19/2026,6900,77.81,5.66,0.5656,0.4344,9501.8 (0.01),1745.0 (0.05),811.0 (0.11),369.8 (0.21),9:39:36 AM,SS
+Lee Hodges,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1003.png,692607,44949713,PGA TOUR,11/19/2026,6900,76.8,6.94,0.5998,0.4002,9588.9 (0.01),1680.0 (0.06),831.0 (0.11),356.8 (0.22),9:06:36 AM,PL
+Hao-Tong Li,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/767.png,1132,44949714,PGA TOUR,11/19/2026,6900,64.1,2.6,0.5209,0.4791,13139.5 (0.01),2405.0 (0.04),1107.5 (0.08),478.5 (0.17),10:01:36 AM,SS
+Erik Van Rooyen,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/671.png,417,44987759,Round 1,11/19/2026,6900,38.7,6.23,0.5376,0.4624,10895.8 (0.01),1970.0 (0.05),940.0 (0.10),423.5 (0.19),10:23:36 AM,PL
+Adrien Dumont De Chassart,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/645032.png,765441,44987765,Round 1,11/19/2026,6900,38.17,2.13,0.5143,0.4857,19581.5 (0.01),3470.0 (0.03),1622.5 (0.06),644.0 (0.13),11:18:36 AM,SS
+Kevin Roy,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/525542.png,703862,44987762,Round 1,11/19/2026,6900,44.8,2.19,0.5776,0.4224,12158.1 (0.01),2250.0 (0.04),1034.0 (0.09),448.5 (0.18),10:12:36 AM,PL
+John Parry,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/450617.png,708,44987761,Round 1,11/19/2026,6900,42.28,2.7,0.575,0.425,14712.0 (0.01),2400.0 (0.04),1107.5 (0.08),470.5 (0.18),9:06:36 AM,PL
+Lucas Glover,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/992.png,2158,44987764,Round 1,11/19/2026,6900,40.55,2.82,0.4928,0.5072,17356.9 (0.01),3230.0 (0.03),1425.0 (0.07),589.0 (0.15),9:39:36 AM,PL
+Taylor Moore,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/451638.png,165746,44987763,Round 1,11/19/2026,6900,41.23,2.61,0.5705,0.4295,12854.1 (0.01),2440.0 (0.04),1088.0 (0.08),463.0 (0.18),9:50:36 AM,SS
+Patrick Rodgers,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/574.png,1141,44987758,Round 1,11/19/2026,6900,39.05,3.4,0.5366,0.4634,15855.5 (0.01),3130.0 (0.03),1395.0 (0.07),578.5 (0.15),9:06:36 AM,SS
+Will Gordon,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/1041.png,697773,44997788,Late Round 1,11/19/2026,6900,30.36,2.56,0.4346,0.5654,36166.7 (0.00),5688.9 (0.02),2388.9 (0.04),996.7 (0.09),10:23:36 AM,PL
+Davis Chatfield,Late Showdown: Late Round,,769810,44997789,Late Round 1,11/19/2026,6900,30.12,0.6,0.4217,0.5783,44444.4 (0.00),6933.3 (0.01),2822.2 (0.03),1105.6 (0.08),11:07:36 AM,PL
+David Lipsky,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/752.png,586,44997790,Late Round 1,11/19/2026,6900,33.28,1.24,0.459,0.541,34333.3 (0.00),6722.2 (0.01),2688.9 (0.04),1058.9 (0.09),10:12:36 AM,SS
 Frederic Lacroix,Classic: DP,,699576,44870540,DP World Tour,11/11/2026,6900,18.3,0,0.5,0.5,,,,,,
 Mikael Lindberg,Classic: DP,,769321,44870541,DP World Tour,11/11/2026,6900,18.3,0,0.5,0.5,,,,,,
 Frederic Lacroix,Classic: DP,,699576,44870540,DP World Tour,11/11/2026,6900,18.3,0,0.5,0.5,,,,,,
 Mikael Lindberg,Classic: DP,,769321,44870541,DP World Tour,11/11/2026,6900,18.3,0,0.5,0.5,,,,,,
-A.J. Ewart,Classic: PGA TOUR,,765420,44949725,PGA TOUR,11/19/2026,6800,73.15,2.78,0.4219,0.5781,20458.3 (0.00),3645.5 (0.03),1561.4 (0.06),638.2 (0.14),11:07:36 AM,SS
-Patrick Rodgers,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/574.png,1141,44949721,PGA TOUR,11/19/2026,6800,71.16,3.19,0.4319,0.5681,15803.6 (0.01),3063.6 (0.03),1350.0 (0.07),570.9 (0.15),9:06:36 AM,SS
-Erik Van Rooyen,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/671.png,417,44949720,PGA TOUR,11/19/2026,6800,76.74,6.36,0.5855,0.4145,10836.9 (0.01),1972.7 (0.05),935.5 (0.10),416.4 (0.19),10:23:36 AM,PL
-Jesper Svensson,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/630555.png,762723,44949719,PGA TOUR,11/19/2026,6800,75.87,1.3,0.5824,0.4176,15243.6 (0.01),2736.4 (0.04),1261.4 (0.07),539.5 (0.16),11:07:36 AM,PL
-Gordon Sargent,Classic: PGA TOUR,,771299,44949722,PGA TOUR,11/19/2026,6800,73.85,1.57,0.541,0.459,21502.2 (0.00),3527.3 (0.03),1536.4 (0.06),664.5 (0.13),10:01:36 AM,PL
-Zecheng Dou,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/450649.png,770,44949723,PGA TOUR,11/19/2026,6800,74.42,1.75,0.5987,0.4013,15575.0 (0.01),2436.4 (0.04),1125.0 (0.08),464.5 (0.18),9:50:36 AM,PL
-Chandler Phillips,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/61619.png,698927,44949724,PGA TOUR,11/19/2026,6800,76.62,2.42,0.5961,0.4039,14558.8 (0.01),2509.1 (0.04),1108.2 (0.08),488.2 (0.17),10:45:36 AM,PL
-Chandler Blanchet,Showdown: Round,,703933,44987766,Round 1,11/19/2026,6800,37.03,2.23,0.4596,0.5404,25545.5 (0.00),4540.0 (0.02),2070.0 (0.05),846.0 (0.11),10:01:36 AM,SS
-Andrew Putnam,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/730.png,665,44987767,Round 1,11/19/2026,6800,37.33,3.46,0.5609,0.4391,15522.3 (0.01),2645.5 (0.04),1186.4 (0.08),520.9 (0.16),9:17:36 AM,SS
-Webb Simpson,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/913.png,703,44987769,Round 1,11/19/2026,6800,36.72,1.75,0.569,0.431,21826.3 (0.00),3618.2 (0.03),1602.3 (0.06),654.5 (0.13),9:28:36 AM,PL
-Garrick Higgo,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/452113.png,670533,44987770,Round 1,11/19/2026,6800,37.02,1.81,0.5377,0.4623,22425.8 (0.00),3909.1 (0.02),1777.3 (0.05),729.1 (0.12),9:39:36 AM,PL
-Karl Vilips,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/709867.png,773007,44987771,Round 1,11/19/2026,6800,38,2.51,0.4366,0.5634,13761.5 (0.01),2650.0 (0.04),1247.7 (0.07),535.9 (0.16),9:39:36 AM,SS
-Matthieu Pavon,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1121.png,113835,44987772,Round 1,11/19/2026,6800,36.15,2.45,0.4173,0.5827,18191.9 (0.01),3327.3 (0.03),1479.5 (0.06),609.1 (0.14),11:07:36 AM,SS
-Patrick Fishburn,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/454597.png,699896,44987773,Round 1,11/19/2026,6800,37.13,1.43,0.4373,0.5627,16258.8 (0.01),2900.0 (0.03),1350.0 (0.07),570.5 (0.15),11:07:36 AM,SS
+Frederic Lacroix,Classic: DP,,699576,44870540,DP World Tour,11/11/2026,6900,18.3,0,0.5,0.5,,,,,,
+Mikael Lindberg,Classic: DP,,769321,44870541,DP World Tour,11/11/2026,6900,18.3,0,0.5,0.5,,,,,,
+A.J. Ewart,Classic: PGA TOUR,,765420,44949725,PGA TOUR,11/19/2026,6800,74.53,2.64,0.5263,0.4737,19300.0 (0.01),3710.0 (0.03),1547.5 (0.06),637.0 (0.14),11:07:36 AM,SS
+Erik Van Rooyen,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/671.png,417,44949720,PGA TOUR,11/19/2026,6800,76.08,6.23,0.5376,0.4624,10895.8 (0.01),1970.0 (0.05),940.0 (0.10),423.5 (0.19),10:23:36 AM,PL
+Jesper Svensson,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/630555.png,762723,44949719,PGA TOUR,11/19/2026,6800,74.86,1.66,0.5034,0.4966,15512.0 (0.01),2800.0 (0.03),1277.5 (0.07),552.0 (0.15),11:07:36 AM,PL
+Patrick Rodgers,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/574.png,1141,44949721,PGA TOUR,11/19/2026,6800,72.4,3.4,0.5366,0.4634,15855.5 (0.01),3130.0 (0.03),1395.0 (0.07),578.5 (0.15),9:06:36 AM,SS
+Gordon Sargent,Classic: PGA TOUR,,771299,44949722,PGA TOUR,11/19/2026,6800,72.97,1.14,0.478,0.522,22452.7 (0.00),3660.0 (0.03),1555.0 (0.06),707.0 (0.12),10:01:36 AM,PL
+Zecheng Dou,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/450649.png,770,44949723,PGA TOUR,11/19/2026,6800,73.32,1.59,0.5554,0.4446,15676.2 (0.01),2475.0 (0.04),1130.0 (0.08),474.0 (0.17),9:50:36 AM,PL
+Chandler Phillips,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/61619.png,698927,44949724,PGA TOUR,11/19/2026,6800,75.57,2.55,0.5574,0.4426,14930.0 (0.01),2520.0 (0.04),1140.0 (0.08),504.5 (0.17),10:45:36 AM,PL
+Matthieu Pavon,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1121.png,113835,44987772,Round 1,11/19/2026,6800,36.15,2.46,0.5226,0.4774,17178.4 (0.01),3460.0 (0.03),1497.5 (0.06),610.0 (0.14),11:07:36 AM,SS
+Patrick Fishburn,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/454597.png,699896,44987773,Round 1,11/19/2026,6800,37.13,0.9,0.5481,0.4519,16256.5 (0.01),2950.0 (0.03),1355.0 (0.07),577.0 (0.15),11:07:36 AM,SS
+Chandler Blanchet,Showdown: Round,,703933,44987766,Round 1,11/19/2026,6800,37.03,1.92,0.4636,0.5364,25111.1 (0.00),4600.0 (0.02),2077.8 (0.05),872.2 (0.10),10:01:36 AM,SS
+Andrew Putnam,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/730.png,665,44987767,Round 1,11/19/2026,6800,37.33,3.53,0.5614,0.4386,15205.2 (0.01),2610.0 (0.04),1162.5 (0.08),517.5 (0.16),9:17:36 AM,SS
+Webb Simpson,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/913.png,703,44987769,Round 1,11/19/2026,6800,36.72,2.17,0.4812,0.5188,22154.2 (0.00),3660.0 (0.03),1605.0 (0.06),660.0 (0.13),9:28:36 AM,PL
+Garrick Higgo,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/452113.png,670533,44987770,Round 1,11/19/2026,6800,37.02,2.14,0.4574,0.5426,22635.5 (0.00),4010.0 (0.02),1800.0 (0.05),743.0 (0.12),9:39:36 AM,PL
+Karl Vilips,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/709867.png,773007,44987771,Round 1,11/19/2026,6800,38,2.39,0.5448,0.4552,14033.4 (0.01),2730.0 (0.04),1275.0 (0.07),554.5 (0.15),9:39:36 AM,SS
+Justin Lower,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/450914.png,1295,44997791,Late Round 1,11/19/2026,6800,30.61,1.36,0.4554,0.5446,33333.3 (0.00),5211.1 (0.02),2211.1 (0.04),904.4 (0.10),10:23:36 AM,PL
+Mark Hubbard,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/629.png,2056,44997792,Late Round 1,11/19/2026,6800,29.89,1.44,0.4834,0.5166,30533.2 (0.00),5788.9 (0.02),2355.6 (0.04),991.1 (0.09),10:34:36 AM,SS
+Nick Hardy,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/1202.png,1411,44997793,Late Round 1,11/19/2026,6800,32.47,0.46,0.3904,0.6096,54166.7 (0.00),8942.9 (0.01),3487.5 (0.03),1312.5 (0.07),11:07:36 AM,SS
 Freddy Schott,Classic: DP,,721368,44870542,DP World Tour,11/11/2026,6800,18.1,0,0.5,0.5,,,,,,
 Gregorio De Leo,Classic: DP,,753705,44870543,DP World Tour,11/11/2026,6800,18.1,0,0.5,0.5,,,,,,
 Freddy Schott,Classic: DP,,721368,44870542,DP World Tour,11/11/2026,6800,18.1,0,0.5,0.5,,,,,,
 Gregorio De Leo,Classic: DP,,753705,44870543,DP World Tour,11/11/2026,6800,18.1,0,0.5,0.5,,,,,,
-Hayden Springer,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/626.png,77417,44949732,PGA TOUR,11/19/2026,6700,75.18,3.39,0.53,0.47,15471.1 (0.01),2340.0 (0.04),1087.5 (0.08),489.0 (0.17),11:07:36 AM,PL
-Webb Simpson,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/913.png,703,44949731,PGA TOUR,11/19/2026,6700,71.04,1.75,0.569,0.431,21826.3 (0.00),3618.2 (0.03),1602.3 (0.06),654.5 (0.13),9:28:36 AM,PL
-Garrick Higgo,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/452113.png,670533,44949729,PGA TOUR,11/19/2026,6700,69.56,1.81,0.5377,0.4623,22425.8 (0.00),3909.1 (0.02),1777.3 (0.05),729.1 (0.12),9:39:36 AM,PL
-Karl Vilips,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/709867.png,773007,44949728,PGA TOUR,11/19/2026,6700,69.66,2.51,0.4366,0.5634,13761.5 (0.01),2650.0 (0.04),1247.7 (0.07),535.9 (0.16),9:39:36 AM,SS
-Matthieu Pavon,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1121.png,113835,44949727,PGA TOUR,11/19/2026,6700,69.03,2.45,0.4173,0.5827,18191.9 (0.01),3327.3 (0.03),1479.5 (0.06),609.1 (0.14),11:07:36 AM,SS
-Patrick Fishburn,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/454597.png,699896,44949726,PGA TOUR,11/19/2026,6700,69.96,1.43,0.4373,0.5627,16258.8 (0.01),2900.0 (0.03),1350.0 (0.07),570.5 (0.15),11:07:36 AM,SS
-Kensei Hirata,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/712328.png,773313,44949730,PGA TOUR,11/19/2026,6700,70.62,3.08,0.5228,0.4772,23500.0 (0.00),4145.5 (0.02),1804.5 (0.05),778.2 (0.11),10:01:36 AM,PL
-Jesper Svensson,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/630555.png,762723,44987775,Round 1,11/19/2026,6700,40.68,1.3,0.5824,0.4176,15243.6 (0.01),2736.4 (0.04),1261.4 (0.07),539.5 (0.16),11:07:36 AM,PL
-Gordon Sargent,Showdown: Round,,771299,44987777,Round 1,11/19/2026,6700,39.73,1.57,0.541,0.459,21502.2 (0.00),3527.3 (0.03),1536.4 (0.06),664.5 (0.13),10:01:36 AM,PL
-Zecheng Dou,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/450649.png,770,44987774,Round 1,11/19/2026,6700,39.58,1.75,0.5987,0.4013,15575.0 (0.01),2436.4 (0.04),1125.0 (0.08),464.5 (0.18),9:50:36 AM,PL
-Chandler Phillips,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/61619.png,698927,44987776,Round 1,11/19/2026,6700,36.6,2.42,0.5961,0.4039,14558.8 (0.01),2509.1 (0.04),1108.2 (0.08),488.2 (0.17),10:45:36 AM,PL
-Kensei Hirata,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/712328.png,773313,44987778,Round 1,11/19/2026,6700,38.2,3.08,0.5228,0.4772,23500.0 (0.00),4145.5 (0.02),1804.5 (0.05),778.2 (0.11),10:01:36 AM,PL
-Nick Dunlap,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/561491.png,710663,44987779,Round 1,11/19/2026,6700,33.75,2.58,0.3926,0.6074,33545.5 (0.00),5610.0 (0.02),2470.0 (0.04),1045.0 (0.09),10:45:36 AM,PL
-Matt Kuchar,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/924.png,1639,44987780,Round 1,11/19/2026,6700,33.22,2.28,0.4602,0.5398,31791.5 (0.00),5254.5 (0.02),2127.3 (0.04),817.3 (0.11),10:34:36 AM,PL
-John VanDerLaan,Showdown: Round,,689877,44987781,Round 1,11/19/2026,6700,36.73,1.66,0.517,0.483,21817.4 (0.00),3381.8 (0.03),1456.8 (0.06),617.7 (0.14),10:01:36 AM,PL
+Freddy Schott,Classic: DP,,721368,44870542,DP World Tour,11/11/2026,6800,18.1,0,0.5,0.5,,,,,,
+Gregorio De Leo,Classic: DP,,753705,44870543,DP World Tour,11/11/2026,6800,18.1,0,0.5,0.5,,,,,,
+Hayden Springer,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/626.png,77417,44949732,PGA TOUR,11/19/2026,6700,75.2,3.39,0.5278,0.4722,16416.5 (0.01),2433.3 (0.04),1102.8 (0.08),493.9 (0.17),11:07:36 AM,PL
+Matthieu Pavon,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1121.png,113835,44949727,PGA TOUR,11/19/2026,6700,70.45,2.46,0.5226,0.4774,17178.4 (0.01),3460.0 (0.03),1497.5 (0.06),610.0 (0.14),11:07:36 AM,SS
+Patrick Fishburn,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/454597.png,699896,44949726,PGA TOUR,11/19/2026,6700,71.22,0.9,0.5481,0.4519,16256.5 (0.01),2950.0 (0.03),1355.0 (0.07),577.0 (0.15),11:07:36 AM,SS
+Webb Simpson,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/913.png,703,44949731,PGA TOUR,11/19/2026,6700,69.84,2.17,0.4812,0.5188,22154.2 (0.00),3660.0 (0.03),1605.0 (0.06),660.0 (0.13),9:28:36 AM,PL
+Garrick Higgo,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/452113.png,670533,44949729,PGA TOUR,11/19/2026,6700,68.46,2.14,0.4574,0.5426,22635.5 (0.00),4010.0 (0.02),1800.0 (0.05),743.0 (0.12),9:39:36 AM,PL
+Karl Vilips,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/709867.png,773007,44949728,PGA TOUR,11/19/2026,6700,70.84,2.39,0.5448,0.4552,14033.4 (0.01),2730.0 (0.04),1275.0 (0.07),554.5 (0.15),9:39:36 AM,SS
+Kensei Hirata,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/712328.png,773313,44949730,PGA TOUR,11/19/2026,6700,69.61,2.5,0.4438,0.5562,23750.0 (0.00),4140.0 (0.02),1840.0 (0.05),792.0 (0.11),10:01:36 AM,PL
+Jesper Svensson,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/630555.png,762723,44987775,Round 1,11/19/2026,6700,40.68,1.66,0.5034,0.4966,15512.0 (0.01),2800.0 (0.03),1277.5 (0.07),552.0 (0.15),11:07:36 AM,PL
+Nick Dunlap,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/561491.png,710663,44987779,Round 1,11/19/2026,6700,33.75,2.04,0.3919,0.6081,33611.1 (0.00),5633.3 (0.02),2500.0 (0.04),1066.7 (0.09),10:45:36 AM,PL
+Gordon Sargent,Showdown: Round,,771299,44987777,Round 1,11/19/2026,6700,39.73,1.14,0.478,0.522,22452.7 (0.00),3660.0 (0.03),1555.0 (0.06),707.0 (0.12),10:01:36 AM,PL
+Zecheng Dou,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/450649.png,770,44987774,Round 1,11/19/2026,6700,39.58,1.59,0.5554,0.4446,15676.2 (0.01),2475.0 (0.04),1130.0 (0.08),474.0 (0.17),9:50:36 AM,PL
+Chandler Phillips,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/61619.png,698927,44987776,Round 1,11/19/2026,6700,36.6,2.55,0.5574,0.4426,14930.0 (0.01),2520.0 (0.04),1140.0 (0.08),504.5 (0.17),10:45:36 AM,PL
+Kensei Hirata,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/712328.png,773313,44987778,Round 1,11/19/2026,6700,38.2,2.5,0.4438,0.5562,23750.0 (0.00),4140.0 (0.02),1840.0 (0.05),792.0 (0.11),10:01:36 AM,PL
+Matt Kuchar,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/924.png,1639,44987780,Round 1,11/19/2026,6700,33.22,1.72,0.4602,0.5398,31885.5 (0.00),5370.0 (0.02),2190.0 (0.04),864.0 (0.10),10:34:36 AM,PL
+John VanDerLaan,Showdown: Round,,689877,44987781,Round 1,11/19/2026,6700,36.73,1.69,0.517,0.483,21079.2 (0.00),3550.0 (0.03),1462.5 (0.06),624.5 (0.14),10:01:36 AM,PL
+Peter Malnati,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/660.png,1210,44997795,Late Round 1,11/19/2026,6700,30.51,1.59,0.4578,0.5422,31830.7 (0.00),5900.0 (0.02),2444.4 (0.04),1022.2 (0.09),10:23:36 AM,SS
+Rikuya Hoshino,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/872.png,681998,44997796,Late Round 1,11/19/2026,6700,31.47,0.94,0.3582,0.6418,95000.0 (0.00),15055.6 (0.01),6055.6 (0.02),2037.5 (0.05),10:12:36 AM,SS
 Thriston Lawrence,Classic: DP,https://dkn.gs/sports/images/golf/players/50/60537.png,1156,44870544,DP World Tour,11/11/2026,6700,17.9,0,0.5,0.5,,,,,,
 Hennie Du Plessis,Classic: DP,,354076,44870545,DP World Tour,11/11/2026,6700,17.9,0,0.5,0.5,,,,,,
 Thriston Lawrence,Classic: DP,https://dkn.gs/sports/images/golf/players/50/60537.png,1156,44870544,DP World Tour,11/11/2026,6700,17.9,0,0.5,0.5,,,,,,
 Hennie Du Plessis,Classic: DP,,354076,44870545,DP World Tour,11/11/2026,6700,17.9,0,0.5,0.5,,,,,,
-Joel Dahmen,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/521.png,1622,44949736,PGA TOUR,11/19/2026,6600,72.11,6.66,0.5811,0.4189,11176.2 (0.01),1890.9 (0.05),868.2 (0.10),399.5 (0.20),9:17:36 AM,PL
-Emiliano Grillo,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1085.png,610,44949734,PGA TOUR,11/19/2026,6600,74.41,7.5,0.6579,0.3421,10224.9 (0.01),1786.4 (0.05),779.1 (0.11),362.7 (0.22),9:06:36 AM,PL
-Taylor Pendrith,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/716.png,1802,44949733,PGA TOUR,11/19/2026,6600,72.02,2.09,0.5858,0.4142,17297.2 (0.01),2618.2 (0.04),1238.6 (0.07),526.8 (0.16),9:28:36 AM,PL
-Chandler Blanchet,Classic: PGA TOUR,,703933,44949740,PGA TOUR,11/19/2026,6600,69.64,2.23,0.4596,0.5404,25545.5 (0.00),4540.0 (0.02),2070.0 (0.05),846.0 (0.11),10:01:36 AM,SS
-Andrew Putnam,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/730.png,665,44949738,PGA TOUR,11/19/2026,6600,73.87,3.46,0.5609,0.4391,15522.3 (0.01),2645.5 (0.04),1186.4 (0.08),520.9 (0.16),9:17:36 AM,SS
+Thriston Lawrence,Classic: DP,https://dkn.gs/sports/images/golf/players/50/60537.png,1156,44870544,DP World Tour,11/11/2026,6700,17.9,0,0.5,0.5,,,,,,
+Hennie Du Plessis,Classic: DP,,354076,44870545,DP World Tour,11/11/2026,6700,17.9,0,0.5,0.5,,,,,,
+Joel Dahmen,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/521.png,1622,44949736,PGA TOUR,11/19/2026,6600,72.15,6.44,0.5806,0.4194,10725.5 (0.01),1855.0 (0.05),862.0 (0.10),392.5 (0.20),9:17:36 AM,PL
+Emiliano Grillo,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1085.png,610,44949734,PGA TOUR,11/19/2026,6600,73.42,7.32,0.6081,0.3919,9900.5 (0.01),1780.0 (0.05),767.0 (0.12),365.0 (0.22),9:06:36 AM,PL
+Taylor Pendrith,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/716.png,1802,44949733,PGA TOUR,11/19/2026,6600,70.97,2,0.5276,0.4724,17301.9 (0.01),2630.0 (0.04),1235.0 (0.07),530.0 (0.16),9:28:36 AM,PL
+Chandler Blanchet,Classic: PGA TOUR,,703933,44949740,PGA TOUR,11/19/2026,6600,69.75,1.92,0.4636,0.5364,25111.1 (0.00),4600.0 (0.02),2077.8 (0.05),872.2 (0.10),10:01:36 AM,SS
+Andrew Putnam,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/730.png,665,44949738,PGA TOUR,11/19/2026,6600,73.94,3.53,0.5614,0.4386,15205.2 (0.01),2610.0 (0.04),1162.5 (0.08),517.5 (0.16),9:17:36 AM,SS
 William Mouw,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/645034.png,765443,44949735,PGA TOUR,11/19/2026,6600,69.06,0,0,0,,,,,,
-Takumi Kanaya,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/788.png,693416,44949737,PGA TOUR,11/19/2026,6600,68.11,1.85,0.4154,0.5846,23304.7 (0.00),3745.5 (0.03),1665.9 (0.06),693.2 (0.13),10:12:36 AM,SS
-Seung-Yul Noh,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/450573.png,620,44949739,PGA TOUR,11/19/2026,6600,71.22,0.43,0.423,0.577,31250.0 (0.00),5563.6 (0.02),2400.0 (0.04),900.0 (0.10),10:23:36 AM,SS
-Takumi Kanaya,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/788.png,693416,44987784,Round 1,11/19/2026,6600,35.82,1.85,0.4154,0.5846,23304.7 (0.00),3745.5 (0.03),1665.9 (0.06),693.2 (0.13),10:12:36 AM,SS
-Seung-Yul Noh,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/450573.png,620,44987783,Round 1,11/19/2026,6600,35.18,0.43,0.423,0.577,31250.0 (0.00),5563.6 (0.02),2400.0 (0.04),900.0 (0.10),10:23:36 AM,SS
-Tyler Duncan,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/599.png,1842,44987782,Round 1,11/19/2026,6600,34.77,0.23,0.443,0.557,31958.3 (0.00),5854.5 (0.02),2468.2 (0.04),1001.8 (0.09),9:50:36 AM,SS
-Adam Svensson,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1054.png,689,44987785,Round 1,11/19/2026,6600,33,1.92,0.4442,0.5558,34681.8 (0.00),6180.0 (0.02),2520.0 (0.04),1003.0 (0.09),10:23:36 AM,SS
-Kevin Streelman,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/602.png,1554,44987786,Round 1,11/19/2026,6600,33.15,2.01,0.5085,0.4915,25471.2 (0.00),4460.0 (0.02),1970.0 (0.05),751.5 (0.12),10:56:36 AM,SS
-Adrien Saddier,Showdown: Round,,2649,44987787,Round 1,11/19/2026,6600,31.87,0.51,0.4235,0.5765,37590.9 (0.00),5850.0 (0.02),2450.0 (0.04),975.0 (0.09),10:56:36 AM,PL
-Vince Whaley,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/667.png,698823,44987788,Round 1,11/19/2026,6600,32.02,2.8,0.4256,0.5744,36136.4 (0.00),6210.0 (0.02),2530.0 (0.04),1030.0 (0.09),10:56:36 AM,SS
-Adam Hadwin,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1187.png,1799,44987789,Round 1,11/19/2026,6600,34.76,1.3,0.4509,0.5491,31818.2 (0.00),4910.0 (0.02),2105.0 (0.05),856.0 (0.10),9:17:36 AM,PL
+Takumi Kanaya,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/788.png,693416,44949737,PGA TOUR,11/19/2026,6600,69.49,1.57,0.5295,0.4705,23219.0 (0.00),3760.0 (0.03),1650.0 (0.06),697.5 (0.13),10:12:36 AM,SS
+Seung-Yul Noh,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/450573.png,620,44949739,PGA TOUR,11/19/2026,6600,71.27,0.4,0.4251,0.5749,31500.0 (0.00),5770.0 (0.02),2470.0 (0.04),917.5 (0.10),10:23:36 AM,SS
+Adam Svensson,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1054.png,689,44987785,Round 1,11/19/2026,6600,33,2.02,0.4479,0.5521,32944.4 (0.00),6188.9 (0.02),2522.2 (0.04),1020.0 (0.09),10:23:36 AM,SS
+Kevin Streelman,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/602.png,1554,44987786,Round 1,11/19/2026,6600,33.15,2.09,0.5102,0.4898,25551.5 (0.00),4511.1 (0.02),1972.2 (0.05),751.7 (0.12),10:56:36 AM,SS
+Chandler Phillips,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/61619.png,698927,44997798,Late Round 1,11/19/2026,6600,36.6,2.55,0.5574,0.4426,14930.0 (0.01),2520.0 (0.04),1140.0 (0.08),504.5 (0.17),10:45:36 AM,PL
+Matt Kuchar,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/924.png,1639,44997797,Late Round 1,11/19/2026,6600,33.22,1.72,0.4602,0.5398,31885.5 (0.00),5370.0 (0.02),2190.0 (0.04),864.0 (0.10),10:34:36 AM,PL
+Takumi Kanaya,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/788.png,693416,44987784,Round 1,11/19/2026,6600,35.82,1.57,0.5295,0.4705,23219.0 (0.00),3760.0 (0.03),1650.0 (0.06),697.5 (0.13),10:12:36 AM,SS
+Seung-Yul Noh,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/450573.png,620,44987783,Round 1,11/19/2026,6600,35.18,0.4,0.4251,0.5749,31500.0 (0.00),5770.0 (0.02),2470.0 (0.04),917.5 (0.10),10:23:36 AM,SS
+Seung-Yul Noh,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/450573.png,620,44997799,Late Round 1,11/19/2026,6600,35.18,0.4,0.4251,0.5749,31500.0 (0.00),5770.0 (0.02),2470.0 (0.04),917.5 (0.10),10:23:36 AM,SS
+Tyler Duncan,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/599.png,1842,44987782,Round 1,11/19/2026,6600,34.77,0.73,0.4453,0.5547,32100.0 (0.00),5700.0 (0.02),2525.0 (0.04),1032.0 (0.09),9:50:36 AM,SS
+Adrien Saddier,Showdown: Round,,2649,44987787,Round 1,11/19/2026,6600,31.87,0.49,0.4195,0.5805,38277.8 (0.00),6122.2 (0.02),2622.2 (0.04),1005.6 (0.09),10:56:36 AM,PL
+Vince Whaley,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/667.png,698823,44987788,Round 1,11/19/2026,6600,32.02,2.89,0.4282,0.5718,37500.0 (0.00),6455.6 (0.02),2611.1 (0.04),1066.7 (0.09),10:56:36 AM,SS
+Adam Hadwin,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1187.png,1799,44987789,Round 1,11/19/2026,6600,34.76,1.71,0.4481,0.5519,31500.0 (0.00),5000.0 (0.02),2161.1 (0.04),884.4 (0.10),9:17:36 AM,PL
 Marcus Armitage,Classic: DP,,344989,44870546,DP World Tour,11/11/2026,6600,17.7,0,0.5,0.5,,,,,,
 Calum Hill,Classic: DP,https://dkn.gs/sports/images/golf/players/50/60387.png,671062,44870547,DP World Tour,11/11/2026,6600,17.7,0,0.5,0.5,,,,,,
 Marcus Armitage,Classic: DP,,344989,44870546,DP World Tour,11/11/2026,6600,17.7,0,0.5,0.5,,,,,,
 Calum Hill,Classic: DP,https://dkn.gs/sports/images/golf/players/50/60387.png,671062,44870547,DP World Tour,11/11/2026,6600,17.7,0,0.5,0.5,,,,,,
-Nick Dunlap,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/561491.png,710663,44949743,PGA TOUR,11/19/2026,6500,66.65,2.58,0.3926,0.6074,33545.5 (0.00),5610.0 (0.02),2470.0 (0.04),1045.0 (0.09),10:45:36 AM,PL
-Matt Kuchar,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/924.png,1639,44949741,PGA TOUR,11/19/2026,6500,70.05,2.28,0.4602,0.5398,31791.5 (0.00),5254.5 (0.02),2127.3 (0.04),817.3 (0.11),10:34:36 AM,PL
-John VanDerLaan,Classic: PGA TOUR,,689877,44949742,PGA TOUR,11/19/2026,6500,70.05,1.66,0.517,0.483,21817.4 (0.00),3381.8 (0.03),1456.8 (0.06),617.7 (0.14),10:01:36 AM,PL
-Tyler Duncan,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/599.png,1842,44949744,PGA TOUR,11/19/2026,6500,67.44,0.23,0.443,0.557,31958.3 (0.00),5854.5 (0.02),2468.2 (0.04),1001.8 (0.09),9:50:36 AM,SS
-Adam Svensson,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1054.png,689,44949748,PGA TOUR,11/19/2026,6500,66.87,1.92,0.4442,0.5558,34681.8 (0.00),6180.0 (0.02),2520.0 (0.04),1003.0 (0.09),10:23:36 AM,SS
-Kevin Streelman,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/602.png,1554,44949747,PGA TOUR,11/19/2026,6500,72.44,2.01,0.5085,0.4915,25471.2 (0.00),4460.0 (0.02),1970.0 (0.05),751.5 (0.12),10:56:36 AM,SS
-Brice Garnett,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/613.png,1832,44949745,PGA TOUR,11/19/2026,6500,70.38,1.16,0.478,0.522,28454.5 (0.00),4500.0 (0.02),1885.0 (0.05),784.0 (0.11),10:12:36 AM,PL
-Nick Hardy,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1202.png,1411,44949746,PGA TOUR,11/19/2026,6500,63.95,0.58,0.387,0.613,57750.0 (0.00),8455.6 (0.01),3488.9 (0.03),1277.8 (0.07),11:07:36 AM,SS
-Brice Garnett,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/613.png,1832,44987791,Round 1,11/19/2026,6500,36.28,1.16,0.478,0.522,28454.5 (0.00),4500.0 (0.02),1885.0 (0.05),784.0 (0.11),10:12:36 AM,PL
-Nick Hardy,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1202.png,1411,44987792,Round 1,11/19/2026,6500,32.47,0.58,0.387,0.613,57750.0 (0.00),8455.6 (0.01),3488.9 (0.03),1277.8 (0.07),11:07:36 AM,SS
-Patton Kizzire,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/592.png,856,44987790,Round 1,11/19/2026,6500,33.57,0.81,0.4174,0.5826,38409.1 (0.00),6850.0 (0.01),2690.0 (0.04),1122.5 (0.08),9:17:36 AM,SS
-David Lipsky,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/752.png,586,44987793,Round 1,11/19/2026,6500,33.28,1.47,0.4571,0.5429,35818.2 (0.00),6650.0 (0.01),2660.0 (0.04),1039.0 (0.09),10:12:36 AM,SS
-David Skinns,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/451322.png,1902,44987794,Round 1,11/19/2026,6500,33.14,0.64,0.3837,0.6163,53181.8 (0.00),8511.1 (0.01),3360.0 (0.03),1335.0 (0.07),9:06:36 AM,PL
-Dylan Wu,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/69384.png,699433,44987795,Round 1,11/19/2026,6500,33.32,1.23,0.4729,0.5271,39227.3 (0.00),6520.0 (0.02),2580.0 (0.04),973.0 (0.09),9:17:36 AM,SS
-Davis Chatfield,Showdown: Round,,769810,44987796,Round 1,11/19/2026,6500,30.12,0.75,0.4217,0.5783,45000.0 (0.00),6840.0 (0.01),2780.0 (0.03),1085.0 (0.08),11:07:36 AM,PL
-Will Gordon,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1041.png,697773,44987797,Round 1,11/19/2026,6500,30.36,2.63,0.4372,0.5628,36818.2 (0.00),5660.0 (0.02),2395.0 (0.04),976.0 (0.09),10:23:36 AM,PL
+Marcus Armitage,Classic: DP,,344989,44870546,DP World Tour,11/11/2026,6600,17.7,0,0.5,0.5,,,,,,
+Calum Hill,Classic: DP,https://dkn.gs/sports/images/golf/players/50/60387.png,671062,44870547,DP World Tour,11/11/2026,6600,17.7,0,0.5,0.5,,,,,,
+Nick Dunlap,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/561491.png,710663,44949743,PGA TOUR,11/19/2026,6500,66.63,2.04,0.3919,0.6081,33611.1 (0.00),5633.3 (0.02),2500.0 (0.04),1066.7 (0.09),10:45:36 AM,PL
+Adam Svensson,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1054.png,689,44949748,PGA TOUR,11/19/2026,6500,66.95,2.02,0.4479,0.5521,32944.4 (0.00),6188.9 (0.02),2522.2 (0.04),1020.0 (0.09),10:23:36 AM,SS
+Kevin Streelman,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/602.png,1554,44949747,PGA TOUR,11/19/2026,6500,72.49,2.09,0.5102,0.4898,25551.5 (0.00),4511.1 (0.02),1972.2 (0.05),751.7 (0.12),10:56:36 AM,SS
+Nick Hardy,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1202.png,1411,44949746,PGA TOUR,11/19/2026,6500,64.1,0.46,0.3904,0.6096,54166.7 (0.00),8942.9 (0.01),3487.5 (0.03),1312.5 (0.07),11:07:36 AM,SS
+Matt Kuchar,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/924.png,1639,44949741,PGA TOUR,11/19/2026,6500,70.07,1.72,0.4602,0.5398,31885.5 (0.00),5370.0 (0.02),2190.0 (0.04),864.0 (0.10),10:34:36 AM,PL
+John VanDerLaan,Classic: PGA TOUR,,689877,44949742,PGA TOUR,11/19/2026,6500,70.07,1.69,0.517,0.483,21079.2 (0.00),3550.0 (0.03),1462.5 (0.06),624.5 (0.14),10:01:36 AM,PL
+Tyler Duncan,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/599.png,1842,44949744,PGA TOUR,11/19/2026,6500,67.48,0.73,0.4453,0.5547,32100.0 (0.00),5700.0 (0.02),2525.0 (0.04),1032.0 (0.09),9:50:36 AM,SS
+Brice Garnett,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/613.png,1832,44949745,PGA TOUR,11/19/2026,6500,70.36,0.93,0.478,0.522,28944.4 (0.00),4444.4 (0.02),1883.3 (0.05),793.3 (0.11),10:12:36 AM,PL
+Will Gordon,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1041.png,697773,44987797,Round 1,11/19/2026,6500,30.36,2.56,0.4346,0.5654,36166.7 (0.00),5688.9 (0.02),2388.9 (0.04),996.7 (0.09),10:23:36 AM,PL
+Davis Chatfield,Showdown: Round,,769810,44987796,Round 1,11/19/2026,6500,30.12,0.6,0.4217,0.5783,44444.4 (0.00),6933.3 (0.01),2822.2 (0.03),1105.6 (0.08),11:07:36 AM,PL
+David Lipsky,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/752.png,586,44987793,Round 1,11/19/2026,6500,33.28,1.24,0.459,0.541,34333.3 (0.00),6722.2 (0.01),2688.9 (0.04),1058.9 (0.09),10:12:36 AM,SS
+Nick Hardy,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1202.png,1411,44987792,Round 1,11/19/2026,6500,32.47,0.46,0.3904,0.6096,54166.7 (0.00),8942.9 (0.01),3487.5 (0.03),1312.5 (0.07),11:07:36 AM,SS
+Takumi Kanaya,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/788.png,693416,44997800,Late Round 1,11/19/2026,6500,35.82,1.57,0.5295,0.4705,23219.0 (0.00),3760.0 (0.03),1650.0 (0.06),697.5 (0.13),10:12:36 AM,SS
+Adrien Saddier,Late Showdown: Late Round,,2649,44997801,Late Round 1,11/19/2026,6500,31.87,0.49,0.4195,0.5805,38277.8 (0.00),6122.2 (0.02),2622.2 (0.04),1005.6 (0.09),10:56:36 AM,PL
+Brice Garnett,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/613.png,1832,44987791,Round 1,11/19/2026,6500,36.28,0.93,0.478,0.522,28944.4 (0.00),4444.4 (0.02),1883.3 (0.05),793.3 (0.11),10:12:36 AM,PL
+Patton Kizzire,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/592.png,856,44987790,Round 1,11/19/2026,6500,33.57,1.05,0.4192,0.5808,37500.0 (0.00),6944.4 (0.01),2722.2 (0.04),1158.3 (0.08),9:17:36 AM,SS
+David Skinns,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/451322.png,1902,44987794,Round 1,11/19/2026,6500,33.14,0.52,0.3773,0.6227,51111.1 (0.00),8825.0 (0.01),3488.9 (0.03),1383.3 (0.07),9:06:36 AM,PL
+Dylan Wu,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/69384.png,699433,44987795,Round 1,11/19/2026,6500,33.32,1.05,0.4738,0.5262,35166.7 (0.00),6355.6 (0.02),2600.0 (0.04),985.6 (0.09),9:17:36 AM,SS
+Rafael Campos,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/570.png,1971,44997802,Late Round 1,11/19/2026,6500,29.47,1.22,0.425,0.575,45277.8 (0.00),7266.7 (0.01),3022.2 (0.03),1221.1 (0.08),10:34:36 AM,SS
 Nacho Elvira,Classic: DP,,561,44870548,DP World Tour,11/11/2026,6500,17.5,0,0.5,0.5,,,,,,
 Adrian Otaegui,Classic: DP,https://dkn.gs/sports/images/golf/players/50/1180.png,1125,44870549,DP World Tour,11/11/2026,6500,17.5,0,0.5,0.5,,,,,,
 Nacho Elvira,Classic: DP,,561,44870548,DP World Tour,11/11/2026,6500,17.5,0,0.5,0.5,,,,,,
 Adrian Otaegui,Classic: DP,https://dkn.gs/sports/images/golf/players/50/1180.png,1125,44870549,DP World Tour,11/11/2026,6500,17.5,0,0.5,0.5,,,,,,
-Adrien Saddier,Classic: PGA TOUR,,2649,44949750,PGA TOUR,11/19/2026,6400,65.44,0.51,0.4235,0.5765,37590.9 (0.00),5850.0 (0.02),2450.0 (0.04),975.0 (0.09),10:56:36 AM,PL
-Vince Whaley,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/667.png,698823,44949749,PGA TOUR,11/19/2026,6400,65.46,2.8,0.4256,0.5744,36136.4 (0.00),6210.0 (0.02),2530.0 (0.04),1030.0 (0.09),10:56:36 AM,SS
-Adam Hadwin,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1187.png,1799,44949753,PGA TOUR,11/19/2026,6400,67.44,1.3,0.4509,0.5491,31818.2 (0.00),4910.0 (0.02),2105.0 (0.05),856.0 (0.10),9:17:36 AM,PL
-Patton Kizzire,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/592.png,856,44949752,PGA TOUR,11/19/2026,6400,65.38,0.81,0.4174,0.5826,38409.1 (0.00),6850.0 (0.01),2690.0 (0.04),1122.5 (0.08),9:17:36 AM,SS
-David Lipsky,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/752.png,586,44949754,PGA TOUR,11/19/2026,6400,69.52,1.47,0.4571,0.5429,35818.2 (0.00),6650.0 (0.01),2660.0 (0.04),1039.0 (0.09),10:12:36 AM,SS
-David Skinns,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/451322.png,1902,44949755,PGA TOUR,11/19/2026,6400,68.51,0.64,0.3837,0.6163,53181.8 (0.00),8511.1 (0.01),3360.0 (0.03),1335.0 (0.07),9:06:36 AM,PL
+Nacho Elvira,Classic: DP,,561,44870548,DP World Tour,11/11/2026,6500,17.5,0,0.5,0.5,,,,,,
+Adrian Otaegui,Classic: DP,https://dkn.gs/sports/images/golf/players/50/1180.png,1125,44870549,DP World Tour,11/11/2026,6500,17.5,0,0.5,0.5,,,,,,
+David Lipsky,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/752.png,586,44949754,PGA TOUR,11/19/2026,6400,69.6,1.24,0.459,0.541,34333.3 (0.00),6722.2 (0.01),2688.9 (0.04),1058.9 (0.09),10:12:36 AM,SS
+Adrien Saddier,Classic: PGA TOUR,,2649,44949750,PGA TOUR,11/19/2026,6400,65.4,0.49,0.4195,0.5805,38277.8 (0.00),6122.2 (0.02),2622.2 (0.04),1005.6 (0.09),10:56:36 AM,PL
+Vince Whaley,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/667.png,698823,44949749,PGA TOUR,11/19/2026,6400,65.57,2.89,0.4282,0.5718,37500.0 (0.00),6455.6 (0.02),2611.1 (0.04),1066.7 (0.09),10:56:36 AM,SS
+Adam Hadwin,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1187.png,1799,44949753,PGA TOUR,11/19/2026,6400,67.39,1.71,0.4481,0.5519,31500.0 (0.00),5000.0 (0.02),2161.1 (0.04),884.4 (0.10),9:17:36 AM,PL
+Patton Kizzire,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/592.png,856,44949752,PGA TOUR,11/19/2026,6400,65.44,1.05,0.4192,0.5808,37500.0 (0.00),6944.4 (0.01),2722.2 (0.04),1158.3 (0.08),9:17:36 AM,SS
+David Skinns,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/451322.png,1902,44949755,PGA TOUR,11/19/2026,6400,68.42,0.52,0.3773,0.6227,51111.1 (0.00),8825.0 (0.01),3488.9 (0.03),1383.3 (0.07),9:06:36 AM,PL
 Emilio Gonzalez,Classic: PGA TOUR,,769817,44949751,PGA TOUR,11/19/2026,6400,62,0,0,0,,,,,,
-Davis Riley,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1103.png,1625,44949756,PGA TOUR,11/19/2026,6400,66.94,1.43,0.4059,0.5941,36941.5 (0.00),5880.0 (0.02),2500.0 (0.04),1053.0 (0.09),9:39:36 AM,PL
-Davis Riley,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1103.png,1625,44987801,Round 1,11/19/2026,6400,33.01,1.43,0.4059,0.5941,36941.5 (0.00),5880.0 (0.02),2500.0 (0.04),1053.0 (0.09),9:39:36 AM,PL
-Joe Highsmith,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/572434.png,721583,44987798,Round 1,11/19/2026,6400,32.24,0.79,0.4203,0.5797,39909.1 (0.00),7340.0 (0.01),3000.0 (0.03),1212.5 (0.08),9:39:36 AM,SS
-Danny Walker,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/519887.png,703606,44987799,Round 1,11/19/2026,6400,32.01,0.6,0.3725,0.6275,57272.7 (0.00),11030.0 (0.01),4620.0 (0.02),1642.5 (0.06),9:17:36 AM,SS
-Justin Lower,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/450914.png,1295,44987800,Round 1,11/19/2026,6400,30.61,1.45,0.4496,0.5504,38136.4 (0.00),5740.0 (0.02),2460.0 (0.04),984.0 (0.09),10:23:36 AM,PL
-Jeffrey Kang,Showdown: Round,,762326,44987802,Round 1,11/19/2026,6400,32.28,0.31,0.4042,0.5958,48636.4 (0.00),8110.0 (0.01),3290.0 (0.03),1260.0 (0.07),10:01:36 AM,SS
-Paul Peterson,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/960.png,1294,44987803,Round 1,11/19/2026,6400,32.4,2.31,0.5094,0.4906,28772.7 (0.00),4350.0 (0.02),1995.0 (0.05),762.0 (0.12),10:01:36 AM,SS
-Mark Hubbard,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/629.png,2056,44987804,Round 1,11/19/2026,6400,29.89,1.39,0.4826,0.5174,31282.8 (0.00),5870.0 (0.02),2380.0 (0.04),977.0 (0.09),10:34:36 AM,SS
+Davis Riley,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1103.png,1625,44949756,PGA TOUR,11/19/2026,6400,66.9,1.67,0.4059,0.5941,36423.7 (0.00),6100.0 (0.02),2594.4 (0.04),1122.2 (0.08),9:39:36 AM,PL
+Justin Lower,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/450914.png,1295,44987800,Round 1,11/19/2026,6400,30.61,1.36,0.4554,0.5446,33333.3 (0.00),5211.1 (0.02),2211.1 (0.04),904.4 (0.10),10:23:36 AM,PL
+Mark Hubbard,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/629.png,2056,44987804,Round 1,11/19/2026,6400,29.89,1.44,0.4834,0.5166,30533.2 (0.00),5788.9 (0.02),2355.6 (0.04),991.1 (0.09),10:34:36 AM,SS
+Vince Whaley,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/667.png,698823,44997803,Late Round 1,11/19/2026,6400,32.02,2.89,0.4282,0.5718,37500.0 (0.00),6455.6 (0.02),2611.1 (0.04),1066.7 (0.09),10:56:36 AM,SS
+Brice Garnett,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/613.png,1832,44997804,Late Round 1,11/19/2026,6400,36.28,0.93,0.478,0.522,28944.4 (0.00),4444.4 (0.02),1883.3 (0.05),793.3 (0.11),10:12:36 AM,PL
+Davis Riley,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1103.png,1625,44987801,Round 1,11/19/2026,6400,33.01,1.67,0.4059,0.5941,36423.7 (0.00),6100.0 (0.02),2594.4 (0.04),1122.2 (0.08),9:39:36 AM,PL
+Joe Highsmith,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/572434.png,721583,44987798,Round 1,11/19/2026,6400,32.24,1.27,0.421,0.579,38055.6 (0.00),7377.8 (0.01),3011.1 (0.03),1236.1 (0.07),9:39:36 AM,SS
+Danny Walker,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/519887.png,703606,44987799,Round 1,11/19/2026,6400,32.01,0.57,0.3725,0.6275,56111.1 (0.00),11477.8 (0.01),4700.0 (0.02),1711.1 (0.06),9:17:36 AM,SS
+Jeffrey Kang,Showdown: Round,,762326,44987802,Round 1,11/19/2026,6400,32.28,0.35,0.4076,0.5924,48333.3 (0.00),8288.9 (0.01),3322.2 (0.03),1288.9 (0.07),10:01:36 AM,SS
+Paul Peterson,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/960.png,1294,44987803,Round 1,11/19/2026,6400,32.4,2.12,0.5091,0.4909,27555.6 (0.00),4388.9 (0.02),1988.9 (0.05),762.2 (0.12),10:01:36 AM,SS
+Aaron Wise,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/850.png,83255,44997805,Late Round 1,11/19/2026,6400,29.47,1.36,0.3798,0.6202,48888.9 (0.00),7362.5 (0.01),3188.9 (0.03),1241.7 (0.07),10:34:36 AM,PL
+Marcelo Rozo,Late Showdown: Late Round,,2083,44997806,Late Round 1,11/19/2026,6400,29.47,0.71,0.2954,0.7046,126666.7 (0.00),21222.2 (0.00),8088.9 (0.01),2937.5 (0.03),11:18:36 AM,SS
 Julien Guerrier,Classic: DP,https://dkn.gs/sports/images/golf/players/50/60414.png,1121,44870550,DP World Tour,11/11/2026,6400,17.3,0,0.5,0.5,,,,,,
 Jeff Winther,Classic: DP,,581,44870551,DP World Tour,11/11/2026,6400,17.3,0,0.5,0.5,,,,,,
 Julien Guerrier,Classic: DP,https://dkn.gs/sports/images/golf/players/50/60414.png,1121,44870550,DP World Tour,11/11/2026,6400,17.3,0,0.5,0.5,,,,,,
 Jeff Winther,Classic: DP,,581,44870551,DP World Tour,11/11/2026,6400,17.3,0,0.5,0.5,,,,,,
-Dylan Wu,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/69384.png,699433,44949760,PGA TOUR,11/19/2026,6300,66.31,1.23,0.4729,0.5271,39227.3 (0.00),6520.0 (0.02),2580.0 (0.04),973.0 (0.09),9:17:36 AM,SS
-Davis Chatfield,Classic: PGA TOUR,,769810,44949763,PGA TOUR,11/19/2026,6300,68.1,0.75,0.4217,0.5783,45000.0 (0.00),6840.0 (0.01),2780.0 (0.03),1085.0 (0.08),11:07:36 AM,PL
-Will Gordon,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1041.png,697773,44949761,PGA TOUR,11/19/2026,6300,67.68,2.63,0.4372,0.5628,36818.2 (0.00),5660.0 (0.02),2395.0 (0.04),976.0 (0.09),10:23:36 AM,PL
-Joe Highsmith,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/572434.png,721583,44949762,PGA TOUR,11/19/2026,6300,64.66,0.79,0.4203,0.5797,39909.1 (0.00),7340.0 (0.01),3000.0 (0.03),1212.5 (0.08),9:39:36 AM,SS
-Danny Walker,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/519887.png,703606,44949764,PGA TOUR,11/19/2026,6300,65.72,0.6,0.3725,0.6275,57272.7 (0.00),11030.0 (0.01),4620.0 (0.02),1642.5 (0.06),9:17:36 AM,SS
-Justin Lower,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/450914.png,1295,44949759,PGA TOUR,11/19/2026,6300,66.36,1.45,0.4496,0.5504,38136.4 (0.00),5740.0 (0.02),2460.0 (0.04),984.0 (0.09),10:23:36 AM,PL
-Cameron Davis,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/578.png,330678,44949757,PGA TOUR,11/19/2026,6300,64.14,1.78,0.3972,0.6028,41818.2 (0.00),6770.0 (0.01),2830.0 (0.03),1145.0 (0.08),9:28:36 AM,PL
-Alejandro Tosti,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/525637.png,703982,44949758,PGA TOUR,11/19/2026,6300,65.15,1.15,0.421,0.579,35000.0 (0.00),5490.0 (0.02),2425.0 (0.04),987.0 (0.09),10:56:36 AM,PL
-Cameron Davis,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/578.png,330678,44987806,Round 1,11/19/2026,6300,0,1.78,0.3972,0.6028,41818.2 (0.00),6770.0 (0.01),2830.0 (0.03),1145.0 (0.08),9:28:36 AM,PL
-Aaron Wise,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/850.png,83255,44987807,Round 1,11/19/2026,6300,29.47,1.65,0.382,0.618,50000.0 (0.00),7300.0 (0.01),3160.0 (0.03),1215.0 (0.08),10:34:36 AM,PL
-Peter Malnati,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/660.png,1210,44987808,Round 1,11/19/2026,6300,30.51,1.39,0.4543,0.5457,35281.5 (0.00),6010.0 (0.02),2450.0 (0.04),1005.0 (0.09),10:23:36 AM,SS
-Harry Higgs,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/565.png,698025,44987809,Round 1,11/19/2026,6300,29.47,0.64,0.306,0.694,94545.5 (0.00),13400.0 (0.01),6166.7 (0.02),2127.8 (0.04),10:23:36 AM,PL
-Christo Lamprecht,Showdown: Round,,670532,44987810,Round 1,11/19/2026,6300,29.47,0.38,0.2353,0.7647,128636.4 (0.00),19400.0 (0.01),9166.7 (0.01),3500.0 (0.03),10:56:36 AM,PL
-Marcelo Rozo,Showdown: Round,,2083,44987811,Round 1,11/19/2026,6300,29.47,0.3,0.2934,0.7066,130909.1 (0.00),20750.0 (0.00),7980.0 (0.01),2855.6 (0.03),11:18:36 AM,SS
-Francisco Bidé,Showdown: Round,,818496,849377,Round 1,11/19/2026,6300,29.47,0,0.1629,0.8371,205909.1 (0.00),25500.0 (0.00),14000.0 (0.01),5022.2 (0.02),10:56:36 AM,PL
-Rikuya Hoshino,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/872.png,681998,44987813,Round 1,11/19/2026,6300,31.47,0.72,0.3579,0.6421,100000.0 (0.00),15400.0 (0.01),5900.0 (0.02),1988.9 (0.05),10:12:36 AM,SS
+Julien Guerrier,Classic: DP,https://dkn.gs/sports/images/golf/players/50/60414.png,1121,44870550,DP World Tour,11/11/2026,6400,17.3,0,0.5,0.5,,,,,,
+Jeff Winther,Classic: DP,,581,44870551,DP World Tour,11/11/2026,6400,17.3,0,0.5,0.5,,,,,,
+Will Gordon,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1041.png,697773,44949761,PGA TOUR,11/19/2026,6300,67.64,2.56,0.4346,0.5654,36166.7 (0.00),5688.9 (0.02),2388.9 (0.04),996.7 (0.09),10:23:36 AM,PL
+Davis Chatfield,Classic: PGA TOUR,,769810,44949763,PGA TOUR,11/19/2026,6300,68.1,0.6,0.4217,0.5783,44444.4 (0.00),6933.3 (0.01),2822.2 (0.03),1105.6 (0.08),11:07:36 AM,PL
+Justin Lower,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/450914.png,1295,44949759,PGA TOUR,11/19/2026,6300,66.41,1.36,0.4554,0.5446,33333.3 (0.00),5211.1 (0.02),2211.1 (0.04),904.4 (0.10),10:23:36 AM,PL
+Dylan Wu,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/69384.png,699433,44949760,PGA TOUR,11/19/2026,6300,66.36,1.05,0.4738,0.5262,35166.7 (0.00),6355.6 (0.02),2600.0 (0.04),985.6 (0.09),9:17:36 AM,SS
+Joe Highsmith,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/572434.png,721583,44949762,PGA TOUR,11/19/2026,6300,64.68,1.27,0.421,0.579,38055.6 (0.00),7377.8 (0.01),3011.1 (0.03),1236.1 (0.07),9:39:36 AM,SS
+Danny Walker,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/519887.png,703606,44949764,PGA TOUR,11/19/2026,6300,65.66,0.57,0.3725,0.6275,56111.1 (0.00),11477.8 (0.01),4700.0 (0.02),1711.1 (0.06),9:17:36 AM,SS
+Cameron Davis,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/578.png,330678,44949757,PGA TOUR,11/19/2026,6300,64.17,1.87,0.3957,0.6043,42222.2 (0.00),6966.7 (0.01),2922.2 (0.03),1180.6 (0.08),9:28:36 AM,PL
+Alejandro Tosti,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/525637.png,703982,44949758,PGA TOUR,11/19/2026,6300,65.12,1.22,0.4192,0.5808,35388.9 (0.00),5555.6 (0.02),2594.4 (0.04),1021.1 (0.09),10:56:36 AM,PL
+Peter Malnati,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/660.png,1210,44987808,Round 1,11/19/2026,6300,30.51,1.59,0.4578,0.5422,31830.7 (0.00),5900.0 (0.02),2444.4 (0.04),1022.2 (0.09),10:23:36 AM,SS
+Rikuya Hoshino,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/872.png,681998,44987813,Round 1,11/19/2026,6300,31.47,0.94,0.3582,0.6418,95000.0 (0.00),15055.6 (0.01),6055.6 (0.02),2037.5 (0.05),10:12:36 AM,SS
+Aaron Wise,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/850.png,83255,44987807,Round 1,11/19/2026,6300,29.47,1.36,0.3798,0.6202,48888.9 (0.00),7362.5 (0.01),3188.9 (0.03),1241.7 (0.07),10:34:36 AM,PL
+Marcelo Rozo,Showdown: Round,,2083,44987811,Round 1,11/19/2026,6300,29.47,0.71,0.2954,0.7046,126666.7 (0.00),21222.2 (0.00),8088.9 (0.01),2937.5 (0.03),11:18:36 AM,SS
+Cameron Davis,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/578.png,330678,44987806,Round 1,11/19/2026,6300,0,1.87,0.3957,0.6043,42222.2 (0.00),6966.7 (0.01),2922.2 (0.03),1180.6 (0.08),9:28:36 AM,PL
+Harry Higgs,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/565.png,698025,44987809,Round 1,11/19/2026,6300,29.47,0.97,0.3054,0.6946,93888.9 (0.00),13833.3 (0.01),6875.0 (0.01),2181.3 (0.04),10:23:36 AM,PL
+Harry Higgs,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/565.png,698025,44997807,Late Round 1,11/19/2026,6300,29.47,0.97,0.3054,0.6946,93888.9 (0.00),13833.3 (0.01),6875.0 (0.01),2181.3 (0.04),10:23:36 AM,PL
+Christo Lamprecht,Showdown: Round,,670532,44987810,Round 1,11/19/2026,6300,29.47,0.19,0.2336,0.7664,137777.8 (0.00),20611.1 (0.00),9437.5 (0.01),3750.0 (0.03),10:56:36 AM,PL
+Christo Lamprecht,Late Showdown: Late Round,,670532,44997809,Late Round 1,11/19/2026,6300,29.47,0.19,0.2336,0.7664,137777.8 (0.00),20611.1 (0.00),9437.5 (0.01),3750.0 (0.03),10:56:36 AM,PL
+Francisco Bidé,Showdown: Round,,818496,849377,Round 1,11/19/2026,6300,29.47,0,0.158,0.842,207222.2 (0.00),26111.1 (0.00),14875.0 (0.01),5312.5 (0.02),10:56:36 AM,PL
+Francisco Bidé,Late Showdown: Late Round,,818496,849377,Late Round 1,11/19/2026,6300,29.47,0,0.158,0.842,207222.2 (0.00),26111.1 (0.00),14875.0 (0.01),5312.5 (0.02),10:56:36 AM,PL
+Jimmy Stanger,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/451913.png,425346,44997810,Late Round 1,11/19/2026,6300,30.3,0.22,0.2911,0.7089,100555.6 (0.00),16111.1 (0.01),7487.5 (0.01),2337.5 (0.04),11:07:36 AM,PL
 Yuto Katsuragawa,Classic: DP,https://dkn.gs/sports/images/golf/players/50/640541.png,764449,44870552,DP World Tour,11/11/2026,6300,17.1,0,0.5,0.5,,,,,,
 Kota Kaneko,Classic: DP,,858837,44870553,DP World Tour,11/11/2026,6300,17.1,0,0.5,0.5,,,,,,
 Yuto Katsuragawa,Classic: DP,https://dkn.gs/sports/images/golf/players/50/640541.png,764449,44870552,DP World Tour,11/11/2026,6300,17.1,0,0.5,0.5,,,,,,
 Kota Kaneko,Classic: DP,,858837,44870553,DP World Tour,11/11/2026,6300,17.1,0,0.5,0.5,,,,,,
-Jeffrey Kang,Classic: PGA TOUR,,762326,44949766,PGA TOUR,11/19/2026,6200,64.8,0.31,0.4042,0.5958,48636.4 (0.00),8110.0 (0.01),3290.0 (0.03),1260.0 (0.07),10:01:36 AM,SS
-Paul Peterson,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/960.png,1294,44949768,PGA TOUR,11/19/2026,6200,69.62,2.31,0.5094,0.4906,28772.7 (0.00),4350.0 (0.02),1995.0 (0.05),762.0 (0.12),10:01:36 AM,SS
-Mark Hubbard,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/629.png,2056,44949765,PGA TOUR,11/19/2026,6200,68.42,1.39,0.4826,0.5174,31282.8 (0.00),5870.0 (0.02),2380.0 (0.04),977.0 (0.09),10:34:36 AM,SS
-Aaron Wise,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/850.png,83255,44949769,PGA TOUR,11/19/2026,6200,66.29,1.65,0.382,0.618,50000.0 (0.00),7300.0 (0.01),3160.0 (0.03),1215.0 (0.08),10:34:36 AM,PL
-Peter Malnati,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/660.png,1210,44949767,PGA TOUR,11/19/2026,6200,67.42,1.39,0.4543,0.5457,35281.5 (0.00),6010.0 (0.02),2450.0 (0.04),1005.0 (0.09),10:23:36 AM,SS
-Stefano Mazzoli,Classic: PGA TOUR,,122743,44949770,PGA TOUR,11/19/2026,6200,65.66,0.7,0.3658,0.6342,65909.1 (0.00),11333.3 (0.01),4430.0 (0.02),1655.0 (0.06),9:28:36 AM,SS
-Pontus Nyholm,Classic: PGA TOUR,,690519,44949771,PGA TOUR,11/19/2026,6200,64.19,0.35,0.3626,0.6374,57045.5 (0.00),8211.1 (0.01),3570.0 (0.03),1357.5 (0.07),10:56:36 AM,PL
-Luke List,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/719.png,559,44949772,PGA TOUR,11/19/2026,6200,64.5,0.16,0.3442,0.6558,62727.3 (0.00),10622.2 (0.01),4590.0 (0.02),1722.2 (0.05),9:17:36 AM,SS
-Kevin Kisner,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1150.png,895,44949773,PGA TOUR,11/19/2026,6200,60.28,2.19,0.2795,0.7205,105454.5 (0.00),15650.0 (0.01),6822.2 (0.01),2450.0 (0.04),9:17:36 AM,PL
-Alejandro Tosti,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/525637.png,703982,44987814,Round 1,11/19/2026,6200,31.57,1.15,0.421,0.579,35000.0 (0.00),5490.0 (0.02),2425.0 (0.04),987.0 (0.09),10:56:36 AM,PL
-Stefano Mazzoli,Showdown: Round,,122743,44987818,Round 1,11/19/2026,6200,31.47,0.7,0.3658,0.6342,65909.1 (0.00),11333.3 (0.01),4430.0 (0.02),1655.0 (0.06),9:28:36 AM,SS
-Pontus Nyholm,Showdown: Round,,690519,44987816,Round 1,11/19/2026,6200,29.47,0.35,0.3626,0.6374,57045.5 (0.00),8211.1 (0.01),3570.0 (0.03),1357.5 (0.07),10:56:36 AM,PL
-Luke List,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/719.png,559,44987819,Round 1,11/19/2026,6200,31.47,0.16,0.3442,0.6558,62727.3 (0.00),10622.2 (0.01),4590.0 (0.02),1722.2 (0.05),9:17:36 AM,SS
-Kevin Kisner,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1150.png,895,44987815,Round 1,11/19/2026,6200,31.47,2.19,0.2795,0.7205,105454.5 (0.00),15650.0 (0.01),6822.2 (0.01),2450.0 (0.04),9:17:36 AM,PL
-Jimmy Stanger,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/451913.png,425346,44987817,Round 1,11/19/2026,6200,30.3,0.27,0.2917,0.7083,102272.7 (0.00),15200.0 (0.01),7033.3 (0.01),2250.0 (0.04),11:07:36 AM,PL
-Nicholas Lindheim,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/939.png,1303,44987820,Round 1,11/19/2026,6200,31.47,0,0.2709,0.7291,128181.8 (0.00),17100.0 (0.01),7522.2 (0.01),2466.7 (0.04),10:01:36 AM,PL
-Ben Martin,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1125.png,2065,44987821,Round 1,11/19/2026,6200,32.3,2.54,0.4693,0.5307,39454.5 (0.00),5110.0 (0.02),2240.0 (0.04),886.0 (0.10),9:50:36 AM,PL
+Yuto Katsuragawa,Classic: DP,https://dkn.gs/sports/images/golf/players/50/640541.png,764449,44870552,DP World Tour,11/11/2026,6300,17.1,0,0.5,0.5,,,,,,
+Kota Kaneko,Classic: DP,,858837,44870553,DP World Tour,11/11/2026,6300,17.1,0,0.5,0.5,,,,,,
+Mark Hubbard,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/629.png,2056,44949765,PGA TOUR,11/19/2026,6200,68.48,1.44,0.4834,0.5166,30533.2 (0.00),5788.9 (0.02),2355.6 (0.04),991.1 (0.09),10:34:36 AM,SS
+Peter Malnati,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/660.png,1210,44949767,PGA TOUR,11/19/2026,6200,67.45,1.59,0.4578,0.5422,31830.7 (0.00),5900.0 (0.02),2444.4 (0.04),1022.2 (0.09),10:23:36 AM,SS
+Jeffrey Kang,Classic: PGA TOUR,,762326,44949766,PGA TOUR,11/19/2026,6200,64.87,0.35,0.4076,0.5924,48333.3 (0.00),8288.9 (0.01),3322.2 (0.03),1288.9 (0.07),10:01:36 AM,SS
+Paul Peterson,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/960.png,1294,44949768,PGA TOUR,11/19/2026,6200,69.66,2.12,0.5091,0.4909,27555.6 (0.00),4388.9 (0.02),1988.9 (0.05),762.2 (0.12),10:01:36 AM,SS
+Aaron Wise,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/850.png,83255,44949769,PGA TOUR,11/19/2026,6200,66.25,1.36,0.3798,0.6202,48888.9 (0.00),7362.5 (0.01),3188.9 (0.03),1241.7 (0.07),10:34:36 AM,PL
+Stefano Mazzoli,Classic: PGA TOUR,,122743,44949770,PGA TOUR,11/19/2026,6200,65.73,0.69,0.3658,0.6342,61111.1 (0.00),11950.0 (0.01),4644.4 (0.02),1738.9 (0.05),9:28:36 AM,SS
+Pontus Nyholm,Classic: PGA TOUR,,690519,44949771,PGA TOUR,11/19/2026,6200,64.17,0.33,0.3606,0.6394,56111.1 (0.00),8950.0 (0.01),3644.4 (0.03),1411.1 (0.07),10:56:36 AM,PL
+Luke List,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/719.png,559,44949772,PGA TOUR,11/19/2026,6200,64.5,0.21,0.3442,0.6558,61666.7 (0.00),10950.0 (0.01),4711.1 (0.02),1756.3 (0.05),9:17:36 AM,SS
+Kevin Kisner,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1150.png,895,44949773,PGA TOUR,11/19/2026,6200,60.2,2.26,0.2776,0.7224,102222.2 (0.00),16055.6 (0.01),7587.5 (0.01),2562.5 (0.04),9:17:36 AM,PL
+Alejandro Tosti,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/525637.png,703982,44987814,Round 1,11/19/2026,6200,31.57,1.22,0.4192,0.5808,35388.9 (0.00),5555.6 (0.02),2594.4 (0.04),1021.1 (0.09),10:56:36 AM,PL
+Alejandro Tosti,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/525637.png,703982,44997812,Late Round 1,11/19/2026,6200,31.57,1.22,0.4192,0.5808,35388.9 (0.00),5555.6 (0.02),2594.4 (0.04),1021.1 (0.09),10:56:36 AM,PL
+Jimmy Stanger,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/451913.png,425346,44987817,Round 1,11/19/2026,6200,30.3,0.22,0.2911,0.7089,100555.6 (0.00),16111.1 (0.01),7487.5 (0.01),2337.5 (0.04),11:07:36 AM,PL
+Stefano Mazzoli,Showdown: Round,,122743,44987818,Round 1,11/19/2026,6200,31.47,0.69,0.3658,0.6342,61111.1 (0.00),11950.0 (0.01),4644.4 (0.02),1738.9 (0.05),9:28:36 AM,SS
+Pontus Nyholm,Showdown: Round,,690519,44987816,Round 1,11/19/2026,6200,29.47,0.33,0.3606,0.6394,56111.1 (0.00),8950.0 (0.01),3644.4 (0.03),1411.1 (0.07),10:56:36 AM,PL
+Pontus Nyholm,Late Showdown: Late Round,,690519,44997813,Late Round 1,11/19/2026,6200,29.47,0.33,0.3606,0.6394,56111.1 (0.00),8950.0 (0.01),3644.4 (0.03),1411.1 (0.07),10:56:36 AM,PL
+Luke List,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/719.png,559,44987819,Round 1,11/19/2026,6200,31.47,0.21,0.3442,0.6558,61666.7 (0.00),10950.0 (0.01),4711.1 (0.02),1756.3 (0.05),9:17:36 AM,SS
+Kevin Kisner,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1150.png,895,44987815,Round 1,11/19/2026,6200,31.47,2.26,0.2776,0.7224,102222.2 (0.00),16055.6 (0.01),7587.5 (0.01),2562.5 (0.04),9:17:36 AM,PL
+Nicholas Lindheim,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/939.png,1303,44987820,Round 1,11/19/2026,6200,31.47,0.13,0.27,0.73,128888.9 (0.00),17666.7 (0.01),8025.0 (0.01),2625.0 (0.04),10:01:36 AM,PL
+Ben Martin,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1125.png,2065,44987821,Round 1,11/19/2026,6200,32.3,2.3,0.4674,0.5326,38500.0 (0.00),5288.9 (0.02),2211.1 (0.04),902.2 (0.10),9:50:36 AM,PL
+Jeremy Paul,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/451604.png,101400,44997814,Late Round 1,11/19/2026,6200,31.47,0.68,0.3467,0.6533,75000.0 (0.00),13722.2 (0.01),5455.6 (0.02),1818.8 (0.05),10:12:36 AM,SS
+Adam Schenk,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/638.png,648099,44997815,Late Round 1,11/19/2026,6200,29.47,0.88,0.3373,0.6627,80555.6 (0.00),12611.1 (0.01),4900.0 (0.02),1787.5 (0.05),10:34:36 AM,PL
 Davis Bryant,Classic: DP,,819151,44870554,DP World Tour,11/11/2026,6200,16.9,0,0.5,0.5,,,,,,
 Dan Bradbury,Classic: DP,,766740,44870555,DP World Tour,11/11/2026,6200,16.9,0,0.5,0.5,,,,,,
 Davis Bryant,Classic: DP,,819151,44870554,DP World Tour,11/11/2026,6200,16.9,0,0.5,0.5,,,,,,
 Dan Bradbury,Classic: DP,,766740,44870555,DP World Tour,11/11/2026,6200,16.9,0,0.5,0.5,,,,,,
-Ben Martin,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1125.png,2065,44949778,PGA TOUR,11/19/2026,6100,66.13,2.54,0.4693,0.5307,39454.5 (0.00),5110.0 (0.02),2240.0 (0.04),886.0 (0.10),9:50:36 AM,PL
-Rafael Campos,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/570.png,1971,44949774,PGA TOUR,11/19/2026,6100,64.11,1.37,0.42,0.58,43590.9 (0.00),7240.0 (0.01),3010.0 (0.03),1209.0 (0.08),10:34:36 AM,SS
-Hank Lebioda,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/526.png,692004,44949775,PGA TOUR,11/19/2026,6100,64.79,0.9,0.4195,0.5805,50727.3 (0.00),6660.0 (0.01),2905.0 (0.03),1147.0 (0.08),9:17:36 AM,PL
+Davis Bryant,Classic: DP,,819151,44870554,DP World Tour,11/11/2026,6200,16.9,0,0.5,0.5,,,,,,
+Dan Bradbury,Classic: DP,,766740,44870555,DP World Tour,11/11/2026,6200,16.9,0,0.5,0.5,,,,,,
+Rafael Campos,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/570.png,1971,44949774,PGA TOUR,11/19/2026,6100,64.2,1.22,0.425,0.575,45277.8 (0.00),7266.7 (0.01),3022.2 (0.03),1221.1 (0.08),10:34:36 AM,SS
+Ben Martin,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1125.png,2065,44949778,PGA TOUR,11/19/2026,6100,66.15,2.3,0.4674,0.5326,38500.0 (0.00),5288.9 (0.02),2211.1 (0.04),902.2 (0.10),9:50:36 AM,PL
+Jeremy Paul,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/451604.png,101400,44949779,PGA TOUR,11/19/2026,6100,63.33,0.68,0.3467,0.6533,75000.0 (0.00),13722.2 (0.01),5455.6 (0.02),1818.8 (0.05),10:12:36 AM,SS
+Adam Schenk,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/638.png,648099,44949780,PGA TOUR,11/19/2026,6100,60.8,0.88,0.3373,0.6627,80555.6 (0.00),12611.1 (0.01),4900.0 (0.02),1787.5 (0.05),10:34:36 AM,PL
+Hank Lebioda,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/526.png,692004,44949775,PGA TOUR,11/19/2026,6100,64.71,0.99,0.4161,0.5839,51000.0 (0.00),6633.3 (0.01),2950.0 (0.03),1186.7 (0.08),9:17:36 AM,PL
 Kyoung-Hoon Lee,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/625.png,1491,44949776,PGA TOUR,11/19/2026,6100,61.1,0,0,0,,,,,,
-David Lingmerth,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/534.png,456,44949777,PGA TOUR,11/19/2026,6100,60.06,0,0.2431,0.7569,128181.8 (0.00),18650.0 (0.01),7280.0 (0.01),2638.9 (0.04),10:12:36 AM,PL
-Jeremy Paul,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/451604.png,101400,44949779,PGA TOUR,11/19/2026,6100,63.27,0.77,0.344,0.656,74772.7 (0.00),13850.0 (0.01),5260.0 (0.02),1777.8 (0.05),10:12:36 AM,SS
-Adam Schenk,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/638.png,648099,44949780,PGA TOUR,11/19/2026,6100,60.87,1.07,0.338,0.662,79318.2 (0.00),11750.0 (0.01),4750.0 (0.02),1716.7 (0.06),10:34:36 AM,PL
-Troy Merritt,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1005.png,1409,44949781,PGA TOUR,11/19/2026,6100,62.93,0.61,0.3397,0.6603,78181.8 (0.00),10166.7 (0.01),4320.0 (0.02),1610.0 (0.06),9:17:36 AM,PL
-Calen Sanderson,Classic: PGA TOUR,,876239,44949782,PGA TOUR,11/19/2026,6100,61.83,0,0.194,0.806,165000.0 (0.00),24800.0 (0.00),12444.4 (0.01),4266.7 (0.02),10:56:36 AM,PL
-Jeremy Paul,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/451604.png,101400,44987823,Round 1,11/19/2026,6100,31.47,0.77,0.344,0.656,74772.7 (0.00),13850.0 (0.01),5260.0 (0.02),1777.8 (0.05),10:12:36 AM,SS
-Troy Merritt,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1005.png,1409,44987825,Round 1,11/19/2026,6100,31.47,0.61,0.3397,0.6603,78181.8 (0.00),10166.7 (0.01),4320.0 (0.02),1610.0 (0.06),9:17:36 AM,PL
-Brendon Todd,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/539.png,1438,44987824,Round 1,11/19/2026,6100,31.47,2.33,0.2755,0.7245,124090.9 (0.00),21450.0 (0.00),8744.4 (0.01),2966.7 (0.03),9:50:36 AM,SS
-Tyler Collet,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/549844.png,705485,44987826,Round 1,11/19/2026,6100,28.89,0,0.2027,0.7973,210454.5 (0.00),23150.0 (0.00),11555.6 (0.01),4288.9 (0.02),11:07:36 AM,PL
+David Lingmerth,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/534.png,456,44949777,PGA TOUR,11/19/2026,6100,60.11,0.22,0.2412,0.7588,137222.2 (0.00),19333.3 (0.01),7922.2 (0.01),2843.8 (0.03),10:12:36 AM,PL
+Troy Merritt,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/1005.png,1409,44949781,PGA TOUR,11/19/2026,6100,62.86,0.69,0.3347,0.6653,78888.9 (0.00),10187.5 (0.01),4466.7 (0.02),1661.1 (0.06),9:17:36 AM,PL
+Calen Sanderson,Classic: PGA TOUR,,876239,44949782,PGA TOUR,11/19/2026,6100,61.72,0,0.194,0.806,157222.2 (0.00),26000.0 (0.00),13312.5 (0.01),4587.5 (0.02),10:56:36 AM,PL
+Jeremy Paul,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/451604.png,101400,44987823,Round 1,11/19/2026,6100,31.47,0.68,0.3467,0.6533,75000.0 (0.00),13722.2 (0.01),5455.6 (0.02),1818.8 (0.05),10:12:36 AM,SS
+Troy Merritt,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/1005.png,1409,44987825,Round 1,11/19/2026,6100,31.47,0.69,0.3347,0.6653,78888.9 (0.00),10187.5 (0.01),4466.7 (0.02),1661.1 (0.06),9:17:36 AM,PL
+Calen Sanderson,Late Showdown: Late Round,,876239,44997818,Late Round 1,11/19/2026,6100,29.47,0,0.194,0.806,157222.2 (0.00),26000.0 (0.00),13312.5 (0.01),4587.5 (0.02),10:56:36 AM,PL
+Brendon Todd,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/539.png,1438,44987824,Round 1,11/19/2026,6100,31.47,1.88,0.278,0.722,118333.3 (0.00),22166.7 (0.00),9087.5 (0.01),3062.5 (0.03),9:50:36 AM,SS
+Tyler Collet,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/549844.png,705485,44987826,Round 1,11/19/2026,6100,28.89,0,0.202,0.798,212777.8 (0.00),23500.0 (0.00),11687.5 (0.01),4550.0 (0.02),11:07:36 AM,PL
+Tyler Collet,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/549844.png,705485,44997819,Late Round 1,11/19/2026,6100,28.89,0,0.202,0.798,212777.8 (0.00),23500.0 (0.00),11687.5 (0.01),4550.0 (0.02),11:07:36 AM,PL
 Manuel Elvira,Classic: DP,,769413,44870556,DP World Tour,11/11/2026,6100,16.7,0,0.5,0.5,,,,,,
 Jorge Campillo,Classic: DP,https://dkn.gs/sports/images/golf/players/50/910.png,1023,44870557,DP World Tour,11/11/2026,6100,16.7,0,0.5,0.5,,,,,,
 Manuel Elvira,Classic: DP,,769413,44870556,DP World Tour,11/11/2026,6100,16.7,0,0.5,0.5,,,,,,
 Jorge Campillo,Classic: DP,https://dkn.gs/sports/images/golf/players/50/910.png,1023,44870557,DP World Tour,11/11/2026,6100,16.7,0,0.5,0.5,,,,,,
-Harry Higgs,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/565.png,698025,44949783,PGA TOUR,11/19/2026,6000,60.61,0.64,0.306,0.694,94545.5 (0.00),13400.0 (0.01),6166.7 (0.02),2127.8 (0.04),10:23:36 AM,PL
-Christo Lamprecht,Classic: PGA TOUR,,670532,44949787,PGA TOUR,11/19/2026,6000,57.68,0.38,0.2353,0.7647,128636.4 (0.00),19400.0 (0.01),9166.7 (0.01),3500.0 (0.03),10:56:36 AM,PL
-Marcelo Rozo,Classic: PGA TOUR,,2083,44949788,PGA TOUR,11/19/2026,6000,58.99,0.3,0.2934,0.7066,130909.1 (0.00),20750.0 (0.00),7980.0 (0.01),2855.6 (0.03),11:18:36 AM,SS
-Francisco Bidé,Classic: PGA TOUR,,818496,849377,PGA TOUR,11/19/2026,6000,55.48,0,0.1629,0.8371,205909.1 (0.00),25500.0 (0.00),14000.0 (0.01),5022.2 (0.02),10:56:36 AM,PL
-Rikuya Hoshino,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/872.png,681998,44949786,PGA TOUR,11/19/2026,6000,62.47,0.72,0.3579,0.6421,100000.0 (0.00),15400.0 (0.01),5900.0 (0.02),1988.9 (0.05),10:12:36 AM,SS
-Jimmy Stanger,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/451913.png,425346,44949785,PGA TOUR,11/19/2026,6000,61.35,0.27,0.2917,0.7083,102272.7 (0.00),15200.0 (0.01),7033.3 (0.01),2250.0 (0.04),11:07:36 AM,PL
-Nicholas Lindheim,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/939.png,1303,44949784,PGA TOUR,11/19/2026,6000,57.64,0,0.2709,0.7291,128181.8 (0.00),17100.0 (0.01),7522.2 (0.01),2466.7 (0.04),10:01:36 AM,PL
-Brendon Todd,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/539.png,1438,44949789,PGA TOUR,11/19/2026,6000,58.59,2.33,0.2755,0.7245,124090.9 (0.00),21450.0 (0.00),8744.4 (0.01),2966.7 (0.03),9:50:36 AM,SS
-Tyler Collet,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/549844.png,705485,44949791,PGA TOUR,11/19/2026,6000,56.37,0,0.2027,0.7973,210454.5 (0.00),23150.0 (0.00),11555.6 (0.01),4288.9 (0.02),11:07:36 AM,PL
-Rafael Campos,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/570.png,1971,44987832,Round 1,11/19/2026,6000,29.47,1.37,0.42,0.58,43590.9 (0.00),7240.0 (0.01),3010.0 (0.03),1209.0 (0.08),10:34:36 AM,SS
-Hank Lebioda,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/526.png,692004,44987837,Round 1,11/19/2026,6000,31.47,0.9,0.4195,0.5805,50727.3 (0.00),6660.0 (0.01),2905.0 (0.03),1147.0 (0.08),9:17:36 AM,PL
+Manuel Elvira,Classic: DP,,769413,44870556,DP World Tour,11/11/2026,6100,16.7,0,0.5,0.5,,,,,,
+Jorge Campillo,Classic: DP,https://dkn.gs/sports/images/golf/players/50/910.png,1023,44870557,DP World Tour,11/11/2026,6100,16.7,0,0.5,0.5,,,,,,
+Rikuya Hoshino,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/872.png,681998,44949786,PGA TOUR,11/19/2026,6000,62.51,0.94,0.3582,0.6418,95000.0 (0.00),15055.6 (0.01),6055.6 (0.02),2037.5 (0.05),10:12:36 AM,SS
+Marcelo Rozo,Classic: PGA TOUR,,2083,44949788,PGA TOUR,11/19/2026,6000,59.03,0.71,0.2954,0.7046,126666.7 (0.00),21222.2 (0.00),8088.9 (0.01),2937.5 (0.03),11:18:36 AM,SS
+Harry Higgs,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/565.png,698025,44949783,PGA TOUR,11/19/2026,6000,60.48,0.97,0.3054,0.6946,93888.9 (0.00),13833.3 (0.01),6875.0 (0.01),2181.3 (0.04),10:23:36 AM,PL
+Christo Lamprecht,Classic: PGA TOUR,,670532,44949787,PGA TOUR,11/19/2026,6000,57.62,0.19,0.2336,0.7664,137777.8 (0.00),20611.1 (0.00),9437.5 (0.01),3750.0 (0.03),10:56:36 AM,PL
+Francisco Bidé,Classic: PGA TOUR,,818496,849377,PGA TOUR,11/19/2026,6000,55.47,0,0.158,0.842,207222.2 (0.00),26111.1 (0.00),14875.0 (0.01),5312.5 (0.02),10:56:36 AM,PL
+Jimmy Stanger,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/451913.png,425346,44949785,PGA TOUR,11/19/2026,6000,61.23,0.22,0.2911,0.7089,100555.6 (0.00),16111.1 (0.01),7487.5 (0.01),2337.5 (0.04),11:07:36 AM,PL
+Nicholas Lindheim,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/939.png,1303,44949784,PGA TOUR,11/19/2026,6000,57.65,0.13,0.27,0.73,128888.9 (0.00),17666.7 (0.01),8025.0 (0.01),2625.0 (0.04),10:01:36 AM,PL
+Brendon Todd,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/539.png,1438,44949789,PGA TOUR,11/19/2026,6000,58.54,1.88,0.278,0.722,118333.3 (0.00),22166.7 (0.00),9087.5 (0.01),3062.5 (0.03),9:50:36 AM,SS
+Tyler Collet,Classic: PGA TOUR,https://dkn.gs/sports/images/golf/players/50/549844.png,705485,44949791,PGA TOUR,11/19/2026,6000,56.3,0,0.202,0.798,212777.8 (0.00),23500.0 (0.00),11687.5 (0.01),4550.0 (0.02),11:07:36 AM,PL
+Rafael Campos,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/570.png,1971,44987832,Round 1,11/19/2026,6000,29.47,1.22,0.425,0.575,45277.8 (0.00),7266.7 (0.01),3022.2 (0.03),1221.1 (0.08),10:34:36 AM,SS
+Adam Schenk,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/638.png,648099,44987834,Round 1,11/19/2026,6000,29.47,0.88,0.3373,0.6627,80555.6 (0.00),12611.1 (0.01),4900.0 (0.02),1787.5 (0.05),10:34:36 AM,PL
+Hank Lebioda,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/526.png,692004,44987837,Round 1,11/19/2026,6000,31.47,0.99,0.4161,0.5839,51000.0 (0.00),6633.3 (0.01),2950.0 (0.03),1186.7 (0.08),9:17:36 AM,PL
 Kyoung-Hoon Lee,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/625.png,1491,44987835,Round 1,11/19/2026,6000,0,0,0,0,,,,,,
-David Lingmerth,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/534.png,456,44987836,Round 1,11/19/2026,6000,31.47,0,0.2431,0.7569,128181.8 (0.00),18650.0 (0.01),7280.0 (0.01),2638.9 (0.04),10:12:36 AM,PL
-Adam Schenk,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/638.png,648099,44987834,Round 1,11/19/2026,6000,29.47,1.07,0.338,0.662,79318.2 (0.00),11750.0 (0.01),4750.0 (0.02),1716.7 (0.06),10:34:36 AM,PL
-Calen Sanderson,Showdown: Round,,876239,44987833,Round 1,11/19/2026,6000,29.47,0,0.194,0.806,165000.0 (0.00),24800.0 (0.00),12444.4 (0.01),4266.7 (0.02),10:56:36 AM,PL
+David Lingmerth,Showdown: Round,https://dkn.gs/sports/images/golf/players/50/534.png,456,44987836,Round 1,11/19/2026,6000,31.47,0.22,0.2412,0.7588,137222.2 (0.00),19333.3 (0.01),7922.2 (0.01),2843.8 (0.03),10:12:36 AM,PL
+David Lingmerth,Late Showdown: Late Round,https://dkn.gs/sports/images/golf/players/50/534.png,456,44997822,Late Round 1,11/19/2026,6000,31.47,0.22,0.2412,0.7588,137222.2 (0.00),19333.3 (0.01),7922.2 (0.01),2843.8 (0.03),10:12:36 AM,PL
+Calen Sanderson,Showdown: Round,,876239,44987833,Round 1,11/19/2026,6000,29.47,0,0.194,0.806,157222.2 (0.00),26000.0 (0.00),13312.5 (0.01),4587.5 (0.02),10:56:36 AM,PL
+Shaun Norris,Classic: DP,https://dkn.gs/sports/images/golf/players/50/1193.png,861,44870558,DP World Tour,11/11/2026,6000,16.5,0,0.5,0.5,,,,,,
+Grant Forrest,Classic: DP,,1393,44870559,DP World Tour,11/11/2026,6000,16.5,0,0.5,0.5,,,,,,
 Shaun Norris,Classic: DP,https://dkn.gs/sports/images/golf/players/50/1193.png,861,44870558,DP World Tour,11/11/2026,6000,16.5,0,0.5,0.5,,,,,,
 Grant Forrest,Classic: DP,,1393,44870559,DP World Tour,11/11/2026,6000,16.5,0,0.5,0.5,,,,,,
 Shaun Norris,Classic: DP,https://dkn.gs/sports/images/golf/players/50/1193.png,861,44870558,DP World Tour,11/11/2026,6000,16.5,0,0.5,0.5,,,,,,
