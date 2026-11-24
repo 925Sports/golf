@@ -1,5 +1,5 @@
 HOLE-BY-HOLE DETAIL,,,,,,,,,
-"Event: The RSM Classic (401850981) | Success: 147 | Failed: 0 | Updated: 11/24/2026, 6:59:21 AM",,,,,,,,,
+"Event: The RSM Classic (401850981) | Success: 147 | Failed: 0 | Updated: 11/24/2026, 7:14:49 AM",,,,,,,,,
 ,,,,,,,,,
 Player,Player ID,Round,Hole,Par,Strokes,Score Type,To Par,Round Score,Round To Par
 Zach Bauchou,10030,1,1,4,4,Par,E,70,E
@@ -7360,16 +7360,16 @@ Maverick McNealy,9530,1,18,5,3,Eagle,-2,66,-6
 Maverick McNealy,9530,1,1,4,4,Par,E,66,-6
 Maverick McNealy,9530,1,2,4,4,Par,E,66,-6
 Maverick McNealy,9530,1,3,3,3,Par,E,66,-6
-Maverick McNealy,9530,1,4,5,4,Birdie,+2,66,-6
+Maverick McNealy,9530,1,4,5,4,Birdie,-1,66,-6
 Maverick McNealy,9530,1,5,4,4,Par,E,66,-6
 Maverick McNealy,9530,1,6,4,4,Par,E,66,-6
-Maverick McNealy,9530,1,7,3,2,Birdie,+2,66,-6
+Maverick McNealy,9530,1,7,3,2,Birdie,-1,66,-6
 Maverick McNealy,9530,1,8,5,5,Par,E,66,-6
 Maverick McNealy,9530,1,9,4,4,Par,E,66,-6
-Maverick McNealy,9530,2,1,4,5,Bogey,-1,71,+1
-Maverick McNealy,9530,2,2,4,5,Bogey,-1,71,+1
+Maverick McNealy,9530,2,1,4,5,Bogey,+1,71,+1
+Maverick McNealy,9530,2,2,4,5,Bogey,+1,71,+1
 Maverick McNealy,9530,2,3,3,3,Par,E,71,+1
-Maverick McNealy,9530,2,4,4,5,Bogey,-1,71,+1
+Maverick McNealy,9530,2,4,4,5,Bogey,+1,71,+1
 Maverick McNealy,9530,2,5,4,4,Par,E,71,+1
 Maverick McNealy,9530,2,6,3,2,Birdie,-1,71,+1
 Maverick McNealy,9530,2,7,5,5,Par,E,71,+1
@@ -7399,7 +7399,7 @@ Maverick McNealy,9530,3,12,3,3,Par,E,69,-1
 Maverick McNealy,9530,3,13,4,4,Par,E,69,-1
 Maverick McNealy,9530,3,14,4,4,Par,E,69,-1
 Maverick McNealy,9530,3,15,5,4,Birdie,-1,69,-1
-Maverick McNealy,9530,3,16,4,6,Double Bogey,-3,69,-1
+Maverick McNealy,9530,3,16,4,6,Double Bogey,+2,69,-1
 Maverick McNealy,9530,3,17,3,3,Par,E,69,-1
 Maverick McNealy,9530,3,18,4,3,Birdie,-1,69,-1
 Maverick McNealy,9530,4,1,4,4,Par,E,66,-4
